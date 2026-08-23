@@ -43,6 +43,8 @@ template $BzSearchBar: Widget {
     valign: center;
     focusable: false;
     visible: bind $has_text_cb(search_text.text);
+    has-tooltip: true;
+    tooltip-text: _("Clear Search");
     clicked => $clear_text_cb(template);
 
     styles [
