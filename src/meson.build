@@ -292,40 +292,6 @@ generated_gobjects = declare_dependency(
 )
 bz_deps += [ generated_gobjects ]
 
-
-vala_deps = [
-  generated_gobjects,
-  gtk_dep,
-  libadwaita_dep,
-  libdex_dep,
-]
-vala_sources = files(
-  'bz.vapi',
-
-  'bz-decorated-screenshot.vala',
-  'bz-themed-rect.vala',
-  'bz-flathub-curated-section.vala'
-)
-
-bz_vala_static = static_library(
-  'bzvala', vala_sources,
-  dependencies: vala_deps,
-  vala_header: 'bzvala.h',
-  vala_args: [
-    '--gresources=' + meson.current_source_dir() / 'bazaar.gresource.xml',
-    '--gresourcesdir=' + meson.current_build_dir(),
-  ],
-  c_args: [
-    '-DGETTEXT_PACKAGE="' + meson.project_name() + '"',
-  ],
-)
-bz_vala_dep = declare_dependency(
-  link_with: bz_vala_static,
-  dependencies: [vala_deps],
-)
-bz_deps += [bz_vala_dep]
-
-
 blueprints = custom_target('blueprints',
   input: files(
     'bz-addon-tile.blp',
@@ -423,12 +389,46 @@ countries_gvariant = custom_target(
   ],
 )
 
-bz_sources += gnome.compile_resources('bz-resources',
+bz_resources = gnome.compile_resources('bz-resources',
   'bazaar.gresource.xml',
   c_name: 'bz',
   source_dir: meson.current_build_dir(),
   dependencies: [blueprints, release_notes, countries_gvariant],
 )
+bz_sources += bz_resources
+
+vala_deps = [
+  generated_gobjects,
+  gtk_dep,
+  libadwaita_dep,
+  libdex_dep,
+]
+vala_sources = files(
+  'bz.vapi',
+
+  'bz-decorated-screenshot.vala',
+  'bz-themed-rect.vala',
+  'bz-flathub-curated-section.vala'
+)
+
+bz_vala_static = static_library(
+  'bzvala', vala_sources,
+  sources: [bz_resources],
+  dependencies: vala_deps,
+  vala_header: 'bzvala.h',
+  vala_args: [
+    '--gresources=' + meson.current_source_dir() / 'bazaar.gresource.xml',
+    '--gresourcesdir=' + meson.current_build_dir(),
+  ],
+  c_args: [
+    '-DGETTEXT_PACKAGE="' + meson.project_name() + '"',
+  ],
+)
+bz_vala_dep = declare_dependency(
+  link_with: bz_vala_static,
+  dependencies: [vala_deps],
+)
+bz_deps += [bz_vala_dep]
 
 executable(bazaar_bin_name, bz_sources + ['main.c'], marshalers,
            dependencies: bz_deps,
