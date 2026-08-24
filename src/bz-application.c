@@ -759,7 +759,7 @@ bz_application_about_action (GSimpleAction *action,
       "copyright", "© 2025-2026 The Bazaar Contributors",
       "license-type", GTK_LICENSE_GPL_3_0,
       "website", "https://usebazaar.org",
-      "issue-url", "https://github.com/bazaar-org/bazaar/issues",
+      "issue-url", "https://gitlab.gnome.org/World/bazaar/-/work_items",
       NULL);
 
   adw_about_dialog_add_acknowledgement_section (

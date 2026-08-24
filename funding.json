@@ -21,8 +21,8 @@
         "url": "https://usebazaar.org/"
       },
       "repositoryUrl": {
-        "url": "https://github.com/bazaar-org/bazaar",
-        "wellKnown": "https://github.com/bazaar-org/bazaar/blob/main/.well-known/funding-manifest-urls"
+        "url": "https://gitlab.gnome.org/World/bazaar",
+        "wellKnown": "https://gitlab.gnome.org/World/bazaar/-/blob/main/.well-known/funding-manifest-urls?ref_type=heads"
       },
       "licenses": ["spdx:GPL-3.0"],
       "tags": ["app-store", "flatpak"]
