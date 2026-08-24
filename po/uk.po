@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-18 14:48+0000\n"
-"PO-Revision-Date: 2026-08-18 19:37+0300\n"
+"POT-Creation-Date: 2026-08-24 12:00+0000\n"
+"PO-Revision-Date: 2026-08-24 21:01+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:210 src/bz-window.c:394 src/bz-window.c:395
+#: src/bz-window.blp:210 src/bz-window.c:376 src/bz-window.c:377
 msgid "Bazaar"
 msgstr "Базар"
 
@@ -98,7 +98,7 @@ msgid "Category page"
 msgstr "Сторінка пошуку з категоріями"
 
 #: src/bz-addon-tile.blp:64 src/bz-installed-tile.blp:55
-#: src/bz-rich-app-tile.blp:142
+#: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "Більшe не отримує оновлень"
 
@@ -139,11 +139,11 @@ msgstr ""
 msgid "Add-on Page"
 msgstr "Сторінка розширень"
 
-#: src/bz-addons-dialog.blp:205 src/bz-full-view.blp:408
+#: src/bz-addons-dialog.blp:205 src/bz-full-view.blp:398
 msgid "Downloads/Month"
 msgstr "зав/міс"
 
-#: src/bz-addons-dialog.blp:232 src/bz-full-view.blp:444
+#: src/bz-addons-dialog.blp:232 src/bz-full-view.blp:434
 msgid "Stopped Receiving Core Updates"
 msgstr "Більше не отримує оновлень середовища виконання"
 
@@ -161,11 +161,11 @@ msgstr ""
 msgid "Add-on for %s"
 msgstr "Розширення для %s"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:590
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587
 msgid "Show Less"
 msgstr "Згорнути"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:590 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Розгорнути"
 
@@ -742,7 +742,7 @@ msgid "Storage"
 msgstr "Сховище даних"
 
 #: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98
-#: src/bz-rich-app-tile.blp:106 src/bz-rich-app-tile.c:443
+#: src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "Підтверджено"
 
@@ -766,14 +766,25 @@ msgid "Logged Out Successfully!"
 msgstr "Ви вийшли з Flathub"
 
 #: src/bz-application.c:1057
-msgid "Ubuntu Troubles!"
-msgstr "Проблеми з Ubuntu!"
+msgid "Notice for Ubuntu Users"
+msgstr "Зауваження для користувачів Ubuntu"
 
 #: src/bz-application.c:1060
+#| msgid ""
+#| "Ubuntu 25.10 and newer have messed up default security rules, making it "
+#| "<b>impossible to install apps</b> from the Flatpak version of Bazaar, "
+#| "please just use the normal package for now by using\n"
+#| "\n"
+#| "<tt>sudo apt install bazaar</tt>\n"
+#| "\n"
+#| "You can then remove this Flatpak version with\n"
+#| "\n"
+#| "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 msgid ""
-"Ubuntu 25.10 and newer have messed up default security rules, making it "
-"<b>impossible to install apps</b> from the Flatpak version of Bazaar, please "
-"just use the normal package for now by using\n"
+"Ubuntu 25.10 and newer have changed default security rules in a way that "
+"makes it <b>impossible to install apps</b> from the Flatpak version of "
+"Bazaar. For the time being, please use the apt package instead. Install it "
+"with\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -781,9 +792,9 @@ msgid ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 msgstr ""
-"У Ubuntu 25.10 та новіших версіях порушені стандартні правила безпеки, що "
+"У Ubuntu 25.10 та новіших версіях змінені стандартні правила безпеки, що "
 "робить <b>неможливим встановлення програм</b> з версії Bazaar для Flatpak. "
-"Будь ласка, поки що використовуйте звичайний пакунок, встановивши його "
+"Будь ласка, поки що використовуйте пакунок apt, встановивши його "
 "командою\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
@@ -792,19 +803,19 @@ msgstr ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 
-#: src/bz-application.c:1066
+#: src/bz-application.c:1068
 msgid "Continue Anyway"
 msgstr "Продовжити попри це"
 
-#: src/bz-application.c:1082
+#: src/bz-application.c:1084
 msgid "Performing setup…"
 msgstr "Налаштовуємо…"
 
-#: src/bz-application.c:1181
+#: src/bz-application.c:1183
 msgid "Set Up System Flathub?"
 msgstr "Налаштувати сховище Flathub всесистемно?"
 
-#: src/bz-application.c:1184
+#: src/bz-application.c:1186
 msgid ""
 "The system Flathub remote is not set up. Bazaar requires Flathub to be "
 "configured on the system Flatpak installation to browse and install "
@@ -818,11 +829,11 @@ msgstr ""
 "Проте, Ви зможете користати Базар для огляду та керування вже встановленими "
 "застосунками."
 
-#: src/bz-application.c:1191
+#: src/bz-application.c:1193
 msgid "Set Up Flathub?"
 msgstr "Налаштувати Flathub?"
 
-#: src/bz-application.c:1194
+#: src/bz-application.c:1196
 msgid ""
 "Flathub is not set up on this system. You will not be able to browse and "
 "install applications in Bazaar if its unavailable.\n"
@@ -833,70 +844,52 @@ msgstr ""
 "застосунки в Базарі. Проте, Ви зможете користати Базар для огляду та "
 "керування вже встановленими застосунками."
 
-#: src/bz-application.c:1200
+#: src/bz-application.c:1202
 msgid "Later"
 msgstr "Пізніше"
 
-#: src/bz-application.c:1201
+#: src/bz-application.c:1203
 msgid "Set Up Flathub"
 msgstr "Налаштувати Flathub"
 
-#: src/bz-application.c:1732
+#: src/bz-application.c:1723
 msgid "A backend error occurred"
 msgstr "Виникла помилка на боці серверу"
 
-#: src/bz-application.c:1940 src/bz-application.c:4234
+#: src/bz-application.c:1930 src/bz-application.c:4251
 msgid "Refreshing…"
 msgstr "Освіжаємо…"
 
-#: src/bz-application.c:2099
+#: src/bz-application.c:2089
 #, c-format
 msgid "Loading %d apps…"
 msgstr "Провантажуємо %d застосунків…"
 
-#: src/bz-application.c:2152 src/bz-application.c:2226
+#: src/bz-application.c:2148 src/bz-application.c:2225
 msgid "Failed to open file"
 msgstr "Не вдалося відкрити файл"
 
-#: src/bz-application.c:2240
+#: src/bz-application.c:2239
 msgid "Failed to load metainfo"
 msgstr "Не вдалося завантажити метадані"
 
-#: src/bz-application.c:2354
+#: src/bz-application.c:2362
 msgid "An initialization error occurred"
 msgstr "Виникла помилка ініціалізації"
 
-#: src/bz-application.c:2750
+#: src/bz-application.c:2770
 msgid "Checking for updates…"
 msgstr "Шукаємо оновлення…"
 
-#: src/bz-application.c:2806
+#: src/bz-application.c:2826
 msgid "Failed to check for updates"
 msgstr "Помилка пошуку оновлень"
 
-#: src/bz-application.c:4002
-msgid "Malformed Link"
-msgstr "Хибне посилання"
-
-#: src/bz-application.c:4003
-msgid ""
-"The link used to open this app has incorrect capitalization and may stop "
-"working in the future.\n"
-"\n"
-"This is most likely caused by KRunner sending incorrect app IDs"
-msgstr ""
-"Посилання, за котрим було відкрито цей застосунок, містить хибне "
-"використання малих і великих літер та може перестати працювати в "
-"майбутньому.\n"
-"\n"
-"Найвірогіднішою причиною може бути KRunner, котрий надсилає хибні ID "
-"застосунків."
-
-#: src/bz-application.c:4011
+#: src/bz-application.c:4028
 msgid "Could not find app"
 msgstr "Не вдалося знайти застосунок"
 
-#: src/bz-application.c:4231
+#: src/bz-application.c:4248
 #, c-format
 msgid "Loading %d app…"
 msgid_plural "Loading %d apps…"
@@ -905,11 +898,11 @@ msgstr[1] "Завантажуємо %d застосунки…"
 msgstr[2] "Завантажуємо %d застосунків…"
 msgstr[3] "Завантажуємо %d застосунок…"
 
-#: src/bz-application.c:4236
+#: src/bz-application.c:4253
 msgid "Writing to cache…"
 msgstr "Кешуємо…"
 
-#: src/bz-apps-page.blp:97
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
 msgid "Show All"
 msgstr "Показати всі"
 
@@ -918,7 +911,7 @@ msgstr "Показати всі"
 msgid "All \"%s\""
 msgstr "Усі «%s»"
 
-#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:89
+#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:88
 #, c-format
 msgid "%d Applications"
 msgstr "%d застосунків"
@@ -953,7 +946,7 @@ msgstr "Успішно встановлено!"
 
 #. TRANSLATORS: Button to launch an installed app
 #: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524
-#: src/bz-rich-app-tile.blp:199 src/bz-transaction-tile.blp:300
+#: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "Запустити"
 
@@ -1094,7 +1087,7 @@ msgstr ""
 "Ви маєте декілька встановлених версій цього застосунку. З котрою з них Ви "
 "бажаєте продовжити?"
 
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:233
+#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:234
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -1656,30 +1649,22 @@ msgstr "Ми​ ♥​ ігри"
 msgid "Games and apps to run your favorite titles"
 msgstr "Улюблені ігри та застосунки для них"
 
-#: src/bz-full-view.blp:33
-msgid "No Results"
-msgstr "Нічого не знайдено"
-
-#: src/bz-full-view.blp:34
-msgid "Try a different search query"
-msgstr "Спробуйте інший запит"
-
-#: src/bz-full-view.blp:103
+#: src/bz-full-view.blp:93
 msgid ""
 "This is a local preview, some details may differ from the published listing"
 msgstr ""
 "Це передпрогляд на пристрої; деякі дрібниці можуть відрізнятися від "
 "оприлюдненої версії"
 
-#: src/bz-full-view.blp:106
+#: src/bz-full-view.blp:96
 msgid "Preview Store Appearance"
 msgstr "Передпроглянути вигляд у крамниці"
 
-#: src/bz-full-view.blp:233
+#: src/bz-full-view.blp:223
 msgid "_Support"
 msgstr "_Підтримати"
 
-#: src/bz-full-view.blp:458
+#: src/bz-full-view.blp:448
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
@@ -1688,23 +1673,23 @@ msgstr ""
 "оновлень або безпекових виправлень. Він може стати небезпечним до "
 "використання."
 
-#: src/bz-full-view.blp:536
+#: src/bz-full-view.blp:526
 msgid "Trash Data"
 msgstr "Перемістити дані в смітник"
 
-#: src/bz-full-view.blp:599
+#: src/bz-full-view.blp:589
 msgid "Add-ons"
 msgstr "Розширення"
 
-#: src/bz-full-view.blp:634
+#: src/bz-full-view.blp:624
 msgid "More Add-Ons"
 msgstr "Більше розширень"
 
-#: src/bz-full-view.blp:645
+#: src/bz-full-view.blp:635
 msgid "Links"
 msgstr "Посилання"
 
-#: src/bz-full-view.blp:676
+#: src/bz-full-view.blp:666
 msgid "Similar Apps"
 msgstr "Подібні застосунки"
 
@@ -1729,35 +1714,35 @@ msgstr ""
 "код не є публічно доступним і не може бути перевіреним на безпечність."
 
 #: src/bz-full-view.c:207
-msgid "More Apps"
-msgstr "Більше застосунків"
+#| msgid "Other Apps by this Developer"
+msgid "Other Apps From This Developer"
+msgstr "Інші програми від цього розробника"
 
 #: src/bz-full-view.c:208
 #, c-format
-msgid "More Apps by %s"
-msgstr "Більше від %s"
-
-#: src/bz-full-view.c:215
-msgid "Other Apps by this Developer"
-msgstr "Більше від розробників"
-
-#: src/bz-full-view.c:217 src/bz-full-view.c:309
-#, c-format
-msgid "Other Apps by %s"
-msgstr "Більше від %s"
+#| msgid "Other Apps by %s"
+msgid "Other Apps From %s"
+msgstr "Інші програми від %s"
 
 # Трохи довший переклад, аби зберегти статеву нейтральність назви самого застосунку.
-#: src/bz-full-view.c:226
+#: src/bz-full-view.c:223
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr ""
 "Застосунок %s не встановлено, проте він має <b>%s</b> залишкових даних."
 
-#: src/bz-full-view.c:311
-msgid "Other Apps"
-msgstr "Інші застосунки"
+#: src/bz-full-view.c:306
+#, c-format
+#| msgid "More Apps by %s"
+msgid "Apps by %s"
+msgstr "Програми від %s"
 
-#: src/bz-full-view.c:313
+#: src/bz-full-view.c:308
+#| msgid "Other Apps by this Developer"
+msgid "Apps by This Developer"
+msgstr "Програми цього розробника"
+
+#: src/bz-full-view.c:310
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
@@ -1766,7 +1751,7 @@ msgstr[1] "%d застосунки"
 msgstr[2] "%d застосунків"
 msgstr[3] "%d застосунок"
 
-#: src/bz-full-view.c:470 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:467 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "Не вдалося видалити користувацькі дані"
 
@@ -1986,11 +1971,11 @@ msgstr[1] "%u встановлені застосунки"
 msgstr[2] "%u встановлених застосунків"
 msgstr[3] "%u встановлений застосунок"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:786
+#: src/bz-library-page.c:629 src/bz-search-page.c:821
 msgid "No applications found"
 msgstr "Не знайдено жодної програми"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:788
+#: src/bz-library-page.c:629 src/bz-search-page.c:823
 #, c-format
 msgid "One application found"
 msgid_plural "%u applications found"
@@ -2390,13 +2375,13 @@ msgstr "Без подробиць"
 msgid "Get More Information"
 msgstr "Докладніше про випуск"
 
-#: src/bz-rich-app-tile.blp:218
+#: src/bz-rich-app-tile.blp:219
 msgid "Uninstall"
 msgstr "Видалити"
 
 # Сирець підказує, що це кнопка завантаження
 #. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
-#: src/bz-rich-app-tile.c:383
+#: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "Завантажити"
 
@@ -2520,12 +2505,12 @@ msgstr "Немає знімків"
 msgid "Open Screenshot Viewer"
 msgstr "Відкрити переглядач знімків"
 
-#: src/bz-screenshots-carousel.c:308
+#: src/bz-screenshots-carousel.c:310
 #, c-format
 msgid "Screenshot %u %s"
 msgstr "Знімок %u %s"
 
-#: src/bz-screenshots-carousel.c:310
+#: src/bz-screenshots-carousel.c:312
 #, c-format
 msgid "Screenshot %u"
 msgstr "Знімок %u"
@@ -2570,23 +2555,23 @@ msgstr "Шукайте застосунки, ігри та програми"
 msgid "Search Filters"
 msgstr "Відсіяти пошук"
 
-#: src/bz-search-page.blp:170
+#: src/bz-search-page.blp:171
 msgid "Browse Categories"
 msgstr "Шукати в категоріях"
 
-#: src/bz-search-page.blp:206
+#: src/bz-search-page.blp:207
 msgid "Categories Unavailable"
 msgstr "Категорії недоступні"
 
-#: src/bz-search-page.blp:207
+#: src/bz-search-page.blp:208
 msgid "Search for apps using the search bar above."
 msgstr "Шукайте застосунки за допомогою рядка згори."
 
-#: src/bz-search-page.blp:325
+#: src/bz-search-page.blp:326
 msgid "No Applications Found"
 msgstr "Жодного підібраного застосунку"
 
-#: src/bz-search-page.c:249
+#: src/bz-search-page.c:254
 #, c-format
 msgid "No results found for \"%s\" in Flathub"
 msgstr "Не знайдено збігів для «%s» на Flathub"
@@ -2767,11 +2752,11 @@ msgstr "%.2fK встановлень загалом"
 msgid "%'d Total Installs"
 msgstr "%'d встановлень загалом"
 
-#: src/bz-subcategory-list.c:78
+#: src/bz-subcategory-list.c:77
 msgid "No Results Found"
 msgstr "Нічого не знайдено"
 
-#: src/bz-subcategory-list.c:100
+#: src/bz-subcategory-list.c:99
 msgid "Search failed"
 msgstr "Помилка пошуку"
 
@@ -2983,17 +2968,14 @@ msgstr[2] "%u оновлень середовищ виконання"
 msgstr[3] "%u оновлення середовища виконання"
 
 #: src/bz-update-history-dialog.blp:5 src/bz-update-history-dialog.blp:11
-#| msgid "Installed Size"
 msgid "Installed Updates"
 msgstr "Встановлені оновлення"
 
 #: src/bz-update-history-dialog.blp:129 src/bz-update-history-dialog.c:99
-#| msgid "Full Release Notes"
 msgid "Release Notes"
 msgstr "Нотатки щодо випуску"
 
 #: src/bz-update-history-dialog.blp:144
-#| msgid "Full Release Notes"
 msgid "No Release Info"
 msgstr "Немає відомостей щодо випуску"
 
@@ -3111,20 +3093,20 @@ msgid "Log Out"
 msgstr "Вийти"
 
 #. Translators: %s is the title of the current page
-#: src/bz-window.c:397
+#: src/bz-window.c:379
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Базар — %s"
 
-#: src/bz-window.c:670 src/bz-window.c:708
+#: src/bz-window.c:659 src/bz-window.c:697
 msgid "Failed to launch application"
 msgstr "Не вдалося запустити застосунок"
 
-#: src/bz-window.c:964
+#: src/bz-window.c:952
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Ви не можете видалити Базар у Базарі!"
 
-#: src/bz-window.c:1338 src/bz-window.c:1372
+#: src/bz-window.c:1326 src/bz-window.c:1360
 msgid "Can't do that right now!"
 msgstr "Наразі цього не можна зробити!"
 
@@ -3659,6 +3641,37 @@ msgstr "Було оновлено %s і %s."
 #, c-format
 msgid "Includes %s, %s and %s."
 msgstr "Включає %s, %s і %s."
+
+#~ msgid "Ubuntu Troubles!"
+#~ msgstr "Проблеми з Ubuntu!"
+
+#~ msgid "Malformed Link"
+#~ msgstr "Хибне посилання"
+
+#~ msgid ""
+#~ "The link used to open this app has incorrect capitalization and may stop "
+#~ "working in the future.\n"
+#~ "\n"
+#~ "This is most likely caused by KRunner sending incorrect app IDs"
+#~ msgstr ""
+#~ "Посилання, за котрим було відкрито цей застосунок, містить хибне "
+#~ "використання малих і великих літер та може перестати працювати в "
+#~ "майбутньому.\n"
+#~ "\n"
+#~ "Найвірогіднішою причиною може бути KRunner, котрий надсилає хибні ID "
+#~ "застосунків."
+
+#~ msgid "No Results"
+#~ msgstr "Нічого не знайдено"
+
+#~ msgid "Try a different search query"
+#~ msgstr "Спробуйте інший запит"
+
+#~ msgid "More Apps"
+#~ msgstr "Більше застосунків"
+
+#~ msgid "Other Apps"
+#~ msgstr "Інші застосунки"
 
 #~ msgid "Exhibit app page"
 #~ msgstr "Сторінка застосунку Exhibit"
