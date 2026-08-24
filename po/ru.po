@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: https://github.com/bazaar-org/bazaar/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
 "POT-Creation-Date: 2026-07-19 11:41+0300\n"
 "PO-Revision-Date: 2026-07-19 12:40+0300\n"
 "Last-Translator: Vladimir Kosolapov\n"

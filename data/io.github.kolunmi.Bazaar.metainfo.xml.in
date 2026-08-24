@@ -76,7 +76,7 @@
 
   <releases>
     <release version="0.9.4" date="2026-08-14">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.9.4</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.4</url>
       <description translate="no">
         <p>
           <em>Changes</em>
@@ -92,7 +92,7 @@
       </description>
     </release>
     <release version="0.9.3" date="2026-08-12">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.9.3</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.3</url>
       <description translate="no">
         <p>
           <em>Changes</em>
@@ -107,7 +107,7 @@
       </description>
     </release>
     <release version="0.9.2" date="2026-08-03">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.9.2</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.2</url>
         <description translate="no">
           <p>
             <em>New Features</em>
@@ -131,7 +131,7 @@
         </description>
     </release>
     <release version="0.9.1" date="2026-07-08">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.9.1</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.1</url>
         <description translate="no">
           <p>
             <em>New Features</em>
@@ -153,7 +153,7 @@
         </description>
     </release>
     <release version="0.9.0" date="2026-06-30">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.9.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.0</url>
       <description translate="no">
         <p>
           <em>New Features</em>
@@ -177,7 +177,7 @@
       </description>
     </release>
     <release version="0.8.2" date="2026-06-07">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.8.2</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.8.2</url>
       <description translate="no">
         <p>
           <em>Maintenance Release</em>
@@ -195,7 +195,7 @@
       </description>
     </release>
     <release version="0.8.1" date="2026-05-22">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.8.1</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.8.1</url>
       <description translate="no">
         <p>
           Hot fix for an issue where updates would not show. Also adds a cancel button to the app tiles on the search page.
@@ -214,7 +214,7 @@
       </description>
     </release>
     <release version="0.8.0" date="2026-05-16">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.8.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.8.0</url>
         <description translate="no">
           <p>
             <em>New Features</em>
@@ -239,7 +239,7 @@
         </description>
     </release>
     <release version="0.7.15" date="2026-04-17">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.15</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.15</url>
       <description translate="no">
         <p>
           <em>New Features</em>
@@ -264,7 +264,7 @@
       </description>
     </release>
     <release version="0.7.14" date="2026-04-10">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.14</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.14</url>
         <description translate="no">
           <p>
             <em>New Features</em>
@@ -289,7 +289,7 @@
         </description>
     </release>
     <release version="0.7.13" date="2026-04-1">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.13</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.13</url>
       <description translate="no">
         <p>
           <em>Changes</em>
@@ -317,7 +317,7 @@
       </description>
     </release>
     <release version="0.7.11" date="2026-03-07">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.11</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.11</url>
       <description translate="no">
         <p>
           This release contains many technical improvements. This changelog
@@ -347,7 +347,7 @@
       </description>
     </release>
     <release version="0.7.10" date="2026-02-22">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.10</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.10</url>
       <description translate="no">
         <p>
           This release fixes some bugs and greatly improves search
@@ -366,7 +366,7 @@
       </description>
     </release>
     <release version="0.7.9" date="2026-02-21">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.9</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.9</url>
       <description translate="no">
         <p>**New Features**</p>
         <ul>
@@ -384,7 +384,7 @@
       </description>
     </release>
     <release version="0.7.8" date="2026-02-11">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.8</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.8</url>
       <description translate="no">
         <p>
           This release lets you view and remove user-scoped installed apps from the library page in the Flatpak version of the app.
@@ -393,7 +393,7 @@
       </description>
     </release>
     <release version="0.7.7" date="2026-02-09">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.7</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.7</url>
       <description translate="no">
         <p>This release comes with the following improvements:</p>
         <ul>
@@ -407,7 +407,7 @@
       </description>
     </release>
     <release version="0.7.6" date="2026-01-28">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.6</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.6</url>
       <description translate="no">
         <p>This release comes with the following improvements:</p>
         <ul>
@@ -423,13 +423,13 @@
       </description>
     </release>
     <release version="0.7.5" date="2026-01-18">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.5</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.5</url>
       <description translate="no">
         <p>Minor bugfix release</p>
       </description>
     </release>
     <release version="0.7.4" date="2026-01-18">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.4</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.4</url>
       <description translate="no">
         <p>This release comes with the following improvements:</p>
         <ul>
@@ -441,7 +441,7 @@
       </description>
     </release>
     <release version="0.7.3" date="2026-01-11">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.3</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.3</url>
       <description translate="no">
         <p>This release comes with the following improvements:</p>
         <ul>
@@ -456,13 +456,13 @@
       </description>
     </release>
     <release version="0.7.2" date="2026-01-03">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.2</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.2</url>
       <description translate="no">
         <p>This small release ensures the new icon is rendered correctly on KDE Plasma.</p>
       </description>
     </release>
     <release version="0.7.1" date="2026-01-03">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.1</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.1</url>
       <description translate="no">
         <p>This release comes with the following improvements:</p>
         <ul>
@@ -481,7 +481,7 @@
       </description>
     </release>
     <release version="0.7.0" date="2025-12-31">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.7.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.7.0</url>
       <description translate="no">
         <p>This release comes with the following improvements:</p>
         <ul>
@@ -500,19 +500,19 @@
       </description>
     </release>
     <release version="0.6.3" date="2025-12-14">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.6.3</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.6.3</url>
       <description translate="no">
         <p>Another quick release to restore alphabetical sorting on the installed page</p>
       </description>
     </release>
     <release version="0.6.2" date="2025-12-09">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.6.2</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.6.2</url>
       <description translate="no">
         <p>Quick release to allow manual refresh if flathub is being flaky</p>
       </description>
     </release>
     <release version="0.6.1" date="2025-12-09">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.6.1</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.6.1</url>
       <description translate="no">
         <p>This release comes with the following improvements:</p>
         <ul>
@@ -523,7 +523,7 @@
       </description>
     </release>
     <release version="0.6.0" date="2025-12-04">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.6.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.6.0</url>
       <description translate="no">
         <p>This release comes with the following improvements:</p>
         <ul>
@@ -541,97 +541,97 @@
       </description>
     </release>
     <release version="0.5.10" date="2025-11-12">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.10</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.10</url>
     </release>
     <release version="0.5.9" date="2025-11-08">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.9</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.9</url>
     </release>
     <release version="0.5.8" date="2025-10-29">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.8</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.8</url>
     </release>
     <release version="0.5.7" date="2025-10-27">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.7</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.7</url>
     </release>
     <release version="0.5.6" date="2025-10-15">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.6</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.6</url>
     </release>
     <release version="0.5.5" date="2025-10-09">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.5</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.5</url>
     </release>
     <release version="0.5.4" date="2025-10-04">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.4</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.4</url>
     </release>
     <release version="0.5.3" date="2025-10-02">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.3</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.3</url>
     </release>
     <release version="0.5.2" date="2025-09-29">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.2</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.2</url>
     </release>
     <release version="0.5.1" date="2025-09-27">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.1</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.1</url>
     </release>
     <release version="0.5.0" date="2025-09-26">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.5.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.5.0</url>
     </release>
     <release version="0.4.11" date="2025-09-15">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.11</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.11</url>
     </release>
     <release version="0.4.10" date="2025-09-12">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.10</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.10</url>
     </release>
     <release version="0.4.9" date="2025-09-11">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.9</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.9</url>
     </release>
     <release version="0.4.8" date="2025-09-08">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.8</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.8</url>
     </release>
     <release version="0.4.7" date="2025-09-07">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.7</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.7</url>
     </release>
     <release version="0.4.6" date="2025-09-05">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.6</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.6</url>
     </release>
     <release version="0.4.5" date="2025-09-01">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.5</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.5</url>
     </release>
     <release version="0.4.4" date="2025-08-30">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.4</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.4</url>
     </release>
     <release version="0.4.3" date="2025-08-26">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.3</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.3</url>
     </release>
     <release version="0.4.2" date="2025-08-26">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.2</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.2</url>
     </release>
     <release version="0.4.1" date="2025-08-24">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.1</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.1</url>
     </release>
     <release version="0.4.0" date="2025-08-21">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.4.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.4.0</url>
     </release>
     <release version="0.3.2" date="2025-08-17">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.3.2</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.3.2</url>
     </release>
     <release version="0.3.1" date="2025-08-16">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.3.1</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.3.1</url>
     </release>
     <release version="0.3.0" date="2025-08-11">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.3.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.3.0</url>
     </release>
     <release version="0.2.3" date="2025-07-14">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.2.3</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.2.3</url>
     </release>
     <release version="0.2.2" date="2025-07-09">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.2.2</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.2.2</url>
     </release>
     <release version="0.2.1" date="2025-07-07">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.2.1</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.2.1</url>
     </release>
     <release version="0.2.0" date="2025-07-07">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.2.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.2.0</url>
     </release>
     <release version="0.1.0" date="2025-06-24">
-      <url type="details">https://github.com/bazaar-org/bazaar/releases/tag/v0.1.0</url>
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.1.0</url>
     </release>
   </releases>
 </component>
