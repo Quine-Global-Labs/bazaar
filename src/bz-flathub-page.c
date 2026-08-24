@@ -19,6 +19,7 @@
  */
 
 #include <glib/gi18n.h>
+#include <bzvala.h>
 
 #include "bz-app-tile.h"
 #include "bz-apps-page.h"
@@ -27,7 +28,6 @@
 #include "bz-featured-carousel.h"
 #include "bz-flathub-category-section.h"
 #include "bz-flathub-category.h"
-#include "bz-flathub-curated-section.h"
 #include "bz-flathub-curated-selection.h"
 #include "bz-flathub-page.h"
 #include "bz-section-view.h"

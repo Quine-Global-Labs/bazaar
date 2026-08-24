@@ -106,7 +106,6 @@ bz_sources = files(
   'bz-flathub-category-section.c',
   'bz-flathub-category.c',
   'bz-flathub-category.c',
-  'bz-flathub-curated-section.c',
   'bz-flathub-page.c',
   'bz-flathub-state.c',
   'bz-flatpak-entry.c',
@@ -305,12 +304,20 @@ vala_sources = files(
 
   'bz-decorated-screenshot.vala',
   'bz-themed-rect.vala',
+  'bz-flathub-curated-section.vala'
 )
 
 bz_vala_static = static_library(
   'bzvala', vala_sources,
   dependencies: vala_deps,
   vala_header: 'bzvala.h',
+  vala_args: [
+    '--gresources=' + meson.current_source_dir() / 'bazaar.gresource.xml',
+    '--gresourcesdir=' + meson.current_build_dir(),
+  ],
+  c_args: [
+    '-DGETTEXT_PACKAGE="' + meson.project_name() + '"',
+  ],
 )
 bz_vala_dep = declare_dependency(
   link_with: bz_vala_static,
