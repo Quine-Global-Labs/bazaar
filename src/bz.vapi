@@ -65,6 +65,8 @@ public extern class Bz.AppTile : GLib.Object {
 public extern class Bz.ApplicationMapFactory : GLib.Object {
     [CCode (has_construct_function = false)]
     protected ApplicationMapFactory ();
+
+    public GLib.ListModel? generate (GLib.ListModel model);
 }
 
 [CCode (cheader_filename = "bz-application.h", type_id = "bz_application_get_type ()")]
@@ -203,6 +205,8 @@ public extern class Bz.DownloadWorker : GLib.Object {
 public extern class Bz.DynamicListView : GLib.Object {
     [CCode (has_construct_function = false)]
     protected DynamicListView ();
+
+    public GLib.ListModel? model { get; set; }
 }
 
 [CCode (cheader_filename = "bz-entry-cache-manager.h", type_id = "bz_entry_cache_manager_get_type ()")]
@@ -299,12 +303,6 @@ public extern class Bz.FlathubCategorySection : GLib.Object {
 public extern class Bz.FlathubCategory : GLib.Object {
     [CCode (has_construct_function = false)]
     protected FlathubCategory ();
-}
-
-[CCode (cheader_filename = "bz-flathub-curated-section.h", type_id = "bz_flathub_curated_section_get_type ()")]
-public extern class Bz.FlathubCuratedSection : GLib.Object {
-    [CCode (has_construct_function = false)]
-    protected FlathubCuratedSection ();
 }
 
 [CCode (cheader_filename = "bz-flathub-page.h", type_id = "bz_flathub_page_get_type ()")]
@@ -803,6 +801,11 @@ public extern class Bz.FlathubAuthProvider : GLib.Object {
 public extern class Bz.FlathubCuratedSelection : GLib.Object {
     [CCode (has_construct_function = false)]
     protected FlathubCuratedSelection ();
+
+    public string? theme_key { get; set;}
+    public string? slot { get; set;}
+    public Gtk.StringList? apps { get; set;}
+    public Bz.ApplicationMapFactory? map_factory { get; set;}
 }
 
 [CCode (cheader_filename = "bz-flathub-sub-category.h", type_id = "bz_flathub_sub_category_get_type ()")]

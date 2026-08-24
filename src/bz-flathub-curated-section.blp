@@ -39,7 +39,7 @@ template $BzFlathubCuratedSection: Adw.Bin {
         wrap-mode: word_char;
       }
 
-      $BzDynamicListView list {
+      $BzDynamicListView {
         styles [
           "flathub-page-section",
         ]
@@ -50,6 +50,9 @@ template $BzFlathubCuratedSection: Adw.Bin {
         child-type: "BzAppTile";
         child-prop: "group";
         max-children-per-line: 4;
+        model: Gtk.SliceListModel slice_model {
+          size: 8;
+        };
       }
     }
   };
