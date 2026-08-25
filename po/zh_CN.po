@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-18 20:02+0000\n"
-"PO-Revision-Date: 2026-08-19 11:17+0800\n"
+"POT-Creation-Date: 2026-08-24 21:45+0000\n"
+"PO-Revision-Date: 2026-08-25 07:51+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:210 src/bz-window.c:377 src/bz-window.c:378
+#: src/bz-window.blp:210 src/bz-window.c:376 src/bz-window.c:377
 msgid "Bazaar"
 msgstr "集市"
 
@@ -71,7 +71,7 @@ msgstr "登录 Flathub 以查看和管理收藏项目"
 msgid "Search apps directly from GNOME Shell"
 msgstr "直接从 GNOME Shell 搜索应用"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:32 src/bz-application.c:743
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:32 src/bz-application.c:754
 msgid "The Bazaar Contributors"
 msgstr "集市的贡献者们"
 
@@ -96,7 +96,7 @@ msgid "Category page"
 msgstr "分类页面"
 
 #: src/bz-addon-tile.blp:64 src/bz-installed-tile.blp:55
-#: src/bz-rich-app-tile.blp:142
+#: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "已停止接收更新"
 
@@ -135,11 +135,11 @@ msgstr "您当前的筛选首选项隐藏了所有已知附加组件。请尝试
 msgid "Add-on Page"
 msgstr "附加组件页面"
 
-#: src/bz-addons-dialog.blp:205 src/bz-full-view.blp:408
+#: src/bz-addons-dialog.blp:205 src/bz-full-view.blp:398
 msgid "Downloads/Month"
 msgstr "下载/月"
 
-#: src/bz-addons-dialog.blp:232 src/bz-full-view.blp:444
+#: src/bz-addons-dialog.blp:232 src/bz-full-view.blp:434
 msgid "Stopped Receiving Core Updates"
 msgstr "已停止接收核心更新"
 
@@ -155,11 +155,11 @@ msgstr ""
 msgid "Add-on for %s"
 msgstr "%s 的附加组件"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:590
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587
 msgid "Show Less"
 msgstr "显示更少"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:590 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "显示更多"
 
@@ -726,7 +726,7 @@ msgid "Storage"
 msgstr "存储"
 
 #: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98
-#: src/bz-rich-app-tile.blp:106 src/bz-rich-app-tile.c:443
+#: src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "已验证"
 
@@ -737,29 +737,30 @@ msgid "Installed"
 msgstr "已安装"
 
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:746
+#: src/bz-application.c:757
 msgid "translator-credits"
 msgstr ""
 "Shinsei <shinsei@anche.no>, 2025\n"
 "lumingzh <lumingzh@qq.com>, 2026"
 
-#: src/bz-application.c:756
+#: src/bz-application.c:767
 msgid "Special Thanks"
 msgstr "特别感谢"
 
-#: src/bz-application.c:814
+#: src/bz-application.c:825
 msgid "Logged Out Successfully!"
 msgstr "成功登出！"
 
-#: src/bz-application.c:1046
-msgid "Ubuntu Troubles!"
-msgstr "Ubuntu 问题！"
+#: src/bz-application.c:1057
+msgid "Notice for Ubuntu Users"
+msgstr "对 Ubuntu 用户的提示"
 
-#: src/bz-application.c:1049
+#: src/bz-application.c:1060
 msgid ""
-"Ubuntu 25.10 and newer have messed up default security rules, making it "
-"<b>impossible to install apps</b> from the Flatpak version of Bazaar, please "
-"just use the normal package for now by using\n"
+"Ubuntu 25.10 and newer have changed default security rules in a way that "
+"makes it <b>impossible to install apps</b> from the Flatpak version of "
+"Bazaar. For the time being, please use the apt package instead. Install it "
+"with\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -767,8 +768,8 @@ msgid ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 msgstr ""
-"Ubuntu 25.10 和更新版本搞乱了默认的安全规则，使其通过 Flatpak 版本“集市”<b>无"
-"法安装应用</b>，请暂时使用正常软件包：\n"
+"Ubuntu 25.10 和更新版本更改了默认的安全规则，使其通过 Flatpak 版本“集市”<b>无"
+"法安装应用</b>。在这期间，请使用 apt 软件包代替。安装命令：\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -776,19 +777,19 @@ msgstr ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 
-#: src/bz-application.c:1055
+#: src/bz-application.c:1068
 msgid "Continue Anyway"
 msgstr "仍然继续"
 
-#: src/bz-application.c:1071
+#: src/bz-application.c:1084
 msgid "Performing setup…"
 msgstr "正在执行部署…"
 
-#: src/bz-application.c:1170
+#: src/bz-application.c:1183
 msgid "Set Up System Flathub?"
 msgstr "部署系统 Flathub 吗？"
 
-#: src/bz-application.c:1173
+#: src/bz-application.c:1186
 msgid ""
 "The system Flathub remote is not set up. Bazaar requires Flathub to be "
 "configured on the system Flatpak installation to browse and install "
@@ -801,11 +802,11 @@ msgstr ""
 "\n"
 "您仍然可以使用“集市”来浏览和移除已安装的应用。"
 
-#: src/bz-application.c:1180
+#: src/bz-application.c:1193
 msgid "Set Up Flathub?"
 msgstr "部署 Flathub 吗？"
 
-#: src/bz-application.c:1183
+#: src/bz-application.c:1196
 msgid ""
 "Flathub is not set up on this system. You will not be able to browse and "
 "install applications in Bazaar if its unavailable.\n"
@@ -817,77 +818,62 @@ msgstr ""
 "\n"
 "您仍可使用“集市”浏览和移除已安装的应用。"
 
-#: src/bz-application.c:1189
+#: src/bz-application.c:1202
 msgid "Later"
 msgstr "稍后"
 
-#: src/bz-application.c:1190
+#: src/bz-application.c:1203
 msgid "Set Up Flathub"
 msgstr "部署 Flathub"
 
-#: src/bz-application.c:1710
+#: src/bz-application.c:1723
 msgid "A backend error occurred"
 msgstr "发生后端错误"
 
-#: src/bz-application.c:1917 src/bz-application.c:4224
+#: src/bz-application.c:1930 src/bz-application.c:4251
 msgid "Refreshing…"
 msgstr "正在刷新…"
 
-#: src/bz-application.c:2076
+#: src/bz-application.c:2089
 #, c-format
 msgid "Loading %d apps…"
 msgstr "正在加载 %d 应用…"
 
-#: src/bz-application.c:2135 src/bz-application.c:2212
+#: src/bz-application.c:2148 src/bz-application.c:2225
 msgid "Failed to open file"
 msgstr "打开文件失败"
 
-#: src/bz-application.c:2226
+#: src/bz-application.c:2239
 msgid "Failed to load metainfo"
 msgstr "加载元信息失败"
 
-#: src/bz-application.c:2340
+#: src/bz-application.c:2362
 msgid "An initialization error occurred"
 msgstr "发生初始化错误"
 
-#: src/bz-application.c:2736
+#: src/bz-application.c:2770
 msgid "Checking for updates…"
 msgstr "正在检查更新…"
 
-#: src/bz-application.c:2792
+#: src/bz-application.c:2826
 msgid "Failed to check for updates"
 msgstr "检查更新失败"
 
-#: src/bz-application.c:3992
-msgid "Malformed Link"
-msgstr "格式错误的链接"
-
-#: src/bz-application.c:3993
-msgid ""
-"The link used to open this app has incorrect capitalization and may stop "
-"working in the future.\n"
-"\n"
-"This is most likely caused by KRunner sending incorrect app IDs"
-msgstr ""
-"打开此应用的链接具有错误的大写字母且可能在未来停止工作。\n"
-"\n"
-"这很可能是由于 KRunner 发送了错误的应用 ID 导致的"
-
-#: src/bz-application.c:4001
+#: src/bz-application.c:4028
 msgid "Could not find app"
 msgstr "无法找到应用"
 
-#: src/bz-application.c:4221
+#: src/bz-application.c:4248
 #, c-format
 msgid "Loading %d app…"
 msgid_plural "Loading %d apps…"
 msgstr[0] "正在加载 %d 个应用…"
 
-#: src/bz-application.c:4226
+#: src/bz-application.c:4253
 msgid "Writing to cache…"
 msgstr "正在写入缓存…"
 
-#: src/bz-apps-page.blp:97
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
 msgid "Show All"
 msgstr "显示全部"
 
@@ -896,7 +882,7 @@ msgstr "显示全部"
 msgid "All \"%s\""
 msgstr "所有“%s”"
 
-#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:89
+#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:88
 #, c-format
 msgid "%d Applications"
 msgstr "%d 应用程序"
@@ -931,7 +917,7 @@ msgstr "成功安装！"
 
 #. TRANSLATORS: Button to launch an installed app
 #: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524
-#: src/bz-rich-app-tile.blp:199 src/bz-transaction-tile.blp:300
+#: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "打开"
 
@@ -1061,7 +1047,7 @@ msgid ""
 "to proceed with?"
 msgstr "您已安装此应用的多个版本。您希望用哪一个继续？"
 
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:233
+#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:234
 msgid "Cancel"
 msgstr "取消"
 
@@ -1369,8 +1355,8 @@ msgstr "工具"
 msgid "More Utilities"
 msgstr "更多实用工具"
 
-#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:111
-#: src/bz-flathub-page.blp:143
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
 msgid "Trending"
 msgstr "飙升"
 
@@ -1378,8 +1364,8 @@ msgstr "飙升"
 msgid "More Trending"
 msgstr "更多飙升应用"
 
-#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:117
-#: src/bz-flathub-page.blp:176
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:171
 msgid "Popular"
 msgstr "人气"
 
@@ -1387,11 +1373,11 @@ msgstr "人气"
 msgid "More Popular"
 msgstr "更多人气应用"
 
-#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:165
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:160
 msgid "Recently Added"
 msgstr "最近添加"
 
-#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:123
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:118
 msgid "New"
 msgstr "新应用"
 
@@ -1399,11 +1385,11 @@ msgstr "新应用"
 msgid "More New"
 msgstr "更多新应用"
 
-#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:154
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:149
 msgid "Recently Updated"
 msgstr "最近更新"
 
-#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:129
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:124
 msgid "Updated"
 msgstr "已更新"
 
@@ -1467,107 +1453,107 @@ msgstr "游戏工具"
 msgid "More Game Tools"
 msgstr "更多游戏工具"
 
-#: src/bz-flathub-curated-section.c:65
+#: src/bz-flathub-curated-section.vala:41
 msgid "New Year, New Workflows"
 msgstr "新年新工作流"
 
-#: src/bz-flathub-curated-section.c:65
+#: src/bz-flathub-curated-section.vala:41
 msgid "Apps to take notes, track tasks, and make plans"
 msgstr "记笔记、追踪任务和制定计划的应用"
 
-#: src/bz-flathub-curated-section.c:66
+#: src/bz-flathub-curated-section.vala:42
 msgid "Staff Picks"
 msgstr "店员推荐"
 
-#: src/bz-flathub-curated-section.c:66
+#: src/bz-flathub-curated-section.vala:42
 msgid "Apps we love right now"
 msgstr "立刻爱上的应用"
 
-#: src/bz-flathub-curated-section.c:67
+#: src/bz-flathub-curated-section.vala:43
 msgid "Get Creative"
 msgstr "发挥创意"
 
-#: src/bz-flathub-curated-section.c:67
+#: src/bz-flathub-curated-section.vala:43
 msgid "Essential apps for drawing, editing photos, and digital design"
 msgstr "用于绘画、编辑照片和数码设计的必需应用"
 
-#: src/bz-flathub-curated-section.c:68
+#: src/bz-flathub-curated-section.vala:44
 msgid "Build Native Apps"
 msgstr "构建原生应用"
 
-#: src/bz-flathub-curated-section.c:68
+#: src/bz-flathub-curated-section.vala:44
 msgid "Develop apps that feel at home on your system"
 msgstr "开发您系统上的原生应用"
 
-#: src/bz-flathub-curated-section.c:69
+#: src/bz-flathub-curated-section.vala:45
 msgid "Stay in Touch"
 msgstr "保持联系"
 
-#: src/bz-flathub-curated-section.c:69
+#: src/bz-flathub-curated-section.vala:45
 msgid "Essential collaboration and communication apps"
 msgstr "必需的合作和沟通应用"
 
-#: src/bz-flathub-curated-section.c:70
+#: src/bz-flathub-curated-section.vala:46
 msgid "Ready for Vacations"
 msgstr "准备度假"
 
-#: src/bz-flathub-curated-section.c:70
+#: src/bz-flathub-curated-section.vala:46
 msgid "Maps, transit, weather, and trip planning apps"
 msgstr "地图、交通、天气和旅途规划应用"
 
-#: src/bz-flathub-curated-section.c:71
+#: src/bz-flathub-curated-section.vala:47
 msgid "Smarter Every Day"
 msgstr "天天向上"
 
-#: src/bz-flathub-curated-section.c:71
+#: src/bz-flathub-curated-section.vala:47
 msgid "Apps to help you study, research, and write"
 msgstr "帮助您学习、研究和写作的应用"
 
-#: src/bz-flathub-curated-section.c:72
+#: src/bz-flathub-curated-section.vala:48
 msgid "Get Cozy"
 msgstr "寻求安逸"
 
-#: src/bz-flathub-curated-section.c:72
+#: src/bz-flathub-curated-section.vala:48
 msgid "Great apps for reading, watching movies, and playing games"
 msgstr "用于阅读、观看电影和游玩游戏的极好应用"
 
-#: src/bz-flathub-curated-section.c:73
+#: src/bz-flathub-curated-section.vala:49
 msgid "Web Developer Essentials"
 msgstr "网络开发者必备"
 
-#: src/bz-flathub-curated-section.c:73
+#: src/bz-flathub-curated-section.vala:49
 msgid "Making websites is more fun with these apps"
 msgstr "用这些应用使网站更加有趣"
 
-#: src/bz-flathub-curated-section.c:74
+#: src/bz-flathub-curated-section.vala:50
 msgid "Take Better Notes"
 msgstr "更好记录笔记"
 
-#: src/bz-flathub-curated-section.c:74
+#: src/bz-flathub-curated-section.vala:50
 msgid "Find your new favorite note taking tool"
 msgstr "寻找您新的最爱笔记工具"
 
-#: src/bz-flathub-curated-section.c:75
+#: src/bz-flathub-curated-section.vala:51
 msgid "Get Focused"
 msgstr "集中精力"
 
-#: src/bz-flathub-curated-section.c:75
+#: src/bz-flathub-curated-section.vala:51
 msgid "Great apps for task management"
 msgstr "用于任务管理的极好应用"
 
-#: src/bz-flathub-curated-section.c:76
+#: src/bz-flathub-curated-section.vala:52
 msgid "Make Some Noise"
 msgstr "制造一些声音"
 
-#: src/bz-flathub-curated-section.c:76
+#: src/bz-flathub-curated-section.vala:52
 msgid "Apps for creating and producing music"
 msgstr "用于创作和生产音乐的应用"
 
-#: src/bz-flathub-curated-section.c:77
+#: src/bz-flathub-curated-section.vala:53
 msgid "Get To Work"
 msgstr "开始工作"
 
-#: src/bz-flathub-curated-section.c:77
+#: src/bz-flathub-curated-section.vala:53
 msgid "Essential office apps"
 msgstr "必需的办公应用"
 
@@ -1619,50 +1605,42 @@ msgstr "我们 ♥ 游戏"
 msgid "Games and apps to run your favorite titles"
 msgstr "运行您最爱作品的游戏和应用"
 
-#: src/bz-full-view.blp:33
-msgid "No Results"
-msgstr "无结果"
-
-#: src/bz-full-view.blp:34
-msgid "Try a different search query"
-msgstr "尝试不同的搜索关键字"
-
-#: src/bz-full-view.blp:103
+#: src/bz-full-view.blp:93
 msgid ""
 "This is a local preview, some details may differ from the published listing"
 msgstr "这是一个本地预览，部分细节可能与已发布的列表有所不同"
 
-#: src/bz-full-view.blp:106
+#: src/bz-full-view.blp:96
 msgid "Preview Store Appearance"
 msgstr "预览商店外观"
 
-#: src/bz-full-view.blp:233
+#: src/bz-full-view.blp:223
 msgid "_Support"
 msgstr "支持(_S)"
 
-#: src/bz-full-view.blp:458
+#: src/bz-full-view.blp:448
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr "此应用使用的运行时已不再接收更新或安全修复。使用它可能存在安全隐患。"
 
-#: src/bz-full-view.blp:536
+#: src/bz-full-view.blp:526
 msgid "Trash Data"
 msgstr "垃圾数据"
 
-#: src/bz-full-view.blp:599
+#: src/bz-full-view.blp:589
 msgid "Add-ons"
 msgstr "附加组件"
 
-#: src/bz-full-view.blp:634
+#: src/bz-full-view.blp:624
 msgid "More Add-Ons"
 msgstr "更多附加组件"
 
-#: src/bz-full-view.blp:645
+#: src/bz-full-view.blp:635
 msgid "Links"
 msgstr "链接"
 
-#: src/bz-full-view.blp:676
+#: src/bz-full-view.blp:666
 msgid "Similar Apps"
 msgstr "相似应用"
 
@@ -1684,39 +1662,35 @@ msgstr ""
 "该应用具有专有许可证，这意味着源代码是私人开发的且无法由独立第三方审核。"
 
 #: src/bz-full-view.c:207
-msgid "More Apps"
-msgstr "更多应用"
+msgid "Other Apps From This Developer"
+msgstr "此开发者的其他应用"
 
 #: src/bz-full-view.c:208
 #, c-format
-msgid "More Apps by %s"
-msgstr "来自 %s 的更多应用"
-
-#: src/bz-full-view.c:215
-msgid "Other Apps by this Developer"
-msgstr "该开发者的其他应用"
-
-#: src/bz-full-view.c:217 src/bz-full-view.c:309
-#, c-format
-msgid "Other Apps by %s"
+msgid "Other Apps From %s"
 msgstr "来自 %s 的其他应用"
 
-#: src/bz-full-view.c:226
+#: src/bz-full-view.c:223
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr "%s 未安装，但仍存在 <b>%s</b> 的数据。"
 
-#: src/bz-full-view.c:311
-msgid "Other Apps"
-msgstr "其他应用"
+#: src/bz-full-view.c:306
+#, c-format
+msgid "Apps by %s"
+msgstr "%s 的应用"
 
-#: src/bz-full-view.c:313
+#: src/bz-full-view.c:308
+msgid "Apps by This Developer"
+msgstr "此开发者的应用"
+
+#: src/bz-full-view.c:310
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
 msgstr[0] "%d 个应用程序"
 
-#: src/bz-full-view.c:470 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:467 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "移除用户数据失败"
 
@@ -1924,11 +1898,11 @@ msgid "%u Installed App"
 msgid_plural "%u Installed Apps"
 msgstr[0] "%u 个已安装应用"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:786
+#: src/bz-library-page.c:629 src/bz-search-page.c:821
 msgid "No applications found"
 msgstr "未找到应用程序"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:788
+#: src/bz-library-page.c:629 src/bz-search-page.c:823
 #, c-format
 msgid "One application found"
 msgid_plural "%u applications found"
@@ -2299,12 +2273,12 @@ msgstr "此发布版本未提供详情"
 msgid "Get More Information"
 msgstr "获取更多信息"
 
-#: src/bz-rich-app-tile.blp:218
+#: src/bz-rich-app-tile.blp:219
 msgid "Uninstall"
 msgstr "卸载"
 
 #. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
-#: src/bz-rich-app-tile.c:383
+#: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "获取"
 
@@ -2424,12 +2398,12 @@ msgstr "无截图"
 msgid "Open Screenshot Viewer"
 msgstr "打开截图查看器"
 
-#: src/bz-screenshots-carousel.c:308
+#: src/bz-screenshots-carousel.c:310
 #, c-format
 msgid "Screenshot %u %s"
 msgstr "截图 %u %s"
 
-#: src/bz-screenshots-carousel.c:310
+#: src/bz-screenshots-carousel.c:312
 #, c-format
 msgid "Screenshot %u"
 msgstr "截图 %u"
@@ -2474,23 +2448,23 @@ msgstr "搜索应用、游戏、软件"
 msgid "Search Filters"
 msgstr "搜索筛选器"
 
-#: src/bz-search-page.blp:170
+#: src/bz-search-page.blp:171
 msgid "Browse Categories"
 msgstr "浏览分类"
 
-#: src/bz-search-page.blp:206
+#: src/bz-search-page.blp:207
 msgid "Categories Unavailable"
 msgstr "分类不可用"
 
-#: src/bz-search-page.blp:207
+#: src/bz-search-page.blp:208
 msgid "Search for apps using the search bar above."
 msgstr "使用上方搜索栏搜索应用。"
 
-#: src/bz-search-page.blp:325
+#: src/bz-search-page.blp:326
 msgid "No Applications Found"
 msgstr "未找到应用程序"
 
-#: src/bz-search-page.c:249
+#: src/bz-search-page.c:254
 #, c-format
 msgid "No results found for \"%s\" in Flathub"
 msgstr "在 Flathub 中未找到“%s”的结果"
@@ -2670,11 +2644,11 @@ msgstr "%.2fK 总安装量"
 msgid "%'d Total Installs"
 msgstr "%'d 总安装量"
 
-#: src/bz-subcategory-list.c:78
+#: src/bz-subcategory-list.c:77
 msgid "No Results Found"
 msgstr "未找到结果"
 
-#: src/bz-subcategory-list.c:100
+#: src/bz-subcategory-list.c:99
 msgid "Search failed"
 msgstr "搜索失败"
 
@@ -2993,7 +2967,7 @@ msgid "Log Out"
 msgstr "登出"
 
 #. Translators: %s is the title of the current page
-#: src/bz-window.c:380
+#: src/bz-window.c:379
 #, c-format
 msgid "Bazaar — %s"
 msgstr "集市 — %s"
@@ -3002,11 +2976,11 @@ msgstr "集市 — %s"
 msgid "Failed to launch application"
 msgstr "启动应用程序失败"
 
-#: src/bz-window.c:953
+#: src/bz-window.c:952
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "您无法从“集市”移除“集市”！"
 
-#: src/bz-window.c:1327 src/bz-window.c:1361
+#: src/bz-window.c:1326 src/bz-window.c:1360
 msgid "Can't do that right now!"
 msgstr "无法立刻那么做！"
 
@@ -3523,6 +3497,34 @@ msgstr "%s 和 %s 已经更新。"
 #, c-format
 msgid "Includes %s, %s and %s."
 msgstr "包括 %s、%s 和 %s。"
+
+#~ msgid "Ubuntu Troubles!"
+#~ msgstr "Ubuntu 问题！"
+
+#~ msgid "Malformed Link"
+#~ msgstr "格式错误的链接"
+
+#~ msgid ""
+#~ "The link used to open this app has incorrect capitalization and may stop "
+#~ "working in the future.\n"
+#~ "\n"
+#~ "This is most likely caused by KRunner sending incorrect app IDs"
+#~ msgstr ""
+#~ "打开此应用的链接具有错误的大写字母且可能在未来停止工作。\n"
+#~ "\n"
+#~ "这很可能是由于 KRunner 发送了错误的应用 ID 导致的"
+
+#~ msgid "No Results"
+#~ msgstr "无结果"
+
+#~ msgid "Try a different search query"
+#~ msgstr "尝试不同的搜索关键字"
+
+#~ msgid "More Apps"
+#~ msgstr "更多应用"
+
+#~ msgid "Other Apps"
+#~ msgstr "其他应用"
 
 #~ msgid "Exhibit app page"
 #~ msgstr "展示应用页面"
