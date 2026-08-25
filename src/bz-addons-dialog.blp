@@ -162,7 +162,6 @@ template $BzAddonsDialog: Adw.Dialog {
                   $BzContextTile {
                     label: bind $get_size_label($is_zero(template.selected-group as <$BzEntryGroup>.removable) as <bool>) as <string>;
                     clicked => $size_cb(template);
-                    has-tooltip: true;
                     tooltip-text: bind $format_size_tooltip(template.selected-ui-entry as <$BzResult>.object as <$BzEntry>.size) as <string>;
                     lozenge-style: "grey";
                     sensitive: bind $invert_boolean($is_zero($get_size_type(template.selected-ui-entry as <$BzResult>.object as <$BzEntry>, $is_zero(template.selected-group as <$BzEntryGroup>.removable) as <bool>) as <uint64>) as <bool>) as <bool>;
@@ -183,7 +182,6 @@ template $BzAddonsDialog: Adw.Dialog {
                     label: bind $get_license_label(template.selected-ui-entry as <$BzResult>.object as <$BzEntry>) as <string>;
                     clicked => $license_cb(template);
                     lozenge-style: bind $bool_to_string(template.selected-ui-entry as <$BzResult>.object as <$BzEntry>.is-floss, "grey", "warning") as <string>;
-                    has-tooltip: true;
                     tooltip-text: bind $format_license_tooltip(template.selected-ui-entry as <$BzResult>.object as <$BzEntry>) as <string>;
 
                     lozenge-child: Box {
@@ -204,7 +202,6 @@ template $BzAddonsDialog: Adw.Dialog {
                     sensitive: bind $invert_boolean($is_null(template.selected-ui-entry as <$BzResult>.object as <$BzEntry>.recent-downloads) as <bool>) as <bool>;
                     label: _("Downloads/Month");
                     clicked => $dl_stats_cb(template);
-                    has-tooltip: bind $invert_boolean($is_null(template.selected-ui-entry as <$BzResult>.object as <$BzEntry>.recent-downloads) as <bool>) as <bool>;
                     tooltip-text: bind $format_recent_downloads_tooltip(template.selected-ui-entry as <$BzResult>.object as <$BzEntry>.recent-downloads) as <string>;
                     lozenge-style: "grey";
 

@@ -87,7 +87,6 @@ template $BzUpdateHistoryDialog: Adw.Dialog {
                         xalign: 0.0;
                         ellipsize: end;
                         single-line-mode: true;
-                        has-tooltip: true;
                         tooltip-text: bind template.item as <$BzUpdateHistoryDataPoint>.group as <$BzEntryGroup>.id;
                         label: bind template.item as <$BzUpdateHistoryDataPoint>.group as <$BzEntryGroup>.title;
                       }

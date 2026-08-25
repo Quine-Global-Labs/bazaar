@@ -31,7 +31,6 @@ template $BzInstallControls: Box {
                   template.tracker as <$BzTransactionEntryTracker>.progress as <double>
                 ) as <string>, $install_btn_state_fallback() as <string>};
 
-        has-tooltip: true;
         hexpand: bind $invert_boolean(template.wide) as <bool>;
         halign: bind $choose_int(template.wide, 2, 0) as <int>;
       };
@@ -53,7 +52,6 @@ template $BzInstallControls: Box {
             "pill",
           ]
           visible: bind $invert_boolean($is_blocked(template.state as <$BzStateInfo>.parental-blocked-ids, template.entry-group as <$BzEntryGroup>) as <bool>) as <bool>;
-          has-tooltip: true;
           hexpand: bind $invert_boolean(template.wide) as <bool>;
           label: _("_Open");
           use-underline: true;
@@ -69,7 +67,6 @@ template $BzInstallControls: Box {
 
           width-request: bind $choose_int(template.wide, 45, -1) as <int>;
           hexpand: bind $invert_boolean(template.wide) as <bool>;
-          has-tooltip: bind template.wide as <bool>;
           tooltip-text: _("Uninstall Application");
           sensitive: bind $invert_boolean($is_zero(template.entry-group as <$BzEntryGroup>.removable-and-available) as <bool>) as <bool>;
           clicked => $remove_cb(template);
@@ -124,7 +121,6 @@ template $BzInstallControls: Box {
 
           width-request: bind $choose_int(template.wide, 45, -1) as <int>;
           hexpand: bind $invert_boolean(template.wide) as <bool>;
-          has-tooltip: bind template.wide as <bool>;
           tooltip-text: _("Uninstall Application");
           sensitive: bind $invert_boolean($is_zero(template.entry-group as <$BzEntryGroup>.removable-and-available) as <bool>) as <bool>;
           clicked => $remove_cb(template);

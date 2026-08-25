@@ -215,7 +215,6 @@ template $BzRichAppTile: $BzListTile {
             ]
 
             icon-name: "user-trash-symbolic";
-            has-tooltip: true;
             tooltip-text: _("Uninstall");
             valign: center;
             clicked => $remove_button_clicked_cb(template);
@@ -230,7 +229,6 @@ template $BzRichAppTile: $BzListTile {
             ]
 
             icon-name: "cross-large-circle-filled-symbolic";
-            has-tooltip: true;
             tooltip-text: _("Cancel");
             valign: center;
             clicked => $cancel_button_clicked_cb(template);

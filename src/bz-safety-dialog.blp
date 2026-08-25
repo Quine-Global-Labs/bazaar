@@ -124,7 +124,6 @@ template $BzSafetyDialog: Adw.Bin {
                 title: _("SDK");
                 subtitle: bind template.entry as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.title;
                 subtitle-selectable: true;
-                has-tooltip: true;
                 tooltip-text: bind template.entry as <$BzFlatpakEntry>.application-runtime;
                 visible: bind $invert_boolean(
                   $is_null(template.entry as <$BzFlatpakEntry>.runtime as <$BzResult>.object) as <bool>
