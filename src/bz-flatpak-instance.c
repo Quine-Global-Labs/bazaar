@@ -1371,7 +1371,7 @@ load_local_ref_fiber (LoadLocalRefData *data)
                                     "runtime-repo", runtime_repo,
                                     NULL);
 
-      return dex_future_new_for_object (g_steal_pointer (&bundle_result));
+      return dex_future_new_for_object (bundle_result);
     }
 }
 
@@ -2132,7 +2132,7 @@ list_repositories_fiber (ListReposData *data)
         }
     }
 
-  return dex_future_new_for_object (g_steal_pointer (&repos));
+  return dex_future_new_for_object (repos);
 }
 
 static DexFuture *
