@@ -309,7 +309,6 @@ template $BzTransactionTile: $BzListTile {
             visible: bind $is_ongoing(template.tracker as <$BzTransactionEntryTracker>.status as <$BzTransactionEntryStatus>) as <bool>;
 
             icon-name: "media-playback-stop-symbolic";
-            has-tooltip: true;
             valign: center;
             tooltip-text: _("Cancel Transaction");
             clicked => $cancel_cb(template);
@@ -427,7 +426,6 @@ template $BzTransactionTile: $BzListTile {
                       single-line-mode: true;
                       label: bind template.item as <$BzTransactionTask>.op as <$BzBackendTransactionOpPayload>.name;
                       visible: bind $invert_boolean($is_null(template.item as <$BzTransactionTask>.error) as <bool>) as <bool>;
-                      has-tooltip: true;
                       tooltip-text: bind template.item as <$BzTransactionTask>.error as <string>;
                     }
 
@@ -435,7 +433,6 @@ template $BzTransactionTile: $BzListTile {
                       icon-name: "info-outline-symbolic";
                       clicked => $error_clicked_cb(template);
                       visible: bind $invert_boolean($is_null(template.item as <$BzTransactionTask>.error) as <bool>) as <bool>;
-                      has-tooltip: true;
                       tooltip-text: _("Show Error Info");
 
                       styles [

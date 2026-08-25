@@ -10,7 +10,6 @@ template $BzFavoriteButton: Button {
   margin-top: 8;
   valign: start;
   halign: start;
-  has-tooltip: true;
   tooltip-text: _("Favorite Count");
   visible: bind template.entry as <$BzEntry>.is-flathub;
   clicked => $button_clicked_cb() swapped;

@@ -13,7 +13,6 @@ template $BzEntrySelectionRow: Adw.ActionRow {
   Image {
     visible: bind template.repository as <$BzRepository>.is-user;
     icon-name: "person-symbolic";
-    has-tooltip: true;
     tooltip-text: _("For This User Only");
   }
 

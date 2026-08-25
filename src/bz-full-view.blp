@@ -214,7 +214,6 @@ template $BzFullView: Adw.Bin {
                                 margin-top: 8;
                                 valign: start;
                                 halign: start;
-                                has-tooltip: true;
                                 tooltip-text: bind template.ui-entry as <$BzResult>.object as <$BzEntry>.donation-url;
                                 clicked => $support_cb(template);
 
@@ -261,7 +260,6 @@ template $BzFullView: Adw.Bin {
                               template.entry-group as <$BzEntryGroup>.ui-entry as <$BzResult>.object as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.installed,
                               template.entry-group as <$BzEntryGroup>.ui-entry as <$BzResult>.object as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.size,
                             ) as <string>, $get_size_label($is_zero(template.entry-group as <$BzEntryGroup>.removable) as <bool>,0,0) as <string>};
-                            has-tooltip: true;
                             tooltip-text: bind $format_size_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.size) as <string>;
                             lozenge-style: "grey";
                             sensitive: bind $invert_boolean($is_zero($get_size_type(template.ui-entry as <$BzResult>.object as <$BzEntry>, $is_zero(template.entry-group as <$BzEntryGroup>.removable) as <bool>) as <uint64>) as <bool>) as <bool>;
@@ -283,7 +281,6 @@ template $BzFullView: Adw.Bin {
                             label: bind $get_license_label(template.ui-entry as <$BzResult>.object as <$BzEntry>) as <string>;
                             lozenge-style: bind $bool_to_string(template.ui-entry as <$BzResult>.object as <$BzEntry>.is-floss, "grey", "warning") as <string>;
                             clicked => $license_cb(template);
-                            has-tooltip: true;
                             tooltip-text: bind $format_license_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>) as <string>;
 
                             lozenge-child: Box {
@@ -329,7 +326,6 @@ template $BzFullView: Adw.Bin {
 
                           $BzContextTile formfactor_support_tile_wide {
                             label: bind $get_formfactor_label(template.ui-entry as <$BzResult>.object as <$BzEntry>.is-mobile-friendly) as <string>;
-                            has-tooltip: true;
                             tooltip-text: bind $get_formfactor_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.is-mobile-friendly) as <string>;
                             clicked => $formfactor_cb(template);
                             lozenge-style: "grey";
@@ -354,7 +350,6 @@ template $BzFullView: Adw.Bin {
 
                           $BzContextTile formfactor_support_tile_narrow {
                             label: bind $get_formfactor_label(template.ui-entry as <$BzResult>.object as <$BzEntry>.is-mobile-friendly) as <string>;
-                            has-tooltip: true;
                             tooltip-text: bind $get_formfactor_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.is-mobile-friendly) as <string>;
                             clicked => $formfactor_cb(template);
                             lozenge-style: bind $bool_to_string(template.ui-entry as <$BzResult>.object as <$BzEntry>.is-mobile-friendly, "grey", "error") as <string>;
@@ -380,7 +375,6 @@ template $BzFullView: Adw.Bin {
 
                           $BzContextTile {
                             clicked => $age_rating_cb(template);
-                            has-tooltip: true;
                             tooltip-text: bind $get_age_rating_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.content-rating) as <string>;
                             label: bind $get_age_rating_label(template.ui-entry as <$BzResult>.object as <$BzEntry>.content-rating) as <string>;
                             lozenge-style: bind $get_age_rating_style(template.ui-entry as <$BzResult>.object as <$BzEntry>.content-rating) as <string>;
@@ -396,7 +390,6 @@ template $BzFullView: Adw.Bin {
                             sensitive: bind $invert_boolean($is_null(template.ui-entry as <$BzResult>.object as <$BzEntry>.recent-downloads) as <bool>) as <bool>;
                             clicked => $dl_stats_cb(template);
                             label: _("Downloads/Month");
-                            has-tooltip: bind $invert_boolean($is_null(template.ui-entry as <$BzResult>.object as <$BzEntry>.recent-downloads) as <bool>) as <bool>;
                             tooltip-text: bind $format_recent_downloads_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.recent-downloads) as <string>;
                             lozenge-style: "grey";
 

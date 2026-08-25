@@ -160,7 +160,6 @@ template $BzWindow: Adw.ApplicationWindow {
                       visible: bind template.state as <$BzStateInfo>.debug-mode;
 
                       Button {
-                        has-tooltip: true;
                         tooltip-text: "Open Bazaar Inspector";
                         icon-name: "bug-symbolic";
                         action-name: "app.bazaar-inspector";
@@ -194,7 +193,6 @@ template $BzWindow: Adw.ApplicationWindow {
                       child: Adw.Spinner {
                         width-request: 16;
                         height-request: 16;
-                        has-tooltip: true;
                         tooltip-text: bind template.state as <$BzStateInfo>.background-task-label;
                       };
                     }
@@ -219,7 +217,6 @@ template $BzWindow: Adw.ApplicationWindow {
                     MenuButton {
                       primary: true;
                       icon-name: "open-menu-symbolic";
-                      has-tooltip: true;
                       tooltip-text: _("Main Menu");
                       menu-model: primary_menu;
                     }

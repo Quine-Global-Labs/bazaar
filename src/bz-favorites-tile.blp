@@ -33,7 +33,6 @@ template $BzFavoritesTile: $BzListTile {
         xalign: 0.0;
         ellipsize: end;
         single-line-mode: true;
-        has-tooltip: true;
         tooltip-text: bind template.group as <$BzEntryGroup>.id;
         label: bind template.group as <$BzEntryGroup>.title;
       }
@@ -56,7 +55,6 @@ template $BzFavoritesTile: $BzListTile {
         "support"
       ]
 
-      has-tooltip: true;
       tooltip-text: _("Support This Application");
 
       width-request: 32;
@@ -82,7 +80,6 @@ template $BzFavoritesTile: $BzListTile {
         width-request: 32;
         height-request: 32;
         valign: center;
-        has-tooltip: true;
         visible: bind $invert_boolean($logical_and($is_zero(template.group as <$BzEntryGroup>.removable) as <bool>, $is_zero(template.group as <$BzEntryGroup>.installable) as <bool>) as <bool>) as <bool>;
         tooltip-text: bind $get_install_remove_tooltip(template.group as <$BzEntryGroup>.removable) as <string>;
         sensitive: bind $switch_bool(
@@ -105,7 +102,6 @@ template $BzFavoritesTile: $BzListTile {
             width-request: 32;
             height-request: 32;
             valign: center;
-            has-tooltip: true;
             tooltip-text: _("Remove From Favorites");
             icon-name: "bookmark-filled-symbolic";
             clicked => $unfavorite_cb() swapped;

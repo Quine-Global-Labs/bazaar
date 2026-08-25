@@ -13,7 +13,6 @@ template $BzFavoritesPage: Adw.NavigationPage {
         styles [
           "flat",
         ]
-        has-tooltip: true;
         tooltip-text: _("Install All");
         icon-name: "list-add-symbolic";
         sensitive: bind $invert_boolean($is_empty(template.favorites) as <bool>) as <bool>;
