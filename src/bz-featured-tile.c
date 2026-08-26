@@ -337,6 +337,12 @@ get_start_margin (gpointer object, gboolean narrow)
   return narrow ? 20 : 50;
 }
 
+static int
+get_icon_box_v_margin (gpointer object, gboolean narrow)
+{
+  return narrow ? 30 : 50;
+}
+
 static void
 bz_featured_tile_dispose (GObject *object)
 {
@@ -449,6 +455,7 @@ bz_featured_tile_class_init (BzFeaturedTileClass *klass)
   gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-featured-tile.ui");
   gtk_widget_class_bind_template_callback (widget_class, invert_boolean);
   gtk_widget_class_bind_template_callback (widget_class, get_start_margin);
+  gtk_widget_class_bind_template_callback (widget_class, get_icon_box_v_margin);
 
   gtk_widget_class_bind_template_child (widget_class, BzFeaturedTile, image);
   gtk_widget_class_bind_template_child (widget_class, BzFeaturedTile, title);
