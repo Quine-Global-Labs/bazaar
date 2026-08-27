@@ -198,7 +198,7 @@ support_cb (BzInstalledTile *self,
   if (url == NULL)
     return;
 
-  g_app_info_launch_default_for_uri (url, NULL, NULL);
+  gtk_widget_activate_action (GTK_WIDGET (button), "window.open-uri", "s", url);
 }
 
 static void

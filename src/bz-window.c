@@ -763,6 +763,36 @@ action_open_user_data_folder (GtkWidget  *widget,
 }
 
 static void
+open_uri_finish_cb (GObject      *source,
+                    GAsyncResult *result,
+                    gpointer      user_data)
+{
+  g_autoptr (BzWindow) self      = BZ_WINDOW (user_data);
+  GtkUriLauncher   *launcher     = GTK_URI_LAUNCHER (source);
+  g_autoptr (GError) local_error = NULL;
+
+  if (!gtk_uri_launcher_launch_finish (launcher, result, &local_error) &&
+      !g_error_matches (local_error, GTK_DIALOG_ERROR, GTK_DIALOG_ERROR_DISMISSED))
+    bz_show_error_for_widget (GTK_WIDGET (self), _ ("Could not open link"), local_error->message);
+}
+
+static void
+action_open_uri (GtkWidget  *widget,
+                 const char *action_name,
+                 GVariant   *parameter)
+{
+  BzWindow                  *self     = BZ_WINDOW (widget);
+  const char                 *uri     = g_variant_get_string (parameter, NULL);
+  g_autoptr (GtkUriLauncher) launcher = NULL;
+
+  if (uri == NULL || *uri == '\0')
+    return;
+
+  launcher = gtk_uri_launcher_new (uri);
+  gtk_uri_launcher_launch (launcher, GTK_WINDOW (self), NULL, open_uri_finish_cb, g_object_ref (self));
+}
+
+static void
 bz_window_class_init (BzWindowClass *klass)
 {
   GObjectClass   *object_class = G_OBJECT_CLASS (klass);
@@ -835,6 +865,7 @@ bz_window_class_init (BzWindowClass *klass)
   gtk_widget_class_install_action (widget_class, "window.launch-group", "s", action_launch_group);
   gtk_widget_class_install_action (widget_class, "window.activate-hook-app", "s", action_activate_hook_app);
   gtk_widget_class_install_action (widget_class, "window.open-user-data-folder", "s", action_open_user_data_folder);
+  gtk_widget_class_install_action (widget_class, "window.open-uri", "s", action_open_uri);
 
   gtk_widget_class_add_binding_action (widget_class, GDK_KEY_d, GDK_CONTROL_MASK, "window.open-library", NULL);
   gtk_widget_class_add_binding_action (widget_class, GDK_KEY_w, GDK_CONTROL_MASK, "window.close", NULL);

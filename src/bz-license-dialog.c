@@ -244,7 +244,7 @@ contribute_cb (BzLicenseDialog *self)
   url       = bz_url_get_url (first_url);
 
   if (url != NULL && *url != '\0')
-    g_app_info_launch_default_for_uri (url, NULL, NULL);
+    gtk_widget_activate_action (GTK_WIDGET (self), "window.open-uri", "s", url);
 }
 
 static char *
@@ -284,8 +284,9 @@ static void
 eula_cb (BzLicenseDialog *self)
 {
   g_autofree char *url = get_eula_url (self->entry);
-  if (url != NULL)
-    g_app_info_launch_default_for_uri (url, NULL, NULL);
+
+  if (url != NULL && *url != '\0')
+    gtk_widget_activate_action (GTK_WIDGET (self), "window.open-uri", "s", url);
 }
 
 static void
