@@ -379,5 +379,5 @@ follow_link_cb (BzShareList *self,
   const char *link = NULL;
 
   link = g_object_get_data (G_OBJECT (widget), "url");
-  g_app_info_launch_default_for_uri (link, NULL, NULL);
+  gtk_widget_activate_action (GTK_WIDGET (widget), "window.open-uri", "s", link);
 }

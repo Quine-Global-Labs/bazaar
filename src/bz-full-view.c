@@ -328,9 +328,7 @@ open_url_cb (BzFullView   *self,
   url   = bz_entry_get_url (entry);
 
   if (url != NULL && *url != '\0')
-    g_app_info_launch_default_for_uri (url, NULL, NULL);
-  else
-    g_warning ("Invalid or empty URL provided for Flathub URL CB");
+    gtk_widget_activate_action (GTK_WIDGET (row), "window.open-uri", "s", url);
 }
 
 static void
@@ -494,16 +492,16 @@ static void
 support_cb (BzFullView *self,
             GtkButton  *button)
 {
-  BzEntry *entry = NULL;
+  BzEntry    *entry = NULL;
+  const char *url   = NULL;
 
   entry = bz_result_get_object (self->ui_entry);
-  if (entry != NULL)
-    {
-      const char *url = NULL;
+  if (entry == NULL)
+    return;
 
-      url = bz_entry_get_donation_url (entry);
-      g_app_info_launch_default_for_uri (url, NULL, NULL);
-    }
+  url = bz_entry_get_donation_url (entry);
+  if (url != NULL && *url != '\0')
+    gtk_widget_activate_action (GTK_WIDGET (button), "window.open-uri", "s", url);
 }
 
 static GListModel *

@@ -90,8 +90,7 @@ static void
 donate_clicked (BzDonationsDialog *self,
                 GtkButton         *button)
 {
-  g_app_info_launch_default_for_uri (
-      DONATE_LINK, NULL, NULL);
+  gtk_widget_activate_action (GTK_WIDGET (button), "window.open-uri", "s", DONATE_LINK);
 }
 
 static void
@@ -99,7 +98,7 @@ release_page_clicked (BzDonationsDialog *self,
                       GtkButton         *button)
 {
   if (self->release_url != NULL)
-    g_app_info_launch_default_for_uri (self->release_url, NULL, NULL);
+    gtk_widget_activate_action (GTK_WIDGET (button), "window.open-uri", "s", self->release_url);
 }
 
 static void

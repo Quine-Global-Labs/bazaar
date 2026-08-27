@@ -251,10 +251,13 @@ open_file_externally_cb (GtkListItem *list_item,
   }
 #else
   {
-    g_autofree char *uri = NULL;
+    g_autofree char             *uri      = NULL;
+    g_autoptr (GtkUriLauncher)   launcher = NULL;
 
-    uri = g_strdup_printf ("file://%s", path);
-    g_app_info_launch_default_for_uri (uri, NULL, NULL);
+    uri      = g_strdup_printf ("file://%s", path);
+    launcher = gtk_uri_launcher_new (uri);
+
+    gtk_uri_launcher_launch (launcher, GTK_WINDOW (gtk_widget_get_root (widget)), NULL, NULL, NULL);
   }
 #endif
 }
