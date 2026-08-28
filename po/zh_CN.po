@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-24 21:45+0000\n"
-"PO-Revision-Date: 2026-08-25 07:51+0800\n"
+"POT-Creation-Date: 2026-08-27 12:17+0000\n"
+"PO-Revision-Date: 2026-08-28 11:39+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:210 src/bz-window.c:376 src/bz-window.c:377
+#: src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
 msgid "Bazaar"
 msgstr "集市"
 
@@ -95,7 +95,7 @@ msgstr "搜索页面"
 msgid "Category page"
 msgstr "分类页面"
 
-#: src/bz-addon-tile.blp:64 src/bz-installed-tile.blp:55
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54
 #: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "已停止接收更新"
@@ -117,7 +117,7 @@ msgid "Add-on"
 msgstr "附加组件"
 
 #: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
-#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:96
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
 msgid "Manage Add-Ons"
 msgstr "管理附加组件"
 
@@ -135,15 +135,15 @@ msgstr "您当前的筛选首选项隐藏了所有已知附加组件。请尝试
 msgid "Add-on Page"
 msgstr "附加组件页面"
 
-#: src/bz-addons-dialog.blp:205 src/bz-full-view.blp:398
+#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:392
 msgid "Downloads/Month"
 msgstr "下载/月"
 
-#: src/bz-addons-dialog.blp:232 src/bz-full-view.blp:434
+#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:427
 msgid "Stopped Receiving Core Updates"
 msgstr "已停止接收核心更新"
 
-#: src/bz-addons-dialog.blp:246
+#: src/bz-addons-dialog.blp:243
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security "
 "fixes. It may become unsafe to use."
@@ -155,11 +155,11 @@ msgstr ""
 msgid "Add-on for %s"
 msgstr "%s 的附加组件"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
 msgid "Show Less"
 msgstr "显示更少"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "显示更多"
 
@@ -683,27 +683,27 @@ msgstr "从互联网下载的大小"
 msgid "Size on Disk"
 msgstr "磁盘上的大小"
 
-#: src/bz-app-size-dialog.blp:203
+#: src/bz-app-size-dialog.blp:202
 msgid "Open user data folder"
 msgstr "打开用户数据文件夹"
 
-#: src/bz-app-size-dialog.blp:213
+#: src/bz-app-size-dialog.blp:212
 msgid "Your User Data"
 msgstr "您的用户数据"
 
-#: src/bz-app-size-dialog.blp:214
+#: src/bz-app-size-dialog.blp:213
 msgid "Caches, settings, and other app data"
 msgstr "缓存、设置和其他应用数据"
 
-#: src/bz-app-size-dialog.blp:234
+#: src/bz-app-size-dialog.blp:233
 msgid "Cache"
 msgstr "缓存"
 
-#: src/bz-app-size-dialog.blp:235
+#: src/bz-app-size-dialog.blp:234
 msgid "Temporary cached data"
 msgstr "临时缓存数据"
 
-#: src/bz-app-size-dialog.blp:247
+#: src/bz-app-size-dialog.blp:246
 msgid "Clear Cache"
 msgstr "清除缓存"
 
@@ -1007,33 +1007,33 @@ msgstr "%s 应用 ID 的所有权已通过验证。"
 msgid "Bazaar Release"
 msgstr "集市发布"
 
-#: src/bz-donations-dialog.blp:77
+#: src/bz-donations-dialog.blp:76
 msgid "Full Release Notes"
 msgstr "完整发布说明"
 
-#: src/bz-donations-dialog.blp:112
+#: src/bz-donations-dialog.blp:111
 msgid "This release was made possible by users like you!"
 msgstr "正是因为有了您这样的用户才能有此次发行！"
 
-#: src/bz-donations-dialog.blp:121
+#: src/bz-donations-dialog.blp:120
 msgid ""
 "I love making Bazaar, but I cannot do it alone. Help support further "
 "development by donating on Ko-Fi."
 msgstr ""
 "我热爱开发“集市”，但我一个人的力量有限。请考虑在 Ko-Fi 捐助以支持后续开发。"
 
-#: src/bz-donations-dialog.blp:136
+#: src/bz-donations-dialog.blp:134
 msgid "Donate to Bazaar"
 msgstr "向集市捐助"
 
 #. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
-#: src/bz-donations-dialog.c:228
+#: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "查看 %s 新特性？"
 
 #. Translators: this is a release date label, like "Released February 9, 2026"
-#: src/bz-donations-dialog.c:244
+#: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "发布于 %Y年%-m月%-d日"
 
@@ -1047,11 +1047,11 @@ msgid ""
 "to proceed with?"
 msgstr "您已安装此应用的多个版本。您希望用哪一个继续？"
 
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:234
+#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "取消"
 
-#: src/bz-entry-selection-row.blp:17
+#: src/bz-entry-selection-row.blp:16
 msgid "For This User Only"
 msgstr "仅用于此用户"
 
@@ -1078,7 +1078,7 @@ msgstr "复制"
 msgid "Copied!"
 msgstr "已复制！"
 
-#: src/bz-favorite-button.blp:14
+#: src/bz-favorite-button.blp:13
 msgid "Favorite Count"
 msgstr "收藏计数"
 
@@ -1094,27 +1094,27 @@ msgstr "登录 Flathub 以管理收藏项目"
 msgid "Log In"
 msgstr "登录"
 
-#: src/bz-favorites-page.blp:5 src/bz-window.blp:345
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:342
 msgid "Favorites"
 msgstr "收藏"
 
-#: src/bz-favorites-page.blp:17 src/bz-section-view.blp:87
+#: src/bz-favorites-page.blp:16 src/bz-section-view.blp:87
 msgid "Install All"
 msgstr "安装全部"
 
-#: src/bz-favorites-page.blp:47
+#: src/bz-favorites-page.blp:46
 msgid "No Favorites"
 msgstr "无收藏"
 
-#: src/bz-favorites-page.blp:48
+#: src/bz-favorites-page.blp:47
 msgid "Applications you mark as favorite will appear here"
 msgstr "您标记为收藏的应用程序将在此处显示"
 
-#: src/bz-favorites-tile.blp:60
+#: src/bz-favorites-tile.blp:58
 msgid "Support This Application"
 msgstr "支持此应用程序"
 
-#: src/bz-favorites-tile.blp:109
+#: src/bz-favorites-tile.blp:105
 msgid "Remove From Favorites"
 msgstr "从收藏中移除"
 
@@ -1614,33 +1614,33 @@ msgstr "这是一个本地预览，部分细节可能与已发布的列表有所
 msgid "Preview Store Appearance"
 msgstr "预览商店外观"
 
-#: src/bz-full-view.blp:223
+#: src/bz-full-view.blp:222
 msgid "_Support"
 msgstr "支持(_S)"
 
-#: src/bz-full-view.blp:448
+#: src/bz-full-view.blp:441
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr "此应用使用的运行时已不再接收更新或安全修复。使用它可能存在安全隐患。"
 
-#: src/bz-full-view.blp:526
+#: src/bz-full-view.blp:519
 msgid "Trash Data"
 msgstr "垃圾数据"
 
-#: src/bz-full-view.blp:589
+#: src/bz-full-view.blp:582
 msgid "Add-ons"
 msgstr "附加组件"
 
-#: src/bz-full-view.blp:624
+#: src/bz-full-view.blp:617
 msgid "More Add-Ons"
 msgstr "更多附加组件"
 
-#: src/bz-full-view.blp:635
+#: src/bz-full-view.blp:628
 msgid "Links"
 msgstr "链接"
 
-#: src/bz-full-view.blp:666
+#: src/bz-full-view.blp:659
 msgid "Similar Apps"
 msgstr "相似应用"
 
@@ -1690,7 +1690,7 @@ msgid "%d Application"
 msgid_plural "%d Applications"
 msgstr[0] "%d 个应用程序"
 
-#: src/bz-full-view.c:467 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "移除用户数据失败"
 
@@ -1788,28 +1788,28 @@ msgstr "%s 在特定硬件上运行最佳"
 msgid "%s works on most devices"
 msgstr "%s 在大多数设备运行正常"
 
-#: src/bz-inspector.blp:23
+#: src/bz-inspector.blp:22
 msgid "Inspector Menu"
 msgstr "检查器菜单"
 
-#: src/bz-install-controls.blp:58
+#: src/bz-install-controls.blp:56
 msgid "_Open"
 msgstr "打开(_O)"
 
-#: src/bz-install-controls.blp:73 src/bz-install-controls.blp:128
+#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
 msgid "Uninstall Application"
 msgstr "卸载应用程序"
 
-#: src/bz-install-controls.blp:83 src/bz-transaction-dialog.c:230
+#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:230
 msgid "_Remove"
 msgstr "移除(_R)"
 
-#: src/bz-install-controls.blp:115 src/bz-updates-card.c:168
+#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168
 #: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "更新"
 
-#: src/bz-install-controls.blp:138 src/bz-installed-tile.blp:109
+#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "移除"
 
@@ -1833,7 +1833,7 @@ msgctxt "Install Controls"
 msgid "Cancelling"
 msgstr "正在取消"
 
-#: src/bz-installed-tile.blp:80
+#: src/bz-installed-tile.blp:78
 msgid "Donate"
 msgstr "捐助"
 
@@ -1982,7 +1982,7 @@ msgstr ""
 "\n"
 "您可能无法为此应用作出贡献。"
 
-#: src/bz-license-dialog.c:345 src/bz-license-dialog.c:364
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
 #: src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "许可证"
@@ -2038,7 +2038,7 @@ msgstr "首选项"
 msgid "Network connection is metered — automatic store data refresh is paused"
 msgstr "正在使用数据网络 - 已暂停自动刷新商店数据"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:243 src/bz-window.blp:254
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:240 src/bz-window.blp:251
 msgid "Refresh Manually"
 msgstr "手动刷新"
 
@@ -2273,7 +2273,7 @@ msgstr "此发布版本未提供详情"
 msgid "Get More Information"
 msgstr "获取更多信息"
 
-#: src/bz-rich-app-tile.blp:219
+#: src/bz-rich-app-tile.blp:218
 msgid "Uninstall"
 msgstr "卸载"
 
@@ -2322,7 +2322,7 @@ msgstr "应用 ID"
 msgid "SDK"
 msgstr "SDK"
 
-#: src/bz-safety-dialog.blp:158
+#: src/bz-safety-dialog.blp:157
 msgid ""
 "This app uses an outdated version of the software platform (SDK) and might "
 "contain bugs or security vulnerabilities which will not be fixed."
@@ -2810,15 +2810,15 @@ msgstr "已取消"
 msgid "Error"
 msgstr "出错"
 
-#: src/bz-transaction-tile.blp:314
+#: src/bz-transaction-tile.blp:313
 msgid "Cancel Transaction"
 msgstr "取消事务"
 
-#: src/bz-transaction-tile.blp:324
+#: src/bz-transaction-tile.blp:323
 msgid "Show Details"
 msgstr "显示详情"
 
-#: src/bz-transaction-tile.blp:439
+#: src/bz-transaction-tile.blp:436
 msgid "Show Error Info"
 msgstr "显示错误信息"
 
@@ -2849,11 +2849,11 @@ msgstr[0] "%u 个运行时更新"
 msgid "Installed Updates"
 msgstr "已安装更新"
 
-#: src/bz-update-history-dialog.blp:129 src/bz-update-history-dialog.c:99
+#: src/bz-update-history-dialog.blp:128 src/bz-update-history-dialog.c:99
 msgid "Release Notes"
 msgstr "发布说明"
 
-#: src/bz-update-history-dialog.blp:144
+#: src/bz-update-history-dialog.blp:143
 msgid "No Release Info"
 msgstr "无发布信息"
 
@@ -2880,11 +2880,11 @@ msgstr[0] "已清除 %u 个应用的用户数据"
 msgid "Trashed User Data for %s"
 msgstr "已清除 %s 的用户数据"
 
-#: src/bz-user-data-tile.blp:92
+#: src/bz-user-data-tile.blp:91
 msgid "Open User Data Folder"
 msgstr "打开用户数据文件夹"
 
-#: src/bz-user-data-tile.blp:103
+#: src/bz-user-data-tile.blp:102
 msgid "Trash User Data"
 msgstr "清除用户数据"
 
@@ -2909,60 +2909,60 @@ msgstr "软件库"
 msgid "Search"
 msgstr "搜索"
 
-#: src/bz-window.blp:223
+#: src/bz-window.blp:220
 msgid "Main Menu"
 msgstr "主菜单"
 
-#: src/bz-window.blp:234
+#: src/bz-window.blp:231
 msgid "You are running a new version of Bazaar!"
 msgstr "您正在运行新版本的“集市”！"
 
-#: src/bz-window.blp:235
+#: src/bz-window.blp:232
 msgid "See What's New"
 msgstr "查看新特性"
 
-#: src/bz-window.blp:242
+#: src/bz-window.blp:239
 msgid ""
 "You have a network connection but are viewing a cached version of Flathub"
 msgstr "您已连接网络，但正在查看 Flathub 的缓存版本"
 
-#: src/bz-window.blp:253
+#: src/bz-window.blp:250
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "正在使用数据网络 — 已禁用自动刷新"
 
-#: src/bz-window.blp:289
+#: src/bz-window.blp:286
 msgid "_Donate to Bazaar"
 msgstr "向集市捐助(_D)"
 
-#: src/bz-window.blp:295
+#: src/bz-window.blp:292
 msgid "_Refresh"
 msgstr "刷新(_R)"
 
-#: src/bz-window.blp:299
+#: src/bz-window.blp:296
 msgid "_Login With Flathub"
 msgstr "用 Flathub 登录(_L)"
 
-#: src/bz-window.blp:305
+#: src/bz-window.blp:302
 msgid "_Manage Leftover User Data"
 msgstr "管理遗留用户数据(_M)"
 
-#: src/bz-window.blp:311
+#: src/bz-window.blp:308
 msgid "_Preferences"
 msgstr "首选项(_P)"
 
-#: src/bz-window.blp:316
+#: src/bz-window.blp:313
 msgid "_Keyboard Shortcuts"
 msgstr "键盘快捷键(_K)"
 
-#: src/bz-window.blp:321
+#: src/bz-window.blp:318
 msgid "_About Bazaar"
 msgstr "关于集市(_A)"
 
-#: src/bz-window.blp:327
+#: src/bz-window.blp:324
 msgid "_Quit Bazaar"
 msgstr "退出集市(_Q)"
 
-#: src/bz-window.blp:352
+#: src/bz-window.blp:349
 msgid "Log Out"
 msgstr "登出"
 
@@ -2976,11 +2976,15 @@ msgstr "集市 — %s"
 msgid "Failed to launch application"
 msgstr "启动应用程序失败"
 
-#: src/bz-window.c:952
+#: src/bz-window.c:776
+msgid "Could not open link"
+msgstr "无法打开链接"
+
+#: src/bz-window.c:983
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "您无法从“集市”移除“集市”！"
 
-#: src/bz-window.c:1326 src/bz-window.c:1360
+#: src/bz-window.c:1357 src/bz-window.c:1391
 msgid "Can't do that right now!"
 msgstr "无法立刻那么做！"
 
