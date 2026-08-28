@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-24 12:00+0000\n"
-"PO-Revision-Date: 2026-08-24 21:01+0300\n"
+"POT-Creation-Date: 2026-08-27 12:17+0000\n"
+"PO-Revision-Date: 2026-08-28 18:44+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:210 src/bz-window.c:376 src/bz-window.c:377
+#: src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
 msgid "Bazaar"
 msgstr "Базар"
 
@@ -97,7 +97,7 @@ msgstr "Сторінка пошуку"
 msgid "Category page"
 msgstr "Сторінка пошуку з категоріями"
 
-#: src/bz-addon-tile.blp:64 src/bz-installed-tile.blp:55
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54
 #: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "Більшe не отримує оновлень"
@@ -119,7 +119,7 @@ msgid "Add-on"
 msgstr "Додаток"
 
 #: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
-#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:96
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
 msgid "Manage Add-Ons"
 msgstr "Керувати розширеннями"
 
@@ -139,15 +139,15 @@ msgstr ""
 msgid "Add-on Page"
 msgstr "Сторінка розширень"
 
-#: src/bz-addons-dialog.blp:205 src/bz-full-view.blp:398
+#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:392
 msgid "Downloads/Month"
 msgstr "зав/міс"
 
-#: src/bz-addons-dialog.blp:232 src/bz-full-view.blp:434
+#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:427
 msgid "Stopped Receiving Core Updates"
 msgstr "Більше не отримує оновлень середовища виконання"
 
-#: src/bz-addons-dialog.blp:246
+#: src/bz-addons-dialog.blp:243
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security "
 "fixes. It may become unsafe to use."
@@ -161,11 +161,11 @@ msgstr ""
 msgid "Add-on for %s"
 msgstr "Розширення для %s"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
 msgid "Show Less"
 msgstr "Згорнути"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Розгорнути"
 
@@ -699,27 +699,27 @@ msgstr "Обсяг даних до завантаження"
 msgid "Size on Disk"
 msgstr "Розмір на диску"
 
-#: src/bz-app-size-dialog.blp:203
+#: src/bz-app-size-dialog.blp:202
 msgid "Open user data folder"
 msgstr "Відкрити теку користувацьких даних"
 
-#: src/bz-app-size-dialog.blp:213
+#: src/bz-app-size-dialog.blp:212
 msgid "Your User Data"
 msgstr "Ваші користувацькі дані"
 
-#: src/bz-app-size-dialog.blp:214
+#: src/bz-app-size-dialog.blp:213
 msgid "Caches, settings, and other app data"
 msgstr "Кеш, налаштування, та інші дані застосунку"
 
-#: src/bz-app-size-dialog.blp:234
+#: src/bz-app-size-dialog.blp:233
 msgid "Cache"
 msgstr "Кеш"
 
-#: src/bz-app-size-dialog.blp:235
+#: src/bz-app-size-dialog.blp:234
 msgid "Temporary cached data"
 msgstr "Тимчасово кешовані дані"
 
-#: src/bz-app-size-dialog.blp:247
+#: src/bz-app-size-dialog.blp:246
 msgid "Clear Cache"
 msgstr "Очистити кеш"
 
@@ -770,16 +770,6 @@ msgid "Notice for Ubuntu Users"
 msgstr "Зауваження для користувачів Ubuntu"
 
 #: src/bz-application.c:1060
-#| msgid ""
-#| "Ubuntu 25.10 and newer have messed up default security rules, making it "
-#| "<b>impossible to install apps</b> from the Flatpak version of Bazaar, "
-#| "please just use the normal package for now by using\n"
-#| "\n"
-#| "<tt>sudo apt install bazaar</tt>\n"
-#| "\n"
-#| "You can then remove this Flatpak version with\n"
-#| "\n"
-#| "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 msgid ""
 "Ubuntu 25.10 and newer have changed default security rules in a way that "
 "makes it <b>impossible to install apps</b> from the Flatpak version of "
@@ -794,8 +784,7 @@ msgid ""
 msgstr ""
 "У Ubuntu 25.10 та новіших версіях змінені стандартні правила безпеки, що "
 "робить <b>неможливим встановлення програм</b> з версії Bazaar для Flatpak. "
-"Будь ласка, поки що використовуйте пакунок apt, встановивши його "
-"командою\n"
+"Будь ласка, поки що використовуйте пакунок apt, встановивши його командою\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -1043,16 +1032,16 @@ msgstr "Володіння ідентифікатором %s було підтв
 msgid "Bazaar Release"
 msgstr "Випуск «Базар»"
 
-#: src/bz-donations-dialog.blp:77
+#: src/bz-donations-dialog.blp:76
 msgid "Full Release Notes"
 msgstr "Повна примітка до випуску"
 
-#: src/bz-donations-dialog.blp:112
+#: src/bz-donations-dialog.blp:111
 msgid "This release was made possible by users like you!"
 msgstr ""
 "Випуск цієї крамниці став можливим завдяки таким самим користувачам, що і Ви!"
 
-#: src/bz-donations-dialog.blp:121
+#: src/bz-donations-dialog.blp:120
 msgid ""
 "I love making Bazaar, but I cannot do it alone. Help support further "
 "development by donating on Ko-Fi."
@@ -1060,18 +1049,18 @@ msgstr ""
 "Я люблю створювати Базар, та не можу робити це без допомоги. Підтримайте "
 "подальшу розробку гривнею на Ko-Fi."
 
-#: src/bz-donations-dialog.blp:136
+#: src/bz-donations-dialog.blp:134
 msgid "Donate to Bazaar"
 msgstr "Пожертвувати Базару"
 
 #. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
-#: src/bz-donations-dialog.c:228
+#: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "Що нового у %s?"
 
 #. Translators: this is a release date label, like "Released February 9, 2026"
-#: src/bz-donations-dialog.c:244
+#: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Випущено %-e %B %Y р."
 
@@ -1087,11 +1076,11 @@ msgstr ""
 "Ви маєте декілька встановлених версій цього застосунку. З котрою з них Ви "
 "бажаєте продовжити?"
 
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:234
+#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: src/bz-entry-selection-row.blp:17
+#: src/bz-entry-selection-row.blp:16
 msgid "For This User Only"
 msgstr "Лише для цього користувача"
 
@@ -1118,7 +1107,7 @@ msgstr "Копіювати"
 msgid "Copied!"
 msgstr "Скопійовано!"
 
-#: src/bz-favorite-button.blp:14
+#: src/bz-favorite-button.blp:13
 msgid "Favorite Count"
 msgstr "Кількість уподобань"
 
@@ -1134,27 +1123,27 @@ msgstr "Увійдіть із допомогою Flathub, аби керуват�
 msgid "Log In"
 msgstr "Увійти"
 
-#: src/bz-favorites-page.blp:5 src/bz-window.blp:345
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:342
 msgid "Favorites"
 msgstr "Вподобані"
 
-#: src/bz-favorites-page.blp:17 src/bz-section-view.blp:87
+#: src/bz-favorites-page.blp:16 src/bz-section-view.blp:87
 msgid "Install All"
 msgstr "Встановити всі"
 
-#: src/bz-favorites-page.blp:47
+#: src/bz-favorites-page.blp:46
 msgid "No Favorites"
 msgstr "Нічого не вподобано"
 
-#: src/bz-favorites-page.blp:48
+#: src/bz-favorites-page.blp:47
 msgid "Applications you mark as favorite will appear here"
 msgstr "Вподобані застосунки опинятимуться тут"
 
-#: src/bz-favorites-tile.blp:60
+#: src/bz-favorites-tile.blp:58
 msgid "Support This Application"
 msgstr "Підтримати цей застосунок"
 
-#: src/bz-favorites-tile.blp:109
+#: src/bz-favorites-tile.blp:105
 msgid "Remove From Favorites"
 msgstr "Прибрати з уподобаних"
 
@@ -1395,8 +1384,8 @@ msgstr "Утиліти"
 msgid "More Utilities"
 msgstr "Показати більше"
 
-#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:111
-#: src/bz-flathub-page.blp:143
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
 msgid "Trending"
 msgstr "Набирають популярність"
 
@@ -1404,8 +1393,8 @@ msgstr "Набирають популярність"
 msgid "More Trending"
 msgstr "Показати більше"
 
-#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:117
-#: src/bz-flathub-page.blp:176
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:171
 msgid "Popular"
 msgstr "Популярні"
 
@@ -1413,11 +1402,11 @@ msgstr "Популярні"
 msgid "More Popular"
 msgstr "Показати більше"
 
-#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:165
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:160
 msgid "Recently Added"
 msgstr "Нещодавно додані"
 
-#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:123
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:118
 msgid "New"
 msgstr "Нові"
 
@@ -1425,11 +1414,11 @@ msgstr "Нові"
 msgid "More New"
 msgstr "Показати більше"
 
-#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:154
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:149
 msgid "Recently Updated"
 msgstr "Нещодавно оновлені"
 
-#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:129
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:124
 msgid "Updated"
 msgstr "Оновлені"
 
@@ -1493,111 +1482,111 @@ msgstr "Ігрові інструменти"
 msgid "More Game Tools"
 msgstr "Інші ігрові інструменти"
 
-#: src/bz-flathub-curated-section.c:65
+#: src/bz-flathub-curated-section.vala:41
 msgid "New Year, New Workflows"
 msgstr "Новий рік, нові робочі процеси"
 
-#: src/bz-flathub-curated-section.c:65
+#: src/bz-flathub-curated-section.vala:41
 msgid "Apps to take notes, track tasks, and make plans"
 msgstr "Програми для створення нотаток, стеження за завданнями та планування"
 
-#: src/bz-flathub-curated-section.c:66
+#: src/bz-flathub-curated-section.vala:42
 msgid "Staff Picks"
 msgstr "Вибір персоналу"
 
-#: src/bz-flathub-curated-section.c:66
+#: src/bz-flathub-curated-section.vala:42
 msgid "Apps we love right now"
 msgstr "Програми, які нам зараз подобаються"
 
-#: src/bz-flathub-curated-section.c:67
+#: src/bz-flathub-curated-section.vala:43
 msgid "Get Creative"
 msgstr "Проявіть творчість"
 
-#: src/bz-flathub-curated-section.c:67
+#: src/bz-flathub-curated-section.vala:43
 msgid "Essential apps for drawing, editing photos, and digital design"
 msgstr ""
 "Базові програми для малювання, редагування фотографій та цифрового дизайну"
 
-#: src/bz-flathub-curated-section.c:68
+#: src/bz-flathub-curated-section.vala:44
 msgid "Build Native Apps"
 msgstr "Збираємо вбудовані програми"
 
-#: src/bz-flathub-curated-section.c:68
+#: src/bz-flathub-curated-section.vala:44
 msgid "Develop apps that feel at home on your system"
 msgstr "Розробляйте програми, які будуть природними у вашій системі"
 
-#: src/bz-flathub-curated-section.c:69
+#: src/bz-flathub-curated-section.vala:45
 msgid "Stay in Touch"
 msgstr "Тримаємо зв'язок"
 
-#: src/bz-flathub-curated-section.c:69
+#: src/bz-flathub-curated-section.vala:45
 msgid "Essential collaboration and communication apps"
 msgstr "Базові програми для співпраці та спілкування"
 
-#: src/bz-flathub-curated-section.c:70
+#: src/bz-flathub-curated-section.vala:46
 msgid "Ready for Vacations"
 msgstr "Готуємося до відпустки"
 
-#: src/bz-flathub-curated-section.c:70
+#: src/bz-flathub-curated-section.vala:46
 msgid "Maps, transit, weather, and trip planning apps"
 msgstr ""
 "Карти, міський транспорт, подорожі, погода та програми для планування "
 "подорожей"
 
-#: src/bz-flathub-curated-section.c:71
+#: src/bz-flathub-curated-section.vala:47
 msgid "Smarter Every Day"
 msgstr "Розумніше щодня"
 
-#: src/bz-flathub-curated-section.c:71
+#: src/bz-flathub-curated-section.vala:47
 msgid "Apps to help you study, research, and write"
 msgstr ""
 "Програми, які допомагають у навчанні, дослідженнях та письменницькій справі"
 
-#: src/bz-flathub-curated-section.c:72
+#: src/bz-flathub-curated-section.vala:48
 msgid "Get Cozy"
 msgstr "Вмощуємося зручненько"
 
-#: src/bz-flathub-curated-section.c:72
+#: src/bz-flathub-curated-section.vala:48
 msgid "Great apps for reading, watching movies, and playing games"
 msgstr "Чудові програми для читання, перегляду відео та гри"
 
-#: src/bz-flathub-curated-section.c:73
+#: src/bz-flathub-curated-section.vala:49
 msgid "Web Developer Essentials"
 msgstr "База для веброзробки"
 
-#: src/bz-flathub-curated-section.c:73
+#: src/bz-flathub-curated-section.vala:49
 msgid "Making websites is more fun with these apps"
 msgstr "Створення сайтів стане приємнішим із цими програмами"
 
-#: src/bz-flathub-curated-section.c:74
+#: src/bz-flathub-curated-section.vala:50
 msgid "Take Better Notes"
 msgstr "Занотовуємо краще"
 
-#: src/bz-flathub-curated-section.c:74
+#: src/bz-flathub-curated-section.vala:50
 msgid "Find your new favorite note taking tool"
 msgstr "Знайдіть вашу улюблену програму для створення нотаток"
 
-#: src/bz-flathub-curated-section.c:75
+#: src/bz-flathub-curated-section.vala:51
 msgid "Get Focused"
 msgstr "Зосередження"
 
-#: src/bz-flathub-curated-section.c:75
+#: src/bz-flathub-curated-section.vala:51
 msgid "Great apps for task management"
 msgstr "Чудові програми для керування завданнями"
 
-#: src/bz-flathub-curated-section.c:76
+#: src/bz-flathub-curated-section.vala:52
 msgid "Make Some Noise"
 msgstr "Трохи шуму"
 
-#: src/bz-flathub-curated-section.c:76
+#: src/bz-flathub-curated-section.vala:52
 msgid "Apps for creating and producing music"
 msgstr "Програми для створення і редагування музики"
 
-#: src/bz-flathub-curated-section.c:77
+#: src/bz-flathub-curated-section.vala:53
 msgid "Get To Work"
 msgstr "До роботи"
 
-#: src/bz-flathub-curated-section.c:77
+#: src/bz-flathub-curated-section.vala:53
 msgid "Essential office apps"
 msgstr "Базові офісні програми"
 
@@ -1660,11 +1649,11 @@ msgstr ""
 msgid "Preview Store Appearance"
 msgstr "Передпроглянути вигляд у крамниці"
 
-#: src/bz-full-view.blp:223
+#: src/bz-full-view.blp:222
 msgid "_Support"
 msgstr "_Підтримати"
 
-#: src/bz-full-view.blp:448
+#: src/bz-full-view.blp:441
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
@@ -1673,23 +1662,23 @@ msgstr ""
 "оновлень або безпекових виправлень. Він може стати небезпечним до "
 "використання."
 
-#: src/bz-full-view.blp:526
+#: src/bz-full-view.blp:519
 msgid "Trash Data"
 msgstr "Перемістити дані в смітник"
 
-#: src/bz-full-view.blp:589
+#: src/bz-full-view.blp:582
 msgid "Add-ons"
 msgstr "Розширення"
 
-#: src/bz-full-view.blp:624
+#: src/bz-full-view.blp:617
 msgid "More Add-Ons"
 msgstr "Більше розширень"
 
-#: src/bz-full-view.blp:635
+#: src/bz-full-view.blp:628
 msgid "Links"
 msgstr "Посилання"
 
-#: src/bz-full-view.blp:666
+#: src/bz-full-view.blp:659
 msgid "Similar Apps"
 msgstr "Подібні застосунки"
 
@@ -1714,13 +1703,11 @@ msgstr ""
 "код не є публічно доступним і не може бути перевіреним на безпечність."
 
 #: src/bz-full-view.c:207
-#| msgid "Other Apps by this Developer"
 msgid "Other Apps From This Developer"
 msgstr "Інші програми від цього розробника"
 
 #: src/bz-full-view.c:208
 #, c-format
-#| msgid "Other Apps by %s"
 msgid "Other Apps From %s"
 msgstr "Інші програми від %s"
 
@@ -1733,12 +1720,10 @@ msgstr ""
 
 #: src/bz-full-view.c:306
 #, c-format
-#| msgid "More Apps by %s"
 msgid "Apps by %s"
 msgstr "Програми від %s"
 
 #: src/bz-full-view.c:308
-#| msgid "Other Apps by this Developer"
 msgid "Apps by This Developer"
 msgstr "Програми цього розробника"
 
@@ -1751,7 +1736,7 @@ msgstr[1] "%d застосунки"
 msgstr[2] "%d застосунків"
 msgstr[3] "%d застосунок"
 
-#: src/bz-full-view.c:467 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "Не вдалося видалити користувацькі дані"
 
@@ -1855,28 +1840,28 @@ msgstr "%s найліпше працює на певних пристроях"
 msgid "%s works on most devices"
 msgstr "%s працює на більшості пристроїв"
 
-#: src/bz-inspector.blp:23
+#: src/bz-inspector.blp:22
 msgid "Inspector Menu"
 msgstr "Меню інспектора"
 
-#: src/bz-install-controls.blp:58
+#: src/bz-install-controls.blp:56
 msgid "_Open"
 msgstr "_Запустити"
 
-#: src/bz-install-controls.blp:73 src/bz-install-controls.blp:128
+#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
 msgid "Uninstall Application"
 msgstr "Видалити цей застосунок"
 
-#: src/bz-install-controls.blp:83 src/bz-transaction-dialog.c:230
+#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:230
 msgid "_Remove"
 msgstr "_Видалити"
 
-#: src/bz-install-controls.blp:115 src/bz-updates-card.c:168
+#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168
 #: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "Оновлення"
 
-#: src/bz-install-controls.blp:138 src/bz-installed-tile.blp:109
+#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "Видалити"
 
@@ -1900,7 +1885,7 @@ msgctxt "Install Controls"
 msgid "Cancelling"
 msgstr "Скасовуємо"
 
-#: src/bz-installed-tile.blp:80
+#: src/bz-installed-tile.blp:78
 msgid "Donate"
 msgstr "Пожертви"
 
@@ -2063,7 +2048,7 @@ msgstr ""
 "\n"
 "Ви можете не мати можливості долучитися до проєкту."
 
-#: src/bz-license-dialog.c:345 src/bz-license-dialog.c:364
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
 #: src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "Ліцензія"
@@ -2121,7 +2106,7 @@ msgstr "Налаштування"
 msgid "Network connection is metered — automatic store data refresh is paused"
 msgstr "Платне зʼєднання — автоматичне освіження вмісту крамниці призупинено"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:243 src/bz-window.blp:254
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:240 src/bz-window.blp:251
 msgid "Refresh Manually"
 msgstr "Освіжити власноруч"
 
@@ -2375,7 +2360,7 @@ msgstr "Без подробиць"
 msgid "Get More Information"
 msgstr "Докладніше про випуск"
 
-#: src/bz-rich-app-tile.blp:219
+#: src/bz-rich-app-tile.blp:218
 msgid "Uninstall"
 msgstr "Видалити"
 
@@ -2428,7 +2413,7 @@ msgstr "ID застосунку"
 msgid "SDK"
 msgstr "SDK"
 
-#: src/bz-safety-dialog.blp:158
+#: src/bz-safety-dialog.blp:157
 msgid ""
 "This app uses an outdated version of the software platform (SDK) and might "
 "contain bugs or security vulnerabilities which will not be fixed."
@@ -2929,15 +2914,15 @@ msgstr "Скасовано"
 msgid "Error"
 msgstr "Помилка"
 
-#: src/bz-transaction-tile.blp:314
+#: src/bz-transaction-tile.blp:313
 msgid "Cancel Transaction"
 msgstr "Скасувати дію"
 
-#: src/bz-transaction-tile.blp:324
+#: src/bz-transaction-tile.blp:323
 msgid "Show Details"
 msgstr "Показати подробиці"
 
-#: src/bz-transaction-tile.blp:439
+#: src/bz-transaction-tile.blp:436
 msgid "Show Error Info"
 msgstr "Докладніше про помилку"
 
@@ -2971,11 +2956,11 @@ msgstr[3] "%u оновлення середовища виконання"
 msgid "Installed Updates"
 msgstr "Встановлені оновлення"
 
-#: src/bz-update-history-dialog.blp:129 src/bz-update-history-dialog.c:99
+#: src/bz-update-history-dialog.blp:128 src/bz-update-history-dialog.c:99
 msgid "Release Notes"
 msgstr "Нотатки щодо випуску"
 
-#: src/bz-update-history-dialog.blp:144
+#: src/bz-update-history-dialog.blp:143
 msgid "No Release Info"
 msgstr "Немає відомостей щодо випуску"
 
@@ -3005,11 +2990,11 @@ msgstr[3] "Користувацькі дані %u застосунка було 
 msgid "Trashed User Data for %s"
 msgstr "Користувацькі дані %s було пересунуто до смітника"
 
-#: src/bz-user-data-tile.blp:92
+#: src/bz-user-data-tile.blp:91
 msgid "Open User Data Folder"
 msgstr "Відкриття теки даних користувача"
 
-#: src/bz-user-data-tile.blp:103
+#: src/bz-user-data-tile.blp:102
 msgid "Trash User Data"
 msgstr "Пересунути користувацькі дані до смітника"
 
@@ -3034,61 +3019,61 @@ msgstr "Бібліотека"
 msgid "Search"
 msgstr "Пошук"
 
-#: src/bz-window.blp:223
+#: src/bz-window.blp:220
 msgid "Main Menu"
 msgstr "Головне меню"
 
-#: src/bz-window.blp:234
+#: src/bz-window.blp:231
 msgid "You are running a new version of Bazaar!"
 msgstr "Ви запустили нову версію Базару!"
 
-#: src/bz-window.blp:235
+#: src/bz-window.blp:232
 msgid "See What's New"
 msgstr "Огляньте зміни"
 
-#: src/bz-window.blp:242
+#: src/bz-window.blp:239
 msgid ""
 "You have a network connection but are viewing a cached version of Flathub"
 msgstr ""
 "Ви маєте зʼєднання з мережею, але переглядаєте кешовану версію Flathub"
 
-#: src/bz-window.blp:253
+#: src/bz-window.blp:250
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "Тарифіковане з'єднання з мережею — автоматичні оновлення вимкнено"
 
-#: src/bz-window.blp:289
+#: src/bz-window.blp:286
 msgid "_Donate to Bazaar"
 msgstr "_Пожертувати Базару"
 
-#: src/bz-window.blp:295
+#: src/bz-window.blp:292
 msgid "_Refresh"
 msgstr "_Освіжити"
 
-#: src/bz-window.blp:299
+#: src/bz-window.blp:296
 msgid "_Login With Flathub"
 msgstr "_Увійти з допомогою Flathub"
 
-#: src/bz-window.blp:305
+#: src/bz-window.blp:302
 msgid "_Manage Leftover User Data"
 msgstr "_Керувати залишковими даними"
 
-#: src/bz-window.blp:311
+#: src/bz-window.blp:308
 msgid "_Preferences"
 msgstr "_Налаштування"
 
-#: src/bz-window.blp:316
+#: src/bz-window.blp:313
 msgid "_Keyboard Shortcuts"
 msgstr "_Клавіатурні скорочення"
 
-#: src/bz-window.blp:321
+#: src/bz-window.blp:318
 msgid "_About Bazaar"
 msgstr "_Про Базар"
 
-#: src/bz-window.blp:327
+#: src/bz-window.blp:324
 msgid "_Quit Bazaar"
 msgstr "_Вийти"
 
-#: src/bz-window.blp:352
+#: src/bz-window.blp:349
 msgid "Log Out"
 msgstr "Вийти"
 
@@ -3102,11 +3087,16 @@ msgstr "Базар — %s"
 msgid "Failed to launch application"
 msgstr "Не вдалося запустити застосунок"
 
-#: src/bz-window.c:952
+#: src/bz-window.c:776
+#| msgid "Could not find app"
+msgid "Could not open link"
+msgstr "Не вдалося відкрити посилання"
+
+#: src/bz-window.c:983
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Ви не можете видалити Базар у Базарі!"
 
-#: src/bz-window.c:1326 src/bz-window.c:1360
+#: src/bz-window.c:1357 src/bz-window.c:1391
 msgid "Can't do that right now!"
 msgstr "Наразі цього не можна зробити!"
 
