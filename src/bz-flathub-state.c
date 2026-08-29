@@ -904,7 +904,7 @@ initialize_fiber (GWeakRef *wr)
   ADD_REQUEST (added_f, "/collection/recently-added?page=0&per_page=%d", COLLECTION_FETCH_SIZE);
   ADD_REQUEST (popular_f, "/collection/popular?page=0&per_page=%d", COLLECTION_FETCH_SIZE);
   ADD_REQUEST (trending_f, "/collection/trending?page=0&per_page=%d", COLLECTION_FETCH_SIZE);
-  ADD_REQUEST (mobile_f, "/collection/mobile?page=0&per_page=%d", CATEGORY_FETCH_SIZE);
+  ADD_REQUEST (mobile_f, "/collection/mobile?sort_by=trending&page=0&per_page=%d", CATEGORY_FETCH_SIZE);
   ADD_REQUEST (game_only_f, "/collection/category/game?exclude_subcategories=emulator&exclude_subcategories=packageManager&exclude_subcategories=utility&exclude_subcategories=network&exclude_subcategories=gameTool&exclude_subcategories=launcherStore&sort_by=trending&page=0&per_page=%d", CATEGORY_FETCH_SIZE);
   ADD_REQUEST (emulators_f, "/collection/category/game/subcategories?subcategory=emulator&sort_by=trending&page=0&per_page=%d", CATEGORY_FETCH_SIZE);
   ADD_REQUEST (launchers_f, "/collection/category/game/subcategories?subcategory=packageManager&subcategory=launcherStore&sort_by=trending&page=0&per_page=%d", CATEGORY_FETCH_SIZE);
@@ -994,7 +994,7 @@ initialize_fiber (GWeakRef *wr)
         g_autoptr (DexFuture) future = NULL;
 
         request = g_strdup_printf (
-            "/collection/category/%s?page=0&per_page=%d",
+            "/collection/category/%s?sort_by=trending&page=0&per_page=%d",
             categories[i], CATEGORY_FETCH_SIZE);
 
         future = bz_query_flathub_v2_json_take (g_steal_pointer (&request));
