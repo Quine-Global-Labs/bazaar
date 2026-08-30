@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-16 10:25+0000\n"
-"PO-Revision-Date: 2026-08-18 14:43+0200\n"
+"POT-Creation-Date: 2026-08-30 21:33+0000\n"
+"PO-Revision-Date: 2026-08-31 00:22+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:210 src/bz-window.c:392 src/bz-window.c:393
+#: src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
 msgid "Bazaar"
 msgstr "Bazaar"
 
@@ -68,7 +68,7 @@ msgstr "Logga in med Flathub för att visa och hantera favoriter"
 msgid "Search apps directly from GNOME Shell"
 msgstr "Sök program direkt från GNOME Shell"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:32 src/bz-application.c:750
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:32 src/bz-application.c:754
 msgid "The Bazaar Contributors"
 msgstr "Bidragsgivarna till Bazaar"
 
@@ -92,8 +92,8 @@ msgstr "Söksida"
 msgid "Category page"
 msgstr "Kategorisida"
 
-#: src/bz-addon-tile.blp:64 src/bz-installed-tile.blp:55
-#: src/bz-rich-app-tile.blp:142
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54
+#: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "Har slutat ta emot uppdateringar"
 
@@ -114,7 +114,7 @@ msgid "Add-on"
 msgstr "Tillägg"
 
 #: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
-#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:96
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
 msgid "Manage Add-Ons"
 msgstr "Hantera tillägg"
 
@@ -133,15 +133,15 @@ msgstr ""
 msgid "Add-on Page"
 msgstr "Tilläggssida"
 
-#: src/bz-addons-dialog.blp:205 src/bz-full-view.blp:408
+#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:392
 msgid "Downloads/Month"
 msgstr "Hämtningar/månad"
 
-#: src/bz-addons-dialog.blp:232 src/bz-full-view.blp:444
+#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:427
 msgid "Stopped Receiving Core Updates"
 msgstr "Har slutat ta emot kärnuppdateringar"
 
-#: src/bz-addons-dialog.blp:246
+#: src/bz-addons-dialog.blp:243
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
@@ -154,11 +154,11 @@ msgstr ""
 msgid "Add-on for %s"
 msgstr "Tillägg för %s"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:590
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
 msgid "Show Less"
 msgstr "Visa mindre"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:590 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Visa mer"
 
@@ -686,27 +686,27 @@ msgstr "Mängd att hämta från internet"
 msgid "Size on Disk"
 msgstr "Storlek på disk"
 
-#: src/bz-app-size-dialog.blp:203
+#: src/bz-app-size-dialog.blp:202
 msgid "Open user data folder"
 msgstr "Öppna användardatamapp"
 
-#: src/bz-app-size-dialog.blp:213
+#: src/bz-app-size-dialog.blp:212
 msgid "Your User Data"
 msgstr "Dina användardata"
 
-#: src/bz-app-size-dialog.blp:214
+#: src/bz-app-size-dialog.blp:213
 msgid "Caches, settings, and other app data"
 msgstr "Cachar, inställningar och andra programdata"
 
-#: src/bz-app-size-dialog.blp:234
+#: src/bz-app-size-dialog.blp:233
 msgid "Cache"
 msgstr "Cache"
 
-#: src/bz-app-size-dialog.blp:235
+#: src/bz-app-size-dialog.blp:234
 msgid "Temporary cached data"
 msgstr "Tillfälligt cachade data"
 
-#: src/bz-app-size-dialog.blp:247
+#: src/bz-app-size-dialog.blp:246
 msgid "Clear Cache"
 msgstr "Töm cache"
 
@@ -728,41 +728,41 @@ msgstr "-"
 msgid "Storage"
 msgstr "Lagring"
 
-#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:106
-#: src/bz-rich-app-tile.c:443
+#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:107
+#: src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "Verifierat"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-app-tile.blp:87 src/bz-releases-list.c:206
+#: src/bz-app-tile.blp:87 src/bz-releases-list.c:204
 #: src/context-tile-callbacks.c:136
 msgid "Installed"
 msgstr "Installerat"
 
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:753
+#: src/bz-application.c:757
 msgid "translator-credits"
 msgstr ""
 "Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Skicka synpunkter på översättningen till <tp-sv@listor.tp-sv.se>"
 
-#: src/bz-application.c:763
+#: src/bz-application.c:767
 msgid "Special Thanks"
 msgstr "Tack till"
 
-#: src/bz-application.c:821
+#: src/bz-application.c:825
 msgid "Logged Out Successfully!"
 msgstr "Loggade ut!"
 
-#: src/bz-application.c:1028
-msgid "Ubuntu Troubles!"
-msgstr "Ubuntu-problem!"
+#: src/bz-application.c:1057
+msgid "Notice for Ubuntu Users"
+msgstr "Not för Ubuntu-användare"
 
-#: src/bz-application.c:1031
+#: src/bz-application.c:1060
 msgid ""
-"Ubuntu 25.10 and newer have messed up default security rules, making it "
-"<b>impossible to install apps</b> from the Flatpak version of Bazaar, please "
-"just use the normal package for now by using\n"
+"Ubuntu 25.10 and newer have changed default security rules in a way that makes "
+"it <b>impossible to install apps</b> from the Flatpak version of Bazaar. For "
+"the time being, please use the apt package instead. Install it with\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -770,9 +770,9 @@ msgid ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 msgstr ""
-"Ubuntu 25.10 och nyare har felaktiga standardsäkerhetsregler, vilket gör det "
-"<b>omöjligt att installera program</b> från Flatpak-versionen av Bazaar, använd "
-"för närvarande det vanliga paketet genom att använda\n"
+"Ubuntu 25.10 och nyare har ändrat standardsäkerhetsreglerna på ett sätt som gör "
+"det <b>omöjligt att installera program</b> från Flatpak-versionen av Bazaar. "
+"Använd för närvarande apt-paketet i stället. Installera det med\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -780,19 +780,19 @@ msgstr ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 
-#: src/bz-application.c:1037
+#: src/bz-application.c:1068
 msgid "Continue Anyway"
 msgstr "Fortsätt ändå"
 
-#: src/bz-application.c:1053
+#: src/bz-application.c:1084
 msgid "Performing setup…"
 msgstr "Genomför konfiguration…"
 
-#: src/bz-application.c:1152
+#: src/bz-application.c:1183
 msgid "Set Up System Flathub?"
 msgstr "Konfigurera systemets Flathub?"
 
-#: src/bz-application.c:1155
+#: src/bz-application.c:1186
 msgid ""
 "The system Flathub remote is not set up. Bazaar requires Flathub to be "
 "configured on the system Flatpak installation to browse and install "
@@ -807,11 +807,11 @@ msgstr ""
 "Du kan fortfarande använda Bazaar för att bläddra bland och ta bort redan "
 "installerade program."
 
-#: src/bz-application.c:1162
+#: src/bz-application.c:1193
 msgid "Set Up Flathub?"
 msgstr "Konfigurera Flathub?"
 
-#: src/bz-application.c:1165
+#: src/bz-application.c:1196
 msgid ""
 "Flathub is not set up on this system. You will not be able to browse and "
 "install applications in Bazaar if its unavailable.\n"
@@ -824,79 +824,63 @@ msgstr ""
 "Du kan fortfarande använda Bazaar för att bläddra bland och ta bort redan "
 "installerade program."
 
-#: src/bz-application.c:1171
+#: src/bz-application.c:1202
 msgid "Later"
 msgstr "Senare"
 
-#: src/bz-application.c:1172
+#: src/bz-application.c:1203
 msgid "Set Up Flathub"
 msgstr "Konfigurera Flathub"
 
-#: src/bz-application.c:1703
+#: src/bz-application.c:1723
 msgid "A backend error occurred"
 msgstr "Ett bakändesfel inträffade"
 
-#: src/bz-application.c:1911 src/bz-application.c:4185
+#: src/bz-application.c:1930 src/bz-application.c:4251
 msgid "Refreshing…"
 msgstr "Uppdaterar…"
 
-#: src/bz-application.c:2070
+#: src/bz-application.c:2089
 #, c-format
 msgid "Loading %d apps…"
 msgstr "Läser in %d program…"
 
-#: src/bz-application.c:2123 src/bz-application.c:2197
+#: src/bz-application.c:2148 src/bz-application.c:2225
 msgid "Failed to open file"
 msgstr "Misslyckades med att öppna fil"
 
-#: src/bz-application.c:2211
+#: src/bz-application.c:2239
 msgid "Failed to load metainfo"
 msgstr "Misslyckades med att läsa in metainfo"
 
-#: src/bz-application.c:2305
+#: src/bz-application.c:2362
 msgid "An initialization error occurred"
 msgstr "Ett initieringsfel inträffade"
 
-#: src/bz-application.c:2701
+#: src/bz-application.c:2770
 msgid "Checking for updates…"
 msgstr "Letar efter uppdateringar…"
 
-#: src/bz-application.c:2757
+#: src/bz-application.c:2826
 msgid "Failed to check for updates"
 msgstr "Misslyckades med att leta efter uppdateringar"
 
-#: src/bz-application.c:3953
-msgid "Malformed Link"
-msgstr "Felformaterad länk"
-
-#: src/bz-application.c:3954
-msgid ""
-"The link used to open this app has incorrect capitalization and may stop "
-"working in the future.\n"
-"\n"
-"This is most likely caused by KRunner sending incorrect app IDs"
-msgstr ""
-"Länken som används för att öppna detta program har oriktig versalisering och "
-"kan sluta fungera i framtiden.\n"
-"\n"
-"Detta orsakas troligen av att KRunner skickar felaktiga program-ID:n"
-
-#: src/bz-application.c:3962
+#: src/bz-application.c:4028
 msgid "Could not find app"
 msgstr "Kunde inte hitta program"
 
-#: src/bz-application.c:4182
+#: src/bz-application.c:4248
 #, c-format
 msgid "Loading %d app…"
 msgid_plural "Loading %d apps…"
 msgstr[0] "Läser in %d program…"
 msgstr[1] "Läser in %d program…"
 
-#: src/bz-application.c:4187
+#: src/bz-application.c:4253
 msgid "Writing to cache…"
 msgstr "Skriver till cache…"
 
-#: src/bz-apps-page.blp:97
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
 msgid "Show All"
 msgstr "Visa alla"
 
@@ -905,7 +889,7 @@ msgstr "Visa alla"
 msgid "All \"%s\""
 msgstr "Alla ”%s”"
 
-#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:89
+#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:88
 #, c-format
 msgid "%d Applications"
 msgstr "%d program"
@@ -940,7 +924,7 @@ msgstr "Installerades!"
 
 #. TRANSLATORS: Button to launch an installed app
 #: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524
-#: src/bz-rich-app-tile.blp:199 src/bz-transaction-tile.blp:300
+#: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "Öppna"
 
@@ -1035,15 +1019,15 @@ msgstr "Ägarskapet till program-ID:t %s har verifierats."
 msgid "Bazaar Release"
 msgstr "Bazaar-utgåva"
 
-#: src/bz-donations-dialog.blp:77
+#: src/bz-donations-dialog.blp:76
 msgid "Full Release Notes"
 msgstr "Fullständiga kommentarer till utgåva"
 
-#: src/bz-donations-dialog.blp:112
+#: src/bz-donations-dialog.blp:111
 msgid "This release was made possible by users like you!"
 msgstr "Denna utgåva gjordes möjlig av användare som du!"
 
-#: src/bz-donations-dialog.blp:121
+#: src/bz-donations-dialog.blp:120
 msgid ""
 "I love making Bazaar, but I cannot do it alone. Help support further "
 "development by donating on Ko-Fi."
@@ -1051,18 +1035,18 @@ msgstr ""
 "Jag älskar att skapa Bazaar, men kan inte göra det själv. Stöd vidare "
 "utveckling genom att donera på Ko-Fi."
 
-#: src/bz-donations-dialog.blp:136
+#: src/bz-donations-dialog.blp:134
 msgid "Donate to Bazaar"
 msgstr "Donera till Bazaar"
 
 #. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
-#: src/bz-donations-dialog.c:228
+#: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "Vad är nytt i %s?"
 
 #. Translators: this is a release date label, like "Released February 9, 2026"
-#: src/bz-donations-dialog.c:244
+#: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Släppt %-e %B, %Y"
 
@@ -1078,24 +1062,28 @@ msgstr ""
 "Du har flera versioner av detta program installerade. Vilken vill du fortsätta "
 "med?"
 
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:233
+#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/bz-entry-selection-row.blp:17
-msgid "For This User Only"
-msgstr "Endast för denna användare"
-
-#: src/bz-entry-selection-row.c:112
+#: src/bz-entry-selection-row.vala:40
 msgid "this user"
 msgstr "denna användare"
 
-#: src/bz-entry-selection-row.c:112
+#: src/bz-entry-selection-row.vala:40
 msgid "all users"
 msgstr "alla användare"
 
+#: src/bz-entry-selection-row.vala:55
+msgid "End of Life"
+msgstr "Slut på livstid"
+
+#: src/bz-entry-selection-row.vala:69
+msgid "For This User Only"
+msgstr "Endast för denna användare"
+
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
-#: src/error.c:88
+#: src/error.c:88 src/update-worker.c:473
 msgid "Details"
 msgstr "Detaljer"
 
@@ -1108,7 +1096,7 @@ msgstr "Kopiera"
 msgid "Copied!"
 msgstr "Kopierad!"
 
-#: src/bz-favorite-button.blp:14
+#: src/bz-favorite-button.blp:13
 msgid "Favorite Count"
 msgstr "Antal favoriter"
 
@@ -1124,27 +1112,27 @@ msgstr "Logga in med Flathub för att hantera favoriter"
 msgid "Log In"
 msgstr "Logga in"
 
-#: src/bz-favorites-page.blp:5 src/bz-window.blp:345
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:342
 msgid "Favorites"
 msgstr "Favoriter"
 
-#: src/bz-favorites-page.blp:17 src/bz-section-view.blp:87
+#: src/bz-favorites-page.blp:16 src/bz-section-view.blp:87
 msgid "Install All"
 msgstr "Installera alla"
 
-#: src/bz-favorites-page.blp:47
+#: src/bz-favorites-page.blp:46
 msgid "No Favorites"
 msgstr "Inga favoriter"
 
-#: src/bz-favorites-page.blp:48
+#: src/bz-favorites-page.blp:47
 msgid "Applications you mark as favorite will appear here"
 msgstr "Program som du märkt som favorit kommer visas här"
 
-#: src/bz-favorites-tile.blp:60
+#: src/bz-favorites-tile.blp:58
 msgid "Support This Application"
 msgstr "Stöd detta programm"
 
-#: src/bz-favorites-tile.blp:109
+#: src/bz-favorites-tile.blp:105
 msgid "Remove From Favorites"
 msgstr "Ta bort från favoriter"
 
@@ -1384,8 +1372,8 @@ msgstr "Verktyg"
 msgid "More Utilities"
 msgstr "Mer nyttoprogram"
 
-#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:111
-#: src/bz-flathub-page.blp:143
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
 msgid "Trending"
 msgstr "Trendande"
 
@@ -1393,8 +1381,8 @@ msgstr "Trendande"
 msgid "More Trending"
 msgstr "Mer trendande"
 
-#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:117
-#: src/bz-flathub-page.blp:176
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:171
 msgid "Popular"
 msgstr "Populärt"
 
@@ -1402,11 +1390,11 @@ msgstr "Populärt"
 msgid "More Popular"
 msgstr "Mer populärt"
 
-#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:165
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:160
 msgid "Recently Added"
 msgstr "Senast tillagt"
 
-#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:123
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:118
 msgid "New"
 msgstr "Nytt"
 
@@ -1414,11 +1402,11 @@ msgstr "Nytt"
 msgid "More New"
 msgstr "Mer nytt"
 
-#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:154
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:149
 msgid "Recently Updated"
 msgstr "Senast uppdaterat"
 
-#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:129
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:124
 msgid "Updated"
 msgstr "Uppdaterat"
 
@@ -1482,107 +1470,107 @@ msgstr "Spelverktyg"
 msgid "More Game Tools"
 msgstr "Mer spelverktyg"
 
-#: src/bz-flathub-curated-section.c:65
+#: src/bz-flathub-curated-section.vala:41
 msgid "New Year, New Workflows"
 msgstr "Nytt år, nya arbetsflöden"
 
-#: src/bz-flathub-curated-section.c:65
+#: src/bz-flathub-curated-section.vala:41
 msgid "Apps to take notes, track tasks, and make plans"
 msgstr "Program för att ta anteckningar, följa uppgifter och planera"
 
-#: src/bz-flathub-curated-section.c:66
+#: src/bz-flathub-curated-section.vala:42
 msgid "Staff Picks"
 msgstr "Våra val"
 
-#: src/bz-flathub-curated-section.c:66
+#: src/bz-flathub-curated-section.vala:42
 msgid "Apps we love right now"
 msgstr "Program vi älskar just nu"
 
-#: src/bz-flathub-curated-section.c:67
+#: src/bz-flathub-curated-section.vala:43
 msgid "Get Creative"
 msgstr "Bli kreativ"
 
-#: src/bz-flathub-curated-section.c:67
+#: src/bz-flathub-curated-section.vala:43
 msgid "Essential apps for drawing, editing photos, and digital design"
 msgstr "Oumbärliga program för att rita, redigera foton, samt digitaldesign"
 
-#: src/bz-flathub-curated-section.c:68
+#: src/bz-flathub-curated-section.vala:44
 msgid "Build Native Apps"
 msgstr "Bygg inhemska program"
 
-#: src/bz-flathub-curated-section.c:68
+#: src/bz-flathub-curated-section.vala:44
 msgid "Develop apps that feel at home on your system"
 msgstr "Utveckla program som känns som hemma på ditt system"
 
-#: src/bz-flathub-curated-section.c:69
+#: src/bz-flathub-curated-section.vala:45
 msgid "Stay in Touch"
 msgstr "Håll kontakten"
 
-#: src/bz-flathub-curated-section.c:69
+#: src/bz-flathub-curated-section.vala:45
 msgid "Essential collaboration and communication apps"
 msgstr "Oumbärliga samarbets- och kommunikationsprogram"
 
-#: src/bz-flathub-curated-section.c:70
+#: src/bz-flathub-curated-section.vala:46
 msgid "Ready for Vacations"
 msgstr "Redo för semestern"
 
-#: src/bz-flathub-curated-section.c:70
+#: src/bz-flathub-curated-section.vala:46
 msgid "Maps, transit, weather, and trip planning apps"
 msgstr "Program för kartor, kollektivtrafik och reseplanering"
 
-#: src/bz-flathub-curated-section.c:71
+#: src/bz-flathub-curated-section.vala:47
 msgid "Smarter Every Day"
 msgstr "Smartare varje dag"
 
-#: src/bz-flathub-curated-section.c:71
+#: src/bz-flathub-curated-section.vala:47
 msgid "Apps to help you study, research, and write"
 msgstr "Program som hjälper dig studera, forska och skriva"
 
-#: src/bz-flathub-curated-section.c:72
+#: src/bz-flathub-curated-section.vala:48
 msgid "Get Cozy"
 msgstr "Slappna av"
 
-#: src/bz-flathub-curated-section.c:72
+#: src/bz-flathub-curated-section.vala:48
 msgid "Great apps for reading, watching movies, and playing games"
 msgstr "Utmärkta program för att läsa, se på film och spela spel"
 
-#: src/bz-flathub-curated-section.c:73
+#: src/bz-flathub-curated-section.vala:49
 msgid "Web Developer Essentials"
 msgstr "Oumbärligt för webbutvecklare"
 
-#: src/bz-flathub-curated-section.c:73
+#: src/bz-flathub-curated-section.vala:49
 msgid "Making websites is more fun with these apps"
 msgstr "Att göra webbplatser är roligare med dessa program"
 
-#: src/bz-flathub-curated-section.c:74
+#: src/bz-flathub-curated-section.vala:50
 msgid "Take Better Notes"
 msgstr "Ta bättre anteckningar"
 
-#: src/bz-flathub-curated-section.c:74
+#: src/bz-flathub-curated-section.vala:50
 msgid "Find your new favorite note taking tool"
 msgstr "Hitta ditt nya favoritverktyg för att ta anteckningar"
 
-#: src/bz-flathub-curated-section.c:75
+#: src/bz-flathub-curated-section.vala:51
 msgid "Get Focused"
 msgstr "Fokusera"
 
-#: src/bz-flathub-curated-section.c:75
+#: src/bz-flathub-curated-section.vala:51
 msgid "Great apps for task management"
 msgstr "Utmärkta program för uppgiftshantering"
 
-#: src/bz-flathub-curated-section.c:76
+#: src/bz-flathub-curated-section.vala:52
 msgid "Make Some Noise"
 msgstr "Gör lite oväsen"
 
-#: src/bz-flathub-curated-section.c:76
+#: src/bz-flathub-curated-section.vala:52
 msgid "Apps for creating and producing music"
 msgstr "Program för att skapa och producera musik"
 
-#: src/bz-flathub-curated-section.c:77
+#: src/bz-flathub-curated-section.vala:53
 msgid "Get To Work"
 msgstr "Börja jobba"
 
-#: src/bz-flathub-curated-section.c:77
+#: src/bz-flathub-curated-section.vala:53
 msgid "Essential office apps"
 msgstr "Oumbärliga kontorsprogram"
 
@@ -1634,30 +1622,22 @@ msgstr "Vi​ ♥​ spel"
 msgid "Games and apps to run your favorite titles"
 msgstr "Spel och program för att köra dina favorittitlar"
 
-#: src/bz-full-view.blp:33
-msgid "No Results"
-msgstr "Inga resultat"
-
-#: src/bz-full-view.blp:34
-msgid "Try a different search query"
-msgstr "Försök med en annan sökning"
-
-#: src/bz-full-view.blp:103
+#: src/bz-full-view.blp:93
 msgid ""
 "This is a local preview, some details may differ from the published listing"
 msgstr ""
 "Detta är en lokal förhandsgranskning, vissa detaljer kan skilja sig från den "
 "publicerade posten"
 
-#: src/bz-full-view.blp:106
+#: src/bz-full-view.blp:96
 msgid "Preview Store Appearance"
 msgstr "Förhandsgranska butiksutseende"
 
-#: src/bz-full-view.blp:233
+#: src/bz-full-view.blp:222
 msgid "_Support"
 msgstr "_Stöd"
 
-#: src/bz-full-view.blp:458
+#: src/bz-full-view.blp:441
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. It "
 "may become unsafe to use."
@@ -1665,23 +1645,23 @@ msgstr ""
 "Detta program använder en exekveringsmiljö som inte längre tar emot "
 "uppdateringar eller säkerhetsfixar. Det kan bli osäkert att använda."
 
-#: src/bz-full-view.blp:536
+#: src/bz-full-view.blp:519
 msgid "Trash Data"
 msgstr "Kasta data i papperskorgen"
 
-#: src/bz-full-view.blp:599
+#: src/bz-full-view.blp:582
 msgid "Add-ons"
 msgstr "Tillägg"
 
-#: src/bz-full-view.blp:634
+#: src/bz-full-view.blp:617
 msgid "More Add-Ons"
 msgstr "Mer tillägg"
 
-#: src/bz-full-view.blp:645
+#: src/bz-full-view.blp:628
 msgid "Links"
 msgstr "Länkar"
 
-#: src/bz-full-view.blp:676
+#: src/bz-full-view.blp:659
 msgid "Similar Apps"
 msgstr "Liknande program"
 
@@ -1705,40 +1685,36 @@ msgstr ""
 "privat och inte kan granskas av en oberoende tredje part."
 
 #: src/bz-full-view.c:207
-msgid "More Apps"
-msgstr "Mer program"
+msgid "Other Apps From This Developer"
+msgstr "Andra program från denna utvecklare"
 
 #: src/bz-full-view.c:208
 #, c-format
-msgid "More Apps by %s"
-msgstr "Mer program av %s"
+msgid "Other Apps From %s"
+msgstr "Andra program från %s"
 
-#: src/bz-full-view.c:215
-msgid "Other Apps by this Developer"
-msgstr "Andra program av denna utvecklare"
-
-#: src/bz-full-view.c:217 src/bz-full-view.c:309
-#, c-format
-msgid "Other Apps by %s"
-msgstr "Andra program av %s"
-
-#: src/bz-full-view.c:226
+#: src/bz-full-view.c:223
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr "%s är inte installerat men har fortfarande kvar <b>%s</b> data."
 
-#: src/bz-full-view.c:311
-msgid "Other Apps"
-msgstr "Andra program"
+#: src/bz-full-view.c:306
+#, c-format
+msgid "Apps by %s"
+msgstr "Program av %s"
 
-#: src/bz-full-view.c:313
+#: src/bz-full-view.c:308
+msgid "Apps by This Developer"
+msgstr "Program av denna utvecklare"
+
+#: src/bz-full-view.c:310
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
 msgstr[0] "%d program"
 msgstr[1] "%d program"
 
-#: src/bz-full-view.c:470 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "Misslyckades med att ta bort användardata"
 
@@ -1836,28 +1812,28 @@ msgstr "%s fungerar bäst på specifik hårdvara"
 msgid "%s works on most devices"
 msgstr "%s fungerar på de flesta enheter"
 
-#: src/bz-inspector.blp:23
+#: src/bz-inspector.blp:22
 msgid "Inspector Menu"
 msgstr "Inspektörsmeny"
 
-#: src/bz-install-controls.blp:58
+#: src/bz-install-controls.blp:56
 msgid "_Open"
 msgstr "Ö_ppna"
 
-#: src/bz-install-controls.blp:73 src/bz-install-controls.blp:128
+#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
 msgid "Uninstall Application"
 msgstr "Avinstallera program"
 
-#: src/bz-install-controls.blp:83 src/bz-transaction-dialog.c:230
+#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
 msgid "_Remove"
 msgstr "_Ta bort"
 
-#: src/bz-install-controls.blp:115 src/bz-updates-card.c:168
+#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168
 #: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "Uppdatera"
 
-#: src/bz-install-controls.blp:138 src/bz-installed-tile.blp:109
+#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "Ta bort"
 
@@ -1881,7 +1857,7 @@ msgctxt "Install Controls"
 msgid "Cancelling"
 msgstr "Avbryter"
 
-#: src/bz-installed-tile.blp:80
+#: src/bz-installed-tile.blp:78
 msgid "Donate"
 msgstr "Donera"
 
@@ -1948,11 +1924,11 @@ msgid_plural "%u Installed Apps"
 msgstr[0] "%u program installerat"
 msgstr[1] "%u program installerade"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:786
+#: src/bz-library-page.c:629 src/bz-search-page.c:821
 msgid "No applications found"
 msgstr "Inga program hittades"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:788
+#: src/bz-library-page.c:629 src/bz-search-page.c:823
 #, c-format
 msgid "One application found"
 msgid_plural "%u applications found"
@@ -2035,7 +2011,7 @@ msgstr ""
 "\n"
 "Du kan kanske, eller kanske inte bidra till detta program."
 
-#: src/bz-license-dialog.c:345 src/bz-license-dialog.c:364
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
 #: src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "Licens"
@@ -2095,7 +2071,7 @@ msgstr ""
 "Nätverksanslutningen har datakvoter — automatiska uppdateringar av butiksdata "
 "är pausade"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:243 src/bz-window.blp:254
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:240 src/bz-window.blp:251
 msgid "Refresh Manually"
 msgstr "Uppdatera manuellt"
 
@@ -2272,22 +2248,22 @@ msgstr "Bazaar behöver köras i bakgrunden för att söka programuppdateringar"
 msgid "Version History"
 msgstr "Versionshistorik"
 
-#: src/bz-releases-list.blp:27
+#: src/bz-releases-preview.blp:30
 msgid "_Version History"
 msgstr "_Versionshistorik"
 
 #. Translators: something happened less than a day ago
-#: src/bz-releases-list.c:122
+#: src/bz-releases-list.c:120
 msgid "Today"
 msgstr "I dag"
 
 #. Translators: something happened more than a day ago but less than 2 days ago
-#: src/bz-releases-list.c:125
+#: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "I går"
 
 #. Translators: something happened days ago
-#: src/bz-releases-list.c:128
+#: src/bz-releases-list.c:126
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2295,7 +2271,7 @@ msgstr[0] "%d dag sedan"
 msgstr[1] "%d dagar sedan"
 
 #. Translators: something happened weeks ago
-#: src/bz-releases-list.c:131
+#: src/bz-releases-list.c:129
 #, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
@@ -2303,7 +2279,7 @@ msgstr[0] "%d vecka sedan"
 msgstr[1] "%d veckor sedan"
 
 #. Translators: something happened months ago
-#: src/bz-releases-list.c:134
+#: src/bz-releases-list.c:132
 #, c-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
@@ -2311,7 +2287,7 @@ msgstr[0] "%d månad sedan"
 msgstr[1] "%d månader sedan"
 
 #. Translators: something happened years ago
-#: src/bz-releases-list.c:137
+#: src/bz-releases-list.c:135
 #, c-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
@@ -2320,20 +2296,20 @@ msgstr[1] "%d år sedan"
 
 #. TRANSLATORS: This is the date string with: day number, month name, year.
 #. i.e. "22 March 2026"
-#: src/bz-releases-list.c:155
+#: src/bz-releases-list.c:153
 msgid "%e %B %Y"
 msgstr "%e %B %Y"
 
-#: src/bz-releases-list.c:196
+#: src/bz-releases-list.c:194
 #, c-format
 msgid "Version %s"
 msgstr "Version %s"
 
-#: src/bz-releases-list.c:251
+#: src/bz-releases-list.c:249
 msgid "No details for this release"
 msgstr "Inga detaljer för denna utgåva"
 
-#: src/bz-releases-list.c:264
+#: src/bz-releases-list.c:262
 msgid "Get More Information"
 msgstr "Få mer information"
 
@@ -2342,7 +2318,7 @@ msgid "Uninstall"
 msgstr "Avinstallera"
 
 #. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
-#: src/bz-rich-app-tile.c:383
+#: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "/"
 
@@ -2389,7 +2365,7 @@ msgstr "Program-ID"
 msgid "SDK"
 msgstr "SDK"
 
-#: src/bz-safety-dialog.blp:158
+#: src/bz-safety-dialog.blp:157
 msgid ""
 "This app uses an outdated version of the software platform (SDK) and might "
 "contain bugs or security vulnerabilities which will not be fixed."
@@ -2466,12 +2442,12 @@ msgstr "Inga skärmbilder"
 msgid "Open Screenshot Viewer"
 msgstr "Öppna skärmbildsvisare"
 
-#: src/bz-screenshots-carousel.c:308
+#: src/bz-screenshots-carousel.c:310
 #, c-format
 msgid "Screenshot %u %s"
 msgstr "Skärmbild %u %s"
 
-#: src/bz-screenshots-carousel.c:310
+#: src/bz-screenshots-carousel.c:312
 #, c-format
 msgid "Screenshot %u"
 msgstr "Skärmbild %u"
@@ -2516,23 +2492,23 @@ msgstr "Sök program, spel"
 msgid "Search Filters"
 msgstr "Sökfilter"
 
-#: src/bz-search-page.blp:170
+#: src/bz-search-page.blp:171
 msgid "Browse Categories"
 msgstr "Bläddra kategorier"
 
-#: src/bz-search-page.blp:206
+#: src/bz-search-page.blp:207
 msgid "Categories Unavailable"
 msgstr "Kategorier är inte tillgängliga"
 
-#: src/bz-search-page.blp:207
+#: src/bz-search-page.blp:208
 msgid "Search for apps using the search bar above."
 msgstr "Sök efter program med sökfältet ovan."
 
-#: src/bz-search-page.blp:325
+#: src/bz-search-page.blp:326
 msgid "No Applications Found"
 msgstr "Inga program hittades"
 
-#: src/bz-search-page.c:249
+#: src/bz-search-page.c:254
 #, c-format
 msgid "No results found for \"%s\" in Flathub"
 msgstr "Inga resultat hittades för ”%s” i Flathub"
@@ -2713,74 +2689,74 @@ msgstr "%.2fK installationer totalt"
 msgid "%'d Total Installs"
 msgstr "%'d installationer totalt"
 
-#: src/bz-subcategory-list.c:78
+#: src/bz-subcategory-list.c:77
 msgid "No Results Found"
 msgstr "Inga resultat hittades"
 
-#: src/bz-subcategory-list.c:100
+#: src/bz-subcategory-list.c:99
 msgid "Search failed"
 msgstr "Sökning misslyckades"
 
-#: src/bz-transaction-dialog.c:154
+#: src/bz-transaction-dialog.c:156
 msgid "Keep User Data"
 msgstr "Bevara användardata"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:157
 msgid "Allow restoring personal settings &amp; content"
 msgstr "Tillåt återställande av programinställningar och innehåll"
 
-#: src/bz-transaction-dialog.c:164
+#: src/bz-transaction-dialog.c:166
 msgid "Delete All Data"
 msgstr "Ta bort alla data"
 
-#: src/bz-transaction-dialog.c:165
+#: src/bz-transaction-dialog.c:167
 msgid "Permanently erase user data to save space"
 msgstr "Ta permanent bort data för att spara utrymme"
 
-#: src/bz-transaction-dialog.c:190
+#: src/bz-transaction-dialog.c:192
 #, c-format
 msgid "Install %s?"
 msgstr "Installera %s?"
 
-#: src/bz-transaction-dialog.c:195
+#: src/bz-transaction-dialog.c:197
 msgid "Select which version to install. May install additional shared components"
 msgstr ""
 "Välj vilken version som ska installeras. Kan installera ytterligare delade "
 "komponenter"
 
-#: src/bz-transaction-dialog.c:197
+#: src/bz-transaction-dialog.c:199
 msgid "May install additional shared components"
 msgstr "Kan installera ytterligare delade komponenter"
 
-#: src/bz-transaction-dialog.c:200 src/bz-transaction-dialog.c:229
-#: src/bz-transaction-dialog.c:274 src/bz-transaction-dialog.c:576
+#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231
+#: src/bz-transaction-dialog.c:276 src/bz-transaction-dialog.c:578
 msgid "_Cancel"
 msgstr "A_vbryt"
 
-#: src/bz-transaction-dialog.c:201
+#: src/bz-transaction-dialog.c:203
 msgid "_Install"
 msgstr "_Installera"
 
-#: src/bz-transaction-dialog.c:218
+#: src/bz-transaction-dialog.c:220
 #, c-format
 msgid "Remove %s?"
 msgstr "Ta bort %s?"
 
-#: src/bz-transaction-dialog.c:221
+#: src/bz-transaction-dialog.c:223
 msgid "Select which version to remove."
 msgstr "Välj vilken version som ska tas bort."
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:225
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "Det kommer inte vara möjligt att använda %s efter borttagning."
 
-#: src/bz-transaction-dialog.c:246
+#: src/bz-transaction-dialog.c:248
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "”%s” har hög risk"
 
-#: src/bz-transaction-dialog.c:250
+#: src/bz-transaction-dialog.c:252
 msgid ""
 "This app has full access to your system, including all <b>your files, browser "
 "history, saved passwords</b>, and more. It also has access to the internet, "
@@ -2797,7 +2773,7 @@ msgstr ""
 "Eftersom programmet är proprietärt så går det inte granska vad det gör med "
 "dessa rättigheter."
 
-#: src/bz-transaction-dialog.c:259
+#: src/bz-transaction-dialog.c:261
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record all "
 "keystrokes, capture screenshots, and monitor other applications</b>. It also "
@@ -2815,30 +2791,30 @@ msgstr ""
 "Eftersom programmet är proprietärt så går det inte granska vad det gör med "
 "dessa rättigheter."
 
-#: src/bz-transaction-dialog.c:275
+#: src/bz-transaction-dialog.c:277
 msgid "_Install Anyway"
 msgstr "_Installera ändå"
 
-#: src/bz-transaction-dialog.c:330
+#: src/bz-transaction-dialog.c:332
 msgid "Failed to load transaction dialog"
 msgstr "Misslyckades med att läsa in transaktionsdialog"
 
-#: src/bz-transaction-dialog.c:547
+#: src/bz-transaction-dialog.c:549
 msgid "All apps are already installed"
 msgstr "Alla program är redan installerade"
 
-#: src/bz-transaction-dialog.c:549
+#: src/bz-transaction-dialog.c:551
 msgid "_OK"
 msgstr "_OK"
 
-#: src/bz-transaction-dialog.c:565
+#: src/bz-transaction-dialog.c:567
 #, c-format
 msgid "Install %u App?"
 msgid_plural "Install %u Apps?"
 msgstr[0] "Installera %u program?"
 msgstr[1] "Installera %u program?"
 
-#: src/bz-transaction-dialog.c:573
+#: src/bz-transaction-dialog.c:575
 msgid ""
 "The following will be installed. Additional shared components may also be "
 "installed"
@@ -2846,16 +2822,16 @@ msgstr ""
 "Följande kommer installeras. Ytterligare delade komponenter kan också "
 "installeras"
 
-#: src/bz-transaction-dialog.c:574
+#: src/bz-transaction-dialog.c:576
 #, c-format
 msgid "%d addons will be installed."
 msgstr "%d tillägg kommer installeras."
 
-#: src/bz-transaction-dialog.c:575
+#: src/bz-transaction-dialog.c:577
 msgid "Additionally, addons will be installed."
 msgstr "Ytterligare kommer tillägg att installeras."
 
-#: src/bz-transaction-dialog.c:577
+#: src/bz-transaction-dialog.c:579
 msgid "_Install All"
 msgstr "_Installera alla"
 
@@ -2888,15 +2864,15 @@ msgstr "Avbruten"
 msgid "Error"
 msgstr "Fel"
 
-#: src/bz-transaction-tile.blp:314
+#: src/bz-transaction-tile.blp:313
 msgid "Cancel Transaction"
 msgstr "Avbryt transaktion"
 
-#: src/bz-transaction-tile.blp:324
+#: src/bz-transaction-tile.blp:323
 msgid "Show Details"
 msgstr "Visa detaljer"
 
-#: src/bz-transaction-tile.blp:439
+#: src/bz-transaction-tile.blp:436
 msgid "Show Error Info"
 msgstr "Visa felinfo"
 
@@ -2924,6 +2900,18 @@ msgid_plural "%u Runtime Updates"
 msgstr[0] "%u exekveringsmiljöuppdatering"
 msgstr[1] "%u exekveringsmiljöuppdateringar"
 
+#: src/bz-update-history-dialog.blp:5 src/bz-update-history-dialog.blp:11
+msgid "Installed Updates"
+msgstr "Installerade uppdateringar"
+
+#: src/bz-update-history-dialog.blp:128 src/bz-update-history-dialog.c:99
+msgid "Release Notes"
+msgstr "Kommentarer till utgåva"
+
+#: src/bz-update-history-dialog.blp:143
+msgid "No Release Info"
+msgstr "Ingen utgåveinformation"
+
 #: src/bz-user-data-page.blp:5
 msgid "Manage Leftover User Data"
 msgstr "Hantera kvarblivna användardata"
@@ -2949,11 +2937,11 @@ msgstr[1] "Kastade användardata för %u program i papperskorgen"
 msgid "Trashed User Data for %s"
 msgstr "Kastade användardata för %s i papperskorgen"
 
-#: src/bz-user-data-tile.blp:92
+#: src/bz-user-data-tile.blp:91
 msgid "Open User Data Folder"
 msgstr "Öppna användardatamapp"
 
-#: src/bz-user-data-tile.blp:103
+#: src/bz-user-data-tile.blp:102
 msgid "Trash User Data"
 msgstr "Kasta användardata i papperskorgen"
 
@@ -2978,78 +2966,82 @@ msgstr "Bibliotek"
 msgid "Search"
 msgstr "Sök"
 
-#: src/bz-window.blp:223
+#: src/bz-window.blp:220
 msgid "Main Menu"
 msgstr "Huvudmeny"
 
-#: src/bz-window.blp:234
+#: src/bz-window.blp:231
 msgid "You are running a new version of Bazaar!"
 msgstr "Du kör en ny version av Bazaar!"
 
-#: src/bz-window.blp:235
+#: src/bz-window.blp:232
 msgid "See What's New"
 msgstr "Se vad som är nytt"
 
-#: src/bz-window.blp:242
+#: src/bz-window.blp:239
 msgid "You have a network connection but are viewing a cached version of Flathub"
 msgstr "Du har en nätverksanslutning men tittar på en cachad version av Flathub"
 
-#: src/bz-window.blp:253
+#: src/bz-window.blp:250
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr ""
 "Nätverksanslutningen har datakvoter — automatiska uppdateringar är inaktiverade"
 
-#: src/bz-window.blp:289
+#: src/bz-window.blp:286
 msgid "_Donate to Bazaar"
 msgstr "_Donera till Bazaar"
 
-#: src/bz-window.blp:295
+#: src/bz-window.blp:292
 msgid "_Refresh"
 msgstr "_Uppdatera"
 
-#: src/bz-window.blp:299
+#: src/bz-window.blp:296
 msgid "_Login With Flathub"
 msgstr "_Logga in med Flathub"
 
-#: src/bz-window.blp:305
+#: src/bz-window.blp:302
 msgid "_Manage Leftover User Data"
 msgstr "_Hantera kvarblivna användardata"
 
-#: src/bz-window.blp:311
+#: src/bz-window.blp:308
 msgid "_Preferences"
 msgstr "_Inställningar"
 
-#: src/bz-window.blp:316
+#: src/bz-window.blp:313
 msgid "_Keyboard Shortcuts"
 msgstr "_Tangentbordsgenvägar"
 
-#: src/bz-window.blp:321
+#: src/bz-window.blp:318
 msgid "_About Bazaar"
 msgstr "_Om Bazaar"
 
-#: src/bz-window.blp:327
+#: src/bz-window.blp:324
 msgid "_Quit Bazaar"
 msgstr "A_vsluta Bazaar"
 
-#: src/bz-window.blp:352
+#: src/bz-window.blp:349
 msgid "Log Out"
 msgstr "Logga ut"
 
 #. Translators: %s is the title of the current page
-#: src/bz-window.c:395
+#: src/bz-window.c:379
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazaar — %s"
 
-#: src/bz-window.c:668 src/bz-window.c:706
+#: src/bz-window.c:659 src/bz-window.c:697
 msgid "Failed to launch application"
 msgstr "Misslyckades med att starta program"
 
-#: src/bz-window.c:962
+#: src/bz-window.c:776
+msgid "Could not open link"
+msgstr "Kunde inte öppna länk"
+
+#: src/bz-window.c:984
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Du kör inte ta bort Bazaar från Bazaar!"
 
-#: src/bz-window.c:1298 src/bz-window.c:1332
+#: src/bz-window.c:1358 src/bz-window.c:1392
 msgid "Can't do that right now!"
 msgstr "Kan inte göra det just nu!"
 
@@ -3545,35 +3537,64 @@ msgstr "%s installerades"
 msgid "The app is ready to be used"
 msgstr "Programmet är redo att användas"
 
-#: src/update-worker.c:263
+#: src/update-worker.c:266
 msgid "Updates Are Out of Date"
 msgstr "Uppdateringar är inaktuella"
 
-#: src/update-worker.c:264
+#: src/update-worker.c:267
 msgid "Please check for available updates"
 msgstr "Sök efter tillgängliga uppdateringar"
 
-#: src/update-worker.c:449
+#: src/update-worker.c:513
 #, c-format
 msgid "%u App Updated"
 msgid_plural "%u Apps Updated"
 msgstr[0] "%u program uppdaterades"
 msgstr[1] "%u program uppdaterades"
 
-#: src/update-worker.c:452
+#: src/update-worker.c:516
 #, c-format
 msgid "%s has been updated."
 msgstr "%s har uppdaterats."
 
-#: src/update-worker.c:455
+#: src/update-worker.c:519
 #, c-format
 msgid "%s and %s have been updated."
 msgstr "%s och %s har uppdaterats."
 
-#: src/update-worker.c:459
+#: src/update-worker.c:523
 #, c-format
 msgid "Includes %s, %s and %s."
 msgstr "Inkluderar %s, %s och %s."
+
+#~ msgid "Ubuntu Troubles!"
+#~ msgstr "Ubuntu-problem!"
+
+#~ msgid "Malformed Link"
+#~ msgstr "Felformaterad länk"
+
+#~ msgid ""
+#~ "The link used to open this app has incorrect capitalization and may stop "
+#~ "working in the future.\n"
+#~ "\n"
+#~ "This is most likely caused by KRunner sending incorrect app IDs"
+#~ msgstr ""
+#~ "Länken som används för att öppna detta program har oriktig versalisering och "
+#~ "kan sluta fungera i framtiden.\n"
+#~ "\n"
+#~ "Detta orsakas troligen av att KRunner skickar felaktiga program-ID:n"
+
+#~ msgid "No Results"
+#~ msgstr "Inga resultat"
+
+#~ msgid "Try a different search query"
+#~ msgstr "Försök med en annan sökning"
+
+#~ msgid "More Apps"
+#~ msgstr "Mer program"
+
+#~ msgid "Other Apps"
+#~ msgstr "Andra program"
 
 # TODO: Translatornote om att det är ett namn på https://flathub.org/en/apps/io.github.nokse22.Exhibit
 #~ msgid "Exhibit app page"
