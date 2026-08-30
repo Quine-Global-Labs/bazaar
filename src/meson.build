@@ -93,7 +93,6 @@ bz_sources = files(
   'bz-entry-group-util.c',
   'bz-entry-group.c',
   'bz-entry-inspector.c',
-  'bz-entry-selection-row.c',
   'bz-entry.c',
   'bz-error-dialog.c',
   'bz-fading-clamp.c',
@@ -313,7 +312,6 @@ blueprints = custom_target('blueprints',
     'bz-developer-badge.blp',
     'bz-donations-dialog.blp',
     'bz-entry-inspector.blp',
-    'bz-entry-selection-row.blp',
     'bz-error-dialog.blp',
     'bz-favorite-button.blp',
     'bz-favorites-page.blp',
@@ -406,6 +404,7 @@ vala_deps = [
 vala_sources = files(
   'bz.vapi',
 
+  'bz-entry-selection-row.vala',
   'bz-decorated-screenshot.vala',
   'bz-themed-rect.vala',
   'bz-flathub-curated-section.vala'

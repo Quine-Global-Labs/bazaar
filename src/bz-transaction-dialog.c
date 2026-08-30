@@ -21,9 +21,9 @@
 #include "config.h"
 
 #include <glib/gi18n.h>
+#include <bzvala.h>
 
 #include "bz-application.h"
-#include "bz-entry-selection-row.h"
 #include "bz-flatpak-entry.h"
 #include "bz-state-info.h"
 #include "bz-transaction-dialog.h"
@@ -51,8 +51,9 @@ should_skip_entry (BzEntry *entry,
 }
 
 static GtkWidget *
-create_entry_radio_button (BzEntry    *entry,
-                           GtkWidget **out_radio)
+create_entry_radio_button (BzEntry      *entry,
+                           BzEntryGroup *group,
+                           GtkWidget   **out_radio)
 {
   BzStateInfo *state_info       = NULL;
   GListModel  *repositories     = NULL;
@@ -66,7 +67,7 @@ create_entry_radio_button (BzEntry    *entry,
   if (repositories != NULL)
     repo = bz_entry_get_repository (entry, repositories);
 
-  row   = bz_entry_selection_row_new (BZ_FLATPAK_ENTRY (entry), repo);
+  row   = bz_entry_selection_row_new (BZ_FLATPAK_ENTRY (entry), repo, group);
   radio = bz_entry_selection_row_get_radio (row);
 
   if (out_radio != NULL)
@@ -78,6 +79,7 @@ create_entry_radio_button (BzEntry    *entry,
 static GPtrArray *
 create_entry_radio_buttons (AdwAlertDialog *alert,
                             GListStore     *store,
+                            BzEntryGroup   *group,
                             gboolean        remove)
 {
   g_autoptr (GPtrArray) radios = NULL;
@@ -112,7 +114,7 @@ create_entry_radio_buttons (AdwAlertDialog *alert,
               entry       = g_list_model_get_item (G_LIST_MODEL (store), i);
               should_skip = should_skip_entry (entry, remove);
 
-              row = create_entry_radio_button (entry, &radio);
+              row = create_entry_radio_button (entry, group, &radio);
               g_ptr_array_add (radios, radio);
 
               gtk_check_button_set_group (GTK_CHECK_BUTTON (radio), dummy_radio);
@@ -385,7 +387,7 @@ show_dialog_fiber (ShowDialogData *data)
   else
     configure_install_dialog (ADW_ALERT_DIALOG (alert), title, id, n_total_entries > 1);
 
-  radios = create_entry_radio_buttons (ADW_ALERT_DIALOG (alert), store, data->remove);
+  radios = create_entry_radio_buttons (ADW_ALERT_DIALOG (alert), store, data->group, data->remove);
 
   if (!data->remove && data->auto_confirm && radios->len <= 1)
     {
