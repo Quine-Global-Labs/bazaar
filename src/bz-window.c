@@ -945,7 +945,8 @@ has_inputs_changed (BzWindow          *self,
                     GParamSpec        *pspec,
                     BzContentProvider *provider)
 {
-  if (!bz_content_provider_get_has_inputs (provider))
+  if (!bz_content_provider_get_has_inputs (provider) &&
+      g_strcmp0 (adw_view_stack_get_visible_child_name (self->main_view_stack), "browse") == 0)
     adw_view_stack_set_visible_child_name (self->main_view_stack, "flathub");
 }
 
