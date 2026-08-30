@@ -225,6 +225,9 @@ public extern class Bz.EntryGroupUtil : GLib.Object {
 public extern class Bz.EntryGroup : GLib.Object {
     [CCode (has_construct_function = false)]
     protected EntryGroup ();
+
+    [CCode (cname = "bz_entry_group_get_unique_id_is_eol")]
+    public bool get_unique_id_is_eol (string unique_id);
 }
 
 [CCode (cheader_filename = "bz-entry-inspector.h", type_id = "bz_entry_inspector_get_type ()")]
@@ -233,16 +236,12 @@ public extern class Bz.EntryInspector : GLib.Object {
     protected EntryInspector ();
 }
 
-[CCode (cheader_filename = "bz-entry-selection-row.h", type_id = "bz_entry_selection_row_get_type ()")]
-public extern class Bz.EntrySelectionRow : GLib.Object {
-    [CCode (has_construct_function = false)]
-    protected EntrySelectionRow ();
-}
-
 [CCode (cheader_filename = "bz-entry.h", type_id = "bz_entry_get_type ()")]
 public extern class Bz.Entry : GLib.Object {
     [CCode (has_construct_function = false)]
     protected Entry ();
+
+    public string? unique_id { get; set; }
 }
 
 [CCode (cheader_filename = "bz-error-dialog.h", type_id = "bz_error_dialog_get_type ()")]
@@ -318,9 +317,11 @@ public extern class Bz.FlathubState : GLib.Object {
 }
 
 [CCode (cheader_filename = "bz-flatpak-entry.h", type_id = "bz_flatpak_entry_get_type ()")]
-public extern class Bz.FlatpakEntry : GLib.Object {
+public extern class Bz.FlatpakEntry : Bz.Entry {
     [CCode (has_construct_function = false)]
     protected FlatpakEntry ();
+
+    public string? flatpak_version { get; set; }
 }
 
 [CCode (cheader_filename = "bz-flatpak-instance.h", type_id = "bz_flatpak_instance_get_type ()")]
@@ -896,6 +897,11 @@ public extern class Bz.Release : GLib.Object {
 public extern class Bz.Repository : GLib.Object {
     [CCode (has_construct_function = false)]
     protected Repository ();
+
+    public bool is_user { get; set; }
+    public string? title { get; set; }
+    public string? url { get; set; }
+    public string? name { get; set; }
 }
 
 [CCode (cheader_filename = "bz-root-blocklist.h", type_id = "bz_root_blocklist_get_type ()")]

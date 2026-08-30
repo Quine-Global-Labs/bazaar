@@ -35,6 +35,7 @@ typedef enum
   ENTRY_UPDATABLE_AVAILABLE   = 1 << 3,
   ENTRY_REMOVABLE             = 1 << 4,
   ENTRY_REMOVABLE_AVAILABLE   = 1 << 5,
+  ENTRY_EOL                   = 1 << 6,
 } EntryStateFlags;
 
 struct _BzEntryGroup
@@ -112,6 +113,7 @@ enum
   PROP_SEARCH_TOKENS,
   PROP_UI_ENTRY,
   PROP_EOL,
+  PROP_INSTALLED_EOL,
   PROP_INSTALLED_SIZE,
   PROP_N_ADDONS,
   PROP_DONATION_URL,
@@ -236,6 +238,9 @@ bz_entry_group_get_property (GObject    *object,
     case PROP_EOL:
       g_value_set_string (value, bz_entry_group_get_eol (self));
       break;
+    case PROP_INSTALLED_EOL:
+      g_value_set_boolean (value, bz_entry_group_get_installed_is_eol (self));
+      break;
     case PROP_INSTALLED_SIZE:
       g_value_set_uint64 (value, bz_entry_group_get_installed_size (self));
       break;
@@ -304,6 +309,7 @@ bz_entry_group_set_property (GObject      *object,
     case PROP_IS_VERIFIED:
     case PROP_SEARCH_TOKENS:
     case PROP_EOL:
+    case PROP_INSTALLED_EOL:
     case PROP_UI_ENTRY:
     case PROP_INSTALLABLE:
     case PROP_UPDATABLE:
@@ -420,6 +426,12 @@ bz_entry_group_class_init (BzEntryGroupClass *klass)
       g_param_spec_string (
           "eol",
           NULL, NULL, NULL,
+          G_PARAM_READABLE);
+
+  props[PROP_INSTALLED_EOL] =
+      g_param_spec_boolean (
+          "installed-eol",
+          NULL, NULL, FALSE,
           G_PARAM_READABLE);
 
   props[PROP_INSTALLED_SIZE] =
@@ -1003,12 +1015,6 @@ bz_entry_group_add (BzEntryGroup *self,
       eol = bz_entry_get_eol (entry);
       if (eol == NULL && runtime != NULL)
         eol = bz_entry_get_eol (runtime);
-      if (eol != NULL)
-        {
-          g_clear_pointer (&self->eol, g_free);
-          self->eol = g_strdup (eol);
-          g_object_notify_by_pspec (G_OBJECT (self), props[PROP_EOL]);
-        }
     }
 
   title          = bz_entry_get_title (entry);
@@ -1244,6 +1250,10 @@ bz_entry_group_add (BzEntryGroup *self,
           g_object_notify_by_pspec (G_OBJECT (self), props[PROP_INSTALLABLE]);
         }
     }
+
+  if (eol != NULL)
+    state_flags |= ENTRY_EOL;
+
   if (existing != G_MAXUINT)
     g_array_index (self->state_flags, gint32, existing) = state_flags;
   else
@@ -1251,6 +1261,72 @@ bz_entry_group_add (BzEntryGroup *self,
 
   if (!is_addon && is_searchable)
     self->searchable = TRUE;
+
+  {
+    guint    n_ids   = 0;
+    gboolean all_eol = FALSE;
+
+    n_ids   = g_list_model_get_n_items (G_LIST_MODEL (self->unique_ids));
+    all_eol = n_ids > 0;
+
+    for (guint i = 0; i < n_ids; i++)
+      {
+        if (!(g_array_index (self->state_flags, gint32, i) & ENTRY_EOL))
+          {
+            all_eol = FALSE;
+            break;
+          }
+      }
+
+    if (all_eol && eol != NULL)
+      {
+        if (g_strcmp0 (self->eol, eol) != 0)
+          {
+            g_clear_pointer (&self->eol, g_free);
+            self->eol = g_strdup (eol);
+            g_object_notify_by_pspec (G_OBJECT (self), props[PROP_EOL]);
+          }
+      }
+    else if (self->eol != NULL)
+      {
+        g_clear_pointer (&self->eol, g_free);
+        g_object_notify_by_pspec (G_OBJECT (self), props[PROP_EOL]);
+      }
+  }
+
+  g_object_notify_by_pspec (G_OBJECT (self), props[PROP_INSTALLED_EOL]);
+}
+
+gboolean
+bz_entry_group_get_installed_is_eol (BzEntryGroup *self)
+{
+  guint n_ids = 0;
+
+  n_ids = g_list_model_get_n_items (G_LIST_MODEL (self->unique_ids));
+  for (guint i = 0; i < n_ids; i++)
+    {
+      gint32 flags = 0;
+
+      flags = g_array_index (self->state_flags, gint32, i);
+      if ((flags & ENTRY_REMOVABLE) && (flags & ENTRY_EOL))
+        return TRUE;
+    }
+
+  return FALSE;
+}
+
+gboolean
+bz_entry_group_get_unique_id_is_eol (BzEntryGroup *self,
+                                     const char   *unique_id)
+{
+  g_autoptr (GMutexLocker) locker = NULL;
+  guint index                     = 0;
+
+  locker = g_mutex_locker_new (&self->mutex);
+  index  = gtk_string_list_find (self->unique_ids, unique_id);
+
+  return index != G_MAXUINT &&
+         (g_array_index (self->state_flags, gint32, index) & ENTRY_EOL) != 0;
 }
 
 void
@@ -1399,6 +1475,7 @@ installed_changed (BzEntryGroup *self,
   self->cache_size     = 0;
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_USER_DATA_SIZE]);
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_CACHE_SIZE]);
+  g_object_notify_by_pspec (G_OBJECT (self), props[PROP_INSTALLED_EOL]);
 }
 
 static void
@@ -1896,9 +1973,13 @@ bz_entry_group_reconcile_with_installed_set (BzEntryGroup *self,
       g_autoptr (GtkStringObject) uid_obj = NULL;
       const char *uid                     = NULL;
       gint32      flags                   = 0;
+      gint32      previous_flags          = 0;
 
       uid_obj = g_list_model_get_item (G_LIST_MODEL (self->unique_ids), i);
       uid     = gtk_string_object_get_string (uid_obj);
+
+      previous_flags = g_array_index (self->state_flags, gint32, i);
+      flags          = previous_flags & ENTRY_EOL;
 
       if (g_hash_table_contains (installed_set, uid))
         {
@@ -1921,6 +2002,7 @@ bz_entry_group_reconcile_with_installed_set (BzEntryGroup *self,
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_REMOVABLE_AND_AVAILABLE]);
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_INSTALLABLE]);
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_INSTALLABLE_AND_AVAILABLE]);
+  g_object_notify_by_pspec (G_OBJECT (self), props[PROP_INSTALLED_EOL]);
 
   return any_installed;
 }

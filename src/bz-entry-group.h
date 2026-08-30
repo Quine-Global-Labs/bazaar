@@ -164,6 +164,13 @@ bz_entry_group_add (BzEntryGroup *self,
                     BzEntry      *runtime,
                     gboolean      ignore_eol);
 
+gboolean
+bz_entry_group_get_installed_is_eol (BzEntryGroup *self);
+
+gboolean
+bz_entry_group_get_unique_id_is_eol (BzEntryGroup *self,
+                                     const char   *unique_id);
+
 void
 bz_entry_group_connect_living (BzEntryGroup *self,
                                BzEntry      *entry);

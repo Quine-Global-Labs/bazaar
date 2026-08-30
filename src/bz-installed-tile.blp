@@ -50,7 +50,7 @@ template $BzInstalledTile: $BzListTile {
         xalign: 0.0;
         ellipsize: end;
         single-line-mode: true;
-        visible: bind $invert_boolean($is_null(template.group as <$BzEntryGroup>.eol) as <bool>) as <bool>;
+        visible: bind template.group as <$BzEntryGroup>.installed-eol;
         label: _("Stopped Receiving Updates");
         styles ["warning", "caption"]
       }
