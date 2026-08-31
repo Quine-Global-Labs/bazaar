@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-27 12:17+0000\n"
-"PO-Revision-Date: 2026-08-28 11:39+0800\n"
+"POT-Creation-Date: 2026-08-30 21:38+0000\n"
+"PO-Revision-Date: 2026-09-01 07:48+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -1051,17 +1051,21 @@ msgstr "您已安装此应用的多个版本。您希望用哪一个继续？"
 msgid "Cancel"
 msgstr "取消"
 
-#: src/bz-entry-selection-row.blp:16
-msgid "For This User Only"
-msgstr "仅用于此用户"
-
-#: src/bz-entry-selection-row.c:112
+#: src/bz-entry-selection-row.vala:40
 msgid "this user"
 msgstr "此用户"
 
-#: src/bz-entry-selection-row.c:112
+#: src/bz-entry-selection-row.vala:40
 msgid "all users"
 msgstr "所有用户"
+
+#: src/bz-entry-selection-row.vala:55
+msgid "End of Life"
+msgstr "结束支持"
+
+#: src/bz-entry-selection-row.vala:69
+msgid "For This User Only"
+msgstr "仅用于此用户"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -1800,7 +1804,7 @@ msgstr "打开(_O)"
 msgid "Uninstall Application"
 msgstr "卸载应用程序"
 
-#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:230
+#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
 msgid "_Remove"
 msgstr "移除(_R)"
 
@@ -2652,65 +2656,65 @@ msgstr "未找到结果"
 msgid "Search failed"
 msgstr "搜索失败"
 
-#: src/bz-transaction-dialog.c:154
+#: src/bz-transaction-dialog.c:156
 msgid "Keep User Data"
 msgstr "保留用户数据"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:157
 msgid "Allow restoring personal settings &amp; content"
 msgstr "允许恢复个人设置 &amp; 内容"
 
-#: src/bz-transaction-dialog.c:164
+#: src/bz-transaction-dialog.c:166
 msgid "Delete All Data"
 msgstr "删除所有数据"
 
-#: src/bz-transaction-dialog.c:165
+#: src/bz-transaction-dialog.c:167
 msgid "Permanently erase user data to save space"
 msgstr "永久删除用户数据以节省空间"
 
-#: src/bz-transaction-dialog.c:190
+#: src/bz-transaction-dialog.c:192
 #, c-format
 msgid "Install %s?"
 msgstr "安装 %s 吗？"
 
-#: src/bz-transaction-dialog.c:195
+#: src/bz-transaction-dialog.c:197
 msgid ""
 "Select which version to install. May install additional shared components"
 msgstr "选择要安装的版本。可能安装额外共享组件"
 
-#: src/bz-transaction-dialog.c:197
+#: src/bz-transaction-dialog.c:199
 msgid "May install additional shared components"
 msgstr "可能安装额外的共享组件"
 
-#: src/bz-transaction-dialog.c:200 src/bz-transaction-dialog.c:229
-#: src/bz-transaction-dialog.c:274 src/bz-transaction-dialog.c:576
+#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231
+#: src/bz-transaction-dialog.c:276 src/bz-transaction-dialog.c:578
 msgid "_Cancel"
 msgstr "取消(_C)"
 
-#: src/bz-transaction-dialog.c:201
+#: src/bz-transaction-dialog.c:203
 msgid "_Install"
 msgstr "安装(_I)"
 
-#: src/bz-transaction-dialog.c:218
+#: src/bz-transaction-dialog.c:220
 #, c-format
 msgid "Remove %s?"
 msgstr "移除 %s 吗？"
 
-#: src/bz-transaction-dialog.c:221
+#: src/bz-transaction-dialog.c:223
 msgid "Select which version to remove."
 msgstr "选择要移除的版本。"
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:225
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "卸载后将无法使用 %s。"
 
-#: src/bz-transaction-dialog.c:246
+#: src/bz-transaction-dialog.c:248
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "“%s”是高风险的"
 
-#: src/bz-transaction-dialog.c:250
+#: src/bz-transaction-dialog.c:252
 msgid ""
 "This app has full access to your system, including all <b>your files, "
 "browser history, saved passwords</b>, and more. It also has access to the "
@@ -2724,7 +2728,7 @@ msgstr ""
 "\n"
 "由于该应用是专有的，其如何利用权限也无法审查。\t"
 
-#: src/bz-transaction-dialog.c:259
+#: src/bz-transaction-dialog.c:261
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record "
 "all keystrokes, capture screenshots, and monitor other applications</b>. It "
@@ -2740,44 +2744,44 @@ msgstr ""
 "\n"
 "由于该应用是专有的，其如何利用权限也无法审查。"
 
-#: src/bz-transaction-dialog.c:275
+#: src/bz-transaction-dialog.c:277
 msgid "_Install Anyway"
 msgstr "仍然安装(_I)"
 
-#: src/bz-transaction-dialog.c:330
+#: src/bz-transaction-dialog.c:332
 msgid "Failed to load transaction dialog"
 msgstr "加载事务对话框失败"
 
-#: src/bz-transaction-dialog.c:547
+#: src/bz-transaction-dialog.c:549
 msgid "All apps are already installed"
 msgstr "所有应用已经安装"
 
-#: src/bz-transaction-dialog.c:549
+#: src/bz-transaction-dialog.c:551
 msgid "_OK"
 msgstr "确定(_O)"
 
-#: src/bz-transaction-dialog.c:565
+#: src/bz-transaction-dialog.c:567
 #, c-format
 msgid "Install %u App?"
 msgid_plural "Install %u Apps?"
 msgstr[0] "安装 %u 个应用？"
 
-#: src/bz-transaction-dialog.c:573
+#: src/bz-transaction-dialog.c:575
 msgid ""
 "The following will be installed. Additional shared components may also be "
 "installed"
 msgstr "将会安装以下项目。可能同时安装额外共享组件"
 
-#: src/bz-transaction-dialog.c:574
+#: src/bz-transaction-dialog.c:576
 #, c-format
 msgid "%d addons will be installed."
 msgstr "%d 附加组件将被安装。"
 
-#: src/bz-transaction-dialog.c:575
+#: src/bz-transaction-dialog.c:577
 msgid "Additionally, addons will be installed."
 msgstr "另外，将会安装附加组件。"
 
-#: src/bz-transaction-dialog.c:577
+#: src/bz-transaction-dialog.c:579
 msgid "_Install All"
 msgstr "全部安装(_I)"
 
@@ -2980,11 +2984,11 @@ msgstr "启动应用程序失败"
 msgid "Could not open link"
 msgstr "无法打开链接"
 
-#: src/bz-window.c:983
+#: src/bz-window.c:984
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "您无法从“集市”移除“集市”！"
 
-#: src/bz-window.c:1357 src/bz-window.c:1391
+#: src/bz-window.c:1358 src/bz-window.c:1392
 msgid "Can't do that right now!"
 msgstr "无法立刻那么做！"
 
