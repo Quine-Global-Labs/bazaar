@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-27 12:17+0000\n"
-"PO-Revision-Date: 2026-08-28 09:10+0200\n"
+"POT-Creation-Date: 2026-08-30 21:38+0000\n"
+"PO-Revision-Date: 2026-08-31 15:17+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -1073,17 +1073,21 @@ msgstr ""
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: src/bz-entry-selection-row.blp:16
-msgid "For This User Only"
-msgstr "Samo za tega uporabnika"
-
-#: src/bz-entry-selection-row.c:112
+#: src/bz-entry-selection-row.vala:40
 msgid "this user"
 msgstr "ta uporabnik"
 
-#: src/bz-entry-selection-row.c:112
+#: src/bz-entry-selection-row.vala:40
 msgid "all users"
 msgstr "vsi uporabniki"
+
+#: src/bz-entry-selection-row.vala:55
+msgid "End of Life"
+msgstr "Konec življenjske dobe"
+
+#: src/bz-entry-selection-row.vala:69
+msgid "For This User Only"
+msgstr "Samo za tega uporabnika"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -1833,7 +1837,7 @@ msgstr "_Odpri"
 msgid "Uninstall Application"
 msgstr "Odstrani program"
 
-#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:230
+#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
 msgid "_Remove"
 msgstr "O_dstrani"
 
@@ -2724,67 +2728,67 @@ msgstr "Ni najdenih zadetkov"
 msgid "Search failed"
 msgstr "Iskanje je spodletelo"
 
-#: src/bz-transaction-dialog.c:154
+#: src/bz-transaction-dialog.c:156
 msgid "Keep User Data"
 msgstr "Ohrani uporabniške podatke"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:157
 msgid "Allow restoring personal settings &amp; content"
 msgstr "Omogoči obnavljanje osebnih nastavitev in vsebine"
 
-#: src/bz-transaction-dialog.c:164
+#: src/bz-transaction-dialog.c:166
 msgid "Delete All Data"
 msgstr "Izbriši vse podatke"
 
-#: src/bz-transaction-dialog.c:165
+#: src/bz-transaction-dialog.c:167
 msgid "Permanently erase user data to save space"
 msgstr "Trajno izbriši uporabniške podatke za prihranek prostora na disku"
 
-#: src/bz-transaction-dialog.c:190
+#: src/bz-transaction-dialog.c:192
 #, c-format
 msgid "Install %s?"
 msgstr "Ali želite namestiti %s?"
 
-#: src/bz-transaction-dialog.c:195
+#: src/bz-transaction-dialog.c:197
 msgid ""
 "Select which version to install. May install additional shared components"
 msgstr ""
 "Izberite, katero različico želite namestiti. Lahko namesti še dodatne "
 "komponente v skupni rabi"
 
-#: src/bz-transaction-dialog.c:197
+#: src/bz-transaction-dialog.c:199
 msgid "May install additional shared components"
 msgstr "Lahko namesti dodatne komponente v skupni rabi"
 
-#: src/bz-transaction-dialog.c:200 src/bz-transaction-dialog.c:229
-#: src/bz-transaction-dialog.c:274 src/bz-transaction-dialog.c:576
+#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231
+#: src/bz-transaction-dialog.c:276 src/bz-transaction-dialog.c:578
 msgid "_Cancel"
 msgstr "Pre_kliči"
 
-#: src/bz-transaction-dialog.c:201
+#: src/bz-transaction-dialog.c:203
 msgid "_Install"
 msgstr "_Namesti"
 
-#: src/bz-transaction-dialog.c:218
+#: src/bz-transaction-dialog.c:220
 #, c-format
 msgid "Remove %s?"
 msgstr "Ali želite odstraniti %s?"
 
-#: src/bz-transaction-dialog.c:221
+#: src/bz-transaction-dialog.c:223
 msgid "Select which version to remove."
 msgstr "Izberite različico, ki jo želite odstraniti."
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:225
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "Programa %s po odstranitvi ne bo možno več uporabljati."
 
-#: src/bz-transaction-dialog.c:246
+#: src/bz-transaction-dialog.c:248
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "»%s« predstavlja visoko tveganje"
 
-#: src/bz-transaction-dialog.c:250
+#: src/bz-transaction-dialog.c:252
 msgid ""
 "This app has full access to your system, including all <b>your files, "
 "browser history, saved passwords</b>, and more. It also has access to the "
@@ -2801,7 +2805,7 @@ msgstr ""
 "Ker gre za lastniški program, ni mogoče preveriti, kako ta uporablja ta "
 "dovoljenja."
 
-#: src/bz-transaction-dialog.c:259
+#: src/bz-transaction-dialog.c:261
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record "
 "all keystrokes, capture screenshots, and monitor other applications</b>. It "
@@ -2818,23 +2822,23 @@ msgstr ""
 "\n"
 "Ker je program lastniški, ni mogoče preveriti, kako ravna s temi dovoljenji."
 
-#: src/bz-transaction-dialog.c:275
+#: src/bz-transaction-dialog.c:277
 msgid "_Install Anyway"
 msgstr "Vseeno _namesti"
 
-#: src/bz-transaction-dialog.c:330
+#: src/bz-transaction-dialog.c:332
 msgid "Failed to load transaction dialog"
 msgstr "Nalaganje pogovornega okna transakcije je spodletelo"
 
-#: src/bz-transaction-dialog.c:547
+#: src/bz-transaction-dialog.c:549
 msgid "All apps are already installed"
 msgstr "Vsi programi so že nameščeni"
 
-#: src/bz-transaction-dialog.c:549
+#: src/bz-transaction-dialog.c:551
 msgid "_OK"
 msgstr "V _redu"
 
-#: src/bz-transaction-dialog.c:565
+#: src/bz-transaction-dialog.c:567
 #, c-format
 msgid "Install %u App?"
 msgid_plural "Install %u Apps?"
@@ -2843,23 +2847,23 @@ msgstr[1] "Ali želite namestiti %u program?"
 msgstr[2] "Ali želite namestiti %u programa?"
 msgstr[3] "Ali želite namestiti %u programe?"
 
-#: src/bz-transaction-dialog.c:573
+#: src/bz-transaction-dialog.c:575
 msgid ""
 "The following will be installed. Additional shared components may also be "
 "installed"
 msgstr ""
 "Naslednje bo nameščeno. Dodatne skupne komponente bodo tudi morda nameščene"
 
-#: src/bz-transaction-dialog.c:574
+#: src/bz-transaction-dialog.c:576
 #, c-format
 msgid "%d addons will be installed."
 msgstr "%d dodatkov bo nameščenih."
 
-#: src/bz-transaction-dialog.c:575
+#: src/bz-transaction-dialog.c:577
 msgid "Additionally, addons will be installed."
 msgstr "Poleg tega bodo nameščeni še dodatki."
 
-#: src/bz-transaction-dialog.c:577
+#: src/bz-transaction-dialog.c:579
 msgid "_Install All"
 msgstr "Namesti _vse"
 
@@ -3072,11 +3076,11 @@ msgstr "Zagon programa ni uspel"
 msgid "Could not open link"
 msgstr "Ni mogoče odpreti povezave"
 
-#: src/bz-window.c:983
+#: src/bz-window.c:984
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Ne morete odstraniti Bazarja v Bazarju!"
 
-#: src/bz-window.c:1357 src/bz-window.c:1391
+#: src/bz-window.c:1358 src/bz-window.c:1392
 msgid "Can't do that right now!"
 msgstr "Tega zdaj ni možno narediti!"
 
