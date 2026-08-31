@@ -18,7 +18,7 @@ libproxy_dep         = dependency('libproxy-1.0', version: '>= 0.5')
 malcontent_dep 	     = dependency('malcontent-0', version: '>= 0.12.0')
 gtksourceview_dep    = dependency('gtksourceview-5', version: '>= 5.17')
 libsystemd_dep       = dependency('libsystemd', version: '>= 245')
-
+dbus_dep             = dependency('dbus-1', version: '>= 1.12')
 
 dl_worker_sources = [
   'env.c',
@@ -44,9 +44,8 @@ daemon_sources = [
   'bazaar-daemon.c',
   'search-index.c',
 ]
-
 daemon_exe = executable(daemon_bin_name, daemon_sources,
-  dependencies: [libsystemd_dep],
+  dependencies: [libsystemd_dep, dbus_dep],
        install: true,
 )
 
