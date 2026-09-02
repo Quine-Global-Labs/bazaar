@@ -49,6 +49,10 @@ bz_window_show_group (BzWindow     *self,
                       BzEntryGroup *group);
 
 void
+bz_window_install_entry (BzWindow *self,
+                         BzEntry  *entry);
+
+void
 bz_window_push_page (BzWindow          *self,
                      AdwNavigationPage *page);
 

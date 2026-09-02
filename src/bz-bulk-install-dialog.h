@@ -1,4 +1,4 @@
-/* bz-transaction-dialog.h
+/* bz-bulk-install-dialog.h
  *
  * Copyright 2026 Alexander Vanhee
  *
@@ -22,16 +22,12 @@
 
 #include <adwaita.h>
 
-#include "bz-entry-group.h"
-#include "bz-transaction-dialog-result.h"
+#include "bz-bulk-install-dialog-result.h"
 
 G_BEGIN_DECLS
 
 DexFuture *
-bz_transaction_dialog_show (GtkWidget    *parent,
-                            BzEntry      *entry,
-                            BzEntryGroup *group,
-                            gboolean      remove,
-                            gboolean      auto_confirm);
+bz_bulk_install_dialog_show (GtkWidget  *parent,
+                             GListModel *groups);
 
 G_END_DECLS

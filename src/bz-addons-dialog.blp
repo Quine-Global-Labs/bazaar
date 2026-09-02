@@ -263,7 +263,7 @@ template $BzAddonsDialog: Adw.Dialog {
                   styles ["dimmed"]
                 }
 
-                $BzInstallControls {
+                $BzInstallControls install_controls {
                   halign: center;
                   margin-top: 6;
                   margin-bottom: 8;
@@ -308,6 +308,40 @@ template $BzAddonsDialog: Adw.Dialog {
                     margin-end: 16;
                   };
                   margin-bottom: 12;
+                }
+
+                Revealer {
+                  transition-type: swing_up;
+                  reveal-child: bind $logical_and(
+                      $logical_and(
+                        $is_le(template.selected-group as <$BzEntryGroup>.removable, 0) as <bool>,
+                        $is_gt(template.selected-group as <$BzEntryGroup>.installable, 0) as <bool>
+                      ) as <bool>,
+                      $not(install_controls.in-progress) as <bool>
+                    ) as <bool>;
+
+                  child: Box {
+                    orientation: vertical;
+
+                    Label {
+                      halign: start;
+                      label: _("Other Sources");
+                      margin-top: 5;
+                      margin-bottom: 8;
+                      margin-start: 3;
+                      visible: bind other_sources.visible;
+
+                      styles [
+                        "heading",
+                      ]
+                    }
+
+                    $BzOtherSourcesList other_sources {
+                      entry-group: bind template.selected-group as <$BzEntryGroup>;
+                      download => $other_source_download_cb(template);
+                      margin-bottom: 8;
+                    }
+                  };
                 }
 
                 $BzShareList {

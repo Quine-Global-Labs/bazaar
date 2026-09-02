@@ -31,6 +31,8 @@ template $BzInstallControls: Box {
                   template.tracker as <$BzTransactionEntryTracker>.progress as <double>
                 ) as <string>, $install_btn_state_fallback() as <string>};
 
+        notify::state => $on_tracker_state_changed() swapped;
+
         hexpand: bind $invert_boolean(template.wide) as <bool>;
         halign: bind $choose_int(template.wide, 2, 0) as <int>;
       };

@@ -78,6 +78,7 @@ bz_sources = files(
   'bz-backend.c',
   'bz-banner-view.c',
   'bz-bundle-install-dialog.c',
+  'bz-bulk-install-dialog.c',
   'bz-category-flags.c',
   'bz-category-tile.c',
   'bz-content-provider.c',
@@ -404,10 +405,10 @@ vala_deps = [
 vala_sources = files(
   'bz.vapi',
 
-  'bz-entry-selection-row.vala',
   'bz-decorated-screenshot.vala',
   'bz-themed-rect.vala',
-  'bz-flathub-curated-section.vala'
+  'bz-flathub-curated-section.vala',
+  'bz-other-sources-list.vala',
 )
 
 bz_vala_static = static_library(

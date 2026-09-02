@@ -564,6 +564,39 @@ template $BzFullView: Adw.Bin {
                           };
                         }
 
+                        Revealer {
+                          transition-type: swing_up;
+                          reveal-child: bind $logical_and(
+                              $logical_and(
+                                $is_le(template.entry-group as <$BzEntryGroup>.removable, 0) as <bool>,
+                                $is_gt(template.entry-group as <$BzEntryGroup>.installable, 0) as <bool>
+                              ) as <bool>,
+                              $not(wide_install_controls.in-progress) as <bool>
+                            ) as <bool>;
+
+                          child: Box {
+                            orientation: vertical;
+
+                            Label {
+                              halign: start;
+                              label: _("Other Sources");
+                              margin-top: 5;
+                              margin-bottom: 8;
+                              margin-start: 3;
+                              visible: bind other_sources.visible;
+
+                              styles [
+                                "heading",
+                              ]
+                            }
+
+                            $BzOtherSourcesList other_sources {
+                              entry-group: bind template.entry-group as <$BzEntryGroup>;
+                              download => $other_source_download_cb(template);
+                            }
+                          };
+                        }
+
                         $BzReleasesPreview releases_list {
                           version-history: bind template.ui-entry as <$BzResult>.object as <$BzEntry>.version-history;
                           installed-versions: bind template.entry-group as <$BzEntryGroup>.installed-versions;
