@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-24 21:45+0000\n"
-"PO-Revision-Date: 2026-08-25 06:57+0200\n"
+"POT-Creation-Date: 2026-08-30 21:38+0000\n"
+"PO-Revision-Date: 2026-09-02 06:20+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "Language: ka\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2 data/io.github.kolunmi.Bazaar.metainfo.xml.in:7
-#: src/bz-window.blp:54 src/bz-window.blp:210 src/bz-window.c:376 src/bz-window.c:377
+#: src/bz-window.blp:54 src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
 msgid "Bazaar"
 msgstr "Bazaar"
 
@@ -91,7 +91,7 @@ msgstr "გვერდის მოძებნა"
 msgid "Category page"
 msgstr "კატეგორიის გვერდი"
 
-#: src/bz-addon-tile.blp:64 src/bz-installed-tile.blp:55 src/bz-rich-app-tile.blp:143
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54 src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "განახლებების მიღება შეჩერებულია"
 
@@ -111,7 +111,7 @@ msgid "Add-on"
 msgstr "დამატება"
 
 #: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22 src/bz-addons-dialog.blp:71
-#: src/bz-installed-tile.blp:96
+#: src/bz-installed-tile.blp:94
 msgid "Manage Add-Ons"
 msgstr "დამატებების მართვა"
 
@@ -127,15 +127,15 @@ msgstr "თქვენი მიმდინარე ფილტრის პ
 msgid "Add-on Page"
 msgstr "დამატების გვერდი"
 
-#: src/bz-addons-dialog.blp:205 src/bz-full-view.blp:398
+#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:392
 msgid "Downloads/Month"
 msgstr "გადმოწერა/თვე"
 
-#: src/bz-addons-dialog.blp:232 src/bz-full-view.blp:434
+#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:427
 msgid "Stopped Receiving Core Updates"
 msgstr "ძირითადი განახლებების მიღება გაჩერდა"
 
-#: src/bz-addons-dialog.blp:246
+#: src/bz-addons-dialog.blp:243
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
 msgstr ""
@@ -147,11 +147,11 @@ msgstr ""
 msgid "Add-on for %s"
 msgstr "დამატება %s-ისთვის"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
 msgid "Show Less"
 msgstr "ნაკლების ჩვენება"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:587 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "მეტის ჩვენება"
 
@@ -671,27 +671,27 @@ msgstr "ინტერნეტიდან გადმოსაწერი �
 msgid "Size on Disk"
 msgstr "ზომა დისკზე"
 
-#: src/bz-app-size-dialog.blp:203
+#: src/bz-app-size-dialog.blp:202
 msgid "Open user data folder"
 msgstr "მომხმარებლის მონაცემების საქაღალდის გახსნა"
 
-#: src/bz-app-size-dialog.blp:213
+#: src/bz-app-size-dialog.blp:212
 msgid "Your User Data"
 msgstr "თქვენი მომხმარებლის მონაცემები"
 
-#: src/bz-app-size-dialog.blp:214
+#: src/bz-app-size-dialog.blp:213
 msgid "Caches, settings, and other app data"
 msgstr "კეშები, პარამეტრები და აპის სხვა მონაცემები"
 
-#: src/bz-app-size-dialog.blp:234
+#: src/bz-app-size-dialog.blp:233
 msgid "Cache"
 msgstr "კეში"
 
-#: src/bz-app-size-dialog.blp:235
+#: src/bz-app-size-dialog.blp:234
 msgid "Temporary cached data"
 msgstr "დროებით ქეში"
 
-#: src/bz-app-size-dialog.blp:247
+#: src/bz-app-size-dialog.blp:246
 msgid "Clear Cache"
 msgstr "კეშის გასუფთავება"
 
@@ -982,31 +982,31 @@ msgstr "%s app ID-ის მფლობელობა გადამოწმ
 msgid "Bazaar Release"
 msgstr "Bazaar-ის ვერსია"
 
-#: src/bz-donations-dialog.blp:77
+#: src/bz-donations-dialog.blp:76
 msgid "Full Release Notes"
 msgstr "ვერსიის შენიშვნები"
 
-#: src/bz-donations-dialog.blp:112
+#: src/bz-donations-dialog.blp:111
 msgid "This release was made possible by users like you!"
 msgstr "ამ ვერსიის არსებობა შესაძლებელია ისეთი მომხმარებლების არსებობით, როგორიც თქვენ ბრძანდებით!"
 
-#: src/bz-donations-dialog.blp:121
+#: src/bz-donations-dialog.blp:120
 msgid "I love making Bazaar, but I cannot do it alone. Help support further development by donating on Ko-Fi."
 msgstr ""
 "მე მიყვარს Bazaar-ის შექმნა, მაგრამ ამას მარტო ვერ ვიზამ. დაგვეხმარეთ მის განვითარებაში Ko-Fi-ზე შეწირვით."
 
-#: src/bz-donations-dialog.blp:136
+#: src/bz-donations-dialog.blp:134
 msgid "Donate to Bazaar"
 msgstr "შესწირეთ Bazaar-ს"
 
 #. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
-#: src/bz-donations-dialog.c:228
+#: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "რა არის ახალი %s-ში?"
 
 #. Translators: this is a release date label, like "Released February 9, 2026"
-#: src/bz-donations-dialog.c:244
+#: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "გამოსვლის დრო %B %-e, %Y"
 
@@ -1018,21 +1018,25 @@ msgstr "დაყენების არჩევა"
 msgid "You have multiple versions of this app installed. Which one would you like to proceed with?"
 msgstr "გაქვთ ამ აპის ერზე მეტი ვერსია დაყენებული. რომელზე გნებავთ მუშაობა?"
 
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:234
+#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: src/bz-entry-selection-row.blp:17
-msgid "For This User Only"
-msgstr "მხოლოდ ამ მომხმარებლისთვის"
-
-#: src/bz-entry-selection-row.c:112
+#: src/bz-entry-selection-row.vala:40
 msgid "this user"
 msgstr "ეს მომხმარებელი"
 
-#: src/bz-entry-selection-row.c:112
+#: src/bz-entry-selection-row.vala:40
 msgid "all users"
 msgstr "ყველა მომხმარებელი"
+
+#: src/bz-entry-selection-row.vala:55
+msgid "End of Life"
+msgstr "მხარდაჭერა-დასრულებული"
+
+#: src/bz-entry-selection-row.vala:69
+msgid "For This User Only"
+msgstr "მხოლოდ ამ მომხმარებლისთვის"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69 src/error.c:88
 #: src/update-worker.c:473
@@ -1048,7 +1052,7 @@ msgstr "კოპირება"
 msgid "Copied!"
 msgstr "კოპირებულია!"
 
-#: src/bz-favorite-button.blp:14
+#: src/bz-favorite-button.blp:13
 msgid "Favorite Count"
 msgstr "რჩეულების რაოდენობა"
 
@@ -1064,27 +1068,27 @@ msgstr "შედით Flathub-ში რჩეულების სამა�
 msgid "Log In"
 msgstr "შესვლა"
 
-#: src/bz-favorites-page.blp:5 src/bz-window.blp:345
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:342
 msgid "Favorites"
 msgstr "რჩეულები"
 
-#: src/bz-favorites-page.blp:17 src/bz-section-view.blp:87
+#: src/bz-favorites-page.blp:16 src/bz-section-view.blp:87
 msgid "Install All"
 msgstr "ყველას დაყენება"
 
-#: src/bz-favorites-page.blp:47
+#: src/bz-favorites-page.blp:46
 msgid "No Favorites"
 msgstr "რჩეულების გარეშე"
 
-#: src/bz-favorites-page.blp:48
+#: src/bz-favorites-page.blp:47
 msgid "Applications you mark as favorite will appear here"
 msgstr "აპლიკაციები, რომლებსაც რჩეულად მონიშნავთ, აქ გამოჩნდება"
 
-#: src/bz-favorites-tile.blp:60
+#: src/bz-favorites-tile.blp:58
 msgid "Support This Application"
 msgstr "მხარი დაუჭირეთ ამ აპლიკაციას"
 
-#: src/bz-favorites-tile.blp:109
+#: src/bz-favorites-tile.blp:105
 msgid "Remove From Favorites"
 msgstr "რჩეულებიდან წაშლა"
 
@@ -1580,33 +1584,33 @@ msgstr "ეს ლოკალური მინიატურაა. ზო�
 msgid "Preview Store Appearance"
 msgstr "მაღაზიის გარეგნობის გადახედვა"
 
-#: src/bz-full-view.blp:223
+#: src/bz-full-view.blp:222
 msgid "_Support"
 msgstr "მხარდა_ჭერა"
 
-#: src/bz-full-view.blp:448
+#: src/bz-full-view.blp:441
 msgid "This app uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
 msgstr ""
 "ეს აპი იყენებს ბიბლიოთეკას, რომელიც აღარ იღებს განახლებებს და უსაფრთხოების პაჩებს. ის, შეიძლება სახიფათო "
 "გახდეს გამოსაყენებლად."
 
-#: src/bz-full-view.blp:526
+#: src/bz-full-view.blp:519
 msgid "Trash Data"
 msgstr "გადატანა ნაგვის ყუთში"
 
-#: src/bz-full-view.blp:589
+#: src/bz-full-view.blp:582
 msgid "Add-ons"
 msgstr "დამატებები"
 
-#: src/bz-full-view.blp:624
+#: src/bz-full-view.blp:617
 msgid "More Add-Ons"
 msgstr "მეტი დამატება"
 
-#: src/bz-full-view.blp:635
+#: src/bz-full-view.blp:628
 msgid "Links"
 msgstr "ბმულები"
 
-#: src/bz-full-view.blp:666
+#: src/bz-full-view.blp:659
 msgid "Similar Apps"
 msgstr "მსგავსი პროგრამები"
 
@@ -1656,7 +1660,7 @@ msgid_plural "%d Applications"
 msgstr[0] "%d აპლიკაცია"
 msgstr[1] "%d აპლიკაცია"
 
-#: src/bz-full-view.c:467 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "მომხმარებლის მონაცემების წაშლა ჩავარდა"
 
@@ -1754,27 +1758,27 @@ msgstr "%s საუკეთესოდ სპეციფიკურ აპ�
 msgid "%s works on most devices"
 msgstr "%s უმეტეს მოწყობილობაზე მუშაობს"
 
-#: src/bz-inspector.blp:23
+#: src/bz-inspector.blp:22
 msgid "Inspector Menu"
 msgstr "ინსპექტორის მენიუ"
 
-#: src/bz-install-controls.blp:58
+#: src/bz-install-controls.blp:56
 msgid "_Open"
 msgstr "_გახსნა"
 
-#: src/bz-install-controls.blp:73 src/bz-install-controls.blp:128
+#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
 msgid "Uninstall Application"
 msgstr "აპლიკაციის წაშლა"
 
-#: src/bz-install-controls.blp:83 src/bz-transaction-dialog.c:230
+#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
 msgid "_Remove"
 msgstr "_წაშლა"
 
-#: src/bz-install-controls.blp:115 src/bz-updates-card.c:168 src/bz-updates-card.c:187
+#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168 src/bz-updates-card.c:187
 msgid "Update"
 msgstr "განახლება"
 
-#: src/bz-install-controls.blp:138 src/bz-installed-tile.blp:109
+#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "წაშლა"
 
@@ -1798,7 +1802,7 @@ msgctxt "Install Controls"
 msgid "Cancelling"
 msgstr "გაუქმება"
 
-#: src/bz-installed-tile.blp:80
+#: src/bz-installed-tile.blp:78
 msgid "Donate"
 msgstr "შემოწირულობა"
 
@@ -1948,7 +1952,7 @@ msgstr ""
 "\n"
 "აპისთვის შეწირვა ან შეგიძლიათ, ან არა."
 
-#: src/bz-license-dialog.c:345 src/bz-license-dialog.c:364 src/bz-safety-dialog.blp:103
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365 src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "ლიცენზია"
 
@@ -2001,7 +2005,7 @@ msgstr "მორგება"
 msgid "Network connection is metered — automatic store data refresh is paused"
 msgstr "ქსელთან კავშირი გაზომვადია — მაღაზიის მონაცემების ავტომატური განახლება შეჩერდა"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:243 src/bz-window.blp:254
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:240 src/bz-window.blp:251
 msgid "Refresh Manually"
 msgstr "ხელით განახლება"
 
@@ -2238,7 +2242,7 @@ msgstr "ამ რელიზის დეტალები ვერ მო�
 msgid "Get More Information"
 msgstr "მეტი ინფორმაციის მიღება"
 
-#: src/bz-rich-app-tile.blp:219
+#: src/bz-rich-app-tile.blp:218
 msgid "Uninstall"
 msgstr "წაშლა"
 
@@ -2286,7 +2290,7 @@ msgstr "App ID"
 msgid "SDK"
 msgstr "SDK"
 
-#: src/bz-safety-dialog.blp:158
+#: src/bz-safety-dialog.blp:157
 msgid ""
 "This app uses an outdated version of the software platform (SDK) and might contain bugs or security "
 "vulnerabilities which will not be fixed."
@@ -2617,64 +2621,64 @@ msgstr "შედეგების გარეშე"
 msgid "Search failed"
 msgstr "ძებნის შეცდომა"
 
-#: src/bz-transaction-dialog.c:154
+#: src/bz-transaction-dialog.c:156
 msgid "Keep User Data"
 msgstr "მომხმარებლის მონაცემების შენარჩუნება"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:157
 msgid "Allow restoring personal settings &amp; content"
 msgstr "პირადი პარამეტრების და შემცველობის აღდგენის დაშვება"
 
-#: src/bz-transaction-dialog.c:164
+#: src/bz-transaction-dialog.c:166
 msgid "Delete All Data"
 msgstr "ყველა მონაცემის წაშლა"
 
-#: src/bz-transaction-dialog.c:165
+#: src/bz-transaction-dialog.c:167
 msgid "Permanently erase user data to save space"
 msgstr "მომხმარებლის მონაცემების სამუდამოდ წაშლა ადგილის დასაზოგად"
 
-#: src/bz-transaction-dialog.c:190
+#: src/bz-transaction-dialog.c:192
 #, c-format
 msgid "Install %s?"
 msgstr "დავაყენო %s?"
 
-#: src/bz-transaction-dialog.c:195
+#: src/bz-transaction-dialog.c:197
 msgid "Select which version to install. May install additional shared components"
 msgstr "აირჩიეთ, რომელი ვერსიის დაყენება გნებავთ. შეიძლება, დააყენოს დამატებითი გაზიარებული კომპონენტები"
 
-#: src/bz-transaction-dialog.c:197
+#: src/bz-transaction-dialog.c:199
 msgid "May install additional shared components"
 msgstr "შეუძლია დამატებითი გაზიარებული კომპონენტების დაყენება"
 
-#: src/bz-transaction-dialog.c:200 src/bz-transaction-dialog.c:229 src/bz-transaction-dialog.c:274
-#: src/bz-transaction-dialog.c:576
+#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231 src/bz-transaction-dialog.c:276
+#: src/bz-transaction-dialog.c:578
 msgid "_Cancel"
 msgstr "გაუ_ქმება"
 
-#: src/bz-transaction-dialog.c:201
+#: src/bz-transaction-dialog.c:203
 msgid "_Install"
 msgstr "_დაყენება"
 
-#: src/bz-transaction-dialog.c:218
+#: src/bz-transaction-dialog.c:220
 #, c-format
 msgid "Remove %s?"
 msgstr "წავშალო %s?"
 
-#: src/bz-transaction-dialog.c:221
+#: src/bz-transaction-dialog.c:223
 msgid "Select which version to remove."
 msgstr "აირჩიეთ წასაშლელი ვერსია."
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:225
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "%s-ის გამოყენება შეუძლებელია მისი წაშლის შემდეგ."
 
-#: src/bz-transaction-dialog.c:246
+#: src/bz-transaction-dialog.c:248
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "“%s” მაღალი რისკითაა"
 
-#: src/bz-transaction-dialog.c:250
+#: src/bz-transaction-dialog.c:252
 msgid ""
 "This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, "
 "and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
@@ -2688,7 +2692,7 @@ msgstr ""
 "იმის გამო, რომ აპლიკაცია დახურული კოდითაა, მისი აუდიტი შეუძლებელია იმის შესახებ, თუ რას აკეთებს ის ამ "
 "ნებართვებით."
 
-#: src/bz-transaction-dialog.c:259
+#: src/bz-transaction-dialog.c:261
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture "
 "screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send "
@@ -2703,43 +2707,43 @@ msgstr ""
 "იმის გამო, რომ აპლიკაცია დახურული კოდითაა, შეუძლებელია მისი აუდიტი იმის შესახებ, თუ რას აკეთებს ის ამ "
 "ნებართვებით."
 
-#: src/bz-transaction-dialog.c:275
+#: src/bz-transaction-dialog.c:277
 msgid "_Install Anyway"
 msgstr "მა_ინც დაყენება"
 
-#: src/bz-transaction-dialog.c:330
+#: src/bz-transaction-dialog.c:332
 msgid "Failed to load transaction dialog"
 msgstr "ტრანზაქციის დიალოგის ჩატვირთვა ჩავარდა"
 
-#: src/bz-transaction-dialog.c:547
+#: src/bz-transaction-dialog.c:549
 msgid "All apps are already installed"
 msgstr "ყველა აპი უკვე დაყენებულია"
 
-#: src/bz-transaction-dialog.c:549
+#: src/bz-transaction-dialog.c:551
 msgid "_OK"
 msgstr "_დიახ"
 
-#: src/bz-transaction-dialog.c:565
+#: src/bz-transaction-dialog.c:567
 #, c-format
 msgid "Install %u App?"
 msgid_plural "Install %u Apps?"
 msgstr[0] "დავაყენო %u აპლიკაცია?"
 msgstr[1] "დავაყენო %u აპლიკაცია?"
 
-#: src/bz-transaction-dialog.c:573
+#: src/bz-transaction-dialog.c:575
 msgid "The following will be installed. Additional shared components may also be installed"
 msgstr "მოხდება შემდეგის დაყენება. ასევე, შეიძლება, მოხდეს დამატებითი გაზიარებული კომპონენტების დაყენება"
 
-#: src/bz-transaction-dialog.c:574
+#: src/bz-transaction-dialog.c:576
 #, c-format
 msgid "%d addons will be installed."
 msgstr "მოხდება %d დამატების დაყენება."
 
-#: src/bz-transaction-dialog.c:575
+#: src/bz-transaction-dialog.c:577
 msgid "Additionally, addons will be installed."
 msgstr "დამატებით მოხდება დამატებების დაყენება."
 
-#: src/bz-transaction-dialog.c:577
+#: src/bz-transaction-dialog.c:579
 msgid "_Install All"
 msgstr "_ყველას დაყენება"
 
@@ -2772,15 +2776,15 @@ msgstr "გაუქმებულია"
 msgid "Error"
 msgstr "შეცდომა"
 
-#: src/bz-transaction-tile.blp:314
+#: src/bz-transaction-tile.blp:313
 msgid "Cancel Transaction"
 msgstr "ტრანზაქციის გაუქმება"
 
-#: src/bz-transaction-tile.blp:324
+#: src/bz-transaction-tile.blp:323
 msgid "Show Details"
 msgstr "დეტალების ჩვენება"
 
-#: src/bz-transaction-tile.blp:439
+#: src/bz-transaction-tile.blp:436
 msgid "Show Error Info"
 msgstr "შეცდომის ინფორმაციის ჩვენება"
 
@@ -2812,11 +2816,11 @@ msgstr[1] "%u გაშვების გარემოს განახლ�
 msgid "Installed Updates"
 msgstr "დაყენებული განახლებები"
 
-#: src/bz-update-history-dialog.blp:129 src/bz-update-history-dialog.c:99
+#: src/bz-update-history-dialog.blp:128 src/bz-update-history-dialog.c:99
 msgid "Release Notes"
 msgstr "გამოცემის შენიშვნები"
 
-#: src/bz-update-history-dialog.blp:144
+#: src/bz-update-history-dialog.blp:143
 msgid "No Release Info"
 msgstr "გამოცემის ინფორმაციის გარეშე"
 
@@ -2844,11 +2848,11 @@ msgstr[1] "ნაგავში გადატანილია მომხ�
 msgid "Trashed User Data for %s"
 msgstr "ნაგავში გადატანილია მომხმარებლის მონაცემები %s-ისთვის"
 
-#: src/bz-user-data-tile.blp:92
+#: src/bz-user-data-tile.blp:91
 msgid "Open User Data Folder"
 msgstr "მომხმარებლის მონაცემების საქაღალდის გახსნა"
 
-#: src/bz-user-data-tile.blp:103
+#: src/bz-user-data-tile.blp:102
 msgid "Trash User Data"
 msgstr "მომხმარებლის მონაცემების გადატანა ნაგვის ყუთში"
 
@@ -2873,59 +2877,59 @@ msgstr "ბიბლიოთეკა"
 msgid "Search"
 msgstr "ძებნა"
 
-#: src/bz-window.blp:223
+#: src/bz-window.blp:220
 msgid "Main Menu"
 msgstr "მთავარი მენიუ"
 
-#: src/bz-window.blp:234
+#: src/bz-window.blp:231
 msgid "You are running a new version of Bazaar!"
 msgstr "გაშვებული გაქვთ Bazaar-ის ახალი ვერსია!"
 
-#: src/bz-window.blp:235
+#: src/bz-window.blp:232
 msgid "See What's New"
 msgstr "ნახეთ, რა არის ახალი"
 
-#: src/bz-window.blp:242
+#: src/bz-window.blp:239
 msgid "You have a network connection but are viewing a cached version of Flathub"
 msgstr "თქვენ გაქვთ ქსელთან კავშირი, მაგრამ ათვალიერებთ Flathub-ის დაკეშილ ვერსიას"
 
-#: src/bz-window.blp:253
+#: src/bz-window.blp:250
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "ქსელთან კავშირი გაზომვადია — ავტომატური განახლებები გაითიშა"
 
-#: src/bz-window.blp:289
+#: src/bz-window.blp:286
 msgid "_Donate to Bazaar"
 msgstr "_შესწირეთ Bazaar-ს"
 
-#: src/bz-window.blp:295
+#: src/bz-window.blp:292
 msgid "_Refresh"
 msgstr "_განახლება"
 
-#: src/bz-window.blp:299
+#: src/bz-window.blp:296
 msgid "_Login With Flathub"
 msgstr "შესვ_ლა Flathub-ით"
 
-#: src/bz-window.blp:305
+#: src/bz-window.blp:302
 msgid "_Manage Leftover User Data"
 msgstr ")მომხმარებლის დარჩენილი მონაცემების მართვა"
 
-#: src/bz-window.blp:311
+#: src/bz-window.blp:308
 msgid "_Preferences"
 msgstr "_მორგება"
 
-#: src/bz-window.blp:316
+#: src/bz-window.blp:313
 msgid "_Keyboard Shortcuts"
 msgstr "_კლავიატურის მალსახმობები"
 
-#: src/bz-window.blp:321
+#: src/bz-window.blp:318
 msgid "_About Bazaar"
 msgstr "Bazaar-ის შეს_ახებ"
 
-#: src/bz-window.blp:327
+#: src/bz-window.blp:324
 msgid "_Quit Bazaar"
 msgstr "_გასვლა Bazaar-დან"
 
-#: src/bz-window.blp:352
+#: src/bz-window.blp:349
 msgid "Log Out"
 msgstr "გასვლა"
 
@@ -2939,11 +2943,15 @@ msgstr "Bazaar — %s"
 msgid "Failed to launch application"
 msgstr "აპლიკაციის გაშვება ჩავარდა"
 
-#: src/bz-window.c:952
+#: src/bz-window.c:776
+msgid "Could not open link"
+msgstr "ბმულის გახსნა შეუძლებელია"
+
+#: src/bz-window.c:984
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Bazaar-ს Bazaar-დან ვერ წაშლით!"
 
-#: src/bz-window.c:1326 src/bz-window.c:1360
+#: src/bz-window.c:1358 src/bz-window.c:1392
 msgid "Can't do that right now!"
 msgstr "ამჟამად ამას ვერ იზამთ!"
 
