@@ -38,6 +38,7 @@ struct _BzInstallControls
   BzStateInfo               *state;
   GSettings                 *settings;
   gboolean                   wide;
+  gboolean                   in_progress;
   BzTransactionEntryTracker *tracker;
 
   GListModel *all_trackers;
@@ -62,6 +63,7 @@ enum
   PROP_STATE,
   PROP_SETTINGS,
   PROP_TRACKER,
+  PROP_IN_PROGRESS,
   LAST_PROP
 };
 static GParamSpec *props[LAST_PROP] = { 0 };
@@ -320,6 +322,24 @@ install_btn_state_fallback (BzInstallControls *self)
   return g_strdup ("inactive");
 }
 
+static void
+on_tracker_state_changed (BzInstallControls *self,
+                          GParamSpec        *pspec,
+                          BgeWdgtRenderer   *animated_button)
+{
+  const char *state       = NULL;
+  gboolean    in_progress = FALSE;
+
+  state       = bge_wdgt_renderer_get_state (animated_button);
+  in_progress = state != NULL && g_strcmp0 (state, "inactive") != 0;
+
+  if (self->in_progress == in_progress)
+    return;
+
+  self->in_progress = in_progress;
+  g_object_notify_by_pspec (G_OBJECT (self), props[PROP_IN_PROGRESS]);
+}
+
 static gboolean
 is_blocked (gpointer      object,
             GListModel   *parental_blocked,
@@ -423,6 +443,9 @@ bz_install_controls_get_property (GObject    *object,
     case PROP_SETTINGS:
       g_value_set_object (value, self->settings);
       break;
+    case PROP_IN_PROGRESS:
+      g_value_set_boolean (value, self->in_progress);
+      break;
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
     }
@@ -518,6 +541,13 @@ bz_install_controls_class_init (BzInstallControlsClass *klass)
           BZ_TYPE_TRANSACTION_ENTRY_TRACKER,
           G_PARAM_READABLE | G_PARAM_STATIC_STRINGS);
 
+  props[PROP_IN_PROGRESS] =
+      g_param_spec_boolean (
+          "in-progress",
+          NULL, NULL,
+          FALSE,
+          G_PARAM_READABLE | G_PARAM_STATIC_STRINGS | G_PARAM_EXPLICIT_NOTIFY);
+
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
   signals[SIGNAL_UPDATE] =
@@ -553,6 +583,7 @@ bz_install_controls_class_init (BzInstallControlsClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, get_visible_page);
   gtk_widget_class_bind_template_callback (widget_class, get_install_btn_state);
   gtk_widget_class_bind_template_callback (widget_class, install_btn_state_fallback);
+  gtk_widget_class_bind_template_callback (widget_class, on_tracker_state_changed);
   gtk_widget_class_bind_template_callback (widget_class, is_blocked);
 }
 
@@ -691,6 +722,17 @@ bz_install_controls_set_state (BzInstallControls *self,
 
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_STATE]);
   update_tracker (self);
+}
+
+void
+bz_install_controls_grab_focus (BzInstallControls *self)
+{
+  g_return_if_fail (BZ_IS_INSTALL_CONTROLS (self));
+
+  g_idle_add_full (
+      G_PRIORITY_DEFAULT_IDLE,
+      (GSourceFunc) idle_grab_focus,
+      bz_track_weak (self), bz_weak_release);
 }
 
 static void

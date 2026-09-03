@@ -228,6 +228,9 @@ public extern class Bz.EntryGroup : GLib.Object {
 
     [CCode (cname = "bz_entry_group_get_unique_id_is_eol")]
     public bool get_unique_id_is_eol (string unique_id);
+
+    public Dex.Future dup_all_into_store ();
+    public string? dup_ui_entry_id ();
 }
 
 [CCode (cheader_filename = "bz-entry-inspector.h", type_id = "bz_entry_inspector_get_type ()")]
@@ -242,6 +245,8 @@ public extern class Bz.Entry : GLib.Object {
     protected Entry ();
 
     public string? unique_id { get; set; }
+
+    public Bz.Repository? get_repository (GLib.ListModel repos);
 }
 
 [CCode (cheader_filename = "bz-error-dialog.h", type_id = "bz_error_dialog_get_type ()")]
@@ -899,6 +904,7 @@ public extern class Bz.Repository : GLib.Object {
     protected Repository ();
 
     public bool is_user { get; set; }
+    public bool is_beta { get; set; }
     public string? title { get; set; }
     public string? url { get; set; }
     public string? name { get; set; }
@@ -944,6 +950,11 @@ public extern class Bz.SizeResult : GLib.Object {
 public extern class Bz.StateInfo : GLib.Object {
     [CCode (has_construct_function = false)]
     protected StateInfo ();
+
+    [CCode (cname = "bz_state_info_get_default", cheader_filename = "bz-application.h")]
+    public static unowned Bz.StateInfo get_default ();
+
+    public GLib.ListModel? repositories { get; }
 }
 
 [CCode (cheader_filename = "bz-transact-icon-info.h", type_id = "bz_transact_icon_info_get_type ()")]

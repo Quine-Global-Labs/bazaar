@@ -158,6 +158,13 @@ BZ_DEFINE_DATA (
     BZ_RELEASE_DATA (self, bz_weak_release);
     BZ_RELEASE_DATA (cancellable, g_object_unref));
 
+static gboolean
+append_repos_for_installation (GListStore          *repos,
+                               FlatpakInstallation *installation,
+                               gboolean             is_user,
+                               GCancellable        *cancellable,
+                               GError             **error);
+
 static DexFuture *
 list_repositories_fiber (ListReposData *data);
 
@@ -2060,14 +2067,56 @@ retrieve_updates_fiber (GatherRefsData *data)
       G_TYPE_PTR_ARRAY, g_steal_pointer (&ids));
 }
 
+static gboolean
+append_repos_for_installation (GListStore          *repos,
+                               FlatpakInstallation *installation,
+                               gboolean             is_user,
+                               GCancellable        *cancellable,
+                               GError             **error)
+{
+  g_autoptr (GPtrArray) remotes = NULL;
+
+  remotes = flatpak_installation_list_remotes (installation, cancellable, error);
+  if (remotes == NULL)
+    return FALSE;
+
+  for (guint i = 0; i < remotes->len; i++)
+    {
+      FlatpakRemote *remote         = NULL;
+      g_autoptr (BzRepository) repo = NULL;
+      const char *name              = NULL;
+      const char *default_branch    = NULL;
+      gboolean    is_beta           = FALSE;
+
+      remote         = g_ptr_array_index (remotes, i);
+      name           = flatpak_remote_get_name (remote);
+      default_branch = flatpak_remote_get_default_branch (remote);
+
+      is_beta = (g_strcmp0 (name, "flathub-beta") == 0) ||
+                (name != NULL && g_str_has_suffix (name, "nightly")) ||
+                (g_strcmp0 (default_branch, "devel") == 0) ||
+                (g_strcmp0 (default_branch, "master") == 0) ||
+                (default_branch != NULL && g_str_has_suffix (default_branch, "beta"));
+
+      repo = g_object_new (BZ_TYPE_REPOSITORY,
+                           "name", name,
+                           "title", flatpak_remote_get_title (remote),
+                           "url", flatpak_remote_get_url (remote),
+                           "is-user", is_user,
+                           "is-beta", is_beta,
+                           NULL);
+      g_list_store_append (repos, repo);
+    }
+
+  return TRUE;
+}
+
 static DexFuture *
 list_repositories_fiber (ListReposData *data)
 {
   g_autoptr (BzFlatpakInstance) self = NULL;
   GCancellable *cancellable          = NULL;
   g_autoptr (GError) local_error     = NULL;
-  g_autoptr (GPtrArray) system_repos = NULL;
-  g_autoptr (GPtrArray) user_repos   = NULL;
   g_autoptr (GListStore) repos       = NULL;
 
   cancellable = data->cancellable;
@@ -2076,61 +2125,21 @@ list_repositories_fiber (ListReposData *data)
 
   repos = g_list_store_new (BZ_TYPE_REPOSITORY);
 
-  if (self->system != NULL)
-    {
-      system_repos = flatpak_installation_list_remotes (
-          self->system, cancellable, &local_error);
-      if (system_repos == NULL)
-        SEND_AND_RETURN_ERROR (
-            self, TRUE,
-            BZ_FLATPAK_ERROR_CANNOT_INITIALIZE,
-            "Failed to enumerate remotes for system installation: %s",
-            local_error->message);
+  if (self->system != NULL &&
+      !append_repos_for_installation (repos, self->system, FALSE, cancellable, &local_error))
+    SEND_AND_RETURN_ERROR (
+        self, TRUE,
+        BZ_FLATPAK_ERROR_CANNOT_INITIALIZE,
+        "Failed to enumerate remotes for system installation: %s",
+        local_error->message);
 
-      for (guint i = 0; i < system_repos->len; i++)
-        {
-          FlatpakRemote *remote         = NULL;
-          g_autoptr (BzRepository) repo = NULL;
-
-          remote = g_ptr_array_index (system_repos, i);
-          repo   = g_object_new (BZ_TYPE_REPOSITORY,
-                                 "name", flatpak_remote_get_name (remote),
-                                 "title", flatpak_remote_get_title (remote),
-                                 "url", flatpak_remote_get_url (remote),
-                                 "is-user", FALSE,
-                                 NULL);
-
-          g_list_store_append (repos, repo);
-        }
-    }
-
-  if (self->user != NULL)
-    {
-      user_repos = flatpak_installation_list_remotes (
-          self->user, cancellable, &local_error);
-      if (user_repos == NULL)
-        SEND_AND_RETURN_ERROR (
-            self, TRUE,
-            BZ_FLATPAK_ERROR_CANNOT_INITIALIZE,
-            "Failed to enumerate remotes for user installation: %s",
-            local_error->message);
-
-      for (guint i = 0; i < user_repos->len; i++)
-        {
-          FlatpakRemote *remote         = NULL;
-          g_autoptr (BzRepository) repo = NULL;
-
-          remote = g_ptr_array_index (user_repos, i);
-          repo   = g_object_new (BZ_TYPE_REPOSITORY,
-                                 "name", flatpak_remote_get_name (remote),
-                                 "title", flatpak_remote_get_title (remote),
-                                 "url", flatpak_remote_get_url (remote),
-                                 "is-user", TRUE,
-                                 NULL);
-
-          g_list_store_append (repos, repo);
-        }
-    }
+  if (self->user != NULL &&
+      !append_repos_for_installation (repos, self->user, TRUE, cancellable, &local_error))
+    SEND_AND_RETURN_ERROR (
+        self, TRUE,
+        BZ_FLATPAK_ERROR_CANNOT_INITIALIZE,
+        "Failed to enumerate remotes for user installation: %s",
+        local_error->message);
 
   return dex_future_new_for_object (repos);
 }

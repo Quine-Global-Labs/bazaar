@@ -982,3 +982,17 @@ curated-list-view list {
 .transact-icon-flag {
     background: var(--flag-gradient, var(--accent-bg-color));
 }
+
+.origin-rounded-box {
+	background-color: alpha(currentColor, .15);
+	border-radius: 999px;
+	padding: 2px 6px;
+}
+
+.origin-title {
+  text-transform: capitalize;
+}
+
+.origin-rounded-box label {
+	text-transform: uppercase;
+}

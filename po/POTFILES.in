@@ -29,6 +29,7 @@ src/bz-async-texture.c
 src/bz-backend.c
 src/bz-banner-view.blp
 src/bz-banner-view.c
+src/bz-bulk-install-dialog.c
 src/bz-bundle-install-dialog.blp
 src/bz-bundle-install-dialog.c
 src/bz-content-provider.c
@@ -50,7 +51,6 @@ src/bz-entry-group-util.c
 src/bz-entry-group.c
 src/bz-entry-inspector.blp
 src/bz-entry-inspector.c
-src/bz-entry-selection-row.vala
 src/bz-entry.c
 src/bz-error-dialog.blp
 src/bz-error-dialog.c
@@ -92,6 +92,7 @@ src/bz-login-page.blp
 src/bz-login-page.c
 src/bz-login-page.h
 src/bz-metainfo-preview.c
+src/bz-other-sources-list.vala
 src/bz-preferences-dialog.blp
 src/bz-preferences-dialog.c
 src/bz-progress-bar.blp

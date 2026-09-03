@@ -25,6 +25,7 @@
 
 #include "bz-addons-dialog.h"
 #include "bz-application.h"
+#include "bz-bulk-install-dialog.h"
 #include "bz-curated-view.h"
 #include "bz-entry-group-util.h"
 #include "bz-entry-group.h"
@@ -1160,6 +1161,16 @@ bz_window_show_entry (BzWindow *self,
 
   group = bz_entry_group_new_for_single_entry (entry);
   bz_window_show_group (self, group);
+}
+
+void
+bz_window_install_entry (BzWindow *self,
+                         BzEntry  *entry)
+{
+  g_return_if_fail (BZ_IS_WINDOW (self));
+  g_return_if_fail (BZ_IS_ENTRY (entry));
+
+  try_transact (self, entry, NULL, FALSE, FALSE, NULL);
 }
 
 static void

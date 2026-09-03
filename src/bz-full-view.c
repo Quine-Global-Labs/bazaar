@@ -20,6 +20,7 @@
 
 #define G_LOG_DOMAIN "BAZAAR::FULL-VIEW-WIDGET"
 
+#include <bzvala.h>
 #include <glib/gi18n.h>
 #include <json-glib/json-glib.h>
 
@@ -76,6 +77,8 @@ struct _BzFullView
   AdwViewStack      *stack;
   GtkWidget         *shadow_overlay;
   GtkToggleButton   *description_toggle;
+  GtkWidget         *wide_install_controls;
+  GtkWidget         *narrow_install_controls;
 };
 
 G_DEFINE_FINAL_TYPE (BzFullView, bz_full_view, ADW_TYPE_BIN)
@@ -211,7 +214,7 @@ format_other_apps_label (gpointer object, const char *developer)
 static char *
 format_more_other_apps_label (gpointer object, const char *developer)
 {
-    return g_strdup (_ ("Show All"));
+  return g_strdup (_ ("Show All"));
 }
 
 static char *
@@ -544,6 +547,34 @@ should_show_addon_overflow (gpointer      object,
 }
 
 static void
+other_source_download_cb (BzFullView *self,
+                          BzEntry    *entry)
+{
+  GtkWidget          *window    = NULL;
+  GtkAdjustment      *adj       = NULL;
+  AdwAnimationTarget *target    = NULL;
+  AdwAnimation       *animation = NULL;
+  GtkWidget          *controls  = NULL;
+
+  adj       = gtk_scrolled_window_get_vadjustment (GTK_SCROLLED_WINDOW (self->main_scroll));
+  target    = adw_property_animation_target_new (G_OBJECT (adj), "value");
+  animation = adw_timed_animation_new (
+      GTK_WIDGET (self), gtk_adjustment_get_value (adj),
+      0.0, 300, target);
+  adw_timed_animation_set_easing (ADW_TIMED_ANIMATION (animation), ADW_EASE_OUT_CUBIC);
+  adw_animation_play (animation);
+
+  controls = gtk_widget_get_visible (self->narrow_install_controls)
+                 ? self->narrow_install_controls
+                 : self->wide_install_controls;
+  bz_install_controls_grab_focus (BZ_INSTALL_CONTROLS (controls));
+
+  window = GTK_WIDGET (gtk_widget_get_root (GTK_WIDGET (self)));
+  if (BZ_IS_WINDOW (window))
+    bz_window_install_entry (BZ_WINDOW (window), entry);
+}
+
+static void
 install_addons_cb (BzFullView *self,
                    GtkButton  *button)
 {
@@ -708,6 +739,7 @@ bz_full_view_class_init (BzFullViewClass *klass)
   g_type_ensure (BZ_TYPE_SHARE_LIST);
   g_type_ensure (BZ_TYPE_CONTEXT_TILE);
   g_type_ensure (BZ_TYPE_ADDON_TILE);
+  g_type_ensure (BZ_TYPE_OTHER_SOURCES_LIST);
 
   gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-full-view.ui");
   bz_widget_class_bind_all_util_callbacks (widget_class);
@@ -716,6 +748,8 @@ bz_full_view_class_init (BzFullViewClass *klass)
   gtk_widget_class_bind_template_child (widget_class, BzFullView, main_scroll);
   gtk_widget_class_bind_template_child (widget_class, BzFullView, shadow_overlay);
   gtk_widget_class_bind_template_child (widget_class, BzFullView, description_toggle);
+  gtk_widget_class_bind_template_child (widget_class, BzFullView, wide_install_controls);
+  gtk_widget_class_bind_template_child (widget_class, BzFullView, narrow_install_controls);
   gtk_widget_class_bind_template_callback (widget_class, is_scrolled_down);
   gtk_widget_class_bind_template_callback (widget_class, age_rating_cb);
   gtk_widget_class_bind_template_callback (widget_class, format_as_link);
@@ -738,6 +772,7 @@ bz_full_view_class_init (BzFullViewClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, get_addon_groups);
   gtk_widget_class_bind_template_callback (widget_class, should_show_addon_overflow);
   gtk_widget_class_bind_template_callback (widget_class, install_addons_cb);
+  gtk_widget_class_bind_template_callback (widget_class, other_source_download_cb);
   gtk_widget_class_bind_template_callback (widget_class, addon_tile_activated_cb);
   gtk_widget_class_bind_template_callback (widget_class, get_description_max_height);
   gtk_widget_class_bind_template_callback (widget_class, get_description_toggle_text);

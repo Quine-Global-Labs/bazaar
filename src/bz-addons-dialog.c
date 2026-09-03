@@ -21,6 +21,7 @@
 #include "config.h"
 
 #include <glib/gi18n.h>
+#include <bzvala.h>
 
 #include "bz-addon-tile.h"
 #include "bz-addons-dialog.h"
@@ -38,6 +39,7 @@
 #include "bz-share-list.h"
 #include "bz-state-info.h"
 #include "bz-stats-dialog.h"
+#include "bz-window.h"
 #include "context-tile-callbacks.h"
 #include "template-callbacks.h"
 #include "util.h"
@@ -89,6 +91,7 @@ static char      *get_description_toggle_text (gpointer object, gboolean active)
 static void       size_cb (BzAddonsDialog *self, GtkButton *button);
 static void       license_cb (BzAddonsDialog *self, GtkButton *button);
 static void       dl_stats_cb (BzAddonsDialog *self, GtkButton *button);
+static void       other_source_download_cb (BzAddonsDialog *self, BzEntry *entry);
 static void       animate_to_size (BzAddonsDialog *self);
 static void       on_visible_page_tag_changed (AdwNavigationView *nav_view, GParamSpec *pspec, BzAddonsDialog *self);
 static DexFuture *on_parent_ui_entry_resolved (DexFuture *future, GWeakRef *wr);
@@ -227,6 +230,7 @@ bz_addons_dialog_class_init (BzAddonsDialogClass *klass)
   g_type_ensure (BZ_TYPE_INSTALL_CONTROLS);
   g_type_ensure (BZ_TYPE_RESULT);
   g_type_ensure (BZ_TYPE_SHARE_LIST);
+  g_type_ensure (BZ_TYPE_OTHER_SOURCES_LIST);
 
   gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-addons-dialog.ui");
 
@@ -248,6 +252,7 @@ bz_addons_dialog_class_init (BzAddonsDialogClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, license_cb);
   gtk_widget_class_bind_template_callback (widget_class, size_cb);
   gtk_widget_class_bind_template_callback (widget_class, dl_stats_cb);
+  gtk_widget_class_bind_template_callback (widget_class, other_source_download_cb);
 }
 
 static void
@@ -415,6 +420,17 @@ dl_stats_cb (BzAddonsDialog *self,
 
   adw_navigation_view_push (self->navigation_view, page);
   bz_stats_dialog_animate_open (bin);
+}
+
+static void
+other_source_download_cb (BzAddonsDialog *self,
+                          BzEntry        *entry)
+{
+  GtkWidget *window = NULL;
+
+  window = GTK_WIDGET (gtk_widget_get_root (GTK_WIDGET (self)));
+  if (BZ_IS_WINDOW (window))
+    bz_window_install_entry (BZ_WINDOW (window), entry);
 }
 
 static void

@@ -569,6 +569,40 @@ template $BzFullView: Adw.Bin {
                           installed-versions: bind template.entry-group as <$BzEntryGroup>.installed-versions;
                         }
 
+                        Revealer other_sources_revealer{
+                          transition-type: swing_up;
+                          visible: bind $logical_or(other_sources_revealer.child-revealed as <bool>, other_sources_revealer.reveal-child as <bool>) as <bool>;
+                          reveal-child: bind $logical_and(
+                              $logical_and(
+                                $is_le(template.entry-group as <$BzEntryGroup>.removable, 0) as <bool>,
+                                $is_gt(template.entry-group as <$BzEntryGroup>.installable, 0) as <bool>
+                              ) as <bool>,
+                              $not(wide_install_controls.in-progress) as <bool>
+                            ) as <bool>;
+
+                          child: Box {
+                            orientation: vertical;
+
+                            Label {
+                              halign: start;
+                              label: _("Other Sources");
+                              margin-top: 5;
+                              margin-bottom: 8;
+                              margin-start: 3;
+                              visible: bind other_sources.visible;
+
+                              styles [
+                                "heading",
+                              ]
+                            }
+
+                            $BzOtherSourcesList other_sources {
+                              entry-group: bind template.entry-group as <$BzEntryGroup>;
+                              download => $other_source_download_cb(template);
+                            }
+                          };
+                        }
+
                         Box {
                           orientation: vertical;
                           spacing: bind $choose_int(addons_more_btn.visible, 15, 3) as <int>;
@@ -631,7 +665,7 @@ template $BzFullView: Adw.Bin {
                               margin-start: 3;
                               visible: bind $logical_and(
                                   $invert_boolean($is_empty(template.ui-entry as <$BzResult>.object as <$BzEntry>.share-urls) as <bool>) as <bool>,
-                                  $invert_boolean($is_zero(addon_model.n-items) as <int>) as <bool>
+                                  $logical_or($invert_boolean($is_zero(addon_model.n-items) as <int>) as <bool>, other_sources_revealer.reveal-child as <bool>) as <bool>
                                 ) as <bool>;
 
                               styles [
