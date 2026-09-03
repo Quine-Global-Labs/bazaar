@@ -66,6 +66,7 @@ public class Bz.OtherSourceRow : Adw.PreferencesRow {
         var text_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
             valign = Gtk.Align.CENTER,
             hexpand = true,
+            margin_bottom = 2,
         };
         text_box.append (title_row);
         text_box.append (subtitle_label);
@@ -80,7 +81,7 @@ public class Bz.OtherSourceRow : Adw.PreferencesRow {
 
         var root_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) {
             margin_top = 8,
-            margin_bottom = 10,
+            margin_bottom = 8,
             margin_start = 12,
             margin_end = 12,
         };
