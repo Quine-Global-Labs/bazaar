@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-30 21:38+0000\n"
-"PO-Revision-Date: 2026-08-31 15:40+0200\n"
+"POT-Creation-Date: 2026-09-03 18:38+0000\n"
+"PO-Revision-Date: 2026-09-04 11:48+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
+#: src/bz-window.blp:208 src/bz-window.c:377 src/bz-window.c:378
 msgid "Bazaar"
 msgstr "Bazaar"
 
@@ -156,20 +156,24 @@ msgstr ""
 "Tento doplněk používá běhové prostředí, které již nedostává aktualizace ani "
 "opravy zabezpečení. Jeho používání nemusí být bezpečné."
 
-#: src/bz-addons-dialog.c:346
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+msgid "Other Sources"
+msgstr "Další zdroje"
+
+#: src/bz-addons-dialog.c:351
 #, c-format
 msgid "Add-on for %s"
 msgstr "Doplněk pro %s"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
 msgid "Show Less"
 msgstr "Zobrazit méně"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Zobrazit více"
 
-#: src/bz-addons-dialog.c:410
+#: src/bz-addons-dialog.c:415
 msgid "Download Stats"
 msgstr "Statistiky stahování"
 
@@ -888,7 +892,7 @@ msgstr[2] "Načítá se %d aplikací…"
 msgid "Writing to cache…"
 msgstr "Zapisuje se do mezipaměti…"
 
-#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:217
 msgid "Show All"
 msgstr "Zobrazit vše"
 
@@ -905,6 +909,48 @@ msgstr "%d aplikací"
 #: src/bz-article.blp:86
 msgid "Failed to Load Article"
 msgstr "Nezdařilo se načíst článek"
+
+#: src/bz-bulk-install-dialog.c:87
+msgid "All apps are already installed"
+msgstr "Všechny aplikace jsou již nainstalovány"
+
+#: src/bz-bulk-install-dialog.c:89
+msgid "_OK"
+msgstr "_Budiž"
+
+#: src/bz-bulk-install-dialog.c:105
+#, c-format
+msgid "Install %u App?"
+msgid_plural "Install %u Apps?"
+msgstr[0] "Nainstalovat %u aplikaci?"
+msgstr[1] "Nainstalovat %u aplikace?"
+msgstr[2] "Nainstalovat %u aplikací?"
+
+#: src/bz-bulk-install-dialog.c:113
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr ""
+"Následující aplikace budou nainstalovány. Mohou být také nainstalovány další "
+"sdílené komponenty"
+
+#: src/bz-bulk-install-dialog.c:114
+#, c-format
+msgid "%d addons will be installed."
+msgstr "Bude nainstalováno %d doplňků."
+
+#: src/bz-bulk-install-dialog.c:115
+msgid "Additionally, addons will be installed."
+msgstr "Kromě toho budou nainstalovány doplňky."
+
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193
+#: src/bz-transaction-dialog.c:238
+msgid "_Cancel"
+msgstr "_Zrušit"
+
+#: src/bz-bulk-install-dialog.c:117
+msgid "_Install All"
+msgstr "_Instalovat vše"
 
 #: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
 msgid "Bundle Installation"
@@ -1073,22 +1119,6 @@ msgstr ""
 #: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "Zrušit"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "this user"
-msgstr "tento uživatel"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "all users"
-msgstr "všichni uživatelé"
-
-#: src/bz-entry-selection-row.vala:55
-msgid "End of Life"
-msgstr "Podpora skončila"
-
-#: src/bz-entry-selection-row.vala:69
-msgid "For This User Only"
-msgstr "Pouze pro tohoto uživatele"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -1658,27 +1688,27 @@ msgstr ""
 msgid "Trash Data"
 msgstr "Vymazat data"
 
-#: src/bz-full-view.blp:582
+#: src/bz-full-view.blp:616
 msgid "Add-ons"
 msgstr "Doplňky"
 
-#: src/bz-full-view.blp:617
+#: src/bz-full-view.blp:651
 msgid "More Add-Ons"
 msgstr "Více doplňků"
 
-#: src/bz-full-view.blp:628
+#: src/bz-full-view.blp:662
 msgid "Links"
 msgstr "Odkazy"
 
-#: src/bz-full-view.blp:659
+#: src/bz-full-view.blp:693
 msgid "Similar Apps"
 msgstr "Podobné aplikace"
 
-#: src/bz-full-view.c:181
+#: src/bz-full-view.c:184
 msgid "No URL"
 msgstr "Žádná adresa URL"
 
-#: src/bz-full-view.c:199
+#: src/bz-full-view.c:202
 msgid ""
 "This app has a FLOSS license, meaning the source code can be audited for "
 "safety."
@@ -1686,7 +1716,7 @@ msgstr ""
 "Tato aplikace má licenci FLOSS. To znamená, že její zdrojový kód může být "
 "ověřen pro bezpečnost."
 
-#: src/bz-full-view.c:200
+#: src/bz-full-view.c:203
 msgid ""
 "This app has a proprietary license, meaning the source code is developed "
 "privately and cannot be audited by an independent third party."
@@ -1694,31 +1724,31 @@ msgstr ""
 "Tato aplikace má proprietární licenci. To znamená, že její zdrojový kód je "
 "vyvíjen v soukromí a nemůže být ověřen nezávislou třetí stranou."
 
-#: src/bz-full-view.c:207
+#: src/bz-full-view.c:210
 msgid "Other Apps From This Developer"
 msgstr "Další aplikace od tohoto vývojáře"
 
-#: src/bz-full-view.c:208
+#: src/bz-full-view.c:211
 #, c-format
 msgid "Other Apps From %s"
 msgstr "Další aplikace od %s"
 
-#: src/bz-full-view.c:223
+#: src/bz-full-view.c:226
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr ""
 "Aplikace %s není nainstalována, ale má stále k dispozici <b>%s</b> dat."
 
-#: src/bz-full-view.c:306
+#: src/bz-full-view.c:309
 #, c-format
 msgid "Apps by %s"
 msgstr "Aplikace od %s"
 
-#: src/bz-full-view.c:308
+#: src/bz-full-view.c:311
 msgid "Apps by This Developer"
 msgstr "Aplikace od tohoto vývojáře"
 
-#: src/bz-full-view.c:310
+#: src/bz-full-view.c:313
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
@@ -1726,7 +1756,7 @@ msgstr[0] "%d aplikace"
 msgstr[1] "%d aplikace"
 msgstr[2] "%d aplikací"
 
-#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:468 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "Nezdařilo se odstranit uživatelská data"
 
@@ -1828,33 +1858,33 @@ msgstr "Aplikace %s funguje na většině zařízení"
 msgid "Inspector Menu"
 msgstr "Nabídka inspektora"
 
-#: src/bz-install-controls.blp:56
+#: src/bz-install-controls.blp:58
 msgid "_Open"
 msgstr "_Otevřít"
 
-#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
+#: src/bz-install-controls.blp:72 src/bz-install-controls.blp:126
 msgid "Uninstall Application"
 msgstr "Odinstalovat aplikaci"
 
-#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
 msgid "_Remove"
 msgstr "Odeb_rat"
 
-#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168
+#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168
 #: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "Aktualizovat"
 
-#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
+#: src/bz-install-controls.blp:136 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "Odebrat"
 
-#: src/bz-install-controls.c:638
+#: src/bz-install-controls.c:669
 #, c-format
 msgid "Install %s from %s"
 msgstr "Nainstalovat %s od %s"
 
-#: src/bz-install-controls.c:640
+#: src/bz-install-controls.c:671
 #, c-format
 msgid "Install %s"
 msgstr "Nainstalovat %s"
@@ -2075,6 +2105,26 @@ msgstr "Vyberte ikonu"
 #: src/bz-metainfo-preview.c:166
 msgid "Image Files"
 msgstr "Soubory obrázků"
+
+#: src/bz-other-sources-list.vala:52
+msgid "User"
+msgstr "Uživatel"
+
+#: src/bz-other-sources-list.vala:55
+msgid "Beta"
+msgstr "Beta"
+
+#: src/bz-other-sources-list.vala:58
+msgid "End-Of-Life"
+msgstr "Podpora skončila"
+
+#. Translators: As in, "1 Install" / "100 Installs"
+#: src/bz-other-sources-list.vala:76 src/bz-world-map.c:604
+msgid "Install"
+msgid_plural "Installs"
+msgstr[0] "instalace"
+msgstr[1] "instalace"
+msgstr[2] "instalací"
 
 #: src/bz-preferences-dialog.blp:19
 msgid "Preferences"
@@ -2712,67 +2762,48 @@ msgstr "Nenalezeny žádné výsledky"
 msgid "Search failed"
 msgstr "Hledání se nezdařilo"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244
+#: src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
+#: src/context-tile-callbacks.c:286
+msgid "Unknown"
+msgstr "Neznámé"
+
+#: src/bz-transaction-dialog.c:145
 msgid "Keep User Data"
 msgstr "Ponechat uživatelská data"
 
-#: src/bz-transaction-dialog.c:157
+#: src/bz-transaction-dialog.c:146
 msgid "Allow restoring personal settings &amp; content"
 msgstr "Povolit obnovení uživatelských nastavení a obsahu"
 
-#: src/bz-transaction-dialog.c:166
+#: src/bz-transaction-dialog.c:155
 msgid "Delete All Data"
 msgstr "Odstranit všechna data"
 
-#: src/bz-transaction-dialog.c:167
+#: src/bz-transaction-dialog.c:156
 msgid "Permanently erase user data to save space"
 msgstr "Trvale odstranit uživatelská data, aby se ušetřilo místo"
 
-#: src/bz-transaction-dialog.c:192
-#, c-format
-msgid "Install %s?"
-msgstr "Nainstalovat %s?"
-
-#: src/bz-transaction-dialog.c:197
-msgid ""
-"Select which version to install. May install additional shared components"
-msgstr ""
-"Vyberte verzi, kterou chcete nainstalovat. Může dojít k instalaci dalších "
-"sdílených komponent"
-
-#: src/bz-transaction-dialog.c:199
-msgid "May install additional shared components"
-msgstr "Může nainstalovat dodatečné sdílené komponenty"
-
-#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231
-#: src/bz-transaction-dialog.c:276 src/bz-transaction-dialog.c:578
-msgid "_Cancel"
-msgstr "_Zrušit"
-
-#: src/bz-transaction-dialog.c:203
-msgid "_Install"
-msgstr "_Instalovat"
-
-#: src/bz-transaction-dialog.c:220
+#: src/bz-transaction-dialog.c:182
 #, c-format
 msgid "Remove %s?"
 msgstr "Odebrat %s?"
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:185
 msgid "Select which version to remove."
 msgstr "Vyberte, kterou verzi chcete odebrat."
 
-#: src/bz-transaction-dialog.c:225
+#: src/bz-transaction-dialog.c:187
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "Po odinstalování nebude možné aplikaci %s používat."
 
-#: src/bz-transaction-dialog.c:248
+#: src/bz-transaction-dialog.c:210
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "Aplikace „%s“ je vysoce riziková"
 
-#: src/bz-transaction-dialog.c:252
+#: src/bz-transaction-dialog.c:214
 msgid ""
 "This app has full access to your system, including all <b>your files, "
 "browser history, saved passwords</b>, and more. It also has access to the "
@@ -2789,7 +2820,7 @@ msgstr ""
 "Protože je aplikace uzavřený software, nelze auditovat, co s těmito "
 "oprávněními dělá."
 
-#: src/bz-transaction-dialog.c:261
+#: src/bz-transaction-dialog.c:223
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record "
 "all keystrokes, capture screenshots, and monitor other applications</b>. It "
@@ -2807,50 +2838,13 @@ msgstr ""
 "Protože je aplikace uzavřený software, nelze auditovat, co s těmito "
 "oprávněními dělá."
 
-#: src/bz-transaction-dialog.c:277
+#: src/bz-transaction-dialog.c:239
 msgid "_Install Anyway"
 msgstr "Přesto na_instalovat"
 
-#: src/bz-transaction-dialog.c:332
+#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
 msgid "Failed to load transaction dialog"
 msgstr "Nezdařilo se načíst dialogové okno transakce"
-
-#: src/bz-transaction-dialog.c:549
-msgid "All apps are already installed"
-msgstr "Všechny aplikace jsou již nainstalovány"
-
-#: src/bz-transaction-dialog.c:551
-msgid "_OK"
-msgstr "_Budiž"
-
-#: src/bz-transaction-dialog.c:567
-#, c-format
-msgid "Install %u App?"
-msgid_plural "Install %u Apps?"
-msgstr[0] "Nainstalovat %u aplikaci?"
-msgstr[1] "Nainstalovat %u aplikace?"
-msgstr[2] "Nainstalovat %u aplikací?"
-
-#: src/bz-transaction-dialog.c:575
-msgid ""
-"The following will be installed. Additional shared components may also be "
-"installed"
-msgstr ""
-"Následující aplikace budou nainstalovány. Mohou být také nainstalovány další "
-"sdílené komponenty"
-
-#: src/bz-transaction-dialog.c:576
-#, c-format
-msgid "%d addons will be installed."
-msgstr "Bude nainstalováno %d doplňků."
-
-#: src/bz-transaction-dialog.c:577
-msgid "Additionally, addons will be installed."
-msgstr "Kromě toho budou nainstalovány doplňky."
-
-#: src/bz-transaction-dialog.c:579
-msgid "_Install All"
-msgstr "_Instalovat vše"
 
 #: src/bz-transaction-manager.c:796
 #, c-format
@@ -3043,34 +3037,26 @@ msgid "Log Out"
 msgstr "Odhlásit se"
 
 #. Translators: %s is the title of the current page
-#: src/bz-window.c:379
+#: src/bz-window.c:380
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazaar – %s"
 
-#: src/bz-window.c:659 src/bz-window.c:697
+#: src/bz-window.c:660 src/bz-window.c:698
 msgid "Failed to launch application"
 msgstr "Aplikaci se nezdařilo spustit"
 
-#: src/bz-window.c:776
+#: src/bz-window.c:777
 msgid "Could not open link"
 msgstr "Nezdařilo se otevřít odkaz"
 
-#: src/bz-window.c:984
+#: src/bz-window.c:985
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Bazaar nelze odstranit z Bazaaru!"
 
-#: src/bz-window.c:1358 src/bz-window.c:1392
+#: src/bz-window.c:1369 src/bz-window.c:1403
 msgid "Can't do that right now!"
 msgstr "Toto teď nelze provést!"
-
-#. Translators: As in, "1 Install" / "100 Installs"
-#: src/bz-world-map.c:604
-msgid "Install"
-msgid_plural "Installs"
-msgstr[0] "instalace"
-msgstr[1] "instalace"
-msgstr[2] "instalací"
 
 #: src/context-tile-callbacks.c:68
 msgid "---"
@@ -3128,11 +3114,6 @@ msgstr "Vhodné pro všechny věkové skupiny"
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "Vhodné pro věk %d a více"
-
-#: src/context-tile-callbacks.c:244 src/context-tile-callbacks.c:249
-#: src/context-tile-callbacks.c:277 src/context-tile-callbacks.c:286
-msgid "Unknown"
-msgstr "Neznámé"
 
 #: src/context-tile-callbacks.c:254
 #, c-format
@@ -3587,33 +3568,3 @@ msgstr "Aplikace %s a %s byly aktualizovány."
 #, c-format
 msgid "Includes %s, %s and %s."
 msgstr "Včetně %s, %s a %s."
-
-#~ msgid "Ubuntu Troubles!"
-#~ msgstr "Problémy s Ubuntu!"
-
-#~ msgid "Malformed Link"
-#~ msgstr "Špatně formátovaný odkaz"
-
-#~ msgid ""
-#~ "The link used to open this app has incorrect capitalization and may stop "
-#~ "working in the future.\n"
-#~ "\n"
-#~ "This is most likely caused by KRunner sending incorrect app IDs"
-#~ msgstr ""
-#~ "Odkaz použitý k otevření této aplikace má nesprávné velké písmeno a v "
-#~ "budoucnu může přestat fungovat.\n"
-#~ "\n"
-#~ "To je pravděpodobně způsobeno tím, že KRunner odesílá nesprávná ID "
-#~ "aplikací"
-
-#~ msgid "No Results"
-#~ msgstr "Žádné výsledky"
-
-#~ msgid "Try a different search query"
-#~ msgstr "Zkuste jiný dotaz"
-
-#~ msgid "More Apps"
-#~ msgstr "Více aplikací"
-
-#~ msgid "Other Apps"
-#~ msgstr "Další aplikace"
