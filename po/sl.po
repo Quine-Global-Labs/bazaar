@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-30 21:38+0000\n"
-"PO-Revision-Date: 2026-08-31 15:17+0200\n"
+"POT-Creation-Date: 2026-09-03 18:38+0000\n"
+"PO-Revision-Date: 2026-09-04 10:38+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
+#: src/bz-window.blp:208 src/bz-window.c:377 src/bz-window.c:378
 msgid "Bazaar"
 msgstr "Bazar"
 
@@ -155,20 +155,24 @@ msgstr ""
 "Ta dodatek uporablja izvedbeno okolje, za katero se ne izdajajo več "
 "posodobitve ali varnostne popravke. Njegova uporaba lahko postane nevarna."
 
-#: src/bz-addons-dialog.c:346
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+msgid "Other Sources"
+msgstr "Drugi viri"
+
+#: src/bz-addons-dialog.c:351
 #, c-format
 msgid "Add-on for %s"
 msgstr "Dodatek za %s"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
 msgid "Show Less"
 msgstr "Pokaži manj"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Pokaži več"
 
-#: src/bz-addons-dialog.c:410
+#: src/bz-addons-dialog.c:415
 msgid "Download Stats"
 msgstr "Statistika prejemov"
 
@@ -888,7 +892,7 @@ msgstr[3] "Nalaganje %d programov …"
 msgid "Writing to cache…"
 msgstr "Pisanje v predpomnilnik …"
 
-#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:217
 msgid "Show All"
 msgstr "Pokaži vse"
 
@@ -905,6 +909,48 @@ msgstr "%d programov"
 #: src/bz-article.blp:86
 msgid "Failed to Load Article"
 msgstr "Prispevka/članks ni možno naložiti"
+
+#: src/bz-bulk-install-dialog.c:87
+msgid "All apps are already installed"
+msgstr "Vsi programi so že nameščeni"
+
+#: src/bz-bulk-install-dialog.c:89
+msgid "_OK"
+msgstr "V _redu"
+
+#: src/bz-bulk-install-dialog.c:105
+#, c-format
+msgid "Install %u App?"
+msgid_plural "Install %u Apps?"
+msgstr[0] "Ali želite namestiti %u programov?"
+msgstr[1] "Ali želite namestiti %u program?"
+msgstr[2] "Ali želite namestiti %u programa?"
+msgstr[3] "Ali želite namestiti %u programe?"
+
+#: src/bz-bulk-install-dialog.c:113
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr ""
+"Naslednje bo nameščeno. Dodatne skupne komponente bodo tudi morda nameščene"
+
+#: src/bz-bulk-install-dialog.c:114
+#, c-format
+msgid "%d addons will be installed."
+msgstr "%d dodatkov bo nameščenih."
+
+#: src/bz-bulk-install-dialog.c:115
+msgid "Additionally, addons will be installed."
+msgstr "Poleg tega bodo nameščeni še dodatki."
+
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193
+#: src/bz-transaction-dialog.c:238
+msgid "_Cancel"
+msgstr "Pre_kliči"
+
+#: src/bz-bulk-install-dialog.c:117
+msgid "_Install All"
+msgstr "Namesti _vse"
 
 #: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
 msgid "Bundle Installation"
@@ -1072,22 +1118,6 @@ msgstr ""
 #: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "Prekliči"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "this user"
-msgstr "ta uporabnik"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "all users"
-msgstr "vsi uporabniki"
-
-#: src/bz-entry-selection-row.vala:55
-msgid "End of Life"
-msgstr "Konec življenjske dobe"
-
-#: src/bz-entry-selection-row.vala:69
-msgid "For This User Only"
-msgstr "Samo za tega uporabnika"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -1658,27 +1688,27 @@ msgstr ""
 msgid "Trash Data"
 msgstr "Vrzi podatke v smeti"
 
-#: src/bz-full-view.blp:582
+#: src/bz-full-view.blp:616
 msgid "Add-ons"
 msgstr "Dodatki"
 
-#: src/bz-full-view.blp:617
+#: src/bz-full-view.blp:651
 msgid "More Add-Ons"
 msgstr "Več dodatkov"
 
-#: src/bz-full-view.blp:628
+#: src/bz-full-view.blp:662
 msgid "Links"
 msgstr "Povezave"
 
-#: src/bz-full-view.blp:659
+#: src/bz-full-view.blp:693
 msgid "Similar Apps"
 msgstr "Podobni programi"
 
-#: src/bz-full-view.c:181
+#: src/bz-full-view.c:184
 msgid "No URL"
 msgstr "Ni naslova URL"
 
-#: src/bz-full-view.c:199
+#: src/bz-full-view.c:202
 msgid ""
 "This app has a FLOSS license, meaning the source code can be audited for "
 "safety."
@@ -1686,7 +1716,7 @@ msgstr ""
 "Ta program ima dovoljenje FLOSS, kar pomeni, da lahko izvorno kodo preverite "
 "glede varnosti."
 
-#: src/bz-full-view.c:200
+#: src/bz-full-view.c:203
 msgid ""
 "This app has a proprietary license, meaning the source code is developed "
 "privately and cannot be audited by an independent third party."
@@ -1694,31 +1724,31 @@ msgstr ""
 "Ta program ima lastniško dovoljenje, kar pomeni, da izvorno kodo razvijajo "
 "zasebno in je ne more preveriti nobena neodvisna tretja stran."
 
-#: src/bz-full-view.c:207
+#: src/bz-full-view.c:210
 msgid "Other Apps From This Developer"
 msgstr "Dodatni programi tega razvijalca"
 
-#: src/bz-full-view.c:208
+#: src/bz-full-view.c:211
 #, c-format
 msgid "Other Apps From %s"
 msgstr "Drugi programi %s"
 
-#: src/bz-full-view.c:223
+#: src/bz-full-view.c:226
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr ""
 "Program %s trenutno ni nameščen, a ima še vedno prisotne podatke (<b>%s</b>)."
 
-#: src/bz-full-view.c:306
+#: src/bz-full-view.c:309
 #, c-format
 msgid "Apps by %s"
 msgstr "Programi %s"
 
-#: src/bz-full-view.c:308
+#: src/bz-full-view.c:311
 msgid "Apps by This Developer"
 msgstr "Programi tega razvijalca"
 
-#: src/bz-full-view.c:310
+#: src/bz-full-view.c:313
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
@@ -1727,7 +1757,7 @@ msgstr[1] "%d program"
 msgstr[2] "%d programa"
 msgstr[3] "%d programi"
 
-#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:468 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "Odstranjevanje uporabniških podatkov ni uspelo"
 
@@ -1829,33 +1859,33 @@ msgstr "Program %s deluje na večini naprav"
 msgid "Inspector Menu"
 msgstr "Meni nadzornika"
 
-#: src/bz-install-controls.blp:56
+#: src/bz-install-controls.blp:58
 msgid "_Open"
 msgstr "_Odpri"
 
-#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
+#: src/bz-install-controls.blp:72 src/bz-install-controls.blp:126
 msgid "Uninstall Application"
 msgstr "Odstrani program"
 
-#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
 msgid "_Remove"
 msgstr "O_dstrani"
 
-#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168
+#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168
 #: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "Posodobi"
 
-#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
+#: src/bz-install-controls.blp:136 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "Odstrani"
 
-#: src/bz-install-controls.c:638
+#: src/bz-install-controls.c:669
 #, c-format
 msgid "Install %s from %s"
 msgstr "Namesti %s z %s"
 
-#: src/bz-install-controls.c:640
+#: src/bz-install-controls.c:671
 #, c-format
 msgid "Install %s"
 msgstr "Namesti %s"
@@ -2079,6 +2109,27 @@ msgstr "Izbor ikone"
 #: src/bz-metainfo-preview.c:166
 msgid "Image Files"
 msgstr "Slikovne datoteke"
+
+#: src/bz-other-sources-list.vala:52
+msgid "User"
+msgstr "Uporabnik"
+
+#: src/bz-other-sources-list.vala:55
+msgid "Beta"
+msgstr "Beta"
+
+#: src/bz-other-sources-list.vala:58
+msgid "End-Of-Life"
+msgstr "Konec življenjske dobe"
+
+#. Translators: As in, "1 Install" / "100 Installs"
+#: src/bz-other-sources-list.vala:76 src/bz-world-map.c:604
+msgid "Install"
+msgid_plural "Installs"
+msgstr[0] "namestitev"
+msgstr[1] "Namestitev"
+msgstr[2] "Namestitvi"
+msgstr[3] "Namestitve"
 
 #: src/bz-preferences-dialog.blp:19
 msgid "Preferences"
@@ -2728,67 +2779,48 @@ msgstr "Ni najdenih zadetkov"
 msgid "Search failed"
 msgstr "Iskanje je spodletelo"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244
+#: src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
+#: src/context-tile-callbacks.c:286
+msgid "Unknown"
+msgstr "Neznano"
+
+#: src/bz-transaction-dialog.c:145
 msgid "Keep User Data"
 msgstr "Ohrani uporabniške podatke"
 
-#: src/bz-transaction-dialog.c:157
+#: src/bz-transaction-dialog.c:146
 msgid "Allow restoring personal settings &amp; content"
 msgstr "Omogoči obnavljanje osebnih nastavitev in vsebine"
 
-#: src/bz-transaction-dialog.c:166
+#: src/bz-transaction-dialog.c:155
 msgid "Delete All Data"
 msgstr "Izbriši vse podatke"
 
-#: src/bz-transaction-dialog.c:167
+#: src/bz-transaction-dialog.c:156
 msgid "Permanently erase user data to save space"
 msgstr "Trajno izbriši uporabniške podatke za prihranek prostora na disku"
 
-#: src/bz-transaction-dialog.c:192
-#, c-format
-msgid "Install %s?"
-msgstr "Ali želite namestiti %s?"
-
-#: src/bz-transaction-dialog.c:197
-msgid ""
-"Select which version to install. May install additional shared components"
-msgstr ""
-"Izberite, katero različico želite namestiti. Lahko namesti še dodatne "
-"komponente v skupni rabi"
-
-#: src/bz-transaction-dialog.c:199
-msgid "May install additional shared components"
-msgstr "Lahko namesti dodatne komponente v skupni rabi"
-
-#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231
-#: src/bz-transaction-dialog.c:276 src/bz-transaction-dialog.c:578
-msgid "_Cancel"
-msgstr "Pre_kliči"
-
-#: src/bz-transaction-dialog.c:203
-msgid "_Install"
-msgstr "_Namesti"
-
-#: src/bz-transaction-dialog.c:220
+#: src/bz-transaction-dialog.c:182
 #, c-format
 msgid "Remove %s?"
 msgstr "Ali želite odstraniti %s?"
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:185
 msgid "Select which version to remove."
 msgstr "Izberite različico, ki jo želite odstraniti."
 
-#: src/bz-transaction-dialog.c:225
+#: src/bz-transaction-dialog.c:187
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "Programa %s po odstranitvi ne bo možno več uporabljati."
 
-#: src/bz-transaction-dialog.c:248
+#: src/bz-transaction-dialog.c:210
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "»%s« predstavlja visoko tveganje"
 
-#: src/bz-transaction-dialog.c:252
+#: src/bz-transaction-dialog.c:214
 msgid ""
 "This app has full access to your system, including all <b>your files, "
 "browser history, saved passwords</b>, and more. It also has access to the "
@@ -2805,7 +2837,7 @@ msgstr ""
 "Ker gre za lastniški program, ni mogoče preveriti, kako ta uporablja ta "
 "dovoljenja."
 
-#: src/bz-transaction-dialog.c:261
+#: src/bz-transaction-dialog.c:223
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record "
 "all keystrokes, capture screenshots, and monitor other applications</b>. It "
@@ -2822,50 +2854,13 @@ msgstr ""
 "\n"
 "Ker je program lastniški, ni mogoče preveriti, kako ravna s temi dovoljenji."
 
-#: src/bz-transaction-dialog.c:277
+#: src/bz-transaction-dialog.c:239
 msgid "_Install Anyway"
 msgstr "Vseeno _namesti"
 
-#: src/bz-transaction-dialog.c:332
+#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
 msgid "Failed to load transaction dialog"
 msgstr "Nalaganje pogovornega okna transakcije je spodletelo"
-
-#: src/bz-transaction-dialog.c:549
-msgid "All apps are already installed"
-msgstr "Vsi programi so že nameščeni"
-
-#: src/bz-transaction-dialog.c:551
-msgid "_OK"
-msgstr "V _redu"
-
-#: src/bz-transaction-dialog.c:567
-#, c-format
-msgid "Install %u App?"
-msgid_plural "Install %u Apps?"
-msgstr[0] "Ali želite namestiti %u programov?"
-msgstr[1] "Ali želite namestiti %u program?"
-msgstr[2] "Ali želite namestiti %u programa?"
-msgstr[3] "Ali želite namestiti %u programe?"
-
-#: src/bz-transaction-dialog.c:575
-msgid ""
-"The following will be installed. Additional shared components may also be "
-"installed"
-msgstr ""
-"Naslednje bo nameščeno. Dodatne skupne komponente bodo tudi morda nameščene"
-
-#: src/bz-transaction-dialog.c:576
-#, c-format
-msgid "%d addons will be installed."
-msgstr "%d dodatkov bo nameščenih."
-
-#: src/bz-transaction-dialog.c:577
-msgid "Additionally, addons will be installed."
-msgstr "Poleg tega bodo nameščeni še dodatki."
-
-#: src/bz-transaction-dialog.c:579
-msgid "_Install All"
-msgstr "Namesti _vse"
 
 #: src/bz-transaction-manager.c:796
 #, c-format
@@ -3063,35 +3058,26 @@ msgid "Log Out"
 msgstr "Odjavi"
 
 #. Translators: %s is the title of the current page
-#: src/bz-window.c:379
+#: src/bz-window.c:380
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazar — %s"
 
-#: src/bz-window.c:659 src/bz-window.c:697
+#: src/bz-window.c:660 src/bz-window.c:698
 msgid "Failed to launch application"
 msgstr "Zagon programa ni uspel"
 
-#: src/bz-window.c:776
+#: src/bz-window.c:777
 msgid "Could not open link"
 msgstr "Ni mogoče odpreti povezave"
 
-#: src/bz-window.c:984
+#: src/bz-window.c:985
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Ne morete odstraniti Bazarja v Bazarju!"
 
-#: src/bz-window.c:1358 src/bz-window.c:1392
+#: src/bz-window.c:1369 src/bz-window.c:1403
 msgid "Can't do that right now!"
 msgstr "Tega zdaj ni možno narediti!"
-
-#. Translators: As in, "1 Install" / "100 Installs"
-#: src/bz-world-map.c:604
-msgid "Install"
-msgid_plural "Installs"
-msgstr[0] "namestitev"
-msgstr[1] "Namestitev"
-msgstr[2] "Namestitvi"
-msgstr[3] "Namestitve"
 
 #: src/context-tile-callbacks.c:68
 msgid "---"
@@ -3149,11 +3135,6 @@ msgstr "Primerno za vse starosti"
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "Primerno za starost %d let in več"
-
-#: src/context-tile-callbacks.c:244 src/context-tile-callbacks.c:249
-#: src/context-tile-callbacks.c:277 src/context-tile-callbacks.c:286
-msgid "Unknown"
-msgstr "Neznano"
 
 #: src/context-tile-callbacks.c:254
 #, c-format
