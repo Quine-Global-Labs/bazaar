@@ -51,6 +51,7 @@ template $BzWindow: Adw.ApplicationWindow {
 
             Adw.NavigationPage {
               tag: "main";
+              // Translators: Please treat "Bazaar" as a brand name and avoid translating.
               title: _("Bazaar");
 
               child: Adw.ToolbarView toolbar_view {
@@ -160,6 +161,7 @@ template $BzWindow: Adw.ApplicationWindow {
                       visible: bind template.state as <$BzStateInfo>.debug-mode;
 
                       Button {
+                        // Translators: Please treat "Bazaar" as a brand name and avoid translating.
                         tooltip-text: "Open Bazaar Inspector";
                         icon-name: "bug-symbolic";
                         action-name: "app.bazaar-inspector";
@@ -205,6 +207,7 @@ template $BzWindow: Adw.ApplicationWindow {
                         visible: bind $invert_boolean(template.state as <$BzStateInfo>.busy) as <bool>;
                       }
                       Label {
+                        // Translators: Please treat "Bazaar" as a brand name and avoid translating.
                         label: _("Bazaar");
                         visible: bind template.state as <$BzStateInfo>.busy as <bool>;
                         styles [
@@ -228,6 +231,7 @@ template $BzWindow: Adw.ApplicationWindow {
                     ]
 
                     revealed: bind $invert_boolean(template.state as <$BzStateInfo>.donation-prompt-dismissed as <bool>) as <bool>;
+                    // Translators: Please treat "Bazaar" as a brand name and avoid translating.
                     title: _("You are running a new version of Bazaar!");
                     button-label: _("See What's New");
                     action-name: "app.donate";
@@ -283,6 +287,7 @@ template $BzWindow: Adw.ApplicationWindow {
 menu primary_menu {
   section {
     item {
+      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
       label: _("_Donate to Bazaar");
       action: "app.donate";
     }
@@ -315,12 +320,14 @@ menu primary_menu {
     }
 
     item {
+      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
       label: _("_About Bazaar");
       action: "app.about";
     }
   }
   section {
     item {
+      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
       label: _("_Quit Bazaar");
       action: "app.quit";
     }
@@ -330,6 +337,7 @@ menu primary_menu {
 menu debug_menu {
   section {
     item {
+      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
       label: "Open Bazaar Inspector";
       action: "app.bazaar-inspector";
     }

@@ -374,9 +374,10 @@ static char *
 format_title (gpointer    object,
               const char *title)
 {
+  // Translators: Please treat "Bazaar" as a brand name and avoid translating.
   if (title == NULL || *title == '\0' || g_strcmp0 (title, _ ("Bazaar")) == 0)
     return g_strdup (_ ("Bazaar"));
-  /* Translators: %s is the title of the current page */
+  /* Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page. */
   return g_strdup_printf (_ ("Bazaar — %s"), title);
 }
 
@@ -982,6 +983,7 @@ transact_fiber (TransactData *data)
         {
           GtkWidget *window = NULL;
           window            = GTK_WIDGET (gtk_application_get_active_window (GTK_APPLICATION (g_application_get_default ())));
+          // Translators: Please treat "Bazaar" as a brand name and avoid translating.
           bz_show_error_for_widget (window, _ ("You can't remove Bazaar from Bazaar!"), _ ("You can't remove Bazaar from Bazaar!"));
           return dex_future_new_false ();
         }

@@ -282,6 +282,7 @@ request_autostart_fiber (gpointer user_data)
       "'autostart': <%b>, 'dbus-activatable': <false>, "
       "'commandline': <['bazaar-daemon', '--no-window']>}",
       token,
+      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
       _ ("Bazaar needs to run in the background to check for app updates"),
       enable);
 
