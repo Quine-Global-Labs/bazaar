@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-30 21:38+0000\n"
-"PO-Revision-Date: 2026-09-01 07:48+0800\n"
+"POT-Creation-Date: 2026-09-03 18:38+0000\n"
+"PO-Revision-Date: 2026-09-04 08:11+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
+#: src/bz-window.blp:208 src/bz-window.c:377 src/bz-window.c:378
 msgid "Bazaar"
 msgstr "集市"
 
@@ -150,20 +150,24 @@ msgid ""
 msgstr ""
 "此附加组件使用的运行时已不再接收更新或安全修复。使用它可能存在安全隐患。"
 
-#: src/bz-addons-dialog.c:346
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+msgid "Other Sources"
+msgstr "其他来源"
+
+#: src/bz-addons-dialog.c:351
 #, c-format
 msgid "Add-on for %s"
 msgstr "%s 的附加组件"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
 msgid "Show Less"
 msgstr "显示更少"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "显示更多"
 
-#: src/bz-addons-dialog.c:410
+#: src/bz-addons-dialog.c:415
 msgid "Download Stats"
 msgstr "下载统计"
 
@@ -873,7 +877,7 @@ msgstr[0] "正在加载 %d 个应用…"
 msgid "Writing to cache…"
 msgstr "正在写入缓存…"
 
-#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:217
 msgid "Show All"
 msgstr "显示全部"
 
@@ -890,6 +894,44 @@ msgstr "%d 应用程序"
 #: src/bz-article.blp:86
 msgid "Failed to Load Article"
 msgstr "加载详情失败"
+
+#: src/bz-bulk-install-dialog.c:87
+msgid "All apps are already installed"
+msgstr "所有应用已经安装"
+
+#: src/bz-bulk-install-dialog.c:89
+msgid "_OK"
+msgstr "确定(_O)"
+
+#: src/bz-bulk-install-dialog.c:105
+#, c-format
+msgid "Install %u App?"
+msgid_plural "Install %u Apps?"
+msgstr[0] "安装 %u 个应用？"
+
+#: src/bz-bulk-install-dialog.c:113
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr "将会安装以下项目。可能同时安装额外共享组件"
+
+#: src/bz-bulk-install-dialog.c:114
+#, c-format
+msgid "%d addons will be installed."
+msgstr "%d 附加组件将被安装。"
+
+#: src/bz-bulk-install-dialog.c:115
+msgid "Additionally, addons will be installed."
+msgstr "另外，将会安装附加组件。"
+
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193
+#: src/bz-transaction-dialog.c:238
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#: src/bz-bulk-install-dialog.c:117
+msgid "_Install All"
+msgstr "全部安装(_I)"
 
 #: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
 msgid "Bundle Installation"
@@ -1050,22 +1092,6 @@ msgstr "您已安装此应用的多个版本。您希望用哪一个继续？"
 #: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "取消"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "this user"
-msgstr "此用户"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "all users"
-msgstr "所有用户"
-
-#: src/bz-entry-selection-row.vala:55
-msgid "End of Life"
-msgstr "结束支持"
-
-#: src/bz-entry-selection-row.vala:69
-msgid "For This User Only"
-msgstr "仅用于此用户"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -1632,69 +1658,69 @@ msgstr "此应用使用的运行时已不再接收更新或安全修复。使用
 msgid "Trash Data"
 msgstr "垃圾数据"
 
-#: src/bz-full-view.blp:582
+#: src/bz-full-view.blp:616
 msgid "Add-ons"
 msgstr "附加组件"
 
-#: src/bz-full-view.blp:617
+#: src/bz-full-view.blp:651
 msgid "More Add-Ons"
 msgstr "更多附加组件"
 
-#: src/bz-full-view.blp:628
+#: src/bz-full-view.blp:662
 msgid "Links"
 msgstr "链接"
 
-#: src/bz-full-view.blp:659
+#: src/bz-full-view.blp:693
 msgid "Similar Apps"
 msgstr "相似应用"
 
-#: src/bz-full-view.c:181
+#: src/bz-full-view.c:184
 msgid "No URL"
 msgstr "无 URL"
 
-#: src/bz-full-view.c:199
+#: src/bz-full-view.c:202
 msgid ""
 "This app has a FLOSS license, meaning the source code can be audited for "
 "safety."
 msgstr "该应用具有 FLOSS 许可证，这意味着可以审核源代码的安全性。"
 
-#: src/bz-full-view.c:200
+#: src/bz-full-view.c:203
 msgid ""
 "This app has a proprietary license, meaning the source code is developed "
 "privately and cannot be audited by an independent third party."
 msgstr ""
 "该应用具有专有许可证，这意味着源代码是私人开发的且无法由独立第三方审核。"
 
-#: src/bz-full-view.c:207
+#: src/bz-full-view.c:210
 msgid "Other Apps From This Developer"
 msgstr "此开发者的其他应用"
 
-#: src/bz-full-view.c:208
+#: src/bz-full-view.c:211
 #, c-format
 msgid "Other Apps From %s"
 msgstr "来自 %s 的其他应用"
 
-#: src/bz-full-view.c:223
+#: src/bz-full-view.c:226
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr "%s 未安装，但仍存在 <b>%s</b> 的数据。"
 
-#: src/bz-full-view.c:306
+#: src/bz-full-view.c:309
 #, c-format
 msgid "Apps by %s"
 msgstr "%s 的应用"
 
-#: src/bz-full-view.c:308
+#: src/bz-full-view.c:311
 msgid "Apps by This Developer"
 msgstr "此开发者的应用"
 
-#: src/bz-full-view.c:310
+#: src/bz-full-view.c:313
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
 msgstr[0] "%d 个应用程序"
 
-#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:468 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "移除用户数据失败"
 
@@ -1796,33 +1822,33 @@ msgstr "%s 在大多数设备运行正常"
 msgid "Inspector Menu"
 msgstr "检查器菜单"
 
-#: src/bz-install-controls.blp:56
+#: src/bz-install-controls.blp:58
 msgid "_Open"
 msgstr "打开(_O)"
 
-#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
+#: src/bz-install-controls.blp:72 src/bz-install-controls.blp:126
 msgid "Uninstall Application"
 msgstr "卸载应用程序"
 
-#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
 msgid "_Remove"
 msgstr "移除(_R)"
 
-#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168
+#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168
 #: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "更新"
 
-#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
+#: src/bz-install-controls.blp:136 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "移除"
 
-#: src/bz-install-controls.c:638
+#: src/bz-install-controls.c:669
 #, c-format
 msgid "Install %s from %s"
 msgstr "从 %2$s 安装 %1$s"
 
-#: src/bz-install-controls.c:640
+#: src/bz-install-controls.c:671
 #, c-format
 msgid "Install %s"
 msgstr "安装 %s"
@@ -2033,6 +2059,24 @@ msgstr "选择图标"
 #: src/bz-metainfo-preview.c:166
 msgid "Image Files"
 msgstr "图像文件"
+
+#: src/bz-other-sources-list.vala:52
+msgid "User"
+msgstr "用户"
+
+#: src/bz-other-sources-list.vala:55
+msgid "Beta"
+msgstr "测试版"
+
+#: src/bz-other-sources-list.vala:58
+msgid "End-Of-Life"
+msgstr "结束支持"
+
+#. Translators: As in, "1 Install" / "100 Installs"
+#: src/bz-other-sources-list.vala:76 src/bz-world-map.c:604
+msgid "Install"
+msgid_plural "Installs"
+msgstr[0] "安装"
 
 #: src/bz-preferences-dialog.blp:19
 msgid "Preferences"
@@ -2656,65 +2700,48 @@ msgstr "未找到结果"
 msgid "Search failed"
 msgstr "搜索失败"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244
+#: src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
+#: src/context-tile-callbacks.c:286
+msgid "Unknown"
+msgstr "未知"
+
+#: src/bz-transaction-dialog.c:145
 msgid "Keep User Data"
 msgstr "保留用户数据"
 
-#: src/bz-transaction-dialog.c:157
+#: src/bz-transaction-dialog.c:146
 msgid "Allow restoring personal settings &amp; content"
 msgstr "允许恢复个人设置 &amp; 内容"
 
-#: src/bz-transaction-dialog.c:166
+#: src/bz-transaction-dialog.c:155
 msgid "Delete All Data"
 msgstr "删除所有数据"
 
-#: src/bz-transaction-dialog.c:167
+#: src/bz-transaction-dialog.c:156
 msgid "Permanently erase user data to save space"
 msgstr "永久删除用户数据以节省空间"
 
-#: src/bz-transaction-dialog.c:192
-#, c-format
-msgid "Install %s?"
-msgstr "安装 %s 吗？"
-
-#: src/bz-transaction-dialog.c:197
-msgid ""
-"Select which version to install. May install additional shared components"
-msgstr "选择要安装的版本。可能安装额外共享组件"
-
-#: src/bz-transaction-dialog.c:199
-msgid "May install additional shared components"
-msgstr "可能安装额外的共享组件"
-
-#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231
-#: src/bz-transaction-dialog.c:276 src/bz-transaction-dialog.c:578
-msgid "_Cancel"
-msgstr "取消(_C)"
-
-#: src/bz-transaction-dialog.c:203
-msgid "_Install"
-msgstr "安装(_I)"
-
-#: src/bz-transaction-dialog.c:220
+#: src/bz-transaction-dialog.c:182
 #, c-format
 msgid "Remove %s?"
 msgstr "移除 %s 吗？"
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:185
 msgid "Select which version to remove."
 msgstr "选择要移除的版本。"
 
-#: src/bz-transaction-dialog.c:225
+#: src/bz-transaction-dialog.c:187
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "卸载后将无法使用 %s。"
 
-#: src/bz-transaction-dialog.c:248
+#: src/bz-transaction-dialog.c:210
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "“%s”是高风险的"
 
-#: src/bz-transaction-dialog.c:252
+#: src/bz-transaction-dialog.c:214
 msgid ""
 "This app has full access to your system, including all <b>your files, "
 "browser history, saved passwords</b>, and more. It also has access to the "
@@ -2728,7 +2755,7 @@ msgstr ""
 "\n"
 "由于该应用是专有的，其如何利用权限也无法审查。\t"
 
-#: src/bz-transaction-dialog.c:261
+#: src/bz-transaction-dialog.c:223
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record "
 "all keystrokes, capture screenshots, and monitor other applications</b>. It "
@@ -2744,46 +2771,13 @@ msgstr ""
 "\n"
 "由于该应用是专有的，其如何利用权限也无法审查。"
 
-#: src/bz-transaction-dialog.c:277
+#: src/bz-transaction-dialog.c:239
 msgid "_Install Anyway"
 msgstr "仍然安装(_I)"
 
-#: src/bz-transaction-dialog.c:332
+#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
 msgid "Failed to load transaction dialog"
 msgstr "加载事务对话框失败"
-
-#: src/bz-transaction-dialog.c:549
-msgid "All apps are already installed"
-msgstr "所有应用已经安装"
-
-#: src/bz-transaction-dialog.c:551
-msgid "_OK"
-msgstr "确定(_O)"
-
-#: src/bz-transaction-dialog.c:567
-#, c-format
-msgid "Install %u App?"
-msgid_plural "Install %u Apps?"
-msgstr[0] "安装 %u 个应用？"
-
-#: src/bz-transaction-dialog.c:575
-msgid ""
-"The following will be installed. Additional shared components may also be "
-"installed"
-msgstr "将会安装以下项目。可能同时安装额外共享组件"
-
-#: src/bz-transaction-dialog.c:576
-#, c-format
-msgid "%d addons will be installed."
-msgstr "%d 附加组件将被安装。"
-
-#: src/bz-transaction-dialog.c:577
-msgid "Additionally, addons will be installed."
-msgstr "另外，将会安装附加组件。"
-
-#: src/bz-transaction-dialog.c:579
-msgid "_Install All"
-msgstr "全部安装(_I)"
 
 #: src/bz-transaction-manager.c:796
 #, c-format
@@ -2971,32 +2965,26 @@ msgid "Log Out"
 msgstr "登出"
 
 #. Translators: %s is the title of the current page
-#: src/bz-window.c:379
+#: src/bz-window.c:380
 #, c-format
 msgid "Bazaar — %s"
 msgstr "集市 — %s"
 
-#: src/bz-window.c:659 src/bz-window.c:697
+#: src/bz-window.c:660 src/bz-window.c:698
 msgid "Failed to launch application"
 msgstr "启动应用程序失败"
 
-#: src/bz-window.c:776
+#: src/bz-window.c:777
 msgid "Could not open link"
 msgstr "无法打开链接"
 
-#: src/bz-window.c:984
+#: src/bz-window.c:985
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "您无法从“集市”移除“集市”！"
 
-#: src/bz-window.c:1358 src/bz-window.c:1392
+#: src/bz-window.c:1369 src/bz-window.c:1403
 msgid "Can't do that right now!"
 msgstr "无法立刻那么做！"
-
-#. Translators: As in, "1 Install" / "100 Installs"
-#: src/bz-world-map.c:604
-msgid "Install"
-msgid_plural "Installs"
-msgstr[0] "安装"
 
 #: src/context-tile-callbacks.c:68
 msgid "---"
@@ -3054,11 +3042,6 @@ msgstr "适合全年龄段"
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "适合年龄为 %d 岁及以上"
-
-#: src/context-tile-callbacks.c:244 src/context-tile-callbacks.c:249
-#: src/context-tile-callbacks.c:277 src/context-tile-callbacks.c:286
-msgid "Unknown"
-msgstr "未知"
 
 #: src/context-tile-callbacks.c:254
 #, c-format
@@ -3506,6 +3489,29 @@ msgstr "%s 和 %s 已经更新。"
 msgid "Includes %s, %s and %s."
 msgstr "包括 %s、%s 和 %s。"
 
+#~ msgid "this user"
+#~ msgstr "此用户"
+
+#~ msgid "all users"
+#~ msgstr "所有用户"
+
+#~ msgid "For This User Only"
+#~ msgstr "仅用于此用户"
+
+#, c-format
+#~ msgid "Install %s?"
+#~ msgstr "安装 %s 吗？"
+
+#~ msgid ""
+#~ "Select which version to install. May install additional shared components"
+#~ msgstr "选择要安装的版本。可能安装额外共享组件"
+
+#~ msgid "May install additional shared components"
+#~ msgstr "可能安装额外的共享组件"
+
+#~ msgid "_Install"
+#~ msgstr "安装(_I)"
+
 #~ msgid "Ubuntu Troubles!"
 #~ msgstr "Ubuntu 问题！"
 
@@ -3530,9 +3536,6 @@ msgstr "包括 %s、%s 和 %s。"
 
 #~ msgid "More Apps"
 #~ msgstr "更多应用"
-
-#~ msgid "Other Apps"
-#~ msgstr "其他应用"
 
 #~ msgid "Exhibit app page"
 #~ msgstr "展示应用页面"
