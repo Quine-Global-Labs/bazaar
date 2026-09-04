@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-30 21:38+0000\n"
-"PO-Revision-Date: 2026-08-31 09:49+0300\n"
+"POT-Creation-Date: 2026-09-03 18:38+0000\n"
+"PO-Revision-Date: 2026-09-04 18:21+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:2
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
+#: src/bz-window.blp:208 src/bz-window.c:377 src/bz-window.c:378
 msgid "Bazaar"
 msgstr "Базар"
 
@@ -156,20 +156,25 @@ msgstr ""
 "оновлень або безпекових виправлень. Він може стати небезпечним до "
 "використання."
 
-#: src/bz-addons-dialog.c:346
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+#| msgid "Other Apps"
+msgid "Other Sources"
+msgstr "Інші джерела"
+
+#: src/bz-addons-dialog.c:351
 #, c-format
 msgid "Add-on for %s"
 msgstr "Розширення для %s"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
 msgid "Show Less"
 msgstr "Згорнути"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Розгорнути"
 
-#: src/bz-addons-dialog.c:410
+#: src/bz-addons-dialog.c:415
 msgid "Download Stats"
 msgstr "Звіт щодо завантажень"
 
@@ -891,7 +896,7 @@ msgstr[3] "Завантажуємо %d застосунок…"
 msgid "Writing to cache…"
 msgstr "Кешуємо…"
 
-#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:217
 msgid "Show All"
 msgstr "Показати всі"
 
@@ -908,6 +913,49 @@ msgstr "%d застосунків"
 #: src/bz-article.blp:86
 msgid "Failed to Load Article"
 msgstr "Не вдалося завантажити статтю"
+
+#: src/bz-bulk-install-dialog.c:87
+msgid "All apps are already installed"
+msgstr "Усі застосунки вже встановлені"
+
+#: src/bz-bulk-install-dialog.c:89
+msgid "_OK"
+msgstr "_Гаразд"
+
+#: src/bz-bulk-install-dialog.c:105
+#, c-format
+msgid "Install %u App?"
+msgid_plural "Install %u Apps?"
+msgstr[0] "Встановити %u застосунок?"
+msgstr[1] "Встановити %u застосунки?"
+msgstr[2] "Встановити %u застосунків?"
+msgstr[3] "Встановити %u застосунок?"
+
+#: src/bz-bulk-install-dialog.c:113
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr ""
+"Усе зазначене буде встановлено. Також може бути встановлено додаткові "
+"компоненти."
+
+#: src/bz-bulk-install-dialog.c:114
+#, c-format
+msgid "%d addons will be installed."
+msgstr "Буде встановлено %d розширень."
+
+#: src/bz-bulk-install-dialog.c:115
+msgid "Additionally, addons will be installed."
+msgstr "Крім того, будуть установлені розширення."
+
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193
+#: src/bz-transaction-dialog.c:238
+msgid "_Cancel"
+msgstr "_Скасувати"
+
+#: src/bz-bulk-install-dialog.c:117
+msgid "_Install All"
+msgstr "_Встановити всі"
 
 #: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
 msgid "Bundle Installation"
@@ -1079,22 +1127,6 @@ msgstr ""
 #: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "Скасувати"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "this user"
-msgstr "цей користувач"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "all users"
-msgstr "усі користувачі"
-
-#: src/bz-entry-selection-row.vala:55
-msgid "End of Life"
-msgstr "Завершено термін підтримки"
-
-#: src/bz-entry-selection-row.vala:69
-msgid "For This User Only"
-msgstr "Лише для цього користувача"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -1670,27 +1702,27 @@ msgstr ""
 msgid "Trash Data"
 msgstr "Перемістити дані в смітник"
 
-#: src/bz-full-view.blp:582
+#: src/bz-full-view.blp:616
 msgid "Add-ons"
 msgstr "Розширення"
 
-#: src/bz-full-view.blp:617
+#: src/bz-full-view.blp:651
 msgid "More Add-Ons"
 msgstr "Більше розширень"
 
-#: src/bz-full-view.blp:628
+#: src/bz-full-view.blp:662
 msgid "Links"
 msgstr "Посилання"
 
-#: src/bz-full-view.blp:659
+#: src/bz-full-view.blp:693
 msgid "Similar Apps"
 msgstr "Подібні застосунки"
 
-#: src/bz-full-view.c:181
+#: src/bz-full-view.c:184
 msgid "No URL"
 msgstr "Без URL"
 
-#: src/bz-full-view.c:199
+#: src/bz-full-view.c:202
 msgid ""
 "This app has a FLOSS license, meaning the source code can be audited for "
 "safety."
@@ -1698,7 +1730,7 @@ msgstr ""
 "Цей застосунок має вільну ліцензію. Це означає, що початковий код може бути "
 "перевірено на безпечність."
 
-#: src/bz-full-view.c:200
+#: src/bz-full-view.c:203
 msgid ""
 "This app has a proprietary license, meaning the source code is developed "
 "privately and cannot be audited by an independent third party."
@@ -1706,32 +1738,32 @@ msgstr ""
 "Цей застосунок має невільну (власницьку) ліцензію. Це означає, що початковий "
 "код не є публічно доступним і не може бути перевіреним на безпечність."
 
-#: src/bz-full-view.c:207
+#: src/bz-full-view.c:210
 msgid "Other Apps From This Developer"
 msgstr "Інші програми від цього розробника"
 
-#: src/bz-full-view.c:208
+#: src/bz-full-view.c:211
 #, c-format
 msgid "Other Apps From %s"
 msgstr "Інші програми від %s"
 
 # Трохи довший переклад, аби зберегти статеву нейтральність назви самого застосунку.
-#: src/bz-full-view.c:223
+#: src/bz-full-view.c:226
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr ""
 "Застосунок %s не встановлено, проте він має <b>%s</b> залишкових даних."
 
-#: src/bz-full-view.c:306
+#: src/bz-full-view.c:309
 #, c-format
 msgid "Apps by %s"
 msgstr "Програми від %s"
 
-#: src/bz-full-view.c:308
+#: src/bz-full-view.c:311
 msgid "Apps by This Developer"
 msgstr "Програми цього розробника"
 
-#: src/bz-full-view.c:310
+#: src/bz-full-view.c:313
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
@@ -1740,7 +1772,7 @@ msgstr[1] "%d застосунки"
 msgstr[2] "%d застосунків"
 msgstr[3] "%d застосунок"
 
-#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:468 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "Не вдалося видалити користувацькі дані"
 
@@ -1848,33 +1880,33 @@ msgstr "%s працює на більшості пристроїв"
 msgid "Inspector Menu"
 msgstr "Меню інспектора"
 
-#: src/bz-install-controls.blp:56
+#: src/bz-install-controls.blp:58
 msgid "_Open"
 msgstr "_Запустити"
 
-#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
+#: src/bz-install-controls.blp:72 src/bz-install-controls.blp:126
 msgid "Uninstall Application"
 msgstr "Видалити цей застосунок"
 
-#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
 msgid "_Remove"
 msgstr "_Видалити"
 
-#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168
+#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168
 #: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "Оновлення"
 
-#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
+#: src/bz-install-controls.blp:136 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "Видалити"
 
-#: src/bz-install-controls.c:638
+#: src/bz-install-controls.c:669
 #, c-format
 msgid "Install %s from %s"
 msgstr "Встановити %s з %s"
 
-#: src/bz-install-controls.c:640
+#: src/bz-install-controls.c:671
 #, c-format
 msgid "Install %s"
 msgstr "Встановити %s"
@@ -2101,6 +2133,29 @@ msgstr "Виберіть піктограму"
 #: src/bz-metainfo-preview.c:166
 msgid "Image Files"
 msgstr "Файли зображень"
+
+#: src/bz-other-sources-list.vala:52
+#| msgid "User Data"
+msgid "User"
+msgstr "Користувач"
+
+#: src/bz-other-sources-list.vala:55
+msgid "Beta"
+msgstr "Бета"
+
+#: src/bz-other-sources-list.vala:58
+#| msgid "End of Life"
+msgid "End-Of-Life"
+msgstr "Термін підтримки"
+
+#. Translators: As in, "1 Install" / "100 Installs"
+#: src/bz-other-sources-list.vala:76 src/bz-world-map.c:604
+msgid "Install"
+msgid_plural "Installs"
+msgstr[0] "Встановлення"
+msgstr[1] "Встановлення"
+msgstr[2] "Встановлень"
+msgstr[3] "Встановлення"
 
 #: src/bz-preferences-dialog.blp:19
 msgid "Preferences"
@@ -2749,67 +2804,48 @@ msgstr "Нічого не знайдено"
 msgid "Search failed"
 msgstr "Помилка пошуку"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244
+#: src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
+#: src/context-tile-callbacks.c:286
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: src/bz-transaction-dialog.c:145
 msgid "Keep User Data"
 msgstr "Лишити користувацькі дані"
 
-#: src/bz-transaction-dialog.c:157
+#: src/bz-transaction-dialog.c:146
 msgid "Allow restoring personal settings &amp; content"
 msgstr "Надає можливість відновити налаштування та вміст у майбутньому"
 
-#: src/bz-transaction-dialog.c:166
+#: src/bz-transaction-dialog.c:155
 msgid "Delete All Data"
 msgstr "Видалити усі дані"
 
-#: src/bz-transaction-dialog.c:167
+#: src/bz-transaction-dialog.c:156
 msgid "Permanently erase user data to save space"
 msgstr "Назавжди видалити користувацьку дані цього застосунку"
 
-#: src/bz-transaction-dialog.c:192
-#, c-format
-msgid "Install %s?"
-msgstr "Встановити %s?"
-
-#: src/bz-transaction-dialog.c:197
-msgid ""
-"Select which version to install. May install additional shared components"
-msgstr ""
-"Оберіть версію до встановлення. Також може бути встановлено додаткові "
-"компоненти."
-
-#: src/bz-transaction-dialog.c:199
-msgid "May install additional shared components"
-msgstr "Можуть бути встановлені додаткові компоненти"
-
-#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231
-#: src/bz-transaction-dialog.c:276 src/bz-transaction-dialog.c:578
-msgid "_Cancel"
-msgstr "_Скасувати"
-
-#: src/bz-transaction-dialog.c:203
-msgid "_Install"
-msgstr "_Встановити"
-
-#: src/bz-transaction-dialog.c:220
+#: src/bz-transaction-dialog.c:182
 #, c-format
 msgid "Remove %s?"
 msgstr "Видалити %s?"
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:185
 msgid "Select which version to remove."
 msgstr "Оберіть версію до видалення"
 
-#: src/bz-transaction-dialog.c:225
+#: src/bz-transaction-dialog.c:187
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "%s не можна буде користати після видалення."
 
-#: src/bz-transaction-dialog.c:248
+#: src/bz-transaction-dialog.c:210
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "«%s» має високий ризик"
 
-#: src/bz-transaction-dialog.c:252
+#: src/bz-transaction-dialog.c:214
 msgid ""
 "This app has full access to your system, including all <b>your files, "
 "browser history, saved passwords</b>, and more. It also has access to the "
@@ -2825,7 +2861,7 @@ msgstr ""
 "Оскільки застосунок є закритим (власницьким), то неможливо перевірити, що "
 "він робить із цими дозволами."
 
-#: src/bz-transaction-dialog.c:261
+#: src/bz-transaction-dialog.c:223
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record "
 "all keystrokes, capture screenshots, and monitor other applications</b>. It "
@@ -2843,51 +2879,13 @@ msgstr ""
 "Оскільки застосунок є закритим (власницьким), то неможливо перевірити, що "
 "він робить із цими дозволами."
 
-#: src/bz-transaction-dialog.c:277
+#: src/bz-transaction-dialog.c:239
 msgid "_Install Anyway"
 msgstr "_Встановити попри це"
 
-#: src/bz-transaction-dialog.c:332
+#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
 msgid "Failed to load transaction dialog"
 msgstr "Не вдалося завантажити віконце операцій"
-
-#: src/bz-transaction-dialog.c:549
-msgid "All apps are already installed"
-msgstr "Усі застосунки вже встановлені"
-
-#: src/bz-transaction-dialog.c:551
-msgid "_OK"
-msgstr "_Гаразд"
-
-#: src/bz-transaction-dialog.c:567
-#, c-format
-msgid "Install %u App?"
-msgid_plural "Install %u Apps?"
-msgstr[0] "Встановити %u застосунок?"
-msgstr[1] "Встановити %u застосунки?"
-msgstr[2] "Встановити %u застосунків?"
-msgstr[3] "Встановити %u застосунок?"
-
-#: src/bz-transaction-dialog.c:575
-msgid ""
-"The following will be installed. Additional shared components may also be "
-"installed"
-msgstr ""
-"Усе зазначене буде встановлено. Також може бути встановлено додаткові "
-"компоненти."
-
-#: src/bz-transaction-dialog.c:576
-#, c-format
-msgid "%d addons will be installed."
-msgstr "Буде встановлено %d розширень."
-
-#: src/bz-transaction-dialog.c:577
-msgid "Additionally, addons will be installed."
-msgstr "Крім того, будуть установлені розширення."
-
-#: src/bz-transaction-dialog.c:579
-msgid "_Install All"
-msgstr "_Встановити всі"
 
 #: src/bz-transaction-manager.c:796
 #, c-format
@@ -3082,35 +3080,26 @@ msgid "Log Out"
 msgstr "Вийти"
 
 #. Translators: %s is the title of the current page
-#: src/bz-window.c:379
+#: src/bz-window.c:380
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Базар — %s"
 
-#: src/bz-window.c:659 src/bz-window.c:697
+#: src/bz-window.c:660 src/bz-window.c:698
 msgid "Failed to launch application"
 msgstr "Не вдалося запустити застосунок"
 
-#: src/bz-window.c:776
+#: src/bz-window.c:777
 msgid "Could not open link"
 msgstr "Не вдалося відкрити посилання"
 
-#: src/bz-window.c:984
+#: src/bz-window.c:985
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Ви не можете видалити Базар у Базарі!"
 
-#: src/bz-window.c:1358 src/bz-window.c:1392
+#: src/bz-window.c:1369 src/bz-window.c:1403
 msgid "Can't do that right now!"
 msgstr "Наразі цього не можна зробити!"
-
-#. Translators: As in, "1 Install" / "100 Installs"
-#: src/bz-world-map.c:604
-msgid "Install"
-msgid_plural "Installs"
-msgstr[0] "Встановлення"
-msgstr[1] "Встановлення"
-msgstr[2] "Встановлень"
-msgstr[3] "Встановлення"
 
 #: src/context-tile-callbacks.c:68
 msgid "---"
@@ -3168,11 +3157,6 @@ msgstr "Без обмежень за віком"
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "%d та старше"
-
-#: src/context-tile-callbacks.c:244 src/context-tile-callbacks.c:249
-#: src/context-tile-callbacks.c:277 src/context-tile-callbacks.c:286
-msgid "Unknown"
-msgstr "Невідомо"
 
 #: src/context-tile-callbacks.c:254
 #, c-format
@@ -3635,6 +3619,31 @@ msgstr "Було оновлено %s і %s."
 msgid "Includes %s, %s and %s."
 msgstr "Включає %s, %s і %s."
 
+#~ msgid "this user"
+#~ msgstr "цей користувач"
+
+#~ msgid "all users"
+#~ msgstr "усі користувачі"
+
+#~ msgid "For This User Only"
+#~ msgstr "Лише для цього користувача"
+
+#, c-format
+#~ msgid "Install %s?"
+#~ msgstr "Встановити %s?"
+
+#~ msgid ""
+#~ "Select which version to install. May install additional shared components"
+#~ msgstr ""
+#~ "Оберіть версію до встановлення. Також може бути встановлено додаткові "
+#~ "компоненти."
+
+#~ msgid "May install additional shared components"
+#~ msgstr "Можуть бути встановлені додаткові компоненти"
+
+#~ msgid "_Install"
+#~ msgstr "_Встановити"
+
 #~ msgid "Ubuntu Troubles!"
 #~ msgstr "Проблеми з Ubuntu!"
 
@@ -3662,9 +3671,6 @@ msgstr "Включає %s, %s і %s."
 
 #~ msgid "More Apps"
 #~ msgstr "Більше застосунків"
-
-#~ msgid "Other Apps"
-#~ msgstr "Інші застосунки"
 
 #~ msgid "Exhibit app page"
 #~ msgstr "Сторінка застосунку Exhibit"
@@ -3700,6 +3706,3 @@ msgstr "Включає %s, %s і %s."
 
 #~ msgid "Preview"
 #~ msgstr "Передпрогляд"
-
-#~ msgid "User Data"
-#~ msgstr "Користувацькі дані"
