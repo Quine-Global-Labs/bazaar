@@ -31,6 +31,7 @@
 #include "error.h"
 #include "safety-calculator.h"
 #include "util.h"
+#include "io.h"
 
 static GListStore *
 collect_selectable_entries (GListModel *store,
@@ -71,7 +72,8 @@ collect_selectable_entries (GListModel *store,
 
 static GPtrArray *
 create_entry_radio_buttons (AdwAlertDialog *alert,
-                            GListModel     *selectable)
+                            GListModel     *selectable,
+                            gboolean        has_user_data)
 {
   g_autoptr (GPtrArray) radios = NULL;
   GtkWidget *container         = NULL;
@@ -130,43 +132,48 @@ create_entry_radio_buttons (AdwAlertDialog *alert,
       gtk_box_append (GTK_BOX (container), listbox);
     }
 
-  {
-    GtkWidget *listbox         = NULL;
-    GtkWidget *keep_data_row   = NULL;
-    GtkWidget *delete_data_row = NULL;
-    GtkWidget *keep_radio      = NULL;
-    GtkWidget *delete_radio    = NULL;
+  if (has_user_data)
+    {
+      GtkWidget *listbox         = NULL;
+      GtkWidget *keep_data_row   = NULL;
+      GtkWidget *delete_data_row = NULL;
+      GtkWidget *keep_radio      = NULL;
+      GtkWidget *delete_radio    = NULL;
 
-    listbox = gtk_list_box_new ();
-    gtk_list_box_set_selection_mode (GTK_LIST_BOX (listbox), GTK_SELECTION_NONE);
-    gtk_widget_add_css_class (listbox, "boxed-list");
+      listbox = gtk_list_box_new ();
+      gtk_list_box_set_selection_mode (GTK_LIST_BOX (listbox), GTK_SELECTION_NONE);
+      gtk_widget_add_css_class (listbox, "boxed-list");
 
-    keep_data_row = adw_action_row_new ();
-    adw_preferences_row_set_title (ADW_PREFERENCES_ROW (keep_data_row), _ ("Keep User Data"));
-    adw_action_row_set_subtitle (ADW_ACTION_ROW (keep_data_row), _ ("Allow restoring personal settings &amp; content"));
-    keep_radio = gtk_check_button_new ();
-    gtk_widget_set_valign (keep_radio, GTK_ALIGN_CENTER);
-    gtk_check_button_set_active (GTK_CHECK_BUTTON (keep_radio), TRUE);
-    adw_action_row_add_prefix (ADW_ACTION_ROW (keep_data_row), keep_radio);
-    adw_action_row_set_activatable_widget (ADW_ACTION_ROW (keep_data_row), keep_radio);
-    gtk_list_box_append (GTK_LIST_BOX (listbox), keep_data_row);
+      keep_data_row = adw_action_row_new ();
+      adw_preferences_row_set_title (ADW_PREFERENCES_ROW (keep_data_row), _ ("Keep User Data"));
+      adw_action_row_set_subtitle (ADW_ACTION_ROW (keep_data_row), _ ("Allow restoring personal settings &amp; content"));
+      keep_radio = gtk_check_button_new ();
+      gtk_widget_set_valign (keep_radio, GTK_ALIGN_CENTER);
+      gtk_check_button_set_active (GTK_CHECK_BUTTON (keep_radio), TRUE);
+      adw_action_row_add_prefix (ADW_ACTION_ROW (keep_data_row), keep_radio);
+      adw_action_row_set_activatable_widget (ADW_ACTION_ROW (keep_data_row), keep_radio);
+      gtk_list_box_append (GTK_LIST_BOX (listbox), keep_data_row);
 
-    delete_data_row = adw_action_row_new ();
-    adw_preferences_row_set_title (ADW_PREFERENCES_ROW (delete_data_row), _ ("Delete All Data"));
-    adw_action_row_set_subtitle (ADW_ACTION_ROW (delete_data_row), _ ("Permanently erase user data to save space"));
-    delete_radio = gtk_check_button_new ();
-    gtk_widget_set_valign (delete_radio, GTK_ALIGN_CENTER);
-    gtk_check_button_set_group (GTK_CHECK_BUTTON (delete_radio), GTK_CHECK_BUTTON (keep_radio));
-    adw_action_row_add_prefix (ADW_ACTION_ROW (delete_data_row), delete_radio);
-    adw_action_row_set_activatable_widget (ADW_ACTION_ROW (delete_data_row), delete_radio);
-    gtk_list_box_append (GTK_LIST_BOX (listbox), delete_data_row);
+      delete_data_row = adw_action_row_new ();
+      adw_preferences_row_set_title (ADW_PREFERENCES_ROW (delete_data_row), _ ("Delete All Data"));
+      adw_action_row_set_subtitle (ADW_ACTION_ROW (delete_data_row), _ ("Permanently erase user data to save space"));
+      delete_radio = gtk_check_button_new ();
+      gtk_widget_set_valign (delete_radio, GTK_ALIGN_CENTER);
+      gtk_check_button_set_group (GTK_CHECK_BUTTON (delete_radio), GTK_CHECK_BUTTON (keep_radio));
+      adw_action_row_add_prefix (ADW_ACTION_ROW (delete_data_row), delete_radio);
+      adw_action_row_set_activatable_widget (ADW_ACTION_ROW (delete_data_row), delete_radio);
+      gtk_list_box_append (GTK_LIST_BOX (listbox), delete_data_row);
 
-    g_ptr_array_add (radios, keep_radio);
-    g_ptr_array_add (radios, delete_radio);
-    gtk_box_append (GTK_BOX (container), listbox);
-  }
+      g_ptr_array_add (radios, keep_radio);
+      g_ptr_array_add (radios, delete_radio);
+      gtk_box_append (GTK_BOX (container), listbox);
+    }
 
-  adw_alert_dialog_set_extra_child (alert, container);
+  if (n_selectable > 1 || has_user_data)
+    adw_alert_dialog_set_extra_child (alert, container);
+  else
+    g_object_unref (g_object_ref_sink (container));
+
   return g_steal_pointer (&radios);
 }
 
@@ -276,6 +283,7 @@ show_dialog_fiber (GtkWidget    *parent,
   BzHighRiskGroup risk_groups                  = BZ_HIGH_RISK_GROUP_NONE;
   guint           n_selectable                 = 0;
   gboolean        confirmed                    = FALSE;
+  gboolean        has_user_data                = FALSE;
 
   result = bz_transaction_dialog_result_new ();
 
@@ -330,6 +338,9 @@ show_dialog_fiber (GtkWidget    *parent,
       check_entry = g_object_ref (entry);
     }
 
+  if (remove && id != NULL)
+    has_user_data = bz_user_data_exists (id);
+
   if (!remove && check_entry != NULL)
     risk_groups = get_entry_high_risk_groups (check_entry);
 
@@ -358,7 +369,7 @@ show_dialog_fiber (GtkWidget    *parent,
       alert = g_object_ref_sink (adw_alert_dialog_new (NULL, NULL));
       configure_remove_dialog (ADW_ALERT_DIALOG (alert), title, id, n_selectable > 1);
 
-      radios = create_entry_radio_buttons (ADW_ALERT_DIALOG (alert), G_LIST_MODEL (selectable));
+      radios = create_entry_radio_buttons (ADW_ALERT_DIALOG (alert), G_LIST_MODEL (selectable), has_user_data);
 
       if (auto_confirm && radios->len <= 1)
         {
@@ -375,7 +386,7 @@ show_dialog_fiber (GtkWidget    *parent,
           if (dialog_response == NULL)
             return dex_future_new_for_error (g_steal_pointer (&local_error));
 
-          if (radios->len >= 1)
+          if (has_user_data && radios->len >= 1)
             {
               GtkCheckButton *delete_radio = NULL;
 

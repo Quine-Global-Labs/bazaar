@@ -31,6 +31,9 @@ bz_dup_user_data_path (const char *app_id);
 char *
 bz_dup_user_cache_path (const char *app_id);
 
+gboolean
+bz_user_data_exists (const char *app_id);
+
 DexScheduler *
 bz_get_io_scheduler (void);
 
