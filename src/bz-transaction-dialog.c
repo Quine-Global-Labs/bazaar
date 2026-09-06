@@ -240,7 +240,7 @@ configure_high_risk_warning_dialog (AdwAlertDialog *alert,
                                   NULL);
 
   adw_alert_dialog_set_response_appearance (alert, "install", ADW_RESPONSE_DESTRUCTIVE);
-  adw_alert_dialog_set_default_response (alert, "cancel");
+  adw_alert_dialog_set_default_response (alert, "install");
   adw_alert_dialog_set_close_response (alert, "cancel");
 }
 
