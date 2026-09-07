@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-27 12:17+0000\n"
+"POT-Creation-Date: 2026-09-06 20:39+0000\n"
 "PO-Revision-Date: 2026-08-30 10:05+0200\n"
 "Last-Translator: Марко Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <Serbian>\n"
@@ -15,79 +15,89 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 3.9\n"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:2 data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54 src/bz-window.blp:208
-#: src/bz-window.c:376 src/bz-window.c:377
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: src/bz-window.blp:211 src/bz-window.c:378 src/bz-window.c:379
 msgid "Bazaar"
 msgstr "Пијаца"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.desktop.in:4
 msgid "App Store"
 msgstr "Продавница програма"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/io.github.kolunmi.Bazaar.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Додавање, уклањање или ажурирање Флетпек програма на овом рачунару"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:10
+#: data/io.github.kolunmi.Bazaar.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr "Систем;Пакет;Управник;Откривање;Флетпек;Програми;Програм;Продавница;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:17
+#: data/io.github.kolunmi.Bazaar.desktop.in:18
 msgid "New Window"
 msgstr "Нови прозор"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "Потражи и инсталирај програме"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:10
-msgid "A fast and modern app store for Linux with a focus on discovering and installing Flatpak apps and add-ons, particularly from Flathub."
-msgstr "Брза и савремена продавница програма за Линукс, фокусирана на потрагу и инсталирање Флетпек програма и додатака, нарочито са Флетхаба."
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
+msgid ""
+"A fast and modern app store for Linux with a focus on discovering and "
+"installing Flatpak apps and add-ons, particularly from Flathub."
+msgstr ""
+"Брза и савремена продавница програма за Линукс, фокусирана на потрагу и "
+"инсталирање Флетпек програма и додатака, нарочито са Флетхаба."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:15
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "Стави више инсталација у ред и настави прегледање"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "Једноставно прегледај овлашћења програма"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
-msgid "Sign in to Flathub to view and manage your favorites"
-msgstr "Пријави се на Флетхаб да би прегледао и управљао својим омиљеним програмима"
-
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+msgid "Sign in to Flathub to view and manage your favorites"
+msgstr ""
+"Пријави се на Флетхаб да би прегледао и управљао својим омиљеним програмима"
+
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Претражи програме директно из Гномове шкољке"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:32 src/bz-application.c:754
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:754
 msgid "The Bazaar Contributors"
 msgstr "Доприносиоци Пијаце"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:57
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "Почетна страна која приказује Флетхаб програме"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:61
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "Страна програма Ексибит"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:65
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
 msgid "Library page"
 msgstr "Страна библиотеке"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:69
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
 msgid "Search page"
 msgstr "Страница претраге"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:73
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
 msgid "Category page"
 msgstr "Страница категорије"
 
-#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54 src/bz-rich-app-tile.blp:143
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54
+#: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "Нова ажурирања прекинута"
 
@@ -96,7 +106,8 @@ msgctxt "Install Controls"
 msgid "Uninstall"
 msgstr "Деинсталирај"
 
-#: src/bz-addon-tile.c:170 src/bz-bundle-install-dialog.blp:148 src/bz-bundle-install-dialog.blp:162 src/bz-favorites-tile.c:157
+#: src/bz-addon-tile.c:170 src/bz-bundle-install-dialog.blp:148
+#: src/bz-bundle-install-dialog.blp:162 src/bz-favorites-tile.c:157
 #: src/bz-install-controls.wdgt:29
 msgctxt "Install Controls"
 msgid "Install"
@@ -106,7 +117,8 @@ msgstr "Инсталирај"
 msgid "Add-on"
 msgstr "Додатак"
 
-#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22 src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
+#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
 msgid "Manage Add-Ons"
 msgstr "Управљај додацима"
 
@@ -115,8 +127,12 @@ msgid "No Add-Ons Visible"
 msgstr "Нема видљивих додатака"
 
 #: src/bz-addons-dialog.blp:82
-msgid "Your current filter preferences are hiding all known add-ons. Try adjusting them."
-msgstr "Ваше тренутне поставке филтера скривају све познате додатке. Покушајте да их прилагодите."
+msgid ""
+"Your current filter preferences are hiding all known add-ons. Try adjusting "
+"them."
+msgstr ""
+"Ваше тренутне поставке филтера скривају све познате додатке. Покушајте да их "
+"прилагодите."
 
 #: src/bz-addons-dialog.blp:89
 msgid "Add-on Page"
@@ -131,27 +147,36 @@ msgid "Stopped Receiving Core Updates"
 msgstr "Ажурирања језгра прекинута"
 
 #: src/bz-addons-dialog.blp:243
-msgid "This add-on uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
-msgstr "Овај додатак користи извршно окружење које више не прима ажурирања нити исправке безбедности. Може постати небезбедно за употребу."
+msgid ""
+"This add-on uses a runtime that no longer receives updates or security "
+"fixes. It may become unsafe to use."
+msgstr ""
+"Овај додатак користи извршно окружење које више не прима ажурирања нити "
+"исправке безбедности. Може постати небезбедно за употребу."
 
-#: src/bz-addons-dialog.c:346
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+msgid "Other Sources"
+msgstr "Други извори"
+
+#: src/bz-addons-dialog.c:351
 #, c-format
 msgid "Add-on for %s"
 msgstr "Додатак за %s"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
 msgid "Show Less"
 msgstr "Прикажи мање"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Прикажи више"
 
-#: src/bz-addons-dialog.c:410
+#: src/bz-addons-dialog.c:415
 msgid "Download Stats"
 msgstr "Статистика преузимања датотека"
 
-#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31 src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:187
+#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31
+#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:187
 #: src/context-tile-callbacks.c:194
 msgid "Age Rating"
 msgstr "Оцена старосне прикладности"
@@ -343,8 +368,12 @@ msgstr "Контакт детаљи"
 
 #. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
-msgid "No information regarding sharing of social network usernames or email addresses"
-msgstr "Нема података о дељењу корисничких имена на друштвеним мрежама или адреса електронске поште"
+msgid ""
+"No information regarding sharing of social network usernames or email "
+"addresses"
+msgstr ""
+"Нема података о дељењу корисничких имена на друштвеним мрежама или адреса "
+"електронске поште"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:202
@@ -431,7 +460,8 @@ msgid "Does not include references to drugs"
 msgstr "Не садржи упућивања на дроге"
 
 #: src/bz-age-rating-dialog.c:426
-msgid "Does not include swearing, profanity, and other kinds of strong language"
+msgid ""
+"Does not include swearing, profanity, and other kinds of strong language"
 msgstr "Не садржи псовање, вулгарности и друге врсте неприкладног говора"
 
 #: src/bz-age-rating-dialog.c:428
@@ -695,7 +725,8 @@ msgstr "Величина инсталираног извршног окруже�
 msgid "Runtime Download Size"
 msgstr "Величина преузимања извршног окружења"
 
-#: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:185 src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:394
+#: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:185
+#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:394
 #: src/context-tile-callbacks.c:416
 msgid "N/A"
 msgstr "Недоступно"
@@ -704,12 +735,14 @@ msgstr "Недоступно"
 msgid "Storage"
 msgstr "Складиште"
 
-#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
+#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98
+#: src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "Потврђено"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-app-tile.blp:87 src/bz-releases-list.c:204 src/context-tile-callbacks.c:136
+#: src/bz-app-tile.blp:87 src/bz-releases-list.c:204
+#: src/context-tile-callbacks.c:136
 msgid "Installed"
 msgstr "Инсталирано"
 
@@ -734,8 +767,10 @@ msgstr "Напомена за кориснике Убунтуа"
 
 #: src/bz-application.c:1060
 msgid ""
-"Ubuntu 25.10 and newer have changed default security rules in a way that makes it <b>impossible to install apps</b> from the Flatpak version "
-"of Bazaar. For the time being, please use the apt package instead. Install it with\n"
+"Ubuntu 25.10 and newer have changed default security rules in a way that "
+"makes it <b>impossible to install apps</b> from the Flatpak version of "
+"Bazaar. For the time being, please use the apt package instead. Install it "
+"with\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -743,8 +778,10 @@ msgid ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 msgstr ""
-"Убунту 25.10 и новија издања су променила подразумевана правила безбедности на начин који чини <b>немогућим инсталирање програма</b> из "
-"Флетпек издања Пијаце. У овом тренутку, употребите уместо тога apt пакет. Инсталирајте га помоћу\n"
+"Убунту 25.10 и новија издања су променила подразумевана правила безбедности "
+"на начин који чини <b>немогућим инсталирање програма</b> из Флетпек издања "
+"Пијаце. У овом тренутку, употребите уместо тога apt пакет. Инсталирајте га "
+"помоћу\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -766,15 +803,18 @@ msgstr "Подесити системски Флетхаб?"
 
 #: src/bz-application.c:1186
 msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be configured on the system Flatpak installation to browse and install "
+"The system Flathub remote is not set up. Bazaar requires Flathub to be "
+"configured on the system Flatpak installation to browse and install "
 "applications.\n"
 "\n"
 "You can still use Bazaar to browse and remove already installed apps."
 msgstr ""
-"Системски удаљени ресурс Флетхаб није подешен. Пијаца захтева да Флетхаб буде конфигурисан у системској Флетпек инсталацији за прегледање и "
+"Системски удаљени ресурс Флетхаб није подешен. Пијаца захтева да Флетхаб "
+"буде конфигурисан у системској Флетпек инсталацији за прегледање и "
 "инсталирање програма.\n"
 "\n"
-"И даље можете користити Пијацу за прегледање и уклањање већ инсталираних програма."
+"И даље можете користити Пијацу за прегледање и уклањање већ инсталираних "
+"програма."
 
 #: src/bz-application.c:1193
 msgid "Set Up Flathub?"
@@ -782,13 +822,16 @@ msgstr "Подесити Флетхаб?"
 
 #: src/bz-application.c:1196
 msgid ""
-"Flathub is not set up on this system. You will not be able to browse and install applications in Bazaar if its unavailable.\n"
+"Flathub is not set up on this system. You will not be able to browse and "
+"install applications in Bazaar if its unavailable.\n"
 "\n"
 "You can still use Bazaar to browse and remove already installed apps."
 msgstr ""
-"Флетхаб није подешен на овом систему. Нећете моћи да прегледате и инсталирате програме у Пијаци ако он није доступан.\n"
+"Флетхаб није подешен на овом систему. Нећете моћи да прегледате и "
+"инсталирате програме у Пијаци ако он није доступан.\n"
 "\n"
-"И даље можете користити Пијацу за прегледање и уклањање већ инсталираних програма."
+"И даље можете користити Пијацу за прегледање и уклањање већ инсталираних "
+"програма."
 
 #: src/bz-application.c:1202
 msgid "Later"
@@ -848,7 +891,7 @@ msgstr[3] "Учитавам %d програм…"
 msgid "Writing to cache…"
 msgstr "Записујем у кеш…"
 
-#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:217
 msgid "Show All"
 msgstr "Прикажи све"
 
@@ -866,6 +909,49 @@ msgstr "%d програма"
 msgid "Failed to Load Article"
 msgstr "Неуспешно учитавање чланка"
 
+#: src/bz-bulk-install-dialog.c:87
+msgid "All apps are already installed"
+msgstr "Сви програми су већ инсталирани"
+
+#: src/bz-bulk-install-dialog.c:89
+msgid "_OK"
+msgstr "_У реду"
+
+#: src/bz-bulk-install-dialog.c:105
+#, c-format
+msgid "Install %u App?"
+msgid_plural "Install %u Apps?"
+msgstr[0] "Инсталирај %u програм?"
+msgstr[1] "Инсталирај %u програма?"
+msgstr[2] "Инсталирај %u програма?"
+msgstr[3] "Инсталирај %u програм?"
+
+#: src/bz-bulk-install-dialog.c:113
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr ""
+"Следећи програми ће бити инсталирани. Могуће је инсталирање и додатних "
+"дељених делова"
+
+#: src/bz-bulk-install-dialog.c:114
+#, c-format
+msgid "%d addons will be installed."
+msgstr "%d додатака ће бити инсталирано."
+
+#: src/bz-bulk-install-dialog.c:115
+msgid "Additionally, addons will be installed."
+msgstr "Поред тога, додаци ће бити инсталирани."
+
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193
+#: src/bz-transaction-dialog.c:238
+msgid "_Cancel"
+msgstr "_Откажи"
+
+#: src/bz-bulk-install-dialog.c:117
+msgid "_Install All"
+msgstr "_Инсталирај све"
+
 #: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
 msgid "Bundle Installation"
 msgstr "Инсталација комплета"
@@ -876,11 +962,13 @@ msgstr "Додатне зависности могу заузети више п�
 
 #: src/bz-bundle-install-dialog.blp:232
 msgid ""
-"Installing this app may require adding a new software source. Other apps from this source will show up in Bazaar.\n"
+"Installing this app may require adding a new software source. Other apps "
+"from this source will show up in Bazaar.\n"
 "\n"
 "Only add this source if you're sure you trust it."
 msgstr ""
-"Инсталирање овог програма може захтевати додавање новог извора програма. Остали програми из овог извора биће приказани у Пијаци.\n"
+"Инсталирање овог програма може захтевати додавање новог извора програма. "
+"Остали програми из овог извора биће приказани у Пијаци.\n"
 "\n"
 "Додајте овај извор само ако сте сигурни да му верујете."
 
@@ -889,7 +977,8 @@ msgid "Successfully Installed!"
 msgstr "Успешно инсталирано!"
 
 #. TRANSLATORS: Button to launch an installed app
-#: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524 src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
+#: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524
+#: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "Отвори"
 
@@ -923,8 +1012,12 @@ msgid "No Curation"
 msgstr "Нема пробраног"
 
 #: src/bz-curated-view.blp:29
-msgid "There is no curation information provided on this system. You can still browse apps on Flathub"
-msgstr "На овом систему нису достављени подаци о пробраности. И даље можете прегледати програме на Флетхабу"
+msgid ""
+"There is no curation information provided on this system. You can still "
+"browse apps on Flathub"
+msgstr ""
+"На овом систему нису достављени подаци о пробраности. И даље можете "
+"прегледати програме на Флетхабу"
 
 #: src/bz-curated-view.blp:33
 msgid "Browse Flathub"
@@ -944,18 +1037,27 @@ msgstr "Подаци о програмеру нису доступни."
 
 #: src/bz-developer-badge.c:219 src/bz-developer-badge.c:233
 #, c-format
-msgid "The ownership of the %s app ID has not been verified and it may be a community package."
-msgstr "Власништво над ИД-јем програма %s није потврђено и можда је реч о пакету заједнице."
+msgid ""
+"The ownership of the %s app ID has not been verified and it may be a "
+"community package."
+msgstr ""
+"Власништво над ИД-јем програма %s није потврђено и можда је реч о пакету "
+"заједнице."
 
 #: src/bz-developer-badge.c:237
 #, c-format
-msgid "The ownership of the %s app ID has been manually verified by the Flathub team."
+msgid ""
+"The ownership of the %s app ID has been manually verified by the Flathub "
+"team."
 msgstr "Власништво над ИД-јем програма %s ручно је потврдио тим Флетхаба."
 
 #: src/bz-developer-badge.c:253
 #, c-format
-msgid "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on <b>%3$s</b>."
-msgstr "Власништво над ИД-јем програма %1$s потврдио је <b>%2$s</b> дана <b>%3$s</b>."
+msgid ""
+"The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
+"<b>%3$s</b>."
+msgstr ""
+"Власништво над ИД-јем програма %1$s потврдио је <b>%2$s</b> дана <b>%3$s</b>."
 
 #: src/bz-developer-badge.c:260
 #, c-format
@@ -967,23 +1069,30 @@ msgstr "Власништво над ИД-јем програма %1$s потвр
 msgid "The ownership of the %s app ID has been verified."
 msgstr "Власништво над ИД-јем програма %s је потврђено."
 
-#: src/bz-donations-dialog.blp:7
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:8
 msgid "Bazaar Release"
 msgstr "Објава Пијаце"
 
-#: src/bz-donations-dialog.blp:76
+#: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "Потпуне белешке о објави"
 
-#: src/bz-donations-dialog.blp:111
+#: src/bz-donations-dialog.blp:112
 msgid "This release was made possible by users like you!"
 msgstr "Ова објава је омогућена захваљујући корисницима као што сте ви!"
 
-#: src/bz-donations-dialog.blp:120
-msgid "I love making Bazaar, but I cannot do it alone. Help support further development by donating on Ko-Fi."
-msgstr "Волим да радим на Пијаци, али то не могу сам. Подржите даљи развој донирањем на Ko-Fi-ју."
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:122
+msgid ""
+"I love making Bazaar, but I cannot do it alone. Help support further "
+"development by donating on Ko-Fi."
+msgstr ""
+"Волим да радим на Пијаци, али то не могу сам. Подржите даљи развој донирањем "
+"на Ko-Fi-ју."
 
-#: src/bz-donations-dialog.blp:134
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:137
 msgid "Donate to Bazaar"
 msgstr "Донирај Пијаци"
 
@@ -1003,26 +1112,18 @@ msgid "Choose an Installation"
 msgstr "Изабери инсталацију"
 
 #: src/bz-entry-group-util.c:76
-msgid "You have multiple versions of this app installed. Which one would you like to proceed with?"
-msgstr "Имате инсталирано више издања овог програма. Којим желите да наставите?"
+msgid ""
+"You have multiple versions of this app installed. Which one would you like "
+"to proceed with?"
+msgstr ""
+"Имате инсталирано више издања овог програма. Којим желите да наставите?"
 
 #: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "Откажи"
 
-#: src/bz-entry-selection-row.blp:16
-msgid "For This User Only"
-msgstr "Само за овог корисника"
-
-#: src/bz-entry-selection-row.c:112
-msgid "this user"
-msgstr "овај корисник"
-
-#: src/bz-entry-selection-row.c:112
-msgid "all users"
-msgstr "сви корисници"
-
-#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69 src/error.c:88 src/update-worker.c:473
+#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
+#: src/error.c:88 src/update-worker.c:473
 msgid "Details"
 msgstr "Детаљи"
 
@@ -1031,7 +1132,8 @@ msgstr "Детаљи"
 msgid "Copy"
 msgstr "Копирај"
 
-#: src/bz-error-dialog.c:56 src/bz-screenshot-page.c:461 src/bz-share-list.c:364
+#: src/bz-error-dialog.c:56 src/bz-screenshot-page.c:461
+#: src/bz-share-list.c:364
 msgid "Copied!"
 msgstr "Копирано!"
 
@@ -1051,7 +1153,7 @@ msgstr "Пријавите се на Флетхаб да бисте управљ
 msgid "Log In"
 msgstr "Пријави се"
 
-#: src/bz-favorites-page.blp:5 src/bz-window.blp:342
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:350
 msgid "Favorites"
 msgstr "Омиљено"
 
@@ -1311,7 +1413,8 @@ msgstr "Алати"
 msgid "More Utilities"
 msgstr "Више услужних програма"
 
-#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106 src/bz-flathub-page.blp:138
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
 msgid "Trending"
 msgstr "У тренду"
 
@@ -1319,7 +1422,8 @@ msgstr "У тренду"
 msgid "More Trending"
 msgstr "Више у тренду"
 
-#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112 src/bz-flathub-page.blp:171
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:171
 msgid "Popular"
 msgstr "Популарне"
 
@@ -1517,7 +1621,8 @@ msgstr "Флетхаб није додат"
 
 #: src/bz-flathub-page.blp:23
 msgid "The Flathub remote was not found on any of your Flatpak installations"
-msgstr "Удаљени извор Флетхаба није пронађен ни у једној од ваших Флетпек инсталација"
+msgstr ""
+"Удаљени извор Флетхаба није пронађен ни у једној од ваших Флетпек инсталација"
 
 #: src/bz-flathub-page.blp:32
 msgid "Can't Reach Flathub"
@@ -1560,8 +1665,11 @@ msgid "Games and apps to run your favorite titles"
 msgstr "Игре и програми за покретање ваших омиљених наслова"
 
 #: src/bz-full-view.blp:93
-msgid "This is a local preview, some details may differ from the published listing"
-msgstr "Ово је локални преглед, неке појединости се могу разликовати од објављеног уписа"
+msgid ""
+"This is a local preview, some details may differ from the published listing"
+msgstr ""
+"Ово је локални преглед, неке појединости се могу разликовати од објављеног "
+"уписа"
 
 #: src/bz-full-view.blp:96
 msgid "Preview Store Appearance"
@@ -1572,65 +1680,77 @@ msgid "_Support"
 msgstr "_Подршка"
 
 #: src/bz-full-view.blp:441
-msgid "This app uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
-msgstr "Овај програм користи извршно окружење које више не прима ажурирања нити безбедносне исправке. Може постати небезбедан за употребу."
+msgid ""
+"This app uses a runtime that no longer receives updates or security fixes. "
+"It may become unsafe to use."
+msgstr ""
+"Овај програм користи извршно окружење које више не прима ажурирања нити "
+"безбедносне исправке. Може постати небезбедан за употребу."
 
 #: src/bz-full-view.blp:519
 msgid "Trash Data"
 msgstr "Обриши податке"
 
-#: src/bz-full-view.blp:582
+#: src/bz-full-view.blp:616
 msgid "Add-ons"
 msgstr "Додаци"
 
-#: src/bz-full-view.blp:617
+#: src/bz-full-view.blp:651
 msgid "More Add-Ons"
 msgstr "Више додатака"
 
-#: src/bz-full-view.blp:628
+#: src/bz-full-view.blp:662
 msgid "Links"
 msgstr "Везе"
 
-#: src/bz-full-view.blp:659
+#: src/bz-full-view.blp:693
 msgid "Similar Apps"
 msgstr "Слични програми"
 
-#: src/bz-full-view.c:181
+#: src/bz-full-view.c:184
 msgid "No URL"
 msgstr "Нема адресе"
 
-#: src/bz-full-view.c:199
-msgid "This app has a FLOSS license, meaning the source code can be audited for safety."
-msgstr "Овај програм има ФЛОСС дозволу, што значи да се изворни код може проверити ради безбедности."
+#: src/bz-full-view.c:202
+msgid ""
+"This app has a FLOSS license, meaning the source code can be audited for "
+"safety."
+msgstr ""
+"Овај програм има ФЛОСС дозволу, што значи да се изворни код може проверити "
+"ради безбедности."
 
-#: src/bz-full-view.c:200
-msgid "This app has a proprietary license, meaning the source code is developed privately and cannot be audited by an independent third party."
-msgstr "Овај програм има власничку дозволу, што значи да се изворни код развија приватно и да га не може проверити независна трећа страна."
+#: src/bz-full-view.c:203
+msgid ""
+"This app has a proprietary license, meaning the source code is developed "
+"privately and cannot be audited by an independent third party."
+msgstr ""
+"Овај програм има власничку дозволу, што значи да се изворни код развија "
+"приватно и да га не може проверити независна трећа страна."
 
-#: src/bz-full-view.c:207
+#: src/bz-full-view.c:210
 msgid "Other Apps From This Developer"
 msgstr "Други програми овог програмера"
 
-#: src/bz-full-view.c:208
+#: src/bz-full-view.c:211
 #, c-format
 msgid "Other Apps From %s"
 msgstr "Други програми од %s"
 
-#: src/bz-full-view.c:223
+#: src/bz-full-view.c:226
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr "%s није инсталиран, али и даље постоји <b>%s</b> података."
 
-#: src/bz-full-view.c:306
+#: src/bz-full-view.c:309
 #, c-format
 msgid "Apps by %s"
 msgstr "Програми од %s"
 
-#: src/bz-full-view.c:308
+#: src/bz-full-view.c:311
 msgid "Apps by This Developer"
 msgstr "Програми овог програмера"
 
-#: src/bz-full-view.c:310
+#: src/bz-full-view.c:313
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
@@ -1639,7 +1759,7 @@ msgstr[1] "%d програма"
 msgstr[2] "%d програма"
 msgstr[3] "%d програм"
 
-#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:468 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "Неуспешно уклањање корисничких података"
 
@@ -1741,32 +1861,33 @@ msgstr "%s ради на већини уређаја"
 msgid "Inspector Menu"
 msgstr "Мени инспектора"
 
-#: src/bz-install-controls.blp:56
+#: src/bz-install-controls.blp:58
 msgid "_Open"
 msgstr "_Отвори"
 
-#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
+#: src/bz-install-controls.blp:72 src/bz-install-controls.blp:126
 msgid "Uninstall Application"
 msgstr "Деинсталирај програм"
 
-#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:230
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
 msgid "_Remove"
 msgstr "_Уклони"
 
-#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168 src/bz-updates-card.c:187
+#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168
+#: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "Ажурирај"
 
-#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
+#: src/bz-install-controls.blp:136 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "Уклони"
 
-#: src/bz-install-controls.c:638
+#: src/bz-install-controls.c:669
 #, c-format
 msgid "Install %s from %s"
 msgstr "Инсталирај %s из %s"
 
-#: src/bz-install-controls.c:640
+#: src/bz-install-controls.c:671
 #, c-format
 msgid "Install %s"
 msgstr "Инсталирај %s"
@@ -1906,23 +2027,27 @@ msgstr "Дозвола овог програма није позната"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and released under the %s license.\n"
+"This app is developed in the open by an international community, and "
+"released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Овај програм развија међународна заједница на отвореном и објављен је под %s дозволом.\n"
+"Овај програм развија међународна заједница на отвореном и објављен је под %s "
+"дозволом.\n"
 "\n"
 "Можете учествовати и помоћи да он буде још бољи."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it "
-"may change without oversight.\n"
+"This app is not developed in the open, so only its developers know how it "
+"works. It may be insecure in ways that are hard to detect, and it may change "
+"without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Овај програм се не развија отворено, па само његови програмери знају како он ради. Може бити небезбедан на начине које је тешко открити, и "
-"може се мењати без надзора.\n"
+"Овај програм се не развија отворено, па само његови програмери знају како он "
+"ради. Може бити небезбедан на начине које је тешко открити, и може се мењати "
+"без надзора.\n"
 "\n"
 "Можда ћете моћи, а можда и нећете моћи да допринесете овом програму."
 
@@ -1937,7 +2062,8 @@ msgstr ""
 "\n"
 "Можда ћете моћи, а можда и нећете моћи да допринесете овом програму."
 
-#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365 src/bz-safety-dialog.blp:103
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
+#: src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "Дозвола"
 
@@ -1967,8 +2093,12 @@ msgid "Add Icon to Metainfo Preview?"
 msgstr "Додати иконицу у метаинфо преглед?"
 
 #: src/bz-metainfo-preview.c:108
-msgid "Metainfo files don't include app icons by themselves. Would you like to select one manually?"
-msgstr "Метаинфо датотеке саме по себи не садрже иконице програма. Желите ли да једну изаберете ручно?"
+msgid ""
+"Metainfo files don't include app icons by themselves. Would you like to "
+"select one manually?"
+msgstr ""
+"Метаинфо датотеке саме по себи не садрже иконице програма. Желите ли да "
+"једну изаберете ручно?"
 
 #: src/bz-metainfo-preview.c:111
 msgid "Skip"
@@ -1982,15 +2112,38 @@ msgstr "Изабери иконицу"
 msgid "Image Files"
 msgstr "Сликовне датотеке"
 
+#: src/bz-other-sources-list.vala:52
+msgid "User"
+msgstr "Корисник"
+
+#: src/bz-other-sources-list.vala:55
+msgid "Beta"
+msgstr "Бета"
+
+#: src/bz-other-sources-list.vala:58
+msgid "End-Of-Life"
+msgstr "Крај животног века"
+
+#. Translators: As in, "1 Install" / "100 Installs"
+#: src/bz-other-sources-list.vala:76 src/bz-world-map.c:604
+msgid "Install"
+msgid_plural "Installs"
+msgstr[0] "инсталација"
+msgstr[1] "инсталације"
+msgstr[2] "инсталација"
+msgstr[3] "инсталација"
+
 #: src/bz-preferences-dialog.blp:19
 msgid "Preferences"
 msgstr "Поставке"
 
 #: src/bz-preferences-dialog.blp:25
 msgid "Network connection is metered — automatic store data refresh is paused"
-msgstr "Мрежна веза је ограничена - самостално освежавање података продавнице је паузирано"
+msgstr ""
+"Мрежна веза је ограничена - самостално освежавање података продавнице је "
+"паузирано"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:240 src/bz-window.blp:251
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
 msgid "Refresh Manually"
 msgstr "Освежи ручно"
 
@@ -1999,8 +2152,12 @@ msgid "App Updates"
 msgstr "Ажурирања програма"
 
 #: src/bz-preferences-dialog.blp:33
-msgid "Auto-updates will pause on metered networks or when power saving is on to save data and battery."
-msgstr "Аутоматска ажурирања ће се паузирати на ограниченим мрежама или када је укључена штедња енергије, како би се уштедели подаци и батерија."
+msgid ""
+"Auto-updates will pause on metered networks or when power saving is on to "
+"save data and battery."
+msgstr ""
+"Аутоматска ажурирања ће се паузирати на ограниченим мрежама или када је "
+"укључена штедња енергије, како би се уштедели подаци и батерија."
 
 #: src/bz-preferences-dialog.blp:36
 msgid "_Automatic"
@@ -2044,7 +2201,9 @@ msgstr "_Само резултати са Флетхаба"
 
 #: src/bz-preferences-dialog.blp:85
 msgid "Limit search and browse results to apps only available on Flathub"
-msgstr "Ограничи резултате претраживања и прегледања на програме који су доступни само на Флетхабу"
+msgstr ""
+"Ограничи резултате претраживања и прегледања на програме који су доступни "
+"само на Флетхабу"
 
 #: src/bz-preferences-dialog.blp:90
 msgid "_Verified Results Only"
@@ -2154,7 +2313,8 @@ msgstr "Боје фембој поноса"
 msgid "Neutrois Pride Colors"
 msgstr "Боје неутроис поноса"
 
-#: src/bz-preferences-dialog.c:285
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-preferences-dialog.c:286
 msgid "Bazaar needs to run in the background to check for app updates"
 msgstr "Пијаца мора да ради у позадини како би проверила ажурирања програма"
 
@@ -2244,25 +2404,31 @@ msgstr "Деинсталирај"
 msgid "Get"
 msgstr "Преузми"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:307 src/safety-calculator.c:161
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:307
+#: src/safety-calculator.c:161
 msgid "Arbitrary Permissions"
 msgstr "Додатна овлашћења"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any "
+"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, "
+"such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app is likely to do."
+"Viewing the other permissions may still give a better idea of what the app "
+"is likely to do."
 msgstr ""
-"Овај програм има овлашћење које му индиректно омогућава да себи омогући <b>било које друго овлашћење које жели</b>, заобилазећи Флетпек "
-"изолацију.\n"
+"Овај програм има овлашћење које му индиректно омогућава да себи омогући "
+"<b>било које друго овлашћење које жели</b>, заобилазећи Флетпек изолацију.\n"
 "\n"
-"Због тога он може да уради било шта што може овлашћен програм који није у изолацији, као што је приступ свим вашим датотекама и повезивање на "
+"Због тога он може да уради било шта што може овлашћен програм који није у "
+"изолацији, као што је приступ свим вашим датотекама и повезивање на "
 "интернет.\n"
 "\n"
-"Преглед осталих овлашћења и даље може дати бољу идеју о томе шта програм вероватно ради."
+"Преглед осталих овлашћења и даље може дати бољу идеју о томе шта програм "
+"вероватно ради."
 
 #: src/bz-safety-dialog.blp:53
 msgid "View Other Permissions"
@@ -2283,10 +2449,11 @@ msgstr "СДК"
 
 #: src/bz-safety-dialog.blp:157
 msgid ""
-"This app uses an outdated version of the software platform (SDK) and might contain bugs or security vulnerabilities which will not be fixed."
+"This app uses an outdated version of the software platform (SDK) and might "
+"contain bugs or security vulnerabilities which will not be fixed."
 msgstr ""
-"Овај програм користи застарело издање програмске платформе (СДК) и можда садржи програмске грешке или безбедносне пропусте који неће бити "
-"поправљени."
+"Овај програм користи застарело издање програмске платформе (СДК) и можда "
+"садржи програмске грешке или безбедносне пропусте који неће бити поправљени."
 
 #: src/bz-safety-dialog.c:293 src/bz-safety-dialog.c:326
 msgid "Safety"
@@ -2367,7 +2534,7 @@ msgstr "Снимак екрана %u %s"
 msgid "Screenshot %u"
 msgstr "Снимак екрана %u"
 
-#: src/bz-search-bar.blp:55
+#: src/bz-search-bar.blp:47 src/bz-search-bar.blp:57
 msgid "Clear Search"
 msgstr "Очисти претрагу"
 
@@ -2611,127 +2778,88 @@ msgstr "Нису пронађени резултати"
 msgid "Search failed"
 msgstr "Није успела претрага"
 
-#: src/bz-transaction-dialog.c:154
+#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244
+#: src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
+#: src/context-tile-callbacks.c:286
+msgid "Unknown"
+msgstr "Непознато"
+
+#: src/bz-transaction-dialog.c:145
 msgid "Keep User Data"
 msgstr "Задржи податке корисника"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:146
 msgid "Allow restoring personal settings &amp; content"
 msgstr "Дозволи враћање личних подешавања и садржаја"
 
-#: src/bz-transaction-dialog.c:164
+#: src/bz-transaction-dialog.c:155
 msgid "Delete All Data"
 msgstr "Обриши све податке"
 
-#: src/bz-transaction-dialog.c:165
+#: src/bz-transaction-dialog.c:156
 msgid "Permanently erase user data to save space"
 msgstr "Трајно обриши податке корисника да уштедиш простор"
 
-#: src/bz-transaction-dialog.c:190
-#, c-format
-msgid "Install %s?"
-msgstr "Инсталирати %s?"
-
-#: src/bz-transaction-dialog.c:195
-msgid "Select which version to install. May install additional shared components"
-msgstr "Изабери које издање инсталирати. Могу се инсталирати и додатне дељене компоненте"
-
-#: src/bz-transaction-dialog.c:197
-msgid "May install additional shared components"
-msgstr "Могу се инсталирати и додатне дељене компоненте"
-
-#: src/bz-transaction-dialog.c:200 src/bz-transaction-dialog.c:229 src/bz-transaction-dialog.c:274 src/bz-transaction-dialog.c:576
-msgid "_Cancel"
-msgstr "_Откажи"
-
-#: src/bz-transaction-dialog.c:201
-msgid "_Install"
-msgstr "_Инсталирај"
-
-#: src/bz-transaction-dialog.c:218
+#: src/bz-transaction-dialog.c:182
 #, c-format
 msgid "Remove %s?"
 msgstr "Уклонити %s?"
 
-#: src/bz-transaction-dialog.c:221
+#: src/bz-transaction-dialog.c:185
 msgid "Select which version to remove."
 msgstr "Изабери које издање уклонити."
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:187
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "Неће бити могуће користити %s након деинсталације."
 
-#: src/bz-transaction-dialog.c:246
+#: src/bz-transaction-dialog.c:210
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "„%s“ је високо ризично"
 
-#: src/bz-transaction-dialog.c:250
+#: src/bz-transaction-dialog.c:214
 msgid ""
-"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to "
-"the internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, "
+"browser history, saved passwords</b>, and more. It also has access to the "
+"internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with these permissions."
+"Because the app is proprietary, it can not be audited for what it does with "
+"these permissions."
 msgstr ""
-"Овај програм има пун приступ вашем систему, укључујући све ваше <b>датотеке, историју прегледача, сачуване лозинке</b> и остало. Такође има "
-"приступ интернету, што значи да ваше податке може послати спољним странама.\n"
+"Овај програм има пун приступ вашем систему, укључујући све ваше <b>датотеке, "
+"историју прегледача, сачуване лозинке</b> и остало. Такође има приступ "
+"интернету, што значи да ваше податке може послати спољним странама.\n"
 "\n"
-"Зато што је програм власнички, не може се проверити шта он ради са овим овлашћењима."
+"Зато што је програм власнички, не може се проверити шта он ради са овим "
+"овлашћењима."
 
-#: src/bz-transaction-dialog.c:259
+#: src/bz-transaction-dialog.c:223
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other "
-"applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record "
+"all keystrokes, capture screenshots, and monitor other applications</b>. It "
+"also has access to the internet, meaning it could send your data to outside "
+"parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with these permissions."
+"Because the app is proprietary, it can not be audited for what it does with "
+"these permissions."
 msgstr ""
-"Овај програм користи застарели прозорски систем Икс-11, што му омогућава да <b>бележи све притиске тастатуре, прави снимке екрана и прати "
-"друге програме</b>. Такође има приступ интернету, што значи да ваше податке може послати спољним странама.\n"
+"Овај програм користи застарели прозорски систем Икс-11, што му омогућава да "
+"<b>бележи све притиске тастатуре, прави снимке екрана и прати друге "
+"програме</b>. Такође има приступ интернету, што значи да ваше податке може "
+"послати спољним странама.\n"
 "\n"
-"Зато што је програм власнички, не може се проверити шта он ради са овим овлашћењима."
+"Зато што је програм власнички, не може се проверити шта он ради са овим "
+"овлашћењима."
 
-#: src/bz-transaction-dialog.c:275
+#: src/bz-transaction-dialog.c:239
 msgid "_Install Anyway"
 msgstr "_Ипак инсталирај"
 
-#: src/bz-transaction-dialog.c:330
+#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
 msgid "Failed to load transaction dialog"
 msgstr "Нисам успео да учитам прозорче за пренос"
-
-#: src/bz-transaction-dialog.c:547
-msgid "All apps are already installed"
-msgstr "Сви програми су већ инсталирани"
-
-#: src/bz-transaction-dialog.c:549
-msgid "_OK"
-msgstr "_У реду"
-
-#: src/bz-transaction-dialog.c:565
-#, c-format
-msgid "Install %u App?"
-msgid_plural "Install %u Apps?"
-msgstr[0] "Инсталирај %u програм?"
-msgstr[1] "Инсталирај %u програма?"
-msgstr[2] "Инсталирај %u програма?"
-msgstr[3] "Инсталирај %u програм?"
-
-#: src/bz-transaction-dialog.c:573
-msgid "The following will be installed. Additional shared components may also be installed"
-msgstr "Следећи програми ће бити инсталирани. Могуће је инсталирање и додатних дељених делова"
-
-#: src/bz-transaction-dialog.c:574
-#, c-format
-msgid "%d addons will be installed."
-msgstr "%d додатака ће бити инсталирано."
-
-#: src/bz-transaction-dialog.c:575
-msgid "Additionally, addons will be installed."
-msgstr "Поред тога, додаци ће бити инсталирани."
-
-#: src/bz-transaction-dialog.c:577
-msgid "_Install All"
-msgstr "_Инсталирај све"
 
 #: src/bz-transaction-manager.c:796
 #, c-format
@@ -2846,113 +2974,110 @@ msgstr "Отвори фасциклу корисничких података"
 msgid "Trash User Data"
 msgstr "Помери податке корисника у смеће"
 
-#: src/bz-window.blp:79
+#: src/bz-window.blp:80
 msgid "Refreshing"
 msgstr "Освежавам"
 
-#: src/bz-window.blp:97
+#: src/bz-window.blp:98
 msgid "Curated"
 msgstr "Пробрано"
 
-#: src/bz-window.blp:109
+#: src/bz-window.blp:110
 msgid "Explore"
 msgstr "Истражите"
 
 #. Translators: .
-#: src/bz-window.blp:121
+#: src/bz-window.blp:122
 msgid "Library"
 msgstr "Библиотека"
 
-#: src/bz-window.blp:136
+#: src/bz-window.blp:137
 msgid "Search"
 msgstr "Претражи"
 
-#: src/bz-window.blp:220
+#: src/bz-window.blp:223
 msgid "Main Menu"
 msgstr "Главни мени"
 
-#: src/bz-window.blp:231
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:235
 msgid "You are running a new version of Bazaar!"
 msgstr "Покрећете ново издање Пијаце!"
 
-#: src/bz-window.blp:232
+#: src/bz-window.blp:236
 msgid "See What's New"
 msgstr "Види шта је ново"
 
-#: src/bz-window.blp:239
-msgid "You have a network connection but are viewing a cached version of Flathub"
+#: src/bz-window.blp:243
+msgid ""
+"You have a network connection but are viewing a cached version of Flathub"
 msgstr "Имате мрежну везу, али прегледате кеширано издање Флетхаба"
 
-#: src/bz-window.blp:250
+#: src/bz-window.blp:254
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "Мрежна веза је ограничена - самостално освежавање је онемогућено"
 
-#: src/bz-window.blp:286
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:291
 msgid "_Donate to Bazaar"
 msgstr "_Донирај Пијаци"
 
-#: src/bz-window.blp:292
+#: src/bz-window.blp:297
 msgid "_Refresh"
 msgstr "_Освежи"
 
-#: src/bz-window.blp:296
+#: src/bz-window.blp:301
 msgid "_Login With Flathub"
 msgstr "_Пријави се преко Флетхаба"
 
-#: src/bz-window.blp:302
+#: src/bz-window.blp:307
 msgid "_Manage Leftover User Data"
 msgstr "_Управљај преосталим корисничким подацима"
 
-#: src/bz-window.blp:308
+#: src/bz-window.blp:313
 msgid "_Preferences"
 msgstr "_Поставке"
 
-#: src/bz-window.blp:313
+#: src/bz-window.blp:318
 msgid "_Keyboard Shortcuts"
 msgstr "_Пречице на тастатури"
 
-#: src/bz-window.blp:318
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:324
 msgid "_About Bazaar"
 msgstr "_О програму Пијаца"
 
-#: src/bz-window.blp:324
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:331
 msgid "_Quit Bazaar"
 msgstr "_Изађи из Пијаце"
 
-#: src/bz-window.blp:349
+#: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "Одјави се"
 
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:379
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
+#: src/bz-window.c:381
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Пијаца - %s"
 
-#: src/bz-window.c:659 src/bz-window.c:697
+#: src/bz-window.c:661 src/bz-window.c:699
 msgid "Failed to launch application"
 msgstr "Не могу да покренем програм"
 
-#: src/bz-window.c:776
+#: src/bz-window.c:778
 msgid "Could not open link"
 msgstr "Не могу да отворим везу"
 
-#: src/bz-window.c:983
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.c:987
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Не можете да уклоните Пијацу из Пијаце!"
 
-#: src/bz-window.c:1357 src/bz-window.c:1391
+#: src/bz-window.c:1371 src/bz-window.c:1405
 msgid "Can't do that right now!"
 msgstr "То тренутно не могу да урадим!"
-
-#. Translators: As in, "1 Install" / "100 Installs"
-#: src/bz-world-map.c:604
-msgid "Install"
-msgid_plural "Installs"
-msgstr[0] "инсталација"
-msgstr[1] "инсталације"
-msgstr[2] "инсталација"
-msgstr[3] "инсталација"
 
 #: src/context-tile-callbacks.c:68
 msgid "---"
@@ -3010,10 +3135,6 @@ msgstr "Одговара за све узрасте"
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "Одговара за узраст од %d година навише"
-
-#: src/context-tile-callbacks.c:244 src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277 src/context-tile-callbacks.c:286
-msgid "Unknown"
-msgstr "Непознато"
 
 #: src/context-tile-callbacks.c:254
 #, c-format
@@ -3115,7 +3236,8 @@ msgstr "Нема приступ корисничком уређају"
 
 #: src/safety-calculator.c:121
 msgid "Cannot access devices such as webcams or gaming controllers"
-msgstr "Не може да приступи уређајима као што су веб камере или управљачи за игре"
+msgstr ""
+"Не може да приступи уређајима као што су веб камере или управљачи за игре"
 
 #: src/safety-calculator.c:126
 msgid "Input Device Access"
@@ -3139,7 +3261,8 @@ msgstr "Приступ системским уређајима"
 
 #: src/safety-calculator.c:141
 msgid "Can access system devices which require elevated permissions"
-msgstr "Може да приступи системским уређајима који захтевају повишена овлашћења"
+msgstr ""
+"Може да приступи системским уређајима који захтевају повишена овлашћења"
 
 #: src/safety-calculator.c:147
 msgid "Screen Contents Access"
@@ -3270,16 +3393,24 @@ msgid "Proprietary Code"
 msgstr "Власнички код"
 
 #: src/safety-calculator.c:365
-msgid "The source code is not public, so it cannot be independently audited and might be unsafe"
-msgstr "Изворни код није јаван, па не може бити независно испитан и може бити небезбедан"
+msgid ""
+"The source code is not public, so it cannot be independently audited and "
+"might be unsafe"
+msgstr ""
+"Изворни код није јаван, па не може бити независно испитан и може бити "
+"небезбедан"
 
 #: src/safety-calculator.c:375
 msgid "Auditable Code"
 msgstr "Проверљив код"
 
 #: src/safety-calculator.c:376
-msgid "The source code is public and can be independently audited, which makes the app more likely to be safe"
-msgstr "Изворни код је јаван и може се независно проверити, што чини вероватније да је програм безбедан"
+msgid ""
+"The source code is public and can be independently audited, which makes the "
+"app more likely to be safe"
+msgstr ""
+"Изворни код је јаван и може се независно проверити, што чини вероватније да "
+"је програм безбедан"
 
 #: src/safety-calculator.c:516
 #, c-format
@@ -3330,7 +3461,8 @@ msgstr "Општа подешавања КДЕ-а"
 
 #: src/safety-calculator.c:566
 msgid "Can read KDE desktop preferences like fonts and colors"
-msgstr "Може да прочита поставке радне површине КДЕ-а, као што су фонтови и боје"
+msgstr ""
+"Може да прочита поставке радне површине КДЕ-а, као што су фонтови и боје"
 
 #: src/safety-calculator.c:571
 msgid "Secret Storage Service"
