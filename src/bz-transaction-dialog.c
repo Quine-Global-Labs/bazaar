@@ -339,7 +339,7 @@ show_dialog_fiber (GtkWidget    *parent,
     }
 
   if (remove && id != NULL)
-    has_user_data = bz_user_data_exists (id);
+    has_user_data = dex_await_boolean (bz_user_data_exists (id), NULL);
 
   if (!remove && check_entry != NULL)
     risk_groups = get_entry_high_risk_groups (check_entry);

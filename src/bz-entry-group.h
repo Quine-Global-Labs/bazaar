@@ -152,7 +152,7 @@ bz_entry_group_get_user_data_size (BzEntryGroup *self);
 guint64
 bz_entry_group_get_cache_size (BzEntryGroup *self);
 
-gboolean
+DexFuture *
 bz_entry_group_has_user_data (BzEntryGroup *self);
 
 DexFuture *

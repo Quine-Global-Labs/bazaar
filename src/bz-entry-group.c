@@ -849,10 +849,10 @@ bz_entry_group_get_cache_size (BzEntryGroup *self)
   return self->cache_size;
 }
 
-gboolean
+DexFuture *
 bz_entry_group_has_user_data (BzEntryGroup *self)
 {
-  g_return_val_if_fail (BZ_IS_ENTRY_GROUP (self), FALSE);
+  g_return_val_if_fail (BZ_IS_ENTRY_GROUP (self), NULL);
   return bz_user_data_exists (self->id);
 }
 

@@ -50,18 +50,6 @@ bz_dup_user_cache_path (const char *app_id)
   return g_build_filename (g_get_home_dir (), ".var", "app", app_id, "cache", NULL);
 }
 
-gboolean
-bz_user_data_exists (const char *app_id)
-{
-  g_autofree char *user_data_path = NULL;
-
-  g_return_val_if_fail (app_id != NULL, FALSE);
-
-  user_data_path = bz_dup_user_data_path (app_id);
-
-  return g_file_test (user_data_path, G_FILE_TEST_IS_DIR);
-}
-
 DexScheduler *
 bz_get_io_scheduler (void)
 {
@@ -273,6 +261,17 @@ bz_reap_path_dex (const char *path)
       bz_get_dex_stack_size (),
       (DexFiberFunc) reap_path_fiber,
       g_strdup (path), g_free);
+}
+
+DexFuture *
+bz_user_data_exists (const char *app_id)
+{
+  g_autofree char *user_data_path = NULL;
+
+  g_return_val_if_fail (app_id != NULL, NULL);
+
+  user_data_path = bz_dup_user_data_path (app_id);
+  return dex_file_query_exists (g_file_new_for_path (user_data_path));
 }
 
 DexFuture *
