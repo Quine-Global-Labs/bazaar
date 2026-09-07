@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-08-30 21:38+0000\n"
-"PO-Revision-Date: 2026-09-02 06:20+0200\n"
+"POT-Creation-Date: 2026-09-06 20:39+0000\n"
+"PO-Revision-Date: 2026-09-07 07:11+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "Language: ka\n"
@@ -18,32 +18,33 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.9\n"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:2 data/io.github.kolunmi.Bazaar.metainfo.xml.in:7
-#: src/bz-window.blp:54 src/bz-window.blp:208 src/bz-window.c:376 src/bz-window.c:377
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.desktop.in:3 data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
+#: src/bz-window.blp:55 src/bz-window.blp:211 src/bz-window.c:378 src/bz-window.c:379
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.desktop.in:4
 msgid "App Store"
 msgstr "აპლიკაციების მაღაზია"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/io.github.kolunmi.Bazaar.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "დაამატეთ, წაშალეთ და განაახლეთ flatpak-ის პროგრამები ამ კომპიუტერზე"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:10
+#: data/io.github.kolunmi.Bazaar.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr "System;Package;Manager;Discover;Flatpak;Software;App;Store;სისტემა;პაკეტები;მართვა;მაღაზია;პროგრამები;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:17
+#: data/io.github.kolunmi.Bazaar.desktop.in:18
 msgid "New Window"
 msgstr "ახალი ფანჯარა"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "აღმოაჩინეთ და დააყენეთ აპები"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:10
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and installing Flatpak apps and add-ons, "
 "particularly from Flathub."
@@ -51,43 +52,44 @@ msgstr ""
 "სწრაფი და თანამედროვე აპების მაღაზია Linux-ისთვის Flatpak-ის აპების დამატებების ადვილად დასაყენებლად. "
 "განსაკუთრებით Flathub-იდან."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:15
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "ჩააყენეთ რიგში ბევრი რამის დაყენება და გააგრძელეთ თვალიერება"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "აპის წვდომების იოლი ნახვა"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "შედით Flathub-ში რჩეულების სამართავად და დასათვალიერებლად"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "მოძებნეთ აპები პირდაპირ GNOME Shell-დან"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:32 src/bz-application.c:754
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:754
 msgid "The Bazaar Contributors"
 msgstr "Bazaar-ის მოხალისეები"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:57
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "საწყისი გვერდი აჩვენებს Flathub-ის აპებს"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:61
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "აპლიკაციის გვერდი გამოფენისთვის"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:65
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
 msgid "Library page"
 msgstr "ბიბლიოთეკის გვერდი"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:69
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
 msgid "Search page"
 msgstr "გვერდის მოძებნა"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:73
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
 msgid "Category page"
 msgstr "კატეგორიის გვერდი"
 
@@ -142,20 +144,24 @@ msgstr ""
 "ეს დამატება იყენებს ბიბლიოთეკას, რომელიც აღარ იღებს განახლებებს და უსაფრთხოების პაჩებს. ის, შეიძლება "
 "სახიფათო გახდეს გამოსაყენებლად."
 
-#: src/bz-addons-dialog.c:346
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+msgid "Other Sources"
+msgstr "სხვა წყაროები"
+
+#: src/bz-addons-dialog.c:351
 #, c-format
 msgid "Add-on for %s"
 msgstr "დამატება %s-ისთვის"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
 msgid "Show Less"
 msgstr "ნაკლების ჩვენება"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:585 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "მეტის ჩვენება"
 
-#: src/bz-addons-dialog.c:410
+#: src/bz-addons-dialog.c:415
 msgid "Download Stats"
 msgstr "გადმოწერის სტატისტიკა"
 
@@ -856,7 +862,7 @@ msgstr[1] "%d აპის ჩატვირთვა…"
 msgid "Writing to cache…"
 msgstr "კეშში ჩაწერა…"
 
-#: src/bz-apps-page.blp:97 src/bz-full-view.c:214
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:217
 msgid "Show All"
 msgstr "ყველას ჩვენება"
 
@@ -873,6 +879,42 @@ msgstr "%d აპლიკაცია"
 #: src/bz-article.blp:86
 msgid "Failed to Load Article"
 msgstr "სტატიის ჩატვირთვის შეცდომა"
+
+#: src/bz-bulk-install-dialog.c:87
+msgid "All apps are already installed"
+msgstr "ყველა აპი უკვე დაყენებულია"
+
+#: src/bz-bulk-install-dialog.c:89
+msgid "_OK"
+msgstr "_დიახ"
+
+#: src/bz-bulk-install-dialog.c:105
+#, c-format
+msgid "Install %u App?"
+msgid_plural "Install %u Apps?"
+msgstr[0] "დავაყენო %u აპლიკაცია?"
+msgstr[1] "დავაყენო %u აპლიკაცია?"
+
+#: src/bz-bulk-install-dialog.c:113
+msgid "The following will be installed. Additional shared components may also be installed"
+msgstr "მოხდება შემდეგის დაყენება. ასევე, შეიძლება, მოხდეს დამატებითი გაზიარებული კომპონენტების დაყენება"
+
+#: src/bz-bulk-install-dialog.c:114
+#, c-format
+msgid "%d addons will be installed."
+msgstr "მოხდება %d დამატების დაყენება."
+
+#: src/bz-bulk-install-dialog.c:115
+msgid "Additionally, addons will be installed."
+msgstr "დამატებით მოხდება დამატებების დაყენება."
+
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193 src/bz-transaction-dialog.c:238
+msgid "_Cancel"
+msgstr "გაუ_ქმება"
+
+#: src/bz-bulk-install-dialog.c:117
+msgid "_Install All"
+msgstr "_ყველას დაყენება"
 
 #: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
 msgid "Bundle Installation"
@@ -978,24 +1020,27 @@ msgstr "%1$s აპის ID-ის მფლობელობა გადა�
 msgid "The ownership of the %s app ID has been verified."
 msgstr "%s app ID-ის მფლობელობა გადამოწმებულია."
 
-#: src/bz-donations-dialog.blp:7
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:8
 msgid "Bazaar Release"
 msgstr "Bazaar-ის ვერსია"
 
-#: src/bz-donations-dialog.blp:76
+#: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "ვერსიის შენიშვნები"
 
-#: src/bz-donations-dialog.blp:111
+#: src/bz-donations-dialog.blp:112
 msgid "This release was made possible by users like you!"
 msgstr "ამ ვერსიის არსებობა შესაძლებელია ისეთი მომხმარებლების არსებობით, როგორიც თქვენ ბრძანდებით!"
 
-#: src/bz-donations-dialog.blp:120
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:122
 msgid "I love making Bazaar, but I cannot do it alone. Help support further development by donating on Ko-Fi."
 msgstr ""
 "მე მიყვარს Bazaar-ის შექმნა, მაგრამ ამას მარტო ვერ ვიზამ. დაგვეხმარეთ მის განვითარებაში Ko-Fi-ზე შეწირვით."
 
-#: src/bz-donations-dialog.blp:134
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:137
 msgid "Donate to Bazaar"
 msgstr "შესწირეთ Bazaar-ს"
 
@@ -1021,22 +1066,6 @@ msgstr "გაქვთ ამ აპის ერზე მეტი ვერ�
 #: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "გაუქმება"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "this user"
-msgstr "ეს მომხმარებელი"
-
-#: src/bz-entry-selection-row.vala:40
-msgid "all users"
-msgstr "ყველა მომხმარებელი"
-
-#: src/bz-entry-selection-row.vala:55
-msgid "End of Life"
-msgstr "მხარდაჭერა-დასრულებული"
-
-#: src/bz-entry-selection-row.vala:69
-msgid "For This User Only"
-msgstr "მხოლოდ ამ მომხმარებლისთვის"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69 src/error.c:88
 #: src/update-worker.c:473
@@ -1068,7 +1097,7 @@ msgstr "შედით Flathub-ში რჩეულების სამა�
 msgid "Log In"
 msgstr "შესვლა"
 
-#: src/bz-favorites-page.blp:5 src/bz-window.blp:342
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:350
 msgid "Favorites"
 msgstr "რჩეულები"
 
@@ -1598,31 +1627,31 @@ msgstr ""
 msgid "Trash Data"
 msgstr "გადატანა ნაგვის ყუთში"
 
-#: src/bz-full-view.blp:582
+#: src/bz-full-view.blp:616
 msgid "Add-ons"
 msgstr "დამატებები"
 
-#: src/bz-full-view.blp:617
+#: src/bz-full-view.blp:651
 msgid "More Add-Ons"
 msgstr "მეტი დამატება"
 
-#: src/bz-full-view.blp:628
+#: src/bz-full-view.blp:662
 msgid "Links"
 msgstr "ბმულები"
 
-#: src/bz-full-view.blp:659
+#: src/bz-full-view.blp:693
 msgid "Similar Apps"
 msgstr "მსგავსი პროგრამები"
 
-#: src/bz-full-view.c:181
+#: src/bz-full-view.c:184
 msgid "No URL"
 msgstr "ბმულის გარეშე"
 
-#: src/bz-full-view.c:199
+#: src/bz-full-view.c:202
 msgid "This app has a FLOSS license, meaning the source code can be audited for safety."
 msgstr "ამ აპს აქვს FLOSS ლიცენზია, რას ნიშნავს, რომ შესაძლებელია მისი წყარო კოდის აუდიტი უსაფრთხოებაზე."
 
-#: src/bz-full-view.c:200
+#: src/bz-full-view.c:203
 msgid ""
 "This app has a proprietary license, meaning the source code is developed privately and cannot be audited by "
 "an independent third party."
@@ -1630,37 +1659,37 @@ msgstr ""
 "ამ აპს აქვს საკუთრების ლიცენზია, რას ნიშნავს, რომ მისი წყარო კოდი შემუშავებულია კონფიდენციალურად და მისი "
 "აუდიტი დამოუკიდებელ მესამე პირს არ შეუძლია."
 
-#: src/bz-full-view.c:207
+#: src/bz-full-view.c:210
 msgid "Other Apps From This Developer"
 msgstr "სხვა აპები ამ პროგრამისტისგან"
 
-#: src/bz-full-view.c:208
+#: src/bz-full-view.c:211
 #, c-format
 msgid "Other Apps From %s"
 msgstr "სხვა აპები %s-სგან"
 
-#: src/bz-full-view.c:223
+#: src/bz-full-view.c:226
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr "%s არ არის დაინსტალირებული, მაგრამ მას ჯერ კიდევ აქვს <b>%s</b> მონაცემები."
 
-#: src/bz-full-view.c:306
+#: src/bz-full-view.c:309
 #, c-format
 msgid "Apps by %s"
 msgstr "აპლიკაციები %s-ისგან"
 
-#: src/bz-full-view.c:308
+#: src/bz-full-view.c:311
 msgid "Apps by This Developer"
 msgstr "აპები ამ პროგრამისტისგან"
 
-#: src/bz-full-view.c:310
+#: src/bz-full-view.c:313
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
 msgstr[0] "%d აპლიკაცია"
 msgstr[1] "%d აპლიკაცია"
 
-#: src/bz-full-view.c:465 src/bz-user-data-tile.c:160
+#: src/bz-full-view.c:468 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "მომხმარებლის მონაცემების წაშლა ჩავარდა"
 
@@ -1762,32 +1791,32 @@ msgstr "%s უმეტეს მოწყობილობაზე მუშ�
 msgid "Inspector Menu"
 msgstr "ინსპექტორის მენიუ"
 
-#: src/bz-install-controls.blp:56
+#: src/bz-install-controls.blp:58
 msgid "_Open"
 msgstr "_გახსნა"
 
-#: src/bz-install-controls.blp:70 src/bz-install-controls.blp:124
+#: src/bz-install-controls.blp:72 src/bz-install-controls.blp:126
 msgid "Uninstall Application"
 msgstr "აპლიკაციის წაშლა"
 
-#: src/bz-install-controls.blp:80 src/bz-transaction-dialog.c:232
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
 msgid "_Remove"
 msgstr "_წაშლა"
 
-#: src/bz-install-controls.blp:112 src/bz-updates-card.c:168 src/bz-updates-card.c:187
+#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168 src/bz-updates-card.c:187
 msgid "Update"
 msgstr "განახლება"
 
-#: src/bz-install-controls.blp:134 src/bz-installed-tile.blp:107
+#: src/bz-install-controls.blp:136 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "წაშლა"
 
-#: src/bz-install-controls.c:638
+#: src/bz-install-controls.c:669
 #, c-format
 msgid "Install %s from %s"
 msgstr "%s-ის დაყენება %s-დან"
 
-#: src/bz-install-controls.c:640
+#: src/bz-install-controls.c:671
 #, c-format
 msgid "Install %s"
 msgstr "%s-ის დაყენება"
@@ -1997,6 +2026,25 @@ msgstr "არჩიეთ ხატულა"
 msgid "Image Files"
 msgstr "გამოსახულების ფაილები"
 
+#: src/bz-other-sources-list.vala:52
+msgid "User"
+msgstr "მომხმარებელი"
+
+#: src/bz-other-sources-list.vala:55
+msgid "Beta"
+msgstr "ბეტა"
+
+#: src/bz-other-sources-list.vala:58
+msgid "End-Of-Life"
+msgstr "მხარდაჭერა-დასრულებული"
+
+#. Translators: As in, "1 Install" / "100 Installs"
+#: src/bz-other-sources-list.vala:76 src/bz-world-map.c:604
+msgid "Install"
+msgid_plural "Installs"
+msgstr[0] "დაყენება"
+msgstr[1] "დაყენებები"
+
 #: src/bz-preferences-dialog.blp:19
 msgid "Preferences"
 msgstr "მორგება"
@@ -2005,7 +2053,7 @@ msgstr "მორგება"
 msgid "Network connection is metered — automatic store data refresh is paused"
 msgstr "ქსელთან კავშირი გაზომვადია — მაღაზიის მონაცემების ავტომატური განახლება შეჩერდა"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:240 src/bz-window.blp:251
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
 msgid "Refresh Manually"
 msgstr "ხელით განახლება"
 
@@ -2169,7 +2217,8 @@ msgstr "ფემბოიების სიამაყის ფერებ�
 msgid "Neutrois Pride Colors"
 msgstr "ნიუტრას სიამაყის ფერები"
 
-#: src/bz-preferences-dialog.c:285
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-preferences-dialog.c:286
 msgid "Bazaar needs to run in the background to check for app updates"
 msgstr "პროგრამის განახლებების შესამოწმებლად Bazaar-ს ფონურად გაშვება სჭირდება"
 
@@ -2377,7 +2426,7 @@ msgstr "ეკრანის ანაბეჭდი %u %s"
 msgid "Screenshot %u"
 msgstr "ეკრანის ანაბეჭდი %u"
 
-#: src/bz-search-bar.blp:55
+#: src/bz-search-bar.blp:47 src/bz-search-bar.blp:57
 msgid "Clear Search"
 msgstr "ძებნის გასუფთავება"
 
@@ -2621,64 +2670,47 @@ msgstr "შედეგების გარეშე"
 msgid "Search failed"
 msgstr "ძებნის შეცდომა"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244 src/context-tile-callbacks.c:249
+#: src/context-tile-callbacks.c:277 src/context-tile-callbacks.c:286
+msgid "Unknown"
+msgstr "უცნობი"
+
+#: src/bz-transaction-dialog.c:145
 msgid "Keep User Data"
 msgstr "მომხმარებლის მონაცემების შენარჩუნება"
 
-#: src/bz-transaction-dialog.c:157
+#: src/bz-transaction-dialog.c:146
 msgid "Allow restoring personal settings &amp; content"
 msgstr "პირადი პარამეტრების და შემცველობის აღდგენის დაშვება"
 
-#: src/bz-transaction-dialog.c:166
+#: src/bz-transaction-dialog.c:155
 msgid "Delete All Data"
 msgstr "ყველა მონაცემის წაშლა"
 
-#: src/bz-transaction-dialog.c:167
+#: src/bz-transaction-dialog.c:156
 msgid "Permanently erase user data to save space"
 msgstr "მომხმარებლის მონაცემების სამუდამოდ წაშლა ადგილის დასაზოგად"
 
-#: src/bz-transaction-dialog.c:192
-#, c-format
-msgid "Install %s?"
-msgstr "დავაყენო %s?"
-
-#: src/bz-transaction-dialog.c:197
-msgid "Select which version to install. May install additional shared components"
-msgstr "აირჩიეთ, რომელი ვერსიის დაყენება გნებავთ. შეიძლება, დააყენოს დამატებითი გაზიარებული კომპონენტები"
-
-#: src/bz-transaction-dialog.c:199
-msgid "May install additional shared components"
-msgstr "შეუძლია დამატებითი გაზიარებული კომპონენტების დაყენება"
-
-#: src/bz-transaction-dialog.c:202 src/bz-transaction-dialog.c:231 src/bz-transaction-dialog.c:276
-#: src/bz-transaction-dialog.c:578
-msgid "_Cancel"
-msgstr "გაუ_ქმება"
-
-#: src/bz-transaction-dialog.c:203
-msgid "_Install"
-msgstr "_დაყენება"
-
-#: src/bz-transaction-dialog.c:220
+#: src/bz-transaction-dialog.c:182
 #, c-format
 msgid "Remove %s?"
 msgstr "წავშალო %s?"
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:185
 msgid "Select which version to remove."
 msgstr "აირჩიეთ წასაშლელი ვერსია."
 
-#: src/bz-transaction-dialog.c:225
+#: src/bz-transaction-dialog.c:187
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "%s-ის გამოყენება შეუძლებელია მისი წაშლის შემდეგ."
 
-#: src/bz-transaction-dialog.c:248
+#: src/bz-transaction-dialog.c:210
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "“%s” მაღალი რისკითაა"
 
-#: src/bz-transaction-dialog.c:252
+#: src/bz-transaction-dialog.c:214
 msgid ""
 "This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, "
 "and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
@@ -2692,7 +2724,7 @@ msgstr ""
 "იმის გამო, რომ აპლიკაცია დახურული კოდითაა, მისი აუდიტი შეუძლებელია იმის შესახებ, თუ რას აკეთებს ის ამ "
 "ნებართვებით."
 
-#: src/bz-transaction-dialog.c:261
+#: src/bz-transaction-dialog.c:223
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture "
 "screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send "
@@ -2707,45 +2739,13 @@ msgstr ""
 "იმის გამო, რომ აპლიკაცია დახურული კოდითაა, შეუძლებელია მისი აუდიტი იმის შესახებ, თუ რას აკეთებს ის ამ "
 "ნებართვებით."
 
-#: src/bz-transaction-dialog.c:277
+#: src/bz-transaction-dialog.c:239
 msgid "_Install Anyway"
 msgstr "მა_ინც დაყენება"
 
-#: src/bz-transaction-dialog.c:332
+#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
 msgid "Failed to load transaction dialog"
 msgstr "ტრანზაქციის დიალოგის ჩატვირთვა ჩავარდა"
-
-#: src/bz-transaction-dialog.c:549
-msgid "All apps are already installed"
-msgstr "ყველა აპი უკვე დაყენებულია"
-
-#: src/bz-transaction-dialog.c:551
-msgid "_OK"
-msgstr "_დიახ"
-
-#: src/bz-transaction-dialog.c:567
-#, c-format
-msgid "Install %u App?"
-msgid_plural "Install %u Apps?"
-msgstr[0] "დავაყენო %u აპლიკაცია?"
-msgstr[1] "დავაყენო %u აპლიკაცია?"
-
-#: src/bz-transaction-dialog.c:575
-msgid "The following will be installed. Additional shared components may also be installed"
-msgstr "მოხდება შემდეგის დაყენება. ასევე, შეიძლება, მოხდეს დამატებითი გაზიარებული კომპონენტების დაყენება"
-
-#: src/bz-transaction-dialog.c:576
-#, c-format
-msgid "%d addons will be installed."
-msgstr "მოხდება %d დამატების დაყენება."
-
-#: src/bz-transaction-dialog.c:577
-msgid "Additionally, addons will be installed."
-msgstr "დამატებით მოხდება დამატებების დაყენება."
-
-#: src/bz-transaction-dialog.c:579
-msgid "_Install All"
-msgstr "_ყველას დაყენება"
 
 #: src/bz-transaction-manager.c:796
 #, c-format
@@ -2856,111 +2856,109 @@ msgstr "მომხმარებლის მონაცემების �
 msgid "Trash User Data"
 msgstr "მომხმარებლის მონაცემების გადატანა ნაგვის ყუთში"
 
-#: src/bz-window.blp:79
+#: src/bz-window.blp:80
 msgid "Refreshing"
 msgstr "განახლება"
 
-#: src/bz-window.blp:97
+#: src/bz-window.blp:98
 msgid "Curated"
 msgstr "კურირებული"
 
-#: src/bz-window.blp:109
+#: src/bz-window.blp:110
 msgid "Explore"
 msgstr "დათვალიერება"
 
 #. Translators: .
-#: src/bz-window.blp:121
+#: src/bz-window.blp:122
 msgid "Library"
 msgstr "ბიბლიოთეკა"
 
-#: src/bz-window.blp:136
+#: src/bz-window.blp:137
 msgid "Search"
 msgstr "ძებნა"
 
-#: src/bz-window.blp:220
+#: src/bz-window.blp:223
 msgid "Main Menu"
 msgstr "მთავარი მენიუ"
 
-#: src/bz-window.blp:231
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:235
 msgid "You are running a new version of Bazaar!"
 msgstr "გაშვებული გაქვთ Bazaar-ის ახალი ვერსია!"
 
-#: src/bz-window.blp:232
+#: src/bz-window.blp:236
 msgid "See What's New"
 msgstr "ნახეთ, რა არის ახალი"
 
-#: src/bz-window.blp:239
+#: src/bz-window.blp:243
 msgid "You have a network connection but are viewing a cached version of Flathub"
 msgstr "თქვენ გაქვთ ქსელთან კავშირი, მაგრამ ათვალიერებთ Flathub-ის დაკეშილ ვერსიას"
 
-#: src/bz-window.blp:250
+#: src/bz-window.blp:254
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "ქსელთან კავშირი გაზომვადია — ავტომატური განახლებები გაითიშა"
 
-#: src/bz-window.blp:286
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:291
 msgid "_Donate to Bazaar"
 msgstr "_შესწირეთ Bazaar-ს"
 
-#: src/bz-window.blp:292
+#: src/bz-window.blp:297
 msgid "_Refresh"
 msgstr "_განახლება"
 
-#: src/bz-window.blp:296
+#: src/bz-window.blp:301
 msgid "_Login With Flathub"
 msgstr "შესვ_ლა Flathub-ით"
 
-#: src/bz-window.blp:302
+#: src/bz-window.blp:307
 msgid "_Manage Leftover User Data"
 msgstr ")მომხმარებლის დარჩენილი მონაცემების მართვა"
 
-#: src/bz-window.blp:308
+#: src/bz-window.blp:313
 msgid "_Preferences"
 msgstr "_მორგება"
 
-#: src/bz-window.blp:313
+#: src/bz-window.blp:318
 msgid "_Keyboard Shortcuts"
 msgstr "_კლავიატურის მალსახმობები"
 
-#: src/bz-window.blp:318
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:324
 msgid "_About Bazaar"
 msgstr "Bazaar-ის შეს_ახებ"
 
-#: src/bz-window.blp:324
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:331
 msgid "_Quit Bazaar"
 msgstr "_გასვლა Bazaar-დან"
 
-#: src/bz-window.blp:349
+#: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "გასვლა"
 
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:379
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
+#: src/bz-window.c:381
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazaar — %s"
 
-#: src/bz-window.c:659 src/bz-window.c:697
+#: src/bz-window.c:661 src/bz-window.c:699
 msgid "Failed to launch application"
 msgstr "აპლიკაციის გაშვება ჩავარდა"
 
-#: src/bz-window.c:776
+#: src/bz-window.c:778
 msgid "Could not open link"
 msgstr "ბმულის გახსნა შეუძლებელია"
 
-#: src/bz-window.c:984
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.c:987
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Bazaar-ს Bazaar-დან ვერ წაშლით!"
 
-#: src/bz-window.c:1358 src/bz-window.c:1392
+#: src/bz-window.c:1371 src/bz-window.c:1405
 msgid "Can't do that right now!"
 msgstr "ამჟამად ამას ვერ იზამთ!"
-
-#. Translators: As in, "1 Install" / "100 Installs"
-#: src/bz-world-map.c:604
-msgid "Install"
-msgid_plural "Installs"
-msgstr[0] "დაყენება"
-msgstr[1] "დაყენებები"
 
 #: src/context-tile-callbacks.c:68
 msgid "---"
@@ -3018,11 +3016,6 @@ msgstr "ვარგისია ყველა ასაკისთვის"
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "ვარგისია %d და უფროსი ასაკისთვის"
-
-#: src/context-tile-callbacks.c:244 src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
-#: src/context-tile-callbacks.c:286
-msgid "Unknown"
-msgstr "უცნობი"
 
 #: src/context-tile-callbacks.c:254
 #, c-format
@@ -3469,6 +3462,28 @@ msgstr "%s და %s განახლდა."
 msgid "Includes %s, %s and %s."
 msgstr "შეიცავს %s-ს, %s-ს და %s-ს."
 
+#~ msgid "this user"
+#~ msgstr "ეს მომხმარებელი"
+
+#~ msgid "all users"
+#~ msgstr "ყველა მომხმარებელი"
+
+#~ msgid "For This User Only"
+#~ msgstr "მხოლოდ ამ მომხმარებლისთვის"
+
+#, c-format
+#~ msgid "Install %s?"
+#~ msgstr "დავაყენო %s?"
+
+#~ msgid "Select which version to install. May install additional shared components"
+#~ msgstr "აირჩიეთ, რომელი ვერსიის დაყენება გნებავთ. შეიძლება, დააყენოს დამატებითი გაზიარებული კომპონენტები"
+
+#~ msgid "May install additional shared components"
+#~ msgstr "შეუძლია დამატებითი გაზიარებული კომპონენტების დაყენება"
+
+#~ msgid "_Install"
+#~ msgstr "_დაყენება"
+
 #~ msgid "Ubuntu Troubles!"
 #~ msgstr "Ubuntu-ის პრობლემები!"
 
@@ -3492,6 +3507,3 @@ msgstr "შეიცავს %s-ს, %s-ს და %s-ს."
 
 #~ msgid "More Apps"
 #~ msgstr "მეტი აპი"
-
-#~ msgid "Other Apps"
-#~ msgstr "სხვა აპები"
