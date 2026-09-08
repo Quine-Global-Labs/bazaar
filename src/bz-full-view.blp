@@ -589,7 +589,7 @@ template $BzFullView: Adw.Bin {
                           reveal-child: bind $logical_and(
                               $logical_and(
                                 $is_le(template.entry-group as <$BzEntryGroup>.removable, 0) as <bool>,
-                                $is_gt(template.entry-group as <$BzEntryGroup>.installable, 0) as <bool>
+                                $is_gt(template.entry-group as <$BzEntryGroup>.installable, 1) as <bool>
                               ) as <bool>,
                               $not(wide_install_controls.in-progress) as <bool>
                             ) as <bool>;
