@@ -3,7 +3,6 @@ using Adw 1;
 
 template $BzBundleInstallDialog: Adw.Dialog {
   content-width: 500;
-  content-height: 520;
   width-request: 360;
   height-request: 294;
 
@@ -40,6 +39,7 @@ template $BzBundleInstallDialog: Adw.Dialog {
 
               ScrolledWindow {
                 hscrollbar-policy: never;
+                propagate-natural-height: true;
                 hexpand: true;
                 valign: fill;
 
@@ -49,7 +49,7 @@ template $BzBundleInstallDialog: Adw.Dialog {
                   valign: start;
                   halign: fill;
                   hexpand: true;
-                  margin-top: 24;
+                  margin-top: 12;
                   margin-bottom: 24;
                   margin-start: 24;
                   margin-end: 24;
@@ -257,12 +257,12 @@ template $BzBundleInstallDialog: Adw.Dialog {
                           spacing: 8;
 
                           Image bundle_image {
-                            pixel-size: 48;
+                            pixel-size: 64;
                           }
 
                           Box {
                             orientation: vertical;
-                            spacing: 4;
+                            spacing: 2;
                             hexpand: true;
 
                             Label {
@@ -275,13 +275,15 @@ template $BzBundleInstallDialog: Adw.Dialog {
                               ]
                             }
 
-                            Label {
-                              label: bind template.runtime-repo as <$BzFlatpakRepo>.description;
+                            Label description {
+                              label: bind $get_repo_blurb(template.runtime-repo as <$BzFlatpakRepo>.description, template.runtime-repo as <$BzFlatpakRepo>.comment) as <string>;
+                              visible: bind $not($is_empty_string(description.label) as <bool>) as <bool>;
                               wrap: true;
                               halign: start;
                               wrap-mode: word_char;
                               lines: 2;
                               ellipsize: end;
+                              margin-top: 2;
                             }
 
                             Label {
