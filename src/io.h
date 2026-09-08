@@ -50,6 +50,9 @@ DexFuture *
 bz_reap_path_dex (const char *path);
 
 DexFuture *
+bz_user_data_exists (const char *app_id);
+
+DexFuture *
 bz_reap_user_data_dex (const char *app_id);
 
 DexFuture *

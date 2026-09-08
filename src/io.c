@@ -264,6 +264,17 @@ bz_reap_path_dex (const char *path)
 }
 
 DexFuture *
+bz_user_data_exists (const char *app_id)
+{
+  g_autofree char *user_data_path = NULL;
+
+  g_return_val_if_fail (app_id != NULL, NULL);
+
+  user_data_path = bz_dup_user_data_path (app_id);
+  return dex_file_query_exists (g_file_new_for_path (user_data_path));
+}
+
+DexFuture *
 bz_reap_user_data_dex (const char *app_id)
 {
   dex_return_error_if_fail (app_id != NULL);
