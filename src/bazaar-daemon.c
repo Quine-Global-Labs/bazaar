@@ -191,8 +191,16 @@ main (int argc, char *argv[])
     launch_app (fwd_args, n_fwd_args);
 
   arm_idle_timer ();
+
+  while (dbus_connection_get_dispatch_status (bus) == DBUS_DISPATCH_DATA_REMAINS)
+    dbus_connection_dispatch (bus);
+
   sd_event_loop (event);
   cancel_idle_timer ();
+
+  dbus_connection_flush (bus);
+  dbus_connection_close (bus);
+  dbus_connection_unref (bus);
 
   if (update_timer_source != NULL)
     sd_event_source_unref (update_timer_source);
@@ -202,9 +210,6 @@ main (int argc, char *argv[])
   search_index_close (g_index);
   free (g_index_path);
 
-  dbus_connection_flush (bus);
-  dbus_connection_close (bus);
-  dbus_connection_unref (bus);
   sd_event_unref (event);
 
   return 0;
@@ -248,8 +253,9 @@ on_watch_io (sd_event_source *s, int fd, uint32_t revents, void *userdata)
 
   dbus_watch_handle (watch, flags);
 
-  while (dbus_connection_get_dispatch_status (bus) == DBUS_DISPATCH_DATA_REMAINS)
-    dbus_connection_dispatch (bus);
+  if (dbus_connection_get_dispatch_status (bus) == DBUS_DISPATCH_DATA_REMAINS
+      && dispatch_source != NULL)
+    sd_event_source_set_enabled (dispatch_source, SD_EVENT_ON);
 
   return 0;
 }
@@ -369,8 +375,11 @@ on_dispatch (sd_event_source *s, void *userdata)
 static void
 dispatch_status_cb (DBusConnection *connection, DBusDispatchStatus new_status, void *data)
 {
-  if (new_status == DBUS_DISPATCH_DATA_REMAINS && dispatch_source != NULL)
-    sd_event_source_set_enabled (dispatch_source, SD_EVENT_ON);
+  if (dispatch_source == NULL)
+    return;
+
+  sd_event_source_set_enabled (dispatch_source,
+                               new_status == DBUS_DISPATCH_DATA_REMAINS ? SD_EVENT_ON : SD_EVENT_OFF);
 }
 
 static int
