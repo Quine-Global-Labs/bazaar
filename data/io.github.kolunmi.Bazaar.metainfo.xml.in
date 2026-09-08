@@ -77,30 +77,30 @@
   </screenshots>
 
   <releases>
-    <release version="0.9.5" date="2026-09-04">
+    <release version="0.9.5" date="2026-09-08">
       <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.5</url>
-        <description translate="no">
-          <p>
-            <em>Changes</em>
-          </p>
-          <ul>
-            <li>Removed the install selection dialog and moved the other options to the app page</li>
-            <li>Apps are now only marked EOL when all sources are EOL</li>
-            <li>Installed apps are now only marked EOL if the installed source specifically is EOL</li>
-            <li>Categories now show Trending instead of Popular, to match the Flathub site</li>
-            <li>You can now drop <code>.flatpak</code> and <code>.flatpakref</code> files onto a window to open them</li>
-          </ul>
-          <p>
-            <em>Bug Fixes</em>
-          </p>
-          <ul>
-            <li>Fixed the app not launching on Linux Mint, Zorin OS, and some other LTS distros</li>
-            <li>Fixed an issue where the cursor would stay a spinner for a while when opening the app</li>
-          </ul>
-          <p>
-            Thanks for reading, and have a great day!
-          </p>
-        </description>
+      <description translate="no">
+        <p>
+          <em>Changes</em>
+        </p>
+        <ul>
+          <li>Removed the install selection dialog and moved the other options to the app page</li>
+          <li>Apps are now only marked EOL when all sources are EOL</li>
+          <li>Installed apps are now only marked EOL if the installed source specifically is EOL</li>
+          <li>Categories now show Trending instead of Popular, to match the Flathub site</li>
+          <li>You can now drop <code>.flatpak</code> and <code>.flatpakref</code> files onto a window to open them</li>
+        </ul>
+        <p>
+          <em>Bug Fixes</em>
+        </p>
+        <ul>
+          <li>Fixed the app not launching on Linux Mint, Zorin OS, and some other LTS distros</li>
+          <li>Fixed an issue where the cursor would stay a spinner for a while when opening the app</li>
+        </ul>
+        <p>
+          Thanks for reading, and have a great day!
+        </p>
+      </description>
     </release>
     <release version="0.9.4" date="2026-08-14">
       <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.4</url>
