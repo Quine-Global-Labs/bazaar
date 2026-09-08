@@ -246,6 +246,20 @@ get_safety_icon_name (gpointer object,
 }
 
 static char *
+get_repo_blurb (gpointer    object,
+                const char *comment,
+                const char *description)
+{
+  if (comment != NULL && *comment != '\0')
+    return g_strdup (comment);
+
+  if (description != NULL && *description != '\0')
+    return g_strdup (description);
+
+  return g_strdup ("");
+}
+
+static char *
 format_url (gpointer    object,
             const char *url)
 {
@@ -401,6 +415,7 @@ bz_bundle_install_dialog_class_init (BzBundleInstallDialogClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, get_disk_title);
   gtk_widget_class_bind_template_callback (widget_class, get_safety_subtitle);
   gtk_widget_class_bind_template_callback (widget_class, get_safety_icon_name);
+  gtk_widget_class_bind_template_callback (widget_class, get_repo_blurb);
   gtk_widget_class_bind_template_callback (widget_class, format_url);
   gtk_widget_class_bind_template_callback (widget_class, get_header_halign);
   gtk_widget_class_bind_template_callback (widget_class, get_header_orientation);
