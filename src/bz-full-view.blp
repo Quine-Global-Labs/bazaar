@@ -254,27 +254,41 @@ template $BzFullView: Adw.Bin {
                         Box {
                           homogeneous: true;
 
-                          $BzContextTile download_size_tile {
-                            label: bind try {$get_size_label(
-                              $is_zero(template.entry-group as <$BzEntryGroup>.removable) as <bool>,
-                              template.entry-group as <$BzEntryGroup>.ui-entry as <$BzResult>.object as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.installed,
-                              template.entry-group as <$BzEntryGroup>.ui-entry as <$BzResult>.object as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.size,
-                            ) as <string>, $get_size_label($is_zero(template.entry-group as <$BzEntryGroup>.removable) as <bool>,0,0) as <string>};
-                            tooltip-text: bind $format_size_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.size) as <string>;
-                            lozenge-style: "grey";
-                            sensitive: bind $invert_boolean($is_zero($get_size_type(template.ui-entry as <$BzResult>.object as <$BzEntry>, $is_zero(template.entry-group as <$BzEntryGroup>.removable) as <bool>) as <uint64>) as <bool>) as <bool>;
-                            clicked => $size_cb(template);
+                          Stack size_tile_stack {
+                            visible-child-name: bind $get_size_tile_child_name(template.entry-group as <$BzEntryGroup>.removable) as <string>;
+                            transition-type: crossfade;
 
-                            lozenge-child: Label {
-                              justify: center;
-                              label: bind $format_size($get_size_type(template.ui-entry as <$BzResult>.object as <$BzEntry>, $is_zero(template.entry-group as <$BzEntryGroup>.removable) as <bool>) as <uint64>) as <string>;
-                              lines: 3;
-                              ellipsize: end;
-                              halign: center;
-                              wrap: true;
-                              xalign: 0.5;
-                              use-markup: true;
-                            };
+                            StackPage {
+                              name: "download";
+                              child: $BzContextTile download_size_tile {
+                                label: bind $get_download_size_label(
+                                  template.entry-group as <$BzEntryGroup>.ui-entry as <$BzResult>.object as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.installed,
+                                  template.entry-group as <$BzEntryGroup>.ui-entry as <$BzResult>.object as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.size,
+                                ) as <string>;
+                                tooltip-text: bind $format_download_size_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.size) as <string>;
+                                lozenge-style: "grey";
+                                clicked => $size_cb(template);
+
+                                lozenge-child: Label {
+                                  label: bind $format_size(template.ui-entry as <$BzResult>.object as <$BzEntry>.size) as <string>;
+                                  use-markup: true;
+                                };
+                              };
+                            }
+
+                            StackPage {
+                              name: "installed";
+                              child: $BzContextTile installed_size_tile {
+                                label: _("Installed");
+                                tooltip-text: bind $format_installed_size_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.installed-size) as <string>;
+                                lozenge-style: "grey";
+                                clicked => $size_cb(template);
+                                lozenge-child: Label {
+                                  label: bind $format_size(template.ui-entry as <$BzResult>.object as <$BzEntry>.installed-size) as <string>;
+                                  use-markup: true;
+                                };
+                              };
+                            }
                           }
 
                           $BzContextTile license_tile {

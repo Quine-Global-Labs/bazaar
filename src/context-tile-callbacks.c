@@ -121,34 +121,29 @@ format_size (gpointer object, guint64 value)
 }
 
 static char *
-get_size_label (gpointer object,
-                gboolean is_installable,
-                gboolean runtime_installed,
-                guint64  runtime_size)
+get_size_tile_child_name (gpointer object,
+                          gboolean removable)
 {
-  if (is_installable && !runtime_installed && runtime_size > 0)
+  return g_strdup (removable ? "installed" : "download");
+}
+
+static char *
+get_download_size_label (gpointer object,
+                         gboolean runtime_installed,
+                         guint64  runtime_size)
+{
+  if (!runtime_installed && runtime_size > 0)
     {
       g_autofree char *size_str = g_format_size (runtime_size);
       // TRANSLATORS: %s is a formatted file size, for example: "128 MB"
       return g_strdup_printf (_ ("+%s Runtime"), size_str);
     }
 
-  return g_strdup (is_installable ? _ ("Download") : _ ("Installed"));
-}
-
-static guint64
-get_size_type (gpointer object,
-               BzEntry *entry,
-               gboolean is_installable)
-{
-  if (entry == NULL)
-    return 0;
-
-  return is_installable ? bz_entry_get_size (entry) : bz_entry_get_installed_size (entry);
+  return g_strdup (_ ("Download"));
 }
 
 static char *
-format_size_tooltip (gpointer object, guint64 value)
+format_download_size_tooltip (gpointer object, guint64 value)
 {
   g_autofree char *size_str = NULL;
 
@@ -157,6 +152,18 @@ format_size_tooltip (gpointer object, guint64 value)
 
   size_str = g_format_size (value);
   return g_strdup_printf (_ ("Download size of %s"), size_str);
+}
+
+static char *
+format_installed_size_tooltip (gpointer object, guint64 value)
+{
+  g_autofree char *size_str = NULL;
+
+  if (value == 0)
+    return g_strdup (_ ("Size information unavailable"));
+
+  size_str = g_format_size (value);
+  return g_strdup_printf (_ ("Installed size of %s"), size_str);
 }
 
 static char *
@@ -426,9 +433,10 @@ bz_widget_class_bind_all_context_tile_callbacks (GtkWidgetClass *widget_class)
   gtk_widget_class_bind_template_callback (widget_class, format_recent_downloads);
   gtk_widget_class_bind_template_callback (widget_class, format_recent_downloads_tooltip);
   gtk_widget_class_bind_template_callback (widget_class, format_size);
-  gtk_widget_class_bind_template_callback (widget_class, get_size_label);
-  gtk_widget_class_bind_template_callback (widget_class, get_size_type);
-  gtk_widget_class_bind_template_callback (widget_class, format_size_tooltip);
+  gtk_widget_class_bind_template_callback (widget_class, get_size_tile_child_name);
+  gtk_widget_class_bind_template_callback (widget_class, get_download_size_label);
+  gtk_widget_class_bind_template_callback (widget_class, format_download_size_tooltip);
+  gtk_widget_class_bind_template_callback (widget_class, format_installed_size_tooltip);
   gtk_widget_class_bind_template_callback (widget_class, format_age_rating);
   gtk_widget_class_bind_template_callback (widget_class, get_age_rating_label);
   gtk_widget_class_bind_template_callback (widget_class, get_age_rating_tooltip);
