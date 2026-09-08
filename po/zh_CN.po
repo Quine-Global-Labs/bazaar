@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-03 18:38+0000\n"
-"PO-Revision-Date: 2026-09-04 08:11+0800\n"
+"POT-Creation-Date: 2026-09-08 21:02+0000\n"
+"PO-Revision-Date: 2026-09-09 07:16+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -19,35 +19,36 @@ msgstr ""
 "X-Generator: Gtranslator 50.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:2
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:54
-#: src/bz-window.blp:208 src/bz-window.c:377 src/bz-window.c:378
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: src/bz-window.blp:211 src/bz-window.c:378 src/bz-window.c:379
 msgid "Bazaar"
 msgstr "集市"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.desktop.in:4
 msgid "App Store"
 msgstr "应用商店"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/io.github.kolunmi.Bazaar.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "添加、移除或更新此电脑上的 Flatpak 软件"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:10
+#: data/io.github.kolunmi.Bazaar.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr ""
 "System;Package;Manager;Discover;Flatpak;Software;App;Store;系统;软件包;管理"
 "器;软件;应用;商店;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:17
+#: data/io.github.kolunmi.Bazaar.desktop.in:18
 msgid "New Window"
 msgstr "新建窗口"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "发现和安装应用"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:10
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
@@ -55,43 +56,44 @@ msgstr ""
 "一款用于 Linux 致力于发现和安装 Flatpak 应用及附加组件（特别是从 Flathub）的"
 "快速且现代的应用商店。"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:15
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "排队安装多个应用的同时继续浏览"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "轻松查看应用权限"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "登录 Flathub 以查看和管理收藏项目"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "直接从 GNOME Shell 搜索应用"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:32 src/bz-application.c:754
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:754
 msgid "The Bazaar Contributors"
 msgstr "集市的贡献者们"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:57
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "展示 Flathub 应用的主页"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:61
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "用于展示的应用页面"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:65
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
 msgid "Library page"
 msgstr "软件库页面"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:69
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
 msgid "Search page"
 msgstr "搜索页面"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:73
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
 msgid "Category page"
 msgstr "分类页面"
 
@@ -135,11 +137,11 @@ msgstr "您当前的筛选首选项隐藏了所有已知附加组件。请尝试
 msgid "Add-on Page"
 msgstr "附加组件页面"
 
-#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:392
+#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:406
 msgid "Downloads/Month"
 msgstr "下载/月"
 
-#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:427
+#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:441
 msgid "Stopped Receiving Core Updates"
 msgstr "已停止接收核心更新"
 
@@ -150,7 +152,7 @@ msgid ""
 msgstr ""
 "此附加组件使用的运行时已不再接收更新或安全修复。使用它可能存在安全隐患。"
 
-#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:602
 msgid "Other Sources"
 msgstr "其他来源"
 
@@ -172,8 +174,8 @@ msgid "Download Stats"
 msgstr "下载统计"
 
 #: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31
-#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:187
-#: src/context-tile-callbacks.c:194
+#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:201
 msgid "Age Rating"
 msgstr "年龄分级"
 
@@ -495,7 +497,7 @@ msgid "Violence"
 msgstr "暴力"
 
 #. Translators: Age rating format, e.g. "12+" for ages 12 and up
-#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:177
+#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:184
 #, c-format
 msgid "%d+"
 msgstr "%d+"
@@ -720,8 +722,8 @@ msgid "Runtime Download Size"
 msgstr "运行时下载大小"
 
 #: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:185
-#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:394
-#: src/context-tile-callbacks.c:416
+#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:401
+#: src/context-tile-callbacks.c:423
 msgid "N/A"
 msgstr "不可用"
 
@@ -735,8 +737,7 @@ msgid "Verified"
 msgstr "已验证"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-app-tile.blp:87 src/bz-releases-list.c:204
-#: src/context-tile-callbacks.c:136
+#: src/bz-app-tile.blp:87 src/bz-full-view.blp:282 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "已安装"
 
@@ -924,8 +925,8 @@ msgstr "%d 附加组件将被安装。"
 msgid "Additionally, addons will be installed."
 msgstr "另外，将会安装附加组件。"
 
-#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193
-#: src/bz-transaction-dialog.c:238
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:200
+#: src/bz-transaction-dialog.c:245
 msgid "_Cancel"
 msgstr "取消(_C)"
 
@@ -933,7 +934,7 @@ msgstr "取消(_C)"
 msgid "_Install All"
 msgstr "全部安装(_I)"
 
-#: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
+#: src/bz-bundle-install-dialog.blp:20 src/bz-bundle-install-dialog.blp:26
 msgid "Bundle Installation"
 msgstr "捆绑包安装"
 
@@ -953,25 +954,25 @@ msgstr ""
 "\n"
 "请仅在您信任它的情况下添加此软件源。"
 
-#: src/bz-bundle-install-dialog.blp:412
+#: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "成功安装！"
 
 #. TRANSLATORS: Button to launch an installed app
-#: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526
 #: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "打开"
 
-#: src/bz-bundle-install-dialog.blp:448 src/bz-bundle-install-dialog.blp:534
+#: src/bz-bundle-install-dialog.blp:450 src/bz-bundle-install-dialog.blp:536
 msgid "Show App Details"
 msgstr "显示应用详情"
 
-#: src/bz-bundle-install-dialog.blp:499
+#: src/bz-bundle-install-dialog.blp:501
 msgid "Already Installed"
 msgstr "已经安装"
 
-#: src/bz-bundle-install-dialog.blp:546
+#: src/bz-bundle-install-dialog.blp:548
 msgid "Installation Failed"
 msgstr "安装失败"
 
@@ -1045,26 +1046,29 @@ msgstr "%1$s 应用 ID 的所有权已使用 %2$s 验证。"
 msgid "The ownership of the %s app ID has been verified."
 msgstr "%s 应用 ID 的所有权已通过验证。"
 
-#: src/bz-donations-dialog.blp:7
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:8
 msgid "Bazaar Release"
 msgstr "集市发布"
 
-#: src/bz-donations-dialog.blp:76
+#: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "完整发布说明"
 
-#: src/bz-donations-dialog.blp:111
+#: src/bz-donations-dialog.blp:112
 msgid "This release was made possible by users like you!"
 msgstr "正是因为有了您这样的用户才能有此次发行！"
 
-#: src/bz-donations-dialog.blp:120
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:122
 msgid ""
 "I love making Bazaar, but I cannot do it alone. Help support further "
 "development by donating on Ko-Fi."
 msgstr ""
 "我热爱开发“集市”，但我一个人的力量有限。请考虑在 Ko-Fi 捐助以支持后续开发。"
 
-#: src/bz-donations-dialog.blp:134
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:137
 msgid "Donate to Bazaar"
 msgstr "向集市捐助"
 
@@ -1124,7 +1128,7 @@ msgstr "登录 Flathub 以管理收藏项目"
 msgid "Log In"
 msgstr "登录"
 
-#: src/bz-favorites-page.blp:5 src/bz-window.blp:342
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:350
 msgid "Favorites"
 msgstr "收藏"
 
@@ -1648,29 +1652,29 @@ msgstr "预览商店外观"
 msgid "_Support"
 msgstr "支持(_S)"
 
-#: src/bz-full-view.blp:441
+#: src/bz-full-view.blp:455
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr "此应用使用的运行时已不再接收更新或安全修复。使用它可能存在安全隐患。"
 
-#: src/bz-full-view.blp:519
+#: src/bz-full-view.blp:533
 msgid "Trash Data"
 msgstr "垃圾数据"
 
-#: src/bz-full-view.blp:616
+#: src/bz-full-view.blp:630
 msgid "Add-ons"
 msgstr "附加组件"
 
-#: src/bz-full-view.blp:651
+#: src/bz-full-view.blp:665
 msgid "More Add-Ons"
 msgstr "更多附加组件"
 
-#: src/bz-full-view.blp:662
+#: src/bz-full-view.blp:676
 msgid "Links"
 msgstr "链接"
 
-#: src/bz-full-view.blp:693
+#: src/bz-full-view.blp:707
 msgid "Similar Apps"
 msgstr "相似应用"
 
@@ -1830,7 +1834,7 @@ msgstr "打开(_O)"
 msgid "Uninstall Application"
 msgstr "卸载应用程序"
 
-#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:201
 msgid "_Remove"
 msgstr "移除(_R)"
 
@@ -1928,11 +1932,11 @@ msgid "%u Installed App"
 msgid_plural "%u Installed Apps"
 msgstr[0] "%u 个已安装应用"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:821
+#: src/bz-library-page.c:629 src/bz-search-page.c:820
 msgid "No applications found"
 msgstr "未找到应用程序"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:823
+#: src/bz-library-page.c:629 src/bz-search-page.c:822
 #, c-format
 msgid "One application found"
 msgid_plural "%u applications found"
@@ -1954,11 +1958,11 @@ msgstr "未知许可证"
 msgid "Community Built"
 msgstr "社区构建"
 
-#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:289
+#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:296
 msgid "Proprietary"
 msgstr "专有"
 
-#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:291
+#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:298
 msgid "Special License"
 msgstr "特殊许可证"
 
@@ -2086,7 +2090,7 @@ msgstr "首选项"
 msgid "Network connection is metered — automatic store data refresh is paused"
 msgstr "正在使用数据网络 - 已暂停自动刷新商店数据"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:240 src/bz-window.blp:251
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
 msgid "Refresh Manually"
 msgstr "手动刷新"
 
@@ -2252,7 +2256,8 @@ msgstr "伪娘骄傲色"
 msgid "Neutrois Pride Colors"
 msgstr "中性骄傲色"
 
-#: src/bz-preferences-dialog.c:285
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-preferences-dialog.c:286
 msgid "Bazaar needs to run in the background to check for app updates"
 msgstr "“集市”需要后台运行以检查应用更新"
 
@@ -2358,7 +2363,7 @@ msgid "View Other Permissions"
 msgstr "查看其他权限"
 
 #. TRANSLATORS: short app safety rating label
-#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:402
+#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:409
 msgid "Safe"
 msgstr "安全"
 
@@ -2456,7 +2461,7 @@ msgstr "截图 %u %s"
 msgid "Screenshot %u"
 msgstr "截图 %u"
 
-#: src/bz-search-bar.blp:55
+#: src/bz-search-bar.blp:47 src/bz-search-bar.blp:57
 msgid "Clear Search"
 msgstr "清除搜索"
 
@@ -2512,7 +2517,7 @@ msgstr "使用上方搜索栏搜索应用。"
 msgid "No Applications Found"
 msgstr "未找到应用程序"
 
-#: src/bz-search-page.c:254
+#: src/bz-search-page.c:253
 #, c-format
 msgid "No results found for \"%s\" in Flathub"
 msgstr "在 Flathub 中未找到“%s”的结果"
@@ -2700,48 +2705,48 @@ msgstr "未找到结果"
 msgid "Search failed"
 msgstr "搜索失败"
 
-#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244
-#: src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
-#: src/context-tile-callbacks.c:286
+#: src/bz-transaction-dialog.c:118 src/context-tile-callbacks.c:251
+#: src/context-tile-callbacks.c:256 src/context-tile-callbacks.c:284
+#: src/context-tile-callbacks.c:293
 msgid "Unknown"
 msgstr "未知"
 
-#: src/bz-transaction-dialog.c:145
+#: src/bz-transaction-dialog.c:148
 msgid "Keep User Data"
 msgstr "保留用户数据"
 
-#: src/bz-transaction-dialog.c:146
+#: src/bz-transaction-dialog.c:149
 msgid "Allow restoring personal settings &amp; content"
 msgstr "允许恢复个人设置 &amp; 内容"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:158
 msgid "Delete All Data"
 msgstr "删除所有数据"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:159
 msgid "Permanently erase user data to save space"
 msgstr "永久删除用户数据以节省空间"
 
-#: src/bz-transaction-dialog.c:182
+#: src/bz-transaction-dialog.c:189
 #, c-format
 msgid "Remove %s?"
 msgstr "移除 %s 吗？"
 
-#: src/bz-transaction-dialog.c:185
+#: src/bz-transaction-dialog.c:192
 msgid "Select which version to remove."
 msgstr "选择要移除的版本。"
 
-#: src/bz-transaction-dialog.c:187
+#: src/bz-transaction-dialog.c:194
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "卸载后将无法使用 %s。"
 
-#: src/bz-transaction-dialog.c:210
+#: src/bz-transaction-dialog.c:217
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "“%s”是高风险的"
 
-#: src/bz-transaction-dialog.c:214
+#: src/bz-transaction-dialog.c:221
 msgid ""
 "This app has full access to your system, including all <b>your files, "
 "browser history, saved passwords</b>, and more. It also has access to the "
@@ -2755,7 +2760,7 @@ msgstr ""
 "\n"
 "由于该应用是专有的，其如何利用权限也无法审查。\t"
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:230
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record "
 "all keystrokes, capture screenshots, and monitor other applications</b>. It "
@@ -2771,11 +2776,11 @@ msgstr ""
 "\n"
 "由于该应用是专有的，其如何利用权限也无法审查。"
 
-#: src/bz-transaction-dialog.c:239
+#: src/bz-transaction-dialog.c:246
 msgid "_Install Anyway"
 msgstr "仍然安装(_I)"
 
-#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
+#: src/bz-transaction-dialog.c:300 src/bz-transaction-dialog.c:329
 msgid "Failed to load transaction dialog"
 msgstr "加载事务对话框失败"
 
@@ -2886,103 +2891,108 @@ msgstr "打开用户数据文件夹"
 msgid "Trash User Data"
 msgstr "清除用户数据"
 
-#: src/bz-window.blp:79
+#: src/bz-window.blp:80
 msgid "Refreshing"
 msgstr "正在刷新"
 
-#: src/bz-window.blp:97
+#: src/bz-window.blp:98
 msgid "Curated"
 msgstr "精选"
 
-#: src/bz-window.blp:109
+#: src/bz-window.blp:110
 msgid "Explore"
 msgstr "探索"
 
 #. Translators: .
-#: src/bz-window.blp:121
+#: src/bz-window.blp:122
 msgid "Library"
 msgstr "软件库"
 
-#: src/bz-window.blp:136
+#: src/bz-window.blp:137
 msgid "Search"
 msgstr "搜索"
 
-#: src/bz-window.blp:220
+#: src/bz-window.blp:223
 msgid "Main Menu"
 msgstr "主菜单"
 
-#: src/bz-window.blp:231
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:235
 msgid "You are running a new version of Bazaar!"
 msgstr "您正在运行新版本的“集市”！"
 
-#: src/bz-window.blp:232
+#: src/bz-window.blp:236
 msgid "See What's New"
 msgstr "查看新特性"
 
-#: src/bz-window.blp:239
+#: src/bz-window.blp:243
 msgid ""
 "You have a network connection but are viewing a cached version of Flathub"
 msgstr "您已连接网络，但正在查看 Flathub 的缓存版本"
 
-#: src/bz-window.blp:250
+#: src/bz-window.blp:254
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "正在使用数据网络 — 已禁用自动刷新"
 
-#: src/bz-window.blp:286
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:291
 msgid "_Donate to Bazaar"
 msgstr "向集市捐助(_D)"
 
-#: src/bz-window.blp:292
+#: src/bz-window.blp:297
 msgid "_Refresh"
 msgstr "刷新(_R)"
 
-#: src/bz-window.blp:296
+#: src/bz-window.blp:301
 msgid "_Login With Flathub"
 msgstr "用 Flathub 登录(_L)"
 
-#: src/bz-window.blp:302
+#: src/bz-window.blp:307
 msgid "_Manage Leftover User Data"
 msgstr "管理遗留用户数据(_M)"
 
-#: src/bz-window.blp:308
+#: src/bz-window.blp:313
 msgid "_Preferences"
 msgstr "首选项(_P)"
 
-#: src/bz-window.blp:313
+#: src/bz-window.blp:318
 msgid "_Keyboard Shortcuts"
 msgstr "键盘快捷键(_K)"
 
-#: src/bz-window.blp:318
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:324
 msgid "_About Bazaar"
 msgstr "关于集市(_A)"
 
-#: src/bz-window.blp:324
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:331
 msgid "_Quit Bazaar"
 msgstr "退出集市(_Q)"
 
-#: src/bz-window.blp:349
+#: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "登出"
 
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:380
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
+#: src/bz-window.c:381
 #, c-format
 msgid "Bazaar — %s"
 msgstr "集市 — %s"
 
-#: src/bz-window.c:660 src/bz-window.c:698
+#: src/bz-window.c:661 src/bz-window.c:699
 msgid "Failed to launch application"
 msgstr "启动应用程序失败"
 
-#: src/bz-window.c:777
+#: src/bz-window.c:778
 msgid "Could not open link"
 msgstr "无法打开链接"
 
-#: src/bz-window.c:985
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.c:987
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "您无法从“集市”移除“集市”！"
 
-#: src/bz-window.c:1369 src/bz-window.c:1403
+#: src/bz-window.c:1371 src/bz-window.c:1405
 msgid "Can't do that right now!"
 msgstr "无法立刻那么做！"
 
@@ -3008,92 +3018,97 @@ msgid "%d downloads in the last month"
 msgstr "过去 30 天内下载 %d 次"
 
 #. TRANSLATORS: %s is a formatted file size, for example: "128 MB"
-#: src/context-tile-callbacks.c:133
+#: src/context-tile-callbacks.c:139
 #, c-format
 msgid "+%s Runtime"
 msgstr "+%s 运行时"
 
-#: src/context-tile-callbacks.c:136
+#: src/context-tile-callbacks.c:142
 msgid "Download"
 msgstr "下载"
 
-#: src/context-tile-callbacks.c:156
+#: src/context-tile-callbacks.c:151 src/context-tile-callbacks.c:163
 msgid "Size information unavailable"
 msgstr "大小信息不可用"
 
-#: src/context-tile-callbacks.c:159
+#: src/context-tile-callbacks.c:154
 #, c-format
 msgid "Download size of %s"
 msgstr "%s 的下载大小"
 
-#: src/context-tile-callbacks.c:192
+#: src/context-tile-callbacks.c:166
+#, c-format
+msgid "Installed size of %s"
+msgstr "%s 的安装大小"
+
+#: src/context-tile-callbacks.c:199
 msgid "All Ages"
 msgstr "全年龄"
 
-#: src/context-tile-callbacks.c:204
+#: src/context-tile-callbacks.c:211
 msgid "Age rating information unavailable"
 msgstr "年龄分级信息不可用"
 
-#: src/context-tile-callbacks.c:209
+#: src/context-tile-callbacks.c:216
 msgid "Suitable for all ages"
 msgstr "适合全年龄段"
 
-#: src/context-tile-callbacks.c:211
+#: src/context-tile-callbacks.c:218
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "适合年龄为 %d 岁及以上"
 
-#: src/context-tile-callbacks.c:254
+#: src/context-tile-callbacks.c:261
 #, c-format
 msgid "Free software licensed under %s"
 msgstr "在 %s 下许可的自由软件"
 
-#: src/context-tile-callbacks.c:259
+#: src/context-tile-callbacks.c:266
 msgid "Free software"
 msgstr "自由软件"
 
-#: src/context-tile-callbacks.c:262
+#: src/context-tile-callbacks.c:269
 msgid "Proprietary Software"
 msgstr "专有软件"
 
-#: src/context-tile-callbacks.c:265
+#: src/context-tile-callbacks.c:272
 #, c-format
 msgid "Special License: %s"
 msgstr "特殊许可证：%s"
 
 #. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
-#: src/context-tile-callbacks.c:283
+#: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "自由软件"
 
-#: src/context-tile-callbacks.c:311
+#: src/context-tile-callbacks.c:318
 msgid "Adaptive"
 msgstr "自适应"
 
-#: src/context-tile-callbacks.c:311
+#: src/context-tile-callbacks.c:318
 msgid "Desktop Only"
 msgstr "仅桌面端"
 
-#: src/context-tile-callbacks.c:317
+#: src/context-tile-callbacks.c:324
 msgid "Works on desktop, tablets, and phones"
 msgstr "适用于桌面、平板和手机"
 
-#: src/context-tile-callbacks.c:318
+#: src/context-tile-callbacks.c:325
 msgid "May not work on mobile devices"
 msgstr "可能无法在移动设备上使用"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:405 src/context-tile-callbacks.c:408
+#: src/context-tile-callbacks.c:412 src/context-tile-callbacks.c:415
 msgid "Low Risk"
 msgstr "低风险"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:411
+#: src/context-tile-callbacks.c:418
 msgid "Medium Risk"
 msgstr "中风险"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:414
+#: src/context-tile-callbacks.c:421
 msgid "High Risk"
 msgstr "高风险"
 
