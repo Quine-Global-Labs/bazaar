@@ -250,8 +250,7 @@ no_results_found_subtitle (gpointer    object,
 {
   if (search_text == NULL || *search_text == '\0')
     return g_strdup ("");
-
-  return g_strdup_printf (_ ("No results found for \"%s\" in Flathub"), search_text);
+  return g_markup_printf_escaped (_ ("No results found for \"%s\" in Flathub"), search_text);
 }
 
 static void
