@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-06 20:39+0000\n"
-"PO-Revision-Date: 2026-09-07 07:11+0200\n"
+"POT-Creation-Date: 2026-09-08 21:02+0000\n"
+"PO-Revision-Date: 2026-09-10 06:45+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "Language: ka\n"
@@ -129,11 +129,11 @@ msgstr "თქვენი მიმდინარე ფილტრის პ
 msgid "Add-on Page"
 msgstr "დამატების გვერდი"
 
-#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:392
+#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:406
 msgid "Downloads/Month"
 msgstr "გადმოწერა/თვე"
 
-#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:427
+#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:441
 msgid "Stopped Receiving Core Updates"
 msgstr "ძირითადი განახლებების მიღება გაჩერდა"
 
@@ -144,7 +144,7 @@ msgstr ""
 "ეს დამატება იყენებს ბიბლიოთეკას, რომელიც აღარ იღებს განახლებებს და უსაფრთხოების პაჩებს. ის, შეიძლება "
 "სახიფათო გახდეს გამოსაყენებლად."
 
-#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:602
 msgid "Other Sources"
 msgstr "სხვა წყაროები"
 
@@ -166,7 +166,7 @@ msgid "Download Stats"
 msgstr "გადმოწერის სტატისტიკა"
 
 #: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31 src/bz-age-rating-dialog.c:737
-#: src/context-tile-callbacks.c:187 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:194 src/context-tile-callbacks.c:201
 msgid "Age Rating"
 msgstr "ასაკის რეიტინგი"
 
@@ -485,7 +485,7 @@ msgid "Violence"
 msgstr "ძალადობა"
 
 #. Translators: Age rating format, e.g. "12+" for ages 12 and up
-#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:177
+#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:184
 #, c-format
 msgid "%d+"
 msgstr "%d+"
@@ -710,7 +710,7 @@ msgid "Runtime Download Size"
 msgstr "გაშვების გარემოს გადმოსაწერი ზომა"
 
 #: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:185 src/context-tile-callbacks.c:104
-#: src/context-tile-callbacks.c:394 src/context-tile-callbacks.c:416
+#: src/context-tile-callbacks.c:401 src/context-tile-callbacks.c:423
 msgid "N/A"
 msgstr "ა/მ"
 
@@ -723,7 +723,7 @@ msgid "Verified"
 msgstr "დამოწმებულია"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-app-tile.blp:87 src/bz-releases-list.c:204 src/context-tile-callbacks.c:136
+#: src/bz-app-tile.blp:87 src/bz-full-view.blp:282 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "დაყენებულია"
 
@@ -908,7 +908,7 @@ msgstr "მოხდება %d დამატების დაყენე�
 msgid "Additionally, addons will be installed."
 msgstr "დამატებით მოხდება დამატებების დაყენება."
 
-#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193 src/bz-transaction-dialog.c:238
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:200 src/bz-transaction-dialog.c:245
 msgid "_Cancel"
 msgstr "გაუ_ქმება"
 
@@ -916,7 +916,7 @@ msgstr "გაუ_ქმება"
 msgid "_Install All"
 msgstr "_ყველას დაყენება"
 
-#: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
+#: src/bz-bundle-install-dialog.blp:20 src/bz-bundle-install-dialog.blp:26
 msgid "Bundle Installation"
 msgstr "პაკეტის დაყენება"
 
@@ -936,25 +936,25 @@ msgstr ""
 "\n"
 "დაამატეთ წყარო, მხოლოდ, მაშინ, თუ მას ენდობით."
 
-#: src/bz-bundle-install-dialog.blp:412
+#: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "დაყენება წარმატებულია!"
 
 #. TRANSLATORS: Button to launch an installed app
-#: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524 src/bz-rich-app-tile.blp:200
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526 src/bz-rich-app-tile.blp:200
 #: src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "გახსნა"
 
-#: src/bz-bundle-install-dialog.blp:448 src/bz-bundle-install-dialog.blp:534
+#: src/bz-bundle-install-dialog.blp:450 src/bz-bundle-install-dialog.blp:536
 msgid "Show App Details"
 msgstr "აპის დეტალების ჩვენება"
 
-#: src/bz-bundle-install-dialog.blp:499
+#: src/bz-bundle-install-dialog.blp:501
 msgid "Already Installed"
 msgstr "უკვე დაყენებულია"
 
-#: src/bz-bundle-install-dialog.blp:546
+#: src/bz-bundle-install-dialog.blp:548
 msgid "Installation Failed"
 msgstr "დაყენების შეცდომა"
 
@@ -1617,29 +1617,29 @@ msgstr "მაღაზიის გარეგნობის გადახ�
 msgid "_Support"
 msgstr "მხარდა_ჭერა"
 
-#: src/bz-full-view.blp:441
+#: src/bz-full-view.blp:455
 msgid "This app uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
 msgstr ""
 "ეს აპი იყენებს ბიბლიოთეკას, რომელიც აღარ იღებს განახლებებს და უსაფრთხოების პაჩებს. ის, შეიძლება სახიფათო "
 "გახდეს გამოსაყენებლად."
 
-#: src/bz-full-view.blp:519
+#: src/bz-full-view.blp:533
 msgid "Trash Data"
 msgstr "გადატანა ნაგვის ყუთში"
 
-#: src/bz-full-view.blp:616
+#: src/bz-full-view.blp:630
 msgid "Add-ons"
 msgstr "დამატებები"
 
-#: src/bz-full-view.blp:651
+#: src/bz-full-view.blp:665
 msgid "More Add-Ons"
 msgstr "მეტი დამატება"
 
-#: src/bz-full-view.blp:662
+#: src/bz-full-view.blp:676
 msgid "Links"
 msgstr "ბმულები"
 
-#: src/bz-full-view.blp:693
+#: src/bz-full-view.blp:707
 msgid "Similar Apps"
 msgstr "მსგავსი პროგრამები"
 
@@ -1799,7 +1799,7 @@ msgstr "_გახსნა"
 msgid "Uninstall Application"
 msgstr "აპლიკაციის წაშლა"
 
-#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:201
 msgid "_Remove"
 msgstr "_წაშლა"
 
@@ -1898,11 +1898,11 @@ msgid_plural "%u Installed Apps"
 msgstr[0] "%u დაყენებული აპლიკაცია"
 msgstr[1] "%u დაყენებული აპლიკაცია"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:821
+#: src/bz-library-page.c:629 src/bz-search-page.c:820
 msgid "No applications found"
 msgstr "აპლიკაციები ნაპოვნი არაა"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:823
+#: src/bz-library-page.c:629 src/bz-search-page.c:822
 #, c-format
 msgid "One application found"
 msgid_plural "%u applications found"
@@ -1925,11 +1925,11 @@ msgstr "უცნობი ლიცენზია"
 msgid "Community Built"
 msgstr "საზოგადოების მიერ აგებული"
 
-#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:289
+#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:296
 msgid "Proprietary"
 msgstr "დახურული კოდი"
 
-#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:291
+#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:298
 msgid "Special License"
 msgstr "სპეციალური ლიცენზია"
 
@@ -2327,7 +2327,7 @@ msgid "View Other Permissions"
 msgstr "სხვა ნებართვების ნახვა"
 
 #. TRANSLATORS: short app safety rating label
-#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:402
+#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:409
 msgid "Safe"
 msgstr "უსაფრთხო"
 
@@ -2482,7 +2482,7 @@ msgstr "მოძებნეთ აპები ზემორე ძებნ
 msgid "No Applications Found"
 msgstr "აპლიკაციები ნაპოვნი არაა"
 
-#: src/bz-search-page.c:254
+#: src/bz-search-page.c:253
 #, c-format
 msgid "No results found for \"%s\" in Flathub"
 msgstr "Flathub-ზე \"%s\"-ის ძებნას შედეგები არ აქვს"
@@ -2670,47 +2670,47 @@ msgstr "შედეგების გარეშე"
 msgid "Search failed"
 msgstr "ძებნის შეცდომა"
 
-#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244 src/context-tile-callbacks.c:249
-#: src/context-tile-callbacks.c:277 src/context-tile-callbacks.c:286
+#: src/bz-transaction-dialog.c:118 src/context-tile-callbacks.c:251 src/context-tile-callbacks.c:256
+#: src/context-tile-callbacks.c:284 src/context-tile-callbacks.c:293
 msgid "Unknown"
 msgstr "უცნობი"
 
-#: src/bz-transaction-dialog.c:145
+#: src/bz-transaction-dialog.c:148
 msgid "Keep User Data"
 msgstr "მომხმარებლის მონაცემების შენარჩუნება"
 
-#: src/bz-transaction-dialog.c:146
+#: src/bz-transaction-dialog.c:149
 msgid "Allow restoring personal settings &amp; content"
 msgstr "პირადი პარამეტრების და შემცველობის აღდგენის დაშვება"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:158
 msgid "Delete All Data"
 msgstr "ყველა მონაცემის წაშლა"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:159
 msgid "Permanently erase user data to save space"
 msgstr "მომხმარებლის მონაცემების სამუდამოდ წაშლა ადგილის დასაზოგად"
 
-#: src/bz-transaction-dialog.c:182
+#: src/bz-transaction-dialog.c:189
 #, c-format
 msgid "Remove %s?"
 msgstr "წავშალო %s?"
 
-#: src/bz-transaction-dialog.c:185
+#: src/bz-transaction-dialog.c:192
 msgid "Select which version to remove."
 msgstr "აირჩიეთ წასაშლელი ვერსია."
 
-#: src/bz-transaction-dialog.c:187
+#: src/bz-transaction-dialog.c:194
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "%s-ის გამოყენება შეუძლებელია მისი წაშლის შემდეგ."
 
-#: src/bz-transaction-dialog.c:210
+#: src/bz-transaction-dialog.c:217
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "“%s” მაღალი რისკითაა"
 
-#: src/bz-transaction-dialog.c:214
+#: src/bz-transaction-dialog.c:221
 msgid ""
 "This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, "
 "and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
@@ -2724,7 +2724,7 @@ msgstr ""
 "იმის გამო, რომ აპლიკაცია დახურული კოდითაა, მისი აუდიტი შეუძლებელია იმის შესახებ, თუ რას აკეთებს ის ამ "
 "ნებართვებით."
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:230
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture "
 "screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send "
@@ -2739,11 +2739,11 @@ msgstr ""
 "იმის გამო, რომ აპლიკაცია დახურული კოდითაა, შეუძლებელია მისი აუდიტი იმის შესახებ, თუ რას აკეთებს ის ამ "
 "ნებართვებით."
 
-#: src/bz-transaction-dialog.c:239
+#: src/bz-transaction-dialog.c:246
 msgid "_Install Anyway"
 msgstr "მა_ინც დაყენება"
 
-#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
+#: src/bz-transaction-dialog.c:300 src/bz-transaction-dialog.c:329
 msgid "Failed to load transaction dialog"
 msgstr "ტრანზაქციის დიალოგის ჩატვირთვა ჩავარდა"
 
@@ -2982,92 +2982,97 @@ msgid "%d downloads in the last month"
 msgstr "%d გადმოწერა გასულ თვეში"
 
 #. TRANSLATORS: %s is a formatted file size, for example: "128 MB"
-#: src/context-tile-callbacks.c:133
+#: src/context-tile-callbacks.c:139
 #, c-format
 msgid "+%s Runtime"
 msgstr "+%s გაშვების გარემო"
 
-#: src/context-tile-callbacks.c:136
+#: src/context-tile-callbacks.c:142
 msgid "Download"
 msgstr "გადმოწერა"
 
-#: src/context-tile-callbacks.c:156
+#: src/context-tile-callbacks.c:151 src/context-tile-callbacks.c:163
 msgid "Size information unavailable"
 msgstr "ინფორმაცია ზომის შესახებ ხელმიუწვდომელია"
 
-#: src/context-tile-callbacks.c:159
+#: src/context-tile-callbacks.c:154
 #, c-format
 msgid "Download size of %s"
 msgstr "%s-ის გადმოსაწერი ზომა"
 
-#: src/context-tile-callbacks.c:192
+#: src/context-tile-callbacks.c:166
+#, c-format
+msgid "Installed size of %s"
+msgstr "%s-ის დაყენებული ზომა"
+
+#: src/context-tile-callbacks.c:199
 msgid "All Ages"
 msgstr "ყველა ასაკი"
 
-#: src/context-tile-callbacks.c:204
+#: src/context-tile-callbacks.c:211
 msgid "Age rating information unavailable"
 msgstr "ასაკის რეიტინგის ინფორმაცია ხელმისაწვდომი არაა"
 
-#: src/context-tile-callbacks.c:209
+#: src/context-tile-callbacks.c:216
 msgid "Suitable for all ages"
 msgstr "ვარგისია ყველა ასაკისთვის"
 
-#: src/context-tile-callbacks.c:211
+#: src/context-tile-callbacks.c:218
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "ვარგისია %d და უფროსი ასაკისთვის"
 
-#: src/context-tile-callbacks.c:254
+#: src/context-tile-callbacks.c:261
 #, c-format
 msgid "Free software licensed under %s"
 msgstr "უფასო პროგრამული უზრუნველყოფა ლიცენზირებული %s-ით"
 
-#: src/context-tile-callbacks.c:259
+#: src/context-tile-callbacks.c:266
 msgid "Free software"
 msgstr "უფასო პროგრამული უზრუნველყოფა"
 
-#: src/context-tile-callbacks.c:262
+#: src/context-tile-callbacks.c:269
 msgid "Proprietary Software"
 msgstr "საკუთრების პროგრამული უზრუნველყოფა"
 
-#: src/context-tile-callbacks.c:265
+#: src/context-tile-callbacks.c:272
 #, c-format
 msgid "Special License: %s"
 msgstr "სპეციალური ლიცენზია: %s"
 
 #. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
-#: src/context-tile-callbacks.c:283
+#: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "თავისუფალი პროგრამული უზრუნველყოფა"
 
-#: src/context-tile-callbacks.c:311
+#: src/context-tile-callbacks.c:318
 msgid "Adaptive"
 msgstr "შეგუებადი"
 
-#: src/context-tile-callbacks.c:311
+#: src/context-tile-callbacks.c:318
 msgid "Desktop Only"
 msgstr "მხოლოდ სამუშაო მაგიდა"
 
-#: src/context-tile-callbacks.c:317
+#: src/context-tile-callbacks.c:324
 msgid "Works on desktop, tablets, and phones"
 msgstr "მუშაობს კომპიუტერებზე, ტაბლეტებზე და ტელეფონებზე"
 
-#: src/context-tile-callbacks.c:318
+#: src/context-tile-callbacks.c:325
 msgid "May not work on mobile devices"
 msgstr "შეიძლება, არ იმუშაოს მობილურ მოწყობილობებზე"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:405 src/context-tile-callbacks.c:408
+#: src/context-tile-callbacks.c:412 src/context-tile-callbacks.c:415
 msgid "Low Risk"
 msgstr "დაბალი რისკი"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:411
+#: src/context-tile-callbacks.c:418
 msgid "Medium Risk"
 msgstr "საშუალო რისკი"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:414
+#: src/context-tile-callbacks.c:421
 msgid "High Risk"
 msgstr "მაღალი რისკი"
 
