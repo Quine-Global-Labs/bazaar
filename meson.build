@@ -128,6 +128,7 @@ else
     if get_option('sandboxed_libflatpak')
       config_h.set_quoted('SANDBOXED_LIBFLATPAK', '1')
     endif
+    config_h.set_quoted('COSMIC_APPLET_REMOTE_NAME', get_option('cosmic_applet_remote_name'))
 
     if get_option('development')
       config_h.set10('DEVELOPMENT_BUILD', get_option('development'))

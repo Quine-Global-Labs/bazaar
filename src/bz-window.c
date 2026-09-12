@@ -22,6 +22,7 @@
 #include "config.h"
 
 #include <glib/gi18n.h>
+#include <bzvala.h>
 
 #include "bz-addons-dialog.h"
 #include "bz-application.h"
@@ -672,6 +673,17 @@ launch_group_fiber (BzEntryGroup *group)
 
       if (!BZ_IS_FLATPAK_ENTRY (entry) || !bz_entry_is_installed (entry))
         continue;
+
+      {
+        const char *remote_repo_name = NULL;
+
+        remote_repo_name = bz_entry_get_remote_repo_name (entry);
+        if (g_strcmp0 (remote_repo_name, COSMIC_APPLET_REMOTE_NAME) == 0)
+          {
+            adw_dialog_present (ADW_DIALOG (bz_cosmic_place_applet_dialog_new ()), window);
+            return dex_future_new_false ();
+          }
+      }
 
       ref = bz_flatpak_entry_get_addon_extension_of_ref (BZ_FLATPAK_ENTRY (entry));
       if (ref != NULL)
