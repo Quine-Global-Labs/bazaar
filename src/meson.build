@@ -404,21 +404,28 @@ vala_deps = [
 vala_sources = files(
   'bz.vapi',
 
+  'bz-cosmic-place-applet-dialog.vala',
   'bz-decorated-screenshot.vala',
   'bz-themed-rect.vala',
   'bz-flathub-curated-section.vala',
   'bz-other-sources-list.vala',
 )
 
+vala_args = [
+  '--gresources=' + meson.current_source_dir() / 'bazaar.gresource.xml',
+  '--gresourcesdir=' + meson.current_build_dir(),
+]
+
+if get_option('sandboxed_libflatpak')
+  vala_args += ['--define=SANDBOXED_LIBFLATPAK']
+endif
+
 bz_vala_static = static_library(
   'bzvala', vala_sources,
   sources: [bz_resources],
   dependencies: vala_deps,
   vala_header: 'bzvala.h',
-  vala_args: [
-    '--gresources=' + meson.current_source_dir() / 'bazaar.gresource.xml',
-    '--gresourcesdir=' + meson.current_build_dir(),
-  ],
+  vala_args: vala_args,
   c_args: [
     '-DGETTEXT_PACKAGE="' + meson.project_name() + '"',
   ],

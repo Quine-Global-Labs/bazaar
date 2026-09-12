@@ -1869,6 +1869,7 @@ retrieve_refs_for_remote_fiber (RetrieveRefsForRemoteData *data)
   g_autoptr (BzFlatpakInstance) self = NULL;
   const char *remote_name            = NULL;
   gboolean    is_noenumerate         = FALSE;
+  gboolean    is_whitelisted_user    = FALSE;
   g_autoptr (DexFuture) ret          = NULL;
 
   bz_weak_get_or_return_reject (self, data->parent->self);
@@ -1880,8 +1881,15 @@ retrieve_refs_for_remote_fiber (RetrieveRefsForRemoteData *data)
   if (strstr (remote_name, "fedora") != NULL)
     is_noenumerate = TRUE;
 
+  /* Allowing this makes it possible for COSMIC users to install
+   * their applets as no system remote is available for that
+   * this remote also doesn't use extra data.
+   */
+  is_whitelisted_user = g_strcmp0 (remote_name, COSMIC_APPLET_REMOTE_NAME) == 0;
+
 #ifdef SANDBOXED_LIBFLATPAK
-  if (is_noenumerate || installation == self->user)
+  if (is_noenumerate ||
+     (installation == self->user && !is_whitelisted_user))
 #else
   if (is_noenumerate)
 #endif

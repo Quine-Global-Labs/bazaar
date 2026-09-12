@@ -28,6 +28,11 @@ option('sandboxed_libflatpak',
        value: false,
        description: 'Whether to treat libflatpak as being sandboxed or not')
 
+option('cosmic_applet_remote_name',
+       type: 'string',
+       value: 'cosmic',
+       description: 'Name of the Flatpak remote whose apps are treated as COSMIC applets')
+
 option('development',
         type: 'boolean',
         value: false,
