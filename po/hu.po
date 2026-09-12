@@ -1,934 +1,2031 @@
-# Hungarian translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
+# Hungarian translation for bazaar.
+# Copyright (C) 2025, 2026 Free Software Foundation, Inc.
 # This file is distributed under the same license as the bazaar package.
-# Automatically generated, 2025.
-# Benedek Dévényi <rdbende@proton.me>, 2025.
 #
+# Benedek Dévényi <rdbende@proton.me>, 2025.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-31 23:45+0100\n"
-"PO-Revision-Date: 2025-11-02 20:12+0100\n"
-"Last-Translator: Benedek Dévényi <rdbende@proton.me>\n"
-"Language-Team: Hungarian\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"POT-Creation-Date: 2026-09-08 21:02+0000\n"
+"PO-Revision-Date: 2026-09-12 19:25+0200\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
+"Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 49.0\n"
+"X-Generator: Lokalize 25.12.3\n"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:2
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:5
-#: src/bz-window.blp:56
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: src/bz-window.blp:211 src/bz-window.c:378 src/bz-window.c:379
 msgid "Bazaar"
 msgstr "Bazár"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.desktop.in:4
+msgid "App Store"
+msgstr "Alkalmazásbolt"
+
+#: data/io.github.kolunmi.Bazaar.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
-msgstr "Flatpak alkalmazások telepítése, eltávolítása és frissítése"
-
-#: data/io.github.kolunmi.Bazaar.desktop.in:9
-msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
-msgstr "GTK;System;PackageManager;Discover;Flatpak;Software;Store;rendszer;csomagkezelő;felfedezés;szoftver;áruház;bolt;"
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:6
-msgid "Show Git Forge Star Counts"
 msgstr ""
+"Flatpak szoftverek telepítése, eltávolítása és frissítése ezen a számítógépen"
 
-#: data/io.github.kolunmi.Bazaar.gschema.xml:7
-msgid ""
-"Whether to attempt to detect and show \"star counts\" for projects in the "
-"full view"
-msgstr ""
+#: data/io.github.kolunmi.Bazaar.desktop.in:11
+msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
+msgstr "Rendszer;Csomag;Kezelő;Felfedezés;Flatpak;Szoftver;Alkalmazás;Áruház;Bolt;"
 
-#: data/io.github.kolunmi.Bazaar.gschema.xml:11
-msgid "Only Show Free Software"
-msgstr ""
+#: data/io.github.kolunmi.Bazaar.desktop.in:18
+msgid "New Window"
+msgstr "Új ablak"
 
-#: data/io.github.kolunmi.Bazaar.gschema.xml:12
-msgid "Hide proprietary software when searching"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:16
-msgid "Show Only Flathub Content"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:17
-msgid "Filter search results to only show applications available on Flathub"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:21
-msgid "Debounce Search Inputs"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:22
-msgid "Add a delay before searching to prevent instant replies while typing"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:40
-msgid "Global Progress Bar Theme"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:41
-msgid "Describes the look of the global progress bar"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:45
-msgid "Saved Window Dimensions"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.gschema.xml:46
-msgid "The window dimensions to be used by the next Bazaar window"
-msgstr ""
-
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
-msgid "Discover and install applications"
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
+msgid "Discover and install apps"
 msgstr "Alkalmazások felfedezése és telepítése"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:10
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
 msgid ""
-"A new app store for GNOME with a focus on discovering and installing "
-"applications and addons from Flatpak remotes, particularly Flathub."
+"A fast and modern app store for Linux with a focus on discovering and "
+"installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
-"Egy új alkalmazásbolt GNOME-ra, amelynek fókuszában a Flatpak adattárakból, "
-"kifejezetten a Flathubról származó alkalmazások és kiegészítők felfedezése "
+"Gyors és modern alkalmazásbolt Linuxhoz, amelynek középpontjában a Flatpak-"
+"alkalmazások és kiegészítők – különösen a Flathubról származók – felfedezése "
 "és telepítése áll."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:14
-msgid ""
-"It emphasizes supporting the developers who make the Linux desktop possible. "
-"Bazaar features a \"curated\" tab that can be configured by distributors to "
-"allow for a more localized experience."
-msgstr ""
-"Hangsúlyozza a Linuxos asztali rendszereket létrehozó fejlesztők "
-"támogatását. A Bazár egy „válogatott” füllel is rendelkezik, amelyet a "
-"disztrók konfigurálhatnak, hogy lokalizáltabb élményt nyújtsanak."
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+msgid "Queue multiple installs and keep browsing"
+msgstr "Több telepítés sorba állítása és a böngészés folytatása"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:29 src/bz-application.c:506
-msgid "Adam Masciola"
-msgstr "Adam Masciola"
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+msgid "Easily view app permissions"
+msgstr "Alkalmazásjogosultságok egyszerű megtekintése"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:54
-msgid "The home view displaying Flathub apps"
-msgstr "A kezdőképernyő Flathub alkalmazásokkal"
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+msgid "Sign in to Flathub to view and manage your favorites"
+msgstr "Jelentkezzen be a Flathubba a kedvencei megtekintéséhez és kezeléséhez"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:58
-msgid "Nucleus app page"
-msgstr "Alkalmazásoldal a Nucleus alkalmazással"
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
+msgid "Search apps directly from GNOME Shell"
+msgstr "Alkalmazások keresése közvetlenül a GNOME Shellből"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:62
-msgid "Searching for Blender"
-msgstr "Keresés a Blenderre"
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:754
+msgid "The Bazaar Contributors"
+msgstr "A Bazár közreműködői"
 
-#: src/bz-addons-dialog.blp:14 src/bz-full-view.blp:527
-#: src/bz-installed-page.blp:132
-msgid "Manage Add-ons"
-msgstr "Kiegészítők kezelése"
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
+msgid "The home page displaying Flathub apps"
+msgstr "A Flathub-alkalmazásokat megjelenítő kezdőlap"
 
-#: src/bz-addons-dialog.c:88 src/bz-installed-page.blp:158
-#: src/bz-transaction-view.blp:212 src/bz-window.c:1125
-msgid "Remove"
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
+msgid "App page for Exhibit"
+msgstr "Az Exhibit alkalmazásoldala"
+
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
+msgid "Library page"
+msgstr "Gyűjtemény oldal"
+
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
+msgid "Search page"
+msgstr "Keresés oldal"
+
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
+msgid "Category page"
+msgstr "Kategória oldal"
+
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54
+#: src/bz-rich-app-tile.blp:143
+msgid "Stopped Receiving Updates"
+msgstr "Nem kap több frissítést"
+
+#: src/bz-addon-tile.c:168 src/bz-favorites-tile.c:155
+msgctxt "Install Controls"
+msgid "Uninstall"
 msgstr "Eltávolítás"
 
-#: src/bz-addons-dialog.c:95 src/bz-full-view.blp:244
-#: src/bz-transaction-view.blp:186 src/bz-window.c:1103
+#: src/bz-addon-tile.c:170 src/bz-bundle-install-dialog.blp:148
+#: src/bz-bundle-install-dialog.blp:162 src/bz-favorites-tile.c:157
+#: src/bz-install-controls.wdgt:29
+msgctxt "Install Controls"
 msgid "Install"
 msgstr "Telepítés"
 
-#: src/bz-app-size-dialog.c:55
-msgid "Of the size of human DNA"
-msgstr "Az emberi DNS méretéhez képest"
+#: src/bz-addons-dialog.blp:7
+msgid "Add-on"
+msgstr "Kiegészítő"
 
-#: src/bz-app-size-dialog.c:55
-msgid "3 billion base pairs"
-msgstr "3 milliárd bázispár"
+#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
+msgid "Manage Add-Ons"
+msgstr "Kiegészítők kezelése"
 
-#: src/bz-app-size-dialog.c:56
-msgid "Of the Linux Kernel"
-msgstr "A Linux Kernelhez képest"
+#: src/bz-addons-dialog.blp:81
+msgid "No Add-Ons Visible"
+msgstr "Nincsenek látható kiegészítők"
 
-#: src/bz-app-size-dialog.c:56
-msgid "linux-6.17.tar.xz"
-msgstr "linux-6.17.tar.xz"
-
-#: src/bz-app-size-dialog.c:57
-msgid "Of the Apollo 11 guidance computer"
-msgstr "Az Apollo 11 irányító számítógépéhez képest"
-
-#: src/bz-app-size-dialog.c:57
-msgid "Total ROM and RAM"
-msgstr "A teljes ROM és RAM"
-
-#: src/bz-app-size-dialog.c:58
-msgid "Of the original Super Mario Bros"
-msgstr "Az eredeti Super Mario Bros méretéhez képest"
-
-#: src/bz-app-size-dialog.c:58
-msgid "On the NES"
-msgstr "A NES-en"
-
-#: src/bz-app-size-dialog.c:59
-msgid "Of the size of Wikipedia"
-msgstr "A Wikipédia méretéhez képest"
-
-#: src/bz-app-size-dialog.c:59
-msgid "Without any media"
-msgstr "Minden média nélkül"
-
-#: src/bz-app-size-dialog.blp:43
-msgid "--- MB"
-msgstr "--- MB"
-
-#: src/bz-app-size-dialog.blp:53
-msgid "Download Size"
-msgstr "Letöltési méret"
-
-#: src/bz-application.c:401
+#: src/bz-addons-dialog.blp:82
 msgid ""
-"This functionality is currently disabled. It is recommended you download and "
-"install Flatseal to manage app permissions."
+"Your current filter preferences are hiding all known add-ons. Try adjusting "
+"them."
 msgstr ""
-"Ez a funkció jelenleg nem elérhető. Javasoljuk, hogy telepítsd a Flatseal "
-"alkalmazást az alkalmazások engedélyeinek kezeléséhez."
-
-#: src/bz-application.c:465
-msgctxt "About Dialog Developer Credit"
-msgid "Adam Masciola <kolunmi@posteo.net>"
-msgstr "Adam Masciola <kolunmi@posteo.net>"
-
-#: src/bz-application.c:466
-msgctxt "About Dialog Developer Credit"
-msgid "Alexander Vanhee"
-msgstr "Alexander Vanhee"
-
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:481
-msgid "translator-credits"
-msgstr "Benedek Dévényi <rdbende@proton.me>, 2025"
-
-#: src/bz-application.c:471
-msgctxt "About Dialog Translator Credit"
-msgid "Ahmed Najmawi"
-msgstr "Ahmed Najmawi"
-
-#: src/bz-application.c:472
-msgctxt "About Dialog Translator Credit"
-msgid "AtomHare"
-msgstr "AtomHare"
-
-#: src/bz-application.c:473
-msgctxt "About Dialog Translator Credit"
-msgid "Azenyr"
-msgstr "Azenyr"
-
-#: src/bz-application.c:474
-msgctxt "About Dialog Translator Credit"
-msgid "Goudarz Jafari"
-msgstr "Goudarz Jafari"
-
-#: src/bz-application.c:475
-msgctxt "About Dialog Translator Credit"
-msgid "Jill Fiore (Lumaeris)"
-msgstr "Jill Fiore (Lumaeris)"
-
-#: src/bz-application.c:476
-msgctxt "About Dialog Translator Credit"
-msgid "João Victor (Leal)"
-msgstr "João Victor (Leal)"
-
-#: src/bz-application.c:477
-msgctxt "About Dialog Translator Credit"
-msgid "KiKaraage"
-msgstr "KiKaraage"
-
-#: src/bz-application.c:478
-msgctxt "About Dialog Translator Credit"
-msgid "Lucosec"
-msgstr "Lucosec"
-
-#: src/bz-application.c:479
-msgctxt "About Dialog Translator Credit"
-msgid "Léane GRASSER"
-msgstr "Léane GRASSER"
-
-#: src/bz-application.c:480
-msgctxt "About Dialog Translator Credit"
-msgid "Marcel Mrówka (Microwave)"
-msgstr "Marcel Mrówka (Microwave)"
-
-#: src/bz-application.c:481
-msgctxt "About Dialog Translator Credit"
-msgid "Peter Dave Hello"
-msgstr "Peter Dave Hello"
-
-#: src/bz-application.c:482
-msgctxt "About Dialog Translator Credit"
-msgid "Pietro F."
-msgstr "Pietro F."
-
-#: src/bz-application.c:483
-msgctxt "About Dialog Translator Credit"
-msgid "Sabri Ünal"
-msgstr "Sabri Ünal"
-
-#: src/bz-application.c:484
-msgctxt "About Dialog Translator Credit"
-msgid "Shihfu Juan"
-msgstr "Shihfu Juan"
-
-#: src/bz-application.c:485
-msgctxt "About Dialog Translator Credit"
-msgid "Shinsei"
-msgstr "Shinsei"
-
-#: src/bz-application.c:486
-msgctxt "About Dialog Translator Credit"
-msgid "Vlastimil Dědek"
-msgstr "Vlastimil Dědek"
-
-#: src/bz-application.c:487
-msgctxt "About Dialog Translator Credit"
-msgid "asen23"
-msgstr "asen23"
-
-#: src/bz-application.c:488
-msgctxt "About Dialog Translator Credit"
-msgid "camegone"
-msgstr "camegone"
-
-#: src/bz-application.c:489
-msgctxt "About Dialog Translator Credit"
-msgid "renner"
-msgstr "renner"
-
-#: src/bz-application.c:490
-msgctxt "About Dialog Translator Credit"
-msgid "robotta"
-msgstr "robotta"
-
-#: src/bz-application.c:1033
-msgid "Constructing Flatpak instance..."
-msgstr "Flatpak példány létrehozása…"
-
-#: src/bz-application.c:1050
-msgid "Reusing last Flatpak instance..."
-msgstr "Legutóbbi Flatpak példány újrafelhasználása…"
-
-#: src/bz-application.c:1075
-msgid "Flathub is not registered on this system"
-msgstr "A Flathub nincs beállítva ezen a rendszeren"
-
-#: src/bz-application.c:1078
-msgid ""
-"Would you like to add Flathub as a remote? If you decline, the Flathub page "
-"will not be available. You can change this later."
-msgstr ""
-"Szeretnéd engedélyezni a Flathub távoli adattárat? Ha ezt nem teszed meg, a "
-"Flathub fül nem lesz elérhető. Később ezt bármikor megváltoztathatod."
-
-#: src/bz-application.c:1083 src/bz-update-dialog.blp:6
-msgid "Later"
-msgstr "Később"
-
-#: src/bz-application.c:1084
-msgid "Add Flathub"
-msgstr "Flathub engedélyezése"
-
-#: src/bz-application.c:1116
-#, c-format
-msgid "Identifying installed entries..."
-msgstr "Telepített tételek beazonosítása…"
-
-#: src/bz-application.c:1128
-#, c-format
-msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
-msgstr "Távoli tételek lekérésének megkezdése, %d tiltólista hivatkozásával…"
-
-#: src/bz-application.c:1276
-#, c-format
-msgid "Receiving Entries"
-msgstr "Tételek fogadása"
-
-#: src/bz-application.c:1277
-#, c-format
-msgid "%'d of %'d"
-msgstr "%'d/%'d"
-
-#: src/bz-application.c:1288
-#, c-format
-msgid "Waiting for background indexing tasks to catch up..."
-msgstr "Várakozás a háttérben futó indexelési feladatok befejezésére…"
-
-#: src/bz-application.c:1329
-#, c-format
-msgid "Completed initialization in %0.2f seconds"
-msgstr "Az indítás %0.2f másodperc alatt befejeződött"
-
-#: src/bz-application.c:1334 src/bz-application.c:1489
-msgid "Checking for updates..."
-msgstr "Frissítések keresése…"
-
-#: src/bz-application.c:1373
-msgid "Synchronizing..."
-msgstr "Szinkronizálás…"
-
-#: src/bz-browse-widget.blp:11 src/bz-flathub-page.blp:19
-#: src/bz-full-view.blp:10 src/bz-installed-page.blp:15 src/bz-window.blp:161
-msgid "Empty"
-msgstr "Üres"
-
-#: src/bz-browse-widget.blp:15
-msgid "No Curated Applications"
-msgstr "Nincsenek válogatott alkalmazások"
-
-#: src/bz-browse-widget.blp:16
-msgid ""
-"Bazaar was not provided a curated content configuration. Contact your "
-"operating system's support channels for assistance."
-msgstr ""
-"A Bazaar nem talál válogatott tartalomkonfigurációt. Segítségért fordulj az "
-"operációs rendszer támogatási csatornáihoz."
-
-#: src/bz-browse-widget.blp:22 src/bz-flathub-page.blp:30
-msgid "Browser"
-msgstr "Böngésző"
-
-#: src/bz-entry-inspector.blp:5
-msgid "Entry Inspector"
-msgstr ""
-
-#: src/bz-entry-inspector.blp:76
-msgid "Serialize"
-msgstr ""
-
-#: src/bz-entry-inspector.blp:80
-msgid "Convert to JSON"
-msgstr ""
-
-#: src/error.c:68
-msgid "An Error Occurred"
-msgstr "Hiba történt"
-
-#: src/error.c:89
-msgid "Close"
-msgstr "Bezárás"
-
-#: src/error.c:90
-msgid "Copy and Close"
-msgstr "Másolás és bezárás"
-
-#: src/bz-featured-tile.blp:89
-msgid "App of the Day"
-msgstr "A nap alkalmazása"
-
-#: src/bz-flathub-category.c:325
-msgid "Audio & Video"
-msgstr "Hang és videó"
-
-#: src/bz-flathub-category.c:327
-msgid "Developer Tools"
-msgstr "Fejlesztői eszközök"
-
-#: src/bz-flathub-category.c:329
-msgid "Education"
-msgstr "Oktatás"
-
-#: src/bz-flathub-category.c:331
-msgid "Gaming"
-msgstr "Játék"
-
-#: src/bz-flathub-category.c:333
-msgid "Graphics & Photography"
-msgstr "Grafika és fényképezés"
-
-#: src/bz-flathub-category.c:335
-msgid "Networking"
-msgstr "Hálózat"
-
-#: src/bz-flathub-category.c:337
-msgid "Productivity"
-msgstr "Produktivitás"
-
-#: src/bz-flathub-category.c:339
-msgid "Science"
-msgstr "Tudomány"
-
-#: src/bz-flathub-category.c:341
-msgid "System"
-msgstr "Rendszer"
-
-#: src/bz-flathub-category.c:343
-msgid "Utilities"
-msgstr "Segédprogramok"
-
-#: src/bz-flathub-category-section.c:137
-#, c-format
-msgid "%d applications"
-msgstr "%d alkalmazás"
-
-#: src/bz-flathub-category-section.c:336
-#, c-format
-msgid "More %s"
-msgstr "Még több %s"
-
-#: src/bz-flathub-page.blp:23
-msgid "Flathub Not Added"
-msgstr "A Flathub nincs engedélyezve"
-
-#: src/bz-flathub-page.blp:24
-msgid "The Flathub remote was not found on any of your Flatpak installations"
-msgstr "A Flathub adattár nem található egyik Flatpak telepítéseden sem"
-
-#: src/bz-flathub-page.blp:80 src/bz-flathub-page.blp:109
-#: src/bz-flathub-page.c:168
-msgid "Trending"
-msgstr "Felkapott"
-
-#: src/bz-flathub-page.blp:85 src/bz-flathub-page.blp:235
-#: src/bz-flathub-page.c:198
-msgid "Popular"
-msgstr "Népszerű"
-
-#: src/bz-flathub-page.blp:90
-msgid "New"
-msgstr "Új"
-
-#: src/bz-flathub-page.blp:95
-msgid "Updated"
-msgstr "Frissített"
-
-#: src/bz-flathub-page.blp:141
-msgid "More Trending"
-msgstr "Még több felkapott"
-
-#: src/bz-flathub-page.blp:151 src/bz-flathub-page.c:178
-msgid "Recently Updated"
-msgstr "Nemrég frissített"
-
-#: src/bz-flathub-page.blp:183
-msgid "More Updated"
-msgstr "Még több frissített"
-
-#: src/bz-flathub-page.blp:193 src/bz-flathub-page.c:188
-msgid "Recently Added"
-msgstr "Nemrég hozzáadott"
-
-#: src/bz-flathub-page.blp:225
-msgid "More New"
-msgstr "Még több új"
-
-#: src/bz-flathub-page.blp:267
-msgid "More Popular"
-msgstr "Még több népszerű"
-
-#: src/bz-flathub-page.blp:356
-msgid "On the go"
-msgstr "Útközben"
-
-#: src/bz-flathub-page.blp:368
-msgid "Apps for your Linux phones and tablets"
-msgstr "Alkalmazások Linux telefonokra és táblagépekre"
-
-#: src/bz-flathub-page.blp:379 src/bz-flathub-page.blp:414
-msgid "More Mobile apps"
-msgstr "Még több mobilapp"
-
-#: src/bz-flathub-page.c:208
-msgid "Mobile Apps"
-msgstr "Mobilappok"
-
-#: src/bz-flatpak-entry.c:552
-msgctxt "Project URL Type"
-msgid "Flathub Page"
-msgstr "Flathub oldal"
-
-#: src/bz-flatpak-entry.c:573
-msgctxt "Project URL Type"
-msgid "Project Website"
-msgstr "Projekt honlapja"
-
-#: src/bz-flatpak-entry.c:577
-msgctxt "Project URL Type"
-msgid "Issue Tracker"
-msgstr "Hiba bejelentése"
-
-#: src/bz-flatpak-entry.c:581
-msgctxt "Project URL Type"
-msgid "FAQ"
-msgstr "GYIK"
-
-#: src/bz-flatpak-entry.c:585
-msgctxt "Project URL Type"
-msgid "Help"
-msgstr "Segítség"
-
-#: src/bz-flatpak-entry.c:589
-msgctxt "Project URL Type"
-msgid "Donate"
-msgstr "Adományozás"
-
-#: src/bz-flatpak-entry.c:595
-msgctxt "Project URL Type"
-msgid "Translate"
-msgstr "Segítség a fordításban"
-
-#: src/bz-flatpak-entry.c:599
-msgctxt "Project URL Type"
-msgid "Contact"
-msgstr "Kapcsolat"
-
-#: src/bz-flatpak-entry.c:603
-msgctxt "Project URL Type"
-msgid "Source Code"
-msgstr "Forráskód"
-
-#: src/bz-flatpak-entry.c:609
-msgctxt "Project URL Type"
-msgid "Contribute"
-msgstr "Hozzájárulás"
-
-#: src/bz-full-view.blp:14
-msgid "No Results"
-msgstr "Nincs találat"
-
-#: src/bz-full-view.blp:15
-msgid "Try a different search query"
-msgstr "Próbálkozz más keresőkifejezéssel"
-
-#: src/bz-full-view.blp:21 src/bz-window.blp:171
-msgid "Content"
-msgstr "Tartalom"
-
-#: src/bz-full-view.blp:151
-msgid "Verified by the original developers"
-msgstr "Az eredeti fejlesztők által hitelesítve"
-
-#: src/bz-full-view.blp:178
-msgid "Support"
-msgstr "Támogatás"
-
-#: src/bz-full-view.blp:198
-msgid "Repository Star Count"
-msgstr "Adattár csillagszámlálója"
-
-#: src/bz-full-view.blp:228
-msgid "Open"
-msgstr "Megnyitás"
-
-#: src/bz-full-view.blp:241
-msgid "Download & Install Application"
-msgstr "Alkalmazás letöltése és telepítése"
-
-#: src/bz-full-view.blp:256
-msgid "Uninstall Application"
-msgstr "Alkalmazás eltávolítása"
-
-#: src/bz-full-view.blp:271
-msgid "Install Other Version"
-msgstr "Másik verzió telepítése"
-
-#: src/bz-full-view.blp:295
-msgid "Download"
-msgstr "Letöltés"
-
-#: src/bz-full-view.blp:411
-msgid "Downloads/mo"
+"A jelenlegi szűrőbeállításai elrejtik az összes ismert kiegészítőt. Próbálja "
+"meg módosítani azokat."
+
+#: src/bz-addons-dialog.blp:89
+msgid "Add-on Page"
+msgstr "Kiegészítő oldal"
+
+#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:406
+msgid "Downloads/Month"
 msgstr "Letöltés/hó"
 
-#: src/bz-full-view.c:261
-msgid "---"
-msgstr "---"
+#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:441
+msgid "Stopped Receiving Core Updates"
+msgstr "Nem kap több alapvető frissítést"
 
-#. Translators: M is the suffix for millions, \xC2\xA0 is a non-breaking space
-#: src/bz-full-view.c:265
-#, c-format
-msgid "%.2f M"
-msgstr "%.2f m"
+#: src/bz-addons-dialog.blp:243
+msgid ""
+"This add-on uses a runtime that no longer receives updates or security "
+"fixes. It may become unsafe to use."
+msgstr ""
+"Ez a kiegészítő olyan futtatókörnyezetet használ, amelyhez már nem érkeznek "
+"frissítések vagy biztonsági javítások. A használata veszélyessé válhat."
 
-#. Translators: K is the suffix for thousands, \xC2\xA0 is a non-breaking space
-#: src/bz-full-view.c:268
-#, c-format
-msgid "%.2f K"
-msgstr "%.2f e"
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:602
+msgid "Other Sources"
+msgstr "Egyéb források"
 
-#: src/bz-full-view.c:277
+#: src/bz-addons-dialog.c:351
 #, c-format
-msgid "%d downloads in the last 30 days"
-msgstr "%d letöltés az elmúlt 30 napban"
+msgid "Add-on for %s"
+msgstr "Kiegészítő ehhez: %s"
 
-#: src/bz-full-view.c:298
-#, c-format
-msgid "Download size of %s"
-msgstr "Letöltés mérete: %s"
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
+msgid "Show Less"
+msgstr "Kevesebb megjelenítése"
+
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
+msgid "Show More"
+msgstr "Több megjelenítése"
+
+#: src/bz-addons-dialog.c:415
+msgid "Download Stats"
+msgstr "Letöltési statisztikák"
+
+#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31
+#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:201
+msgid "Age Rating"
+msgstr "Korhatár-besorolás"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:88
+msgid "Cartoon Violence"
+msgstr "Rajzfilmes erőszak"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:90
+msgid "No information regarding cartoon violence"
+msgstr "Nincs információ a rajzfilmes erőszakkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:94
+msgid "Fantasy Violence"
+msgstr "Kitalált erőszak"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:96
+msgid "No information regarding fantasy violence"
+msgstr "Nincs információ a kitalált erőszakkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:100
+msgid "Realistic Violence"
+msgstr "Valósághű erőszak"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:102
+msgid "No information regarding realistic violence"
+msgstr "Nincs információ a valósághű erőszakkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:106
+msgid "Violence Depicting Bloodshed"
+msgstr "Vérontást ábrázoló erőszak"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:108
+msgid "No information regarding bloodshed"
+msgstr "Nincs információ a vérontással kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:112
+msgid "Sexual Violence"
+msgstr "Szexuális erőszak"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:114
+msgid "No information regarding sexual violence"
+msgstr "Nincs információ a szexuális erőszakkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:118
+msgid "Alcohol"
+msgstr "Alkohol"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:120
+msgid "No information regarding references to alcohol"
+msgstr "Nincs információ az alkoholra történő hivatkozásokkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:124
+msgid "Narcotics"
+msgstr "Kábítószerek"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:126
+msgid "No information regarding references to illicit drugs"
+msgstr ""
+"Nincs információ az illegális kábítószerekre történő hivatkozásokkal "
+"kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:130
+msgid "Tobacco"
+msgstr "Dohány"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:132
+msgid "No information regarding references to tobacco products"
+msgstr ""
+"Nincs információ a dohánytermékekre történő hivatkozásokkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:136 src/bz-age-rating-dialog.c:475
+msgid "Nudity"
+msgstr "Meztelenség"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:138
+msgid "No information regarding nudity of any sort"
+msgstr "Nincs információ semmilyen meztelenséggel kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:142
+msgid "Sexual Themes"
+msgstr "Szexuális témák"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:144
+msgid "No information regarding references to or depictions of sexual nature"
+msgstr ""
+"Nincs információ a szexuális jellegű hivatkozásokkal vagy ábrázolásokkal "
+"kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:148
+msgid "Profanity"
+msgstr "Káromkodás"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:150
+msgid "No information regarding profanity of any kind"
+msgstr "Nincs információ semmiféle káromkodással kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:154
+msgid "Inappropriate Humor"
+msgstr "Nem helyénvaló humor"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:156
+msgid "No information regarding inappropriate humor"
+msgstr "Nincs információ a nem helyénvaló humorral kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:160
+msgid "Discrimination"
+msgstr "Diszkrimináció"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:162
+msgid "No information regarding discriminatory language of any kind"
+msgstr "Nincs információ semmiféle diszkriminatív nyelvezettel kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:166
+msgid "Advertising"
+msgstr "Reklám"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:168
+msgid "No information regarding advertising of any kind"
+msgstr "Nincs információ semmiféle reklámozással kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:172
+msgid "Gambling"
+msgstr "Szerencsejáték"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:174
+msgid "No information regarding gambling of any kind"
+msgstr "Nincs információ semmiféle szerencsejátékkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:178
+msgid "Purchasing"
+msgstr "Vásárlás"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:180
+msgid "No information regarding the ability to spend money"
+msgstr "Nincs információ a pénzköltési lehetőséggel kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:184
+msgid "Chat Between Users"
+msgstr "Felhasználók közötti csevegés"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:186
+msgid "No information regarding ways to chat with other users"
+msgstr ""
+"Nincs információ a más felhasználókkal történő csevegés módjaival "
+"kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:190
+msgid "Audio Chat Between Users"
+msgstr "Hangalapú csevegés a felhasználók között"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:192
+msgid "No information regarding ways to talk with other users"
+msgstr ""
+"Nincs információ a más felhasználókkal történő beszélgetés módjaival "
+"kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:196
+msgid "Contact Details"
+msgstr "Partner részletei"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:198
+msgid ""
+"No information regarding sharing of social network usernames or email "
+"addresses"
+msgstr ""
+"Nincs információ a közösségi hálózati felhasználónevek vagy e-mail-címek "
+"megosztásával kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:202
+msgid "Identifying Information"
+msgstr "Azonosításra alkalmas információk"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:204
+msgid "No information regarding sharing of user information with third parties"
+msgstr ""
+"Nincs információ a felhasználói adatok harmadik felekkel való megosztásával "
+"kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:208
+msgid "Location Sharing"
+msgstr "Helymegosztás"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:210
+msgid "No information regarding sharing of physical location with other users"
+msgstr ""
+"Nincs információ a fizikai hely más felhasználókkal való megosztásával "
+"kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:214
+msgid "Prostitution"
+msgstr "Prostitúció"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:216
+msgid "No information regarding references to prostitution"
+msgstr "Nincs információ a prostitúcióra történő hivatkozásokkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:220
+msgid "Adultery"
+msgstr "Házasságtörés"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:222
+msgid "No information regarding references to adultery"
+msgstr ""
+"Nincs információ a házasságtörésre történő hivatkozásokkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:226
+msgid "Sexualized Characters"
+msgstr "Szexualizált karakterek"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:228
+msgid "No information regarding sexualized characters"
+msgstr "Nincs információ a szexualizált karakterekkel kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:232
+msgid "Desecration"
+msgstr "Gyalázás"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:234
+msgid "No information regarding references to desecration"
+msgstr "Nincs információ a gyalázásra történő hivatkozásokkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:238
+msgid "Human Remains"
+msgstr "Emberi maradványok"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:240
+msgid "No information regarding visible dead human remains"
+msgstr "Nincs információ a látható halott emberi maradványokkal kapcsolatban"
+
+#. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:244
+msgid "Slavery"
+msgstr "Rabszolgaság"
+
+#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#: src/bz-age-rating-dialog.c:246
+msgid "No information regarding references to slavery"
+msgstr "Nincs információ a rabszolgaságra történő hivatkozásokkal kapcsolatban"
+
+#: src/bz-age-rating-dialog.c:424
+msgid "Does not include references to drugs"
+msgstr "Nem tartalmaz kábítószerekre való hivatkozásokat"
+
+#: src/bz-age-rating-dialog.c:426
+msgid ""
+"Does not include swearing, profanity, and other kinds of strong language"
+msgstr "Nem tartalmaz káromkodást, trágárságot és egyéb durva beszédet"
+
+#: src/bz-age-rating-dialog.c:428
+msgid "Does not include ads or monetary transactions"
+msgstr "Nem tartalmaz hirdetéseket vagy pénzügyi tranzakciókat"
+
+#: src/bz-age-rating-dialog.c:430
+msgid "Does not include sex or nudity"
+msgstr "Nem tartalmaz szexet vagy meztelenséget"
+
+#: src/bz-age-rating-dialog.c:432
+msgid "Does not include uncontrolled chat functionality"
+msgstr "Nem tartalmaz ellenőrizetlen csevegőfunkciót"
+
+#: src/bz-age-rating-dialog.c:434
+msgid "Does not include violence"
+msgstr "Nem tartalmaz erőszakot"
+
+#: src/bz-age-rating-dialog.c:469
+msgid "Drugs"
+msgstr "Kábítószerek"
+
+#: src/bz-age-rating-dialog.c:471
+msgid "Strong Language"
+msgstr "Durva beszéd"
+
+#: src/bz-age-rating-dialog.c:473
+msgid "Money"
+msgstr "Pénz"
+
+#: src/bz-age-rating-dialog.c:477
+msgid "Social"
+msgstr "Közösségi"
+
+#: src/bz-age-rating-dialog.c:479
+msgid "Violence"
+msgstr "Erőszak"
 
 #. Translators: Age rating format, e.g. "12+" for ages 12 and up
-#: src/bz-full-view.c:308
+#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:184
 #, c-format
 msgid "%d+"
 msgstr "%d+"
 
-#: src/bz-full-view.c:316
-msgid "All Ages"
-msgstr "Minden életkor"
+#: src/bz-age-rating-dialog.c:712
+msgctxt "Age rating"
+msgid "All"
+msgstr "Összes"
 
-#: src/bz-full-view.c:318
-msgid "Age Rating"
-msgstr "Korhatár"
-
-#: src/bz-full-view.c:326
-msgid "Suitable for all ages"
-msgstr "Minden korosztály számára alkalmas"
-
-#: src/bz-full-view.c:328
+#: src/bz-age-rating-dialog.c:748
 #, c-format
-msgid "Suitable for ages %d and up"
-msgstr "%d éves kortól ajánlott"
+msgid "%s has an unknown age rating"
+msgstr "A(z) %s ismeretlen korhatár-besorolással rendelkezik"
 
-#: src/bz-full-view.c:348
-msgid "Unknown"
-msgstr "Ismeretlen"
-
-#: src/bz-full-view.c:351
-msgid "Proprietary Software"
-msgstr "Zárt forráskódú szoftver"
-
-#: src/bz-full-view.c:355
+#: src/bz-age-rating-dialog.c:754
 #, c-format
-msgid "Free software licensed under %s"
-msgstr "Szabad szoftver a(z) %s licenc alatt"
+msgid "%s is suitable for everyone"
+msgstr "A(z) %s mindenki számára megfelelő"
 
-#: src/bz-full-view.c:363
-msgid "Free"
-msgstr "Szabad"
-
-#: src/bz-full-view.c:363
-msgid "Proprietary"
-msgstr "Védett"
-
-#: src/bz-full-view.c:383
-msgid "Adaptive"
-msgstr "Alkalmazkodó"
-
-#: src/bz-full-view.c:383
-msgid "Desktop Only"
-msgstr "Csak asztali"
-
-#: src/bz-full-view.c:389
-msgid "Works on desktop, tablets, and phones"
-msgstr "Működik asztali számítógépen, táblagépen és mobiltelefonon"
-
-#: src/bz-full-view.c:390
-msgid "May not work on mobile devices"
-msgstr "Lehet, hogy nem működik mobileszközökön"
-
-#: src/bz-full-view.c:401
-msgid "No URL"
-msgstr "Nincs URL"
-
-#: src/bz-full-view.c:419
-msgid ""
-"This application has a FLOSS license, meaning the source code can be audited "
-"for safety."
-msgstr ""
-"Ez az alkalmazás Szabad és Nyílt Forráskódú licenccel rendelkezik, ami azt "
-"jelenti, hogy által a forráskód biztonsági szempontból bárki által "
-"ellenőrizhető."
-
-#: src/bz-full-view.c:420
-msgid ""
-"This application has a proprietary license, meaning the source code is "
-"developed privately and cannot be audited by an independent third party."
-msgstr ""
-"Ez az alkalmazás kereskedelmi licenccel rendelkezik, ami azt jelenti, hogy a "
-"forráskód magántulajdonban van, és független harmadik fél nem ellenőrizheti."
-
-#: src/bz-full-view.c:676
-msgid "Show Less"
-msgstr "Kevesebb mutatása"
-
-#: src/bz-full-view.c:676
-msgid "Show More"
-msgstr "Több mutatása"
-
-#: src/bz-hardware-support-dialog.c:69
-msgid "Keyboard support"
-msgstr "Billentyűzet támogatás"
-
-#: src/bz-hardware-support-dialog.c:71
-msgid "Requires keyboards"
-msgstr "Billentyűzet szükséges"
-
-#: src/bz-hardware-support-dialog.c:72
-msgid "Recommends keyboards"
-msgstr "Billentyűzet ajánlott"
-
-#: src/bz-hardware-support-dialog.c:73
-msgid "Supports keyboards"
-msgstr "Billentyűzet használható"
-
-#: src/bz-hardware-support-dialog.c:74
-msgid "Unknown support for keyboards"
-msgstr "Billentyűzet támogatás ismeretlen"
-
-#: src/bz-hardware-support-dialog.c:76
-msgid "Mouse support"
-msgstr "Egér támogatás"
-
-#: src/bz-hardware-support-dialog.c:78
-msgid "Requires mice or pointing devices"
-msgstr "Egér vagy mutatóeszköz szükséges"
-
-#: src/bz-hardware-support-dialog.c:79
-msgid "Recommends mice or pointing devices"
-msgstr "Egér vagy mutatóeszköz ajánlott"
-
-#: src/bz-hardware-support-dialog.c:80
-msgid "Supports mice or pointing devices"
-msgstr "Egér vagy mutatóeszköz használható"
-
-#: src/bz-hardware-support-dialog.c:81
-msgid "Unknown support for mice or pointing devices"
-msgstr "Egér vagy mutatóeszköz támogatás ismeretlen"
-
-#: src/bz-hardware-support-dialog.c:83
-msgid "Touchscreen support"
-msgstr "Érintőképernyő támogatás"
-
-#: src/bz-hardware-support-dialog.c:85
-msgid "Requires touchscreens"
-msgstr "Érintőképernyő szükséges"
-
-#: src/bz-hardware-support-dialog.c:86
-msgid "Recommends touchscreens"
-msgstr "Érintőképernyő ajánlott"
-
-#: src/bz-hardware-support-dialog.c:87
-msgid "Supports touchscreens"
-msgstr "Érintőképernyő használható"
-
-#: src/bz-hardware-support-dialog.c:88
-msgid "Unknown support for touchscreens"
-msgstr "Érintőképernyő támogatás ismeretlen"
-
-#: src/bz-hardware-support-dialog.c:192
-msgid "Mobile support"
-msgstr "Mobil támogatás"
-
-#: src/bz-hardware-support-dialog.c:193
-msgid "Works on mobile devices"
-msgstr "Működik mobileszközökön"
-
-#: src/bz-hardware-support-dialog.c:193
-msgid "May not work well on mobile devices"
-msgstr "Lehet, hogy nem működik jól mobileszközökön"
-
-#: src/bz-hardware-support-dialog.c:198
-msgid "Desktop support"
-msgstr "Asztali támogatás"
-
-#: src/bz-hardware-support-dialog.c:199
-msgid "Works well on large screens"
-msgstr "Jól működik nagy kijelzőkön"
-
-#: src/bz-hardware-support-dialog.c:233
+#: src/bz-age-rating-dialog.c:757
 #, c-format
-msgid "%s works best on specific hardware"
-msgstr "%s csak bizonyos eszközökön működik jól"
+msgid "%s is suitable for young children"
+msgstr "A(z) %s a kisgyermekek számára megfelelő"
 
-#: src/bz-hardware-support-dialog.c:240
+#: src/bz-age-rating-dialog.c:760
 #, c-format
-msgid "%s works on most devices"
-msgstr "%s a legtöbb eszközön működik"
+msgid "%s is suitable for children"
+msgstr "A(z) %s a gyermekek számára megfelelő"
 
-#: src/bz-hardware-support-dialog.blp:6 src/bz-hardware-support-dialog.blp:47
-msgid "Hardware Support"
-msgstr "Hardver támogatás"
+#: src/bz-age-rating-dialog.c:763
+#, c-format
+msgid "%s is suitable for teenagers"
+msgstr "A(z) %s a tizenévesek számára megfelelő"
 
-#: src/bz-inspector.blp:5
-msgid "Bazaar Inspector"
-msgstr ""
+#: src/bz-age-rating-dialog.c:766
+#, c-format
+msgid "%s is suitable for adults"
+msgstr "A(z) %s a felnőttek számára megfelelő"
 
-#: src/bz-inspector.blp:22
-msgid "Active Blocklists"
-msgstr ""
+#: src/bz-age-rating-dialog.c:769
+#, c-format
+msgid "%s is suitable for %s"
+msgstr "A(z) %s a következők számára megfelelő: %s"
 
-#: src/bz-inspector.blp:44
-msgid "Active Curated-Configs"
-msgstr ""
+#: src/bz-age-rating-dialog.c:868
+#, c-format
+msgid "%s • %s"
+msgstr "%s • %s"
 
-#: src/bz-inspector.blp:66
-msgid "All Entry Groups"
-msgstr ""
+#: src/bz-app-permissions.c:160
+#, c-format
+msgid "System folder %s"
+msgstr "%s rendszermappa"
 
-#: src/bz-inspector.blp:69
-msgid "Filter..."
-msgstr ""
+#: src/bz-app-permissions.c:162
+#, c-format
+msgid "Home subfolder %s"
+msgstr "Saját mappa %s almappája"
 
-#: src/bz-inspector.blp:110
-msgid "Decache and Inspect"
-msgstr ""
+#: src/bz-app-permissions.c:164
+msgid "Host system folders"
+msgstr "Gazdarendszer mappái"
 
-#: src/bz-installed-page.blp:19
-msgid "No Flatpaks Installed"
-msgstr "Nincs telepített Flatpak"
+#: src/bz-app-permissions.c:166
+msgid "Host system configuration from /etc"
+msgstr "Gazdarendszer beállításai az /etc mappából"
 
-#: src/bz-installed-page.blp:25 src/bz-window.blp:305 src/bz-window.blp:399
+#: src/bz-app-permissions.c:169
+#, c-format
+msgid "Desktop subfolder %s"
+msgstr "Asztal %s almappája"
+
+#: src/bz-app-permissions.c:170
+msgid "Desktop folder"
+msgstr "Asztal mappa"
+
+#: src/bz-app-permissions.c:173
+#, c-format
+msgid "Documents subfolder %s"
+msgstr "Dokumentumok %s almappája"
+
+#: src/bz-app-permissions.c:174
+msgid "Documents folder"
+msgstr "Dokumentumok mappa"
+
+#: src/bz-app-permissions.c:177
+#, c-format
+msgid "Music subfolder %s"
+msgstr "Zenék %s almappája"
+
+#: src/bz-app-permissions.c:178
+msgid "Music folder"
+msgstr "Zenék mappa"
+
+#: src/bz-app-permissions.c:181
+#, c-format
+msgid "Pictures subfolder %s"
+msgstr "Képek %s almappája"
+
+#: src/bz-app-permissions.c:182
+msgid "Pictures folder"
+msgstr "Képek mappa"
+
+#: src/bz-app-permissions.c:185
+#, c-format
+msgid "Public Share subfolder %s"
+msgstr "Nyilvános megosztás %s almappája"
+
+#: src/bz-app-permissions.c:186
+msgid "Public Share folder"
+msgstr "Nyilvános megosztás mappa"
+
+#: src/bz-app-permissions.c:189
+#, c-format
+msgid "Videos subfolder %s"
+msgstr "Videók %s almappája"
+
+#: src/bz-app-permissions.c:190
+msgid "Videos folder"
+msgstr "Videók mappa"
+
+#: src/bz-app-permissions.c:193
+#, c-format
+msgid "Templates subfolder %s"
+msgstr "Sablonok %s almappája"
+
+#: src/bz-app-permissions.c:194
+msgid "Templates folder"
+msgstr "Sablonok mappa"
+
+#: src/bz-app-permissions.c:197
+#, c-format
+msgid "User cache subfolder %s"
+msgstr "Felhasználói gyorsítótár %s almappája"
+
+#: src/bz-app-permissions.c:198
+msgid "User cache folder"
+msgstr "Felhasználói gyorsítótár mappa"
+
+#: src/bz-app-permissions.c:201
+#, c-format
+msgid "User configuration subfolder %s"
+msgstr "Felhasználói beállítás %s almappája"
+
+#: src/bz-app-permissions.c:202
+msgid "User configuration folder"
+msgstr "Felhasználói beállítás mappa"
+
+#: src/bz-app-permissions.c:205
+#, c-format
+msgid "User data subfolder %s"
+msgstr "Felhasználói adatok %s almappája"
+
+#: src/bz-app-permissions.c:206
+msgid "User data folder"
+msgstr "Felhasználói adatok mappa"
+
+#: src/bz-app-permissions.c:209
+#, c-format
+msgid "User runtime subfolder %s"
+msgstr "Felhasználói futtatókörnyezet %s almappája"
+
+#: src/bz-app-permissions.c:210
+msgid "User runtime folder"
+msgstr "Felhasználói futtatókörnyezet mappa"
+
+#: src/bz-app-permissions.c:212
+#, c-format
+msgid "Filesystem access to %s"
+msgstr "Fájlrendszer-hozzáférés a következőhöz: %s"
+
+#: src/bz-app-permissions.c:214
+msgid "Unknown filesystem path"
+msgstr "Ismeretlen fájlrendszerútvonal"
+
+#: src/bz-app-size-dialog.blp:30 src/bz-app-size-dialog.blp:71
+msgid "Download Size"
+msgstr "Letöltési méret"
+
+#: src/bz-app-size-dialog.blp:40 src/bz-app-size-dialog.blp:99
+msgid "Installed Size"
+msgstr "Telepített méret"
+
+#: src/bz-app-size-dialog.blp:72
+msgid "Amount to download from the internet"
+msgstr "Az internetről letöltendő mennyiség"
+
+#: src/bz-app-size-dialog.blp:100
+msgid "Size on Disk"
+msgstr "Méret a lemezen"
+
+#: src/bz-app-size-dialog.blp:202
+msgid "Open user data folder"
+msgstr "Felhasználói adatok mappa megnyitása"
+
+#: src/bz-app-size-dialog.blp:212
+msgid "Your User Data"
+msgstr "Saját felhasználói adatok"
+
+#: src/bz-app-size-dialog.blp:213
+msgid "Caches, settings, and other app data"
+msgstr "Gyorsítótárak, beállítások és egy alkalmazásadatok"
+
+#: src/bz-app-size-dialog.blp:233
+msgid "Cache"
+msgstr "Gyorsítótár"
+
+#: src/bz-app-size-dialog.blp:234
+msgid "Temporary cached data"
+msgstr "Átmenetileg gyorsítótárazott adatok"
+
+#: src/bz-app-size-dialog.blp:246
+msgid "Clear Cache"
+msgstr "Gyorsítótár törlése"
+
+#: src/bz-app-size-dialog.c:99
+msgid "Installed Runtime Size"
+msgstr "Telepített futtatókörnyezet mérete"
+
+#: src/bz-app-size-dialog.c:99
+msgid "Runtime Download Size"
+msgstr "Futtatókörnyezet letöltési mérete"
+
+#: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:185
+#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:401
+#: src/context-tile-callbacks.c:423
+msgid "N/A"
+msgstr "N/A"
+
+#: src/bz-app-size-dialog.c:195 src/bz-app-size-dialog.c:208
+msgid "Storage"
+msgstr "Tárhely"
+
+#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98
+#: src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
+msgid "Verified"
+msgstr "Ellenőrizve"
+
+#. Translators: As in 'The app is installed'.
+#: src/bz-app-tile.blp:87 src/bz-full-view.blp:282 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "Telepítve"
 
-#: src/bz-installed-page.blp:108
-msgid "Support this application"
-msgstr "Alkalmazás támogatása"
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#: src/bz-application.c:757
+msgid "translator-credits"
+msgstr ""
+"Dévényi Benedek <rdbende@proton.me>, 2025\n"
+"Úr Balázs <ur.balazs at fsf dot hu>, 2026"
 
-#: src/bz-installed-page.blp:185
-msgid "More actions"
-msgstr "További lehetőségek"
+#: src/bz-application.c:767
+msgid "Special Thanks"
+msgstr "Különleges köszönet"
 
-#: src/bz-installed-page.blp:204
-msgid "Run this application"
-msgstr "Alkalmazás futtatása"
+#: src/bz-application.c:825
+msgid "Logged Out Successfully!"
+msgstr "Sikeresen kijelentkezett!"
 
-#: src/bz-installed-page.blp:216
-msgid "Run"
-msgstr "Futtatás"
+#: src/bz-application.c:1057
+msgid "Notice for Ubuntu Users"
+msgstr "Tájékoztatás Ubuntu-felhasználóknak"
 
-#: src/bz-installed-page.blp:228 src/bz-installed-page.blp:239
-msgid "View Store Page"
-msgstr "Alkalmazásoldal megnyitása"
+#: src/bz-application.c:1060
+msgid ""
+"Ubuntu 25.10 and newer have changed default security rules in a way that "
+"makes it <b>impossible to install apps</b> from the Flatpak version of "
+"Bazaar. For the time being, please use the apt package instead. Install it "
+"with\n"
+"\n"
+"<tt>sudo apt install bazaar</tt>\n"
+"\n"
+"You can then remove this Flatpak version with\n"
+"\n"
+"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+msgstr ""
+"Az Ubuntu 25.10 és újabb verziói olyan módon változtatták meg az "
+"alapértelmezett biztonsági szabályokat, hogy az <b>lehetetlenné teszi az "
+"alkalmazások telepítését</b> a Bazaar Flatpak-verziójából. Egyelőre "
+"használja helyette az apt-csomagot. Ezzel a paranccsal telepítheti:\n"
+"\n"
+"<tt>sudo apt install bazaar</tt>\n"
+"\n"
+"Azután eltávolíthatja ezt a Flatpak-verziót ezzel a paranccsal:\n"
+"\n"
+"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 
-#: src/bz-installed-page.c:649
+#: src/bz-application.c:1068
+msgid "Continue Anyway"
+msgstr "Folytatás mindenképp"
+
+#: src/bz-application.c:1084
+msgid "Performing setup…"
+msgstr "Beállítás végrehajtása…"
+
+#: src/bz-application.c:1183
+msgid "Set Up System Flathub?"
+msgstr "Beállítja a rendszer Flathubot?"
+
+#: src/bz-application.c:1186
+msgid ""
+"The system Flathub remote is not set up. Bazaar requires Flathub to be "
+"configured on the system Flatpak installation to browse and install "
+"applications.\n"
+"\n"
+"You can still use Bazaar to browse and remove already installed apps."
+msgstr ""
+"A rendszer Flathub távolija nincs beállítva. A Bazár azt igényli, hogy a "
+"Flathub be legyen állítva a rendszer Flatpak-telepítésén az alkalmazások "
+"böngészéséhez és telepítéséhez.\n"
+"\n"
+"Továbbra is használhatja a Bazár alkalmazást a böngészéshez és a már "
+"telepített alkalmazások eltávolításához."
+
+#: src/bz-application.c:1193
+msgid "Set Up Flathub?"
+msgstr "Beállítja a Flathubot?"
+
+#: src/bz-application.c:1196
+msgid ""
+"Flathub is not set up on this system. You will not be able to browse and "
+"install applications in Bazaar if its unavailable.\n"
+"\n"
+"You can still use Bazaar to browse and remove already installed apps."
+msgstr ""
+"A Flathub nincs beállítva ezen a rendszeren. Nem fog tudni böngészni és "
+"alkalmazásokat telepíteni a Bazár alkalmazásban, ha az nem érhető el.\n"
+"\n"
+"Továbbra is használhatja a Bazár alkalmazást a böngészéshez és a már "
+"telepített alkalmazások eltávolításához."
+
+#: src/bz-application.c:1202
+msgid "Later"
+msgstr "Később"
+
+#: src/bz-application.c:1203
+msgid "Set Up Flathub"
+msgstr "Flathub beállítása"
+
+#: src/bz-application.c:1723
+msgid "A backend error occurred"
+msgstr "Háttérprogramhiba történt"
+
+#: src/bz-application.c:1930 src/bz-application.c:4251
+msgid "Refreshing…"
+msgstr "Frissítés…"
+
+#: src/bz-application.c:2089
+#, c-format
+msgid "Loading %d apps…"
+msgstr "%d alkalmazás betöltése…"
+
+#: src/bz-application.c:2148 src/bz-application.c:2225
+msgid "Failed to open file"
+msgstr "Nem sikerült megnyitni a fájlt"
+
+#: src/bz-application.c:2239
+msgid "Failed to load metainfo"
+msgstr "Nem sikerült betölteni a metainformációkat"
+
+#: src/bz-application.c:2362
+msgid "An initialization error occurred"
+msgstr "Előkészítési hiba történt"
+
+#: src/bz-application.c:2770
+msgid "Checking for updates…"
+msgstr "Frissítések keresése…"
+
+#: src/bz-application.c:2826
+msgid "Failed to check for updates"
+msgstr "Nem sikerült a frissítések keresése"
+
+#: src/bz-application.c:4028
+msgid "Could not find app"
+msgstr "Nem található alkalmazás"
+
+#: src/bz-application.c:4248
+#, c-format
+msgid "Loading %d app…"
+msgid_plural "Loading %d apps…"
+msgstr[0] "%d alkalmazás betöltése…"
+msgstr[1] "%d alkalmazás betöltése…"
+
+#: src/bz-application.c:4253
+msgid "Writing to cache…"
+msgstr "Írás a gyorsítótárba…"
+
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:217
+msgid "Show All"
+msgstr "Összes megjelenítése"
+
+#: src/bz-apps-page.c:214
+#, c-format
+msgid "All \"%s\""
+msgstr "Összes „%s”"
+
+#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:88
+#, c-format
+msgid "%d Applications"
+msgstr "%d alkalmazás"
+
+#: src/bz-article.blp:86
+msgid "Failed to Load Article"
+msgstr "Nem sikerült betölteni a cikket"
+
+#: src/bz-bulk-install-dialog.c:87
+msgid "All apps are already installed"
+msgstr "Az összes alkalmazás már telepítve van"
+
+#: src/bz-bulk-install-dialog.c:89
+msgid "_OK"
+msgstr "_Rendben"
+
+#: src/bz-bulk-install-dialog.c:105
+#, c-format
+msgid "Install %u App?"
+msgid_plural "Install %u Apps?"
+msgstr[0] "Telepít %u alkalmazást?"
+msgstr[1] "Telepít %u alkalmazást?"
+
+#: src/bz-bulk-install-dialog.c:113
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr ""
+"A következők lesznek telepítve. További megosztott összetevők is telepítésre "
+"kerülhetnek."
+
+#: src/bz-bulk-install-dialog.c:114
+#, c-format
+msgid "%d addons will be installed."
+msgstr "%d kiegészítő lesz telepítve."
+
+#: src/bz-bulk-install-dialog.c:115
+msgid "Additionally, addons will be installed."
+msgstr "Ezenkívül kiegészítők lesznek telepítve."
+
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:200
+#: src/bz-transaction-dialog.c:245
+msgid "_Cancel"
+msgstr "_Mégse"
+
+#: src/bz-bulk-install-dialog.c:117
+msgid "_Install All"
+msgstr "Összes _telepítése"
+
+#: src/bz-bundle-install-dialog.blp:20 src/bz-bundle-install-dialog.blp:26
+msgid "Bundle Installation"
+msgstr "Csomagtelepítés"
+
+#: src/bz-bundle-install-dialog.blp:198
+msgid "Additional dependencies may take extra space"
+msgstr "A további függőségek több helyet igényelhetnek"
+
+#: src/bz-bundle-install-dialog.blp:232
+msgid ""
+"Installing this app may require adding a new software source. Other apps "
+"from this source will show up in Bazaar.\n"
+"\n"
+"Only add this source if you're sure you trust it."
+msgstr ""
+"Az alkalmazás telepítéséhez új szoftverforrás hozzáadására lehet szükség. Az "
+"ebből a forrásból származó egyéb alkalmazások meg fognak jelenni a Bazár "
+"alkalmazásban.\n"
+"\n"
+"Csak akkor adja hozzá ezt a forrást, ha biztosan megbízik benne."
+
+#: src/bz-bundle-install-dialog.blp:414
+msgid "Successfully Installed!"
+msgstr "Sikeresen telepítve!"
+
+#. TRANSLATORS: Button to launch an installed app
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526
+#: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
+msgid "Open"
+msgstr "Megnyitás"
+
+#: src/bz-bundle-install-dialog.blp:450 src/bz-bundle-install-dialog.blp:536
+msgid "Show App Details"
+msgstr "Alkalmazás részleteinek megjelenítése"
+
+#: src/bz-bundle-install-dialog.blp:501
+msgid "Already Installed"
+msgstr "Már telepítve van"
+
+#: src/bz-bundle-install-dialog.blp:548
+msgid "Installation Failed"
+msgstr "A telepítés nem sikerült"
+
+#: src/bz-bundle-install-dialog.c:168
+msgid "Unknown install size"
+msgstr "Ismeretlen telepítési méret"
+
+#: src/bz-bundle-install-dialog.c:171
+#, c-format
+msgid "About %s to install"
+msgstr "Körülbelül %s telepítendő"
+
+#: src/bz-bundle-install-dialog.c:214
+msgid "No special permissions"
+msgstr "Nincsenek különleges jogosultságok"
+
+#: src/bz-curated-view.blp:27
+msgid "No Curation"
+msgstr "Nincs válogatás"
+
+#: src/bz-curated-view.blp:29
+msgid ""
+"There is no curation information provided on this system. You can still "
+"browse apps on Flathub"
+msgstr ""
+"Nincsenek válogatási információk megadva erről a rendszerről. Továbbra is "
+"böngészheti az alkalmazásokat a Flathubon"
+
+#: src/bz-curated-view.blp:33
+msgid "Browse Flathub"
+msgstr "A Flathub böngészése"
+
+#: src/bz-curated-view.blp:49
+msgid "Offline"
+msgstr "Kapcsolat nélkül"
+
+#: src/bz-developer-badge.c:94 src/bz-developer-badge.c:98
+msgid "Not Verified"
+msgstr "Nincs ellenőrizve"
+
+#: src/bz-developer-badge.c:213
+msgid "Developer information not available."
+msgstr "A fejlesztői információk nem érhetők el."
+
+#: src/bz-developer-badge.c:219 src/bz-developer-badge.c:233
+#, c-format
+msgid ""
+"The ownership of the %s app ID has not been verified and it may be a "
+"community package."
+msgstr ""
+"A(z) %s alkalmazásazonosító tulajdonjoga nem lett ellenőrizve, és ez egy "
+"közösségi csomag lehet."
+
+#: src/bz-developer-badge.c:237
+#, c-format
+msgid ""
+"The ownership of the %s app ID has been manually verified by the Flathub "
+"team."
+msgstr ""
+"A(z) %s alkalmazásazonosító tulajdonjogát a Flathub csapata kézileg "
+"ellenőrizte."
+
+#: src/bz-developer-badge.c:253
+#, c-format
+msgid ""
+"The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
+"<b>%3$s</b>."
+msgstr ""
+"A(z) %1$s alkalmazásazonosító tulajdonjogát <b>%2$s</b> ellenőrizte ekkor: "
+"<b>%3$s</b>."
+
+#: src/bz-developer-badge.c:260
+#, c-format
+msgid "The ownership of the %1$s app ID has been verified using %2$s."
+msgstr ""
+"A(z) %1$s alkalmazásazonosító tulajdonjoga %2$s használatával lett "
+"ellenőrizve."
+
+#: src/bz-developer-badge.c:264
+#, c-format
+msgid "The ownership of the %s app ID has been verified."
+msgstr "A(z) %s alkalmazásazonosító tulajdonjog ellenőrizve lett."
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:8
+msgid "Bazaar Release"
+msgstr "Bazár kiadás"
+
+#: src/bz-donations-dialog.blp:77
+msgid "Full Release Notes"
+msgstr "Teljes kiadási megjegyzések"
+
+#: src/bz-donations-dialog.blp:112
+msgid "This release was made possible by users like you!"
+msgstr "Ezt a kiadást olyan felhasználók tették lehetővé, mint Ön!"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:122
+msgid ""
+"I love making Bazaar, but I cannot do it alone. Help support further "
+"development by donating on Ko-Fi."
+msgstr ""
+"Imádom a Bazár készítését, de egyedül nem tudom megcsinálni. Segítsen a "
+"jövőbeli fejlesztés támogatásában a Ko-Fi-n keresztüli adományozással."
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:137
+msgid "Donate to Bazaar"
+msgstr "Adományozás a Bazár fejlesztéséhez"
+
+#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#: src/bz-donations-dialog.c:227
+#, c-format
+msgid "What's New in %s?"
+msgstr "A(z) %s újdonságai"
+
+#. Translators: this is a release date label, like "Released February 9, 2026"
+#: src/bz-donations-dialog.c:243
+msgid "Released %B %-e, %Y"
+msgstr "Kiadva: %Y. %B %-e."
+
+#: src/bz-entry-group-util.c:73
 msgid "Choose an Installation"
 msgstr "Telepítés kiválasztása"
 
-#: src/bz-installed-page.c:652
+#: src/bz-entry-group-util.c:76
 msgid ""
 "You have multiple versions of this app installed. Which one would you like "
-"to proceed with? "
+"to proceed with?"
 msgstr ""
-"Ennek az alkalmazásnak több verziója is telepítve van. Melyikkel szeretnéd "
+"Ennek az alkalmazásnak több verziója is telepítve van. Melyikkel szeretné "
 "folytatni?"
 
-#: src/bz-installed-page.c:656 src/bz-window.c:1102 src/bz-window.c:1124
+#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "Mégse"
 
-#: src/bz-license-dialog.c:115
-msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
-"\n"
-"You may not be able to contribute to this app."
-msgstr ""
-"Ez az alkalmazás zárt fejlesztésű, ezért csak a fejlesztői ismerik a belső "
-"működését. Lehetnek olyan biztonsági hiányosságai, amelyek nehezen "
-"észlelhetők, illetve a működése észrevétlenül megváltozhat.\n"
-"\n"
-"Nem tudsz hozzájárulni az alkalmazás fejlesztéséhez."
+#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
+#: src/error.c:88 src/update-worker.c:473
+msgid "Details"
+msgstr "Részletek"
 
-#: src/bz-license-dialog.c:124
+#. TRANSLATORS: tooltip for a button that copies text to the clipboard
+#: src/bz-error-dialog.blp:48
+msgid "Copy"
+msgstr "Másolás"
+
+#: src/bz-error-dialog.c:56 src/bz-screenshot-page.c:461
+#: src/bz-share-list.c:364
+msgid "Copied!"
+msgstr "Másolva!"
+
+#: src/bz-favorite-button.blp:13
+msgid "Favorite Count"
+msgstr "Kedvencek száma"
+
+#: src/bz-favorite-button.c:388
+msgid "Failed to update favorite"
+msgstr "Nem sikerült a frissíteni a kedvencet"
+
+#: src/bz-favorite-button.c:434
+msgid "Log in with Flathub to manage favorites"
+msgstr "Jelentkezzen be Flathub használatával a kedvencek kezeléséhez"
+
+#: src/bz-favorite-button.c:440
+msgid "Log In"
+msgstr "Bejelentkezés"
+
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:350
+msgid "Favorites"
+msgstr "Kedvencek"
+
+#: src/bz-favorites-page.blp:16 src/bz-section-view.blp:87
+msgid "Install All"
+msgstr "Összes telepítése"
+
+#: src/bz-favorites-page.blp:46
+msgid "No Favorites"
+msgstr "Nincsenek kedvencek"
+
+#: src/bz-favorites-page.blp:47
+msgid "Applications you mark as favorite will appear here"
+msgstr "A kedvencként megjelölt alkalmazások itt fognak megjelenni"
+
+#: src/bz-favorites-tile.blp:58
+msgid "Support This Application"
+msgstr "Az alkalmazás támogatása"
+
+#: src/bz-favorites-tile.blp:105
+msgid "Remove From Favorites"
+msgstr "Eltávolítás a kedvencek közül"
+
+#: src/bz-favorites-tile.c:353
+msgid "Failed to remove favorite"
+msgstr "Nem sikerült eltávolítani a kedvencet"
+
+#: src/bz-featured-carousel.blp:32
+msgid "Previous"
+msgstr "Előző"
+
+#: src/bz-featured-carousel.blp:55
+msgid "Next"
+msgstr "Következő"
+
+#: src/bz-flathub-category.c:95
+msgid "Editing"
+msgstr "Szerkesztés"
+
+#: src/bz-flathub-category.c:96
+msgid "Midi"
+msgstr "Midi"
+
+#: src/bz-flathub-category.c:97
+msgid "Mixer"
+msgstr "Keverő"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-flathub-category.c:98 src/bz-search-pill-list.c:77
+msgid "Music"
+msgstr "Zene"
+
+#: src/bz-flathub-category.c:99
+msgid "Player"
+msgstr "Lejátszó"
+
+#: src/bz-flathub-category.c:100
+msgid "Recorder"
+msgstr "Felvevő"
+
+#: src/bz-flathub-category.c:101
+msgid "Sequencer"
+msgstr "Szekvenszer"
+
+#: src/bz-flathub-category.c:102
+msgid "Tuner"
+msgstr "Hangoló"
+
+#: src/bz-flathub-category.c:103
+msgid "TV"
+msgstr "TV"
+
+#: src/bz-flathub-category.c:108
+msgid "Emulation"
+msgstr "Emulálás"
+
+#: src/bz-flathub-category.c:109
+msgid "Action"
+msgstr "Művelet"
+
+#: src/bz-flathub-category.c:110
+msgid "Adventure"
+msgstr "Kaland"
+
+#: src/bz-flathub-category.c:111
+msgid "Arcade"
+msgstr "Ügyességi"
+
+#: src/bz-flathub-category.c:112
+msgid "Blocks"
+msgstr "Kockák"
+
+#: src/bz-flathub-category.c:113
+msgid "Board"
+msgstr "Tábla"
+
+#: src/bz-flathub-category.c:114
+msgid "Card"
+msgstr "Kártya"
+
+#: src/bz-flathub-category.c:115
+msgid "Kids"
+msgstr "Gyerekjátékok"
+
+#: src/bz-flathub-category.c:116
+msgid "Logic"
+msgstr "Logikai"
+
+#: src/bz-flathub-category.c:117
+msgid "Role Playing"
+msgstr "Szerepjáték"
+
+#: src/bz-flathub-category.c:118
+msgid "Shooter"
+msgstr "Lövöldözős"
+
+#: src/bz-flathub-category.c:119
+msgid "Simulation"
+msgstr "Szimuláció"
+
+#: src/bz-flathub-category.c:120
+msgid "Sports"
+msgstr "Sport"
+
+#: src/bz-flathub-category.c:121
+msgid "Strategy"
+msgstr "Stratégia"
+
+#: src/bz-flathub-category.c:126
+msgid "Browsers"
+msgstr "Böngészők"
+
+#: src/bz-flathub-category.c:127
+msgid "Chat"
+msgstr "Csevegés"
+
+#: src/bz-flathub-category.c:128
+msgid "Mail"
+msgstr "Levél"
+
+#: src/bz-flathub-category.c:129
+msgid "File Sharing"
+msgstr "Fájlmegosztás"
+
+#: src/bz-flathub-category.c:134
+msgid "Audio & Video"
+msgstr "Hang és videó"
+
+#: src/bz-flathub-category.c:134
+msgid "Media"
+msgstr "Média"
+
+#: src/bz-flathub-category.c:134
+msgid "More Audio & Video"
+msgstr "Még több hang és videó"
+
+#: src/bz-flathub-category.c:135
+msgid "Developer Tools"
+msgstr "Fejlesztői eszközök"
+
+#: src/bz-flathub-category.c:135
+msgid "Develop"
+msgstr "Fejlesztés"
+
+#: src/bz-flathub-category.c:135
+msgid "More Developer Tools"
+msgstr "Még több fejlesztői eszköz"
+
+#: src/bz-flathub-category.c:136
+msgid "Education"
+msgstr "Oktatás"
+
+#: src/bz-flathub-category.c:136
+msgid "Learn"
+msgstr "Tanulás"
+
+#: src/bz-flathub-category.c:136
+msgid "More Education"
+msgstr "Még több oktatás"
+
+#: src/bz-flathub-category.c:137
+msgid "Gaming"
+msgstr "Játék"
+
+#: src/bz-flathub-category.c:137
+msgid "Play"
+msgstr "Játszás"
+
+#: src/bz-flathub-category.c:137
+msgid "More Gaming"
+msgstr "Még több játék"
+
+#: src/bz-flathub-category.c:138
+msgid "Graphics & Photography"
+msgstr "Grafika és fényképezés"
+
+#: src/bz-flathub-category.c:138
+msgid "Create"
+msgstr "Létrehozás"
+
+#: src/bz-flathub-category.c:138
+msgid "More Graphics & Photography"
+msgstr "Még több grafika és fényképezés"
+
+#: src/bz-flathub-category.c:139
+msgid "Networking"
+msgstr "Hálózatépítés"
+
+#: src/bz-flathub-category.c:139
+msgid "Internet"
+msgstr "Internet"
+
+#: src/bz-flathub-category.c:139
+msgid "More Networking"
+msgstr "Még több hálózatépítés"
+
+#: src/bz-flathub-category.c:140
+msgid "Productivity"
+msgstr "Produktivitás"
+
+#: src/bz-flathub-category.c:140
+msgid "Work"
+msgstr "Munka"
+
+#: src/bz-flathub-category.c:140
+msgid "More Productivity"
+msgstr "Még több produktivitás"
+
+#: src/bz-flathub-category.c:141
+msgid "Science"
+msgstr "Tudomány"
+
+#: src/bz-flathub-category.c:141
+msgid "More Science"
+msgstr "Még több tudomány"
+
+#: src/bz-flathub-category.c:142
+msgid "System"
+msgstr "Rendszer"
+
+#: src/bz-flathub-category.c:142
+msgid "More System"
+msgstr "Még több rendszer"
+
+#: src/bz-flathub-category.c:143
+msgid "Utilities"
+msgstr "Segédprogramok"
+
+#: src/bz-flathub-category.c:143 src/bz-flathub-page.blp:436
+msgid "Tools"
+msgstr "Eszközök"
+
+#: src/bz-flathub-category.c:143
+msgid "More Utilities"
+msgstr "Még több segédprogram"
+
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
+msgid "Trending"
+msgstr "Felkapott"
+
+#: src/bz-flathub-category.c:144
+msgid "More Trending"
+msgstr "Még több felkapott"
+
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:171
+msgid "Popular"
+msgstr "Népszerű"
+
+#: src/bz-flathub-category.c:145
+msgid "More Popular"
+msgstr "Még több népszerű"
+
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:160
+msgid "Recently Added"
+msgstr "Nemrég hozzáadott"
+
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:118
+msgid "New"
+msgstr "Új"
+
+#: src/bz-flathub-category.c:146
+msgid "More New"
+msgstr "Még több új"
+
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:149
+msgid "Recently Updated"
+msgstr "Nemrég frissített"
+
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:124
+msgid "Updated"
+msgstr "Frissített"
+
+#: src/bz-flathub-category.c:147
+msgid "More Updated"
+msgstr "Még több frissített"
+
+#: src/bz-flathub-category.c:148
+msgid "Mobile"
+msgstr "Mobil"
+
+#: src/bz-flathub-category.c:148
+msgid "More Mobile"
+msgstr "Még több mobil"
+
+#: src/bz-flathub-category.c:149
+msgid "Adwaita"
+msgstr "Adwaita"
+
+#: src/bz-flathub-category.c:149
+msgid "More Adwaita"
+msgstr "Még több Adwaita"
+
+#: src/bz-flathub-category.c:150
+msgid "KDE Apps"
+msgstr "KDE-alkalmazások"
+
+#: src/bz-flathub-category.c:150
+msgid "More KDE Apps"
+msgstr "Még több KDE-alkalmazás"
+
+#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:418
+msgid "Games"
+msgstr "Játékok"
+
+#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:475
+msgid "More Games"
+msgstr "Még több játék"
+
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:424
+msgid "Emulators"
+msgstr "Emulátorok"
+
+#: src/bz-flathub-category.c:152
+msgid "More Emulators"
+msgstr "Még több emulátor"
+
+#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:430
+msgid "Launchers"
+msgstr "Indítok"
+
+#: src/bz-flathub-category.c:153
+msgid "More Game Launchers"
+msgstr "Még több játékindító"
+
+#: src/bz-flathub-category.c:154
+msgid "Game Tools"
+msgstr "Játékeszközök"
+
+#: src/bz-flathub-category.c:154
+msgid "More Game Tools"
+msgstr "Még több játékeszköz"
+
+#: src/bz-flathub-curated-section.vala:41
+msgid "New Year, New Workflows"
+msgstr "Új év, új munkafolyamatok"
+
+#: src/bz-flathub-curated-section.vala:41
+msgid "Apps to take notes, track tasks, and make plans"
+msgstr ""
+"Alkalmazások jegyzetek készítéséhez, feladatok nyomon követéséhez és tervek "
+"készítéséhez"
+
+#: src/bz-flathub-curated-section.vala:42
+msgid "Staff Picks"
+msgstr "A személyzet választása"
+
+#: src/bz-flathub-curated-section.vala:42
+msgid "Apps we love right now"
+msgstr "Jelenleg imádott alkalmazásaink"
+
+#: src/bz-flathub-curated-section.vala:43
+msgid "Get Creative"
+msgstr "Legyen kreatív"
+
+#: src/bz-flathub-curated-section.vala:43
+msgid "Essential apps for drawing, editing photos, and digital design"
+msgstr ""
+"Rajzoláshoz, fényképszerkesztéshez és a digitális tervezéshez "
+"elengedhetetlen alkalmazások"
+
+#: src/bz-flathub-curated-section.vala:44
+msgid "Build Native Apps"
+msgstr "Natív alkalmazások összeállítása"
+
+#: src/bz-flathub-curated-section.vala:44
+msgid "Develop apps that feel at home on your system"
+msgstr ""
+"Olyan alkalmazások fejlesztése, amelyek tökéletesen illeszkednek a "
+"rendszeréhez"
+
+#: src/bz-flathub-curated-section.vala:45
+msgid "Stay in Touch"
+msgstr "Maradjunk kapcsolatban"
+
+#: src/bz-flathub-curated-section.vala:45
+msgid "Essential collaboration and communication apps"
+msgstr "Elengedhetetlen együttműködési és kommunikációs alkalmazások"
+
+#: src/bz-flathub-curated-section.vala:46
+msgid "Ready for Vacations"
+msgstr "Szabadságra kész"
+
+#: src/bz-flathub-curated-section.vala:46
+msgid "Maps, transit, weather, and trip planning apps"
+msgstr "Térkép-, tömegközlekedési, időjárás- és útvonaltervező alkalmazások"
+
+#: src/bz-flathub-curated-section.vala:47
+msgid "Smarter Every Day"
+msgstr "Minden nap okosabb"
+
+#: src/bz-flathub-curated-section.vala:47
+msgid "Apps to help you study, research, and write"
+msgstr "Tanulásban, kutatásban és írásban segítő alkalmazások"
+
+#: src/bz-flathub-curated-section.vala:48
+msgid "Get Cozy"
+msgstr "Kényeztesse magát"
+
+#: src/bz-flathub-curated-section.vala:48
+msgid "Great apps for reading, watching movies, and playing games"
+msgstr "Nagyszerű alkalmazások olvasáshoz, filmnézéshez és játékhoz"
+
+#: src/bz-flathub-curated-section.vala:49
+msgid "Web Developer Essentials"
+msgstr "Webfejlesztők szükséges eszközei"
+
+#: src/bz-flathub-curated-section.vala:49
+msgid "Making websites is more fun with these apps"
+msgstr "A weboldalak készítése ezekkel az alkalmazásokkal még szórakoztatóbb"
+
+#: src/bz-flathub-curated-section.vala:50
+msgid "Take Better Notes"
+msgstr "Jobb jegyzetek készítése"
+
+#: src/bz-flathub-curated-section.vala:50
+msgid "Find your new favorite note taking tool"
+msgstr "Találja meg az új kedvenc jegyzetkészítő eszközét"
+
+#: src/bz-flathub-curated-section.vala:51
+msgid "Get Focused"
+msgstr "Összpontosítson"
+
+#: src/bz-flathub-curated-section.vala:51
+msgid "Great apps for task management"
+msgstr "Nagyszerű alkalmazások a feladatkezeléshez"
+
+#: src/bz-flathub-curated-section.vala:52
+msgid "Make Some Noise"
+msgstr "Csapjon egy kis zajt"
+
+#: src/bz-flathub-curated-section.vala:52
+msgid "Apps for creating and producing music"
+msgstr "Zeneszerzésre és zenekészítésre való alkalmazások"
+
+#: src/bz-flathub-curated-section.vala:53
+msgid "Get To Work"
+msgstr "Lásson munkához"
+
+#: src/bz-flathub-curated-section.vala:53
+msgid "Essential office apps"
+msgstr "Elengedhetetlen irodai alkalmazások"
+
+#: src/bz-flathub-page.blp:22
+msgid "Flathub Not Added"
+msgstr "A Flathub nincs hozzáadva"
+
+#: src/bz-flathub-page.blp:23
+msgid "The Flathub remote was not found on any of your Flatpak installations"
+msgstr "A Flathub távoli nem található egyetlen Flatpak telepítésben sem"
+
+#: src/bz-flathub-page.blp:32
+msgid "Can't Reach Flathub"
+msgstr "Nem lehet elérni a Flathubot"
+
+#: src/bz-flathub-page.blp:33
+msgid "You can still manage and search for apps."
+msgstr "Továbbra is kezelheti és keresheti az alkalmazásokat."
+
+#: src/bz-flathub-page.blp:39
+msgid "Search Apps"
+msgstr "Alkalmazások keresése"
+
+#: src/bz-flathub-page.blp:50
+msgid "Reconnect"
+msgstr "Újrakapcsolódás"
+
+#: src/bz-flathub-page.blp:204
+msgid "App of the Day"
+msgstr "A nap alkalmazása"
+
+#: src/bz-flathub-page.blp:267
+msgid "On the Go"
+msgstr "Útközben"
+
+#: src/bz-flathub-page.blp:279
+msgid "Apps for your Linux phones and tablets"
+msgstr "Alkalmazások Linux telefonokra és táblagépekre"
+
+#: src/bz-flathub-page.blp:290 src/bz-flathub-page.blp:322
+msgid "More Mobile Apps"
+msgstr "Még több mobilalkalmazás"
+
+#: src/bz-flathub-page.blp:380
+msgid "We​ ♥​ Games"
+msgstr "Imádunk ♥​ játszani"
+
+#: src/bz-flathub-page.blp:393
+msgid "Games and apps to run your favorite titles"
+msgstr "Játékok és alkalmazások a kedvenc alkalmazásai futtatásához"
+
+#: src/bz-full-view.blp:93
+msgid ""
+"This is a local preview, some details may differ from the published listing"
+msgstr "Ez egy helyi előnézet, néhány részlet eltérhet a közzétett listától"
+
+#: src/bz-full-view.blp:96
+msgid "Preview Store Appearance"
+msgstr "Áruház megjelenésének előnézete"
+
+#: src/bz-full-view.blp:222
+msgid "_Support"
+msgstr "_Támogatás"
+
+#: src/bz-full-view.blp:455
+msgid ""
+"This app uses a runtime that no longer receives updates or security fixes. "
+"It may become unsafe to use."
+msgstr ""
+"Ez az alkalmazás olyan futtatókörnyezetet használ, amelyhez már nem érkeznek "
+"frissítések vagy biztonsági javítások. A használata veszélyessé válhat."
+
+#: src/bz-full-view.blp:533
+msgid "Trash Data"
+msgstr "Adatok törlése"
+
+#: src/bz-full-view.blp:630
+msgid "Add-ons"
+msgstr "Kiegészítők"
+
+#: src/bz-full-view.blp:665
+msgid "More Add-Ons"
+msgstr "Még több kiegészítő"
+
+#: src/bz-full-view.blp:676
+msgid "Links"
+msgstr "Hivatkozások"
+
+#: src/bz-full-view.blp:707
+msgid "Similar Apps"
+msgstr "Hasonló alkalmazások"
+
+#: src/bz-full-view.c:184
+msgid "No URL"
+msgstr "Nincs URL"
+
+#: src/bz-full-view.c:202
+msgid ""
+"This app has a FLOSS license, meaning the source code can be audited for "
+"safety."
+msgstr ""
+"Ez az alkalmazás szabad és nyílt forráskódú licenccel rendelkezik, ami azt "
+"jelenti, hogy a forráskód biztonsági szempontból ellenőrizhető."
+
+#: src/bz-full-view.c:203
+msgid ""
+"This app has a proprietary license, meaning the source code is developed "
+"privately and cannot be audited by an independent third party."
+msgstr ""
+"Ez az alkalmazás tulajdonosi licenccel rendelkezik, ami azt jelenti, hogy a "
+"forráskódot zárt körben fejlesztik, és független harmadik fél nem "
+"ellenőrizheti."
+
+#: src/bz-full-view.c:210
+msgid "Other Apps From This Developer"
+msgstr "Egyéb alkalmazások ettől a fejlesztőtől"
+
+#: src/bz-full-view.c:211
+#, c-format
+msgid "Other Apps From %s"
+msgstr "Egyéb alkalmazások tőle: %s"
+
+#: src/bz-full-view.c:226
+#, c-format
+msgid "%s is not installed, but it still has <b>%s</b> of data present."
+msgstr ""
+"A(z) %s nincs telepítve, de még mindig rendelkezik <b>%s</b> adatokkal."
+
+#: src/bz-full-view.c:309
+#, c-format
+msgid "Apps by %s"
+msgstr "Alkalmazások tőle: %s"
+
+#: src/bz-full-view.c:311
+msgid "Apps by This Developer"
+msgstr "Alkalmazások ettől a fejlesztőtől"
+
+#: src/bz-full-view.c:313
+#, c-format
+msgid "%d Application"
+msgid_plural "%d Applications"
+msgstr[0] "%d alkalmazás"
+msgstr[1] "%d alkalmazás"
+
+#: src/bz-full-view.c:468 src/bz-user-data-tile.c:160
+msgid "Failed to Remove User Data"
+msgstr "Nem sikerült eltávolítani a felhasználói adatokat"
+
+#: src/bz-hardware-support-dialog.blp:7 src/bz-hardware-support-dialog.blp:31
+msgid "Hardware Support"
+msgstr "Hardvertámogatás"
+
+#: src/bz-hardware-support-dialog.c:62
+msgid "Keyboard support"
+msgstr "Billentyűzettámogatás"
+
+#: src/bz-hardware-support-dialog.c:64
+msgid "Requires keyboards"
+msgstr "Billentyűzet szükséges"
+
+#: src/bz-hardware-support-dialog.c:65
+msgid "Recommends keyboards"
+msgstr "Billentyűzet ajánlott"
+
+#: src/bz-hardware-support-dialog.c:66
+msgid "Supports keyboards"
+msgstr "Billentyűzet támogatott"
+
+#: src/bz-hardware-support-dialog.c:67
+msgid "Unknown support for keyboards"
+msgstr "Ismeretlen billentyűzettámogatás"
+
+#: src/bz-hardware-support-dialog.c:69
+msgid "Mouse support"
+msgstr "Egértámogatás"
+
+#: src/bz-hardware-support-dialog.c:71
+msgid "Requires mice or pointing devices"
+msgstr "Egér vagy mutatóeszköz szükséges"
+
+#: src/bz-hardware-support-dialog.c:72
+msgid "Recommends mice or pointing devices"
+msgstr "Egér vagy mutatóeszköz ajánlott"
+
+#: src/bz-hardware-support-dialog.c:73
+msgid "Supports mice or pointing devices"
+msgstr "Egér vagy mutatóeszköz támogatott"
+
+#: src/bz-hardware-support-dialog.c:74
+msgid "Unknown support for mice or pointing devices"
+msgstr "Ismeretlen egér- vagy mutatóeszköz-támogatás"
+
+#: src/bz-hardware-support-dialog.c:76
+msgid "Touchscreen support"
+msgstr "Érintőképernyő-támogatás"
+
+#: src/bz-hardware-support-dialog.c:78
+msgid "Requires touchscreens"
+msgstr "Érintőképernyő szükséges"
+
+#: src/bz-hardware-support-dialog.c:79
+msgid "Recommends touchscreens"
+msgstr "Érintőképernyő ajánlott"
+
+#: src/bz-hardware-support-dialog.c:80
+msgid "Supports touchscreens"
+msgstr "Érintőképernyő támogatott"
+
+#: src/bz-hardware-support-dialog.c:81
+msgid "Unknown support for touchscreens"
+msgstr "Ismeretlen érintőképernyő-támogatás"
+
+#: src/bz-hardware-support-dialog.c:160
+msgid "Mobile support"
+msgstr "Mobiltámogatás"
+
+#: src/bz-hardware-support-dialog.c:161
+msgid "Works on mobile devices"
+msgstr "Működik mobileszközökön"
+
+#: src/bz-hardware-support-dialog.c:161
+msgid "May not work well on mobile devices"
+msgstr "Lehet, hogy nem működik jól mobileszközökön"
+
+#: src/bz-hardware-support-dialog.c:166
+msgid "Desktop support"
+msgstr "Asztali támogatás"
+
+#: src/bz-hardware-support-dialog.c:167
+msgid "Works well on large screens"
+msgstr "Jól működik nagy kijelzőkön"
+
+#: src/bz-hardware-support-dialog.c:201
+#, c-format
+msgid "%s works best on specific hardware"
+msgstr "A(z) %s csak bizonyos hardvereken működik a legjobban"
+
+#: src/bz-hardware-support-dialog.c:209
+#, c-format
+msgid "%s works on most devices"
+msgstr "A(z) %s a legtöbb eszközön működik"
+
+#: src/bz-inspector.blp:22
+msgid "Inspector Menu"
+msgstr "Vizsgáló menü"
+
+#: src/bz-install-controls.blp:58
+msgid "_Open"
+msgstr "_Megnyitás"
+
+#: src/bz-install-controls.blp:72 src/bz-install-controls.blp:126
+msgid "Uninstall Application"
+msgstr "Alkalmazás eltávolítása"
+
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:201
+msgid "_Remove"
+msgstr "_Eltávolítás"
+
+#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168
+#: src/bz-updates-card.c:187
+msgid "Update"
+msgstr "Frissítés"
+
+#: src/bz-install-controls.blp:136 src/bz-installed-tile.blp:107
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: src/bz-install-controls.c:669
+#, c-format
+msgid "Install %s from %s"
+msgstr "A(z) %s telepítése innen: %s"
+
+#: src/bz-install-controls.c:671
+#, c-format
+msgid "Install %s"
+msgstr "A(z) %s telepítése"
+
+#: src/bz-install-controls.wdgt:32
+msgctxt "Install Controls"
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/bz-install-controls.wdgt:35
+msgctxt "Install Controls"
+msgid "Cancelling"
+msgstr "Megszakítás"
+
+#: src/bz-installed-tile.blp:78
+msgid "Donate"
+msgstr "Adományozás"
+
+#: src/bz-library-page.blp:17
+msgid "Search installed apps"
+msgstr "Telepített alkalmazások keresése"
+
+#: src/bz-library-page.blp:32
+msgid "No Apps Found"
+msgstr "Nem találhatók alkalmazások"
+
+#: src/bz-library-page.blp:49
+msgid "Search Store Instead"
+msgstr "Keresés a boltban inkább"
+
+#: src/bz-library-page.blp:86
+msgid "Pending Updates"
+msgstr "Függőben lévő frissítések"
+
+#: src/bz-library-page.blp:113
+msgid "Downloads"
+msgstr "Letöltések"
+
+#: src/bz-library-page.blp:156
+msgid "Recently Uninstalled"
+msgstr "Nemrég eltávolított"
+
+#: src/bz-library-page.blp:207
+msgid "Clear Finished Tasks"
+msgstr "Befejezett feladatok törlése"
+
+#: src/bz-library-page.blp:234
+msgid "Sort Options"
+msgstr "Rendezési beállítások"
+
+#: src/bz-library-page.blp:293
+msgid "Sort By"
+msgstr "Rendezési sorrend"
+
+#: src/bz-library-page.blp:307
+msgid "Name"
+msgstr "Név"
+
+#: src/bz-library-page.blp:313
+msgid "Size"
+msgstr "Méret"
+
+#: src/bz-library-page.c:181
+#, c-format
+msgid "No matches found for \"%s\" in the list of installed apps"
+msgstr ""
+"Nincs találat a(z) „%s” kifejezésre a telepített alkalmazások listájában"
+
+#: src/bz-library-page.c:194 src/bz-updates-card.c:437
+#, c-format
+msgid "%u Available Update"
+msgid_plural "%u Available Updates"
+msgstr[0] "%u elérhető frissítés"
+msgstr[1] "%u elérhető frissítés"
+
+#: src/bz-library-page.c:204
+#, c-format
+msgid "%u Installed App"
+msgid_plural "%u Installed Apps"
+msgstr[0] "%u telepített alkalmazás"
+msgstr[1] "%u telepített alkalmazás"
+
+#: src/bz-library-page.c:629 src/bz-search-page.c:820
+msgid "No applications found"
+msgstr "Nem találhatók alkalmazások"
+
+#: src/bz-library-page.c:629 src/bz-search-page.c:822
+#, c-format
+msgid "One application found"
+msgid_plural "%u applications found"
+msgstr[0] "Egy alkalmazás található"
+msgstr[1] "%u alkalmazás található"
+
+#: src/bz-license-dialog.blp:87
+msgid "Get Involved"
+msgstr "Vegyen részt"
+
+#: src/bz-license-dialog.blp:114
+msgid "Learn More"
+msgstr "Tudjon meg többet"
+
+#: src/bz-license-dialog.c:127
+msgid "Unknown License"
+msgstr "Ismeretlen licenc"
+
+#: src/bz-license-dialog.c:130
+msgid "Community Built"
+msgstr "Közösségi összeállítás"
+
+#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:296
+msgid "Proprietary"
+msgstr "Tulajdonosi"
+
+#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:298
+msgid "Special License"
+msgstr "Különleges licenc"
+
+#: src/bz-license-dialog.c:203
 msgid ""
 "This app is developed in the open by an international community.\n"
 "\n"
@@ -936,407 +2033,1586 @@ msgid ""
 msgstr ""
 "Ezt az alkalmazást egy nemzetközi közösség nyíltan fejleszti.\n"
 "\n"
-"Te is csatlakozhatsz és segíthetsz még jobbá tenni."
+"Ön is részt vehet benne, és segíthet még jobbá tenni."
 
-#: src/bz-license-dialog.c:135
+#: src/bz-license-dialog.c:206
+msgid "The license of this app is not known"
+msgstr "Az alkalmazás licence nem ismert"
+
+#: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
 "This app is developed in the open by an international community, and "
-"released under the <a href=\"%s\">%s</a> license.\n"
+"released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Ezt az alkalmazást egy nemzetközi közösség nyíltan fejleszti, és a(z) <a "
-"href=\"%s\">%s</a> teszi elérhetővé.\n"
+"Ezt az alkalmazást egy nemzetközi közösség nyíltan fejleszti, és %s licenc "
+"alatt adja ki.\n"
 "\n"
-"Te is csatlakozhatsz és segíthetsz még jobbá tenni."
+"Ön is részt vehet benne, és segíthet még jobbá tenni."
+
+#: src/bz-license-dialog.c:220
+msgid ""
+"This app is not developed in the open, so only its developers know how it "
+"works. It may be insecure in ways that are hard to detect, and it may change "
+"without oversight.\n"
+"\n"
+"You may or may not be able to contribute to this app."
+msgstr ""
+"Ezt az alkalmazást nem nyíltan fejlesztik, így csak a fejlesztői tudják, "
+"hogy hogyan működik. Lehet, hogy nem biztonságos olyan módon, amely nehezen "
+"észrevehető, és felügyelet nélkül változhat.\n"
+"\n"
+"Lehet, hogy közreműködhet ebben az alkalmazásban, de lehet, hogy nem."
+
+#: src/bz-license-dialog.c:226
+#, c-format
+msgid ""
+"This app is developed under the special license %s.\n"
+"\n"
+"You may or may not be able to contribute to this app."
+msgstr ""
+"Ezt az alkalmazást egy különleges „%s” licenc alatt fejlesztik.\n"
+"\n"
+"Lehet, hogy közreműködhet ebben az alkalmazásban, de lehet, hogy nem."
+
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
+#: src/bz-safety-dialog.blp:103
+msgid "License"
+msgstr "Licenc"
+
+#: src/bz-login-page.blp:6 src/bz-login-page.blp:45
+msgid "Connect to Flathub"
+msgstr "Kapcsolódás a Flathubhoz"
+
+#: src/bz-login-page.blp:35
+msgid "Something Went Wrong"
+msgstr "Valami probléma történt"
+
+#: src/bz-login-page.blp:46
+msgid "Log in to sync your favorited apps across devices"
+msgstr ""
+"Jelentkezzen be a kedvenc alkalmazások eszközök közötti szinkronizálásához"
+
+#: src/bz-login-page.blp:113
+msgid "Finish"
+msgstr "Befejezés"
+
+#: src/bz-login-page.c:665
+#, c-format
+msgid "Hello, %s!"
+msgstr "Helló %s!"
+
+#: src/bz-metainfo-preview.c:105
+msgid "Add Icon to Metainfo Preview?"
+msgstr "Hozzáad ikont a metainformációs előnézethez?"
+
+#: src/bz-metainfo-preview.c:108
+msgid ""
+"Metainfo files don't include app icons by themselves. Would you like to "
+"select one manually?"
+msgstr ""
+"A metainformációs fájlok önmagukban nem tartalmaznak alkalmazásikonokat. "
+"Szeretne egyet kézzel kiválasztani?"
+
+#: src/bz-metainfo-preview.c:111
+msgid "Skip"
+msgstr "Kihagyás"
+
+#: src/bz-metainfo-preview.c:112 src/bz-metainfo-preview.c:163
+msgid "Select Icon"
+msgstr "Ikon kiválasztása"
+
+#: src/bz-metainfo-preview.c:166
+msgid "Image Files"
+msgstr "Képfájlok"
+
+#: src/bz-other-sources-list.vala:52
+msgid "User"
+msgstr "Felhasználó"
+
+#: src/bz-other-sources-list.vala:55
+msgid "Beta"
+msgstr "Béta"
+
+#: src/bz-other-sources-list.vala:58
+msgid "End-Of-Life"
+msgstr "Életciklus vége"
+
+#. Translators: As in, "1 Install" / "100 Installs"
+#: src/bz-other-sources-list.vala:76 src/bz-world-map.c:604
+msgid "Install"
+msgid_plural "Installs"
+msgstr[0] "telepítés"
+msgstr[1] "telepítés"
 
 #: src/bz-preferences-dialog.blp:19
 msgid "Preferences"
 msgstr "Beállítások"
 
-#: src/bz-preferences-dialog.blp:23 src/bz-window.blp:48 src/bz-window.blp:337
-msgid "Search"
-msgstr "Keresés"
+#: src/bz-preferences-dialog.blp:25
+msgid "Network connection is metered — automatic store data refresh is paused"
+msgstr ""
+"A hálózati kapcsolat forgalomkorlátos – az automatikus boltadatfrissítés "
+"szüneteltetve van"
 
-#: src/bz-preferences-dialog.blp:26
-msgid "Free Software Only"
-msgstr "Csak szabad szoftver"
-
-#: src/bz-preferences-dialog.blp:27
-msgid "Hide proprietary applications from search results"
-msgstr "Zárt forráskódú alkalmazások elrejtése a keresési eredményekből"
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
+msgid "Refresh Manually"
+msgstr "Frissítés kézileg"
 
 #: src/bz-preferences-dialog.blp:31
-msgid "Flathub Results Only"
-msgstr "Csak Flathub eredmények"
+msgid "App Updates"
+msgstr "Alkalmazásfrissítések"
 
-#: src/bz-preferences-dialog.blp:32
-msgid "Limit search results to applications only available on Flathub"
-msgstr "Keresés korlátozása a Flathubon elérhető alkalmazásokra"
+#: src/bz-preferences-dialog.blp:33
+msgid ""
+"Auto-updates will pause on metered networks or when power saving is on to "
+"save data and battery."
+msgstr ""
+"Az automatikus frissítések szüneteltetve lesznek forgalomkorlátos "
+"hálózatokon, vagy ha az energiatakarékos üzemmód be van kapcsolva, hogy "
+"csökkentse az adatforgalmat és kímélje az akkumulátort."
 
 #: src/bz-preferences-dialog.blp:36
-msgid "Delay Search Results"
-msgstr "Keresés késleltetése"
+msgid "_Automatic"
+msgstr "_Automatikus"
 
 #: src/bz-preferences-dialog.blp:37
-msgid "Improve results performance by debouncing search terms"
+msgid "Automatically check for and download app updates"
+msgstr "Alkalmazásfrissítések automatikus keresése és letöltése"
+
+#: src/bz-preferences-dialog.blp:49
+msgid "_Manual"
+msgstr "_Kézi"
+
+#: src/bz-preferences-dialog.blp:50
+msgid "Checking for and downloading app updates must be done manually"
+msgstr "Az alkalmazásfrissítések keresését és letöltését kézzel kell elvégezni"
+
+#: src/bz-preferences-dialog.blp:69
+msgid "Automatic Update _Notifications"
+msgstr "Automatikus frissítés é_rtesítései"
+
+#: src/bz-preferences-dialog.blp:70
+msgid "Notify when updates have been automatically installed"
+msgstr "Értesítés, ha a frissítések automatikusan telepítve lettek"
+
+#: src/bz-preferences-dialog.blp:75
+msgid "Content Filters"
+msgstr "Tartalomszűrők"
+
+#: src/bz-preferences-dialog.blp:78
+msgid "_Free Software Only"
+msgstr "Csak _szabad szoftver"
+
+#: src/bz-preferences-dialog.blp:79
+msgid "Hide proprietary apps when browsing and searching"
+msgstr "Tulajdonosi alkalmazások elrejtése böngészéskor és kereséskor"
+
+#: src/bz-preferences-dialog.blp:84
+msgid "F_lathub Results Only"
+msgstr "Csak _Flathub eredmények"
+
+#: src/bz-preferences-dialog.blp:85
+msgid "Limit search and browse results to apps only available on Flathub"
 msgstr ""
-"Keresés teljesítményének javítása a keresőkifejezések pergésmentesítésével"
+"Keresési és böngészési eredmények korlátozása a csak a Flathubon elérhető "
+"alkalmazásokra"
 
-#: src/bz-preferences-dialog.blp:42
-msgid "Application Details"
-msgstr "Alkalmazás részletei"
+#: src/bz-preferences-dialog.blp:90
+msgid "_Verified Results Only"
+msgstr "Csak _ellenőrzött eredmények"
 
-#: src/bz-preferences-dialog.blp:45
-msgid "Display Star Count"
-msgstr "Csillagszámláló mutatása"
+#: src/bz-preferences-dialog.blp:91
+msgid "Hide results that are not verified on Flathub"
+msgstr "A Flathubon nem ellenőrzött eredmények elrejtése"
 
-#: src/bz-preferences-dialog.blp:46
-msgid "Show the star count of an application's source code repository"
-msgstr "Az alkalmazás forráskód-adattára csillagszámának megjelenítése"
+#: src/bz-preferences-dialog.blp:96
+msgid "Hide _End-of-Life Apps"
+msgstr "Életciklusuk _végét elért alkalmazások elrejtése"
 
-#: src/bz-preferences-dialog.blp:71
-msgid "Progress Bar"
-msgstr "Folyamatjelző"
+#: src/bz-preferences-dialog.blp:97
+msgid "Hide apps which are no longer supported by their developers"
+msgstr "A fejlesztőik által már nem támogatott alkalmazások elrejtése"
 
-#: src/bz-preferences-dialog.blp:72
-msgid "Choose a theme for the progress bar!"
-msgstr "Válassz témát a folyamatjelző sávoknak"
+#: src/bz-preferences-dialog.blp:103
+msgid "Progress Bar Theme"
+msgstr "Folyamatjelző témája"
 
-#: src/bz-preferences-dialog.blp:107
-msgid ""
-"Bazaar can fetch and display the star count from an application's source "
-"code repository on a remote Git forge. \n"
-" For projects on GitHub, rate limits may cause them not to appear."
-msgstr ""
-"A Bazár letölti és megjeleníti a csillagok számát egy alkalmazás forráskód-"
-"adattárából a távoli Git forge-on. \n"
-" A GitHubon található projektek esetében a használati korlát miatt "
-"előfordulhat, hogy nem mindig sikerül betölteni."
-
-#: src/bz-preferences-dialog.c:32
+#: src/bz-preferences-dialog.c:42
 msgid "Accent Color"
 msgstr "Kiemelőszín"
 
-#: src/bz-preferences-dialog.c:33
-msgid "Pride Colors"
-msgstr "Pride színek"
-
-#: src/bz-preferences-dialog.c:34
-msgid "Lesbian Pride Colors"
-msgstr "Lezbikus színek"
-
-#: src/bz-preferences-dialog.c:35
-msgid "Transgender Pride Colors"
-msgstr "Transzgender színek"
-
-#: src/bz-preferences-dialog.c:36
-msgid "Nonbinary Pride Colors"
-msgstr "Nonbináris színek"
-
-#: src/bz-preferences-dialog.c:37
-msgid "Bisexual Pride Colors"
-msgstr "Biszexuális színek"
-
-#: src/bz-preferences-dialog.c:38
-msgid "Asexual Pride Colors"
-msgstr "Aszexuális színek"
-
-#: src/bz-preferences-dialog.c:39
-msgid "Pansexual Pride Colors"
-msgstr "Pánszexuális színek"
-
-#: src/bz-preferences-dialog.c:40
-msgid "Aromantic Pride Colors"
-msgstr "Aromantikus színek"
-
-#: src/bz-preferences-dialog.c:41
-msgid "Genderfluid Pride Colors"
-msgstr "Genderfluid színek"
-
-#: src/bz-preferences-dialog.c:42
-msgid "Polysexual Pride Colors"
-msgstr "Poliszexuális színek"
-
 #: src/bz-preferences-dialog.c:43
-msgid "Omnisexual Pride Colors"
-msgstr "Omniszexuális színek"
+msgid "Pride Colors"
+msgstr "Büszkeség színei"
 
-#: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
+#: src/bz-preferences-dialog.c:44
+msgid "Lesbian Pride Colors"
+msgstr "Leszbikus büszkeség színei"
+
+#: src/bz-preferences-dialog.c:45
+msgid "Male Homosexual Pride Colors"
+msgstr "Férfi homoszexuális büszkeség színei"
+
+#: src/bz-preferences-dialog.c:46
+msgid "Transgender Pride Colors"
+msgstr "Transznemű büszkeség színei"
+
+#: src/bz-preferences-dialog.c:47
+msgid "Nonbinary Pride Colors"
+msgstr "Nem-bináris büszkeség színei"
+
+#: src/bz-preferences-dialog.c:48
+msgid "Bisexual Pride Colors"
+msgstr "Biszexuális büszkeség színei"
+
+#: src/bz-preferences-dialog.c:49
+msgid "Asexual Pride Colors"
+msgstr "Aszexuális büszkeség színei"
+
+#: src/bz-preferences-dialog.c:50
+msgid "Pansexual Pride Colors"
+msgstr "Pánszexuális büszkeség színei"
+
+#: src/bz-preferences-dialog.c:51
+msgid "Aromantic Pride Colors"
+msgstr "Aromantikus büszkeség színei"
+
+#: src/bz-preferences-dialog.c:52
+msgid "Genderfluid Pride Colors"
+msgstr "Nemi identitásváltozás büszkeség színei"
+
+#: src/bz-preferences-dialog.c:53
+msgid "Polysexual Pride Colors"
+msgstr "Poliszexuális büszkeség színei"
+
+#: src/bz-preferences-dialog.c:54
+msgid "Omnisexual Pride Colors"
+msgstr "Omniszexuális büszkeség színei"
+
+#: src/bz-preferences-dialog.c:55
+msgid "Aroace Pride Colors"
+msgstr "Aroace büszkeség színei"
+
+#: src/bz-preferences-dialog.c:56
+msgid "Agender Pride Colors"
+msgstr "Nemi identitás nélküli büszkeség színei"
+
+#: src/bz-preferences-dialog.c:57
+msgid "Genderqueer Pride Colors"
+msgstr "Genderqueer büszkeség színei"
+
+#: src/bz-preferences-dialog.c:58
+msgid "Intersex Pride Colors"
+msgstr "Interszex büszkeség színei"
+
+#: src/bz-preferences-dialog.c:59
+msgid "Demigender Pride Colors"
+msgstr "Félnemű büszkeség színei"
+
+#: src/bz-preferences-dialog.c:60
+msgid "Biromantic Pride Colors"
+msgstr "Biromantikus büszkeség színei"
+
+#: src/bz-preferences-dialog.c:61
+msgid "Disability Pride Colors"
+msgstr "Fogyatékossági büszkeség színei"
+
+#: src/bz-preferences-dialog.c:62
+msgid "Femboy Pride Colors"
+msgstr "Lányos fiú büszkeség színei"
+
+#: src/bz-preferences-dialog.c:63
+msgid "Neutrois Pride Colors"
+msgstr "Neutrois büszkeség színei"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-preferences-dialog.c:286
+msgid "Bazaar needs to run in the background to check for app updates"
+msgstr ""
+"A Bazár alkalmazásnak a háttérben kell futnia az alkalmazásfrissítések "
+"kereséséhez"
+
+#: src/bz-releases-dialog.blp:5 src/bz-updates-card.c:159
 msgid "Version History"
 msgstr "Verziótörténet"
 
-#: src/bz-releases-list.c:128
+#: src/bz-releases-preview.blp:30
+msgid "_Version History"
+msgstr "_Verziótörténet"
+
+#. Translators: something happened less than a day ago
+#: src/bz-releases-list.c:120
+msgid "Today"
+msgstr "Ma"
+
+#. Translators: something happened more than a day ago but less than 2 days ago
+#: src/bz-releases-list.c:123
+msgid "Yesterday"
+msgstr "Tegnap"
+
+#. Translators: something happened days ago
+#: src/bz-releases-list.c:126
+#, c-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d nappal ezelőtt"
+msgstr[1] "%d nappal ezelőtt"
+
+#. Translators: something happened weeks ago
+#: src/bz-releases-list.c:129
+#, c-format
+msgid "%d week ago"
+msgid_plural "%d weeks ago"
+msgstr[0] "%d héttel ezelőtt"
+msgstr[1] "%d héttel ezelőtt"
+
+#. Translators: something happened months ago
+#: src/bz-releases-list.c:132
+#, c-format
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d hónappal ezelőtt"
+msgstr[1] "%d hónappal ezelőtt"
+
+#. Translators: something happened years ago
+#: src/bz-releases-list.c:135
+#, c-format
+msgid "%d year ago"
+msgid_plural "%d years ago"
+msgstr[0] "%d évvel ezelőtt"
+msgstr[1] "%d évvel ezelőtt"
+
+#. TRANSLATORS: This is the date string with: day number, month name, year.
+#. i.e. "22 March 2026"
+#: src/bz-releases-list.c:153
+msgid "%e %B %Y"
+msgstr "%Y. %B %-e."
+
+#: src/bz-releases-list.c:194
 #, c-format
 msgid "Version %s"
 msgstr "%s verzió"
 
-#: src/bz-releases-list.c:153
+#: src/bz-releases-list.c:249
 msgid "No details for this release"
 msgstr "Nincsenek részletek ehhez a kiadáshoz"
 
-#: src/bz-search-widget.blp:69
-msgid "Search Apps"
-msgstr "Alkalmazások keresése"
+#: src/bz-releases-list.c:262
+msgid "Get More Information"
+msgstr "További információk beszerzése"
+
+#: src/bz-rich-app-tile.blp:218
+msgid "Uninstall"
+msgstr "Eltávolítás"
+
+#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#: src/bz-rich-app-tile.c:384
+msgid "Get"
+msgstr "Lekérés"
+
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:307
+#: src/safety-calculator.c:161
+msgid "Arbitrary Permissions"
+msgstr "Tetszőleges jogosultságok"
+
+#: src/bz-safety-dialog.blp:49
+msgid ""
+"This app has a permission that indirectly allows it to grant itself <b>any "
+"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, "
+"such as accessing all your files and connecting to the internet.\n"
+"\n"
+"Viewing the other permissions may still give a better idea of what the app "
+"is likely to do."
+msgstr ""
+"Ez az alkalmazás olyan jogosultsággal rendelkezik, amely közvetett módon "
+"lehetővé teszi számára, hogy <b>bármely más, általa kívánt jogosultságot</b> "
+"megadjon magának, megkerülve ezzel a Flatpak biztonságos, zárt környezetét.\n"
+"\n"
+"Ezért bármit megtehet, amit egy kiváltságos, nem a biztonságos, zárt "
+"környezetben futó alkalmazás megtehet, például hozzáférhet az összes fájlhoz "
+"és kapcsolódhat az internethez.\n"
+"\n"
+"A többi jogosultság megtekintése még mindig jobb képet adhat arról, hogy az "
+"alkalmazás várhatóan miket fog csinálni."
+
+#: src/bz-safety-dialog.blp:53
+msgid "View Other Permissions"
+msgstr "Egyéb jogosultságok megtekintése"
+
+#. TRANSLATORS: short app safety rating label
+#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:409
+msgid "Safe"
+msgstr "Biztonságos"
+
+#: src/bz-safety-dialog.blp:114
+msgid "App ID"
+msgstr "Alkalmazásazonosító"
+
+#: src/bz-safety-dialog.blp:124
+msgid "SDK"
+msgstr "SDK"
+
+#: src/bz-safety-dialog.blp:157
+msgid ""
+"This app uses an outdated version of the software platform (SDK) and might "
+"contain bugs or security vulnerabilities which will not be fixed."
+msgstr ""
+"Ez az alkalmazás a szoftverplatform (SDK) elavult verzióját használja, és "
+"olyan hibákat vagy biztonsági sérülékenységeket tartalmazhat, amelyek nem "
+"lesznek javítva."
+
+#: src/bz-safety-dialog.c:293 src/bz-safety-dialog.c:326
+msgid "Safety"
+msgstr "Biztonság"
+
+#: src/bz-safety-dialog.c:386
+#, c-format
+msgid "%s is Safe"
+msgstr "A(z) %s biztonságos"
+
+#: src/bz-safety-dialog.c:391
+#, c-format
+msgid "%s has no Unsafe Permissions"
+msgstr "A(z) %s nem rendelkezik nem biztonságos jogosultságokkal"
+
+#: src/bz-safety-dialog.c:396
+#, c-format
+msgid "%s is Probably Safe"
+msgstr "A(z) %s valószínűleg biztonságos"
+
+#: src/bz-safety-dialog.c:401
+#, c-format
+msgid "%s is Possibly Unsafe"
+msgstr "A(z) %s valószínűleg nem biztonságos"
+
+#: src/bz-safety-dialog.c:406
+#, c-format
+msgid "%s is Unsafe"
+msgstr "A(z) %s nem biztonságos"
+
+#: src/bz-screenshot-page.blp:73
+msgid "Back"
+msgstr "Vissza"
+
+#: src/bz-screenshot-page.blp:103
+msgid "Previous Screenshot"
+msgstr "Előző képernyőkép"
+
+#: src/bz-screenshot-page.blp:113
+msgid "Next Screenshot"
+msgstr "Következő képernyőkép"
+
+#: src/bz-screenshot-page.blp:129
+msgid "Copy Image"
+msgstr "Kép másolása"
+
+#: src/bz-screenshot-page.blp:192
+msgid "Reset View"
+msgstr "Nézet visszaállítása"
+
+#: src/bz-screenshot-page.blp:203
+msgid "Zoom Out"
+msgstr "Kicsinyítés"
+
+#: src/bz-screenshot-page.blp:213
+msgid "Zoom In"
+msgstr "Nagyítás"
+
+#: src/bz-screenshots-carousel.blp:6
+msgid "Screenshots Carousel"
+msgstr "Képernyőképek körhintája"
+
+#: src/bz-screenshots-carousel.blp:104
+msgid "No Screenshots"
+msgstr "Nincsenek képernyőképek"
+
+#: src/bz-screenshots-carousel.blp:128
+msgid "Open Screenshot Viewer"
+msgstr "Képernyőkép-megjelenítő megnyitása"
+
+#: src/bz-screenshots-carousel.c:310
+#, c-format
+msgid "Screenshot %u %s"
+msgstr "Képernyőkép %u %s"
+
+#: src/bz-screenshots-carousel.c:312
+#, c-format
+msgid "Screenshot %u"
+msgstr "Képernyőkép %u"
+
+#: src/bz-search-bar.blp:47 src/bz-search-bar.blp:57
+msgid "Clear Search"
+msgstr "Keresés törlése"
+
+#: src/bz-search-filter-popover.blp:18 src/bz-search-page.blp:66
+msgid "Filters"
+msgstr "Szűrők"
+
+#: src/bz-search-filter-popover.blp:35
+msgid "_Verified"
+msgstr "_Ellenőrizve"
+
+#: src/bz-search-filter-popover.blp:42
+msgid "_Free/Open"
+msgstr "_Ingyenes/szabad"
+
+#: src/bz-search-filter-popover.blp:49
+msgid "Non-_EOL"
+msgstr "Még _támogatott"
+
+#: src/bz-search-filter-popover.blp:52
+msgid "Filter out End-of-Life apps"
+msgstr "Életciklusuk végét elért alkalmazások kiszűrése"
+
+#: src/bz-search-filter-popover.blp:57
+msgid "_Mobile Friendly"
+msgstr "_Mobilbarát"
+
+#: src/bz-search-filter-popover.blp:64
+msgid "Categories"
+msgstr "Kategóriák"
+
+#: src/bz-search-page.blp:45
+msgid "Search Apps, Games, Software"
+msgstr "Alkalmazások, játékok és szoftverek keresése"
+
+#: src/bz-search-page.blp:52
+msgid "Search Filters"
+msgstr "Keresési szűrők"
+
+#: src/bz-search-page.blp:171
+msgid "Browse Categories"
+msgstr "Kategóriák tallózása"
+
+#: src/bz-search-page.blp:207
+msgid "Categories Unavailable"
+msgstr "Kategóriák nem érhetők el"
+
+#: src/bz-search-page.blp:208
+msgid "Search for apps using the search bar above."
+msgstr "Alkalmazások keresése a fenti keresősáv használatával."
+
+#: src/bz-search-page.blp:326
+msgid "No Applications Found"
+msgstr "Nem találhatók alkalmazások"
+
+#: src/bz-search-page.c:253
+#, c-format
+msgid "No results found for \"%s\" in Flathub"
+msgstr "Nincs találat a(z) „%s” keresési kifejezésre a Flathubon"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:67
+msgid "Browser"
+msgstr "Böngésző"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:72
+msgid "Video"
+msgstr "Videó"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:82
+msgid "Office"
+msgstr "Iroda"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:87
+msgid "PDF"
+msgstr "PDF"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:92
+msgid "Calendar"
+msgstr "Naptár"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:97
+msgid "Messaging"
+msgstr "Üzenetküldő"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:102
+msgid "Paint"
+msgstr "Festés"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:107
+msgid "VPN"
+msgstr "VPN"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:112
+msgid "Torrent"
+msgstr "Torrent"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:117
+msgid "Emulator"
+msgstr "Emulátor"
+
+#: src/bz-share-list.c:58
+msgctxt "Project URL Type"
+msgid "Flathub Page"
+msgstr "Flathub oldal"
+
+#: src/bz-share-list.c:59
+msgctxt "Project URL Type"
+msgid "Project Website"
+msgstr "Projekt webhelye"
+
+#: src/bz-share-list.c:60
+msgctxt "Project URL Type"
+msgid "Issue Tracker"
+msgstr "Problémakövető"
+
+#: src/bz-share-list.c:61
+msgctxt "Project URL Type"
+msgid "FAQ"
+msgstr "GYIK"
+
+#: src/bz-share-list.c:62
+msgctxt "Project URL Type"
+msgid "Help"
+msgstr "Súgó"
+
+#: src/bz-share-list.c:63
+msgctxt "Project URL Type"
+msgid "Donate"
+msgstr "Adományozás"
 
 #: src/bz-share-list.c:64
-msgid "Copied!"
-msgstr "Másolva!"
+msgctxt "Project URL Type"
+msgid "Translate"
+msgstr "Fordítás"
 
-#: src/bz-share-list.c:116
+#: src/bz-share-list.c:65
+msgctxt "Project URL Type"
+msgid "Contact"
+msgstr "Kapcsolat"
+
+#: src/bz-share-list.c:66
+msgctxt "Project URL Type"
+msgid "Source Code"
+msgstr "Forráskód"
+
+#: src/bz-share-list.c:67
+msgctxt "Project URL Type"
+msgid "Contribute"
+msgstr "Közreműködés"
+
+#: src/bz-share-list.c:68
+msgctxt "Project URL Type"
+msgid "Manifest"
+msgstr "Jegyzékfájl"
+
+#: src/bz-share-list.c:326
 msgid "Copy Link"
 msgstr "Hivatkozás másolása"
 
-#: src/bz-share-list.c:127
-msgid "Open Link"
-msgstr "Hivatkozás megnyitása"
-
-#: src/bz-stats-dialog.blp:26
+#. TRANSLATORS: page in the statistics dialog
+#: src/bz-stats-dialog.blp:28
 msgid "Timeline"
 msgstr "Idővonal"
 
-#: src/bz-stats-dialog.blp:31
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "Telepítés:"
 
-#: src/bz-stats-dialog.blp:37
+#. TRANSLATORS: page in the statistics dialog
+#: src/bz-stats-dialog.blp:58
 msgid "World"
-msgstr "Térkép"
+msgstr "Világ"
 
-#: src/bz-transaction-manager.c:1140
+#: src/bz-stats-dialog.blp:72
+msgid "Since 4/15/2024"
+msgstr "2024. április 15. óta"
+
+#. Translators: M is the suffix for millions
+#: src/bz-stats-dialog.c:126
+#, c-format
+msgid "%.2fM Total Installs"
+msgstr "Összesen %.2f M telepítés"
+
+#. Translators: K is the suffix for thousands
+#: src/bz-stats-dialog.c:129
+#, c-format
+msgid "%.2fK Total Installs"
+msgstr "Összesen %.2f E telepítés"
+
+#: src/bz-stats-dialog.c:131
+#, c-format
+msgid "%'d Total Installs"
+msgstr "Összesen %'d telepítés"
+
+#: src/bz-subcategory-list.c:77
+msgid "No Results Found"
+msgstr "Nincs találat"
+
+#: src/bz-subcategory-list.c:99
+msgid "Search failed"
+msgstr "A keresés sikertelen"
+
+#: src/bz-transaction-dialog.c:118 src/context-tile-callbacks.c:251
+#: src/context-tile-callbacks.c:256 src/context-tile-callbacks.c:284
+#: src/context-tile-callbacks.c:293
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: src/bz-transaction-dialog.c:148
+msgid "Keep User Data"
+msgstr "Felhasználói adatok megtartása"
+
+#: src/bz-transaction-dialog.c:149
+msgid "Allow restoring personal settings &amp; content"
+msgstr "Személyes beállítások és tartalmak helyreállításának lehetővé tétele"
+
+#: src/bz-transaction-dialog.c:158
+msgid "Delete All Data"
+msgstr "Összes adat törlése"
+
+#: src/bz-transaction-dialog.c:159
+msgid "Permanently erase user data to save space"
+msgstr "Felhasználói adatok végleges törlése a helymegtakarításhoz"
+
+#: src/bz-transaction-dialog.c:189
+#, c-format
+msgid "Remove %s?"
+msgstr "Eltávolítja: %s?"
+
+#: src/bz-transaction-dialog.c:192
+msgid "Select which version to remove."
+msgstr "Válassza ki, hogy melyik verziót szeretné eltávolítani."
+
+#: src/bz-transaction-dialog.c:194
+#, c-format
+msgid "It will not be possible to use %s after it is uninstalled."
+msgstr "Nem lesz lehetséges a(z) %s használata az eltávolítás után."
+
+#: src/bz-transaction-dialog.c:217
+#, c-format
+msgid "“%s” is High Risk"
+msgstr "A(z) „%s” magas kockázatú"
+
+#: src/bz-transaction-dialog.c:221
+msgid ""
+"This app has full access to your system, including all <b>your files, "
+"browser history, saved passwords</b>, and more. It also has access to the "
+"internet, meaning it could send your data to outside parties.\n"
+"\n"
+"Because the app is proprietary, it can not be audited for what it does with "
+"these permissions."
+msgstr ""
+"Ennek az alkalmazásnak teljes hozzáférése van a rendszerhez, beleértve az Ön "
+"összes <b>fájlját, a böngészőelőzményeit, a mentett jelszavait</b> és "
+"egyebeket. Emellett hozzáféréssel rendelkezik az internethez is, ami azt "
+"jelenti, hogy elküldheti az adatait külső feleknek.\n"
+"\n"
+"Mivel az alkalmazás tulajdonosi, nem lehet ellenőrizni, hogy mit csinál "
+"ezekkel a jogosultságokkal."
+
+#: src/bz-transaction-dialog.c:230
+msgid ""
+"This app uses the legacy X11 windowing system, which allows it to <b>record "
+"all keystrokes, capture screenshots, and monitor other applications</b>. It "
+"also has access to the internet, meaning it could send your data to outside "
+"parties.\n"
+"\n"
+"Because the app is proprietary, it can not be audited for what it does with "
+"these permissions."
+msgstr ""
+"Ez az alkalmazás az örökölt X11 ablakkezelő rendszert használja, amely "
+"lehetővé teszi számára, hogy <b>rögzítse az összes billentyűleütést, "
+"képernyőképeket készítsen, és megfigyelje a többi alkalmazást</b>. Emellett "
+"hozzáféréssel rendelkezik az internethez is, ami azt jelenti, hogy "
+"elküldheti az adatait külső feleknek.\n"
+"\n"
+"Mivel az alkalmazás tulajdonosi, nem lehet ellenőrizni, hogy mit csinál "
+"ezekkel a jogosultságokkal."
+
+#: src/bz-transaction-dialog.c:246
+msgid "_Install Anyway"
+msgstr "_Telepítés mindenképp"
+
+#: src/bz-transaction-dialog.c:300 src/bz-transaction-dialog.c:329
+msgid "Failed to load transaction dialog"
+msgstr "Nem sikerült betölteni a tranzakciós párbeszédablakot"
+
+#: src/bz-transaction-manager.c:796
 #, c-format
 msgid "Finished in %.02f seconds"
 msgstr "Befejezve %.02f másodperc alatt"
 
-#: src/bz-transaction-view.blp:94
-msgid "App Add-on"
-msgstr "Alkalmazás kiegészítő"
+#: src/bz-transaction-tile.blp:130
+msgid "App Add-On"
+msgstr "Alkalmazáskiegészítő"
 
-#: src/bz-transaction-view.blp:119
+#: src/bz-transaction-tile.blp:159
 msgid "Runtime"
 msgstr "Futtatókörnyezet"
 
-#: src/bz-transaction-view.blp:145 src/bz-transaction-view.blp:171
-msgid "Install Size"
-msgstr "Telepített méret"
+#: src/bz-transaction-tile.blp:183
+msgid "In Queue"
+msgstr "Sorba állítva"
 
-#: src/bz-transaction-view.blp:199 src/bz-window.blp:350
-msgid "Update"
-msgstr "Frissítés"
+#: src/bz-transaction-tile.blp:207
+msgid "Done"
+msgstr "Kész"
 
-#: src/bz-transaction-view.c:139
+#: src/bz-transaction-tile.blp:231
+msgid "Cancelled"
+msgstr "Megszakítva"
+
+#: src/bz-transaction-tile.blp:255
+msgid "Error"
+msgstr "Hiba"
+
+#: src/bz-transaction-tile.blp:313
+msgid "Cancel Transaction"
+msgstr "Tranzakció megszakítása"
+
+#: src/bz-transaction-tile.blp:323
+msgid "Show Details"
+msgstr "Részletek megjelenítése"
+
+#: src/bz-transaction-tile.blp:436
+msgid "Show Error Info"
+msgstr "Hibainformációk megjelenítése"
+
+#: src/bz-transaction-tile.c:107
 #, c-format
-msgid "Transferred %s so far"
-msgstr "Eddig átvíve: %s"
+msgid "%s Freed"
+msgstr "%s felszabadítva"
 
-#: src/bz-transaction.c:336
+#: src/bz-transaction-tile.c:360 src/bz-transaction-tile.c:363
+msgid "Transaction Error"
+msgstr "Tranzakciós hiba"
+
+#: src/bz-transaction.c:344
 msgid "Pending"
 msgstr "Függőben"
 
-#: src/bz-update-dialog.blp:7
-msgid "Install Now"
-msgstr "Telepítés most"
+#: src/bz-updates-card.blp:23
+msgid "_Update All"
+msgstr "Összes _frissítése"
 
-#: src/bz-update-dialog.blp:10
-msgid "Updates Are Available"
-msgstr "Frissítések elérhetők"
-
-#: src/bz-update-dialog.blp:11
-msgid ""
-"The following applications are eligible for updates. Would you like to "
-"install them?"
-msgstr ""
-"A következő alkalmazások frissítésre várnak. Szeretnéd telepíteni őket?"
-
-#: src/bz-update-dialog.c:134
+#: src/bz-updates-card.c:215
 #, c-format
-msgid ""
-"%d runtimes and/or addons are eligible for updates. Would you like to "
-"install them?"
+msgid "%u Runtime Update"
+msgid_plural "%u Runtime Updates"
+msgstr[0] "%u futtatókörnyezet-frissítés"
+msgstr[1] "%u futtatókörnyezet-frissítés"
+
+#: src/bz-update-history-dialog.blp:5 src/bz-update-history-dialog.blp:11
+msgid "Installed Updates"
+msgstr "Telepített frissítések"
+
+#: src/bz-update-history-dialog.blp:128 src/bz-update-history-dialog.c:99
+msgid "Release Notes"
+msgstr "Kiadási megjegyzések"
+
+#: src/bz-update-history-dialog.blp:143
+msgid "No Release Info"
+msgstr "Nincsenek kiadási információk"
+
+#: src/bz-user-data-page.blp:5
+msgid "Manage Leftover User Data"
+msgstr "Megmaradt felhasználói adatok kezelése"
+
+#: src/bz-user-data-page.blp:32
+msgid "No Leftover User Data Found"
+msgstr "Nem található megmaradt felhasználói adat"
+
+#: src/bz-user-data-page.blp:33
+msgid "Personal data left behind by apps that were removed will show up here"
 msgstr ""
-"%d futtatókörnyezet és/vagy kiegészítőhöz érhető el frissítés. Szeretnéd "
-"telepíteni ezeket?"
+"Az eltávolított alkalmazások által hátrahagyott személyes adatok itt fognak "
+"megjelenni"
 
-#: src/bz-update-dialog.c:142
+#: src/bz-user-data-page.c:229
 #, c-format
-msgid "Additionally, %d runtimes and/or addons will be updated."
-msgstr "További %d futtatókörnyezet és/vagy kiegészítő frissítve lesz."
+msgid "Trashed User Data for %u App"
+msgid_plural "Trashed User Data for %u Apps"
+msgstr[0] "%u alkalmazás felhasználói adata törölve"
+msgstr[1] "%u alkalmazás felhasználói adata törölve"
 
-#: src/bz-window.blp:63
-msgid "Go Home"
-msgstr "Vissza a kezdőoldalra"
+#: src/bz-user-data-page.c:233
+#, c-format
+msgid "Trashed User Data for %s"
+msgstr "A(z) %s felhasználói adata törölve"
 
-#: src/bz-window.blp:86
-msgid "Tasks"
-msgstr "Feladatok"
+#: src/bz-user-data-tile.blp:91
+msgid "Open User Data Folder"
+msgstr "Felhasználói adatok mappa megnyitása"
 
-#: src/bz-window.blp:105 src/bz-window.blp:418
-msgid "Toggle transaction sidebar"
-msgstr "Tranzakciók megjelenítése/elrejtése"
+#: src/bz-user-data-tile.blp:102
+msgid "Trash User Data"
+msgstr "Felhasználói adatok törlése"
 
-#: src/bz-window.blp:141
-msgid "Stop Active Tasks"
-msgstr "Futó feladatok leállítása"
+#: src/bz-window.blp:80
+msgid "Refreshing"
+msgstr "Frissítés"
 
-#: src/bz-window.blp:149
-msgid "Clear History"
-msgstr "Előzmények törlése"
-
-#: src/bz-window.blp:165
-msgid "No Tasks Yet"
-msgstr "Nincsenek feladatok"
-
-#: src/bz-window.blp:219 src/bz-window.blp:223
-msgid "Offline"
-msgstr "Offline"
-
-#: src/bz-window.blp:229
-msgid "Loading"
-msgstr "Betöltés"
-
-#: src/bz-window.blp:270
-msgid "Browse"
-msgstr "Böngészés"
-
-#: src/bz-window.blp:280
-msgid "App View"
-msgstr "Alkalmazás nézet"
-
-#: src/bz-window.blp:295 src/bz-window.blp:392
-msgid "Flathub"
-msgstr "Flathub"
-
-#: src/bz-window.blp:325
-msgid "Go Back"
-msgstr "Vissza"
-
-#: src/bz-window.blp:381
-msgid "View curated applications"
-msgstr "Válogatott alkalmazások megtekintése"
-
-#: src/bz-window.blp:385
+#: src/bz-window.blp:98
 msgid "Curated"
 msgstr "Válogatott"
 
-#: src/bz-window.blp:389
-msgid "View the latest on Flathub"
-msgstr "Legújabb Flathub alkalmazások megtekintése"
+#: src/bz-window.blp:110
+msgid "Explore"
+msgstr "Felfedezés"
 
-#: src/bz-window.blp:396
-msgid "View installed applications"
-msgstr "Telepített alkalmazások megtekintése"
+#. Translators: .
+#: src/bz-window.blp:122
+msgid "Library"
+msgstr "Gyűjtemény"
 
-#: src/bz-window.blp:441
+#: src/bz-window.blp:137
+msgid "Search"
+msgstr "Keresés"
+
+#: src/bz-window.blp:223
 msgid "Main Menu"
 msgstr "Főmenü"
 
-#: src/bz-window.blp:486
-msgid "_Donate to Bazaar ❤️"
-msgstr "A Bazár _támogatása ❤️"
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:235
+msgid "You are running a new version of Bazaar!"
+msgstr "A Bazár új verzióját futtatja!"
 
-#: src/bz-window.blp:491
-msgid "_Refresh Content"
-msgstr "Ú_jratöltés"
+#: src/bz-window.blp:236
+msgid "See What's New"
+msgstr "Újdonságok megtekintése"
 
-#: src/bz-window.blp:498
+#: src/bz-window.blp:243
+msgid ""
+"You have a network connection but are viewing a cached version of Flathub"
+msgstr "Van hálózati kapcsolata, de a Flathub gyorsítótárazott verzióját nézi"
+
+#: src/bz-window.blp:254
+msgid "Network connection is metered — automatic refreshes disabled"
+msgstr ""
+"A hálózati kapcsolat forgalomkorlátos – az automatikus frissítések le vannak "
+"tiltva"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:291
+msgid "_Donate to Bazaar"
+msgstr "_Adományozás a Bazár fejlesztéséhez"
+
+#: src/bz-window.blp:297
+msgid "_Refresh"
+msgstr "_Frissítés"
+
+#: src/bz-window.blp:301
+msgid "_Login With Flathub"
+msgstr "_Bejelentkezés Flathub használatával"
+
+#: src/bz-window.blp:307
+msgid "_Manage Leftover User Data"
+msgstr "Megmaradt felhasználói adatok _kezelése"
+
+#: src/bz-window.blp:313
 msgid "_Preferences"
 msgstr "_Beállítások"
 
-#: src/bz-window.blp:503
+#: src/bz-window.blp:318
 msgid "_Keyboard Shortcuts"
 msgstr "_Gyorsbillentyűk"
 
-#: src/bz-window.blp:508
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:324
 msgid "_About Bazaar"
 msgstr "A Bazár _névjegye"
 
-#: src/bz-window.blp:515
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:331
 msgid "_Quit Bazaar"
-msgstr "_Kilépés"
+msgstr "_Kilépés a Bazárból"
 
-#: src/bz-window.c:827
-msgid ""
-"The ability to inspect and install local .flatpak bundle files is coming "
-"soon! In the meantime, try running\n"
-"\n"
-"flatpak install --bundle your-bundle.flatpak\n"
-"\n"
-"on the command line."
-msgstr ""
-"Hamarosan elérhető lesz a helyi .flatpak csomagfájlok ellenőrzésének és "
-"telepítésének lehetősége! Addig is próbáld meg futtatni a\n"
-"\n"
-"flatpak install --bundle your-bundle.flatpak\n"
-"\n"
-"parancsot a parancssorban."
+#: src/bz-window.blp:357
+msgid "Log Out"
+msgstr "Kijelentkezés"
 
-#: src/bz-window.c:967
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
+#: src/bz-window.c:381
+#, c-format
+msgid "Bazaar — %s"
+msgstr "Bazár – %s"
+
+#: src/bz-window.c:661 src/bz-window.c:699
+msgid "Failed to launch application"
+msgstr "Nem sikerült elindítani az alkalmazást"
+
+#: src/bz-window.c:778
+msgid "Could not open link"
+msgstr "Nem sikerült megnyitni a hivatkozást"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.c:987
+msgid "You can't remove Bazaar from Bazaar!"
+msgstr "Nem távolíthatja el a Bazárt a Bazárból!"
+
+#: src/bz-window.c:1371 src/bz-window.c:1405
 msgid "Can't do that right now!"
-msgstr "Ezt most nem lehetséges!"
+msgstr "Ezt most nem tudja megtenni!"
 
-#: src/bz-window.c:1096
+#: src/context-tile-callbacks.c:68
+msgid "---"
+msgstr "---"
+
+#. Translators: M is the suffix for millions
+#: src/context-tile-callbacks.c:75
 #, c-format
-msgid "Install %s?"
-msgstr "%s telepítése"
+msgid "%.*fM"
+msgstr "%.*f M"
 
-#: src/bz-window.c:1099
-msgid "May install additional shared components"
-msgstr "További megosztott összetevők telepíthetők"
-
-#: src/bz-window.c:1118
+#. Translators: K is the suffix for thousands
+#: src/context-tile-callbacks.c:82
 #, c-format
-msgid "Remove %s?"
-msgstr "Remove %s?"
+msgid "%.*fK"
+msgstr "%.*f E"
 
-#: src/bz-window.c:1121
-msgid "Settings & user data will be kept"
-msgstr "A beállítások és a felhasználói adatok megmaradnak"
-
-#: src/bz-window.c:1289
-msgid "Resume Current Tasks"
-msgstr "Feladatok folytatása"
-
-#: src/bz-window.c:1295
-msgid "Pause Current Tasks"
-msgstr "Feladatok szüneteltetése"
-
-#: src/bz-world-map.c:523
+#: src/context-tile-callbacks.c:92
 #, c-format
-msgid "%s: %'u downloads"
-msgstr "%s: %'u downloads"
+msgid "%d downloads in the last month"
+msgstr "%d letöltés az elmúlt napban"
 
-#: src/gtk/shortcuts-dialog.blp:6
+#. TRANSLATORS: %s is a formatted file size, for example: "128 MB"
+#: src/context-tile-callbacks.c:139
+#, c-format
+msgid "+%s Runtime"
+msgstr "+%s futtatókörnyezet"
+
+#: src/context-tile-callbacks.c:142
+msgid "Download"
+msgstr "Letöltés"
+
+#: src/context-tile-callbacks.c:151 src/context-tile-callbacks.c:163
+msgid "Size information unavailable"
+msgstr "A méretinformációk nem érhetők el"
+
+#: src/context-tile-callbacks.c:154
+#, c-format
+msgid "Download size of %s"
+msgstr "Letöltés mérete: %s"
+
+#: src/context-tile-callbacks.c:166
+#, c-format
+msgid "Installed size of %s"
+msgstr "Telepített méret: %s"
+
+#: src/context-tile-callbacks.c:199
+msgid "All Ages"
+msgstr "Összes életkor"
+
+#: src/context-tile-callbacks.c:211
+msgid "Age rating information unavailable"
+msgstr "Az életkor-besorolási információk nem érhetők el"
+
+#: src/context-tile-callbacks.c:216
+msgid "Suitable for all ages"
+msgstr "Minden korosztály számára alkalmas"
+
+#: src/context-tile-callbacks.c:218
+#, c-format
+msgid "Suitable for ages %d and up"
+msgstr "%d éves kortól alkalmas"
+
+#: src/context-tile-callbacks.c:261
+#, c-format
+msgid "Free software licensed under %s"
+msgstr "Szabad szoftver a(z) %s licenc alatt"
+
+#: src/context-tile-callbacks.c:266
+msgid "Free software"
+msgstr "Szabad szoftver"
+
+#: src/context-tile-callbacks.c:269
+msgid "Proprietary Software"
+msgstr "Tulajdonosi szoftver"
+
+#: src/context-tile-callbacks.c:272
+#, c-format
+msgid "Special License: %s"
+msgstr "Különleges licenc: %s"
+
+#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#: src/context-tile-callbacks.c:290
+msgid "Free Software"
+msgstr "Szabad szoftver"
+
+#: src/context-tile-callbacks.c:318
+msgid "Adaptive"
+msgstr "Alkalmazkodó"
+
+#: src/context-tile-callbacks.c:318
+msgid "Desktop Only"
+msgstr "Csak asztali"
+
+#: src/context-tile-callbacks.c:324
+msgid "Works on desktop, tablets, and phones"
+msgstr "Működik asztali számítógépen, táblagépeken és mobiltelefonokon"
+
+#: src/context-tile-callbacks.c:325
+msgid "May not work on mobile devices"
+msgstr "Lehet, hogy nem működik mobileszközökön"
+
+#. TRANSLATORS: short app safety rating label
+#: src/context-tile-callbacks.c:412 src/context-tile-callbacks.c:415
+msgid "Low Risk"
+msgstr "Alacsony kockázat"
+
+#. TRANSLATORS: short app safety rating label
+#: src/context-tile-callbacks.c:418
+msgid "Medium Risk"
+msgstr "Közepes kockázat"
+
+#. TRANSLATORS: short app safety rating label
+#: src/context-tile-callbacks.c:421
+msgid "High Risk"
+msgstr "Magas kockázat"
+
+#: src/safety-calculator.c:87
+msgid "Unknown Permissions"
+msgstr "Ismeretlen jogosultságok"
+
+#: src/safety-calculator.c:88
+msgid "Permissions are missing for this app."
+msgstr "A jogosultságok hiányoznak ennél az alkalmazásnál."
+
+#: src/safety-calculator.c:101
+msgid "No Permissions"
+msgstr "Nincsenek jogosultságok"
+
+#: src/safety-calculator.c:102
+msgid "App is fully sandboxed"
+msgstr "Az alkalmazás kizárólag biztonságos, zárt környezetben fut"
+
+#: src/safety-calculator.c:108
+msgid "Network Access"
+msgstr "Hálózati hozzáférés"
+
+#: src/safety-calculator.c:109
+msgid "Can access the internet"
+msgstr "Hozzáférhet az internethez"
+
+#: src/safety-calculator.c:111
+msgid "No Network Access"
+msgstr "Nincs hálózati hozzáférés"
+
+#: src/safety-calculator.c:112
+msgid "Cannot access the internet"
+msgstr "Nem férhet hozzá az internethez"
+
+#: src/safety-calculator.c:117
+msgid "User Device Access"
+msgstr "Felhasználói eszközhöz való hozzáférés"
+
+#: src/safety-calculator.c:118
+msgid "Can access devices such as webcams or gaming controllers"
+msgstr "Hozzáférhet olyan eszközökhöz, mint a webkamerák vagy a játékvezérlők"
+
+#: src/safety-calculator.c:120
+msgid "No User Device Access"
+msgstr "Nincs felhasználói eszközhöz való hozzáférés"
+
+#: src/safety-calculator.c:121
+msgid "Cannot access devices such as webcams or gaming controllers"
+msgstr ""
+"Nem férhet hozzá olyan eszközökhöz, mint a webkamerák vagy a játékvezérlők"
+
+#: src/safety-calculator.c:126
+msgid "Input Device Access"
+msgstr "Beviteli eszközhöz való hozzáférés"
+
+#: src/safety-calculator.c:127
+msgid "Can access input devices"
+msgstr "Hozzáférhet a beviteli eszközökhöz"
+
+#: src/safety-calculator.c:133
+msgid "Microphone Access and Audio Playback"
+msgstr "Mikrofonhoz való hozzáférés és hanglejátszás"
+
+#: src/safety-calculator.c:134
+msgid "Can listen using microphones and play audio without asking permission"
+msgstr ""
+"Jogosultságkérés nélkül hallgatózhat a mikrofonok használatával és hangot "
+"játszhat le"
+
+#: src/safety-calculator.c:140
+msgid "System Device Access"
+msgstr "Rendszereszközhöz való hozzáférés"
+
+#: src/safety-calculator.c:141
+msgid "Can access system devices which require elevated permissions"
+msgstr ""
+"Hozzáférhet a rendszereszközökhöz, ami emelt szintű jogosultságokat igényel"
+
+#: src/safety-calculator.c:147
+msgid "Screen Contents Access"
+msgstr "Képernyőtartalomhoz való hozzáférés"
+
+#: src/safety-calculator.c:148
+msgid "Can access the contents of the screen or other windows"
+msgstr "Hozzáférhet a képernyő vagy más ablakok tartalmához"
+
+#: src/safety-calculator.c:154
+msgid "Legacy Windowing System"
+msgstr "Örökölt ablakkezelő rendszer"
+
+#: src/safety-calculator.c:155
+msgid "Always uses a legacy windowing system (X11)"
+msgstr "Mindig egy örökölt ablakkezelő rendszert (X11) használ"
+
+#: src/safety-calculator.c:162
+msgid "Can acquire arbitrary permissions"
+msgstr "Tetszőleges jogosultságokat szerezhet"
+
+#: src/safety-calculator.c:168
+msgid "User Settings"
+msgstr "Felhasználói beállítások"
+
+#: src/safety-calculator.c:169
+msgid "Can access and change user settings"
+msgstr "Hozzáférhet és megváltoztathatja a felhasználói beállításokat"
+
+#: src/safety-calculator.c:175
+msgid "Full File System Read/Write Access"
+msgstr "Teljes fájlrendszer-olvasási és -írási hozzáférés"
+
+#: src/safety-calculator.c:176
+msgid "Can read and write all data on the file system"
+msgstr "Olvashatja és írhatja az összes adatot a fájlrendszeren"
+
+#: src/safety-calculator.c:183
+msgid "Home Folder Read/Write Access"
+msgstr "Saját mappa olvasási és írási hozzáférése"
+
+#: src/safety-calculator.c:184
+msgid "Can read and write all data in your home directory"
+msgstr "Olvashatja és írhatja az összes adatot a saját könyvtárában"
+
+#: src/safety-calculator.c:191
+msgid "Full File System Read Access"
+msgstr "Teljes fájlrendszer-olvasási hozzáférés"
+
+#: src/safety-calculator.c:192
+msgid "Can read all data on the file system"
+msgstr "Olvashatja az összes adatot a fájlrendszeren"
+
+#: src/safety-calculator.c:200
+msgid "Home Folder Read Access"
+msgstr "Saját mappa olvasási hozzáférése"
+
+#: src/safety-calculator.c:201
+msgid "Can read all data in your home directory"
+msgstr "Olvashatja az összes adatot a saját könyvtárában"
+
+#: src/safety-calculator.c:209
+msgid "Download Folder Read/Write Access"
+msgstr "Letöltési mappa olvasási és írási hozzáférése"
+
+#: src/safety-calculator.c:210
+msgid "Can read and write all data in your downloads directory"
+msgstr "Olvashatja és írhatja az összes adatot a letöltési könyvtárában"
+
+#: src/safety-calculator.c:220
+msgid "Download Folder Read Access"
+msgstr "Letöltési mappa olvasási hozzáférése"
+
+#: src/safety-calculator.c:221
+msgid "Can read all data in your downloads directory"
+msgstr "Olvashatja az összes adatot a letöltési könyvtárában"
+
+#: src/safety-calculator.c:242
+msgid "Can read and write all data in the directory"
+msgstr "Olvashatja és írhatja az összes adatot a könyvtárban"
+
+#: src/safety-calculator.c:266
+msgid "Can read all data in the directory"
+msgstr "Olvashatja az összes adatot a könyvtárban"
+
+#: src/safety-calculator.c:281
+msgid "No File System Access"
+msgstr "Nincs fájlrendszer-hozzáférés"
+
+#: src/safety-calculator.c:282
+msgid "Cannot access the file system at all"
+msgstr "Egyáltalán nem férhet hozzá a fájlrendszerhez"
+
+#: src/safety-calculator.c:289
+msgid "Uses System Services"
+msgstr "Rendszerszolgáltatásokat használ"
+
+#: src/safety-calculator.c:290
+msgid "Can request data from non-portal system services"
+msgstr "Adatokat kérhet nem portál rendszerszolgáltatásoktól"
+
+#: src/safety-calculator.c:296
+msgid "Uses Session Services"
+msgstr "Munkamenet-szolgáltatásokat használ"
+
+#: src/safety-calculator.c:297
+msgid "Can request data from non-portal session services"
+msgstr "Adatokat kérhet nem portál munkamenet-szolgáltatásoktól"
+
+#: src/safety-calculator.c:345
+msgid "No Service Access"
+msgstr "Nincs szolgáltatáshoz való hozzáférés"
+
+#: src/safety-calculator.c:346
+msgid "Cannot access non-portal session or system services at all"
+msgstr ""
+"Egyáltalán nem férhet hozzá nem portál munkamenethez vagy "
+"rendszerszolgáltatásokhoz"
+
+#: src/safety-calculator.c:354
+msgid "Verified App Developer"
+msgstr "Ellenőrzött alkalmazás-fejlesztő"
+
+#: src/safety-calculator.c:355
+msgid "The developer of this app has been verified to be who they say they are"
+msgstr ""
+"Ellenőrizve lett, hogy az alkalmazás fejlesztője valóban az, akinek mondja "
+"magát"
+
+#: src/safety-calculator.c:364
+msgid "Proprietary Code"
+msgstr "Tulajdonosi kód"
+
+#: src/safety-calculator.c:365
+msgid ""
+"The source code is not public, so it cannot be independently audited and "
+"might be unsafe"
+msgstr ""
+"A forráskód nem nyilvános, így nem lehet függetlenül ellenőrizni, és lehet, "
+"hogy nem biztonságos"
+
+#: src/safety-calculator.c:375
+msgid "Auditable Code"
+msgstr "Auditálható kód"
+
+#: src/safety-calculator.c:376
+msgid ""
+"The source code is public and can be independently audited, which makes the "
+"app more likely to be safe"
+msgstr ""
+"A forráskód nyilvános, és függetlenül ellenőrizhető, emiatt az alkalmazás "
+"valószínűbb, hogy biztonságos"
+
+#: src/safety-calculator.c:516
+#, c-format
+msgid "Use the %s System Service"
+msgstr "A(z) %s rendszerszolgáltatás használata"
+
+#: src/safety-calculator.c:520
+#, c-format
+msgid "Use the %s Session Service"
+msgstr "A(z) %s munkamenet-szolgáltatás használata"
+
+#: src/safety-calculator.c:524
+#, c-format
+msgid "Use the %s Service"
+msgstr "A(z) %s szolgáltatás használata"
+
+#: src/safety-calculator.c:534
+msgid "Can see the non-portal service"
+msgstr "Láthatja a nem portál szolgáltatást"
+
+#: src/safety-calculator.c:536
+msgid "Can talk to the non-portal service"
+msgstr "Kommunikálhat a nem portál szolgáltatással"
+
+#: src/safety-calculator.c:538
+msgid "Can own the non-portal service"
+msgstr "Birtokolhatja a nem portál szolgáltatást"
+
+#: src/safety-calculator.c:553
+msgid "Global Menu Integration"
+msgstr "Globális menü integráció"
+
+#: src/safety-calculator.c:554
+msgid "Can display its menus in a global menu bar"
+msgstr "Megjelenítheti a menüit egy globális menüsávban"
+
+#: src/safety-calculator.c:559
+msgid "KDE Settings Integration"
+msgstr "KDE-beállítások integrációja"
+
+#: src/safety-calculator.c:560
+msgid "Can detect when KDE desktop settings change"
+msgstr "Észlelheti, ha a KDE asztali beállítások megváltoznak"
+
+#: src/safety-calculator.c:565
+msgid "KDE Global Settings"
+msgstr "KDE globális beállítások"
+
+#: src/safety-calculator.c:566
+msgid "Can read KDE desktop preferences like fonts and colors"
+msgstr ""
+"Olvashatja a KDE asztali beállításokat, mint például betűkészleteket és "
+"színeket"
+
+#: src/safety-calculator.c:571
+msgid "Secret Storage Service"
+msgstr "Titoktároló szolgáltatás"
+
+#: src/safety-calculator.c:572
+msgid "Can store and retrieve its own passwords using the system keyring"
+msgstr ""
+"Eltárolhatja és lekérheti a saját jelszavait a rendszer kulcstartójának "
+"használatával"
+
+#: src/safety-calculator.c:577
+msgid "Desktop Notifications Service"
+msgstr "Asztali értesítések szolgáltatás"
+
+#: src/safety-calculator.c:578
+msgid "Can send desktop notifications"
+msgstr "Küldhet asztali értesítéseket"
+
+#: src/safety-calculator.c:584
+msgid "System Tray Integration"
+msgstr "Rendszertálca integráció"
+
+#: src/safety-calculator.c:585
+msgid "Can display an icon in the system tray"
+msgstr "Megjeleníthet egy ikont a rendszertálcán"
+
+#: src/safety-calculator.c:590
+msgid "KDE Connect Integration"
+msgstr "KDE Connect integráció"
+
+#: src/safety-calculator.c:591
+msgid "Can interact with devices paired via KDE Connect"
+msgstr "Interakcióba léphet a KDE Connect használatával párosított eszközökkel"
+
+#: src/shortcuts-dialog.blp:5
+msgctxt "shortcut window"
+msgid "Navigation"
+msgstr "Navigáció"
+
+#: src/shortcuts-dialog.blp:8
+msgctxt "shortcut window"
+msgid "Open Explore Page"
+msgstr "Felfedezés oldal megnyitása"
+
+#: src/shortcuts-dialog.blp:14
+msgctxt "shortcut window"
+msgid "Open Library Page"
+msgstr "Gyűjtemény oldal megnyitása"
+
+#: src/shortcuts-dialog.blp:20
+msgctxt "shortcut window"
+msgid "Open Search Page"
+msgstr "Keresés oldal megnyitása"
+
+#: src/shortcuts-dialog.blp:25
+msgctxt "shortcut window"
+msgid "Remotes"
+msgstr "Távoliak"
+
+#: src/shortcuts-dialog.blp:27
+msgctxt "shortcut window"
+msgid "Sync Remotes"
+msgstr "Távoliak szinkronizálása"
+
+#: src/shortcuts-dialog.blp:33
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Általános"
 
-#: src/gtk/shortcuts-dialog.blp:9
-msgctxt "shortcut window"
-msgid "Open Search Dialog"
-msgstr "Keresőablak megnyitása"
-
-#: src/gtk/shortcuts-dialog.blp:14
+#: src/shortcuts-dialog.blp:36
 msgctxt "shortcut window"
 msgid "Open Preferences"
 msgstr "Beállítások megnyitása"
 
-#: src/gtk/shortcuts-dialog.blp:19
-msgctxt "shortcut window"
-msgid "Refresh"
-msgstr "Újratöltés"
-
-#: src/gtk/shortcuts-dialog.blp:24
-msgctxt "shortcut window"
-msgid "Toggle Transaction Manager"
-msgstr "Tranzakciókezelő megjelenítése/elrejtése"
-
-#: src/gtk/shortcuts-dialog.blp:29
+#: src/shortcuts-dialog.blp:41
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Gyorsbillentyűk"
+msgstr "Gyorsbillentyűk megjelenítése"
 
-#: src/gtk/shortcuts-dialog.blp:34
+#: src/shortcuts-dialog.blp:46
 msgctxt "shortcut window"
-msgid "Quit"
-msgstr "Kilépés"
+msgid "Close Window"
+msgstr "Ablak bezárása"
+
+#: src/shortcuts-dialog.blp:52
+msgctxt "shortcut window"
+msgid "Quit Bazaar"
+msgstr "Kilépés a Bazárból"
+
+#: src/transaction-notification.c:133
+#, c-format
+msgid "%s Installed"
+msgstr "A(z) %s telepítve"
+
+#: src/transaction-notification.c:135
+msgid "The app is ready to be used"
+msgstr "Az alkalmazás használatra kész"
+
+#: src/update-worker.c:266
+msgid "Updates Are Out of Date"
+msgstr "A frissítések elavultak"
+
+#: src/update-worker.c:267
+msgid "Please check for available updates"
+msgstr "Ellenőrizze az elérhető frissítéseket"
+
+#: src/update-worker.c:513
+#, c-format
+msgid "%u App Updated"
+msgid_plural "%u Apps Updated"
+msgstr[0] "%u alkalmazás frissítve"
+msgstr[1] "%u alkalmazás frissítve"
+
+#: src/update-worker.c:516
+#, c-format
+msgid "%s has been updated."
+msgstr "A(z) %s frissítve lett."
+
+#: src/update-worker.c:519
+#, c-format
+msgid "%s and %s have been updated."
+msgstr "A(z) %s és a(z) %s frissítve lett."
+
+#: src/update-worker.c:523
+#, c-format
+msgid "Includes %s, %s and %s."
+msgstr "Tartalmazza a következőket: %s, %s és %s."
