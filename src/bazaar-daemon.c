@@ -641,7 +641,9 @@ on_child_exit (sd_event_source *s,
 {
   log_msg ("Application exited (status %d)", si->si_status);
 
-  child_pid = -1;
+  if (si->si_pid == (pid_t) child_pid)
+    child_pid = -1;
+
   sd_event_source_unref (s);
   ensure_index_loaded ();
 
