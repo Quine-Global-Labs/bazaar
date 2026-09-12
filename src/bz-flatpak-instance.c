@@ -904,13 +904,13 @@ ensure_flathub_fiber (EnsureFlathubData *data)
 #define REPO_URL "https://dl.flathub.org/repo/flathub.flatpakrepo"
 
 #ifdef SANDBOXED_LIBFLATPAK
-  if (self->system != NULL)
+  if (self->system_interactive != NULL)
     {
       remote = flatpak_installation_get_remote_by_name (
-          self->system, "flathub", cancellable, NULL);
-      installation = self->system;
+          self->system_interactive, "flathub", cancellable, NULL);
+      installation = self->system_interactive;
     }
-  if (remote == NULL)
+  if (installation == NULL)
     return dex_future_new_true ();
 #else
   if (self->user != NULL)
