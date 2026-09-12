@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-08 06:47+0000\n"
-"PO-Revision-Date: 2026-09-08 22:31+0200\n"
+"POT-Creation-Date: 2026-09-12 21:13+0000\n"
+"PO-Revision-Date: 2026-09-12 23:20+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:378 src/bz-window.c:379
+#: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
 msgid "Bazaar"
 msgstr "Bazar"
 
@@ -953,7 +953,7 @@ msgstr "Pre_kliči"
 msgid "_Install All"
 msgstr "Namesti _vse"
 
-#: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
+#: src/bz-bundle-install-dialog.blp:20 src/bz-bundle-install-dialog.blp:26
 msgid "Bundle Installation"
 msgstr "Namestitev svežnja"
 
@@ -973,25 +973,25 @@ msgstr ""
 "\n"
 "Ta vir dodajte le, če ste prepričani, da mu zaupate."
 
-#: src/bz-bundle-install-dialog.blp:412
+#: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "Uspešno nameščeno!"
 
 #. TRANSLATORS: Button to launch an installed app
-#: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526
 #: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "Odpri"
 
-#: src/bz-bundle-install-dialog.blp:448 src/bz-bundle-install-dialog.blp:534
+#: src/bz-bundle-install-dialog.blp:450 src/bz-bundle-install-dialog.blp:536
 msgid "Show App Details"
 msgstr "Pokaži podrobnosti o programu"
 
-#: src/bz-bundle-install-dialog.blp:499
+#: src/bz-bundle-install-dialog.blp:501
 msgid "Already Installed"
 msgstr "Že nameščeno"
 
-#: src/bz-bundle-install-dialog.blp:546
+#: src/bz-bundle-install-dialog.blp:548
 msgid "Installation Failed"
 msgstr "Namestitev je spodletela"
 
@@ -1027,6 +1027,28 @@ msgstr "Prebrskaj Flathub"
 #: src/bz-curated-view.blp:49
 msgid "Offline"
 msgstr "Brez povezave"
+
+#: src/bz-cosmic-place-applet-dialog.vala:25
+#, fuzzy
+msgid "Place Applet"
+msgstr "Umesti programček"
+
+#: src/bz-cosmic-place-applet-dialog.vala:26
+msgid "Choose where to add this applet."
+msgstr "Izberite, ali želite dodati ta programček."
+
+#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80
+#: src/bz-rich-app-tile.blp:232
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: src/bz-cosmic-place-applet-dialog.vala:30
+msgid "Panel"
+msgstr "Pult značk"
+
+#: src/bz-cosmic-place-applet-dialog.vala:31
+msgid "Dock"
+msgstr "Zasidraj"
 
 #: src/bz-developer-badge.c:94 src/bz-developer-badge.c:98
 msgid "Not Verified"
@@ -1118,10 +1140,6 @@ msgid ""
 msgstr ""
 "Na vašem napravi je nameščenih več različic tega programa. Katero želite "
 "uporabiti?"
-
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
-msgid "Cancel"
-msgstr "Prekliči"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -1975,11 +1993,11 @@ msgstr[1] "%u nameščeni program"
 msgstr[2] "%u nameščena programa"
 msgstr[3] "%u nameščeni programi"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:821
+#: src/bz-library-page.c:629 src/bz-search-page.c:820
 msgid "No applications found"
 msgstr "Ni najdenih programov"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:823
+#: src/bz-library-page.c:629 src/bz-search-page.c:822
 #, c-format
 msgid "One application found"
 msgid_plural "%u applications found"
@@ -2596,7 +2614,7 @@ msgstr "Poiščite programe z uporabo zgodnje iskalne vrstice."
 msgid "No Applications Found"
 msgstr "Ni najdenih programov"
 
-#: src/bz-search-page.c:254
+#: src/bz-search-page.c:253
 #, c-format
 msgid "No results found for \"%s\" in Flathub"
 msgstr "Ni zadetkov za »%s« v Flathubu"
@@ -3067,25 +3085,25 @@ msgid "Log Out"
 msgstr "Odjavi"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:381
+#: src/bz-window.c:382
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazar — %s"
 
-#: src/bz-window.c:661 src/bz-window.c:699
+#: src/bz-window.c:662 src/bz-window.c:711
 msgid "Failed to launch application"
 msgstr "Zagon programa ni uspel"
 
-#: src/bz-window.c:778
+#: src/bz-window.c:790
 msgid "Could not open link"
 msgstr "Ni mogoče odpreti povezave"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:987
+#: src/bz-window.c:999
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Ne morete odstraniti Bazarja v Bazarju!"
 
-#: src/bz-window.c:1371 src/bz-window.c:1405
+#: src/bz-window.c:1383 src/bz-window.c:1417
 msgid "Can't do that right now!"
 msgstr "Tega zdaj ni možno narediti!"
 
