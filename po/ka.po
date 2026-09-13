@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-08 21:02+0000\n"
-"PO-Revision-Date: 2026-09-10 06:45+0200\n"
+"POT-Creation-Date: 2026-09-12 21:13+0000\n"
+"PO-Revision-Date: 2026-09-13 17:58+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "Language: ka\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3 data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
-#: src/bz-window.blp:55 src/bz-window.blp:211 src/bz-window.c:378 src/bz-window.c:379
+#: src/bz-window.blp:55 src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
 msgid "Bazaar"
 msgstr "Bazaar"
 
@@ -987,6 +987,26 @@ msgstr "Flathub-ის დათვალიერება"
 msgid "Offline"
 msgstr "ინტერნეტგარეშე"
 
+#: src/bz-cosmic-place-applet-dialog.vala:25
+msgid "Place Applet"
+msgstr "აპლეტის მოთავსება"
+
+#: src/bz-cosmic-place-applet-dialog.vala:26
+msgid "Choose where to add this applet."
+msgstr "აირჩიეთ, სად დაემატება ეს აპლეტი."
+
+#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
+msgid "Cancel"
+msgstr "გაუქმება"
+
+#: src/bz-cosmic-place-applet-dialog.vala:30
+msgid "Panel"
+msgstr "პანელი"
+
+#: src/bz-cosmic-place-applet-dialog.vala:31
+msgid "Dock"
+msgstr "დოკი"
+
 #: src/bz-developer-badge.c:94 src/bz-developer-badge.c:98
 msgid "Not Verified"
 msgstr "გადამოწმებული არაა"
@@ -1062,10 +1082,6 @@ msgstr "დაყენების არჩევა"
 #: src/bz-entry-group-util.c:76
 msgid "You have multiple versions of this app installed. Which one would you like to proceed with?"
 msgstr "გაქვთ ამ აპის ერზე მეტი ვერსია დაყენებული. რომელზე გნებავთ მუშაობა?"
-
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
-msgid "Cancel"
-msgstr "გაუქმება"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69 src/error.c:88
 #: src/update-worker.c:473
@@ -2938,25 +2954,25 @@ msgid "Log Out"
 msgstr "გასვლა"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:381
+#: src/bz-window.c:382
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazaar — %s"
 
-#: src/bz-window.c:661 src/bz-window.c:699
+#: src/bz-window.c:662 src/bz-window.c:711
 msgid "Failed to launch application"
 msgstr "აპლიკაციის გაშვება ჩავარდა"
 
-#: src/bz-window.c:778
+#: src/bz-window.c:790
 msgid "Could not open link"
 msgstr "ბმულის გახსნა შეუძლებელია"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:987
+#: src/bz-window.c:999
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Bazaar-ს Bazaar-დან ვერ წაშლით!"
 
-#: src/bz-window.c:1371 src/bz-window.c:1405
+#: src/bz-window.c:1383 src/bz-window.c:1417
 msgid "Can't do that right now!"
 msgstr "ამჟამად ამას ვერ იზამთ!"
 
