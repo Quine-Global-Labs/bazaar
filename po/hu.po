@@ -3129,7 +3129,7 @@ msgstr "%.*f E"
 #: src/context-tile-callbacks.c:92
 #, c-format
 msgid "%d downloads in the last month"
-msgstr "%d letöltés az elmúlt napban"
+msgstr "%d letöltés az elmúlt hónapban"
 
 #. TRANSLATORS: %s is a formatted file size, for example: "128 MB"
 #: src/context-tile-callbacks.c:139
