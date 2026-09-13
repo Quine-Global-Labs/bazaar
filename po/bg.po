@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-08 21:02+0000\n"
-"PO-Revision-Date: 2026-09-13 19:08+0200\n"
+"POT-Creation-Date: 2026-09-12 21:13+0000\n"
+"PO-Revision-Date: 2026-09-13 19:11+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian\n"
 "Language: bg\n"
@@ -21,7 +21,7 @@ msgstr ""
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:378 src/bz-window.c:379
+#: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
 msgid "Bazaar"
 msgstr "Базар"
 
@@ -1033,6 +1033,27 @@ msgstr "Разглеждане на Flathub"
 msgid "Offline"
 msgstr "Няма връзка"
 
+#: src/bz-cosmic-place-applet-dialog.vala:25
+msgid "Place Applet"
+msgstr "Поставяне на аплет"
+
+#: src/bz-cosmic-place-applet-dialog.vala:26
+msgid "Choose where to add this applet."
+msgstr "Изберете къде да добавите този аплет."
+
+#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80
+#: src/bz-rich-app-tile.blp:232
+msgid "Cancel"
+msgstr "Отказ"
+
+#: src/bz-cosmic-place-applet-dialog.vala:30
+msgid "Panel"
+msgstr "Панел"
+
+#: src/bz-cosmic-place-applet-dialog.vala:31
+msgid "Dock"
+msgstr "Док"
+
 #: src/bz-developer-badge.c:94 src/bz-developer-badge.c:98
 msgid "Not Verified"
 msgstr "Не е потвърдено"
@@ -1128,10 +1149,6 @@ msgid ""
 msgstr ""
 "Имате инсталирани няколко версии на тази програма. Коя от тях искате да "
 "използвате?"
-
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
-msgid "Cancel"
-msgstr "Отказ"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -3063,25 +3080,25 @@ msgid "Log Out"
 msgstr "Изход"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:381
+#: src/bz-window.c:382
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Базар — %s"
 
-#: src/bz-window.c:661 src/bz-window.c:699
+#: src/bz-window.c:662 src/bz-window.c:711
 msgid "Failed to launch application"
 msgstr "Програмата не може да бъде стартирана"
 
-#: src/bz-window.c:778
+#: src/bz-window.c:790
 msgid "Could not open link"
 msgstr "Връзката не може да бъде отворена"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:987
+#: src/bz-window.c:999
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Не може да премахнете „Базар“ от „Базар“!"
 
-#: src/bz-window.c:1371 src/bz-window.c:1405
+#: src/bz-window.c:1383 src/bz-window.c:1417
 msgid "Can't do that right now!"
 msgstr "Това действие не може да се извърши сега!"
 
