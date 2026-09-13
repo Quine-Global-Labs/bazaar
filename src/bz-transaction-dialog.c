@@ -292,15 +292,15 @@ show_dialog_fiber (GtkWidget    *parent,
       title = bz_entry_group_get_title (group);
       id    = bz_entry_group_get_id (group);
 
+      store = dex_await_object (bz_entry_group_dup_all_into_store (group), &local_error);
+      if (store == NULL)
+        {
+          bz_show_error_for_widget (parent, _ ("Failed to load transaction dialog"), local_error->message);
+          return dex_future_new_for_error (g_steal_pointer (&local_error));
+        }
+
       if (remove)
         {
-          store = dex_await_object (bz_entry_group_dup_all_into_store (group), &local_error);
-          if (store == NULL)
-            {
-              bz_show_error_for_widget (parent, _ ("Failed to load transaction dialog"), local_error->message);
-              return dex_future_new_for_error (g_steal_pointer (&local_error));
-            }
-
           for (guint i = g_list_model_get_n_items (G_LIST_MODEL (store)); i > 0; i--)
             {
               g_autoptr (BzEntry) candidate_entry = NULL;
@@ -313,22 +313,18 @@ show_dialog_fiber (GtkWidget    *parent,
 
           selectable   = collect_selectable_entries (G_LIST_MODEL (store), remove);
           n_selectable = g_list_model_get_n_items (G_LIST_MODEL (selectable));
-          if (g_list_model_get_n_items (G_LIST_MODEL (store)) > 0)
-            check_entry = g_list_model_get_item (G_LIST_MODEL (store), 0);
         }
-      else
+
+      if (g_list_model_get_n_items (G_LIST_MODEL (store)) > 0)
+        check_entry = g_list_model_get_item (G_LIST_MODEL (store), 0);
+
+      if (check_entry == NULL)
         {
-          g_autoptr (BzResult) ui_entry_result = NULL;
-
-          ui_entry_result = bz_entry_group_dup_ui_entry (group);
-          if (ui_entry_result != NULL)
-            check_entry = dex_await_object (bz_result_dup_future (ui_entry_result), &local_error);
-
-          if (check_entry == NULL)
-            {
-              bz_show_error_for_widget (parent, _ ("Failed to load transaction dialog"), local_error->message);
-              return dex_future_new_for_error (g_steal_pointer (&local_error));
-            }
+          g_set_error (&local_error, G_IO_ERROR, G_IO_ERROR_UNKNOWN,
+                      "No entries for %s were able to be resolved",
+                      id != NULL ? id : "(unknown)");
+          bz_show_error_for_widget (parent, _ ("Failed to load transaction dialog"), local_error->message);
+          return dex_future_new_for_error (g_steal_pointer (&local_error));
         }
     }
   else
