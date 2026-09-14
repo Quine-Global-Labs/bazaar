@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-06 20:39+0000\n"
+"POT-Creation-Date: 2026-09-12 21:13+0000\n"
 "PO-Revision-Date: 2026-08-30 10:05+0200\n"
 "Last-Translator: Марко Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <Serbian>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:378 src/bz-window.c:379
+#: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
 msgid "Bazaar"
 msgstr "Пијаца"
 
@@ -138,11 +138,11 @@ msgstr ""
 msgid "Add-on Page"
 msgstr "Страна додатка"
 
-#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:392
+#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:406
 msgid "Downloads/Month"
 msgstr "Преузимања/месец"
 
-#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:427
+#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:441
 msgid "Stopped Receiving Core Updates"
 msgstr "Ажурирања језгра прекинута"
 
@@ -154,7 +154,7 @@ msgstr ""
 "Овај додатак користи извршно окружење које више не прима ажурирања нити "
 "исправке безбедности. Може постати небезбедно за употребу."
 
-#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:602
 msgid "Other Sources"
 msgstr "Други извори"
 
@@ -176,8 +176,8 @@ msgid "Download Stats"
 msgstr "Статистика преузимања датотека"
 
 #: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31
-#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:187
-#: src/context-tile-callbacks.c:194
+#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:201
 msgid "Age Rating"
 msgstr "Оцена старосне прикладности"
 
@@ -501,7 +501,7 @@ msgid "Violence"
 msgstr "Насиље"
 
 #. Translators: Age rating format, e.g. "12+" for ages 12 and up
-#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:177
+#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:184
 #, c-format
 msgid "%d+"
 msgstr "%d+"
@@ -726,8 +726,8 @@ msgid "Runtime Download Size"
 msgstr "Величина преузимања извршног окружења"
 
 #: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:185
-#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:394
-#: src/context-tile-callbacks.c:416
+#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:401
+#: src/context-tile-callbacks.c:423
 msgid "N/A"
 msgstr "Недоступно"
 
@@ -741,8 +741,7 @@ msgid "Verified"
 msgstr "Потврђено"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-app-tile.blp:87 src/bz-releases-list.c:204
-#: src/context-tile-callbacks.c:136
+#: src/bz-app-tile.blp:87 src/bz-full-view.blp:282 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "Инсталирано"
 
@@ -943,8 +942,8 @@ msgstr "%d додатака ће бити инсталирано."
 msgid "Additionally, addons will be installed."
 msgstr "Поред тога, додаци ће бити инсталирани."
 
-#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193
-#: src/bz-transaction-dialog.c:238
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:200
+#: src/bz-transaction-dialog.c:245
 msgid "_Cancel"
 msgstr "_Откажи"
 
@@ -952,7 +951,7 @@ msgstr "_Откажи"
 msgid "_Install All"
 msgstr "_Инсталирај све"
 
-#: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
+#: src/bz-bundle-install-dialog.blp:20 src/bz-bundle-install-dialog.blp:26
 msgid "Bundle Installation"
 msgstr "Инсталација комплета"
 
@@ -972,25 +971,25 @@ msgstr ""
 "\n"
 "Додајте овај извор само ако сте сигурни да му верујете."
 
-#: src/bz-bundle-install-dialog.blp:412
+#: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "Успешно инсталирано!"
 
 #. TRANSLATORS: Button to launch an installed app
-#: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526
 #: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "Отвори"
 
-#: src/bz-bundle-install-dialog.blp:448 src/bz-bundle-install-dialog.blp:534
+#: src/bz-bundle-install-dialog.blp:450 src/bz-bundle-install-dialog.blp:536
 msgid "Show App Details"
 msgstr "Прикажи појединости о програму"
 
-#: src/bz-bundle-install-dialog.blp:499
+#: src/bz-bundle-install-dialog.blp:501
 msgid "Already Installed"
 msgstr "Већ инсталирано"
 
-#: src/bz-bundle-install-dialog.blp:546
+#: src/bz-bundle-install-dialog.blp:548
 msgid "Installation Failed"
 msgstr "Инсталација није успела"
 
@@ -1026,6 +1025,27 @@ msgstr "Прегледај Флетхаб"
 #: src/bz-curated-view.blp:49
 msgid "Offline"
 msgstr "Ван мреже"
+
+#: src/bz-cosmic-place-applet-dialog.vala:25
+msgid "Place Applet"
+msgstr "Постави програмчић"
+
+#: src/bz-cosmic-place-applet-dialog.vala:26
+msgid "Choose where to add this applet."
+msgstr "Изаберите где да додате овај програмчић."
+
+#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80
+#: src/bz-rich-app-tile.blp:232
+msgid "Cancel"
+msgstr "Откажи"
+
+#: src/bz-cosmic-place-applet-dialog.vala:30
+msgid "Panel"
+msgstr "Површ"
+
+#: src/bz-cosmic-place-applet-dialog.vala:31
+msgid "Dock"
+msgstr "Док"
 
 #: src/bz-developer-badge.c:94 src/bz-developer-badge.c:98
 msgid "Not Verified"
@@ -1117,10 +1137,6 @@ msgid ""
 "to proceed with?"
 msgstr ""
 "Имате инсталирано више издања овог програма. Којим желите да наставите?"
-
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
-msgid "Cancel"
-msgstr "Откажи"
 
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
 #: src/error.c:88 src/update-worker.c:473
@@ -1679,7 +1695,7 @@ msgstr "Прегледај изглед продавнице"
 msgid "_Support"
 msgstr "_Подршка"
 
-#: src/bz-full-view.blp:441
+#: src/bz-full-view.blp:455
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
@@ -1687,23 +1703,23 @@ msgstr ""
 "Овај програм користи извршно окружење које више не прима ажурирања нити "
 "безбедносне исправке. Може постати небезбедан за употребу."
 
-#: src/bz-full-view.blp:519
+#: src/bz-full-view.blp:533
 msgid "Trash Data"
 msgstr "Обриши податке"
 
-#: src/bz-full-view.blp:616
+#: src/bz-full-view.blp:630
 msgid "Add-ons"
 msgstr "Додаци"
 
-#: src/bz-full-view.blp:651
+#: src/bz-full-view.blp:665
 msgid "More Add-Ons"
 msgstr "Више додатака"
 
-#: src/bz-full-view.blp:662
+#: src/bz-full-view.blp:676
 msgid "Links"
 msgstr "Везе"
 
-#: src/bz-full-view.blp:693
+#: src/bz-full-view.blp:707
 msgid "Similar Apps"
 msgstr "Слични програми"
 
@@ -1869,7 +1885,7 @@ msgstr "_Отвори"
 msgid "Uninstall Application"
 msgstr "Деинсталирај програм"
 
-#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:201
 msgid "_Remove"
 msgstr "_Уклони"
 
@@ -1973,11 +1989,11 @@ msgstr[1] "%u инсталирана програма"
 msgstr[2] "%u инсталираних програма"
 msgstr[3] "%u инсталиран програм"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:821
+#: src/bz-library-page.c:629 src/bz-search-page.c:820
 msgid "No applications found"
 msgstr "Нису пронађени програми"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:823
+#: src/bz-library-page.c:629 src/bz-search-page.c:822
 #, c-format
 msgid "One application found"
 msgid_plural "%u applications found"
@@ -2002,11 +2018,11 @@ msgstr "Непозната дозвола"
 msgid "Community Built"
 msgstr "Израдила заједница"
 
-#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:289
+#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:296
 msgid "Proprietary"
 msgstr "Власнички"
 
-#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:291
+#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:298
 msgid "Special License"
 msgstr "Посебна дозвола"
 
@@ -2435,7 +2451,7 @@ msgid "View Other Permissions"
 msgstr "Прегледај остала овлашћења"
 
 #. TRANSLATORS: short app safety rating label
-#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:402
+#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:409
 msgid "Safe"
 msgstr "Безбедан"
 
@@ -2590,7 +2606,7 @@ msgstr "Претражите програме користећи траку за
 msgid "No Applications Found"
 msgstr "Нисам пронашао програме"
 
-#: src/bz-search-page.c:254
+#: src/bz-search-page.c:253
 #, c-format
 msgid "No results found for \"%s\" in Flathub"
 msgstr "Није пронађен ни један резултат за „%s“ на Флетхабу"
@@ -2778,48 +2794,48 @@ msgstr "Нису пронађени резултати"
 msgid "Search failed"
 msgstr "Није успела претрага"
 
-#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244
-#: src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
-#: src/context-tile-callbacks.c:286
+#: src/bz-transaction-dialog.c:118 src/context-tile-callbacks.c:251
+#: src/context-tile-callbacks.c:256 src/context-tile-callbacks.c:284
+#: src/context-tile-callbacks.c:293
 msgid "Unknown"
 msgstr "Непознато"
 
-#: src/bz-transaction-dialog.c:145
+#: src/bz-transaction-dialog.c:148
 msgid "Keep User Data"
 msgstr "Задржи податке корисника"
 
-#: src/bz-transaction-dialog.c:146
+#: src/bz-transaction-dialog.c:149
 msgid "Allow restoring personal settings &amp; content"
 msgstr "Дозволи враћање личних подешавања и садржаја"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:158
 msgid "Delete All Data"
 msgstr "Обриши све податке"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:159
 msgid "Permanently erase user data to save space"
 msgstr "Трајно обриши податке корисника да уштедиш простор"
 
-#: src/bz-transaction-dialog.c:182
+#: src/bz-transaction-dialog.c:189
 #, c-format
 msgid "Remove %s?"
 msgstr "Уклонити %s?"
 
-#: src/bz-transaction-dialog.c:185
+#: src/bz-transaction-dialog.c:192
 msgid "Select which version to remove."
 msgstr "Изабери које издање уклонити."
 
-#: src/bz-transaction-dialog.c:187
+#: src/bz-transaction-dialog.c:194
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "Неће бити могуће користити %s након деинсталације."
 
-#: src/bz-transaction-dialog.c:210
+#: src/bz-transaction-dialog.c:217
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "„%s“ је високо ризично"
 
-#: src/bz-transaction-dialog.c:214
+#: src/bz-transaction-dialog.c:221
 msgid ""
 "This app has full access to your system, including all <b>your files, "
 "browser history, saved passwords</b>, and more. It also has access to the "
@@ -2835,7 +2851,7 @@ msgstr ""
 "Зато што је програм власнички, не може се проверити шта он ради са овим "
 "овлашћењима."
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:230
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record "
 "all keystrokes, capture screenshots, and monitor other applications</b>. It "
@@ -2853,11 +2869,11 @@ msgstr ""
 "Зато што је програм власнички, не може се проверити шта он ради са овим "
 "овлашћењима."
 
-#: src/bz-transaction-dialog.c:239
+#: src/bz-transaction-dialog.c:246
 msgid "_Install Anyway"
 msgstr "_Ипак инсталирај"
 
-#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
+#: src/bz-transaction-dialog.c:300 src/bz-transaction-dialog.c:329
 msgid "Failed to load transaction dialog"
 msgstr "Нисам успео да учитам прозорче за пренос"
 
@@ -3057,25 +3073,25 @@ msgid "Log Out"
 msgstr "Одјави се"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:381
+#: src/bz-window.c:382
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Пијаца - %s"
 
-#: src/bz-window.c:661 src/bz-window.c:699
+#: src/bz-window.c:662 src/bz-window.c:711
 msgid "Failed to launch application"
 msgstr "Не могу да покренем програм"
 
-#: src/bz-window.c:778
+#: src/bz-window.c:790
 msgid "Could not open link"
 msgstr "Не могу да отворим везу"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:987
+#: src/bz-window.c:999
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Не можете да уклоните Пијацу из Пијаце!"
 
-#: src/bz-window.c:1371 src/bz-window.c:1405
+#: src/bz-window.c:1383 src/bz-window.c:1417
 msgid "Can't do that right now!"
 msgstr "То тренутно не могу да урадим!"
 
@@ -3101,92 +3117,97 @@ msgid "%d downloads in the last month"
 msgstr "%d преузимања у последњем месецу"
 
 #. TRANSLATORS: %s is a formatted file size, for example: "128 MB"
-#: src/context-tile-callbacks.c:133
+#: src/context-tile-callbacks.c:139
 #, c-format
 msgid "+%s Runtime"
 msgstr "+%s извршног окружења"
 
-#: src/context-tile-callbacks.c:136
+#: src/context-tile-callbacks.c:142
 msgid "Download"
 msgstr "Преузми"
 
-#: src/context-tile-callbacks.c:156
+#: src/context-tile-callbacks.c:151 src/context-tile-callbacks.c:163
 msgid "Size information unavailable"
 msgstr "Подаци о величини недоступни"
 
-#: src/context-tile-callbacks.c:159
+#: src/context-tile-callbacks.c:154
 #, c-format
 msgid "Download size of %s"
 msgstr "Величина преузимања %s"
 
-#: src/context-tile-callbacks.c:192
+#: src/context-tile-callbacks.c:166
+#, c-format
+msgid "Installed size of %s"
+msgstr "Инсталирана величина %s"
+
+#: src/context-tile-callbacks.c:199
 msgid "All Ages"
 msgstr "За све узрасте"
 
-#: src/context-tile-callbacks.c:204
+#: src/context-tile-callbacks.c:211
 msgid "Age rating information unavailable"
 msgstr "Подаци о оцени за старост недоступни"
 
-#: src/context-tile-callbacks.c:209
+#: src/context-tile-callbacks.c:216
 msgid "Suitable for all ages"
 msgstr "Одговара за све узрасте"
 
-#: src/context-tile-callbacks.c:211
+#: src/context-tile-callbacks.c:218
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "Одговара за узраст од %d година навише"
 
-#: src/context-tile-callbacks.c:254
+#: src/context-tile-callbacks.c:261
 #, c-format
 msgid "Free software licensed under %s"
 msgstr "Слободни програми лиценцирани под %s"
 
-#: src/context-tile-callbacks.c:259
+#: src/context-tile-callbacks.c:266
 msgid "Free software"
 msgstr "Слободни програми"
 
-#: src/context-tile-callbacks.c:262
+#: src/context-tile-callbacks.c:269
 msgid "Proprietary Software"
 msgstr "Власнички програми"
 
-#: src/context-tile-callbacks.c:265
+#: src/context-tile-callbacks.c:272
 #, c-format
 msgid "Special License: %s"
 msgstr "Посебна дозвола: %s"
 
 #. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
-#: src/context-tile-callbacks.c:283
+#: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "Слободни програми"
 
-#: src/context-tile-callbacks.c:311
+#: src/context-tile-callbacks.c:318
 msgid "Adaptive"
 msgstr "Прилагодљиво"
 
-#: src/context-tile-callbacks.c:311
+#: src/context-tile-callbacks.c:318
 msgid "Desktop Only"
 msgstr "Само за рачунаре"
 
-#: src/context-tile-callbacks.c:317
+#: src/context-tile-callbacks.c:324
 msgid "Works on desktop, tablets, and phones"
 msgstr "Ради на стоним рачунарима, таблетима и телефонима"
 
-#: src/context-tile-callbacks.c:318
+#: src/context-tile-callbacks.c:325
 msgid "May not work on mobile devices"
 msgstr "Можда не ради на мобилним уређајима"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:405 src/context-tile-callbacks.c:408
+#: src/context-tile-callbacks.c:412 src/context-tile-callbacks.c:415
 msgid "Low Risk"
 msgstr "Низак ризик"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:411
+#: src/context-tile-callbacks.c:418
 msgid "Medium Risk"
 msgstr "Средњи ризик"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:414
+#: src/context-tile-callbacks.c:421
 msgid "High Risk"
 msgstr "Високи ризик"
 
