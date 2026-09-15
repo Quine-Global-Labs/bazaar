@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-12 21:13+0000\n"
-"PO-Revision-Date: 2026-09-13 10:54+0800\n"
+"POT-Creation-Date: 2026-09-15 23:10+0000\n"
+"PO-Revision-Date: 2026-09-16 07:51+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -22,7 +22,7 @@ msgstr ""
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
+#: src/bz-window.blp:211 src/bz-window.c:382 src/bz-window.c:383
 msgid "Bazaar"
 msgstr "集市"
 
@@ -161,11 +161,11 @@ msgstr "其他来源"
 msgid "Add-on for %s"
 msgstr "%s 的附加组件"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613
 msgid "Show Less"
 msgstr "显示更少"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "显示更多"
 
@@ -1472,35 +1472,47 @@ msgstr "KDE 应用"
 msgid "More KDE Apps"
 msgstr "更多 KDE 应用"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:418
+#: src/bz-flathub-category.c:151
+msgid "Made for COSMIC™"
+msgstr "为 COSMIC™ 制作"
+
+#: src/bz-flathub-category.c:151
+msgid "For COSMIC™"
+msgstr "用于 COSMIC™"
+
+#: src/bz-flathub-category.c:151
+msgid "More COSMIC Apps"
+msgstr "更多 COSMIC 应用"
+
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:418
 msgid "Games"
 msgstr "游戏"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:475
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:475
 msgid "More Games"
 msgstr "更多游戏"
 
-#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:424
+#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:424
 msgid "Emulators"
 msgstr "模拟器"
 
-#: src/bz-flathub-category.c:152
+#: src/bz-flathub-category.c:153
 msgid "More Emulators"
 msgstr "更多模拟器"
 
-#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:430
+#: src/bz-flathub-category.c:154 src/bz-flathub-page.blp:430
 msgid "Launchers"
 msgstr "启动器"
 
-#: src/bz-flathub-category.c:153
+#: src/bz-flathub-category.c:154
 msgid "More Game Launchers"
 msgstr "更多游戏启动器"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "Game Tools"
 msgstr "游戏工具"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "More Game Tools"
 msgstr "更多游戏工具"
 
@@ -2352,7 +2364,7 @@ msgstr "卸载"
 msgid "Get"
 msgstr "获取"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:307
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322
 #: src/safety-calculator.c:161
 msgid "Arbitrary Permissions"
 msgstr "任意权限"
@@ -2399,31 +2411,31 @@ msgid ""
 msgstr ""
 "此应用使用了过时的软件平台（SDK）版本，可能包含不会修复的缺陷或安全漏洞。"
 
-#: src/bz-safety-dialog.c:293 src/bz-safety-dialog.c:326
+#: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
 msgid "Safety"
 msgstr "安全性"
 
-#: src/bz-safety-dialog.c:386
+#: src/bz-safety-dialog.c:401
 #, c-format
 msgid "%s is Safe"
 msgstr "%s 是安全的"
 
-#: src/bz-safety-dialog.c:391
+#: src/bz-safety-dialog.c:406
 #, c-format
 msgid "%s has no Unsafe Permissions"
 msgstr "%s 没有不安全权限"
 
-#: src/bz-safety-dialog.c:396
+#: src/bz-safety-dialog.c:411
 #, c-format
 msgid "%s is Probably Safe"
 msgstr "%s 可能安全"
 
-#: src/bz-safety-dialog.c:401
+#: src/bz-safety-dialog.c:416
 #, c-format
 msgid "%s is Possibly Unsafe"
 msgstr "%s 可能不安全"
 
-#: src/bz-safety-dialog.c:406
+#: src/bz-safety-dialog.c:421
 #, c-format
 msgid "%s is Unsafe"
 msgstr "%s 是不安全的"
@@ -2797,7 +2809,7 @@ msgstr ""
 msgid "_Install Anyway"
 msgstr "仍然安装(_I)"
 
-#: src/bz-transaction-dialog.c:300 src/bz-transaction-dialog.c:329
+#: src/bz-transaction-dialog.c:298 src/bz-transaction-dialog.c:326
 msgid "Failed to load transaction dialog"
 msgstr "加载事务对话框失败"
 
@@ -2991,25 +3003,25 @@ msgid "Log Out"
 msgstr "登出"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:382
+#: src/bz-window.c:385
 #, c-format
 msgid "Bazaar — %s"
 msgstr "集市 — %s"
 
-#: src/bz-window.c:662 src/bz-window.c:711
+#: src/bz-window.c:665 src/bz-window.c:714
 msgid "Failed to launch application"
 msgstr "启动应用程序失败"
 
-#: src/bz-window.c:790
+#: src/bz-window.c:793
 msgid "Could not open link"
 msgstr "无法打开链接"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:999
+#: src/bz-window.c:1002
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "您无法从“集市”移除“集市”！"
 
-#: src/bz-window.c:1383 src/bz-window.c:1417
+#: src/bz-window.c:1386 src/bz-window.c:1420
 msgid "Can't do that right now!"
 msgstr "无法立刻那么做！"
 
@@ -3565,9 +3577,6 @@ msgstr "包括 %s、%s 和 %s。"
 
 #~ msgid "Try a different search query"
 #~ msgstr "尝试不同的搜索关键字"
-
-#~ msgid "More Apps"
-#~ msgstr "更多应用"
 
 #~ msgid "Exhibit app page"
 #~ msgstr "展示应用页面"
