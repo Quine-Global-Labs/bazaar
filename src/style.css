@@ -855,6 +855,23 @@ window.narrow .category-tile {
   background: linear-gradient(135deg, shade(#3584e4, .95) 0%, shade(#704dac, .95) 100%);
 }
 
+.category-tile.category-cosmic {
+  background: #2e2e2e;
+}
+
+@media (prefers-color-scheme: light) {
+  .category-tile.category-cosmic {
+    background: #232323;
+  }
+}
+
+.category-tile.category-cosmic:hover {
+  background: shade(#232323, 1.30);
+}
+.category-tile.category-cosmic:active {
+  background: shade(#232323, 1.20);
+}
+
 .category-tile.category-adwaita image,
 .category-tile.category-kde image {
 	-gtk-icon-shadow: none;

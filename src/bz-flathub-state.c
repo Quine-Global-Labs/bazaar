@@ -23,7 +23,6 @@
 #define CATEGORY_FETCH_SIZE          48
 #define QUALITY_MODERATION_PAGE_SIZE 300
 #define KEYWORD_SEARCH_PAGE_SIZE     48
-#define ADWAITA_URL                  "https://arewelibadwaitayet.com"
 
 #include <json-glib/json-glib.h>
 #include <libdex.h>
@@ -693,15 +692,22 @@ bz_flathub_state_set_map_factory (BzFlathubState          *self,
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_MAP_FACTORY]);
 }
 
-static gboolean
-is_kde_plasma (void)
+static const char *
+get_de (void)
 {
-  const char *desktop = g_getenv ("XDG_CURRENT_DESKTOP");
+  const char *desktop = NULL;
 
+  desktop = g_getenv ("XDG_CURRENT_DESKTOP");
   if (desktop == NULL)
-    return FALSE;
+    return "adwaita";
 
-  return g_str_equal (desktop, "KDE") || g_strstr_len (desktop, -1, "KDE") != NULL;
+  if (g_strstr_len (desktop, -1, "KDE") != NULL)
+    return "kde";
+
+  if (g_strstr_len (desktop, -1, "COSMIC") != NULL)
+    return "cosmic";
+
+  return "adwaita";
 }
 
 static void
@@ -709,14 +715,13 @@ add_category (BzFlathubState *self,
               const char     *name,
               JsonNode       *node,
               GHashTable     *quality_set,
-              gboolean        is_json_object,
+              gboolean        is_toplevel_json,
               QualityMode     quality_mode,
               gboolean        is_spotlight)
 {
   JsonObject    *object                   = NULL;
-  JsonObjectIter iter                     = { 0 };
   JsonArray     *hits_array               = NULL;
-  const char    *key                      = NULL;
+  JsonArray     *toplevel_array           = NULL;
   const char    *app                      = NULL;
   g_autoptr (BzFlathubCategory) category  = NULL;
   g_autoptr (GtkStringList) store         = NULL;
@@ -736,34 +741,34 @@ add_category (BzFlathubState *self,
   bz_flathub_category_set_is_spotlight (category, is_spotlight);
   bz_flathub_category_set_applications (category, G_LIST_MODEL (store));
 
-  object = json_node_get_object (node);
+  if (quality_mode == QUALITY_MODE_RANDOM)
+    quality_apps = g_ptr_array_new_with_free_func (g_free);
 
-  if (is_json_object)
+  if (is_toplevel_json)
     {
-      if (quality_mode == QUALITY_MODE_RANDOM)
-        quality_apps = g_ptr_array_new_with_free_func (g_free);
+      toplevel_array = json_node_get_array (node);
+      app_count      = json_array_get_length (toplevel_array);
 
-      json_object_iter_init (&iter, object);
-      while (json_object_iter_next (&iter, &key, NULL))
+      for (i = 0; i < app_count; i++)
         {
-          gtk_string_list_append (store, key);
+          const char *app_id = NULL;
 
-          if (g_hash_table_contains (quality_set, key))
+          app_id = json_array_get_string_element (toplevel_array, i);
+          gtk_string_list_append (store, app_id);
+
+          if (g_hash_table_contains (quality_set, app_id))
             {
               if (quality_mode == QUALITY_MODE_RANDOM)
-                g_ptr_array_add (quality_apps, g_strdup (key));
+                g_ptr_array_add (quality_apps, g_strdup (app_id));
               else if (quality_mode == QUALITY_MODE_FIRST)
-                gtk_string_list_append (quality_store, key);
+                gtk_string_list_append (quality_store, app_id);
             }
-          app_count++;
         }
-      total_entries = json_object_get_size (object);
+      total_entries = app_count;
     }
   else
     {
-      if (quality_mode == QUALITY_MODE_RANDOM)
-        quality_apps = g_ptr_array_new_with_free_func (g_free);
-
+      object     = json_node_get_object (node);
       hits_array = json_object_get_array_member (object, "hits");
       app_count  = json_array_get_length (hits_array);
 
@@ -843,7 +848,7 @@ initialize_fiber (GWeakRef *wr)
   g_autoptr (BzFlathubState) self    = NULL;
   g_autoptr (GError) local_error     = NULL;
   gboolean result                    = FALSE;
-  gboolean is_kde                    = is_kde_plasma ();
+  const char *de                     = get_de ();
   g_autoptr (GHashTable) quality_set = NULL;
 
   g_autoptr (DexFuture) aotd_f       = NULL;
@@ -856,7 +861,6 @@ initialize_fiber (GWeakRef *wr)
   g_autoptr (DexFuture) trending_f   = NULL;
   g_autoptr (DexFuture) mobile_f     = NULL;
   g_autoptr (DexFuture) passing_f    = NULL;
-  g_autoptr (DexFuture) adwaita_f    = NULL;
   g_autoptr (DexFuture) toolkit_f    = NULL;
   g_autoptr (DexFuture) emulators_f  = NULL;
   g_autoptr (DexFuture) launchers_f  = NULL;
@@ -882,18 +886,18 @@ initialize_fiber (GWeakRef *wr)
   }                                                                                    \
   G_STMT_END
 
-  if (is_kde)
-    ADD_REQUEST (toolkit_f, "/collection/developer/kde?locale=en");
-  else
-    {
-      adwaita_f = bz_https_query_json (ADWAITA_URL "/api/apps");
-      if (!dex_await (dex_ref (adwaita_f), &local_error))
-        {
-          g_warning ("Failed to complete request to arewelibadwaitayet: %s", local_error->message);
-          g_clear_error (&local_error);
-          adwaita_f = NULL;
-        }
-    }
+  {
+    g_autofree char *made_for_route = NULL;
+
+    made_for_route = g_strdup_printf ("/made-for/%s", de);
+    toolkit_f = bz_query_bazaar_json (made_for_route);
+    if (!dex_await (dex_ref (toolkit_f), &local_error))
+      {
+        g_warning ("Failed to complete request to bazaar %s: %s", made_for_route, local_error->message);
+        g_clear_error (&local_error);
+        dex_clear (&toolkit_f);
+      }
+  }
 
   ADD_REQUEST (passing_f, "/quality-moderation/passing-apps?page=1&page_size=%d", QUALITY_MODERATION_PAGE_SIZE);
   ADD_REQUEST (aotd_f, "/app-picks/app-of-the-day/%s", self->for_day);
@@ -1019,10 +1023,8 @@ initialize_fiber (GWeakRef *wr)
       }
   }
 
-  if (is_kde)
-    add_category (self, "kde", GET_BOXED (toolkit_f), quality_set, FALSE, QUALITY_MODE_RANDOM, FALSE);
-  else if (adwaita_f != NULL)
-    add_category (self, "adwaita", GET_BOXED (adwaita_f), quality_set, TRUE, QUALITY_MODE_RANDOM, FALSE);
+  if (toolkit_f != NULL)
+    add_category (self, de, GET_BOXED (toolkit_f), quality_set, TRUE, QUALITY_MODE_RANDOM, FALSE);
 
   return dex_future_new_true ();
 }
