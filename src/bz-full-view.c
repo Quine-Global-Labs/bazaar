@@ -554,7 +554,6 @@ other_source_download_cb (BzFullView *self,
   GtkAdjustment      *adj       = NULL;
   AdwAnimationTarget *target    = NULL;
   AdwAnimation       *animation = NULL;
-  GtkWidget          *controls  = NULL;
 
   adj       = gtk_scrolled_window_get_vadjustment (GTK_SCROLLED_WINDOW (self->main_scroll));
   target    = adw_property_animation_target_new (G_OBJECT (adj), "value");
@@ -564,10 +563,8 @@ other_source_download_cb (BzFullView *self,
   adw_timed_animation_set_easing (ADW_TIMED_ANIMATION (animation), ADW_EASE_OUT_CUBIC);
   adw_animation_play (animation);
 
-  controls = gtk_widget_get_visible (self->narrow_install_controls)
-                 ? self->narrow_install_controls
-                 : self->wide_install_controls;
-  bz_install_controls_grab_focus (BZ_INSTALL_CONTROLS (controls));
+  bz_install_controls_grab_focus (BZ_INSTALL_CONTROLS (self->narrow_install_controls));
+  bz_install_controls_grab_focus (BZ_INSTALL_CONTROLS (self->wide_install_controls));
 
   window = GTK_WIDGET (gtk_widget_get_root (GTK_WIDGET (self)));
   if (BZ_IS_WINDOW (window))
@@ -819,6 +816,21 @@ on_ui_entry_resolved (DexFuture *future,
   return dex_future_new_for_boolean (TRUE);
 }
 
+static gboolean
+idle_focus_install (GWeakRef *wr)
+{
+  g_autoptr (BzFullView) self = NULL;
+
+  self = g_weak_ref_get (wr);
+  if (self == NULL)
+    return G_SOURCE_REMOVE;
+
+  bz_install_controls_grab_focus (BZ_INSTALL_CONTROLS (self->narrow_install_controls));
+  bz_install_controls_grab_focus (BZ_INSTALL_CONTROLS (self->wide_install_controls));
+
+  return G_SOURCE_REMOVE;
+}
+
 void
 bz_full_view_set_entry_group (BzFullView   *self,
                               BzEntryGroup *group)
@@ -890,6 +902,8 @@ bz_full_view_set_entry_group (BzFullView   *self,
 
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_ENTRY_GROUP]);
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_UI_ENTRY]);
+
+  g_idle_add_full (G_PRIORITY_DEFAULT_IDLE, (GSourceFunc) idle_focus_install, bz_track_weak (self), bz_weak_release);
 }
 
 BzEntryGroup *
