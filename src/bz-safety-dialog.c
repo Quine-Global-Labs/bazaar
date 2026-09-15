@@ -209,6 +209,16 @@ on_dialog_map (BzSafetyDialog *self)
 }
 
 static void
+on_height_animation_done (AdwAnimation *animation,
+                          gpointer      user_data)
+{
+  BzSafetyDialog *self = BZ_SAFETY_DIALOG (user_data);
+
+  gtk_widget_child_focus (gtk_widget_get_last_child (GTK_WIDGET (self->carousel)),
+                          GTK_DIR_TAB_FORWARD);
+}
+
+static void
 next_page (BzSafetyDialog *self,
            GtkButton      *button)
 {
@@ -222,6 +232,11 @@ next_page (BzSafetyDialog *self,
 
   adw_carousel_scroll_to (self->carousel, page, TRUE);
   animate_to_page (self, 1);
+
+  if (self->height_animation != NULL)
+    g_signal_connect_object (self->height_animation, "done",
+                             G_CALLBACK (on_height_animation_done), self,
+                             G_CONNECT_DEFAULT);
 }
 
 static gboolean

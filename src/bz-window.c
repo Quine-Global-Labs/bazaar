@@ -347,6 +347,9 @@ action_escape (GtkWidget  *widget,
   GListModel *stack   = NULL;
   guint       n_pages = 0;
 
+  if (adw_application_window_get_visible_dialog (ADW_APPLICATION_WINDOW (self)) != NULL)
+    return;
+
   if (self->screenshot_page != NULL)
     {
       if (!bz_screenshot_page_is_closing (self->screenshot_page))
