@@ -677,13 +677,6 @@ bz_install_controls_set_entry_group (BzInstallControls *self,
             label,
             -1);
     }
-
-  if (group != NULL)
-    g_idle_add_full (
-        G_PRIORITY_DEFAULT_IDLE,
-        (GSourceFunc) idle_grab_focus,
-        bz_track_weak (self), bz_weak_release);
-
   update_tracker (self);
 }
 
@@ -728,6 +721,10 @@ void
 bz_install_controls_grab_focus (BzInstallControls *self)
 {
   g_return_if_fail (BZ_IS_INSTALL_CONTROLS (self));
+
+  if (!(gtk_widget_is_visible (GTK_WIDGET (self)) &&
+        self->group != NULL && (bz_entry_group_get_removable (self->group) > 0 || bz_entry_group_get_installable (self->group) > 0)))
+    return;
 
   g_idle_add_full (
       G_PRIORITY_DEFAULT_IDLE,
