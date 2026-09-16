@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-12 21:13+0000\n"
-"PO-Revision-Date: 2026-09-13 14:48+0300\n"
+"POT-Creation-Date: 2026-09-15 23:10+0000\n"
+"PO-Revision-Date: 2026-09-16 21:03+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -24,7 +24,7 @@ msgstr ""
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
+#: src/bz-window.blp:211 src/bz-window.c:382 src/bz-window.c:383
 msgid "Bazaar"
 msgstr "Базар"
 
@@ -167,11 +167,11 @@ msgstr "Інші джерела"
 msgid "Add-on for %s"
 msgstr "Розширення для %s"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613
 msgid "Show Less"
 msgstr "Згорнути"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Розгорнути"
 
@@ -1506,35 +1506,48 @@ msgstr "Застосунки KDE"
 msgid "More KDE Apps"
 msgstr "Показати більше"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:418
+#: src/bz-flathub-category.c:151
+msgid "Made for COSMIC™"
+msgstr "Створено для COSMIC™"
+
+#: src/bz-flathub-category.c:151
+msgid "For COSMIC™"
+msgstr "Для COSMIC™"
+
+#: src/bz-flathub-category.c:151
+#| msgid "More Apps"
+msgid "More COSMIC Apps"
+msgstr "Більше програм COSMIC"
+
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:418
 msgid "Games"
 msgstr "Ігри"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:475
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:475
 msgid "More Games"
 msgstr "Показати більше"
 
-#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:424
+#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:424
 msgid "Emulators"
 msgstr "Імітатори"
 
-#: src/bz-flathub-category.c:152
+#: src/bz-flathub-category.c:153
 msgid "More Emulators"
 msgstr "Інші імітатори"
 
-#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:430
+#: src/bz-flathub-category.c:154 src/bz-flathub-page.blp:430
 msgid "Launchers"
 msgstr "Засоби запуску"
 
-#: src/bz-flathub-category.c:153
+#: src/bz-flathub-category.c:154
 msgid "More Game Launchers"
 msgstr "Інші засоби запуску ігор"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "Game Tools"
 msgstr "Ігрові інструменти"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "More Game Tools"
 msgstr "Інші ігрові інструменти"
 
@@ -2448,7 +2461,7 @@ msgstr "Видалити"
 msgid "Get"
 msgstr "Завантажити"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:307
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322
 #: src/safety-calculator.c:161
 msgid "Arbitrary Permissions"
 msgstr "Власні дозволи"
@@ -2499,31 +2512,31 @@ msgstr ""
 "Цей застосунок користує застарілу версію середовища виконання (SDK) і може "
 "містити помилки та/або прогалини безпеки, котрі вже не будуть полагоджені."
 
-#: src/bz-safety-dialog.c:293 src/bz-safety-dialog.c:326
+#: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
 msgid "Safety"
 msgstr "Безпечність"
 
-#: src/bz-safety-dialog.c:386
+#: src/bz-safety-dialog.c:401
 #, c-format
 msgid "%s is Safe"
 msgstr "%s є безпечним"
 
-#: src/bz-safety-dialog.c:391
+#: src/bz-safety-dialog.c:406
 #, c-format
 msgid "%s has no Unsafe Permissions"
 msgstr "%s не має небезпечних дозволів"
 
-#: src/bz-safety-dialog.c:396
+#: src/bz-safety-dialog.c:411
 #, c-format
 msgid "%s is Probably Safe"
 msgstr "%s радше безпечний"
 
-#: src/bz-safety-dialog.c:401
+#: src/bz-safety-dialog.c:416
 #, c-format
 msgid "%s is Possibly Unsafe"
 msgstr "%s імовірно небезпечний"
 
-#: src/bz-safety-dialog.c:406
+#: src/bz-safety-dialog.c:421
 #, c-format
 msgid "%s is Unsafe"
 msgstr "%s є небезпечним"
@@ -2902,7 +2915,7 @@ msgstr ""
 msgid "_Install Anyway"
 msgstr "_Встановити попри це"
 
-#: src/bz-transaction-dialog.c:300 src/bz-transaction-dialog.c:329
+#: src/bz-transaction-dialog.c:298 src/bz-transaction-dialog.c:326
 msgid "Failed to load transaction dialog"
 msgstr "Не вдалося завантажити віконце операцій"
 
@@ -3103,25 +3116,25 @@ msgid "Log Out"
 msgstr "Вийти"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:382
+#: src/bz-window.c:385
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Базар — %s"
 
-#: src/bz-window.c:662 src/bz-window.c:711
+#: src/bz-window.c:665 src/bz-window.c:714
 msgid "Failed to launch application"
 msgstr "Не вдалося запустити застосунок"
 
-#: src/bz-window.c:790
+#: src/bz-window.c:793
 msgid "Could not open link"
 msgstr "Не вдалося відкрити посилання"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:999
+#: src/bz-window.c:1002
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Ви не можете видалити Базар у Базарі!"
 
-#: src/bz-window.c:1383 src/bz-window.c:1417
+#: src/bz-window.c:1386 src/bz-window.c:1420
 msgid "Can't do that right now!"
 msgstr "Наразі цього не можна зробити!"
 
@@ -3697,9 +3710,6 @@ msgstr "Включає %s, %s і %s."
 
 #~ msgid "Try a different search query"
 #~ msgstr "Спробуйте інший запит"
-
-#~ msgid "More Apps"
-#~ msgstr "Більше застосунків"
 
 #~ msgid "Exhibit app page"
 #~ msgstr "Сторінка застосунку Exhibit"
