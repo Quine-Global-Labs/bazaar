@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-12 21:13+0000\n"
-"PO-Revision-Date: 2026-09-13 08:09+0200\n"
+"POT-Creation-Date: 2026-09-15 23:10+0000\n"
+"PO-Revision-Date: 2026-09-16 07:13+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
+#: src/bz-window.blp:211 src/bz-window.c:382 src/bz-window.c:383
 msgid "Bazaar"
 msgstr "Bazar"
 
@@ -166,11 +166,11 @@ msgstr "Drugi viri"
 msgid "Add-on for %s"
 msgstr "Dodatek za %s"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613
 msgid "Show Less"
 msgstr "Pokaži manj"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Pokaži več"
 
@@ -1497,35 +1497,47 @@ msgstr "Programi KDE"
 msgid "More KDE Apps"
 msgstr "Dodatni programi KDE"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:418
+#: src/bz-flathub-category.c:151
+msgid "Made for COSMIC™"
+msgstr "Narejeno za COSMIC™"
+
+#: src/bz-flathub-category.c:151
+msgid "For COSMIC™"
+msgstr "Za COSMIC™"
+
+#: src/bz-flathub-category.c:151
+msgid "More COSMIC Apps"
+msgstr "Še več programov COSMIC"
+
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:418
 msgid "Games"
 msgstr "Igre"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:475
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:475
 msgid "More Games"
 msgstr "Dodatne igre"
 
-#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:424
+#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:424
 msgid "Emulators"
 msgstr "Posnemovalniki"
 
-#: src/bz-flathub-category.c:152
+#: src/bz-flathub-category.c:153
 msgid "More Emulators"
 msgstr "Dodatni posnemovalniki"
 
-#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:430
+#: src/bz-flathub-category.c:154 src/bz-flathub-page.blp:430
 msgid "Launchers"
 msgstr "Zaganjalniki"
 
-#: src/bz-flathub-category.c:153
+#: src/bz-flathub-category.c:154
 msgid "More Game Launchers"
 msgstr "Dodatni zaganjalniki iger"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "Game Tools"
 msgstr "Orodja za igre"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "More Game Tools"
 msgstr "Dodatna orodja za igre"
 
@@ -2427,7 +2439,7 @@ msgstr "Odstrani namestitev"
 msgid "Get"
 msgstr "Get"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:307
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322
 #: src/safety-calculator.c:161
 msgid "Arbitrary Permissions"
 msgstr "Dovoljenja po potrebi"
@@ -2478,31 +2490,31 @@ msgstr ""
 "Ta program uporablja zastarelo različico programske platforme (SDK) in lahko "
 "vsebuje napake ali varnostne ranljivosti, ki ne bodo odpravljene."
 
-#: src/bz-safety-dialog.c:293 src/bz-safety-dialog.c:326
+#: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
 msgid "Safety"
 msgstr "Varnost"
 
-#: src/bz-safety-dialog.c:386
+#: src/bz-safety-dialog.c:401
 #, c-format
 msgid "%s is Safe"
 msgstr "Program %s je varen za uporabo"
 
-#: src/bz-safety-dialog.c:391
+#: src/bz-safety-dialog.c:406
 #, c-format
 msgid "%s has no Unsafe Permissions"
 msgstr "Program %s ne zahteva pravic, ki niso varne"
 
-#: src/bz-safety-dialog.c:396
+#: src/bz-safety-dialog.c:411
 #, c-format
 msgid "%s is Probably Safe"
 msgstr "Program %s je najverjetneje varen za uporabo"
 
-#: src/bz-safety-dialog.c:401
+#: src/bz-safety-dialog.c:416
 #, c-format
 msgid "%s is Possibly Unsafe"
 msgstr "Program %s morda ni povsem varen"
 
-#: src/bz-safety-dialog.c:406
+#: src/bz-safety-dialog.c:421
 #, c-format
 msgid "%s is Unsafe"
 msgstr "Program %s ni varen"
@@ -2880,7 +2892,7 @@ msgstr ""
 msgid "_Install Anyway"
 msgstr "Vseeno _namesti"
 
-#: src/bz-transaction-dialog.c:300 src/bz-transaction-dialog.c:329
+#: src/bz-transaction-dialog.c:298 src/bz-transaction-dialog.c:326
 msgid "Failed to load transaction dialog"
 msgstr "Nalaganje pogovornega okna transakcije je spodletelo"
 
@@ -3084,25 +3096,25 @@ msgid "Log Out"
 msgstr "Odjavi"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:382
+#: src/bz-window.c:385
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazar — %s"
 
-#: src/bz-window.c:662 src/bz-window.c:711
+#: src/bz-window.c:665 src/bz-window.c:714
 msgid "Failed to launch application"
 msgstr "Zagon programa ni uspel"
 
-#: src/bz-window.c:790
+#: src/bz-window.c:793
 msgid "Could not open link"
 msgstr "Ni mogoče odpreti povezave"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:999
+#: src/bz-window.c:1002
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Ne morete odstraniti Bazarja v Bazarju!"
 
-#: src/bz-window.c:1383 src/bz-window.c:1417
+#: src/bz-window.c:1386 src/bz-window.c:1420
 msgid "Can't do that right now!"
 msgstr "Tega zdaj ni možno narediti!"
 
