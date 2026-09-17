@@ -261,10 +261,10 @@ template $BzFullView: Adw.Bin {
                             StackPage {
                               name: "download";
                               child: $BzContextTile download_size_tile {
-                                label: bind $get_download_size_label(
+                                label: bind try {$get_download_size_label(
                                   template.entry-group as <$BzEntryGroup>.ui-entry as <$BzResult>.object as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.installed,
                                   template.entry-group as <$BzEntryGroup>.ui-entry as <$BzResult>.object as <$BzFlatpakEntry>.runtime as <$BzResult>.object as <$BzEntry>.size,
-                                ) as <string>;
+                                ) as <string>, _("Download")};
                                 tooltip-text: bind $format_download_size_tooltip(template.ui-entry as <$BzResult>.object as <$BzEntry>.size) as <string>;
                                 lozenge-style: "grey";
                                 clicked => $size_cb(template);
