@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-12 21:13+0000\n"
-"PO-Revision-Date: 2026-09-13 17:58+0200\n"
+"POT-Creation-Date: 2026-09-16 16:08+0000\n"
+"PO-Revision-Date: 2026-09-17 06:04+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "Language: ka\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3 data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
-#: src/bz-window.blp:55 src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
+#: src/bz-window.blp:55 src/bz-window.blp:211 src/bz-window.c:382 src/bz-window.c:383
 msgid "Bazaar"
 msgstr "Bazaar"
 
@@ -153,11 +153,11 @@ msgstr "სხვა წყაროები"
 msgid "Add-on for %s"
 msgstr "დამატება %s-ისთვის"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613
 msgid "Show Less"
 msgstr "ნაკლების ჩვენება"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "მეტის ჩვენება"
 
@@ -1437,35 +1437,47 @@ msgstr "KDE -ის აპები"
 msgid "More KDE Apps"
 msgstr "მეტი KDE-ის აპლიკაცია"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:418
+#: src/bz-flathub-category.c:151
+msgid "Made for COSMIC™"
+msgstr "დამზადებულია COSMIC™-ისთვის"
+
+#: src/bz-flathub-category.c:151
+msgid "For COSMIC™"
+msgstr "COSMIC™-ისთვის"
+
+#: src/bz-flathub-category.c:151
+msgid "More COSMIC Apps"
+msgstr "COSMIC-ის მეტი აპი"
+
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:418
 msgid "Games"
 msgstr "თამაშები"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:475
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:475
 msgid "More Games"
 msgstr "მეტი თამაში"
 
-#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:424
+#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:424
 msgid "Emulators"
 msgstr "ემულატორები"
 
-#: src/bz-flathub-category.c:152
+#: src/bz-flathub-category.c:153
 msgid "More Emulators"
 msgstr "მეტი ემულატორი"
 
-#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:430
+#: src/bz-flathub-category.c:154 src/bz-flathub-page.blp:430
 msgid "Launchers"
 msgstr "გამშვებები"
 
-#: src/bz-flathub-category.c:153
+#: src/bz-flathub-category.c:154
 msgid "More Game Launchers"
 msgstr "მეტი თამაშის გამშვები"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "Game Tools"
 msgstr "თამაშის ხელსაწყოები"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "More Game Tools"
 msgstr "მეტი თამაშის ხელსაწყო"
 
@@ -1632,6 +1644,10 @@ msgstr "მაღაზიის გარეგნობის გადახ�
 #: src/bz-full-view.blp:222
 msgid "_Support"
 msgstr "მხარდა_ჭერა"
+
+#: src/bz-full-view.blp:267 src/context-tile-callbacks.c:142
+msgid "Download"
+msgstr "გადმოწერა"
 
 #: src/bz-full-view.blp:455
 msgid "This app uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
@@ -2316,7 +2332,7 @@ msgstr "წაშლა"
 msgid "Get"
 msgstr "გადმოწერა"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:307 src/safety-calculator.c:161
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322 src/safety-calculator.c:161
 msgid "Arbitrary Permissions"
 msgstr "ჩვეულებრივი წვდომები"
 
@@ -2363,31 +2379,31 @@ msgstr ""
 "ეს აპი პროგრამული პლატფორმის (SDK) მოძველებულ ვერსიას იყენებს და შეიძლება, შეცდომებს და უსაფრთხოების "
 "მოწყვლადობებს შეიცავდეს, რომლებიც აღარ გასწორდება."
 
-#: src/bz-safety-dialog.c:293 src/bz-safety-dialog.c:326
+#: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
 msgid "Safety"
 msgstr "უსაფრთხოება"
 
-#: src/bz-safety-dialog.c:386
+#: src/bz-safety-dialog.c:401
 #, c-format
 msgid "%s is Safe"
 msgstr "%s უსაფრთხოა"
 
-#: src/bz-safety-dialog.c:391
+#: src/bz-safety-dialog.c:406
 #, c-format
 msgid "%s has no Unsafe Permissions"
 msgstr "%s-ის წვდომები სახიფათოა"
 
-#: src/bz-safety-dialog.c:396
+#: src/bz-safety-dialog.c:411
 #, c-format
 msgid "%s is Probably Safe"
 msgstr "%s ალბათ უსაფრთხოა"
 
-#: src/bz-safety-dialog.c:401
+#: src/bz-safety-dialog.c:416
 #, c-format
 msgid "%s is Possibly Unsafe"
 msgstr "%s ალბათ სახიფათოა"
 
-#: src/bz-safety-dialog.c:406
+#: src/bz-safety-dialog.c:421
 #, c-format
 msgid "%s is Unsafe"
 msgstr "%s სახიფათოა"
@@ -2759,7 +2775,7 @@ msgstr ""
 msgid "_Install Anyway"
 msgstr "მა_ინც დაყენება"
 
-#: src/bz-transaction-dialog.c:300 src/bz-transaction-dialog.c:329
+#: src/bz-transaction-dialog.c:298 src/bz-transaction-dialog.c:326
 msgid "Failed to load transaction dialog"
 msgstr "ტრანზაქციის დიალოგის ჩატვირთვა ჩავარდა"
 
@@ -2954,25 +2970,25 @@ msgid "Log Out"
 msgstr "გასვლა"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:382
+#: src/bz-window.c:385
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazaar — %s"
 
-#: src/bz-window.c:662 src/bz-window.c:711
+#: src/bz-window.c:665 src/bz-window.c:714
 msgid "Failed to launch application"
 msgstr "აპლიკაციის გაშვება ჩავარდა"
 
-#: src/bz-window.c:790
+#: src/bz-window.c:793
 msgid "Could not open link"
 msgstr "ბმულის გახსნა შეუძლებელია"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:999
+#: src/bz-window.c:1002
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Bazaar-ს Bazaar-დან ვერ წაშლით!"
 
-#: src/bz-window.c:1383 src/bz-window.c:1417
+#: src/bz-window.c:1386 src/bz-window.c:1420
 msgid "Can't do that right now!"
 msgstr "ამჟამად ამას ვერ იზამთ!"
 
@@ -3002,10 +3018,6 @@ msgstr "%d გადმოწერა გასულ თვეში"
 #, c-format
 msgid "+%s Runtime"
 msgstr "+%s გაშვების გარემო"
-
-#: src/context-tile-callbacks.c:142
-msgid "Download"
-msgstr "გადმოწერა"
 
 #: src/context-tile-callbacks.c:151 src/context-tile-callbacks.c:163
 msgid "Size information unavailable"
@@ -3525,6 +3537,3 @@ msgstr "შეიცავს %s-ს, %s-ს და %s-ს."
 
 #~ msgid "Try a different search query"
 #~ msgstr "სცადეთ შეცვალოთ ძებნის მოთხოვნა"
-
-#~ msgid "More Apps"
-#~ msgstr "მეტი აპი"
