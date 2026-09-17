@@ -43,6 +43,8 @@ struct _BzFavoriteButton
   GtkLabel    *count_label;
   GtkStack    *stack;
 
+  GtkWidget   *login_popover;
+
   gboolean is_favorited;
 };
 
@@ -96,6 +98,7 @@ bz_favorite_button_dispose (GObject *object)
 
   g_clear_object (&self->entry);
   g_clear_object (&self->state);
+  g_clear_pointer (&self->login_popover, gtk_widget_unparent);
 
   G_OBJECT_CLASS (bz_favorite_button_parent_class)->dispose (object);
 }
@@ -417,34 +420,37 @@ on_login_button_clicked (GtkButton  *button,
 static void
 show_login_popover (BzFavoriteButton *self)
 {
-  GtkWidget *popover;
-  GtkWidget *box;
-  GtkWidget *label;
-  GtkWidget *button;
+  if (self->login_popover == NULL)
+    {
+      GtkWidget *box;
+      GtkWidget *label;
+      GtkWidget *button;
 
-  popover = gtk_popover_new ();
-  gtk_widget_set_parent (popover, GTK_WIDGET (self));
+      self->login_popover = gtk_popover_new ();
+      gtk_widget_set_parent (self->login_popover, GTK_WIDGET (self));
 
-  box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
-  gtk_widget_set_margin_top (box, 6);
-  gtk_widget_set_margin_bottom (box, 6);
-  gtk_widget_set_margin_start (box, 6);
-  gtk_widget_set_margin_end (box, 6);
+      box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
+      gtk_widget_set_margin_top (box, 6);
+      gtk_widget_set_margin_bottom (box, 6);
+      gtk_widget_set_margin_start (box, 6);
+      gtk_widget_set_margin_end (box, 6);
 
-  label = gtk_label_new (_ ("Log in with Flathub to manage favorites"));
-  gtk_label_set_wrap (GTK_LABEL (label), TRUE);
-  gtk_label_set_max_width_chars (GTK_LABEL (label), 17);
-  gtk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_CENTER);
-  gtk_box_append (GTK_BOX (box), label);
+      label = gtk_label_new (_ ("Log in with Flathub to manage favorites"));
+      gtk_label_set_wrap (GTK_LABEL (label), TRUE);
+      gtk_label_set_max_width_chars (GTK_LABEL (label), 17);
+      gtk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_CENTER);
+      gtk_box_append (GTK_BOX (box), label);
 
-  button = gtk_button_new_with_label (_ ("Log In"));
-  gtk_widget_add_css_class (button, "suggested-action");
-  gtk_actionable_set_action_name (GTK_ACTIONABLE (button), "app.flathub-login");
-  g_signal_connect (button, "clicked", G_CALLBACK (on_login_button_clicked), popover);
-  gtk_box_append (GTK_BOX (box), button);
+      button = gtk_button_new_with_label (_ ("Log In"));
+      gtk_widget_add_css_class (button, "suggested-action");
+      gtk_actionable_set_action_name (GTK_ACTIONABLE (button), "app.flathub-login");
+      g_signal_connect (button, "clicked", G_CALLBACK (on_login_button_clicked), self->login_popover);
+      gtk_box_append (GTK_BOX (box), button);
 
-  gtk_popover_set_child (GTK_POPOVER (popover), box);
-  gtk_popover_popup (GTK_POPOVER (popover));
+      gtk_popover_set_child (GTK_POPOVER (self->login_popover), box);
+    }
+
+  gtk_popover_popup (GTK_POPOVER (self->login_popover));
 }
 
 static void
