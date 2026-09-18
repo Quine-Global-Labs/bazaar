@@ -152,7 +152,6 @@ bz_sources = files(
   'bz-transaction-manager.c',
   'bz-transaction-tile.c',
   'bz-transaction.c',
-  'bz-updates-card.c',
   'bz-update-history-dialog.c',
   'bz-user-data-page.c',
   'bz-user-data-tile.c',
@@ -264,6 +263,7 @@ gobject_specs = files(
   'bz-size-result.txt',
   'bz-state-info.txt',
   'bz-update-history-data-point.txt',
+  'bz-update-info.txt',
   'bz-transact-icon-info.txt',
   'bz-transaction-dialog-result.txt',
   'bz-transaction-entry-tracker.txt',
@@ -407,8 +407,10 @@ vala_sources = files(
   'bz-cosmic-place-applet-dialog.vala',
   'bz-decorated-screenshot.vala',
   'bz-themed-rect.vala',
+  'bz-updates-card.vala',
   'bz-flathub-curated-section.vala',
   'bz-other-sources-list.vala',
+  'bz-new-permissions-dialog.vala',
 )
 
 vala_args = [

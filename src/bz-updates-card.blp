@@ -33,8 +33,3 @@ template $BzUpdatesCard: Adw.Bin {
     }
   };
 }
-
-FilterListModel runtimes_filter_model {
-  filter: CustomFilter runtimes_filter {};
-  model: bind template.state as <$BzStateInfo>.available-updates;
-}

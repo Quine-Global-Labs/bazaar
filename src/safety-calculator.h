@@ -20,6 +20,7 @@
 
 #pragma once
 
+#include "bz-app-permissions.h"
 #include "bz-context-row.h"
 #include "bz-entry.h"
 #include "bz-safety-row.h"
@@ -35,6 +36,10 @@ typedef enum
 } BzHighRiskGroup;
 
 #define BZ_TYPE_HIGH_RISK_GROUP (bz_high_risk_group_get_type ())
+
+GListModel *
+bz_safety_calculator_analyze_permissions (BzAppPermissions *permissions,
+                                          gboolean          include_no_access_rows);
 
 GListModel *
 bz_safety_calculator_analyze_entry (BzEntry *entry);

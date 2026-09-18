@@ -26,6 +26,7 @@
 
 #include "config.h"
 
+#include "bz-app-permissions.h"
 #include "bz-backend-notification.h"
 #include "bz-backend-transaction-op-payload.h"
 #include "bz-backend-transaction-op-progress-payload.h"
@@ -1889,7 +1890,7 @@ retrieve_refs_for_remote_fiber (RetrieveRefsForRemoteData *data)
 
 #ifdef SANDBOXED_LIBFLATPAK
   if (is_noenumerate ||
-     (installation == self->user && !is_whitelisted_user))
+      (installation == self->user && !is_whitelisted_user))
 #else
   if (is_noenumerate)
 #endif
@@ -2012,7 +2013,7 @@ retrieve_updates_fiber (GatherRefsData *data)
   guint n_sys_refs                   = 0;
   g_autoptr (GPtrArray) user_refs    = NULL;
   guint n_user_refs                  = 0;
-  g_autoptr (GPtrArray) ids          = NULL;
+  g_autoptr (GHashTable) ids         = NULL;
 
   bz_weak_get_or_return_reject (self, data->self);
 
@@ -2046,33 +2047,94 @@ retrieve_updates_fiber (GatherRefsData *data)
       n_user_refs = user_refs->len;
     }
 
-  ids = g_ptr_array_new_with_free_func (g_free);
+  ids = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, g_object_unref);
 
   for (guint i = 0; i < n_sys_refs + n_user_refs; i++)
     {
-      gboolean             user = FALSE;
-      FlatpakInstalledRef *iref = NULL;
+      gboolean             user             = FALSE;
+      FlatpakInstalledRef *iref             = NULL;
+      FlatpakInstallation *installation     = NULL;
+      g_autofree char     *unique_id        = NULL;
+      const char          *origin           = NULL;
+      g_autoptr (GBytes) old_bytes          = NULL;
+      g_autoptr (GKeyFile) old_keyfile      = NULL;
+      g_autoptr (GBytes) new_bytes          = NULL;
+      g_autoptr (GKeyFile) new_keyfile      = NULL;
+      g_autoptr (BzAppPermissions) old_perm = NULL;
+      g_autoptr (BzAppPermissions) new_perm = NULL;
+      BzAppPermissions *delta               = NULL;
+      g_autoptr (GError) perm_error         = NULL;
 
       if (i < n_sys_refs)
         {
-          user = FALSE;
-          iref = g_ptr_array_index (system_refs, i);
+          user         = FALSE;
+          iref         = g_ptr_array_index (system_refs, i);
+          installation = self->system;
         }
       else
         {
-          user = TRUE;
-          iref = g_ptr_array_index (user_refs, i - n_sys_refs);
+          user         = TRUE;
+          iref         = g_ptr_array_index (user_refs, i - n_sys_refs);
+          installation = self->user;
         }
 
       if (should_skip_extension_ref (iref))
         continue;
 
-      g_ptr_array_add (ids,
-                       bz_flatpak_ref_format_unique (FLATPAK_REF (iref), user));
+      unique_id = bz_flatpak_ref_format_unique (FLATPAK_REF (iref), user);
+
+      old_bytes = flatpak_installed_ref_load_metadata (iref, cancellable, &perm_error);
+      if (old_bytes != NULL)
+        {
+          old_keyfile = g_key_file_new ();
+          if (!g_key_file_load_from_bytes (old_keyfile, old_bytes, G_KEY_FILE_NONE, NULL))
+            g_clear_pointer (&old_keyfile, g_key_file_unref);
+        }
+      else
+        {
+          g_debug ("Failed to get installed metadata for '%s': %s",
+                   flatpak_ref_get_name (FLATPAK_REF (iref)), perm_error->message);
+        }
+      g_clear_error (&perm_error);
+
+      origin = flatpak_installed_ref_get_origin (iref);
+      if (old_keyfile != NULL && origin != NULL)
+        {
+          new_bytes = flatpak_installation_fetch_remote_metadata_sync (
+              installation, origin, FLATPAK_REF (iref), cancellable, &perm_error);
+          if (new_bytes != NULL)
+            {
+              new_keyfile = g_key_file_new ();
+              if (!g_key_file_load_from_bytes (new_keyfile, new_bytes, G_KEY_FILE_NONE, NULL))
+                g_clear_pointer (&new_keyfile, g_key_file_unref);
+            }
+          else
+            {
+              g_debug ("Failed to fetch remote metadata for '%s' from '%s': %s",
+                       flatpak_ref_get_name (FLATPAK_REF (iref)), origin, perm_error->message);
+            }
+        }
+      g_clear_error (&perm_error);
+
+      if (old_keyfile != NULL && new_keyfile != NULL)
+        {
+          old_perm = bz_app_permissions_new_from_metadata (old_keyfile, NULL);
+          new_perm = bz_app_permissions_new_from_metadata (new_keyfile, NULL);
+        }
+
+      if (old_perm != NULL && new_perm != NULL)
+        delta = bz_app_permissions_diff (old_perm, new_perm);
+      else
+        {
+          delta = bz_app_permissions_new ();
+          bz_app_permissions_seal (delta);
+        }
+
+      g_hash_table_replace (ids, g_steal_pointer (&unique_id), delta);
     }
 
   return dex_future_new_take_boxed (
-      G_TYPE_PTR_ARRAY, g_steal_pointer (&ids));
+      G_TYPE_HASH_TABLE, g_steal_pointer (&ids));
 }
 
 static gboolean
