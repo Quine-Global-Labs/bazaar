@@ -77,6 +77,28 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.6" date="2026-09-18">
+      <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.6</url>
+      <description translate="no">
+        <p>
+          <em>Changes</em>
+        </p>
+        <ul>
+          <li>Added support for installing COSMIC applets </li>
+          <li>Added a new "Made for COSMIC" category for users on that DE</li>
+        </ul>
+        <p>
+          <em>Bug Fixes</em>
+        </p>
+        <ul>
+          <li>Fixed an issue where you could not click anything on the add-ons page</li>
+          <li>Fixed an issue where installing apps straight from search would not mark the app as installed</li>
+        </ul>
+        <p>
+          Thanks for reading, and have a great day!
+        </p>
+      </description>
+    </release>
     <release version="0.9.5" date="2026-09-08">
       <url type="details">https://gitlab.gnome.org/World/bazaar/-/releases/v0.9.5</url>
       <description translate="no">
