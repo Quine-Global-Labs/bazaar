@@ -9,43 +9,50 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-26 02:45+0900\n"
-"PO-Revision-Date: 2026-06-25 22:43+0900\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"POT-Creation-Date: 2026-09-18 23:10+0000\n"
+"PO-Revision-Date: 2026-09-20 04:38+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
-"Language-Team: none\n"
+"Language-Team: Chinese (Traditional) <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 26.07.70\n"
+"X-Generator: Lokalize 26.11.70\n"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:2
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:46
-#: src/bz-window.blp:202 src/bz-window.c:373 src/bz-window.c:374
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: src/bz-window.blp:211 src/bz-window.c:382 src/bz-window.c:383
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#| msgid "App Size"
+msgid "App Store"
+msgstr "應用程式商店"
+
+#: data/io.github.kolunmi.Bazaar.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "新增、移除或更新此電腦上的 Flatpak 軟體"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:9
-msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
+#: data/io.github.kolunmi.Bazaar.desktop.in:11
+#| msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
+msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr ""
-"GTK;System;PackageManager;Discover;Flatpak;Software;Store;套件管理;探索;軟體;"
-"商店;"
+"System;Package;Manager;Discover;Flatpak;Software;App;Store;套件管理;探索;軟體;"
+"商店;軟體包;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:16
+#: data/io.github.kolunmi.Bazaar.desktop.in:18
 msgid "New Window"
 msgstr "新視窗"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "探索與安裝應用程式"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:10
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
@@ -53,44 +60,49 @@ msgstr ""
 "為 Linux 打造的高效能現代應用程式商店，著重探索與安裝來自 Flatpak 遠端（特別"
 "是 Flathub）的應用程式與附加元件。"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:15
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "將要安裝的應用程式加入佇列然後繼續瀏覽"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "輕易檢視應用程式權限"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "登入至 Flathub 以檢視與管理最愛"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "直接從 GNOME Shell 搜尋應用程式"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:55
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:754
+msgid "The Bazaar Contributors"
+msgstr "Bazaar 貢獻者"
+
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "展示 Flathub 應用程式的首頁"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
-msgid "Exhibit app page"
-msgstr "展示應用程式頁面"
-
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
+msgid "App page for Exhibit"
+msgstr "Exhibit 的應用程式頁面"
+
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
 msgid "Library page"
 msgstr "程式庫頁面"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
 msgid "Search page"
 msgstr "搜尋頁面"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
 msgid "Category page"
 msgstr "分類頁面"
 
-#: src/bz-addon-tile.blp:64 src/bz-installed-tile.blp:55
-#: src/bz-rich-app-tile.blp:142
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54
+#: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "已停止接收更新"
 
@@ -106,60 +118,80 @@ msgctxt "Install Controls"
 msgid "Install"
 msgstr "安裝"
 
-#: src/bz-addons-dialog.blp:14 src/bz-addons-dialog.blp:21
-#: src/bz-addons-dialog.blp:70 src/bz-installed-tile.blp:96
+#: src/bz-addons-dialog.blp:7
+#| msgid "Add-ons"
+msgid "Add-on"
+msgstr "附加元件"
+
+#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
 msgid "Manage Add-Ons"
 msgstr "管理附加元件"
 
-#: src/bz-addons-dialog.blp:80
+#: src/bz-addons-dialog.blp:81
 msgid "No Add-Ons Visible"
 msgstr "沒有可見的附加元件"
 
-#: src/bz-addons-dialog.blp:81
+#: src/bz-addons-dialog.blp:82
 msgid ""
 "Your current filter preferences are hiding all known add-ons. Try adjusting "
 "them."
 msgstr "您目前的過濾設定使得所有已知附加元件皆已被隱藏。請試著調整過濾設定。"
 
-#: src/bz-addons-dialog.blp:88
+#: src/bz-addons-dialog.blp:89
 msgid "Add-on Page"
 msgstr "附加元件頁面"
 
-#: src/bz-addons-dialog.blp:204 src/bz-full-view.blp:411
+#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:267
+#: src/context-tile-callbacks.c:142
+msgid "Download"
+msgstr "下載"
+
+#. Translators: As in 'The app is installed'.
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.blp:87 src/bz-full-view.blp:282
+#: src/bz-releases-list.c:204
+msgid "Installed"
+msgstr "已安裝"
+
+#: src/bz-addons-dialog.blp:221 src/bz-full-view.blp:406
 msgid "Downloads/Month"
 msgstr "每月下載次數"
 
-#: src/bz-addons-dialog.blp:231 src/bz-full-view.blp:447
+#: src/bz-addons-dialog.blp:247 src/bz-full-view.blp:441
 msgid "Stopped Receiving Core Updates"
 msgstr "已停止接收核心更新"
 
-#: src/bz-addons-dialog.blp:245
+#: src/bz-addons-dialog.blp:261
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security "
 "fixes. It may become unsafe to use."
-msgstr ""
-"此應用程式使用的執行環境已不再接收更新或安全修補，使用上可能存在安全風險。"
+msgstr "此應用程式使用的執行環境已不再接收更新或安全修補，使用上可能存在安全風險。"
 
-#: src/bz-addons-dialog.c:333
+#: src/bz-addons-dialog.blp:346 src/bz-full-view.blp:602
+#| msgid "Other Apps"
+msgid "Other Sources"
+msgstr "其他來源"
+
+#: src/bz-addons-dialog.c:351
 #, c-format
 msgid "Add-on for %s"
 msgstr "%s 的附加元件"
 
-#: src/bz-addons-dialog.c:347 src/bz-full-view.c:657
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613
 msgid "Show Less"
 msgstr "顯示更少"
 
-#: src/bz-addons-dialog.c:347 src/bz-full-view.c:657 src/bz-section-view.blp:71
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "顯示更多"
 
-#: src/bz-addons-dialog.c:397
+#: src/bz-addons-dialog.c:415
 msgid "Download Stats"
 msgstr "下載統計數據"
 
 #: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31
-#: src/bz-age-rating-dialog.c:736 src/context-tile-callbacks.c:186
-#: src/context-tile-callbacks.c:193
+#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:201
 msgid "Age Rating"
 msgstr "年齡分級"
 
@@ -481,52 +513,52 @@ msgid "Violence"
 msgstr "暴力"
 
 #. Translators: Age rating format, e.g. "12+" for ages 12 and up
-#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:176
+#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:184
 #, c-format
 msgid "%d+"
 msgstr "%d+"
 
-#: src/bz-age-rating-dialog.c:711
+#: src/bz-age-rating-dialog.c:712
 msgctxt "Age rating"
 msgid "All"
 msgstr "所有年齡層"
 
-#: src/bz-age-rating-dialog.c:747
+#: src/bz-age-rating-dialog.c:748
 #, c-format
 msgid "%s has an unknown age rating"
 msgstr "%s 的年齡分級未知"
 
-#: src/bz-age-rating-dialog.c:753
+#: src/bz-age-rating-dialog.c:754
 #, c-format
 msgid "%s is suitable for everyone"
 msgstr "%s 適合所有年齡層"
 
-#: src/bz-age-rating-dialog.c:756
+#: src/bz-age-rating-dialog.c:757
 #, c-format
 msgid "%s is suitable for young children"
 msgstr "%s 適合幼童"
 
-#: src/bz-age-rating-dialog.c:759
+#: src/bz-age-rating-dialog.c:760
 #, c-format
 msgid "%s is suitable for children"
 msgstr "%s 適合兒童"
 
-#: src/bz-age-rating-dialog.c:762
+#: src/bz-age-rating-dialog.c:763
 #, c-format
 msgid "%s is suitable for teenagers"
 msgstr "%s 適合青少年"
 
-#: src/bz-age-rating-dialog.c:765
+#: src/bz-age-rating-dialog.c:766
 #, c-format
 msgid "%s is suitable for adults"
 msgstr "%s 適合成人"
 
-#: src/bz-age-rating-dialog.c:768
+#: src/bz-age-rating-dialog.c:769
 #, c-format
 msgid "%s is suitable for %s"
 msgstr "%s 適合 %s"
 
-#: src/bz-age-rating-dialog.c:862
+#: src/bz-age-rating-dialog.c:868
 #, c-format
 msgid "%s • %s"
 msgstr "%s • %s"
@@ -657,43 +689,43 @@ msgstr "對 %s 的檔案系統存取"
 msgid "Unknown filesystem path"
 msgstr "未知的檔案系統目錄"
 
-#: src/bz-app-size-dialog.blp:26 src/bz-app-size-dialog.blp:60
+#: src/bz-app-size-dialog.blp:30 src/bz-app-size-dialog.blp:71
 msgid "Download Size"
 msgstr "下載大小"
 
-#: src/bz-app-size-dialog.blp:33 src/bz-app-size-dialog.blp:81
+#: src/bz-app-size-dialog.blp:40 src/bz-app-size-dialog.blp:99
 msgid "Installed Size"
 msgstr "安裝大小"
 
-#: src/bz-app-size-dialog.blp:61
+#: src/bz-app-size-dialog.blp:72
 msgid "Amount to download from the internet"
 msgstr "從網際網路下載的大小"
 
-#: src/bz-app-size-dialog.blp:82
+#: src/bz-app-size-dialog.blp:100
 msgid "Size on Disk"
 msgstr "磁碟上的大小"
 
-#: src/bz-app-size-dialog.blp:133
+#: src/bz-app-size-dialog.blp:202
 msgid "Open user data folder"
 msgstr "開啟使用者資料資料夾"
 
-#: src/bz-app-size-dialog.blp:143
+#: src/bz-app-size-dialog.blp:212
 msgid "Your User Data"
 msgstr "您的使用者資料"
 
-#: src/bz-app-size-dialog.blp:144
+#: src/bz-app-size-dialog.blp:213
 msgid "Caches, settings, and other app data"
 msgstr "快取、設定以及其他應用程式資料"
 
-#: src/bz-app-size-dialog.blp:165
+#: src/bz-app-size-dialog.blp:233
 msgid "Cache"
 msgstr "快取"
 
-#: src/bz-app-size-dialog.blp:166
+#: src/bz-app-size-dialog.blp:234
 msgid "Temporary cached data"
 msgstr "暫時快取的資料"
 
-#: src/bz-app-size-dialog.blp:176
+#: src/bz-app-size-dialog.blp:246
 msgid "Clear Cache"
 msgstr "清除快取"
 
@@ -706,55 +738,78 @@ msgid "Runtime Download Size"
 msgstr "執行環境的下載大小"
 
 #: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:185
-#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:393
-#: src/context-tile-callbacks.c:410
+#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:401
+#: src/context-tile-callbacks.c:423
 msgid "N/A"
 msgstr "N/A"
 
-#: src/bz-app-size-dialog.c:226
-msgid "App Size"
-msgstr "應用程式大小"
+#: src/bz-app-size-dialog.c:195 src/bz-app-size-dialog.c:208
+msgid "Storage"
+msgstr "儲存空間"
 
-#: src/bz-app-tile.blp:57 src/bz-developer-badge.c:98
-#: src/bz-rich-app-tile.blp:106 src/bz-rich-app-tile.c:443
+#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98
+#: src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "已驗證"
 
-#. Translators: As in 'The app is installed'.
-#: src/bz-app-tile.blp:88 src/context-tile-callbacks.c:135
-#: src/bz-releases-list.c:206
-msgid "Installed"
-msgstr "已安裝"
-
-#: src/bz-application.c:786
-msgid "The Bazaar Contributors"
-msgstr "Bazaar 貢獻者"
-
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:789
+#: src/bz-application.c:757
 msgid "translator-credits"
 msgstr ""
 "Shihfu Juan <xlion@xlion.tw>, 2025,2026\n"
 "Peter Dave Hello <hsu@peterdavehello.org>, 2025\n"
 "Kisaragi Hiu <mail@kisaragi-hiu.com>, 2026"
 
-#: src/bz-application.c:799
+#: src/bz-application.c:767
 msgid "Special Thanks"
 msgstr "特別感謝"
 
-#: src/bz-application.c:857
+#: src/bz-application.c:825
 msgid "Logged Out Successfully!"
 msgstr "已成功登出！"
 
-#: src/bz-application.c:995
+#: src/bz-application.c:1057
+msgid "Notice for Ubuntu Users"
+msgstr "佈告予 Ubuntu 使用者"
+
+# Ubuntu 用「套件」而這裡應該跟 Ubuntu 一致。
+# --Kisaragi
+#: src/bz-application.c:1060
+msgid ""
+"Ubuntu 25.10 and newer have changed default security rules in a way that "
+"makes it <b>impossible to install apps</b> from the Flatpak version of "
+"Bazaar. For the time being, please use the apt package instead. Install it "
+"with\n"
+"\n"
+"<tt>sudo apt install bazaar</tt>\n"
+"\n"
+"You can then remove this Flatpak version with\n"
+"\n"
+"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+msgstr ""
+"Ubuntu 25.10 以及更新的版本變更了預設安全性規則，而使得 Flatpak 版的 Bazaar <b>沒有辦法安裝應用程式</b>。這個情況尚未解"
+"決，因此目前請先改為使用 apt 套件。請使用以下指令安裝它：\n"
+"\n"
+"<tt>sudo apt install bazaar</tt>\n"
+"\n"
+"安裝之後您可以這樣移除目前使用的 Flatpak 版本：\n"
+"\n"
+"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+
+#: src/bz-application.c:1068
+#| msgid "_Install Anyway"
+msgid "Continue Anyway"
+msgstr "仍要繼續使用"
+
+#: src/bz-application.c:1084
 msgid "Performing setup…"
 msgstr "正在進行設定…"
 
-#: src/bz-application.c:1087
+#: src/bz-application.c:1183
 msgid "Set Up System Flathub?"
 msgstr "設定系統 Flathub？"
 
-#: src/bz-application.c:1090
+#: src/bz-application.c:1186
 msgid ""
 "The system Flathub remote is not set up. Bazaar requires Flathub to be "
 "configured on the system Flatpak installation to browse and install "
@@ -767,11 +822,11 @@ msgstr ""
 "\n"
 "您仍可使用 Bazaar 來瀏覽或移除已安裝的應用程式。"
 
-#: src/bz-application.c:1097
+#: src/bz-application.c:1193
 msgid "Set Up Flathub?"
 msgstr "要設定 Flathub 嗎？"
 
-#: src/bz-application.c:1100
+#: src/bz-application.c:1196
 msgid ""
 "Flathub is not set up on this system. You will not be able to browse and "
 "install applications in Bazaar if its unavailable.\n"
@@ -783,71 +838,63 @@ msgstr ""
 "\n"
 "您仍可使用 Bazaar 來瀏覽或移除已安裝的應用程式。"
 
-#: src/bz-application.c:1106
+#: src/bz-application.c:1202
 msgid "Later"
 msgstr "稍後"
 
-#: src/bz-application.c:1107
+#: src/bz-application.c:1203
 msgid "Set Up Flathub"
 msgstr "設定 Flathub"
 
-#: src/bz-application.c:1626
+#: src/bz-application.c:1723
 msgid "A backend error occurred"
 msgstr "發生後端錯誤"
 
-#: src/bz-application.c:1826 src/bz-application.c:4024
+#: src/bz-application.c:1930 src/bz-application.c:4251
 msgid "Refreshing…"
 msgstr "重新整理中…"
 
-#: src/bz-application.c:1990 src/bz-application.c:4022
+#: src/bz-application.c:2089
 #, c-format
 msgid "Loading %d apps…"
 msgstr "正在載入 %d 個應用程式…"
 
-#: src/bz-application.c:2043
+#: src/bz-application.c:2148 src/bz-application.c:2225
 msgid "Failed to open file"
 msgstr "開啟檔案失敗"
 
-#: src/bz-application.c:2141
-msgid "An initialization error occurred"
-msgstr "發生初始化錯誤"
-
-#: src/bz-application.c:2535
-msgid "Checking for updates…"
-msgstr "正在檢查更新…"
-
-#: src/bz-application.c:2591
-msgid "Failed to check for updates"
-msgstr "檢查更新失敗"
-
-#: src/bz-application.c:3735
-msgid "Malformed Link"
-msgstr "不正確的連結"
-
-#: src/bz-application.c:3736
-msgid ""
-"The link used to open this app has incorrect capitalization and may stop "
-"working in the future.\n"
-"\n"
-"This is most likely caused by KRunner sending incorrect app IDs"
-msgstr ""
-"用來開啟此應用程式的連結的大小寫不正確，可能在未來會不再能夠使用。\n"
-"\n"
-"這通常是因為 KRunner 傳送了不正確的應用程式 ID 所造成的"
-
-#: src/bz-application.c:3744
-msgid "Could not find app"
-msgstr "找不到應用程式"
-
-#: src/bz-application.c:3775
+#: src/bz-application.c:2239
 msgid "Failed to load metainfo"
 msgstr "載入 metainfo 失敗"
 
-#: src/bz-application.c:4026
+#: src/bz-application.c:2362
+msgid "An initialization error occurred"
+msgstr "發生初始化錯誤"
+
+#: src/bz-application.c:2770
+msgid "Checking for updates…"
+msgstr "正在檢查更新…"
+
+#: src/bz-application.c:2826
+msgid "Failed to check for updates"
+msgstr "檢查更新失敗"
+
+#: src/bz-application.c:4028
+msgid "Could not find app"
+msgstr "找不到應用程式"
+
+#: src/bz-application.c:4248
+#, c-format
+#| msgid "Loading %d apps…"
+msgid "Loading %d app…"
+msgid_plural "Loading %d apps…"
+msgstr[0] "正在載入 %d 個應用程式…"
+
+#: src/bz-application.c:4253
 msgid "Writing to cache…"
 msgstr "正在寫入快取…"
 
-#: src/bz-apps-page.blp:97
+#: src/bz-apps-page.blp:97 src/bz-full-view.c:217
 msgid "Show All"
 msgstr "顯示全部"
 
@@ -856,7 +903,7 @@ msgstr "顯示全部"
 msgid "All \"%s\""
 msgstr "全部 「%s」"
 
-#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:89
+#: src/bz-apps-page.c:462 src/bz-subcategory-list.c:88
 #, c-format
 msgid "%d Applications"
 msgstr "%d 個應用程式"
@@ -865,7 +912,45 @@ msgstr "%d 個應用程式"
 msgid "Failed to Load Article"
 msgstr "載入文章失敗"
 
-#: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
+#: src/bz-bulk-install-dialog.c:87
+msgid "All apps are already installed"
+msgstr "所有應用程式皆已安裝"
+
+#: src/bz-bulk-install-dialog.c:89
+msgid "_OK"
+msgstr "確認(_O)"
+
+#: src/bz-bulk-install-dialog.c:105
+#, c-format
+msgid "Install %u App?"
+msgid_plural "Install %u Apps?"
+msgstr[0] "要安裝 %u 個應用程式嗎？"
+
+#: src/bz-bulk-install-dialog.c:113
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr "將會安裝以下項目，並且可能同時安裝額外的共用元件"
+
+#: src/bz-bulk-install-dialog.c:114
+#, c-format
+msgid "%d addons will be installed."
+msgstr "將會安裝 %d 個附加元件。"
+
+#: src/bz-bulk-install-dialog.c:115
+msgid "Additionally, addons will be installed."
+msgstr "此外，還會安裝附加元件。"
+
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:200
+#: src/bz-transaction-dialog.c:245
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#: src/bz-bulk-install-dialog.c:117
+msgid "_Install All"
+msgstr "安裝全部(_I)"
+
+#: src/bz-bundle-install-dialog.blp:20 src/bz-bundle-install-dialog.blp:26
 msgid "Bundle Installation"
 msgstr "Bundle 安裝"
 
@@ -885,24 +970,25 @@ msgstr ""
 "\n"
 "請確定僅在信任該來源時才將它加入。"
 
-#: src/bz-bundle-install-dialog.blp:412
+#: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "成功安裝！"
 
-#: src/bz-bundle-install-dialog.blp:437 src/bz-bundle-install-dialog.blp:522
-#: src/bz-rich-app-tile.blp:199 src/bz-transaction-tile.blp:298
+#. TRANSLATORS: Button to launch an installed app
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526
+#: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "開啟"
 
-#: src/bz-bundle-install-dialog.blp:447 src/bz-bundle-install-dialog.blp:532
+#: src/bz-bundle-install-dialog.blp:450 src/bz-bundle-install-dialog.blp:536
 msgid "Show App Details"
 msgstr "顯示應用程式詳細資訊"
 
-#: src/bz-bundle-install-dialog.blp:498
+#: src/bz-bundle-install-dialog.blp:501
 msgid "Already Installed"
 msgstr "已安裝"
 
-#: src/bz-bundle-install-dialog.blp:544
+#: src/bz-bundle-install-dialog.blp:548
 msgid "Installation Failed"
 msgstr "安裝失敗"
 
@@ -919,162 +1005,44 @@ msgstr "安裝需要大約 %s"
 msgid "No special permissions"
 msgstr "無特殊權限"
 
-#: src/context-tile-callbacks.c:68
-msgid "---"
-msgstr "---"
-
-#. Translators: M is the suffix for millions
-#: src/context-tile-callbacks.c:75
-#, c-format
-msgid "%.*fM"
-msgstr "%.*fM"
-
-#. Translators: K is the suffix for thousands
-#: src/context-tile-callbacks.c:82
-#, c-format
-msgid "%.*fK"
-msgstr "%.*fK"
-
-#: src/context-tile-callbacks.c:92
-#, c-format
-msgid "%d downloads in the last month"
-msgstr "在過去一個月內有 %d 次下載"
-
-#: src/context-tile-callbacks.c:132
-#, c-format
-msgid "+%s runtime"
-msgstr "+%s 執行環境"
-
-#: src/context-tile-callbacks.c:135
-msgid "Download"
-msgstr "下載"
-
-#: src/context-tile-callbacks.c:155
-msgid "Size information unavailable"
-msgstr "大小資訊未知"
-
-#: src/context-tile-callbacks.c:158
-#, c-format
-msgid "Download size of %s"
-msgstr "下載 %s 的大小"
-
-#: src/context-tile-callbacks.c:191
-msgid "All Ages"
-msgstr "所有年齡層"
-
-#: src/context-tile-callbacks.c:203
-msgid "Age rating information unavailable"
-msgstr "年齡分級資訊未知"
-
-#: src/context-tile-callbacks.c:208
-msgid "Suitable for all ages"
-msgstr "適合所有年齡層"
-
-#: src/context-tile-callbacks.c:210
-#, c-format
-msgid "Suitable for ages %d and up"
-msgstr "適合 %d 歲以上"
-
-#: src/context-tile-callbacks.c:243 src/context-tile-callbacks.c:248
-#: src/context-tile-callbacks.c:276 src/context-tile-callbacks.c:285
-msgid "Unknown"
-msgstr "未知"
-
-#: src/context-tile-callbacks.c:253
-#, c-format
-msgid "Free software licensed under %s"
-msgstr "依 %s 授權的自由軟體"
-
-#: src/context-tile-callbacks.c:258
-msgid "Free software"
-msgstr "自由軟體"
-
-#: src/context-tile-callbacks.c:261
-msgid "Proprietary Software"
-msgstr "專有軟體"
-
-#: src/context-tile-callbacks.c:264
-#, c-format
-msgid "Special License: %s"
-msgstr "特殊授權：%s"
-
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
-#: src/context-tile-callbacks.c:282
-msgid "Free Software"
-msgstr "自由軟體"
-
-#: src/context-tile-callbacks.c:288 src/bz-license-dialog.c:133
-msgid "Proprietary"
-msgstr "專有"
-
-#: src/context-tile-callbacks.c:290 src/bz-license-dialog.c:135
-msgid "Special License"
-msgstr "特殊授權"
-
-#: src/context-tile-callbacks.c:310
-msgid "Adaptive"
-msgstr "支援多裝置"
-
-#: src/context-tile-callbacks.c:310
-msgid "Desktop Only"
-msgstr "僅限桌面"
-
-#: src/context-tile-callbacks.c:316
-msgid "Works on desktop, tablets, and phones"
-msgstr "可在電腦、平板與手機上使用"
-
-#: src/context-tile-callbacks.c:317
-msgid "May not work on mobile devices"
-msgstr "可能無法在行動裝置上使用"
-
-#: src/context-tile-callbacks.c:400 src/bz-safety-dialog.blp:79
-msgid "Safe"
-msgstr "安全"
-
-#: src/context-tile-callbacks.c:402 src/context-tile-callbacks.c:404
-msgid "Low Risk"
-msgstr "低風險"
-
-#: src/context-tile-callbacks.c:406
-msgid "Medium Risk"
-msgstr "中度風險"
-
-#: src/context-tile-callbacks.c:408
-msgid "High Risk"
-msgstr "高風險"
-
-#: src/bz-curated-view.blp:24 src/bz-favorites-page.blp:46
-#: src/bz-flathub-page.blp:19 src/bz-full-view.blp:30 src/bz-full-view.blp:41
-#: src/bz-library-page.blp:67 src/bz-user-data-page.blp:30
-msgid "Empty"
-msgstr "無內容"
-
-#: src/bz-curated-view.blp:28
+#: src/bz-curated-view.blp:27
 msgid "No Curation"
 msgstr "未經人工策選"
 
-#: src/bz-curated-view.blp:30
+#: src/bz-curated-view.blp:29
 msgid ""
 "There is no curation information provided on this system. You can still "
 "browse apps on Flathub"
 msgstr "此系統未提供人工策選資訊。你仍可瀏覽 Flathub 上的應用程式"
 
-#: src/bz-curated-view.blp:34
+#: src/bz-curated-view.blp:33
 msgid "Browse Flathub"
 msgstr "瀏覽 Flathub"
 
-#: src/bz-curated-view.blp:47 src/bz-curated-view.blp:51
+#: src/bz-curated-view.blp:49
 msgid "Offline"
 msgstr "離線"
 
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-curated-view.blp:57 src/bz-flathub-page.blp:61
-#: src/bz-search-pill-list.c:67
-msgid "Browser"
-msgstr "瀏覽"
+#: src/bz-cosmic-place-applet-dialog.vala:25
+msgid "Place Applet"
+msgstr "面板程式的位置"
+
+#: src/bz-cosmic-place-applet-dialog.vala:26
+msgid "Choose where to add this applet."
+msgstr "選擇要將這個面板程式加到哪裡。"
+
+#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80
+#: src/bz-rich-app-tile.blp:232
+msgid "Cancel"
+msgstr "取消"
+
+#: src/bz-cosmic-place-applet-dialog.vala:30
+msgid "Panel"
+msgstr "面板"
+
+#: src/bz-cosmic-place-applet-dialog.vala:31
+msgid "Dock"
+msgstr "Dock"
 
 #: src/bz-developer-badge.c:94 src/bz-developer-badge.c:98
 msgid "Not Verified"
@@ -1115,15 +1083,22 @@ msgstr "應用程式 ID %1$s 的所有權已透過 %2$s 驗證。"
 msgid "The ownership of the %s app ID has been verified."
 msgstr "應用程式 ID %s 的所有權已完成驗證。"
 
-#: src/bz-donations-dialog.blp:74
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:8
+#| msgid "Bazaar"
+msgid "Bazaar Release"
+msgstr "Bazaar 發行"
+
+#: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "完整發行註記"
 
-#: src/bz-donations-dialog.blp:108
+#: src/bz-donations-dialog.blp:112
 msgid "This release was made possible by users like you!"
 msgstr "這個版本由如同您的使用者支持而變得可能！"
 
-#: src/bz-donations-dialog.blp:116
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:122
 msgid ""
 "I love making Bazaar, but I cannot do it alone. Help support further "
 "development by donating on Ko-Fi."
@@ -1131,7 +1106,8 @@ msgstr ""
 "我熱愛製作 Bazaar，但我沒辦法靠自己一個人獨自完成。請到 Ko-Fi 捐款來支持持續"
 "的開發。"
 
-#: src/bz-donations-dialog.blp:131
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:137
 msgid "Donate to Bazaar"
 msgstr "捐款給 Bazaar"
 
@@ -1156,78 +1132,58 @@ msgid ""
 "to proceed with?"
 msgstr "您已安裝此應用程式的多個版本。要繼續使用哪一個版本？"
 
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:233
-msgid "Cancel"
-msgstr "取消"
-
-#: src/bz-entry-selection-row.blp:17
-msgid "For This User Only"
-msgstr "僅此使用者"
-
-#: src/bz-entry-selection-row.c:112
-msgid "this user"
-msgstr "這個使用者"
-
-#: src/bz-entry-selection-row.c:112
-msgid "all users"
-msgstr "所有使用者"
-
-#: src/bz-error-dialog.blp:36 src/error.c:69 src/error.c:88
-#: src/bz-safety-dialog.blp:98
+#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
+#: src/error.c:88 src/update-worker.c:473
 msgid "Details"
 msgstr "詳細資訊"
 
-#: src/bz-error-dialog.blp:47
+#. TRANSLATORS: tooltip for a button that copies text to the clipboard
+#: src/bz-error-dialog.blp:48
 msgid "Copy"
 msgstr "複製"
 
-#: src/bz-error-dialog.c:56 src/bz-screenshot-page.c:408
+#: src/bz-error-dialog.c:56 src/bz-screenshot-page.c:461
 #: src/bz-share-list.c:364
 msgid "Copied!"
 msgstr "已複製！"
 
-#: src/bz-favorite-button.blp:14
+#: src/bz-favorite-button.blp:13
 msgid "Favorite Count"
 msgstr "收藏數量"
 
-#: src/bz-favorite-button.c:388
+#: src/bz-favorite-button.c:391
 msgid "Failed to update favorite"
 msgstr "更新收藏失敗"
 
-#: src/bz-favorite-button.c:434
+#: src/bz-favorite-button.c:438
 msgid "Log in with Flathub to manage favorites"
 msgstr "登入至 Flathub 以管理最愛"
 
-#: src/bz-favorite-button.c:440
+#: src/bz-favorite-button.c:444
 msgid "Log In"
 msgstr "登入"
 
-#: src/bz-favorites-page.blp:5 src/bz-favorites-page.blp:56
-#: src/bz-window.blp:335
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:350
 msgid "Favorites"
 msgstr "收藏"
 
-#: src/bz-favorites-page.blp:17 src/bz-section-view.blp:86
+#: src/bz-favorites-page.blp:16 src/bz-section-view.blp:87
 msgid "Install All"
 msgstr "安裝全部"
 
-#: src/bz-favorites-page.blp:34 src/bz-user-data-page.blp:19
-msgid "Loading"
-msgstr "載入中"
-
-#: src/bz-favorites-page.blp:49
+#: src/bz-favorites-page.blp:46
 msgid "No Favorites"
 msgstr "沒有收藏"
 
-#: src/bz-favorites-page.blp:50
+#: src/bz-favorites-page.blp:47
 msgid "Applications you mark as favorite will appear here"
 msgstr "您所收藏的應用程式將會顯示在這裡"
 
-#: src/bz-favorites-tile.blp:60
+#: src/bz-favorites-tile.blp:58
 msgid "Support This Application"
 msgstr "支援此應用程式"
 
-#: src/bz-favorites-tile.blp:109
+#: src/bz-favorites-tile.blp:105
 msgid "Remove From Favorites"
 msgstr "從收藏中移除"
 
@@ -1459,7 +1415,7 @@ msgstr "更多系統"
 msgid "Utilities"
 msgstr "工具程式"
 
-#: src/bz-flathub-category.c:143 src/bz-flathub-page.blp:437
+#: src/bz-flathub-category.c:143 src/bz-flathub-page.blp:436
 msgid "Tools"
 msgstr "工具"
 
@@ -1467,8 +1423,8 @@ msgstr "工具"
 msgid "More Utilities"
 msgstr "更多工具程式"
 
-#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:109
-#: src/bz-flathub-page.blp:141
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
 msgid "Trending"
 msgstr "近期熱門"
 
@@ -1476,8 +1432,8 @@ msgstr "近期熱門"
 msgid "More Trending"
 msgstr "更多近期熱門"
 
-#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:115
-#: src/bz-flathub-page.blp:174
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:171
 msgid "Popular"
 msgstr "最受歡迎"
 
@@ -1485,11 +1441,11 @@ msgstr "最受歡迎"
 msgid "More Popular"
 msgstr "更多最受歡迎"
 
-#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:163
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:160
 msgid "Recently Added"
 msgstr "最近新增"
 
-#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:121
+#: src/bz-flathub-category.c:146 src/bz-flathub-page.blp:118
 msgid "New"
 msgstr "最新"
 
@@ -1497,11 +1453,11 @@ msgstr "最新"
 msgid "More New"
 msgstr "更多最新"
 
-#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:152
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:149
 msgid "Recently Updated"
 msgstr "最近更新"
 
-#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:127
+#: src/bz-flathub-category.c:147 src/bz-flathub-page.blp:124
 msgid "Updated"
 msgstr "已更新"
 
@@ -1533,144 +1489,251 @@ msgstr "KDE 應用程式"
 msgid "More KDE Apps"
 msgstr "更多 KDE 應用程式"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:419
+#: src/bz-flathub-category.c:151
+msgid "Made for COSMIC™"
+msgstr "設計予 COSMIC™"
+
+#: src/bz-flathub-category.c:151
+msgid "For COSMIC™"
+msgstr "COSMIC™ 用"
+
+#: src/bz-flathub-category.c:151
+#| msgid "More Apps"
+msgid "More COSMIC Apps"
+msgstr "更多 COSMIC 應用程式"
+
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:418
 msgid "Games"
 msgstr "遊戲"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:479
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:475
 msgid "More Games"
 msgstr "更多遊戲"
 
-#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:425
+#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:424
 msgid "Emulators"
 msgstr "模擬器"
 
-#: src/bz-flathub-category.c:152
+#: src/bz-flathub-category.c:153
 msgid "More Emulators"
 msgstr "更多模擬器"
 
-#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:431
+#: src/bz-flathub-category.c:154 src/bz-flathub-page.blp:430
 msgid "Launchers"
 msgstr "啟動器"
 
-#: src/bz-flathub-category.c:153
+#: src/bz-flathub-category.c:154
 msgid "More Game Launchers"
 msgstr "更多遊戲啟動器"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "Game Tools"
 msgstr "遊戲工具"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "More Game Tools"
 msgstr "更多遊戲工具"
 
-#: src/bz-flathub-page.blp:23
+#: src/bz-flathub-curated-section.vala:41
+msgid "New Year, New Workflows"
+msgstr "新年新流程"
+
+#: src/bz-flathub-curated-section.vala:41
+msgid "Apps to take notes, track tasks, and make plans"
+msgstr "作筆記、追蹤待辦事項、做計劃的應用程式"
+
+#: src/bz-flathub-curated-section.vala:42
+msgid "Staff Picks"
+msgstr "團隊精選"
+
+#: src/bz-flathub-curated-section.vala:42
+msgid "Apps we love right now"
+msgstr "我們目前熱愛的應用程式"
+
+#: src/bz-flathub-curated-section.vala:43
+#| msgid "Create"
+msgid "Get Creative"
+msgstr "發揮創意"
+
+#: src/bz-flathub-curated-section.vala:43
+msgid "Essential apps for drawing, editing photos, and digital design"
+msgstr "繪圖、編輯相片、數位設計等的必備程式"
+
+#: src/bz-flathub-curated-section.vala:44
+msgid "Build Native Apps"
+msgstr "開發原生應用程式"
+
+#: src/bz-flathub-curated-section.vala:44
+msgid "Develop apps that feel at home on your system"
+msgstr "開發適合您的系統的應用程式"
+
+#: src/bz-flathub-curated-section.vala:45
+msgid "Stay in Touch"
+msgstr "溝通與聯絡"
+
+#: src/bz-flathub-curated-section.vala:45
+msgid "Essential collaboration and communication apps"
+msgstr "必備的合作與通訊應用程式"
+
+#: src/bz-flathub-curated-section.vala:46
+msgid "Ready for Vacations"
+msgstr "準備出遊"
+
+#: src/bz-flathub-curated-section.vala:46
+msgid "Maps, transit, weather, and trip planning apps"
+msgstr "地圖、大衆運輸、天氣與旅程規劃應用程式"
+
+#: src/bz-flathub-curated-section.vala:47
+msgid "Smarter Every Day"
+msgstr "一日一智"
+
+#: src/bz-flathub-curated-section.vala:47
+msgid "Apps to help you study, research, and write"
+msgstr "幫助您唸書、做研究、寫作的應用程式"
+
+#: src/bz-flathub-curated-section.vala:48
+msgid "Get Cozy"
+msgstr "享受娛樂"
+
+#: src/bz-flathub-curated-section.vala:48
+msgid "Great apps for reading, watching movies, and playing games"
+msgstr "看書、看電影、玩遊戲用的優良應用程式"
+
+#: src/bz-flathub-curated-section.vala:49
+#| msgid "More Developer Tools"
+msgid "Web Developer Essentials"
+msgstr "Web 開發者必備"
+
+#: src/bz-flathub-curated-section.vala:49
+msgid "Making websites is more fun with these apps"
+msgstr "這些程式讓網頁製作變得更好玩"
+
+#: src/bz-flathub-curated-section.vala:50
+msgid "Take Better Notes"
+msgstr "作筆記"
+
+#: src/bz-flathub-curated-section.vala:50
+msgid "Find your new favorite note taking tool"
+msgstr "來這發現您新的最愛的筆記工具"
+
+#: src/bz-flathub-curated-section.vala:51
+#| msgid "Get Involved"
+msgid "Get Focused"
+msgstr "全神專注"
+
+#: src/bz-flathub-curated-section.vala:51
+msgid "Great apps for task management"
+msgstr "管理待辦事項用的優良應用程式"
+
+#: src/bz-flathub-curated-section.vala:52
+msgid "Make Some Noise"
+msgstr "譜出旋律"
+
+#: src/bz-flathub-curated-section.vala:52
+msgid "Apps for creating and producing music"
+msgstr "音樂創作用的應用程式"
+
+#: src/bz-flathub-curated-section.vala:53
+msgid "Get To Work"
+msgstr "繼續工作"
+
+#: src/bz-flathub-curated-section.vala:53
+msgid "Essential office apps"
+msgstr "必備的辦公應用程式"
+
+#: src/bz-flathub-page.blp:22
 msgid "Flathub Not Added"
 msgstr "尚未加入 Flathub"
 
-#: src/bz-flathub-page.blp:24
+#: src/bz-flathub-page.blp:23
 msgid "The Flathub remote was not found on any of your Flatpak installations"
 msgstr "在您的任何 Flatpak 安裝中都找不到 Flathub 遠端"
 
-#: src/bz-flathub-page.blp:30
-msgid "Flathub Unavailable"
-msgstr "Flathub 無法使用"
-
-#: src/bz-flathub-page.blp:34
+#: src/bz-flathub-page.blp:32
 msgid "Can't Reach Flathub"
 msgstr "無法連線至 Flathub"
 
-#: src/bz-flathub-page.blp:35
+#: src/bz-flathub-page.blp:33
 msgid "You can still manage and search for apps."
 msgstr "您仍可管理或搜尋應用程式。"
 
-#: src/bz-flathub-page.blp:41
+#: src/bz-flathub-page.blp:39
 msgid "Search Apps"
 msgstr "搜尋應用程式"
 
-#: src/bz-flathub-page.blp:52
+#: src/bz-flathub-page.blp:50
 msgid "Reconnect"
 msgstr "重新連線"
 
-#: src/bz-flathub-page.blp:202
+#: src/bz-flathub-page.blp:204
 msgid "App of the Day"
 msgstr "今日精選應用程式"
 
-#: src/bz-flathub-page.blp:265
+#: src/bz-flathub-page.blp:267
 msgid "On the Go"
 msgstr "隨時隨地"
 
-#: src/bz-flathub-page.blp:277
+#: src/bz-flathub-page.blp:279
 msgid "Apps for your Linux phones and tablets"
 msgstr "適用於您的 Linux 手機與平板的應用程式"
 
-#: src/bz-flathub-page.blp:288 src/bz-flathub-page.blp:323
+#: src/bz-flathub-page.blp:290 src/bz-flathub-page.blp:322
 msgid "More Mobile Apps"
 msgstr "更多行動應用程式"
 
-#: src/bz-flathub-page.blp:381
+#: src/bz-flathub-page.blp:380
 msgid "We​ ♥​ Games"
 msgstr "我們 ♥ 遊戲"
 
-#: src/bz-flathub-page.blp:394
+#: src/bz-flathub-page.blp:393
 msgid "Games and apps to run your favorite titles"
 msgstr "用來執行您最愛作品的遊戲與應用程式"
 
-#: src/bz-full-view.blp:34 src/bz-library-page.blp:78
-#: src/bz-library-page.blp:82
-msgid "No Results"
-msgstr "沒有結果"
-
-#: src/bz-full-view.blp:35
-msgid "Try a different search query"
-msgstr "請嘗試不同的搜尋關鍵字"
-
-#: src/bz-full-view.blp:47
-msgid "Content"
-msgstr "內容"
-
-#: src/bz-full-view.blp:106
+#: src/bz-full-view.blp:93
 msgid ""
 "This is a local preview, some details may differ from the published listing"
 msgstr "這是本地預覽，一些細節可能與發佈後的頁面不同"
 
-#: src/bz-full-view.blp:109
+#: src/bz-full-view.blp:96
 msgid "Preview Store Appearance"
 msgstr "預覽商店外觀"
 
-#: src/bz-full-view.blp:236
+#: src/bz-full-view.blp:222
 msgid "_Support"
 msgstr "贊助(_S)"
 
-#: src/bz-full-view.blp:461
+#: src/bz-full-view.blp:455
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
-msgstr ""
-"此應用程式使用的執行環境已不再接收更新或安全修補，使用上可能存在安全風險。"
+msgstr "此應用程式使用的執行環境已不再接收更新或安全修補，使用上可能存在安全風險。"
 
-#: src/bz-full-view.blp:540
+#: src/bz-full-view.blp:533
 msgid "Trash Data"
 msgstr "將資料移至垃圾桶"
 
-#: src/bz-full-view.blp:603
+#: src/bz-full-view.blp:630
 msgid "Add-ons"
 msgstr "附加元件"
 
-#: src/bz-full-view.blp:638
+#: src/bz-full-view.blp:665
 msgid "More Add-Ons"
 msgstr "更多附加元件"
 
-#: src/bz-full-view.blp:649
+#: src/bz-full-view.blp:676
 msgid "Links"
 msgstr "連結"
 
-#: src/bz-full-view.c:181
+#: src/bz-full-view.blp:707
+#| msgid "Search Apps"
+msgid "Similar Apps"
+msgstr "類似的應用程式"
+
+#: src/bz-full-view.c:184
 msgid "No URL"
 msgstr "沒有網址"
 
-#: src/bz-full-view.c:199
+#: src/bz-full-view.c:202
 msgid ""
 "This app has a FLOSS license, meaning the source code can be audited for "
 "safety."
@@ -1678,46 +1741,46 @@ msgstr ""
 "此應用程式具有 FLOSS（自由且開源）授權，這意味著其原始碼可供審查以確保安全"
 "性。"
 
-#: src/bz-full-view.c:200
+#: src/bz-full-view.c:203
 msgid ""
 "This app has a proprietary license, meaning the source code is developed "
 "privately and cannot be audited by an independent third party."
 msgstr "此應用程式採用專有授權，表示其原始碼為私有，無法由第三方獨立審查。"
 
-#: src/bz-full-view.c:207
-msgid "More Apps"
-msgstr "更多應用程式"
+#: src/bz-full-view.c:210
+#| msgid "Other Apps by this Developer"
+msgid "Other Apps From This Developer"
+msgstr "其他來自此開發者的應用程式"
 
-#: src/bz-full-view.c:208
+#: src/bz-full-view.c:211
 #, c-format
-msgid "More Apps by %s"
-msgstr "更多由 %s 製作的應用程式"
-
-#: src/bz-full-view.c:215
-msgid "Other Apps by this Developer"
-msgstr "其他由此開發者製作的應用程式"
-
-#: src/bz-full-view.c:217 src/bz-full-view.c:317
-#, c-format
-msgid "Other Apps by %s"
-msgstr "其他由 %s 製作的應用程式"
+#| msgid "Other Apps by %s"
+msgid "Other Apps From %s"
+msgstr "其他來自 %s 的應用程式"
 
 #: src/bz-full-view.c:226
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
 msgstr "%s 並未安裝，但仍保留 <b>%s</b> 的資料。"
 
-#: src/bz-full-view.c:319
-msgid "Other Apps"
-msgstr "其他應用程式"
+#: src/bz-full-view.c:309
+#, c-format
+#| msgid "More Apps by %s"
+msgid "Apps by %s"
+msgstr "由 %s 製作的應用程式"
 
-#: src/bz-full-view.c:321
+#: src/bz-full-view.c:311
+#| msgid "Other Apps by this Developer"
+msgid "Apps by This Developer"
+msgstr "由此開發者製作的應用程式"
+
+#: src/bz-full-view.c:313
 #, c-format
 msgid "%d Application"
 msgid_plural "%d Applications"
 msgstr[0] "%d 個應用程式"
 
-#: src/bz-full-view.c:537 src/bz-user-data-tile.c:144
+#: src/bz-full-view.c:468 src/bz-user-data-tile.c:160
 msgid "Failed to Remove User Data"
 msgstr "移除使用者資料失敗"
 
@@ -1815,33 +1878,37 @@ msgstr "%s 在特定硬體上可發揮最佳效能"
 msgid "%s works on most devices"
 msgstr "%s 可在多數裝置上使用"
 
+#: src/bz-inspector.blp:22
+msgid "Inspector Menu"
+msgstr "檢閱選單"
+
 #: src/bz-install-controls.blp:58
 msgid "_Open"
 msgstr "開啟(_O)"
 
-#: src/bz-install-controls.blp:73 src/bz-install-controls.blp:128
+#: src/bz-install-controls.blp:72 src/bz-install-controls.blp:126
 msgid "Uninstall Application"
 msgstr "移除應用程式"
 
-#: src/bz-install-controls.blp:83 src/bz-transaction-dialog.c:230
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:201
 msgid "_Remove"
 msgstr "移除(_R)"
 
-#: src/bz-install-controls.blp:115 src/bz-updates-card.c:168
+#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168
 #: src/bz-updates-card.c:187
 msgid "Update"
 msgstr "更新"
 
-#: src/bz-install-controls.blp:138 src/bz-installed-tile.blp:109
+#: src/bz-install-controls.blp:136 src/bz-installed-tile.blp:107
 msgid "Remove"
 msgstr "移除"
 
-#: src/bz-install-controls.c:638
+#: src/bz-install-controls.c:669
 #, c-format
 msgid "Install %s from %s"
 msgstr "從 %2$s 安裝 %1$s"
 
-#: src/bz-install-controls.c:640
+#: src/bz-install-controls.c:671
 #, c-format
 msgid "Install %s"
 msgstr "安裝 %s"
@@ -1856,79 +1923,84 @@ msgctxt "Install Controls"
 msgid "Cancelling"
 msgstr "正在取消"
 
-#: src/bz-installed-tile.blp:80
-msgid "Donate Button"
-msgstr "捐款按鈕"
+#: src/bz-installed-tile.blp:78
+#| msgctxt "Project URL Type"
+#| msgid "Donate"
+msgid "Donate"
+msgstr "捐款"
 
-#: src/bz-library-page.blp:32
+#: src/bz-library-page.blp:17
 msgid "Search installed apps"
 msgstr "搜尋已安裝的應用程式"
 
-#: src/bz-library-page.blp:50
-msgid "Clear search"
-msgstr "清除搜尋"
-
-#: src/bz-library-page.blp:71
+#: src/bz-library-page.blp:32
 msgid "No Apps Found"
 msgstr "找不到任何應用程式"
 
-#: src/bz-library-page.blp:90
+#: src/bz-library-page.blp:49
 msgid "Search Store Instead"
 msgstr "改搜尋商店"
 
-#. Translators: .
-#: src/bz-library-page.blp:100 src/bz-window.blp:113
-msgid "Library"
-msgstr "程式庫"
-
-#: src/bz-library-page.blp:129
+#: src/bz-library-page.blp:86
 msgid "Pending Updates"
 msgstr "待處理的更新"
 
-#: src/bz-library-page.blp:156
+#: src/bz-library-page.blp:113
 msgid "Downloads"
-msgstr "下載次數"
+msgstr "下載"
 
-#: src/bz-library-page.blp:199
+#: src/bz-library-page.blp:156
 msgid "Recently Uninstalled"
 msgstr "最近解除安裝"
 
-#: src/bz-library-page.blp:250
+#: src/bz-library-page.blp:207
 msgid "Clear Finished Tasks"
 msgstr "清除已完成的作業"
 
-#: src/bz-library-page.blp:277
+#: src/bz-library-page.blp:234
 msgid "Sort Options"
 msgstr "排序選項"
 
-#: src/bz-library-page.blp:336
+#: src/bz-library-page.blp:293
 msgid "Sort By"
 msgstr "排序依據"
 
-#: src/bz-library-page.blp:350
+#: src/bz-library-page.blp:307
 msgid "Name"
 msgstr "名稱"
 
-#: src/bz-library-page.blp:356
+#: src/bz-library-page.blp:313
 msgid "Size"
 msgstr "大小"
 
-#: src/bz-library-page.c:180
+#: src/bz-library-page.c:181
 #, c-format
 msgid "No matches found for \"%s\" in the list of installed apps"
 msgstr "在已安裝的應用程式清單中找不到符合「%s」的項目"
 
-#: src/bz-library-page.c:193 src/bz-updates-card.c:437
+#: src/bz-library-page.c:194 src/bz-updates-card.c:437
 #, c-format
 msgid "%u Available Update"
 msgid_plural "%u Available Updates"
 msgstr[0] "%u 個可用更新"
 
-#: src/bz-library-page.c:203
+#: src/bz-library-page.c:204
 #, c-format
 msgid "%u Installed App"
 msgid_plural "%u Installed Apps"
 msgstr[0] "%u 個已安裝的應用程式"
+
+#: src/bz-library-page.c:629 src/bz-search-page.c:820
+#| msgid "No Applications Found"
+msgid "No applications found"
+msgstr "找不到應用程式"
+
+#: src/bz-library-page.c:629 src/bz-search-page.c:822
+#, c-format
+#| msgid "No Applications Found"
+msgid "One application found"
+msgid_plural "%u applications found"
+msgstr[0] "找到 %u 個應用程式"
 
 #: src/bz-license-dialog.blp:87
 msgid "Get Involved"
@@ -1945,6 +2017,14 @@ msgstr "未知授權"
 #: src/bz-license-dialog.c:130
 msgid "Community Built"
 msgstr "社群打造"
+
+#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:296
+msgid "Proprietary"
+msgstr "專有"
+
+#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:298
+msgid "Special License"
+msgstr "特殊授權"
 
 #: src/bz-license-dialog.c:203
 msgid ""
@@ -1996,7 +2076,8 @@ msgstr ""
 "\n"
 "您可能可以，也可能無法對此應用程式做出貢獻。"
 
-#: src/bz-license-dialog.c:356 src/bz-safety-dialog.blp:101
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
+#: src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "授權"
 
@@ -2021,25 +2102,48 @@ msgstr "完成"
 msgid "Hello, %s!"
 msgstr "您好，%s！"
 
-#: src/bz-metainfo-preview.c:84
-msgid "Select Metainfo File"
-msgstr "選取 Metainfo 檔案"
+#: src/bz-metainfo-preview.c:105
+msgid "Add Icon to Metainfo Preview?"
+msgstr "要新增圖示到 Metainfo 預覽嗎？"
 
-#: src/bz-metainfo-preview.c:87
-msgid "Metainfo Files"
-msgstr "Metainfo 檔案"
+#: src/bz-metainfo-preview.c:108
+msgid ""
+"Metainfo files don't include app icons by themselves. Would you like to "
+"select one manually?"
+msgstr "Metainfo 檔案裡面不會有包含應用程式圖示。您是否希望手動選取圖示？"
 
-#: src/bz-metainfo-preview.c:141
-msgid "Select Icon (Optional)"
-msgstr "選取圖示（非必要）"
+#: src/bz-metainfo-preview.c:111
+msgid "Skip"
+msgstr "略過"
 
-#: src/bz-metainfo-preview.c:144
+#: src/bz-metainfo-preview.c:112 src/bz-metainfo-preview.c:163
+#| msgid "Select Icon (Optional)"
+msgid "Select Icon"
+msgstr "選取圖示"
+
+#: src/bz-metainfo-preview.c:166
 msgid "Image Files"
 msgstr "影像檔案"
 
-#: src/bz-metainfo-preview.c:231
-msgid "Preview"
-msgstr "預覽"
+#: src/bz-other-sources-list.vala:52
+#| msgid "User Data"
+msgid "User"
+msgstr "使用者"
+
+#: src/bz-other-sources-list.vala:55
+msgid "Beta"
+msgstr "Beta"
+
+#: src/bz-other-sources-list.vala:58
+#| msgid "Hide End-of-Life Apps"
+msgid "End-Of-Life"
+msgstr "已終止支援"
+
+#. Translators: As in, "1 Install" / "100 Installs"
+#: src/bz-other-sources-list.vala:76 src/bz-world-map.c:604
+msgid "Install"
+msgid_plural "Installs"
+msgstr[0] "次安裝"
 
 #: src/bz-preferences-dialog.blp:19
 msgid "Preferences"
@@ -2049,179 +2153,223 @@ msgstr "偏好設定"
 msgid "Network connection is metered — automatic store data refresh is paused"
 msgstr "目前的網路連線為計量連線 —— 已暫停商店資料的自動重新整理"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:235
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
 msgid "Refresh Manually"
 msgstr "手動重新整理"
 
 #: src/bz-preferences-dialog.blp:31
+#| msgid "Update"
+msgid "App Updates"
+msgstr "應用程式更新"
+
+#: src/bz-preferences-dialog.blp:33
+msgid ""
+"Auto-updates will pause on metered networks or when power saving is on to "
+"save data and battery."
+msgstr "自動更新會在使用計量連線或省電模式時暫停，以避免浪費流量或電量。"
+
+#: src/bz-preferences-dialog.blp:36
+msgid "_Automatic"
+msgstr "自動(_A)"
+
+#: src/bz-preferences-dialog.blp:37
+msgid "Automatically check for and download app updates"
+msgstr "自動檢查與安裝應用程式更新"
+
+#: src/bz-preferences-dialog.blp:49
+msgid "_Manual"
+msgstr "手動(_M)"
+
+#: src/bz-preferences-dialog.blp:50
+msgid "Checking for and downloading app updates must be done manually"
+msgstr "必須手動檢查與下載更新"
+
+#: src/bz-preferences-dialog.blp:69
+msgid "Automatic Update _Notifications"
+msgstr "自動更新通知(_N)"
+
+#: src/bz-preferences-dialog.blp:70
+msgid "Notify when updates have been automatically installed"
+msgstr "自動更新安裝完成後顯示通知"
+
+#: src/bz-preferences-dialog.blp:75
 msgid "Content Filters"
 msgstr "內容篩選"
 
-#: src/bz-preferences-dialog.blp:34
-msgid "Free Software Only"
-msgstr "僅顯示自由軟體"
+#: src/bz-preferences-dialog.blp:78
+#| msgid "Free Software Only"
+msgid "_Free Software Only"
+msgstr "僅顯示自由軟體(_F)"
 
-#: src/bz-preferences-dialog.blp:35
+#: src/bz-preferences-dialog.blp:79
 msgid "Hide proprietary apps when browsing and searching"
 msgstr "在瀏覽與搜尋時隱藏專有應用程式"
 
-#: src/bz-preferences-dialog.blp:39
-msgid "Flathub Results Only"
-msgstr "僅顯示 Flathub 結果"
+#: src/bz-preferences-dialog.blp:84
+#| msgid "Flathub Results Only"
+msgid "F_lathub Results Only"
+msgstr "僅顯示 _Flathub 結果"
 
-#: src/bz-preferences-dialog.blp:40
+#: src/bz-preferences-dialog.blp:85
 msgid "Limit search and browse results to apps only available on Flathub"
 msgstr "在瀏覽與搜尋時僅顯示在 Flathub 上提供的應用程式"
 
-#: src/bz-preferences-dialog.blp:44
-msgid "Verified Results Only"
-msgstr "僅顯示已驗證的結果"
+#: src/bz-preferences-dialog.blp:90
+#| msgid "Verified Results Only"
+msgid "_Verified Results Only"
+msgstr "僅顯示已驗證的結果(_V)"
 
-#: src/bz-preferences-dialog.blp:45
+#: src/bz-preferences-dialog.blp:91
 msgid "Hide results that are not verified on Flathub"
 msgstr "隱藏未經 Flathub 驗證的結果"
 
-#: src/bz-preferences-dialog.blp:49
-msgid "Hide End-of-Life Apps"
-msgstr "隱藏已終止支援的應用程式"
+#: src/bz-preferences-dialog.blp:96
+#| msgid "Hide End-of-Life Apps"
+msgid "Hide _End-of-Life Apps"
+msgstr "隱藏已終止支援的應用程式(_E)"
 
-#: src/bz-preferences-dialog.blp:50
+#: src/bz-preferences-dialog.blp:97
 msgid "Hide apps which are no longer supported by their developers"
 msgstr "隱藏已不再由開發者支援的應用程式"
 
-#: src/bz-preferences-dialog.blp:55
+#: src/bz-preferences-dialog.blp:103
 msgid "Progress Bar Theme"
 msgstr "進度列主題"
 
-#: src/bz-preferences-dialog.c:32
+#: src/bz-preferences-dialog.c:42
 msgid "Accent Color"
 msgstr "強調色"
 
-#: src/bz-preferences-dialog.c:33
+#: src/bz-preferences-dialog.c:43
 msgid "Pride Colors"
 msgstr "驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:34
+#: src/bz-preferences-dialog.c:44
 msgid "Lesbian Pride Colors"
 msgstr "女同志驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:35
+#: src/bz-preferences-dialog.c:45
 msgid "Male Homosexual Pride Colors"
 msgstr "男同志驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:36
+#: src/bz-preferences-dialog.c:46
 msgid "Transgender Pride Colors"
 msgstr "跨性別驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:37
+#: src/bz-preferences-dialog.c:47
 msgid "Nonbinary Pride Colors"
 msgstr "非二元性別驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:38
+#: src/bz-preferences-dialog.c:48
 msgid "Bisexual Pride Colors"
 msgstr "雙性戀驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:39
+#: src/bz-preferences-dialog.c:49
 msgid "Asexual Pride Colors"
 msgstr "無性戀驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:40
+#: src/bz-preferences-dialog.c:50
 msgid "Pansexual Pride Colors"
 msgstr "泛性戀驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:41
+#: src/bz-preferences-dialog.c:51
 msgid "Aromantic Pride Colors"
 msgstr "無浪漫傾向驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:42
+#: src/bz-preferences-dialog.c:52
 msgid "Genderfluid Pride Colors"
 msgstr "性別流動驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:43
+#: src/bz-preferences-dialog.c:53
 msgid "Polysexual Pride Colors"
 msgstr "多元性向驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:44
+#: src/bz-preferences-dialog.c:54
 msgid "Omnisexual Pride Colors"
 msgstr "全性向驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:45
+#: src/bz-preferences-dialog.c:55
 msgid "Aroace Pride Colors"
 msgstr "無浪漫／無性戀驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:46
+#: src/bz-preferences-dialog.c:56
 msgid "Agender Pride Colors"
 msgstr "無性別驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:47
+#: src/bz-preferences-dialog.c:57
 msgid "Genderqueer Pride Colors"
 msgstr "性別酷兒驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:48
+#: src/bz-preferences-dialog.c:58
 msgid "Intersex Pride Colors"
 msgstr "雙性人驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:49
+#: src/bz-preferences-dialog.c:59
 msgid "Demigender Pride Colors"
 msgstr "半性別驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:50
+#: src/bz-preferences-dialog.c:60
 msgid "Biromantic Pride Colors"
 msgstr "雙浪漫傾向驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:51
+#: src/bz-preferences-dialog.c:61
 msgid "Disability Pride Colors"
 msgstr "身心障礙驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:52
+#: src/bz-preferences-dialog.c:62
 msgid "Femboy Pride Colors"
 msgstr "女性氣質男性驕傲旗配色"
 
-#: src/bz-preferences-dialog.c:53
+#: src/bz-preferences-dialog.c:63
 msgid "Neutrois Pride Colors"
 msgstr "中性性別驕傲旗配色"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-preferences-dialog.c:286
+msgid "Bazaar needs to run in the background to check for app updates"
+msgstr "Bazaar 需要在背景執行來檢查應用程式更新"
 
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.c:159
 msgid "Version History"
 msgstr "版本紀錄"
 
-#: src/bz-releases-list.blp:27
+#: src/bz-releases-preview.blp:30
 msgid "_Version History"
 msgstr "版本紀錄(_V)"
 
 #. Translators: something happened less than a day ago
-#: src/bz-releases-list.c:122
+#: src/bz-releases-list.c:120
 msgid "Today"
 msgstr "今天"
 
 #. Translators: something happened more than a day ago but less than 2 days ago
-#: src/bz-releases-list.c:125
+#: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "昨天"
 
 #. Translators: something happened days ago
-#: src/bz-releases-list.c:128
+#: src/bz-releases-list.c:126
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d 天前"
 
 #. Translators: something happened weeks ago
-#: src/bz-releases-list.c:131
+#: src/bz-releases-list.c:129
 #, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d 週前"
 
 #. Translators: something happened months ago
-#: src/bz-releases-list.c:134
+#: src/bz-releases-list.c:132
 #, c-format
 msgid "%d month ago"
 msgid_plural "%d months ago"
 msgstr[0] "%d 個月前"
 
 #. Translators: something happened years ago
-#: src/bz-releases-list.c:137
+#: src/bz-releases-list.c:135
 #, c-format
 msgid "%d year ago"
 msgid_plural "%d years ago"
@@ -2230,20 +2378,20 @@ msgstr[0] "%d 年前"
 # 會變成 "2026年6月25日"。（%B 是漢字數字「六月」，%b 是前面有空格但裡面沒有的 " 6月"）--Kisaragi
 #. TRANSLATORS: This is the date string with: day number, month name, year.
 #. i.e. "22 March 2026"
-#: src/bz-releases-list.c:155
+#: src/bz-releases-list.c:153
 msgid "%e %B %Y"
 msgstr "%Y年%m月%d日"
 
-#: src/bz-releases-list.c:196
+#: src/bz-releases-list.c:194
 #, c-format
 msgid "Version %s"
 msgstr "版本 %s"
 
-#: src/bz-releases-list.c:251
+#: src/bz-releases-list.c:249
 msgid "No details for this release"
 msgstr "此版本沒有詳細資訊"
 
-#: src/bz-releases-list.c:264
+#: src/bz-releases-list.c:262
 msgid "Get More Information"
 msgstr "取得更多資訊"
 
@@ -2252,9 +2400,803 @@ msgid "Uninstall"
 msgstr "解除安裝"
 
 #. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
-#: src/bz-rich-app-tile.c:383
+#: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "取得"
+
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322
+#: src/safety-calculator.c:161
+msgid "Arbitrary Permissions"
+msgstr "任意權限"
+
+#: src/bz-safety-dialog.blp:49
+#| msgid ""
+#| "This app has a permission that indirectly allows it to grant itself "
+#| "<b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+#| "\n"
+#| "It can therefore do anything a normal, non-sandboxed application can do, "
+#| "such as accessing all your files and connecting to the internet.\n"
+#| "\n"
+#| "Viewing the other permissions may still give a better idea of what the "
+#| "app is likely to do."
+msgid ""
+"This app has a permission that indirectly allows it to grant itself <b>any "
+"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, "
+"such as accessing all your files and connecting to the internet.\n"
+"\n"
+"Viewing the other permissions may still give a better idea of what the app "
+"is likely to do."
+msgstr ""
+"這個應用程式的其中一個權限間接允許其提供自己<b>任何其他的權限</b>，並繞過 "
+"Flatpak 沙箱機制。\n"
+"\n"
+"因此它可以做任何非沙箱化應用程式能夠做的事情，像是存取您的所有檔案或是連線到"
+"網際網路。\n"
+"\n"
+"其他它所明確要求的權限可能還是值得參考以得知它比較有可能會做的事情。"
+
+#: src/bz-safety-dialog.blp:53
+msgid "View Other Permissions"
+msgstr "檢視其他權限"
+
+#. TRANSLATORS: short app safety rating label
+#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:409
+msgid "Safe"
+msgstr "安全"
+
+#: src/bz-safety-dialog.blp:114
+msgid "App ID"
+msgstr "應用程式 ID"
+
+#: src/bz-safety-dialog.blp:124
+msgid "SDK"
+msgstr "SDK"
+
+#: src/bz-safety-dialog.blp:157
+msgid ""
+"This app uses an outdated version of the software platform (SDK) and might "
+"contain bugs or security vulnerabilities which will not be fixed."
+msgstr "此應用程式使用過時的軟體平台（SDK），可能包含不會再修復的錯誤或安全漏洞。"
+
+#: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
+msgid "Safety"
+msgstr "安全性"
+
+#: src/bz-safety-dialog.c:401
+#, c-format
+msgid "%s is Safe"
+msgstr "%s 是安全的"
+
+#: src/bz-safety-dialog.c:406
+#, c-format
+msgid "%s has no Unsafe Permissions"
+msgstr "%s 沒有不安全的權限"
+
+#: src/bz-safety-dialog.c:411
+#, c-format
+msgid "%s is Probably Safe"
+msgstr "%s 可能是安全的"
+
+#: src/bz-safety-dialog.c:416
+#, c-format
+msgid "%s is Possibly Unsafe"
+msgstr "%s 可能不安全"
+
+#: src/bz-safety-dialog.c:421
+#, c-format
+msgid "%s is Unsafe"
+msgstr "%s 不安全"
+
+#: src/bz-screenshot-page.blp:73
+#| msgid "Go Back"
+msgid "Back"
+msgstr "返回"
+
+#: src/bz-screenshot-page.blp:103
+msgid "Previous Screenshot"
+msgstr "上一張截圖"
+
+#: src/bz-screenshot-page.blp:113
+msgid "Next Screenshot"
+msgstr "下一張截圖"
+
+#: src/bz-screenshot-page.blp:129
+msgid "Copy Image"
+msgstr "複製圖片"
+
+#: src/bz-screenshot-page.blp:192
+msgid "Reset View"
+msgstr "重設檢視"
+
+#: src/bz-screenshot-page.blp:203
+msgid "Zoom Out"
+msgstr "縮小"
+
+#: src/bz-screenshot-page.blp:213
+msgid "Zoom In"
+msgstr "放大"
+
+#: src/bz-screenshots-carousel.blp:6
+msgid "Screenshots Carousel"
+msgstr "螢幕截圖輪播"
+
+#: src/bz-screenshots-carousel.blp:104
+msgid "No Screenshots"
+msgstr "沒有螢幕截圖"
+
+#: src/bz-screenshots-carousel.blp:128
+msgid "Open Screenshot Viewer"
+msgstr "開啟截圖檢視器"
+
+#: src/bz-screenshots-carousel.c:310
+#, c-format
+msgid "Screenshot %u %s"
+msgstr "螢幕截圖 %u %s"
+
+#: src/bz-screenshots-carousel.c:312
+#, c-format
+msgid "Screenshot %u"
+msgstr "螢幕截圖 %u"
+
+#: src/bz-search-bar.blp:47 src/bz-search-bar.blp:57
+msgid "Clear Search"
+msgstr "清除搜尋"
+
+#: src/bz-search-filter-popover.blp:18 src/bz-search-page.blp:66
+msgid "Filters"
+msgstr "過濾器"
+
+#: src/bz-search-filter-popover.blp:35
+msgid "_Verified"
+msgstr "已驗證(_V)"
+
+#: src/bz-search-filter-popover.blp:42
+msgid "_Free/Open"
+msgstr "自由/開源(_F)"
+
+#: src/bz-search-filter-popover.blp:49
+msgid "Non-_EOL"
+msgstr "沒有終止支援"
+
+#: src/bz-search-filter-popover.blp:52
+msgid "Filter out End-of-Life apps"
+msgstr "過濾掉已終止支援的應用程式"
+
+#: src/bz-search-filter-popover.blp:57
+msgid "_Mobile Friendly"
+msgstr "行動裝置友善(_M)"
+
+#: src/bz-search-filter-popover.blp:64
+msgid "Categories"
+msgstr "分類"
+
+#: src/bz-search-page.blp:45
+msgid "Search Apps, Games, Software"
+msgstr "搜尋應用程式、遊戲與軟體"
+
+#: src/bz-search-page.blp:52
+msgid "Search Filters"
+msgstr "搜尋過濾器"
+
+#: src/bz-search-page.blp:171
+msgid "Browse Categories"
+msgstr "瀏覽分類"
+
+#: src/bz-search-page.blp:207
+msgid "Categories Unavailable"
+msgstr "分類無法使用"
+
+#: src/bz-search-page.blp:208
+msgid "Search for apps using the search bar above."
+msgstr "請使用上方的搜尋列搜尋應用程式。"
+
+#: src/bz-search-page.blp:326
+msgid "No Applications Found"
+msgstr "找不到任何應用程式"
+
+#: src/bz-search-page.c:253
+#, c-format
+msgid "No results found for \"%s\" in Flathub"
+msgstr "在 Flathub 中找不到符合「%s」的結果"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:67
+msgid "Browser"
+msgstr "瀏覽"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:72
+msgid "Video"
+msgstr "影片"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:82
+msgid "Office"
+msgstr "辦公室"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:87
+msgid "PDF"
+msgstr "PDF"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:92
+msgid "Calendar"
+msgstr "行事曆"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:97
+msgid "Messaging"
+msgstr "訊息"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:102
+msgid "Paint"
+msgstr "塗繪"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:107
+msgid "VPN"
+msgstr "VPN"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:112
+msgid "Torrent"
+msgstr "Torrent"
+
+#. Translators: Search suggestion: the english text will be used for the
+#. search regardless of what you put here, so don't worry about the string
+#. yielding poor search results. Focus on correctness and friendliness,
+#. etc
+#: src/bz-search-pill-list.c:117
+msgid "Emulator"
+msgstr "模擬器"
+
+#: src/bz-share-list.c:58
+msgctxt "Project URL Type"
+msgid "Flathub Page"
+msgstr "Flathub 頁面"
+
+#: src/bz-share-list.c:59
+msgctxt "Project URL Type"
+msgid "Project Website"
+msgstr "專案網址"
+
+#: src/bz-share-list.c:60
+msgctxt "Project URL Type"
+msgid "Issue Tracker"
+msgstr "問題追蹤器"
+
+#: src/bz-share-list.c:61
+msgctxt "Project URL Type"
+msgid "FAQ"
+msgstr "FAQ"
+
+#: src/bz-share-list.c:62
+msgctxt "Project URL Type"
+msgid "Help"
+msgstr "幫助"
+
+#: src/bz-share-list.c:63
+msgctxt "Project URL Type"
+msgid "Donate"
+msgstr "捐款"
+
+#: src/bz-share-list.c:64
+msgctxt "Project URL Type"
+msgid "Translate"
+msgstr "翻譯"
+
+#: src/bz-share-list.c:65
+msgctxt "Project URL Type"
+msgid "Contact"
+msgstr "聯絡方式"
+
+#: src/bz-share-list.c:66
+msgctxt "Project URL Type"
+msgid "Source Code"
+msgstr "原始碼"
+
+#: src/bz-share-list.c:67
+msgctxt "Project URL Type"
+msgid "Contribute"
+msgstr "貢獻"
+
+#: src/bz-share-list.c:68
+msgctxt "Project URL Type"
+msgid "Manifest"
+msgstr "Manifest"
+
+#: src/bz-share-list.c:326
+msgid "Copy Link"
+msgstr "複製連結"
+
+#. TRANSLATORS: page in the statistics dialog
+#: src/bz-stats-dialog.blp:28
+msgid "Timeline"
+msgstr "時間軸"
+
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#: src/bz-stats-dialog.blp:48
+msgid "Installs:"
+msgstr "安裝次數："
+
+#. TRANSLATORS: page in the statistics dialog
+#: src/bz-stats-dialog.blp:58
+msgid "World"
+msgstr "全球"
+
+#: src/bz-stats-dialog.blp:72
+msgid "Since 4/15/2024"
+msgstr "2024年4月15日以來"
+
+#. Translators: M is the suffix for millions
+#: src/bz-stats-dialog.c:126
+#, c-format
+msgid "%.2fM Total Installs"
+msgstr "總安裝次數 %.2fM"
+
+#. Translators: K is the suffix for thousands
+#: src/bz-stats-dialog.c:129
+#, c-format
+msgid "%.2fK Total Installs"
+msgstr "總安裝次數 %.2fK"
+
+#: src/bz-stats-dialog.c:131
+#, c-format
+msgid "%'d Total Installs"
+msgstr "總安裝次數 %'d"
+
+#: src/bz-subcategory-list.c:77
+msgid "No Results Found"
+msgstr "沒有找到結果"
+
+#: src/bz-subcategory-list.c:99
+msgid "Search failed"
+msgstr "搜尋失敗"
+
+#: src/bz-transaction-dialog.c:118 src/context-tile-callbacks.c:251
+#: src/context-tile-callbacks.c:256 src/context-tile-callbacks.c:284
+#: src/context-tile-callbacks.c:293
+msgid "Unknown"
+msgstr "未知"
+
+#: src/bz-transaction-dialog.c:148
+msgid "Keep User Data"
+msgstr "保留使用者資料"
+
+#: src/bz-transaction-dialog.c:149
+msgid "Allow restoring personal settings &amp; content"
+msgstr "允許還原個人設定與內容"
+
+#: src/bz-transaction-dialog.c:158
+msgid "Delete All Data"
+msgstr "刪除所有資料"
+
+#: src/bz-transaction-dialog.c:159
+msgid "Permanently erase user data to save space"
+msgstr "永久移除應用程式的使用者資料以節省空間"
+
+#: src/bz-transaction-dialog.c:189
+#, c-format
+msgid "Remove %s?"
+msgstr "要移除 %s 嗎？"
+
+#: src/bz-transaction-dialog.c:192
+msgid "Select which version to remove."
+msgstr "選取要移除的版本。"
+
+#: src/bz-transaction-dialog.c:194
+#, c-format
+msgid "It will not be possible to use %s after it is uninstalled."
+msgstr "解除安裝後將無法再使用 %s。"
+
+#: src/bz-transaction-dialog.c:217
+#, c-format
+msgid "“%s” is High Risk"
+msgstr "「%s」屬於高風險應用程式"
+
+#: src/bz-transaction-dialog.c:221
+msgid ""
+"This app has full access to your system, including all <b>your files, "
+"browser history, saved passwords</b>, and more. It also has access to the "
+"internet, meaning it could send your data to outside parties.\n"
+"\n"
+"Because the app is proprietary, it can not be audited for what it does with "
+"these permissions."
+msgstr ""
+"此應用程式對您的系統具有完整存取權限，包括所有<b>檔案、瀏覽紀錄、已儲存的密碼"
+"</b>等。同時也可存取網際網路，代表可能會將您的資料傳送給第三方。\n"
+"\n"
+"由於此應用程式為專有軟體，無法對其如何使用這些權限進行獨立審核。"
+
+#: src/bz-transaction-dialog.c:230
+msgid ""
+"This app uses the legacy X11 windowing system, which allows it to <b>record "
+"all keystrokes, capture screenshots, and monitor other applications</b>. It "
+"also has access to the internet, meaning it could send your data to outside "
+"parties.\n"
+"\n"
+"Because the app is proprietary, it can not be audited for what it does with "
+"these permissions."
+msgstr ""
+"此應用程式使用舊式的 X11 視窗系統，這使其能夠<b>記錄所有鍵盤輸入、擷取螢幕畫"
+"面，並監控其他應用程式</b>。同時也可存取網際網路，代表可能會將您的資料傳送給"
+"第三方。\n"
+"\n"
+"由於此應用程式為專有軟體，無法對其如何使用這些權限進行獨立審核。"
+
+#: src/bz-transaction-dialog.c:246
+msgid "_Install Anyway"
+msgstr "仍要安裝(_I)"
+
+#: src/bz-transaction-dialog.c:298 src/bz-transaction-dialog.c:326
+msgid "Failed to load transaction dialog"
+msgstr "載入作業對話框失敗"
+
+#: src/bz-transaction-manager.c:796
+#, c-format
+msgid "Finished in %.02f seconds"
+msgstr "於 %.02f 秒完成"
+
+#: src/bz-transaction-tile.blp:130
+msgid "App Add-On"
+msgstr "應用程式附加元件"
+
+#: src/bz-transaction-tile.blp:159
+msgid "Runtime"
+msgstr "執行環境"
+
+#: src/bz-transaction-tile.blp:183
+msgid "In Queue"
+msgstr "在佇列中"
+
+#: src/bz-transaction-tile.blp:207
+msgid "Done"
+msgstr "完成"
+
+#: src/bz-transaction-tile.blp:231
+msgid "Cancelled"
+msgstr "已取消"
+
+#: src/bz-transaction-tile.blp:255
+msgid "Error"
+msgstr "錯誤"
+
+#: src/bz-transaction-tile.blp:313
+msgid "Cancel Transaction"
+msgstr "取消作業"
+
+#: src/bz-transaction-tile.blp:323
+msgid "Show Details"
+msgstr "顯示詳細資料"
+
+#: src/bz-transaction-tile.blp:436
+msgid "Show Error Info"
+msgstr "顯示錯誤資訊"
+
+#: src/bz-transaction-tile.c:107
+#, c-format
+msgid "%s Freed"
+msgstr "已釋出 %s"
+
+#: src/bz-transaction-tile.c:360 src/bz-transaction-tile.c:363
+msgid "Transaction Error"
+msgstr "作業錯誤"
+
+#: src/bz-transaction.c:344
+msgid "Pending"
+msgstr "等待中"
+
+#: src/bz-updates-card.blp:23
+msgid "_Update All"
+msgstr "更新全部(_U)"
+
+#: src/bz-updates-card.c:215
+#, c-format
+msgid "%u Runtime Update"
+msgid_plural "%u Runtime Updates"
+msgstr[0] "%u 個執行環境更新"
+
+#: src/bz-update-history-dialog.blp:5 src/bz-update-history-dialog.blp:11
+#| msgid "Installed Size"
+msgid "Installed Updates"
+msgstr "已安裝的更新"
+
+#: src/bz-update-history-dialog.blp:128 src/bz-update-history-dialog.c:99
+#| msgid "Full Release Notes"
+msgid "Release Notes"
+msgstr "發行備註"
+
+#: src/bz-update-history-dialog.blp:143
+#| msgid "Full Release Notes"
+msgid "No Release Info"
+msgstr "沒有發行資訊"
+
+#: src/bz-user-data-page.blp:5
+msgid "Manage Leftover User Data"
+msgstr "管理殘留的使用者資料"
+
+#: src/bz-user-data-page.blp:32
+#| msgid "No User Data Found"
+msgid "No Leftover User Data Found"
+msgstr "找不到殘留的使用者資料"
+
+#: src/bz-user-data-page.blp:33
+msgid "Personal data left behind by apps that were removed will show up here"
+msgstr "已移除的應用程式所留下來的個人資料會顯示於此"
+
+#: src/bz-user-data-page.c:229
+#, c-format
+#| msgid "Trashed User Data for %s"
+msgid "Trashed User Data for %u App"
+msgid_plural "Trashed User Data for %u Apps"
+msgstr[0] "已將 %u 個應用程式的使用者資料移至垃圾桶"
+
+#: src/bz-user-data-page.c:233
+#, c-format
+msgid "Trashed User Data for %s"
+msgstr "已將 %s 的使用者資料移至垃圾桶"
+
+#: src/bz-user-data-tile.blp:91
+#| msgid "Open user data folder"
+msgid "Open User Data Folder"
+msgstr "開啟使用者資料資料夾"
+
+#: src/bz-user-data-tile.blp:102
+msgid "Trash User Data"
+msgstr "將使用者資料移至垃圾桶"
+
+#: src/bz-window.blp:80
+msgid "Refreshing"
+msgstr "重新整理中…"
+
+#: src/bz-window.blp:98
+msgid "Curated"
+msgstr "精選"
+
+#: src/bz-window.blp:110
+msgid "Explore"
+msgstr "探索"
+
+#. Translators: .
+#: src/bz-window.blp:122
+msgid "Library"
+msgstr "程式庫"
+
+#: src/bz-window.blp:137
+msgid "Search"
+msgstr "搜尋"
+
+#: src/bz-window.blp:223
+msgid "Main Menu"
+msgstr "主選單"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:235
+msgid "You are running a new version of Bazaar!"
+msgstr "您已更新到新版本 Bazaar！"
+
+#: src/bz-window.blp:236
+msgid "See What's New"
+msgstr "查看更新內容"
+
+#: src/bz-window.blp:243
+msgid ""
+"You have a network connection but are viewing a cached version of Flathub"
+msgstr "您目前有網路連線，但正在檢視 Flathub 的快取版本"
+
+#: src/bz-window.blp:254
+#| msgid ""
+#| "Network connection is metered — automatic store data refresh is paused"
+msgid "Network connection is metered — automatic refreshes disabled"
+msgstr "目前的網路連線為計量連線 —— 已暫停自動重新整理"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:291
+msgid "_Donate to Bazaar"
+msgstr "捐款給 Bazaar(_D)"
+
+#: src/bz-window.blp:297
+msgid "_Refresh"
+msgstr "重新整理(_R)"
+
+#: src/bz-window.blp:301
+msgid "_Login With Flathub"
+msgstr "使用 Flathub 登入(_L)"
+
+#: src/bz-window.blp:307
+msgid "_Manage Leftover User Data"
+msgstr "管理殘留的使用者資料(_M)"
+
+#: src/bz-window.blp:313
+msgid "_Preferences"
+msgstr "偏好設定(_P)"
+
+#: src/bz-window.blp:318
+msgid "_Keyboard Shortcuts"
+msgstr "鍵盤快捷鍵(&K)"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:324
+msgid "_About Bazaar"
+msgstr "關於 Bazaar(&A)"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:331
+msgid "_Quit Bazaar"
+msgstr "退出 Bazaar(&Q)"
+
+#: src/bz-window.blp:357
+msgid "Log Out"
+msgstr "登出"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
+#: src/bz-window.c:385
+#, c-format
+msgid "Bazaar — %s"
+msgstr "Bazaar — %s"
+
+#: src/bz-window.c:665 src/bz-window.c:714
+msgid "Failed to launch application"
+msgstr "啟動應用程式失敗"
+
+#: src/bz-window.c:793
+#| msgid "Could not find app"
+msgid "Could not open link"
+msgstr "無法開啟連結"
+
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.c:1002
+msgid "You can't remove Bazaar from Bazaar!"
+msgstr "您無法在 Bazaar 中移除 Bazaar 本身！"
+
+#: src/bz-window.c:1386 src/bz-window.c:1420
+msgid "Can't do that right now!"
+msgstr "目前無法執行此動作！"
+
+#: src/context-tile-callbacks.c:68
+msgid "---"
+msgstr "---"
+
+#. Translators: M is the suffix for millions
+#: src/context-tile-callbacks.c:75
+#, c-format
+msgid "%.*fM"
+msgstr "%.*fM"
+
+#. Translators: K is the suffix for thousands
+#: src/context-tile-callbacks.c:82
+#, c-format
+msgid "%.*fK"
+msgstr "%.*fK"
+
+#: src/context-tile-callbacks.c:92
+#, c-format
+msgid "%d downloads in the last month"
+msgstr "在過去一個月內有 %d 次下載"
+
+#. TRANSLATORS: %s is a formatted file size, for example: "128 MB"
+#: src/context-tile-callbacks.c:139
+#, c-format
+#| msgid "+%s runtime"
+msgid "+%s Runtime"
+msgstr "+%s 執行環境"
+
+#: src/context-tile-callbacks.c:151 src/context-tile-callbacks.c:163
+msgid "Size information unavailable"
+msgstr "大小資訊未知"
+
+#: src/context-tile-callbacks.c:154
+#, c-format
+msgid "Download size of %s"
+msgstr "下載 %s 的大小"
+
+#: src/context-tile-callbacks.c:166
+#, c-format
+#| msgid "Installed Size"
+msgid "Installed size of %s"
+msgstr "%s 的安裝大小"
+
+#: src/context-tile-callbacks.c:199
+msgid "All Ages"
+msgstr "所有年齡層"
+
+#: src/context-tile-callbacks.c:211
+msgid "Age rating information unavailable"
+msgstr "年齡分級資訊未知"
+
+#: src/context-tile-callbacks.c:216
+msgid "Suitable for all ages"
+msgstr "適合所有年齡層"
+
+#: src/context-tile-callbacks.c:218
+#, c-format
+msgid "Suitable for ages %d and up"
+msgstr "適合 %d 歲以上"
+
+#: src/context-tile-callbacks.c:261
+#, c-format
+msgid "Free software licensed under %s"
+msgstr "依 %s 授權的自由軟體"
+
+#: src/context-tile-callbacks.c:266
+msgid "Free software"
+msgstr "自由軟體"
+
+#: src/context-tile-callbacks.c:269
+msgid "Proprietary Software"
+msgstr "專有軟體"
+
+#: src/context-tile-callbacks.c:272
+#, c-format
+msgid "Special License: %s"
+msgstr "特殊授權：%s"
+
+#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#: src/context-tile-callbacks.c:290
+msgid "Free Software"
+msgstr "自由軟體"
+
+#: src/context-tile-callbacks.c:318
+msgid "Adaptive"
+msgstr "支援多裝置"
+
+#: src/context-tile-callbacks.c:318
+msgid "Desktop Only"
+msgstr "僅限桌面"
+
+#: src/context-tile-callbacks.c:324
+msgid "Works on desktop, tablets, and phones"
+msgstr "可在電腦、平板與手機上使用"
+
+#: src/context-tile-callbacks.c:325
+msgid "May not work on mobile devices"
+msgstr "可能無法在行動裝置上使用"
+
+#. TRANSLATORS: short app safety rating label
+#: src/context-tile-callbacks.c:412 src/context-tile-callbacks.c:415
+msgid "Low Risk"
+msgstr "低風險"
+
+#. TRANSLATORS: short app safety rating label
+#: src/context-tile-callbacks.c:418
+msgid "Medium Risk"
+msgstr "中度風險"
+
+#. TRANSLATORS: short app safety rating label
+#: src/context-tile-callbacks.c:421
+msgid "High Risk"
+msgstr "高風險"
 
 #: src/safety-calculator.c:87
 msgid "Unknown Permissions"
@@ -2343,10 +3285,6 @@ msgstr "舊式視窗系統"
 #: src/safety-calculator.c:155
 msgid "Always uses a legacy windowing system (X11)"
 msgstr "一律使用舊式視窗系統（X11）"
-
-#: src/safety-calculator.c:161 src/bz-safety-dialog.blp:31
-msgid "Arbitrary Permissions"
-msgstr "任意權限"
 
 #: src/safety-calculator.c:162
 msgid "Can acquire arbitrary permissions"
@@ -2559,663 +3497,6 @@ msgstr "KDE Connect 整合"
 msgid "Can interact with devices paired via KDE Connect"
 msgstr "可與透過 KDE Connect 配對的裝置互動"
 
-#: src/bz-safety-dialog.blp:48
-msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
-"\n"
-"It can therefore do anything a normal, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
-"\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
-msgstr ""
-"這個應用程式的其中一個權限間接允許其提供自己<b>任何其他的權限</b>，並繞過 "
-"Flatpak 沙箱機制。\n"
-"\n"
-"因此它可以做任何非沙箱化應用程式能夠做的事情，像是存取您的所有檔案或是連線到"
-"網際網路。\n"
-"\n"
-"其他它所明確要求的權限可能還是值得參考以得知它比較有可能會做的事情。"
-
-#: src/bz-safety-dialog.blp:52
-msgid "View Other Permissions"
-msgstr "檢視其他權限"
-
-#: src/bz-safety-dialog.blp:112
-msgid "App ID"
-msgstr "應用程式 ID"
-
-#: src/bz-safety-dialog.blp:122
-msgid "SDK"
-msgstr "SDK"
-
-#: src/bz-safety-dialog.blp:156
-msgid ""
-"This app uses an outdated version of the software platform (SDK) and might "
-"contain bugs or security vulnerabilities which will not be fixed."
-msgstr ""
-"此應用程式使用過時的軟體平台（SDK），可能包含不會再修復的錯誤或安全漏洞。"
-
-#: src/bz-safety-dialog.c:278
-msgid "Safety"
-msgstr "安全性"
-
-#: src/bz-safety-dialog.c:344
-#, c-format
-msgid "%s is Safe"
-msgstr "%s 是安全的"
-
-#: src/bz-safety-dialog.c:349
-#, c-format
-msgid "%s has no Unsafe Permissions"
-msgstr "%s 沒有不安全的權限"
-
-#: src/bz-safety-dialog.c:354
-#, c-format
-msgid "%s is Probably Safe"
-msgstr "%s 可能是安全的"
-
-#: src/bz-safety-dialog.c:359
-#, c-format
-msgid "%s is Possibly Unsafe"
-msgstr "%s 可能不安全"
-
-#: src/bz-safety-dialog.c:364
-#, c-format
-msgid "%s is Unsafe"
-msgstr "%s 不安全"
-
-#: src/bz-screenshot-page.blp:5
-msgid "Screenshots"
-msgstr "螢幕截圖"
-
-#: src/bz-screenshot-page.blp:61
-msgid "Previous Screenshot"
-msgstr "上一張截圖"
-
-#: src/bz-screenshot-page.blp:71
-msgid "Next Screenshot"
-msgstr "下一張截圖"
-
-#: src/bz-screenshot-page.blp:87
-msgid "Copy Image"
-msgstr "複製圖片"
-
-#: src/bz-screenshot-page.blp:150
-msgid "Reset View"
-msgstr "重設檢視"
-
-#: src/bz-screenshot-page.blp:161
-msgid "Zoom Out"
-msgstr "縮小"
-
-#: src/bz-screenshot-page.blp:171
-msgid "Zoom In"
-msgstr "放大"
-
-#: src/bz-screenshots-carousel.blp:6
-msgid "Screenshots Carousel"
-msgstr "螢幕截圖輪播"
-
-#: src/bz-screenshots-carousel.blp:104
-msgid "No Screenshots"
-msgstr "沒有螢幕截圖"
-
-#: src/bz-screenshots-carousel.blp:128
-msgid "Open Screenshot Viewer"
-msgstr "開啟截圖檢視器"
-
-#: src/bz-screenshots-carousel.c:301
-#, c-format
-msgid "Screenshot %u %s"
-msgstr "螢幕截圖 %u %s"
-
-#: src/bz-screenshots-carousel.c:303
-#, c-format
-msgid "Screenshot %u"
-msgstr "螢幕截圖 %u"
-
-#: src/bz-search-filter-popover.blp:18 src/bz-search-page.blp:83
-msgid "Filters"
-msgstr "過濾器"
-
-#: src/bz-search-filter-popover.blp:35
-msgid "_Verified"
-msgstr "已驗證(_V)"
-
-#: src/bz-search-filter-popover.blp:42
-msgid "_Free/Open"
-msgstr "自由/開源(_F)"
-
-#: src/bz-search-filter-popover.blp:49
-msgid "Non-_EOL"
-msgstr "沒有終止支援"
-
-#: src/bz-search-filter-popover.blp:52
-msgid "Filter out End-of-Life apps"
-msgstr "過濾掉已終止支援的應用程式"
-
-#: src/bz-search-filter-popover.blp:57
-msgid "_Mobile Friendly"
-msgstr "行動裝置友善(_M)"
-
-#: src/bz-search-filter-popover.blp:64
-msgid "Categories"
-msgstr "分類"
-
-#: src/bz-search-page.blp:58
-msgid "Search Apps, Games, Software"
-msgstr "搜尋應用程式、遊戲與軟體"
-
-#: src/bz-search-page.blp:70
-msgid "Search Filters"
-msgstr "搜尋過濾器"
-
-#: src/bz-search-page.blp:100
-msgid "Clear Search"
-msgstr "清除搜尋"
-
-#: src/bz-search-page.blp:209
-msgid "Browse Categories"
-msgstr "瀏覽分類"
-
-#: src/bz-search-page.blp:245
-msgid "Categories Unavailable"
-msgstr "分類無法使用"
-
-#: src/bz-search-page.blp:246
-msgid "Search for apps using the search bar above."
-msgstr "請使用上方的搜尋列搜尋應用程式。"
-
-#: src/bz-search-page.blp:364
-msgid "No Applications Found"
-msgstr "找不到任何應用程式"
-
-#: src/bz-search-page.c:248
-#, c-format
-msgid "No results found for \"%s\" in Flathub"
-msgstr "在 Flathub 中找不到符合「%s」的結果"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:72
-msgid "Video"
-msgstr "影片"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:82
-msgid "Office"
-msgstr "辦公室"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:87
-msgid "PDF"
-msgstr "PDF"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:92
-msgid "Calendar"
-msgstr "行事曆"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:97
-msgid "Messaging"
-msgstr "訊息"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:102
-msgid "Paint"
-msgstr "塗繪"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:107
-msgid "VPN"
-msgstr "VPN"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:112
-msgid "Torrent"
-msgstr "Torrent"
-
-#. Translators: Search suggestion: the english text will be used for the
-#. search regardless of what you put here, so don't worry about the string
-#. yielding poor search results. Focus on correctness and friendliness,
-#. etc
-#: src/bz-search-pill-list.c:117
-msgid "Emulator"
-msgstr "模擬器"
-
-#: src/bz-share-list.c:58
-msgctxt "Project URL Type"
-msgid "Flathub Page"
-msgstr "Flathub 頁面"
-
-#: src/bz-share-list.c:59
-msgctxt "Project URL Type"
-msgid "Project Website"
-msgstr "專案網址"
-
-#: src/bz-share-list.c:60
-msgctxt "Project URL Type"
-msgid "Issue Tracker"
-msgstr "問題追蹤器"
-
-#: src/bz-share-list.c:61
-msgctxt "Project URL Type"
-msgid "FAQ"
-msgstr "FAQ"
-
-#: src/bz-share-list.c:62
-msgctxt "Project URL Type"
-msgid "Help"
-msgstr "幫助"
-
-#: src/bz-share-list.c:63
-msgctxt "Project URL Type"
-msgid "Donate"
-msgstr "捐款"
-
-#: src/bz-share-list.c:64
-msgctxt "Project URL Type"
-msgid "Translate"
-msgstr "翻譯"
-
-#: src/bz-share-list.c:65
-msgctxt "Project URL Type"
-msgid "Contact"
-msgstr "聯絡方式"
-
-#: src/bz-share-list.c:66
-msgctxt "Project URL Type"
-msgid "Source Code"
-msgstr "原始碼"
-
-#: src/bz-share-list.c:67
-msgctxt "Project URL Type"
-msgid "Contribute"
-msgstr "貢獻"
-
-#: src/bz-share-list.c:68
-msgctxt "Project URL Type"
-msgid "Manifest"
-msgstr "Manifest"
-
-#: src/bz-share-list.c:326
-msgid "Copy Link"
-msgstr "複製連結"
-
-#: src/bz-stats-dialog.blp:27
-msgid "Timeline"
-msgstr "時間軸"
-
-#: src/bz-stats-dialog.blp:46
-msgid "Installs:"
-msgstr "安裝次數："
-
-#: src/bz-stats-dialog.blp:55
-msgid "World"
-msgstr "全球"
-
-#: src/bz-stats-dialog.blp:69
-msgid "Since 4/15/2024"
-msgstr "2024年4月15日以來"
-
-#. Translators: M is the suffix for millions
-#: src/bz-stats-dialog.c:126
-#, c-format
-msgid "%.2fM Total Installs"
-msgstr "總安裝次數 %.2fM"
-
-#. Translators: K is the suffix for thousands
-#: src/bz-stats-dialog.c:129
-#, c-format
-msgid "%.2fK Total Installs"
-msgstr "總安裝次數 %.2fK"
-
-#: src/bz-stats-dialog.c:131
-#, c-format
-msgid "%'d Total Installs"
-msgstr "總安裝次數 %'d"
-
-#: src/bz-subcategory-list.c:78
-msgid "No Results Found"
-msgstr "沒有找到結果"
-
-#: src/bz-subcategory-list.c:100
-msgid "Search failed"
-msgstr "搜尋失敗"
-
-#: src/bz-transaction-dialog.c:154
-msgid "Keep User Data"
-msgstr "保留使用者資料"
-
-#: src/bz-transaction-dialog.c:155
-msgid "Allow restoring personal settings &amp; content"
-msgstr "允許還原個人設定與內容"
-
-#: src/bz-transaction-dialog.c:164
-msgid "Delete All Data"
-msgstr "刪除所有資料"
-
-#: src/bz-transaction-dialog.c:165
-msgid "Permanently erase user data to save space"
-msgstr "永久移除應用程式的使用者資料以節省空間"
-
-#: src/bz-transaction-dialog.c:190
-#, c-format
-msgid "Install %s?"
-msgstr "要安裝 %s 嗎？"
-
-#: src/bz-transaction-dialog.c:195
-msgid ""
-"Select which version to install. May install additional shared components"
-msgstr "選取要安裝哪個版本。可能會安裝額外的共用元件"
-
-#: src/bz-transaction-dialog.c:197
-msgid "May install additional shared components"
-msgstr "可能會安裝額外的共用元件"
-
-#: src/bz-transaction-dialog.c:200 src/bz-transaction-dialog.c:229
-#: src/bz-transaction-dialog.c:274 src/bz-transaction-dialog.c:576
-msgid "_Cancel"
-msgstr "取消(_C)"
-
-#: src/bz-transaction-dialog.c:201
-msgid "_Install"
-msgstr "安裝(_I)"
-
-#: src/bz-transaction-dialog.c:218
-#, c-format
-msgid "Remove %s?"
-msgstr "要移除 %s 嗎？"
-
-#: src/bz-transaction-dialog.c:221
-msgid "Select which version to remove."
-msgstr "選取要移除的版本。"
-
-#: src/bz-transaction-dialog.c:223
-#, c-format
-msgid "It will not be possible to use %s after it is uninstalled."
-msgstr "解除安裝後將無法再使用 %s。"
-
-#: src/bz-transaction-dialog.c:246
-#, c-format
-msgid "“%s” is High Risk"
-msgstr "「%s」屬於高風險應用程式"
-
-#: src/bz-transaction-dialog.c:250
-msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
-"\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
-msgstr ""
-"此應用程式對您的系統具有完整存取權限，包括所有<b>檔案、瀏覽紀錄、已儲存的密碼"
-"</b>等。同時也可存取網際網路，代表可能會將您的資料傳送給第三方。\n"
-"\n"
-"由於此應用程式為專有軟體，無法對其如何使用這些權限進行獨立審核。"
-
-#: src/bz-transaction-dialog.c:259
-msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
-"\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
-msgstr ""
-"此應用程式使用舊式的 X11 視窗系統，這使其能夠<b>記錄所有鍵盤輸入、擷取螢幕畫"
-"面，並監控其他應用程式</b>。同時也可存取網際網路，代表可能會將您的資料傳送給"
-"第三方。\n"
-"\n"
-"由於此應用程式為專有軟體，無法對其如何使用這些權限進行獨立審核。"
-
-#: src/bz-transaction-dialog.c:275
-msgid "_Install Anyway"
-msgstr "仍要安裝(_I)"
-
-#: src/bz-transaction-dialog.c:330
-msgid "Failed to load transaction dialog"
-msgstr "載入作業對話框失敗"
-
-#: src/bz-transaction-dialog.c:547
-msgid "All apps are already installed"
-msgstr "所有應用程式皆已安裝"
-
-#: src/bz-transaction-dialog.c:549
-msgid "_OK"
-msgstr "確認(_O)"
-
-#: src/bz-transaction-dialog.c:565
-#, c-format
-msgid "Install %u App?"
-msgid_plural "Install %u Apps?"
-msgstr[0] "要安裝 %u 個應用程式嗎？"
-
-#: src/bz-transaction-dialog.c:573
-msgid ""
-"The following will be installed. Additional shared components may also be "
-"installed"
-msgstr "將會安裝以下項目，並且可能同時安裝額外的共用元件"
-
-#: src/bz-transaction-dialog.c:574
-#, c-format
-msgid "%d addons will be installed."
-msgstr "將會安裝 %d 個附加元件。"
-
-#: src/bz-transaction-dialog.c:575
-msgid "Additionally, addons will be installed."
-msgstr "此外，還會安裝附加元件。"
-
-#: src/bz-transaction-dialog.c:577
-msgid "_Install All"
-msgstr "安裝全部(_I)"
-
-#: src/bz-transaction-manager.c:795
-#, c-format
-msgid "Finished in %.02f seconds"
-msgstr "於 %.02f 秒完成"
-
-#: src/bz-transaction-tile.blp:129
-msgid "App Add-On"
-msgstr "應用程式附加元件"
-
-#: src/bz-transaction-tile.blp:158
-msgid "Runtime"
-msgstr "執行環境"
-
-#: src/bz-transaction-tile.blp:182
-msgid "In Queue"
-msgstr "在佇列中"
-
-#: src/bz-transaction-tile.blp:206
-msgid "Done"
-msgstr "完成"
-
-#: src/bz-transaction-tile.blp:230
-msgid "Cancelled"
-msgstr "已取消"
-
-#: src/bz-transaction-tile.blp:254
-msgid "Error"
-msgstr "錯誤"
-
-#: src/bz-transaction-tile.blp:312
-msgid "Cancel Transaction"
-msgstr "取消作業"
-
-#: src/bz-transaction-tile.blp:322
-msgid "Show Details"
-msgstr "顯示詳細資料"
-
-#: src/bz-transaction-tile.blp:437
-msgid "Show Error Info"
-msgstr "顯示錯誤資訊"
-
-#: src/bz-transaction-tile.c:107
-#, c-format
-msgid "%s Freed"
-msgstr "已釋出 %s"
-
-#: src/bz-transaction-tile.c:360 src/bz-transaction-tile.c:363
-msgid "Transaction Error"
-msgstr "作業錯誤"
-
-#: src/bz-transaction.c:344
-msgid "Pending"
-msgstr "等待中"
-
-#: src/bz-updates-card.blp:23
-msgid "_Update All"
-msgstr "更新全部(_U)"
-
-#: src/bz-updates-card.c:215
-#, c-format
-msgid "%u Runtime Update"
-msgid_plural "%u Runtime Updates"
-msgstr[0] "%u 個執行環境更新"
-
-#: src/bz-user-data-page.blp:5
-msgid "Manage Leftover User Data"
-msgstr "管理殘留的使用者資料"
-
-#: src/bz-user-data-page.blp:33
-msgid "No User Data Found"
-msgstr "找不到使用者資料"
-
-#: src/bz-user-data-page.blp:38
-msgid "User Data"
-msgstr "使用者資料"
-
-#: src/bz-user-data-tile.blp:74
-msgid "Trash User Data"
-msgstr "將使用者資料移至垃圾桶"
-
-#: src/bz-user-data-tile.c:150
-#, c-format
-msgid "Trashed User Data for %s"
-msgstr "已將 %s 的使用者資料移至垃圾桶"
-
-#: src/bz-window.blp:71
-msgid "Refreshing"
-msgstr "重新整理中…"
-
-#: src/bz-window.blp:89
-msgid "Curated"
-msgstr "精選"
-
-#: src/bz-window.blp:101
-msgid "Explore"
-msgstr "探索"
-
-#: src/bz-window.blp:128
-msgid "Search"
-msgstr "搜尋"
-
-#: src/bz-window.blp:215
-msgid "Main Menu"
-msgstr "主選單"
-
-#: src/bz-window.blp:226
-msgid "You are running a new version of Bazaar!"
-msgstr "您已更新到新版本 Bazaar！"
-
-#: src/bz-window.blp:227
-msgid "See What's New"
-msgstr "查看更新內容"
-
-#: src/bz-window.blp:234
-msgid ""
-"You have a network connection but are viewing a cached version of Flathub"
-msgstr "您目前有網路連線，但正在檢視 Flathub 的快取版本"
-
-#: src/bz-window.blp:279
-msgid "_Donate to Bazaar"
-msgstr "捐款給 Bazaar(_D)"
-
-#: src/bz-window.blp:285
-msgid "_Refresh"
-msgstr "重新整理(_R)"
-
-#: src/bz-window.blp:289
-msgid "_Login With Flathub"
-msgstr "使用 Flathub 登入(_L)"
-
-#: src/bz-window.blp:295
-msgid "_Manage Leftover User Data"
-msgstr "管理殘留的使用者資料(_M)"
-
-#: src/bz-window.blp:301
-msgid "_Preferences"
-msgstr "偏好設定(_P)"
-
-#: src/bz-window.blp:306
-msgid "_Keyboard Shortcuts"
-msgstr "鍵盤快捷鍵(&K)"
-
-#: src/bz-window.blp:311
-msgid "_About Bazaar"
-msgstr "關於 Bazaar(&A)"
-
-#: src/bz-window.blp:317
-msgid "_Quit Bazaar"
-msgstr "退出 Bazaar(&Q)"
-
-#: src/bz-window.blp:342
-msgid "Log Out"
-msgstr "登出"
-
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:376
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
-
-#: src/bz-window.c:596 src/bz-window.c:634
-msgid "Failed to launch application"
-msgstr "啟動應用程式失敗"
-
-#: src/bz-window.c:843
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "您無法在 Bazaar 中移除 Bazaar 本身！"
-
-#: src/bz-window.c:1127 src/bz-window.c:1161
-msgid "Can't do that right now!"
-msgstr "目前無法執行此動作！"
-
-#. Translators: As in, "1 Install" / "100 Installs"
-#: src/bz-world-map.c:604
-msgid "Install"
-msgid_plural "Installs"
-msgstr[0] "次安裝"
-
 #: src/shortcuts-dialog.blp:5
 msgctxt "shortcut window"
 msgid "Navigation"
@@ -3270,6 +3551,124 @@ msgstr "關閉視窗"
 msgctxt "shortcut window"
 msgid "Quit Bazaar"
 msgstr "退出 Bazaar"
+
+#: src/transaction-notification.c:133
+#, c-format
+#| msgid "Installed"
+msgid "%s Installed"
+msgstr "%s 已安裝"
+
+#: src/transaction-notification.c:135
+msgid "The app is ready to be used"
+msgstr "程式已準備好可使用"
+
+#: src/update-worker.c:266
+#| msgid "Updates Are Available"
+msgid "Updates Are Out of Date"
+msgstr "更新資訊已過時"
+
+#: src/update-worker.c:267
+#| msgid "Failed to check for updates"
+msgid "Please check for available updates"
+msgstr "請檢查可用更新"
+
+#: src/update-worker.c:513
+#, c-format
+#| msgid "%u Available Update"
+#| msgid_plural "%u Available Updates"
+msgid "%u App Updated"
+msgid_plural "%u Apps Updated"
+msgstr[0] "%u 個程式已更新"
+
+#: src/update-worker.c:516
+#, c-format
+msgid "%s has been updated."
+msgstr "《%s》已更新。"
+
+#: src/update-worker.c:519
+#, c-format
+msgid "%s and %s have been updated."
+msgstr "《%s》與《%s》已更新。"
+
+#: src/update-worker.c:523
+#, c-format
+msgid "Includes %s, %s and %s."
+msgstr "包括《%s》、《%s》以及《%s》。"
+
+#~ msgid "Exhibit app page"
+#~ msgstr "展示應用程式頁面"
+
+#~ msgid "Malformed Link"
+#~ msgstr "不正確的連結"
+
+#~ msgid ""
+#~ "The link used to open this app has incorrect capitalization and may stop "
+#~ "working in the future.\n"
+#~ "\n"
+#~ "This is most likely caused by KRunner sending incorrect app IDs"
+#~ msgstr ""
+#~ "用來開啟此應用程式的連結的大小寫不正確，可能在未來會不再能夠使用。\n"
+#~ "\n"
+#~ "這通常是因為 KRunner 傳送了不正確的應用程式 ID 所造成的"
+
+#~ msgid "Empty"
+#~ msgstr "無內容"
+
+#~ msgid "For This User Only"
+#~ msgstr "僅此使用者"
+
+#~ msgid "this user"
+#~ msgstr "這個使用者"
+
+#~ msgid "all users"
+#~ msgstr "所有使用者"
+
+#~ msgid "Loading"
+#~ msgstr "載入中"
+
+#~ msgid "Flathub Unavailable"
+#~ msgstr "Flathub 無法使用"
+
+#~ msgid "No Results"
+#~ msgstr "沒有結果"
+
+#~ msgid "Try a different search query"
+#~ msgstr "請嘗試不同的搜尋關鍵字"
+
+#~ msgid "Content"
+#~ msgstr "內容"
+
+#~ msgid "Donate Button"
+#~ msgstr "捐款按鈕"
+
+#~ msgid "Clear search"
+#~ msgstr "清除搜尋"
+
+#~ msgid "Select Metainfo File"
+#~ msgstr "選取 Metainfo 檔案"
+
+#~ msgid "Metainfo Files"
+#~ msgstr "Metainfo 檔案"
+
+#~ msgid "Preview"
+#~ msgstr "預覽"
+
+#~ msgid "Screenshots"
+#~ msgstr "螢幕截圖"
+
+#, c-format
+#~ msgid "Install %s?"
+#~ msgstr "要安裝 %s 嗎？"
+
+#~ msgid ""
+#~ "Select which version to install. May install additional shared components"
+#~ msgstr "選取要安裝哪個版本。可能會安裝額外的共用元件"
+
+#~ msgid "May install additional shared components"
+#~ msgstr "可能會安裝額外的共用元件"
+
+#~ msgid "_Install"
+#~ msgstr "安裝(_I)"
 
 #~ msgid ""
 #~ "It emphasizes supporting the developers who make the Linux desktop "
@@ -3397,9 +3796,6 @@ msgstr "退出 Bazaar"
 #~ msgid "%d Update Available"
 #~ msgid_plural "%d Updates Available"
 #~ msgstr[0] "有 %d 項更新可用"
-
-#~ msgid "Updates Are Available"
-#~ msgstr "有可用的更新"
 
 #~ msgid ""
 #~ "The following applications are eligible for updates. Would you like to "
@@ -3641,9 +4037,6 @@ msgstr "退出 Bazaar"
 
 #~ msgid "Browse"
 #~ msgstr "瀏覽"
-
-#~ msgid "Go Back"
-#~ msgstr "上一頁"
 
 #~ msgid "View curated applications"
 #~ msgstr "檢視精選應用程式"
