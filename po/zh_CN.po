@@ -8,23 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-15 23:10+0000\n"
-"PO-Revision-Date: 2026-09-16 07:51+0800\n"
+"POT-Creation-Date: 2026-09-21 03:21+0000\n"
+"PO-Revision-Date: 2026-09-22 07:37+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 50.0\n"
+"X-Generator: Gtranslator 51.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:382 src/bz-window.c:383
+#: src/bz-window.blp:211 src/bz-window.c:438 src/bz-window.c:439
 msgid "Bazaar"
-msgstr "集市"
+msgstr "Bazaar"
 
 #: data/io.github.kolunmi.Bazaar.desktop.in:4
 msgid "App Store"
@@ -73,9 +73,9 @@ msgid "Search apps directly from GNOME Shell"
 msgstr "直接从 GNOME Shell 搜索应用"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:754
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:755
 msgid "The Bazaar Contributors"
-msgstr "集市的贡献者们"
+msgstr "Bazaar 贡献者"
 
 #: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -137,22 +137,33 @@ msgstr "您当前的筛选首选项隐藏了所有已知附加组件。请尝试
 msgid "Add-on Page"
 msgstr "附加组件页面"
 
-#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:406
+#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:267
+#: src/context-tile-callbacks.c:142
+msgid "Download"
+msgstr "下载"
+
+#. Translators: As in 'The app is installed'.
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:282
+#: src/bz-releases-list.c:204
+msgid "Installed"
+msgstr "已安装"
+
+#: src/bz-addons-dialog.blp:221 src/bz-full-view.blp:406
 msgid "Downloads/Month"
 msgstr "下载/月"
 
-#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:441
+#: src/bz-addons-dialog.blp:247 src/bz-full-view.blp:441
 msgid "Stopped Receiving Core Updates"
 msgstr "已停止接收核心更新"
 
-#: src/bz-addons-dialog.blp:243
+#: src/bz-addons-dialog.blp:261
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security "
 "fixes. It may become unsafe to use."
 msgstr ""
 "此附加组件使用的运行时已不再接收更新或安全修复。使用它可能存在安全隐患。"
 
-#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:602
+#: src/bz-addons-dialog.blp:346 src/bz-full-view.blp:602
 msgid "Other Sources"
 msgstr "其他来源"
 
@@ -547,129 +558,129 @@ msgstr "%s 适合 %s"
 msgid "%s • %s"
 msgstr "%s • %s"
 
-#: src/bz-app-permissions.c:160
+#: src/bz-app-permissions.c:175
 #, c-format
 msgid "System folder %s"
 msgstr "系统文件夹 %s"
 
-#: src/bz-app-permissions.c:162
+#: src/bz-app-permissions.c:177
 #, c-format
 msgid "Home subfolder %s"
 msgstr "主目录子文件夹 %s"
 
-#: src/bz-app-permissions.c:164
+#: src/bz-app-permissions.c:179
 msgid "Host system folders"
 msgstr "主机系统文件夹"
 
-#: src/bz-app-permissions.c:166
+#: src/bz-app-permissions.c:181
 msgid "Host system configuration from /etc"
 msgstr "来自 /etc 的主机系统配置"
 
-#: src/bz-app-permissions.c:169
+#: src/bz-app-permissions.c:184
 #, c-format
 msgid "Desktop subfolder %s"
 msgstr "桌面子文件夹 %s"
 
-#: src/bz-app-permissions.c:170
+#: src/bz-app-permissions.c:185
 msgid "Desktop folder"
 msgstr "桌面文件夹"
 
-#: src/bz-app-permissions.c:173
+#: src/bz-app-permissions.c:188
 #, c-format
 msgid "Documents subfolder %s"
 msgstr "文档子文件夹 %s"
 
-#: src/bz-app-permissions.c:174
+#: src/bz-app-permissions.c:189
 msgid "Documents folder"
 msgstr "文档文件夹"
 
-#: src/bz-app-permissions.c:177
+#: src/bz-app-permissions.c:192
 #, c-format
 msgid "Music subfolder %s"
 msgstr "音乐子文件夹 %s"
 
-#: src/bz-app-permissions.c:178
+#: src/bz-app-permissions.c:193
 msgid "Music folder"
 msgstr "音乐文件夹"
 
-#: src/bz-app-permissions.c:181
+#: src/bz-app-permissions.c:196
 #, c-format
 msgid "Pictures subfolder %s"
 msgstr "图片子文件夹 %s"
 
-#: src/bz-app-permissions.c:182
+#: src/bz-app-permissions.c:197
 msgid "Pictures folder"
 msgstr "图片文件夹"
 
-#: src/bz-app-permissions.c:185
+#: src/bz-app-permissions.c:200
 #, c-format
 msgid "Public Share subfolder %s"
 msgstr "共享子文件夹 %s"
 
-#: src/bz-app-permissions.c:186
+#: src/bz-app-permissions.c:201
 msgid "Public Share folder"
 msgstr "共享文件夹"
 
-#: src/bz-app-permissions.c:189
+#: src/bz-app-permissions.c:204
 #, c-format
 msgid "Videos subfolder %s"
 msgstr "视频子文件夹 %s"
 
-#: src/bz-app-permissions.c:190
+#: src/bz-app-permissions.c:205
 msgid "Videos folder"
 msgstr "视频文件夹"
 
-#: src/bz-app-permissions.c:193
+#: src/bz-app-permissions.c:208
 #, c-format
 msgid "Templates subfolder %s"
 msgstr "模板子文件夹 %s"
 
-#: src/bz-app-permissions.c:194
+#: src/bz-app-permissions.c:209
 msgid "Templates folder"
 msgstr "模板文件夹"
 
-#: src/bz-app-permissions.c:197
+#: src/bz-app-permissions.c:212
 #, c-format
 msgid "User cache subfolder %s"
 msgstr "用户缓存子文件夹 %s"
 
-#: src/bz-app-permissions.c:198
+#: src/bz-app-permissions.c:213
 msgid "User cache folder"
 msgstr "用户缓存文件夹"
 
-#: src/bz-app-permissions.c:201
+#: src/bz-app-permissions.c:216
 #, c-format
 msgid "User configuration subfolder %s"
 msgstr "用户配置子文件夹 %s"
 
-#: src/bz-app-permissions.c:202
+#: src/bz-app-permissions.c:217
 msgid "User configuration folder"
 msgstr "用户配置文件夹"
 
-#: src/bz-app-permissions.c:205
+#: src/bz-app-permissions.c:220
 #, c-format
 msgid "User data subfolder %s"
 msgstr "用户数据子文件夹 %s"
 
-#: src/bz-app-permissions.c:206
+#: src/bz-app-permissions.c:221
 msgid "User data folder"
 msgstr "用户数据文件夹"
 
-#: src/bz-app-permissions.c:209
+#: src/bz-app-permissions.c:224
 #, c-format
 msgid "User runtime subfolder %s"
 msgstr "用户运行时子文件夹 %s"
 
-#: src/bz-app-permissions.c:210
+#: src/bz-app-permissions.c:225
 msgid "User runtime folder"
 msgstr "用户运行时文件夹"
 
-#: src/bz-app-permissions.c:212
+#: src/bz-app-permissions.c:227
 #, c-format
 msgid "Filesystem access to %s"
 msgstr "对 %s 的文件系统访问"
 
-#: src/bz-app-permissions.c:214
+#: src/bz-app-permissions.c:229
 msgid "Unknown filesystem path"
 msgstr "未知文件系统路径"
 
@@ -731,36 +742,31 @@ msgstr "不可用"
 msgid "Storage"
 msgstr "存储"
 
-#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98
+#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98
 #: src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "已验证"
 
-#. Translators: As in 'The app is installed'.
-#: src/bz-app-tile.blp:87 src/bz-full-view.blp:282 src/bz-releases-list.c:204
-msgid "Installed"
-msgstr "已安装"
-
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:757
+#: src/bz-application.c:758
 msgid "translator-credits"
 msgstr ""
 "Shinsei <shinsei@anche.no>, 2025\n"
 "lumingzh <lumingzh@qq.com>, 2026"
 
-#: src/bz-application.c:767
+#: src/bz-application.c:768
 msgid "Special Thanks"
 msgstr "特别感谢"
 
-#: src/bz-application.c:825
+#: src/bz-application.c:826
 msgid "Logged Out Successfully!"
 msgstr "成功登出！"
 
-#: src/bz-application.c:1057
+#: src/bz-application.c:1058
 msgid "Notice for Ubuntu Users"
 msgstr "对 Ubuntu 用户的提示"
 
-#: src/bz-application.c:1060
+#: src/bz-application.c:1061
 msgid ""
 "Ubuntu 25.10 and newer have changed default security rules in a way that "
 "makes it <b>impossible to install apps</b> from the Flatpak version of "
@@ -773,8 +779,8 @@ msgid ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 msgstr ""
-"Ubuntu 25.10 和更新版本更改了默认的安全规则，使其通过 Flatpak 版本“集市”<b>无"
-"法安装应用</b>。在这期间，请使用 apt 软件包代替。安装命令：\n"
+"Ubuntu 25.10 和更新版本更改了默认的安全规则，使其通过 Flatpak 版本 Bazaar <b>"
+"无法安装应用</b>。在这期间，请使用 apt 软件包代替。安装命令：\n"
 "\n"
 "<tt>sudo apt install bazaar</tt>\n"
 "\n"
@@ -782,19 +788,19 @@ msgstr ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 
-#: src/bz-application.c:1068
+#: src/bz-application.c:1069
 msgid "Continue Anyway"
 msgstr "仍然继续"
 
-#: src/bz-application.c:1084
+#: src/bz-application.c:1085
 msgid "Performing setup…"
 msgstr "正在执行部署…"
 
-#: src/bz-application.c:1183
+#: src/bz-application.c:1184
 msgid "Set Up System Flathub?"
 msgstr "部署系统 Flathub 吗？"
 
-#: src/bz-application.c:1186
+#: src/bz-application.c:1187
 msgid ""
 "The system Flathub remote is not set up. Bazaar requires Flathub to be "
 "configured on the system Flatpak installation to browse and install "
@@ -802,79 +808,79 @@ msgid ""
 "\n"
 "You can still use Bazaar to browse and remove already installed apps."
 msgstr ""
-"未部署系统 Flathub 远程仓库。“集市”需要在系统级 Flatpak 安装中配置 Flathub 才"
-"能浏览和安装应用程序。\n"
+"未部署系统 Flathub 远程仓库。Bazaar 需要在系统级 Flatpak 安装中配置 Flathub "
+"才能浏览和安装应用程序。\n"
 "\n"
-"您仍然可以使用“集市”来浏览和移除已安装的应用。"
+"您仍然可以使用 Bazaar 来浏览和移除已安装的应用。"
 
-#: src/bz-application.c:1193
+#: src/bz-application.c:1194
 msgid "Set Up Flathub?"
 msgstr "部署 Flathub 吗？"
 
-#: src/bz-application.c:1196
+#: src/bz-application.c:1197
 msgid ""
 "Flathub is not set up on this system. You will not be able to browse and "
 "install applications in Bazaar if its unavailable.\n"
 "\n"
 "You can still use Bazaar to browse and remove already installed apps."
 msgstr ""
-"此系统未部署 Flathub。如果 Flathub 不可用，您将无法在“集市”中浏览和安装应用程"
-"序。\n"
+"此系统未部署 Flathub。如果 Flathub 不可用，您将无法在 Bazaar 中浏览和安装应用"
+"程序。\n"
 "\n"
-"您仍可使用“集市”浏览和移除已安装的应用。"
+"您仍可使用 Bazaar 浏览和移除已安装的应用。"
 
-#: src/bz-application.c:1202
+#: src/bz-application.c:1203
 msgid "Later"
 msgstr "稍后"
 
-#: src/bz-application.c:1203
+#: src/bz-application.c:1204
 msgid "Set Up Flathub"
 msgstr "部署 Flathub"
 
-#: src/bz-application.c:1723
+#: src/bz-application.c:1724
 msgid "A backend error occurred"
 msgstr "发生后端错误"
 
-#: src/bz-application.c:1930 src/bz-application.c:4251
+#: src/bz-application.c:1931 src/bz-application.c:4271
 msgid "Refreshing…"
 msgstr "正在刷新…"
 
-#: src/bz-application.c:2089
+#: src/bz-application.c:2090
 #, c-format
 msgid "Loading %d apps…"
 msgstr "正在加载 %d 应用…"
 
-#: src/bz-application.c:2148 src/bz-application.c:2225
+#: src/bz-application.c:2149 src/bz-application.c:2226
 msgid "Failed to open file"
 msgstr "打开文件失败"
 
-#: src/bz-application.c:2239
+#: src/bz-application.c:2240
 msgid "Failed to load metainfo"
 msgstr "加载元信息失败"
 
-#: src/bz-application.c:2362
+#: src/bz-application.c:2363
 msgid "An initialization error occurred"
 msgstr "发生初始化错误"
 
-#: src/bz-application.c:2770
+#: src/bz-application.c:2771
 msgid "Checking for updates…"
 msgstr "正在检查更新…"
 
-#: src/bz-application.c:2826
+#: src/bz-application.c:2846
 msgid "Failed to check for updates"
 msgstr "检查更新失败"
 
-#: src/bz-application.c:4028
+#: src/bz-application.c:4048
 msgid "Could not find app"
 msgstr "无法找到应用"
 
-#: src/bz-application.c:4248
+#: src/bz-application.c:4268
 #, c-format
 msgid "Loading %d app…"
 msgid_plural "Loading %d apps…"
 msgstr[0] "正在加载 %d 个应用…"
 
-#: src/bz-application.c:4253
+#: src/bz-application.c:4273
 msgid "Writing to cache…"
 msgstr "正在写入缓存…"
 
@@ -949,7 +955,7 @@ msgid ""
 "\n"
 "Only add this source if you're sure you trust it."
 msgstr ""
-"安装此应用可能需要添加新的软件源。其他来自此软件源的应用将会显示在“集市”"
+"安装此应用可能需要添加新的软件源。其他来自此软件源的应用将会显示在 Bazaar "
 "中。\n"
 "\n"
 "请仅在您信任它的情况下添加此软件源。"
@@ -1070,7 +1076,7 @@ msgstr "%s 应用 ID 的所有权已通过验证。"
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: src/bz-donations-dialog.blp:8
 msgid "Bazaar Release"
-msgstr "集市发布"
+msgstr "Bazaar 发布"
 
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
@@ -1086,12 +1092,12 @@ msgid ""
 "I love making Bazaar, but I cannot do it alone. Help support further "
 "development by donating on Ko-Fi."
 msgstr ""
-"我热爱开发“集市”，但我一个人的力量有限。请考虑在 Ko-Fi 捐助以支持后续开发。"
+"我热爱开发 Bazaar，但我一个人的力量有限。请考虑在 Ko-Fi 捐助以支持后续开发。"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: src/bz-donations-dialog.blp:137
 msgid "Donate to Bazaar"
-msgstr "向集市捐助"
+msgstr "向 Bazaar 捐助"
 
 #. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
 #: src/bz-donations-dialog.c:227
@@ -1133,15 +1139,15 @@ msgstr "已复制！"
 msgid "Favorite Count"
 msgstr "收藏计数"
 
-#: src/bz-favorite-button.c:388
+#: src/bz-favorite-button.c:391
 msgid "Failed to update favorite"
 msgstr "更新收藏失败"
 
-#: src/bz-favorite-button.c:434
+#: src/bz-favorite-button.c:438
 msgid "Log in with Flathub to manage favorites"
 msgstr "登录 Flathub 以管理收藏项目"
 
-#: src/bz-favorite-button.c:440
+#: src/bz-favorite-button.c:444
 msgid "Log In"
 msgstr "登录"
 
@@ -1867,8 +1873,8 @@ msgstr "卸载应用程序"
 msgid "_Remove"
 msgstr "移除(_R)"
 
-#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168
-#: src/bz-updates-card.c:187
+#: src/bz-install-controls.blp:114 src/bz-updates-card.vala:178
+#: src/bz-updates-card.vala:201
 msgid "Update"
 msgstr "更新"
 
@@ -1876,12 +1882,12 @@ msgstr "更新"
 msgid "Remove"
 msgstr "移除"
 
-#: src/bz-install-controls.c:669
+#: src/bz-install-controls.c:672
 #, c-format
 msgid "Install %s from %s"
 msgstr "从 %2$s 安装 %1$s"
 
-#: src/bz-install-controls.c:671
+#: src/bz-install-controls.c:674
 #, c-format
 msgid "Install %s"
 msgstr "安装 %s"
@@ -1949,7 +1955,7 @@ msgstr "大小"
 msgid "No matches found for \"%s\" in the list of installed apps"
 msgstr "在已安装应用列表中未找到“%s”的匹配项"
 
-#: src/bz-library-page.c:194 src/bz-updates-card.c:437
+#: src/bz-library-page.c:194 src/bz-updates-card.vala:51
 #, c-format
 msgid "%u Available Update"
 msgid_plural "%u Available Updates"
@@ -2092,6 +2098,25 @@ msgstr "选择图标"
 #: src/bz-metainfo-preview.c:166
 msgid "Image Files"
 msgstr "图像文件"
+
+#: src/bz-new-permissions-dialog.vala:30
+msgid "New Permissions"
+msgstr "新权限"
+
+#: src/bz-new-permissions-dialog.vala:51
+msgid "_Accept"
+msgstr "接受(_A)"
+
+#: src/bz-new-permissions-dialog.vala:103
+#, c-format
+msgid "New Permission for %s"
+msgid_plural "New Permissions for %s"
+msgstr[0] "%s 的新权限"
+
+#: src/bz-new-permissions-dialog.vala:108
+msgid "This update requires the following additional permission"
+msgid_plural "This update requires the following additional permissions"
+msgstr[0] "此更新需要下列附加权限"
 
 #: src/bz-other-sources-list.vala:52
 msgid "User"
@@ -2288,9 +2313,9 @@ msgstr "中性骄傲色"
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: src/bz-preferences-dialog.c:286
 msgid "Bazaar needs to run in the background to check for app updates"
-msgstr "“集市”需要后台运行以检查应用更新"
+msgstr "Bazaar 需要后台运行以检查应用更新"
 
-#: src/bz-releases-dialog.blp:5 src/bz-updates-card.c:159
+#: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "版本历史"
 
@@ -2365,7 +2390,7 @@ msgid "Get"
 msgstr "获取"
 
 #: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322
-#: src/safety-calculator.c:161
+#: src/safety-calculator.c:158
 msgid "Arbitrary Permissions"
 msgstr "任意权限"
 
@@ -2871,7 +2896,11 @@ msgstr "待处理"
 msgid "_Update All"
 msgstr "全部更新(_U)"
 
-#: src/bz-updates-card.c:215
+#: src/bz-updates-card.vala:159
+msgid "This update requests new permissions"
+msgstr "此更新请求新的权限"
+
+#: src/bz-updates-card.vala:199
 #, c-format
 msgid "%u Runtime Update"
 msgid_plural "%u Runtime Updates"
@@ -2948,7 +2977,7 @@ msgstr "主菜单"
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: src/bz-window.blp:235
 msgid "You are running a new version of Bazaar!"
-msgstr "您正在运行新版本的“集市”！"
+msgstr "您正在运行新版本的 Bazaar！"
 
 #: src/bz-window.blp:236
 msgid "See What's New"
@@ -2966,7 +2995,7 @@ msgstr "正在使用数据网络 — 已禁用自动刷新"
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: src/bz-window.blp:291
 msgid "_Donate to Bazaar"
-msgstr "向集市捐助(_D)"
+msgstr "向 Bazaar 捐助(_D)"
 
 #: src/bz-window.blp:297
 msgid "_Refresh"
@@ -2991,37 +3020,37 @@ msgstr "键盘快捷键(_K)"
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: src/bz-window.blp:324
 msgid "_About Bazaar"
-msgstr "关于集市(_A)"
+msgstr "关于 Bazaar(_A)"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: src/bz-window.blp:331
 msgid "_Quit Bazaar"
-msgstr "退出集市(_Q)"
+msgstr "退出 Bazaar(_Q)"
 
 #: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "登出"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:385
+#: src/bz-window.c:441
 #, c-format
 msgid "Bazaar — %s"
-msgstr "集市 — %s"
+msgstr "Bazaar — %s"
 
-#: src/bz-window.c:665 src/bz-window.c:714
+#: src/bz-window.c:721 src/bz-window.c:770
 msgid "Failed to launch application"
 msgstr "启动应用程序失败"
 
-#: src/bz-window.c:793
+#: src/bz-window.c:849
 msgid "Could not open link"
 msgstr "无法打开链接"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1002
+#: src/bz-window.c:1058
 msgid "You can't remove Bazaar from Bazaar!"
-msgstr "您无法从“集市”移除“集市”！"
+msgstr "您无法从 Bazaar 移除 Bazaar！"
 
-#: src/bz-window.c:1386 src/bz-window.c:1420
+#: src/bz-window.c:1442 src/bz-window.c:1476
 msgid "Can't do that right now!"
 msgstr "无法立刻那么做！"
 
@@ -3051,10 +3080,6 @@ msgstr "过去 30 天内下载 %d 次"
 #, c-format
 msgid "+%s Runtime"
 msgstr "+%s 运行时"
-
-#: src/context-tile-callbacks.c:142
-msgid "Download"
-msgstr "下载"
 
 #: src/context-tile-callbacks.c:151 src/context-tile-callbacks.c:163
 msgid "Size information unavailable"
@@ -3141,302 +3166,302 @@ msgstr "中风险"
 msgid "High Risk"
 msgstr "高风险"
 
-#: src/safety-calculator.c:87
+#: src/safety-calculator.c:80
 msgid "Unknown Permissions"
 msgstr "未知权限"
 
-#: src/safety-calculator.c:88
+#: src/safety-calculator.c:81
 msgid "Permissions are missing for this app."
 msgstr "此应用缺少权限信息。"
 
-#: src/safety-calculator.c:101
+#: src/safety-calculator.c:95
 msgid "No Permissions"
 msgstr "无需权限"
 
-#: src/safety-calculator.c:102
+#: src/safety-calculator.c:96
 msgid "App is fully sandboxed"
 msgstr "应用已完全沙盒化"
 
-#: src/safety-calculator.c:108
+#: src/safety-calculator.c:103
 msgid "Network Access"
 msgstr "网络访问"
 
-#: src/safety-calculator.c:109
+#: src/safety-calculator.c:104
 msgid "Can access the internet"
 msgstr "可以访问互联网"
 
-#: src/safety-calculator.c:111
+#: src/safety-calculator.c:106
 msgid "No Network Access"
 msgstr "无网络访问"
 
-#: src/safety-calculator.c:112
+#: src/safety-calculator.c:107
 msgid "Cannot access the internet"
 msgstr "不能访问互联网"
 
-#: src/safety-calculator.c:117
+#: src/safety-calculator.c:114
 msgid "User Device Access"
 msgstr "用户设备访问"
 
-#: src/safety-calculator.c:118
+#: src/safety-calculator.c:115
 msgid "Can access devices such as webcams or gaming controllers"
 msgstr "可以访问网络摄像头或游戏控制器等设备"
 
-#: src/safety-calculator.c:120
+#: src/safety-calculator.c:117
 msgid "No User Device Access"
 msgstr "无用户设备访问"
 
-#: src/safety-calculator.c:121
+#: src/safety-calculator.c:118
 msgid "Cannot access devices such as webcams or gaming controllers"
 msgstr "不能访问网络摄像头或游戏控制器等设备"
 
-#: src/safety-calculator.c:126
+#: src/safety-calculator.c:123
 msgid "Input Device Access"
 msgstr "输入设备访问"
 
-#: src/safety-calculator.c:127
+#: src/safety-calculator.c:124
 msgid "Can access input devices"
 msgstr "可以访问输入设备"
 
-#: src/safety-calculator.c:133
+#: src/safety-calculator.c:130
 msgid "Microphone Access and Audio Playback"
 msgstr "麦克风访问和音频播放"
 
-#: src/safety-calculator.c:134
+#: src/safety-calculator.c:131
 msgid "Can listen using microphones and play audio without asking permission"
 msgstr "无需请求权限即可监听麦克风和播放音频"
 
-#: src/safety-calculator.c:140
+#: src/safety-calculator.c:137
 msgid "System Device Access"
 msgstr "系统设备访问"
 
-#: src/safety-calculator.c:141
+#: src/safety-calculator.c:138
 msgid "Can access system devices which require elevated permissions"
 msgstr "可以访问需要提升权限的系统设备"
 
-#: src/safety-calculator.c:147
+#: src/safety-calculator.c:144
 msgid "Screen Contents Access"
 msgstr "屏幕内容访问"
 
-#: src/safety-calculator.c:148
+#: src/safety-calculator.c:145
 msgid "Can access the contents of the screen or other windows"
 msgstr "可以访问屏幕或其他窗口的内容"
 
-#: src/safety-calculator.c:154
+#: src/safety-calculator.c:151
 msgid "Legacy Windowing System"
 msgstr "过时窗口系统"
 
-#: src/safety-calculator.c:155
+#: src/safety-calculator.c:152
 msgid "Always uses a legacy windowing system (X11)"
 msgstr "总是使用过时的窗口系统（X11）"
 
-#: src/safety-calculator.c:162
+#: src/safety-calculator.c:159
 msgid "Can acquire arbitrary permissions"
 msgstr "可获取任意权限"
 
-#: src/safety-calculator.c:168
+#: src/safety-calculator.c:165
 msgid "User Settings"
 msgstr "用户设置"
 
-#: src/safety-calculator.c:169
+#: src/safety-calculator.c:166
 msgid "Can access and change user settings"
 msgstr "可访问和更改用户设置"
 
-#: src/safety-calculator.c:175
+#: src/safety-calculator.c:172
 msgid "Full File System Read/Write Access"
 msgstr "完全的文件系统读写权限"
 
-#: src/safety-calculator.c:176
+#: src/safety-calculator.c:173
 msgid "Can read and write all data on the file system"
 msgstr "可以读写文件系统上的所有数据"
 
-#: src/safety-calculator.c:183
+#: src/safety-calculator.c:180
 msgid "Home Folder Read/Write Access"
 msgstr "主目录读写权限"
 
-#: src/safety-calculator.c:184
+#: src/safety-calculator.c:181
 msgid "Can read and write all data in your home directory"
 msgstr "可以读写您的用户主目录中的所有数据"
 
-#: src/safety-calculator.c:191
+#: src/safety-calculator.c:188
 msgid "Full File System Read Access"
 msgstr "完全的文件系统读取权限"
 
-#: src/safety-calculator.c:192
+#: src/safety-calculator.c:189
 msgid "Can read all data on the file system"
 msgstr "可以读取文件系统上的所有数据"
 
-#: src/safety-calculator.c:200
+#: src/safety-calculator.c:197
 msgid "Home Folder Read Access"
 msgstr "主目录读取权限"
 
-#: src/safety-calculator.c:201
+#: src/safety-calculator.c:198
 msgid "Can read all data in your home directory"
 msgstr "可以读取您的用户主目录中的所有数据"
 
-#: src/safety-calculator.c:209
+#: src/safety-calculator.c:206
 msgid "Download Folder Read/Write Access"
 msgstr "下载文件夹读写权限"
 
-#: src/safety-calculator.c:210
+#: src/safety-calculator.c:207
 msgid "Can read and write all data in your downloads directory"
 msgstr "可以读写您的下载文件夹中的所有数据"
 
-#: src/safety-calculator.c:220
+#: src/safety-calculator.c:217
 msgid "Download Folder Read Access"
 msgstr "下载文件夹读取权限"
 
-#: src/safety-calculator.c:221
+#: src/safety-calculator.c:218
 msgid "Can read all data in your downloads directory"
 msgstr "可以读取您的下载文件夹中的所有数据"
 
-#: src/safety-calculator.c:242
+#: src/safety-calculator.c:235
 msgid "Can read and write all data in the directory"
 msgstr "可以读写目录中的所有数据"
 
-#: src/safety-calculator.c:266
+#: src/safety-calculator.c:255
 msgid "Can read all data in the directory"
 msgstr "可以读取目录中的所有数据"
 
-#: src/safety-calculator.c:281
+#: src/safety-calculator.c:271
 msgid "No File System Access"
 msgstr "无文件系统访问"
 
-#: src/safety-calculator.c:282
+#: src/safety-calculator.c:272
 msgid "Cannot access the file system at all"
 msgstr "完全无法访问文件系统"
 
-#: src/safety-calculator.c:289
+#: src/safety-calculator.c:279
 msgid "Uses System Services"
 msgstr "使用系统服务"
 
-#: src/safety-calculator.c:290
+#: src/safety-calculator.c:280
 msgid "Can request data from non-portal system services"
 msgstr "可以从非门户系统服务请求数据"
 
-#: src/safety-calculator.c:296
+#: src/safety-calculator.c:286
 msgid "Uses Session Services"
 msgstr "使用会话服务"
 
-#: src/safety-calculator.c:297
+#: src/safety-calculator.c:287
 msgid "Can request data from non-portal session services"
 msgstr "可以从非门户会话服务请求数据"
 
-#: src/safety-calculator.c:345
+#: src/safety-calculator.c:332
 msgid "No Service Access"
 msgstr "无服务访问"
 
-#: src/safety-calculator.c:346
+#: src/safety-calculator.c:333
 msgid "Cannot access non-portal session or system services at all"
 msgstr "完全无法访问非门户会话或系统服务"
 
-#: src/safety-calculator.c:354
+#: src/safety-calculator.c:372
 msgid "Verified App Developer"
 msgstr "应用开发者已验证"
 
-#: src/safety-calculator.c:355
+#: src/safety-calculator.c:373
 msgid "The developer of this app has been verified to be who they say they are"
 msgstr "此应用的开发者已经被验证为他们所声称的人"
 
-#: src/safety-calculator.c:364
+#: src/safety-calculator.c:382
 msgid "Proprietary Code"
 msgstr "专有代码"
 
-#: src/safety-calculator.c:365
+#: src/safety-calculator.c:383
 msgid ""
 "The source code is not public, so it cannot be independently audited and "
 "might be unsafe"
 msgstr "源代码不是公开的，所以它不能被独立地审计且可能不安全"
 
-#: src/safety-calculator.c:375
+#: src/safety-calculator.c:393
 msgid "Auditable Code"
 msgstr "可审计代码"
 
-#: src/safety-calculator.c:376
+#: src/safety-calculator.c:394
 msgid ""
 "The source code is public and can be independently audited, which makes the "
 "app more likely to be safe"
 msgstr "源代码是公开的且可以被独立地审计，这使得应用可以更安全"
 
-#: src/safety-calculator.c:516
+#: src/safety-calculator.c:532
 #, c-format
 msgid "Use the %s System Service"
 msgstr "使用 %s 系统服务"
 
-#: src/safety-calculator.c:520
+#: src/safety-calculator.c:536
 #, c-format
 msgid "Use the %s Session Service"
 msgstr "使用 %s 会话服务"
 
-#: src/safety-calculator.c:524
+#: src/safety-calculator.c:540
 #, c-format
 msgid "Use the %s Service"
 msgstr "使用 %s 服务"
 
-#: src/safety-calculator.c:534
+#: src/safety-calculator.c:550
 msgid "Can see the non-portal service"
 msgstr "可以查看非门户服务"
 
-#: src/safety-calculator.c:536
+#: src/safety-calculator.c:552
 msgid "Can talk to the non-portal service"
 msgstr "可以沟通非门户服务"
 
-#: src/safety-calculator.c:538
+#: src/safety-calculator.c:554
 msgid "Can own the non-portal service"
 msgstr "可以拥有非门户服务"
 
-#: src/safety-calculator.c:553
+#: src/safety-calculator.c:569
 msgid "Global Menu Integration"
 msgstr "全局菜单集成"
 
-#: src/safety-calculator.c:554
+#: src/safety-calculator.c:570
 msgid "Can display its menus in a global menu bar"
 msgstr "可在全局菜单栏中显示其菜单"
 
-#: src/safety-calculator.c:559
+#: src/safety-calculator.c:575
 msgid "KDE Settings Integration"
 msgstr "KDE 设置集成"
 
-#: src/safety-calculator.c:560
+#: src/safety-calculator.c:576
 msgid "Can detect when KDE desktop settings change"
 msgstr "可检测 KDE 桌面设置何时发生更改"
 
-#: src/safety-calculator.c:565
+#: src/safety-calculator.c:581
 msgid "KDE Global Settings"
 msgstr "KDE 全局设置"
 
-#: src/safety-calculator.c:566
+#: src/safety-calculator.c:582
 msgid "Can read KDE desktop preferences like fonts and colors"
 msgstr "可读取如字体和配色等 KDE 桌面首选项"
 
-#: src/safety-calculator.c:571
+#: src/safety-calculator.c:587
 msgid "Secret Storage Service"
 msgstr "保密存储服务"
 
-#: src/safety-calculator.c:572
+#: src/safety-calculator.c:588
 msgid "Can store and retrieve its own passwords using the system keyring"
 msgstr "可使用系统密钥串存储和获取自身密码"
 
-#: src/safety-calculator.c:577
+#: src/safety-calculator.c:593
 msgid "Desktop Notifications Service"
 msgstr "桌面通知服务"
 
-#: src/safety-calculator.c:578
+#: src/safety-calculator.c:594
 msgid "Can send desktop notifications"
 msgstr "可以发送桌面通知"
 
-#: src/safety-calculator.c:584
+#: src/safety-calculator.c:600
 msgid "System Tray Integration"
 msgstr "系统托盘集成"
 
-#: src/safety-calculator.c:585
+#: src/safety-calculator.c:601
 msgid "Can display an icon in the system tray"
 msgstr "可在系统托盘中显示图标"
 
-#: src/safety-calculator.c:590
+#: src/safety-calculator.c:606
 msgid "KDE Connect Integration"
 msgstr "KDE Connect 集成"
 
-#: src/safety-calculator.c:591
+#: src/safety-calculator.c:607
 msgid "Can interact with devices paired via KDE Connect"
 msgstr "可与通过 KDE Connect 配对的设备进行交互"
 
@@ -3493,7 +3518,7 @@ msgstr "关闭窗口"
 #: src/shortcuts-dialog.blp:52
 msgctxt "shortcut window"
 msgid "Quit Bazaar"
-msgstr "退出集市"
+msgstr "退出 Bazaar"
 
 #: src/transaction-notification.c:133
 #, c-format
