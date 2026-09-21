@@ -49,13 +49,11 @@ lookup_well_known_bus_policy (const char  *bus_name,
                               const char **out_description);
 
 GListModel *
-bz_safety_calculator_analyze_entry (BzEntry *entry)
+bz_safety_calculator_analyze_permissions (BzAppPermissions *permissions,
+                                          gboolean          include_no_access_rows)
 {
   GListStore               *store           = NULL;
-  BzAppPermissions         *permissions     = NULL;
   BzAppPermissionsFlags     perm_flags      = BZ_APP_PERMISSIONS_FLAGS_NONE;
-  gboolean                  is_verified     = FALSE;
-  gboolean                  is_foss         = FALSE;
   const GPtrArray          *filesystem_read = NULL;
   const GPtrArray          *filesystem_full = NULL;
   const BzBusPolicy *const *bus_policies    = NULL;
@@ -64,13 +62,8 @@ bz_safety_calculator_analyze_entry (BzEntry *entry)
   BzImportance              fs_importance   = BZ_IMPORTANCE_WARNING;
   guint                     i               = 0;
 
-  g_return_val_if_fail (BZ_IS_ENTRY (entry), NULL);
+  store = g_list_store_new (BZ_TYPE_SAFETY_ROW);
 
-  store       = g_list_store_new (BZ_TYPE_SAFETY_ROW);
-  is_verified = bz_entry_is_verified (entry);
-  is_foss     = bz_entry_get_is_foss (entry);
-
-  g_object_get (entry, "permissions", &permissions, NULL);
   if (permissions != NULL)
     perm_flags = bz_app_permissions_get_flags (permissions);
 
@@ -87,264 +80,289 @@ bz_safety_calculator_analyze_entry (BzEntry *entry)
                              _ ("Unknown Permissions"),
                              _ ("Permissions are missing for this app."),
                              NULL, NULL, NULL);
+      return G_LIST_MODEL (store);
     }
-  else
+
+  filesystem_read = bz_app_permissions_get_filesystem_read (permissions);
+  filesystem_full = bz_app_permissions_get_filesystem_full (permissions);
+  bus_policies    = bz_app_permissions_get_bus_policies (permissions, &n_bus_policies);
+
+  if (include_no_access_rows)
+    add_row_if_permission (store,
+                           bz_app_permissions_is_empty (permissions),
+                           BZ_IMPORTANCE_UNIMPORTANT,
+                           "permissions-sandboxed-symbolic",
+                           _ ("No Permissions"),
+                           _ ("App is fully sandboxed"),
+                           NULL, NULL, NULL);
+  if (include_no_access_rows)
+    add_row_if_permission (store,
+                           (perm_flags & BZ_APP_PERMISSIONS_FLAGS_NETWORK) != 0,
+                           BZ_IMPORTANCE_INFORMATION,
+                           "network-wireless-symbolic",
+                           _ ("Network Access"),
+                           _ ("Can access the internet"),
+                           "network-wireless-disabled-symbolic",
+                           _ ("No Network Access"),
+                           _ ("Cannot access the internet"));
+
+  if ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_DEVICES) || include_no_access_rows)
+    add_row_if_permission (store,
+                           (perm_flags & BZ_APP_PERMISSIONS_FLAGS_DEVICES) != 0,
+                           (perm_flags & BZ_APP_PERMISSIONS_FLAGS_NETWORK) ? BZ_IMPORTANCE_WARNING : BZ_IMPORTANCE_INFORMATION,
+                           "camera-photo-symbolic",
+                           _ ("User Device Access"),
+                           _ ("Can access devices such as webcams or gaming controllers"),
+                           "camera-disabled-symbolic",
+                           _ ("No User Device Access"),
+                           _ ("Cannot access devices such as webcams or gaming controllers"));
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_INPUT_DEVICES) != 0,
+                         BZ_IMPORTANCE_INFORMATION,
+                         "input-keyboard-symbolic",
+                         _ ("Input Device Access"),
+                         _ ("Can access input devices"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_AUDIO_DEVICES) != 0,
+                         BZ_IMPORTANCE_INFORMATION,
+                         "permissions-microphone-symbolic",
+                         _ ("Microphone Access and Audio Playback"),
+                         _ ("Can listen using microphones and play audio without asking permission"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SYSTEM_DEVICES) != 0,
+                         BZ_IMPORTANCE_WARNING,
+                         "permissions-system-devices-symbolic",
+                         _ ("System Device Access"),
+                         _ ("Can access system devices which require elevated permissions"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SCREEN) != 0,
+                         BZ_IMPORTANCE_WARNING,
+                         "permissions-screen-contents-symbolic",
+                         _ ("Screen Contents Access"),
+                         _ ("Can access the contents of the screen or other windows"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_X11) != 0,
+                         BZ_IMPORTANCE_IMPORTANT,
+                         "permissions-legacy-windowing-system-symbolic",
+                         _ ("Legacy Windowing System"),
+                         _ ("Always uses a legacy windowing system (X11)"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_ESCAPE_SANDBOX) != 0,
+                         BZ_IMPORTANCE_IMPORTANT,
+                         "earth-symbolic",
+                         _ ("Arbitrary Permissions"),
+                         _ ("Can acquire arbitrary permissions"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SETTINGS) != 0,
+                         BZ_IMPORTANCE_WARNING,
+                         "emblem-system-symbolic",
+                         _ ("User Settings"),
+                         _ ("Can access and change user settings"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL) != 0,
+                         BZ_IMPORTANCE_IMPORTANT,
+                         "drive-harddisk-symbolic",
+                         _ ("Full File System Read/Write Access"),
+                         _ ("Can read and write all data on the file system"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_HOME_FULL) != 0 &&
+                          !(perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL)),
+                         BZ_IMPORTANCE_IMPORTANT,
+                         "user-home-symbolic",
+                         _ ("Home Folder Read/Write Access"),
+                         _ ("Can read and write all data in your home directory"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ) != 0 &&
+                          !(perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL)),
+                         BZ_IMPORTANCE_IMPORTANT,
+                         "folder-symbolic",
+                         _ ("Full File System Read Access"),
+                         _ ("Can read all data on the file system"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_HOME_READ) != 0 &&
+                          !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL |
+                                          BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ))),
+                         BZ_IMPORTANCE_IMPORTANT,
+                         "user-home-symbolic",
+                         _ ("Home Folder Read Access"),
+                         _ ("Can read all data in your home directory"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_DOWNLOADS_FULL) != 0 &&
+                          !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL |
+                                          BZ_APP_PERMISSIONS_FLAGS_HOME_FULL))),
+                         fs_importance,
+                         "folder-download-symbolic",
+                         _ ("Download Folder Read/Write Access"),
+                         _ ("Can read and write all data in your downloads directory"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_DOWNLOADS_READ) != 0 &&
+                          !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL |
+                                          BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ |
+                                          BZ_APP_PERMISSIONS_FLAGS_HOME_FULL |
+                                          BZ_APP_PERMISSIONS_FLAGS_HOME_READ))),
+                         fs_importance,
+                         "folder-download-symbolic",
+                         _ ("Download Folder Read Access"),
+                         _ ("Can read all data in your downloads directory"),
+                         NULL, NULL, NULL);
+
+  for (i = 0; filesystem_full != NULL && i < filesystem_full->len; i++)
     {
-      filesystem_read = bz_app_permissions_get_filesystem_read (permissions);
-      filesystem_full = bz_app_permissions_get_filesystem_full (permissions);
-      bus_policies    = bz_app_permissions_get_bus_policies (permissions, &n_bus_policies);
+      const BzFilesystemPath *path     = g_ptr_array_index (filesystem_full, i);
+      g_autofree char        *fs_title = bz_filesystem_path_to_display_string (path);
+      const char             *fs_icon  = bz_filesystem_path_to_icon_name (path);
 
-      add_row_if_permission (store,
-                             bz_app_permissions_is_empty (permissions),
-                             BZ_IMPORTANCE_UNIMPORTANT,
-                             "permissions-sandboxed-symbolic",
-                             _ ("No Permissions"),
-                             _ ("App is fully sandboxed"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_NETWORK) != 0,
-                             BZ_IMPORTANCE_INFORMATION,
-                             "network-wireless-symbolic",
-                             _ ("Network Access"),
-                             _ ("Can access the internet"),
-                             "network-wireless-disabled-symbolic",
-                             _ ("No Network Access"),
-                             _ ("Cannot access the internet"));
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_DEVICES) != 0,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_NETWORK) ? BZ_IMPORTANCE_WARNING : BZ_IMPORTANCE_INFORMATION,
-                             "camera-photo-symbolic",
-                             _ ("User Device Access"),
-                             _ ("Can access devices such as webcams or gaming controllers"),
-                             "camera-disabled-symbolic",
-                             _ ("No User Device Access"),
-                             _ ("Cannot access devices such as webcams or gaming controllers"));
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_INPUT_DEVICES) != 0,
-                             BZ_IMPORTANCE_INFORMATION,
-                             "input-keyboard-symbolic",
-                             _ ("Input Device Access"),
-                             _ ("Can access input devices"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_AUDIO_DEVICES) != 0,
-                             BZ_IMPORTANCE_INFORMATION,
-                             "permissions-microphone-symbolic",
-                             _ ("Microphone Access and Audio Playback"),
-                             _ ("Can listen using microphones and play audio without asking permission"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SYSTEM_DEVICES) != 0,
-                             BZ_IMPORTANCE_WARNING,
-                             "permissions-system-devices-symbolic",
-                             _ ("System Device Access"),
-                             _ ("Can access system devices which require elevated permissions"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SCREEN) != 0,
-                             BZ_IMPORTANCE_WARNING,
-                             "permissions-screen-contents-symbolic",
-                             _ ("Screen Contents Access"),
-                             _ ("Can access the contents of the screen or other windows"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_X11) != 0,
-                             BZ_IMPORTANCE_IMPORTANT,
-                             "permissions-legacy-windowing-system-symbolic",
-                             _ ("Legacy Windowing System"),
-                             _ ("Always uses a legacy windowing system (X11)"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_ESCAPE_SANDBOX) != 0,
-                             BZ_IMPORTANCE_IMPORTANT,
-                             "earth-symbolic",
-                             _ ("Arbitrary Permissions"),
-                             _ ("Can acquire arbitrary permissions"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SETTINGS) != 0,
-                             BZ_IMPORTANCE_WARNING,
-                             "emblem-system-symbolic",
-                             _ ("User Settings"),
-                             _ ("Can access and change user settings"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL) != 0,
-                             BZ_IMPORTANCE_IMPORTANT,
-                             "drive-harddisk-symbolic",
-                             _ ("Full File System Read/Write Access"),
-                             _ ("Can read and write all data on the file system"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_HOME_FULL) != 0 &&
-                              !(perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL)),
-                             BZ_IMPORTANCE_IMPORTANT,
-                             "user-home-symbolic",
-                             _ ("Home Folder Read/Write Access"),
-                             _ ("Can read and write all data in your home directory"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ) != 0 &&
-                              !(perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL)),
-                             BZ_IMPORTANCE_IMPORTANT,
-                             "folder-symbolic",
-                             _ ("Full File System Read Access"),
-                             _ ("Can read all data on the file system"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_HOME_READ) != 0 &&
-                              !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL |
-                                              BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ))),
-                             BZ_IMPORTANCE_IMPORTANT,
-                             "user-home-symbolic",
-                             _ ("Home Folder Read Access"),
-                             _ ("Can read all data in your home directory"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_DOWNLOADS_FULL) != 0 &&
-                              !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL |
-                                              BZ_APP_PERMISSIONS_FLAGS_HOME_FULL))),
-                             fs_importance,
-                             "folder-download-symbolic",
-                             _ ("Download Folder Read/Write Access"),
-                             _ ("Can read and write all data in your downloads directory"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_DOWNLOADS_READ) != 0 &&
-                              !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL |
-                                              BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ |
-                                              BZ_APP_PERMISSIONS_FLAGS_HOME_FULL |
-                                              BZ_APP_PERMISSIONS_FLAGS_HOME_READ))),
-                             fs_importance,
-                             "folder-download-symbolic",
-                             _ ("Download Folder Read Access"),
-                             _ ("Can read all data in your downloads directory"),
-                             NULL, NULL, NULL);
+      if (perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL)
+        continue;
 
-      for (i = 0; filesystem_full != NULL && i < filesystem_full->len; i++)
+      if ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_HOME_FULL) &&
+          path->type == BZ_FILESYSTEM_PATH_HOME_SUBDIR)
+        continue;
+
+      add_row_if_permission (store, TRUE, fs_importance, fs_icon, fs_title,
+                             _ ("Can read and write all data in the directory"),
+                             NULL, NULL, NULL);
+    }
+
+  for (i = 0; filesystem_read != NULL && i < filesystem_read->len; i++)
+    {
+      const BzFilesystemPath *path     = g_ptr_array_index (filesystem_read, i);
+      g_autofree char        *fs_title = bz_filesystem_path_to_display_string (path);
+      const char             *fs_icon  = bz_filesystem_path_to_icon_name (path);
+
+      if (perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL)
+        continue;
+
+      if ((perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ |
+                         BZ_APP_PERMISSIONS_FLAGS_HOME_FULL |
+                         BZ_APP_PERMISSIONS_FLAGS_HOME_READ)) &&
+          path->type == BZ_FILESYSTEM_PATH_HOME_SUBDIR)
+        continue;
+
+      add_row_if_permission (store, TRUE, fs_importance, fs_icon, fs_title,
+                             _ ("Can read all data in the directory"),
+                             NULL, NULL, NULL);
+    }
+
+  if (include_no_access_rows)
+    add_row_if_permission (store,
+                           !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL |
+                                           BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ |
+                                           BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_OTHER |
+                                           BZ_APP_PERMISSIONS_FLAGS_HOME_FULL |
+                                           BZ_APP_PERMISSIONS_FLAGS_HOME_READ |
+                                           BZ_APP_PERMISSIONS_FLAGS_DOWNLOADS_FULL |
+                                           BZ_APP_PERMISSIONS_FLAGS_DOWNLOADS_READ)) &&
+                               filesystem_read == NULL && filesystem_full == NULL,
+                           BZ_IMPORTANCE_UNIMPORTANT,
+                           "folder-symbolic",
+                           _ ("No File System Access"),
+                           _ ("Cannot access the file system at all"),
+                           NULL, NULL, NULL);
+
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SYSTEM_BUS) != 0,
+                         BZ_IMPORTANCE_WARNING,
+                         "emblem-system-symbolic",
+                         _ ("Uses System Services"),
+                         _ ("Can request data from non-portal system services"),
+                         NULL, NULL, NULL);
+  add_row_if_permission (store,
+                         (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SESSION_BUS) != 0,
+                         BZ_IMPORTANCE_WARNING,
+                         "emblem-system-symbolic",
+                         _ ("Uses Session Services"),
+                         _ ("Can request data from non-portal session services"),
+                         NULL, NULL, NULL);
+
+  for (i = 0; i < n_bus_policies; i++)
+    {
+      const BzBusPolicy *policy           = bus_policies[i];
+      const char        *well_known_title = NULL;
+      const char        *well_known_desc  = NULL;
+      g_autofree char   *bus_title        = NULL;
+      const char        *bus_description  = NULL;
+      gboolean           is_system_tray   = FALSE;
+
+      is_system_tray = g_str_equal (policy->bus_name, "org.kde.StatusNotifierWatcher") ||
+                       g_str_equal (policy->bus_name, "com.canonical.indicator.application");
+
+      if (is_system_tray && has_system_tray) // if not filtered, then there would be 2 entries for tray icon
+        continue;
+
+      if (is_system_tray)
+        has_system_tray = TRUE;
+
+      if (lookup_well_known_bus_policy (policy->bus_name, &well_known_title, &well_known_desc))
         {
-          const BzFilesystemPath *path     = g_ptr_array_index (filesystem_full, i);
-          g_autofree char        *fs_title = bz_filesystem_path_to_display_string (path);
-          const char             *fs_icon  = bz_filesystem_path_to_icon_name (path);
-
-          if (perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL)
-            continue;
-
-          if ((perm_flags & BZ_APP_PERMISSIONS_FLAGS_HOME_FULL) &&
-              path->type == BZ_FILESYSTEM_PATH_HOME_SUBDIR)
-            continue;
-
-          add_row_if_permission (store,
-                                 TRUE,
-                                 fs_importance,
-                                 fs_icon,
-                                 fs_title,
-                                 _ ("Can read and write all data in the directory"),
-                                 NULL, NULL, NULL);
+          bus_title       = g_strdup (well_known_title);
+          bus_description = well_known_desc;
+        }
+      else
+        {
+          bus_title       = format_bus_policy_title (policy);
+          bus_description = format_bus_policy_subtitle (policy);
         }
 
-      for (i = 0; filesystem_read != NULL && i < filesystem_read->len; i++)
-        {
-          const BzFilesystemPath *path     = g_ptr_array_index (filesystem_read, i);
-          g_autofree char        *fs_title = bz_filesystem_path_to_display_string (path);
-          const char             *fs_icon  = bz_filesystem_path_to_icon_name (path);
-
-          if (perm_flags & BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL)
-            continue;
-
-          if ((perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ |
-                             BZ_APP_PERMISSIONS_FLAGS_HOME_FULL |
-                             BZ_APP_PERMISSIONS_FLAGS_HOME_READ)) &&
-              path->type == BZ_FILESYSTEM_PATH_HOME_SUBDIR)
-            continue;
-
-          add_row_if_permission (store,
-                                 TRUE,
-                                 fs_importance,
-                                 fs_icon,
-                                 fs_title,
-                                 _ ("Can read all data in the directory"),
-                                 NULL, NULL, NULL);
-        }
-
-      add_row_if_permission (store,
-                             !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_FULL |
-                                             BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_READ |
-                                             BZ_APP_PERMISSIONS_FLAGS_FILESYSTEM_OTHER |
-                                             BZ_APP_PERMISSIONS_FLAGS_HOME_FULL |
-                                             BZ_APP_PERMISSIONS_FLAGS_HOME_READ |
-                                             BZ_APP_PERMISSIONS_FLAGS_DOWNLOADS_FULL |
-                                             BZ_APP_PERMISSIONS_FLAGS_DOWNLOADS_READ)) &&
-                                 filesystem_read == NULL && filesystem_full == NULL,
-                             BZ_IMPORTANCE_UNIMPORTANT,
-                             "folder-symbolic",
-                             _ ("No File System Access"),
-                             _ ("Cannot access the file system at all"),
+      add_row_if_permission (store, TRUE, BZ_IMPORTANCE_WARNING,
+                             "emblem-system-symbolic", bus_title, bus_description,
                              NULL, NULL, NULL);
+    }
 
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SYSTEM_BUS) != 0,
-                             BZ_IMPORTANCE_WARNING,
-                             "emblem-system-symbolic",
-                             _ ("Uses System Services"),
-                             _ ("Can request data from non-portal system services"),
-                             NULL, NULL, NULL);
-      add_row_if_permission (store,
-                             (perm_flags & BZ_APP_PERMISSIONS_FLAGS_SESSION_BUS) != 0,
-                             BZ_IMPORTANCE_WARNING,
-                             "emblem-system-symbolic",
-                             _ ("Uses Session Services"),
-                             _ ("Can request data from non-portal session services"),
-                             NULL, NULL, NULL);
+  if (include_no_access_rows)
+    add_row_if_permission (store,
+                           !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_SYSTEM_BUS |
+                                           BZ_APP_PERMISSIONS_FLAGS_SESSION_BUS |
+                                           BZ_APP_PERMISSIONS_FLAGS_BUS_POLICY_OTHER)) &&
+                               n_bus_policies == 0,
+                           BZ_IMPORTANCE_UNIMPORTANT,
+                           "emblem-system-symbolic",
+                           _ ("No Service Access"),
+                           _ ("Cannot access non-portal session or system services at all"),
+                           NULL, NULL, NULL);
 
-      for (i = 0; i < n_bus_policies; i++)
-        {
-          const BzBusPolicy *policy           = bus_policies[i];
-          const char        *well_known_title = NULL;
-          const char        *well_known_desc  = NULL;
-          g_autofree char   *bus_title        = NULL;
-          const char        *bus_description  = NULL;
-          gboolean           is_system_tray   = FALSE;
+  return G_LIST_MODEL (store);
+}
 
-          is_system_tray = g_str_equal (policy->bus_name, "org.kde.StatusNotifierWatcher") ||
-                           g_str_equal (policy->bus_name, "com.canonical.indicator.application");
+GListModel *
+bz_safety_calculator_analyze_entry (BzEntry *entry)
+{
+  g_autoptr (BzAppPermissions) permissions = NULL;
+  g_autoptr (GListModel) permissions_model = NULL;
+  GListStore *store                        = NULL;
+  gboolean    is_verified                  = FALSE;
+  gboolean    is_foss                      = FALSE;
+  guint       n_items                      = 0;
+  guint       i                            = 0;
 
-          if (is_system_tray && has_system_tray) // if not filtered, then there would be 2 entries for tray icon
-            continue;
+  g_return_val_if_fail (BZ_IS_ENTRY (entry), NULL);
 
-          if (is_system_tray)
-            has_system_tray = TRUE;
+  is_verified = bz_entry_is_verified (entry);
+  is_foss     = bz_entry_get_is_foss (entry);
 
-          if (lookup_well_known_bus_policy (policy->bus_name, &well_known_title, &well_known_desc))
-            {
-              bus_title       = g_strdup (well_known_title);
-              bus_description = well_known_desc;
-            }
-          else
-            {
-              bus_title       = format_bus_policy_title (policy);
-              bus_description = format_bus_policy_subtitle (policy);
-            }
+  g_object_get (entry, "permissions", &permissions, NULL);
+  permissions_model = bz_safety_calculator_analyze_permissions (permissions, TRUE);
 
-          add_row_if_permission (store,
-                                 TRUE,
-                                 BZ_IMPORTANCE_WARNING,
-                                 "emblem-system-symbolic",
-                                 bus_title,
-                                 bus_description,
-                                 NULL, NULL, NULL);
-        }
+  store   = g_list_store_new (BZ_TYPE_SAFETY_ROW);
+  n_items = g_list_model_get_n_items (permissions_model);
+  for (i = 0; i < n_items; i++)
+    {
+      g_autoptr (GObject) row = NULL;
 
-      add_row_if_permission (store,
-                             !(perm_flags & (BZ_APP_PERMISSIONS_FLAGS_SYSTEM_BUS |
-                                             BZ_APP_PERMISSIONS_FLAGS_SESSION_BUS |
-                                             BZ_APP_PERMISSIONS_FLAGS_BUS_POLICY_OTHER)) &&
-                                 n_bus_policies == 0,
-                             BZ_IMPORTANCE_UNIMPORTANT,
-                             "emblem-system-symbolic",
-                             _ ("No Service Access"),
-                             _ ("Cannot access non-portal session or system services at all"),
-                             NULL, NULL, NULL);
+      row = g_list_model_get_item (permissions_model, i);
+      g_list_store_append (store, row);
     }
 
   add_row_if_permission (store,
@@ -375,8 +393,6 @@ bz_safety_calculator_analyze_entry (BzEntry *entry)
                              _ ("Auditable Code"),
                              _ ("The source code is public and can be independently audited, which makes the app more likely to be safe"));
     }
-
-  g_clear_object (&permissions);
 
   return G_LIST_MODEL (store);
 }

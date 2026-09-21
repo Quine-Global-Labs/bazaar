@@ -47,6 +47,9 @@ public extern class Bz.AllAppsPage : GLib.Object {
 public extern class Bz.AppPermissions : GLib.Object {
     [CCode (has_construct_function = false)]
     protected AppPermissions ();
+
+    [CCode (cname = "bz_app_permissions_is_empty")]
+    public bool is_empty ();
 }
 
 [CCode (cheader_filename = "bz-app-size-dialog.h", type_id = "bz_app_size_dialog_get_type ()")]
@@ -159,10 +162,10 @@ public extern class Bz.ContentProvider : GLib.Object {
     protected ContentProvider ();
 }
 
-[CCode (cheader_filename = "bz-context-row.h", type_id = "bz_context_row_get_type ()")]
-public extern class Bz.ContextRow : GLib.Object {
-    [CCode (has_construct_function = false)]
-    protected ContextRow ();
+[CCode (cheader_filename = "bz-context-row.h")]
+namespace Bz {
+    [CCode (cname = "bz_context_row_new")]
+    public unowned Adw.ActionRow context_row_new (string? icon_name, Bz.Importance importance, string title, string? subtitle);
 }
 
 [CCode (cheader_filename = "bz-context-tile.h", type_id = "bz_context_tile_get_type ()")]
@@ -239,6 +242,14 @@ public extern class Bz.EntryInspector : GLib.Object {
     protected EntryInspector ();
 }
 
+[Flags]
+[CCode (cheader_filename = "bz-entry.h", cname = "BzEntryKind", cprefix = "BZ_ENTRY_KIND_", has_type_id = false)]
+public enum Bz.EntryKind {
+    APPLICATION,
+    RUNTIME,
+    ADDON,
+}
+
 [CCode (cheader_filename = "bz-entry.h", type_id = "bz_entry_get_type ()")]
 public extern class Bz.Entry : GLib.Object {
     [CCode (has_construct_function = false)]
@@ -246,7 +257,16 @@ public extern class Bz.Entry : GLib.Object {
 
     public string? unique_id { get; set; }
 
+    public string? title { get; }
+    public string? developer { get; }
+    public Gdk.Paintable? icon_paintable { get; }
+    [NoAccessorMethod]
+    public GLib.ListModel? version_history { owned get; }
+    public string? installed_version { get; }
     public Bz.Repository? get_repository (GLib.ListModel repos);
+
+    [CCode (cname = "bz_entry_is_of_kinds")]
+    public bool is_of_kinds (Bz.EntryKind kinds);
 }
 
 [CCode (cheader_filename = "bz-error-dialog.h", type_id = "bz_error_dialog_get_type ()")]
@@ -453,6 +473,9 @@ public extern class Bz.ProgressBar : GLib.Object {
 public extern class Bz.ReleasesList : GLib.Object {
     [CCode (has_construct_function = false)]
     protected ReleasesList ();
+
+    [CCode (cname = "bz_releases_dialog_new")]
+    public static unowned Gtk.Widget dialog_new (GLib.ListModel? version_history, GLib.ListModel? installed_versions);
 }
 
 [CCode (cheader_filename = "bz-result.h", type_id = "bz_result_get_type ()")]
@@ -599,16 +622,19 @@ public extern class Bz.Transaction : GLib.Object {
     protected Transaction ();
 }
 
+[CCode (cheader_filename = "bz-update-info.h", type_id = "bz_update_permission_info_get_type ()")]
+public extern class Bz.UpdatePermissionInfo : GLib.Object {
+    [CCode (has_construct_function = false)]
+    protected UpdatePermissionInfo ();
+
+    public Bz.Entry? entry { get; set; }
+    public Bz.AppPermissions? additional_permissions { get; set;}
+}
+
 [CCode (cheader_filename = "bz-update-history-dialog.h", type_id = "bz_update_history_dialog_get_type ()")]
 public extern class Bz.UpdateHistoryDialog : GLib.Object {
     [CCode (has_construct_function = false)]
     protected UpdateHistoryDialog ();
-}
-
-[CCode (cheader_filename = "bz-updates-card.h", type_id = "bz_updates_card_get_type ()")]
-public extern class Bz.UpdatesCard : GLib.Object {
-    [CCode (has_construct_function = false)]
-    protected UpdatesCard ();
 }
 
 [CCode (cheader_filename = "bz-user-data-page.h", type_id = "bz_user_data_page_get_type ()")]
@@ -896,6 +922,8 @@ public extern class Bz.PrideFlagStripeSpec : GLib.Object {
 public extern class Bz.Release : GLib.Object {
     [CCode (has_construct_function = false)]
     protected Release ();
+
+    public string? version { get; set; }
 }
 
 [CCode (cheader_filename = "bz-repository.h", type_id = "bz_repository_get_type ()")]
@@ -922,10 +950,36 @@ public extern class Bz.RootCuratedConfig : GLib.Object {
     protected RootCuratedConfig ();
 }
 
+[CCode (cheader_filename = "safety-calculator.h", cname = "BzImportance", cprefix = "BZ_IMPORTANCE_", has_type_id = false)]
+public enum Bz.Importance {
+    UNIMPORTANT,
+    NEUTRAL,
+    INFORMATION,
+    WARNING,
+    IMPORTANT,
+}
+
+[CCode (cheader_filename = "safety-calculator.h")]
+namespace Bz.SafetyCalculator {
+    [CCode (cname = "bz_safety_calculator_analyze_permissions")]
+    public static GLib.ListModel analyze_permissions (Bz.AppPermissions? permissions, bool include_no_access_rows);
+
+    [CCode (cname = "bz_safety_calculator_analyze_entry")]
+    public GLib.ListModel analyze_entry (Bz.Entry entry);
+
+    [CCode (cname = "bz_safety_calculator_calculate_rating")]
+    public Bz.Importance calculate_rating (Bz.Entry entry);
+}
+
 [CCode (cheader_filename = "bz-safety-row.h", type_id = "bz_safety_row_get_type ()")]
 public extern class Bz.SafetyRow : GLib.Object {
     [CCode (has_construct_function = false)]
     protected SafetyRow ();
+
+    public Bz.Importance importance { get; set;}
+    public string? icon_name { get; set;}
+    public string? title { get; set;}
+    public string? subtitle { get; set;}
 }
 
 [CCode (cheader_filename = "bz-search-bias.h", type_id = "bz_search_bias_get_type ()")]
@@ -955,6 +1009,7 @@ public extern class Bz.StateInfo : GLib.Object {
     public static unowned Bz.StateInfo get_default ();
 
     public GLib.ListModel? repositories { get; }
+    public GLib.ListModel? available_updates { get; set; }
 }
 
 [CCode (cheader_filename = "bz-transact-icon-info.h", type_id = "bz_transact_icon_info_get_type ()")]

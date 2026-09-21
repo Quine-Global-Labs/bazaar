@@ -21,8 +21,8 @@
 // This file is an utter mess
 #include "config.h"
 
-#include <glib/gi18n.h>
 #include <bzvala.h>
+#include <glib/gi18n.h>
 
 #include "bz-addons-dialog.h"
 #include "bz-application.h"
@@ -42,6 +42,7 @@
 #include "bz-transaction-manager.h"
 #include "bz-update-history-data-point.h"
 #include "bz-update-history-dialog.h"
+#include "bz-update-info.h"
 #include "bz-user-data-page.h"
 #include "bz-window.h"
 #include "env.h"
@@ -102,6 +103,10 @@ BZ_DEFINE_DATA (
     BZ_RELEASE_DATA (entry, g_object_unref);
     BZ_RELEASE_DATA (group, g_object_unref);
     BZ_RELEASE_DATA (source, g_object_unref))
+
+static DexFuture *
+update_fiber (BzWeakRef  *wr,
+              GListModel *entries);
 
 static DexFuture *
 transact_fiber (TransactData *data);
@@ -215,68 +220,119 @@ update_cb (BzWindow   *self,
            GListModel *entries,
            GtkWidget  *widget)
 {
-  g_autoptr (BzTransaction) transaction  = NULL;
-  guint                n_updates         = 0;
-  g_autofree BzEntry **updates_buf       = NULL;
-  GListModel          *available_updates = NULL;
+  g_autoptr (BzWeakRef) wr = NULL;
 
-  g_return_if_fail (BZ_IS_WINDOW (self));
-  g_return_if_fail (G_IS_LIST_MODEL (entries));
-
-  n_updates = g_list_model_get_n_items (entries);
-  if (n_updates == 0)
+  if (g_list_model_get_n_items (entries) == 0)
     return;
 
-  updates_buf = g_malloc_n (n_updates, sizeof (*updates_buf));
-  for (guint i = 0; i < n_updates; i++)
-    updates_buf[i] = g_list_model_get_item (entries, i);
+  wr = bz_weak_ref_new (self);
 
-  transaction = bz_transaction_new_full (
-      NULL, 0,
-      updates_buf, n_updates,
-      NULL, 0);
+  dex_future_disown (dex_scheduler_spawnv (
+      dex_scheduler_get_default (), bz_get_dex_stack_size (),
+      G_CALLBACK (update_fiber),
+      2, BZ_TYPE_WEAK_REF, wr, G_TYPE_OBJECT, entries));
+}
+
+static DexFuture *
+update_fiber (BzWeakRef  *wr,
+              GListModel *entries)
+{
+  g_autoptr (BzWindow) self              = NULL;
+  g_autoptr (BzTransaction) transaction  = NULL;
+  g_autoptr (GPtrArray) updates          = NULL;
+  g_autoptr (GHashTable) update_ids      = NULL;
+  GListModel *available_updates          = NULL;
+  g_autoptr (GPtrArray) permission_infos = NULL;
+  guint n_updates                        = 0;
+
+  bz_weak_get_or_return_reject (self, &wr->ref);
+
+  n_updates  = g_list_model_get_n_items (entries);
+  updates    = g_ptr_array_new_full (n_updates, g_object_unref);
+  update_ids = g_hash_table_new (g_str_hash, g_str_equal);
+  for (guint i = 0; i < n_updates; i++)
+    {
+      BzEntry *entry = NULL;
+
+      entry = g_list_model_get_item (entries, i);
+      g_ptr_array_add (updates, entry);
+      g_hash_table_add (update_ids, (gpointer) bz_entry_get_id (entry));
+    }
+
+  available_updates = bz_state_info_get_available_updates (self->state);
+
+  permission_infos = g_ptr_array_new_with_free_func (g_object_unref);
+  if (available_updates != NULL)
+    {
+      guint n_available = 0;
+
+      n_available = g_list_model_get_n_items (available_updates);
+
+      for (guint i = 0; i < n_available; i++)
+        {
+          g_autoptr (BzUpdatePermissionInfo) info = NULL;
+          BzEntry          *info_entry            = NULL;
+          const char       *info_id               = NULL;
+          BzAppPermissions *delta                 = NULL;
+
+          info       = g_list_model_get_item (available_updates, i);
+          info_entry = bz_update_permission_info_get_entry (info);
+          info_id    = bz_entry_get_id (info_entry);
+          delta      = bz_update_permission_info_get_additional_permissions (info);
+
+          if (delta == NULL || bz_app_permissions_is_empty (delta))
+            continue;
+
+          if (g_hash_table_contains (update_ids, info_id))
+            g_ptr_array_add (permission_infos, g_object_ref (info));
+        }
+    }
+
+  if (permission_infos->len > 0)
+    {
+      gboolean confirmed = FALSE;
+
+      confirmed = dex_await_boolean (
+          bz_new_permissions_dialog_present_and_wait (
+              GTK_WIDGET (self),
+              (BzUpdatePermissionInfo **) permission_infos->pdata,
+              permission_infos->len),
+          NULL);
+
+      if (!confirmed)
+        return dex_future_new_false ();
+    }
+
+  transaction = bz_transaction_new_full (NULL, 0, (BzEntry **) updates->pdata,
+                                         updates->len, NULL, 0);
 
   dex_future_disown (bz_transaction_manager_add (
       bz_state_info_get_transaction_manager (self->state),
       transaction));
 
-  available_updates = bz_state_info_get_available_updates (self->state);
   if (G_IS_LIST_STORE (available_updates))
     {
-      GListStore *store       = G_LIST_STORE (available_updates);
-      guint       n_available = g_list_model_get_n_items (available_updates);
+      GListStore *store       = NULL;
+      guint       n_available = 0;
+
+      store       = G_LIST_STORE (available_updates);
+      n_available = g_list_model_get_n_items (available_updates);
 
       for (guint i = n_available; i > 0; i--)
         {
-          guint current_size                  = 0;
-          guint idx                           = 0;
-          g_autoptr (BzEntry) available_entry = NULL;
-          const char *available_id            = NULL;
+          g_autoptr (BzUpdatePermissionInfo) available_info = NULL;
+          const char *available_id                          = NULL;
 
-          idx          = i - 1;
-          current_size = g_list_model_get_n_items (available_updates);
+          available_info = g_list_model_get_item (available_updates, i - 1);
+          available_id   = bz_entry_get_id (bz_update_permission_info_get_entry (available_info));
 
-          if (idx >= current_size)
-            continue;
-
-          available_entry = g_list_model_get_item (available_updates, idx);
-          available_id    = bz_entry_get_id (available_entry);
-
-          for (guint j = 0; j < n_updates; j++)
-            {
-              if (g_strcmp0 (available_id, bz_entry_get_id (updates_buf[j])) == 0)
-                {
-                  g_list_store_remove (store, idx);
-                  break;
-                }
-            }
+          if (g_hash_table_contains (update_ids, available_id))
+            g_list_store_remove (store, i - 1);
         }
     }
 
   g_object_notify (G_OBJECT (self->state), "available-updates");
-
-  for (guint i = 0; i < n_updates; i++)
-    g_object_unref (updates_buf[i]);
+  return dex_future_new_true ();
 }
 
 static void
@@ -785,7 +841,7 @@ open_uri_finish_cb (GObject      *source,
                     gpointer      user_data)
 {
   g_autoptr (BzWindow) self      = BZ_WINDOW (user_data);
-  GtkUriLauncher   *launcher     = GTK_URI_LAUNCHER (source);
+  GtkUriLauncher *launcher       = GTK_URI_LAUNCHER (source);
   g_autoptr (GError) local_error = NULL;
 
   if (!gtk_uri_launcher_launch_finish (launcher, result, &local_error) &&
@@ -798,8 +854,8 @@ action_open_uri (GtkWidget  *widget,
                  const char *action_name,
                  GVariant   *parameter)
 {
-  BzWindow                  *self     = BZ_WINDOW (widget);
-  const char                 *uri     = g_variant_get_string (parameter, NULL);
+  BzWindow   *self                    = BZ_WINDOW (widget);
+  const char *uri                     = g_variant_get_string (parameter, NULL);
   g_autoptr (GtkUriLauncher) launcher = NULL;
 
   if (uri == NULL || *uri == '\0')

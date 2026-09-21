@@ -26,6 +26,7 @@
 
 #include "bz-install-controls.h"
 #include "bz-state-info.h"
+#include "bz-update-info.h"
 #include "progress-bar-designs/common.h"
 #include "template-callbacks.h"
 #include "util.h"
@@ -190,11 +191,13 @@ find_matching_updates (BzInstallControls *self,
 
   for (guint i = 0; i < n_items; i++)
     {
-      g_autoptr (BzEntry) entry = NULL;
-      const char *id            = NULL;
+      g_autoptr (BzUpdatePermissionInfo) info = NULL;
+      BzEntry    *entry                       = NULL;
+      const char *id                          = NULL;
 
-      entry = g_list_model_get_item (available_updates, i);
-      id    = bz_entry_get_id (entry);
+      info  = g_list_model_get_item (available_updates, i);
+      entry = bz_update_permission_info_get_entry (info);
+      id    = entry != NULL ? bz_entry_get_id (entry) : NULL;
 
       if (g_strcmp0 (id, group_id) == 0)
         g_list_store_append (store, entry);

@@ -187,6 +187,10 @@ const BzBusPolicy *const *
 bz_app_permissions_get_bus_policies (BzAppPermissions *self,
                                      size_t           *out_n_bus_policies);
 
+BzAppPermissions *
+bz_app_permissions_diff (BzAppPermissions *self,
+                         BzAppPermissions *other);
+
 void
 bz_app_permissions_serialize (BzAppPermissions *self,
                               GVariantBuilder  *builder);

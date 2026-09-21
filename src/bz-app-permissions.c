@@ -105,6 +105,21 @@ static guint app_permissions_get_array_index (GPtrArray           *array,
                                               const char          *subpath);
 static guint get_strv_index (const gchar *const *strv,
                              const gchar        *value);
+static gboolean     array_contains_filesystem_path (GPtrArray            *array,
+                                                     BzFilesystemPathType  type,
+                                                     const char           *subpath);
+static int           bus_policy_compare (const BzBusPolicy *policy1,
+                                         const BzBusPolicy *policy2);
+static int           bus_policy_compare_lopsided_with_permissions (const BzBusPolicy *policy1,
+                                                                    const BzBusPolicy *policy2);
+static BzBusPolicy  *bus_policy_copy (const BzBusPolicy *policy,
+                                      void              *user_data);
+static GPtrArray     *ptr_array_diff (GPtrArray      *array1,
+                                      GPtrArray      *array2,
+                                      GCompareFunc    compare_func,
+                                      GCopyFunc       copy_func,
+                                      void           *copy_func_data,
+                                      GDestroyNotify  free_func);
 
 static void
 bz_app_permissions_finalize (GObject *object)
@@ -320,6 +335,159 @@ bz_app_permissions_is_empty (BzAppPermissions *self)
           (self->filesystem_read == NULL || self->filesystem_read->len == 0) &&
           (self->filesystem_full == NULL || self->filesystem_full->len == 0) &&
           (self->bus_policies == NULL || self->bus_policies->len == 0));
+}
+
+static gboolean
+array_contains_filesystem_path (GPtrArray            *array,
+                                BzFilesystemPathType  type,
+                                const char           *subpath)
+{
+  if (array == NULL)
+    return FALSE;
+
+  for (guint i = 0; i < array->len; i++)
+    {
+      const BzFilesystemPath *path = g_ptr_array_index (array, i);
+      if (path->type == type && g_strcmp0 (path->subpath, subpath) == 0)
+        return TRUE;
+    }
+
+  return FALSE;
+}
+
+static int
+bus_policy_compare (const BzBusPolicy *policy1,
+                    const BzBusPolicy *policy2)
+{
+  if (policy1->bus_type != policy2->bus_type)
+    return policy1->bus_type - policy2->bus_type;
+
+  return strcmp (policy1->bus_name, policy2->bus_name);
+}
+
+static int
+bus_policy_compare_lopsided_with_permissions (const BzBusPolicy *policy1,
+                                              const BzBusPolicy *policy2)
+{
+  int compare_keys = bus_policy_compare (policy1, policy2);
+
+  if (compare_keys != 0)
+    return compare_keys;
+
+  if (policy2->permission > policy1->permission)
+    return 1;
+
+  return 0;
+}
+
+static BzBusPolicy *
+bus_policy_copy (const BzBusPolicy *policy,
+                 void              *user_data)
+{
+  return bz_bus_policy_new (policy->bus_type, policy->bus_name, policy->permission);
+}
+
+static GPtrArray *
+ptr_array_diff (GPtrArray      *array1,
+                GPtrArray      *array2,
+                GCompareFunc    compare_func,
+                GCopyFunc       copy_func,
+                void           *copy_func_data,
+                GDestroyNotify  free_func)
+{
+  g_autoptr (GPtrArray) diff = NULL;
+
+  if (array2 == NULL)
+    return NULL;
+  if (array1 == NULL)
+    return g_ptr_array_copy (array2, copy_func, copy_func_data);
+
+  diff = g_ptr_array_new_with_free_func (free_func);
+
+  for (unsigned int index1 = 0, index2 = 0;
+       index1 < array1->len || index2 < array2->len;
+       )
+    {
+      const void *element1, *element2;
+      int         comparison;
+
+      if (index1 >= array1->len)
+        {
+          element2   = g_ptr_array_index (array2, index2);
+          comparison = 1;
+        }
+      else if (index2 >= array2->len)
+        {
+          element1   = g_ptr_array_index (array1, index1);
+          comparison = -1;
+        }
+      else
+        {
+          element1   = g_ptr_array_index (array1, index1);
+          element2   = g_ptr_array_index (array2, index2);
+          comparison = compare_func (element1, element2);
+        }
+
+      if (comparison < 0)
+        {
+          index1++;
+        }
+      else if (comparison == 0)
+        {
+          index1++;
+          index2++;
+        }
+      else
+        {
+          g_ptr_array_add (diff, copy_func (element2, copy_func_data));
+          index2++;
+        }
+    }
+
+  return (diff->len > 0) ? g_steal_pointer (&diff) : NULL;
+}
+
+// this is all from GNOME Software
+BzAppPermissions *
+bz_app_permissions_diff (BzAppPermissions *self,
+                         BzAppPermissions *other)
+{
+  g_autoptr (BzAppPermissions) diff = bz_app_permissions_new ();
+  const GPtrArray *new_paths;
+
+  g_return_val_if_fail (BZ_IS_APP_PERMISSIONS (self), NULL);
+  g_return_val_if_fail (self->is_sealed, NULL);
+  g_return_val_if_fail (BZ_IS_APP_PERMISSIONS (other), NULL);
+  g_return_val_if_fail (other->is_sealed, NULL);
+
+  bz_app_permissions_set_flags (diff, other->flags & ~self->flags);
+
+  new_paths = bz_app_permissions_get_filesystem_read (other);
+  for (guint i = 0; new_paths != NULL && i < new_paths->len; i++)
+    {
+      const BzFilesystemPath *path = g_ptr_array_index (new_paths, i);
+
+      if (!array_contains_filesystem_path (self->filesystem_read, path->type, path->subpath))
+        bz_app_permissions_add_filesystem_read (diff, path->type, path->subpath);
+    }
+
+  new_paths = bz_app_permissions_get_filesystem_full (other);
+  for (guint i = 0; new_paths != NULL && i < new_paths->len; i++)
+    {
+      const BzFilesystemPath *path = g_ptr_array_index (new_paths, i);
+
+      if (!array_contains_filesystem_path (self->filesystem_full, path->type, path->subpath))
+        bz_app_permissions_add_filesystem_full (diff, path->type, path->subpath);
+    }
+
+  diff->bus_policies = ptr_array_diff (self->bus_policies, other->bus_policies,
+                                       (GCompareFunc) bus_policy_compare_lopsided_with_permissions,
+                                       (GCopyFunc) bus_policy_copy, NULL,
+                                       (GDestroyNotify) bz_bus_policy_free);
+
+  bz_app_permissions_seal (diff);
+
+  return g_steal_pointer (&diff);
 }
 
 void

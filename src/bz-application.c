@@ -63,6 +63,7 @@
 #include "bz-serializable.h"
 #include "bz-state-info.h"
 #include "bz-transaction-manager.h"
+#include "bz-update-info.h"
 #include "bz-window.h"
 #include "bz-yaml-parser.h"
 #include "dex-utils.h"
@@ -2762,9 +2763,9 @@ fiber_replace_entry (BzApplication *self,
 static void
 fiber_check_for_updates (BzApplication *self)
 {
-  g_autoptr (GError) local_error   = NULL;
-  g_autoptr (GPtrArray) update_ids = NULL;
-  GtkWindow *window                = NULL;
+  g_autoptr (GError) local_error    = NULL;
+  g_autoptr (GHashTable) update_ids = NULL;
+  GtkWindow *window                 = NULL;
 
   g_debug ("Checking for updates...");
   bz_state_info_set_background_task_label (self->state, _ ("Checking for updates…"));
@@ -2775,17 +2776,24 @@ fiber_check_for_updates (BzApplication *self)
       &local_error);
   window = gtk_application_get_active_window (GTK_APPLICATION (self));
   if (update_ids != NULL &&
-      update_ids->len > 0)
+      g_hash_table_size (update_ids) > 0)
     {
-      g_autoptr (GPtrArray) futures = NULL;
-      g_autoptr (GListStore) store  = NULL;
+      g_autoptr (GPtrArray) unique_ids = NULL;
+      g_autoptr (GPtrArray) futures    = NULL;
+      g_autoptr (GListStore) store     = NULL;
+      GHashTableIter iter;
+      gpointer       key   = NULL;
+      gpointer       value = NULL;
 
-      futures = g_ptr_array_new_with_free_func (dex_unref);
-      for (guint i = 0; i < update_ids->len; i++)
+      unique_ids = g_ptr_array_new ();
+      futures    = g_ptr_array_new_with_free_func (dex_unref);
+
+      g_hash_table_iter_init (&iter, update_ids);
+      while (g_hash_table_iter_next (&iter, &key, &value))
         {
-          const char *unique_id = NULL;
+          const char *unique_id = key;
 
-          unique_id = g_ptr_array_index (update_ids, i);
+          g_ptr_array_add (unique_ids, (gpointer) unique_id);
           g_ptr_array_add (futures, bz_entry_cache_manager_get (self->cache, unique_id));
         }
 
@@ -2793,22 +2801,34 @@ fiber_check_for_updates (BzApplication *self)
           dex_future_allv ((DexFuture *const *) futures->pdata, futures->len),
           NULL);
 
-      store = g_list_store_new (BZ_TYPE_ENTRY);
+      store = g_list_store_new (BZ_TYPE_UPDATE_PERMISSION_INFO);
       for (guint i = 0; i < futures->len; i++)
         {
-          DexFuture    *future = NULL;
-          const GValue *value  = NULL;
+          DexFuture    *future    = NULL;
+          const GValue *value_out = NULL;
+          const char   *unique_id = NULL;
 
-          future = g_ptr_array_index (futures, i);
-          value  = dex_future_get_value (future, &local_error);
+          future    = g_ptr_array_index (futures, i);
+          unique_id = g_ptr_array_index (unique_ids, i);
+          value_out = dex_future_get_value (future, &local_error);
 
-          if (value != NULL)
-            g_list_store_append (store, g_value_get_object (value));
+          if (value_out != NULL)
+            {
+              g_autoptr (BzUpdatePermissionInfo) info = NULL;
+              BzAppPermissions *delta                 = NULL;
+
+              delta = g_hash_table_lookup (update_ids, unique_id);
+
+              info = g_object_new (
+                  BZ_TYPE_UPDATE_PERMISSION_INFO,
+                  "entry", g_value_get_object (value_out),
+                  "additional-permissions", delta,
+                  NULL);
+
+              g_list_store_append (store, info);
+            }
           else
             {
-              const char *unique_id = NULL;
-
-              unique_id = g_ptr_array_index (update_ids, i);
               g_warning ("%s could not be resolved for the update list and thus will not be included: %s",
                          unique_id, local_error->message);
               g_clear_pointer (&local_error, g_error_free);
