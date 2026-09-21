@@ -146,41 +146,14 @@ enum
 static GParamSpec *props[LAST_PROP] = { 0 };
 
 static void
-group_removable_changed_cb (BzEntryGroup *group,
+check_installed_pill (BzAppTile *self);
+
+static void
+group_removable_changed_cb (BzAppTile    *self,
                             GParamSpec   *pspec,
-                            BzAppTile    *self)
+                            BzEntryGroup *group)
 {
-  gboolean installed = FALSE;
-
-  installed          = bz_entry_group_get_removable (group) != 0;
-  if (installed && self->installed_pill == NULL)
-    {
-      GtkWidget *image = NULL;
-      GtkWidget *label = NULL;
-
-      self->installed_pill = g_object_new (
-          GTK_TYPE_BOX,
-          "css-name", "app-tile-installed-pill",
-          "orientation", GTK_ORIENTATION_HORIZONTAL,
-          "halign", GTK_ALIGN_START,
-          "spacing", 4,
-          NULL);
-      gtk_widget_add_css_class (self->installed_pill, "small-pill");
-      gtk_widget_add_css_class (self->installed_pill, "installed-pill");
-
-      image = gtk_image_new_from_icon_name ("app-installed-symbolic");
-      gtk_image_set_pixel_size (GTK_IMAGE (image), 12);
-
-      /* Translators: As in 'The app is installed'. */
-      label = gtk_label_new (_ ("Installed"));
-
-      gtk_box_append (GTK_BOX (self->installed_pill), image);
-      gtk_box_append (GTK_BOX (self->installed_pill), label);
-      gtk_box_append (self->content_box, self->installed_pill);
-    }
-
-  if (self->installed_pill != NULL)
-    gtk_widget_set_visible (self->installed_pill, installed);
+  check_installed_pill (self);
 }
 
 static void
@@ -323,12 +296,12 @@ bz_app_tile_set_group (BzAppTile    *self,
     {
       gtk_actionable_set_action_target (GTK_ACTIONABLE (self), "(sb)", bz_entry_group_get_id (group), TRUE);
       gtk_actionable_set_action_name (GTK_ACTIONABLE (self), "window.show-group");
-      g_signal_connect (group, "notify::removable", G_CALLBACK (group_removable_changed_cb), self);
+      g_signal_connect_swapped (group, "notify::removable", G_CALLBACK (group_removable_changed_cb), self);
     }
   else
     gtk_actionable_set_action_name (GTK_ACTIONABLE (self), NULL);
 
-  group_removable_changed_cb (self->group, NULL, self);
+  check_installed_pill (self);
 
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_GROUP]);
 }
@@ -351,6 +324,44 @@ bz_app_tile_set_icon_override (BzAppTile    *self,
     self->icon_override = g_object_ref (icon_override);
 
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_ICON_OVERRIDE]);
+}
+
+static void
+check_installed_pill (BzAppTile *self)
+{
+  gboolean installed = FALSE;
+
+  g_assert (self->group != NULL);
+
+  installed = bz_entry_group_get_removable (self->group) != 0;
+  if (installed && self->installed_pill == NULL)
+    {
+      GtkWidget *image = NULL;
+      GtkWidget *label = NULL;
+
+      self->installed_pill = g_object_new (
+          GTK_TYPE_BOX,
+          "css-name", "app-tile-installed-pill",
+          "orientation", GTK_ORIENTATION_HORIZONTAL,
+          "halign", GTK_ALIGN_START,
+          "spacing", 4,
+          NULL);
+      gtk_widget_add_css_class (self->installed_pill, "small-pill");
+      gtk_widget_add_css_class (self->installed_pill, "installed-pill");
+
+      image = gtk_image_new_from_icon_name ("app-installed-symbolic");
+      gtk_image_set_pixel_size (GTK_IMAGE (image), 12);
+
+      /* Translators: As in 'The app is installed'. */
+      label = gtk_label_new (_ ("Installed"));
+
+      gtk_box_append (GTK_BOX (self->installed_pill), image);
+      gtk_box_append (GTK_BOX (self->installed_pill), label);
+      gtk_box_append (self->content_box, self->installed_pill);
+    }
+
+  if (self->installed_pill != NULL)
+    gtk_widget_set_visible (self->installed_pill, installed);
 }
 
 /* End of bz-app-tile.c */
