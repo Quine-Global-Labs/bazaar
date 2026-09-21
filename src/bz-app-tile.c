@@ -25,6 +25,8 @@
 
 #include "config.h"
 
+#include <glib/gi18n.h>
+
 #include "bz-app-tile.h"
 
 #define BZ_APP_TILE_PREFERRED_WIDTH 270
@@ -124,6 +126,10 @@ struct _BzAppTile
 
   BzEntryGroup *group;
   GdkPaintable *icon_override;
+
+  GtkBox *content_box;
+
+  GtkWidget *installed_pill;
 };
 
 G_DEFINE_FINAL_TYPE (BzAppTile, bz_app_tile, GTK_TYPE_BUTTON);
@@ -140,9 +146,23 @@ enum
 static GParamSpec *props[LAST_PROP] = { 0 };
 
 static void
+check_installed_pill (BzAppTile *self);
+
+static void
+group_removable_changed_cb (BzAppTile    *self,
+                            GParamSpec   *pspec,
+                            BzEntryGroup *group)
+{
+  check_installed_pill (self);
+}
+
+static void
 bz_app_tile_dispose (GObject *object)
 {
   BzAppTile *self = BZ_APP_TILE (object);
+
+  if (self->group != NULL)
+    g_signal_handlers_disconnect_by_func (self->group, group_removable_changed_cb, self);
 
   g_clear_object (&self->group);
   g_clear_object (&self->icon_override);
@@ -193,20 +213,6 @@ bz_app_tile_set_property (GObject      *object,
 }
 
 static gboolean
-invert_boolean (gpointer object,
-                gboolean value)
-{
-  return !value;
-}
-
-static gboolean
-is_null (gpointer object,
-         GObject *value)
-{
-  return value == NULL;
-}
-
-static gboolean
 is_zero (gpointer object,
          int      value)
 {
@@ -249,8 +255,7 @@ bz_app_tile_class_init (BzAppTileClass *klass)
   gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-app-tile.ui");
   gtk_widget_class_set_layout_manager_type (widget_class, BZ_TYPE_APP_TILE_LAYOUT);
 
-  gtk_widget_class_bind_template_callback (widget_class, invert_boolean);
-  gtk_widget_class_bind_template_callback (widget_class, is_null);
+  gtk_widget_class_bind_template_child (widget_class, BzAppTile, content_box);
   gtk_widget_class_bind_template_callback (widget_class, is_zero);
   gtk_widget_class_bind_template_callback (widget_class, description_line_amount);
 }
@@ -280,6 +285,9 @@ bz_app_tile_set_group (BzAppTile    *self,
 {
   g_return_if_fail (BZ_IS_APP_TILE (self));
 
+  if (self->group != NULL)
+    g_signal_handlers_disconnect_by_func (self->group, group_removable_changed_cb, self);
+
   g_clear_object (&self->group);
   if (group != NULL)
     self->group = g_object_ref (group);
@@ -288,9 +296,12 @@ bz_app_tile_set_group (BzAppTile    *self,
     {
       gtk_actionable_set_action_target (GTK_ACTIONABLE (self), "(sb)", bz_entry_group_get_id (group), TRUE);
       gtk_actionable_set_action_name (GTK_ACTIONABLE (self), "window.show-group");
+      g_signal_connect_swapped (group, "notify::removable", G_CALLBACK (group_removable_changed_cb), self);
     }
   else
     gtk_actionable_set_action_name (GTK_ACTIONABLE (self), NULL);
+
+  check_installed_pill (self);
 
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_GROUP]);
 }
@@ -313,6 +324,44 @@ bz_app_tile_set_icon_override (BzAppTile    *self,
     self->icon_override = g_object_ref (icon_override);
 
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_ICON_OVERRIDE]);
+}
+
+static void
+check_installed_pill (BzAppTile *self)
+{
+  gboolean installed = FALSE;
+
+  g_assert (self->group != NULL);
+
+  installed = bz_entry_group_get_removable (self->group) != 0;
+  if (installed && self->installed_pill == NULL)
+    {
+      GtkWidget *image = NULL;
+      GtkWidget *label = NULL;
+
+      self->installed_pill = g_object_new (
+          GTK_TYPE_BOX,
+          "css-name", "app-tile-installed-pill",
+          "orientation", GTK_ORIENTATION_HORIZONTAL,
+          "halign", GTK_ALIGN_START,
+          "spacing", 4,
+          NULL);
+      gtk_widget_add_css_class (self->installed_pill, "small-pill");
+      gtk_widget_add_css_class (self->installed_pill, "installed-pill");
+
+      image = gtk_image_new_from_icon_name ("app-installed-symbolic");
+      gtk_image_set_pixel_size (GTK_IMAGE (image), 12);
+
+      /* Translators: As in 'The app is installed'. */
+      label = gtk_label_new (_ ("Installed"));
+
+      gtk_box_append (GTK_BOX (self->installed_pill), image);
+      gtk_box_append (GTK_BOX (self->installed_pill), label);
+      gtk_box_append (self->content_box, self->installed_pill);
+    }
+
+  if (self->installed_pill != NULL)
+    gtk_widget_set_visible (self->installed_pill, installed);
 }
 
 /* End of bz-app-tile.c */
