@@ -6,7 +6,7 @@ include:
       dist-job-name: "flatpak@x86_64"
 
 .flatpak_vars:
-  image: "quay.io/gnome_infrastructure/gnome-runtime-images:gnome-50"
+  image: "quay.io/gnome_infrastructure/gnome-runtime-images:gnome-51"
   variables:
     FLATPAK_MODULE: "bazaar"
     MANIFEST_PATH: "build-aux/flatpak/io.github.kolunmi.Bazaar.json"
