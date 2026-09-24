@@ -107,6 +107,41 @@
           ]
         },
         {
+          "name": "appstream",
+          "buildsystem": "meson",
+          "config-opts": [
+            "-Dgir=true",
+            "-Dvapi=true",
+            "-Ddocs=false"
+          ],
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/ximion/appstream.git",
+              "commit": "ce52fb058e06f1f36320911e93e6773c6e3fe82e",
+              "tag": "v1.2.0"
+            }
+          ],
+          "modules": [
+            {
+              "name": "libstemmer",
+              "buildsystem": "simple",
+              "build-commands": [
+                "make",
+                "install -Dm644 include/libstemmer.h -t \"${FLATPAK_DEST}/include\"",
+                "install -Dm644 libstemmer.a \"${FLATPAK_DEST}/lib/\""
+              ],
+              "sources": [
+                {
+                  "type": "archive",
+                  "url": "https://snowballstem.org/dist/libstemmer_c-3.1.1.tar.gz",
+                  "sha256": "0e82fb0e29006cad2831b4b25980a1dae85959c6a1faaaf96547f551e352042a"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "flatpak",
           "buildsystem": "meson",
           "config-opts": [
