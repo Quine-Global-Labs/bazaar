@@ -400,6 +400,7 @@ vala_deps = [
   gtk_dep,
   libadwaita_dep,
   libdex_dep,
+  appstream_dep,
 ]
 vala_sources = files(
   'bz.vapi',
@@ -422,18 +423,12 @@ if get_option('sandboxed_libflatpak')
   vala_args += ['--define=SANDBOXED_LIBFLATPAK']
 endif
 
-appstream_incdir = include_directories(
-  appstream_dep.get_pkgconfig_variable('includedir') / 'appstream',
-  is_system: true,
-)
-
 bz_vala_static = static_library(
   'bzvala', vala_sources,
   sources: [bz_resources],
   dependencies: vala_deps,
   vala_header: 'bzvala.h',
   vala_args: vala_args,
-  include_directories: [appstream_incdir],
   c_args: [
     '-DGETTEXT_PACKAGE="' + meson.project_name() + '"',
   ],
