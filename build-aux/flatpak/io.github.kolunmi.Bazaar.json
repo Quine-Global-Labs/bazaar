@@ -119,7 +119,12 @@
               "type": "git",
               "url": "https://github.com/ximion/appstream.git",
               "commit": "ce52fb058e06f1f36320911e93e6773c6e3fe82e",
-              "tag": "v1.2.0"
+              "tag": "v1.2.0",
+              "x-checker-data": {
+                "type": "anitya",
+                "project-id": 10385,
+                "tag-template": "v$version"
+              }
             }
           ],
           "modules": [
