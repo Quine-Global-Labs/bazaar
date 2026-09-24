@@ -112,7 +112,13 @@
           "config-opts": [
             "-Dgir=true",
             "-Dvapi=true",
-            "-Ddocs=false"
+            "-Ddocs=false",
+            "-Dman=false",
+            "-Dapidocs=false",
+            "-Dstemming=false",
+            "-Dblake3-support=false",
+            "-Dsystemd=false",
+            "-Dbash-completion=false"
           ],
           "sources": [
             {
@@ -125,24 +131,6 @@
                 "project-id": 10385,
                 "tag-template": "v$version"
               }
-            }
-          ],
-          "modules": [
-            {
-              "name": "libstemmer",
-              "buildsystem": "simple",
-              "build-commands": [
-                "make",
-                "install -Dm644 include/libstemmer.h -t \"${FLATPAK_DEST}/include\"",
-                "install -Dm644 libstemmer.a \"${FLATPAK_DEST}/lib/\""
-              ],
-              "sources": [
-                {
-                  "type": "archive",
-                  "url": "https://snowballstem.org/dist/libstemmer_c-3.1.1.tar.gz",
-                  "sha256": "0e82fb0e29006cad2831b4b25980a1dae85959c6a1faaaf96547f551e352042a"
-                }
-              ]
             }
           ]
         },
