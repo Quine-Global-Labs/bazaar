@@ -107,6 +107,67 @@
           ]
         },
         {
+          "name": "libxmlb",
+          "buildsystem": "meson",
+          "config-opts": [
+            "-Dstemmer=false",
+            "-Dintrospection=false",
+            "-Dgtkdoc=false"
+          ],
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/hughsie/libxmlb.git",
+              "commit": "d942cd68a7d78e35b312b9299e69f68f9cd2e503",
+              "tag": "0.3.29",
+              "x-checker-data": {
+                "type": "anitya",
+                "project-id": 179028,
+                "tag-template": "$version"
+              }
+            }
+          ]
+        },
+        {
+          "name": "libyaml",
+          "buildsystem": "autotools",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/yaml/libyaml",
+              "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+              "tag": "0.2.5",
+              "x-checker-data": {
+                "type": "anitya",
+                "project-id": 1800,
+                "tag-template": "$version"
+              }
+            }
+          ]
+        },
+        {
+          "name": "libfyaml",
+          "buildsystem": "cmake-ninja",
+          "config-opts": [
+            "-DENABLE_NETWORK=OFF",
+            "-DENABLE_LIBCLANG=OFF",
+            "-DBUILD_TESTING=OFF"
+          ],
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/pantoniou/libfyaml",
+              "tag": "v0.9.6",
+              "commit": "1ed9bae3b1e5fc57e31a14a2ea12810fdf423473",
+              "x-checker-data": {
+                "type": "anitya",
+                "project-id": 383614,
+                "tag-template": "v$version"
+              }
+            }
+          ]
+        },
+        {
           "name": "appstream",
           "buildsystem": "meson",
           "config-opts": [
