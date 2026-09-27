@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-03 18:38+0000\n"
-"PO-Revision-Date: 2026-09-04 22:16+0500\n"
+"POT-Creation-Date: 2026-09-27 08:41+0000\n"
+"PO-Revision-Date: 2026-09-27 16:34+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <Kazakh>\n"
 "Language: kk\n"
@@ -18,34 +18,35 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.9\n"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:2 data/io.github.kolunmi.Bazaar.metainfo.xml.in:7
-#: src/bz-window.blp:54 src/bz-window.blp:208 src/bz-window.c:377 src/bz-window.c:378
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.desktop.in:3 data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
+#: src/bz-window.blp:55 src/bz-window.blp:211 src/bz-window.c:438 src/bz-window.c:439
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/io.github.kolunmi.Bazaar.desktop.in:4
 msgid "App Store"
 msgstr "Қолданбалар дүкені"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/io.github.kolunmi.Bazaar.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Бұл компьютерде flatpak бағдарламалық қамтамасын қосу, өшіру немесе жаңарту"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:10
+#: data/io.github.kolunmi.Bazaar.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr ""
 "System;Package;Manager;Discover;Flatpak;Software;App;Store;Жүйе;Десте;Басқарушы;Бағдарламалық "
 "қамтама;Қолданба;Дүкен;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:17
+#: data/io.github.kolunmi.Bazaar.desktop.in:18
 msgid "New Window"
 msgstr "Жаңа терезе"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "Қолданбаларды шолу және орнату"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:10
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and installing Flatpak apps "
 "and add-ons, particularly from Flathub."
@@ -53,43 +54,44 @@ msgstr ""
 "Flatpak қолданбалары мен қосымшаларын, әсіресе Flathub-тан табуға және орнатуға бағытталған "
 "Linux үшін жылдам әрі заманауи қолданбалар дүкені."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:15
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "Бірнеше орнатуды кезекке қойып, шолуды жалғастырыңыз"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "Қолданба рұқсаттарын оңай көру"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "Таңдаулыларыңызды көру және басқару үшін Flathub-қа кіріңіз"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Қолданбаларды тікелей GNOME Shell-ден іздеу"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:32 src/bz-application.c:754
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:755
 msgid "The Bazaar Contributors"
 msgstr "Bazaar үлес қосушылары"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:57
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "Flathub қолданбаларын көрсететін басты бет"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:61
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "Exhibit үшін қолданба беті"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:65
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
 msgid "Library page"
 msgstr "Кітапхана беті"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:69
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
 msgid "Search page"
 msgstr "Іздеу беті"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:73
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
 msgid "Category page"
 msgstr "Санат беті"
 
@@ -131,15 +133,25 @@ msgstr ""
 msgid "Add-on Page"
 msgstr "Қосымша беті"
 
-#: src/bz-addons-dialog.blp:203 src/bz-full-view.blp:392
+#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:267 src/context-tile-callbacks.c:142
+msgid "Download"
+msgstr "Жүктеп алу"
+
+#. Translators: As in 'The app is installed'.
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:282
+#: src/bz-releases-list.c:204
+msgid "Installed"
+msgstr "Орнатылған"
+
+#: src/bz-addons-dialog.blp:221 src/bz-full-view.blp:406
 msgid "Downloads/Month"
 msgstr "Жүктеп алулар/ай"
 
-#: src/bz-addons-dialog.blp:229 src/bz-full-view.blp:427
+#: src/bz-addons-dialog.blp:247 src/bz-full-view.blp:441
 msgid "Stopped Receiving Core Updates"
 msgstr "Негізгі жаңартуларды алу тоқтатылды"
 
-#: src/bz-addons-dialog.blp:243
+#: src/bz-addons-dialog.blp:261
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security fixes. It may become "
 "unsafe to use."
@@ -147,7 +159,7 @@ msgstr ""
 "Бұл қосымша бұдан былай жаңартуларды немесе қауіпсіздік түзетулерін алмайтын орындау ортасын "
 "пайдаланады. Оны пайдалану қауіпті болуы мүмкін."
 
-#: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:588
+#: src/bz-addons-dialog.blp:346 src/bz-full-view.blp:602
 msgid "Other Sources"
 msgstr "Басқа дереккөздер"
 
@@ -156,11 +168,11 @@ msgstr "Басқа дереккөздер"
 msgid "Add-on for %s"
 msgstr "%s үшін қосымша"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613
 msgid "Show Less"
 msgstr "Азырақ көрсету"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613 src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Көбірек көрсету"
 
@@ -169,7 +181,7 @@ msgid "Download Stats"
 msgstr "Жүктеп алу статистикасы"
 
 #: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31 src/bz-age-rating-dialog.c:737
-#: src/context-tile-callbacks.c:187 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:194 src/context-tile-callbacks.c:201
 msgid "Age Rating"
 msgstr "Жас рейтингі"
 
@@ -490,7 +502,7 @@ msgid "Violence"
 msgstr "Зорлық-зомбылық"
 
 #. Translators: Age rating format, e.g. "12+" for ages 12 and up
-#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:177
+#: src/bz-age-rating-dialog.c:686 src/context-tile-callbacks.c:184
 #, c-format
 msgid "%d+"
 msgstr "%d+"
@@ -540,129 +552,129 @@ msgstr "%s %s үшін сай келеді"
 msgid "%s • %s"
 msgstr "%s • %s"
 
-#: src/bz-app-permissions.c:160
+#: src/bz-app-permissions.c:175
 #, c-format
 msgid "System folder %s"
 msgstr "%s жүйелік бумасы"
 
-#: src/bz-app-permissions.c:162
+#: src/bz-app-permissions.c:177
 #, c-format
 msgid "Home subfolder %s"
 msgstr "%s үй ішкі бумасы"
 
-#: src/bz-app-permissions.c:164
+#: src/bz-app-permissions.c:179
 msgid "Host system folders"
 msgstr "Хост жүйесінің бумалары"
 
-#: src/bz-app-permissions.c:166
+#: src/bz-app-permissions.c:181
 msgid "Host system configuration from /etc"
 msgstr "/etc ішіндегі хост жүйесінің конфигурациясы"
 
-#: src/bz-app-permissions.c:169
+#: src/bz-app-permissions.c:184
 #, c-format
 msgid "Desktop subfolder %s"
 msgstr "Жұмыс үстелінің %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:170
+#: src/bz-app-permissions.c:185
 msgid "Desktop folder"
 msgstr "Жұмыс үстелі бумасы"
 
-#: src/bz-app-permissions.c:173
+#: src/bz-app-permissions.c:188
 #, c-format
 msgid "Documents subfolder %s"
 msgstr "Құжаттардың %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:174
+#: src/bz-app-permissions.c:189
 msgid "Documents folder"
 msgstr "Құжаттар бумасы"
 
-#: src/bz-app-permissions.c:177
+#: src/bz-app-permissions.c:192
 #, c-format
 msgid "Music subfolder %s"
 msgstr "Музыканың %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:178
+#: src/bz-app-permissions.c:193
 msgid "Music folder"
 msgstr "Музыка бумасы"
 
-#: src/bz-app-permissions.c:181
+#: src/bz-app-permissions.c:196
 #, c-format
 msgid "Pictures subfolder %s"
 msgstr "Суреттердің %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:182
+#: src/bz-app-permissions.c:197
 msgid "Pictures folder"
 msgstr "Суреттер бумасы"
 
-#: src/bz-app-permissions.c:185
+#: src/bz-app-permissions.c:200
 #, c-format
 msgid "Public Share subfolder %s"
 msgstr "Ортақ жария файлдардың %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:186
+#: src/bz-app-permissions.c:201
 msgid "Public Share folder"
 msgstr "Ортақ жария файлдар бумасы"
 
-#: src/bz-app-permissions.c:189
+#: src/bz-app-permissions.c:204
 #, c-format
 msgid "Videos subfolder %s"
 msgstr "Бейнелердің %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:190
+#: src/bz-app-permissions.c:205
 msgid "Videos folder"
 msgstr "Бейнелер бумасы"
 
-#: src/bz-app-permissions.c:193
+#: src/bz-app-permissions.c:208
 #, c-format
 msgid "Templates subfolder %s"
 msgstr "Үлгілердің %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:194
+#: src/bz-app-permissions.c:209
 msgid "Templates folder"
 msgstr "Үлгілер бумасы"
 
-#: src/bz-app-permissions.c:197
+#: src/bz-app-permissions.c:212
 #, c-format
 msgid "User cache subfolder %s"
 msgstr "Пайдаланушы кэшінің %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:198
+#: src/bz-app-permissions.c:213
 msgid "User cache folder"
 msgstr "Пайдаланушы кэшінің бумасы"
 
-#: src/bz-app-permissions.c:201
+#: src/bz-app-permissions.c:216
 #, c-format
 msgid "User configuration subfolder %s"
 msgstr "Пайдаланушы конфигурациясының %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:202
+#: src/bz-app-permissions.c:217
 msgid "User configuration folder"
 msgstr "Пайдаланушы конфигурациясының бумасы"
 
-#: src/bz-app-permissions.c:205
+#: src/bz-app-permissions.c:220
 #, c-format
 msgid "User data subfolder %s"
 msgstr "Пайдаланушы деректерінің %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:206
+#: src/bz-app-permissions.c:221
 msgid "User data folder"
 msgstr "Пайдаланушы деректерінің бумасы"
 
-#: src/bz-app-permissions.c:209
+#: src/bz-app-permissions.c:224
 #, c-format
 msgid "User runtime subfolder %s"
 msgstr "Пайдаланушы орындау ортасының %s ішкі бумасы"
 
-#: src/bz-app-permissions.c:210
+#: src/bz-app-permissions.c:225
 msgid "User runtime folder"
 msgstr "Пайдаланушы орындау ортасының бумасы"
 
-#: src/bz-app-permissions.c:212
+#: src/bz-app-permissions.c:227
 #, c-format
 msgid "Filesystem access to %s"
 msgstr "%s жеріне файлдық жүйеге қол жеткізу"
 
-#: src/bz-app-permissions.c:214
+#: src/bz-app-permissions.c:229
 msgid "Unknown filesystem path"
 msgstr "Белгісіз файлдық жүйе жолы"
 
@@ -715,8 +727,8 @@ msgid "Runtime Download Size"
 msgstr "Орындау ортасын жүктеп алу өлшемі"
 
 #: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:185
-#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:394
-#: src/context-tile-callbacks.c:416
+#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:401
+#: src/context-tile-callbacks.c:423
 msgid "N/A"
 msgstr "Қ/Ж"
 
@@ -724,34 +736,29 @@ msgstr "Қ/Ж"
 msgid "Storage"
 msgstr "Сақтау қоймасы"
 
-#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:107
+#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:107
 #: src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "Расталған"
 
-#. Translators: As in 'The app is installed'.
-#: src/bz-app-tile.blp:87 src/bz-releases-list.c:204 src/context-tile-callbacks.c:136
-msgid "Installed"
-msgstr "Орнатылған"
-
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:757
+#: src/bz-application.c:758
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
-#: src/bz-application.c:767
+#: src/bz-application.c:768
 msgid "Special Thanks"
 msgstr "Ерекше алғыс"
 
-#: src/bz-application.c:825
+#: src/bz-application.c:826
 msgid "Logged Out Successfully!"
 msgstr "Сәтті шықтыңыз!"
 
-#: src/bz-application.c:1057
+#: src/bz-application.c:1058
 msgid "Notice for Ubuntu Users"
 msgstr "Ubuntu пайдаланушылары үшін ескерту"
 
-#: src/bz-application.c:1060
+#: src/bz-application.c:1061
 msgid ""
 "Ubuntu 25.10 and newer have changed default security rules in a way that makes it "
 "<b>impossible to install apps</b> from the Flatpak version of Bazaar. For the time being, "
@@ -773,19 +780,19 @@ msgstr ""
 "\n"
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 
-#: src/bz-application.c:1068
+#: src/bz-application.c:1069
 msgid "Continue Anyway"
 msgstr "Сонда да жалғастыру"
 
-#: src/bz-application.c:1084
+#: src/bz-application.c:1085
 msgid "Performing setup…"
 msgstr "Баптау орындалуда…"
 
-#: src/bz-application.c:1183
+#: src/bz-application.c:1184
 msgid "Set Up System Flathub?"
 msgstr "Жүйелік Flathub баптау керек пе?"
 
-#: src/bz-application.c:1186
+#: src/bz-application.c:1187
 msgid ""
 "The system Flathub remote is not set up. Bazaar requires Flathub to be configured on the "
 "system Flatpak installation to browse and install applications.\n"
@@ -798,11 +805,11 @@ msgstr ""
 "Сіз әлі де әлдеқашан орнатылған қолданбаларды шолу және өшіру үшін Bazaar қолданбасын "
 "пайдалана аласыз."
 
-#: src/bz-application.c:1193
+#: src/bz-application.c:1194
 msgid "Set Up Flathub?"
 msgstr "Flathub баптау керек пе?"
 
-#: src/bz-application.c:1196
+#: src/bz-application.c:1197
 msgid ""
 "Flathub is not set up on this system. You will not be able to browse and install applications "
 "in Bazaar if its unavailable.\n"
@@ -815,58 +822,58 @@ msgstr ""
 "Сіз әлі де әлдеқашан орнатылған қолданбаларды шолу және өшіру үшін Bazaar қолданбасын "
 "пайдалана аласыз."
 
-#: src/bz-application.c:1202
+#: src/bz-application.c:1203
 msgid "Later"
 msgstr "Кейінірек"
 
-#: src/bz-application.c:1203
+#: src/bz-application.c:1204
 msgid "Set Up Flathub"
 msgstr "Flathub баптау"
 
-#: src/bz-application.c:1723
+#: src/bz-application.c:1724
 msgid "A backend error occurred"
 msgstr "Бэкенд қатесі орын алды"
 
-#: src/bz-application.c:1930 src/bz-application.c:4251
+#: src/bz-application.c:1931 src/bz-application.c:4271
 msgid "Refreshing…"
 msgstr "Жаңартылуда…"
 
-#: src/bz-application.c:2089
+#: src/bz-application.c:2090
 #, c-format
 msgid "Loading %d apps…"
 msgstr "%d қолданба жүктелуде…"
 
-#: src/bz-application.c:2148 src/bz-application.c:2225
+#: src/bz-application.c:2149 src/bz-application.c:2226
 msgid "Failed to open file"
 msgstr "Файлды ашу сәтсіз аяқталды"
 
-#: src/bz-application.c:2239
+#: src/bz-application.c:2240
 msgid "Failed to load metainfo"
 msgstr "Метадеректерді жүктеу сәтсіз аяқталды"
 
-#: src/bz-application.c:2362
+#: src/bz-application.c:2363
 msgid "An initialization error occurred"
 msgstr "Инициализация қатесі орын алды"
 
-#: src/bz-application.c:2770
+#: src/bz-application.c:2771
 msgid "Checking for updates…"
 msgstr "Жаңартулар тексерілуде…"
 
-#: src/bz-application.c:2826
+#: src/bz-application.c:2846
 msgid "Failed to check for updates"
 msgstr "Жаңартуларды тексеру сәтсіз аяқталды"
 
-#: src/bz-application.c:4028
+#: src/bz-application.c:4048
 msgid "Could not find app"
 msgstr "Қолданба табылмады"
 
-#: src/bz-application.c:4248
+#: src/bz-application.c:4268
 #, c-format
 msgid "Loading %d app…"
 msgid_plural "Loading %d apps…"
 msgstr[0] "%d қолданба жүктелуде…"
 
-#: src/bz-application.c:4253
+#: src/bz-application.c:4273
 msgid "Writing to cache…"
 msgstr "Кэшке жазылуда…"
 
@@ -915,8 +922,8 @@ msgstr "%d қосымша орнатылады."
 msgid "Additionally, addons will be installed."
 msgstr "Сонымен қатар қосымшалар орнатылады."
 
-#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:193
-#: src/bz-transaction-dialog.c:238
+#: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:200
+#: src/bz-transaction-dialog.c:245
 msgid "_Cancel"
 msgstr "_Бас тарту"
 
@@ -924,7 +931,7 @@ msgstr "_Бас тарту"
 msgid "_Install All"
 msgstr "Барлығын _орнату"
 
-#: src/bz-bundle-install-dialog.blp:21 src/bz-bundle-install-dialog.blp:27
+#: src/bz-bundle-install-dialog.blp:20 src/bz-bundle-install-dialog.blp:26
 msgid "Bundle Installation"
 msgstr "Буманы орнату"
 
@@ -944,25 +951,25 @@ msgstr ""
 "\n"
 "Бұл дереккөзді оған сенімді болсаңыз ғана қосыңыз."
 
-#: src/bz-bundle-install-dialog.blp:412
+#: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "Сәтті орнатылды!"
 
 #. TRANSLATORS: Button to launch an installed app
-#: src/bz-bundle-install-dialog.blp:438 src/bz-bundle-install-dialog.blp:524
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526
 #: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:300
 msgid "Open"
 msgstr "Ашу"
 
-#: src/bz-bundle-install-dialog.blp:448 src/bz-bundle-install-dialog.blp:534
+#: src/bz-bundle-install-dialog.blp:450 src/bz-bundle-install-dialog.blp:536
 msgid "Show App Details"
 msgstr "Қолданбаның толық ақпаратын көрсету"
 
-#: src/bz-bundle-install-dialog.blp:499
+#: src/bz-bundle-install-dialog.blp:501
 msgid "Already Installed"
 msgstr "Орнатылған"
 
-#: src/bz-bundle-install-dialog.blp:546
+#: src/bz-bundle-install-dialog.blp:548
 msgid "Installation Failed"
 msgstr "Орнату сәтсіз аяқталды"
 
@@ -995,6 +1002,27 @@ msgstr "Flathub шолу"
 #: src/bz-curated-view.blp:49
 msgid "Offline"
 msgstr "Офлайн"
+
+#: src/bz-cosmic-place-applet-dialog.vala:25
+msgid "Place Applet"
+msgstr "Апплет алаңы"
+
+#: src/bz-cosmic-place-applet-dialog.vala:26
+msgid "Choose where to add this applet."
+msgstr "Бұл апплетті қайда қосу керектігін таңдаңыз."
+
+#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80
+#: src/bz-rich-app-tile.blp:232
+msgid "Cancel"
+msgstr "Бас тарту"
+
+#: src/bz-cosmic-place-applet-dialog.vala:30
+msgid "Panel"
+msgstr "Панель"
+
+#: src/bz-cosmic-place-applet-dialog.vala:31
+msgid "Dock"
+msgstr "Док"
 
 #: src/bz-developer-badge.c:94 src/bz-developer-badge.c:98
 msgid "Not Verified"
@@ -1030,19 +1058,21 @@ msgstr "%1$s қолданба идентификаторының иелігі %2
 msgid "The ownership of the %s app ID has been verified."
 msgstr "%s қолданба идентификаторының иелігі расталды."
 
-#: src/bz-donations-dialog.blp:7
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:8
 msgid "Bazaar Release"
 msgstr "Bazaar шығарылымы"
 
-#: src/bz-donations-dialog.blp:76
+#: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "Шығарылым туралы толық ақпарат"
 
-#: src/bz-donations-dialog.blp:111
+#: src/bz-donations-dialog.blp:112
 msgid "This release was made possible by users like you!"
 msgstr "Бұл шығарылым сіз сияқты пайдаланушылардың арқасында мүмкін болды!"
 
-#: src/bz-donations-dialog.blp:120
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:122
 msgid ""
 "I love making Bazaar, but I cannot do it alone. Help support further development by donating "
 "on Ko-Fi."
@@ -1050,7 +1080,8 @@ msgstr ""
 "Мен Bazaar жасағанды жақсы көремін, бірақ оны жалғыз істей алмаймын. Ko-Fi арқылы демеушілік "
 "көрсетіп, одан әрі әзірлеуге көмектесіңіз."
 
-#: src/bz-donations-dialog.blp:134
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-donations-dialog.blp:137
 msgid "Donate to Bazaar"
 msgstr "Bazaar-ға демеушілік ету"
 
@@ -1074,10 +1105,6 @@ msgid ""
 "You have multiple versions of this app installed. Which one would you like to proceed with?"
 msgstr "Сізде бұл қолданбаның бірнеше нұсқасы орнатылған. Қайсысымен жалғастырғыңыз келеді?"
 
-#: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
-msgid "Cancel"
-msgstr "Бас тарту"
-
 #: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69 src/error.c:88
 #: src/update-worker.c:473
 msgid "Details"
@@ -1096,19 +1123,19 @@ msgstr "Көшірілді!"
 msgid "Favorite Count"
 msgstr "Таңдаулылар саны"
 
-#: src/bz-favorite-button.c:388
+#: src/bz-favorite-button.c:391
 msgid "Failed to update favorite"
 msgstr "Таңдаулыны жаңарту сәтсіз аяқталды"
 
-#: src/bz-favorite-button.c:434
+#: src/bz-favorite-button.c:438
 msgid "Log in with Flathub to manage favorites"
 msgstr "Таңдаулыларды басқару үшін Flathub арқылы кіріңіз"
 
-#: src/bz-favorite-button.c:440
+#: src/bz-favorite-button.c:444
 msgid "Log In"
 msgstr "Кіру"
 
-#: src/bz-favorites-page.blp:5 src/bz-window.blp:342
+#: src/bz-favorites-page.blp:5 src/bz-window.blp:350
 msgid "Favorites"
 msgstr "Таңдаулылар"
 
@@ -1432,35 +1459,47 @@ msgstr "KDE қолданбалары"
 msgid "More KDE Apps"
 msgstr "Көбірек KDE қолданбалары"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:418
+#: src/bz-flathub-category.c:151
+msgid "Made for COSMIC™"
+msgstr "COSMIC™ үшін жасалған"
+
+#: src/bz-flathub-category.c:151
+msgid "For COSMIC™"
+msgstr "COSMIC™ үшін"
+
+#: src/bz-flathub-category.c:151
+msgid "More COSMIC Apps"
+msgstr "Көбірек COSMIC қолданбалары"
+
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:418
 msgid "Games"
 msgstr "Ойындар"
 
-#: src/bz-flathub-category.c:151 src/bz-flathub-page.blp:475
+#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:475
 msgid "More Games"
 msgstr "Көбірек ойындар"
 
-#: src/bz-flathub-category.c:152 src/bz-flathub-page.blp:424
+#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:424
 msgid "Emulators"
 msgstr "Эмуляторлар"
 
-#: src/bz-flathub-category.c:152
+#: src/bz-flathub-category.c:153
 msgid "More Emulators"
 msgstr "Көбірек эмуляторлар"
 
-#: src/bz-flathub-category.c:153 src/bz-flathub-page.blp:430
+#: src/bz-flathub-category.c:154 src/bz-flathub-page.blp:430
 msgid "Launchers"
 msgstr "Жөнелткіштер"
 
-#: src/bz-flathub-category.c:153
+#: src/bz-flathub-category.c:154
 msgid "More Game Launchers"
 msgstr "Көбірек ойын жөнелткіштері"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "Game Tools"
 msgstr "Ойын саймандары"
 
-#: src/bz-flathub-category.c:154
+#: src/bz-flathub-category.c:155
 msgid "More Game Tools"
 msgstr "Көбірек ойын саймандары"
 
@@ -1629,7 +1668,7 @@ msgstr "Дүкендегі сыртқы көрінісін алдын ала қ�
 msgid "_Support"
 msgstr "Қ_олдау"
 
-#: src/bz-full-view.blp:441
+#: src/bz-full-view.blp:455
 msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. It may become "
 "unsafe to use."
@@ -1637,23 +1676,23 @@ msgstr ""
 "Бұл қолданба бұдан былай жаңартуларды немесе қауіпсіздік түзетулерін алмайтын орындау ортасын "
 "пайдаланады. Оны пайдалану қауіпті болуы мүмкін."
 
-#: src/bz-full-view.blp:519
+#: src/bz-full-view.blp:533
 msgid "Trash Data"
 msgstr "Деректерді қоқыс шелегіне тастау"
 
-#: src/bz-full-view.blp:616
+#: src/bz-full-view.blp:630
 msgid "Add-ons"
 msgstr "Қосымшалар"
 
-#: src/bz-full-view.blp:651
+#: src/bz-full-view.blp:665
 msgid "More Add-Ons"
 msgstr "Көбірек қосымшалар"
 
-#: src/bz-full-view.blp:662
+#: src/bz-full-view.blp:676
 msgid "Links"
 msgstr "Сілтемелер"
 
-#: src/bz-full-view.blp:693
+#: src/bz-full-view.blp:707
 msgid "Similar Apps"
 msgstr "Ұқсас қолданбалар"
 
@@ -1814,11 +1853,11 @@ msgstr "А_шу"
 msgid "Uninstall Application"
 msgstr "Қолданбаны өшіру"
 
-#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:194
+#: src/bz-install-controls.blp:82 src/bz-transaction-dialog.c:201
 msgid "_Remove"
 msgstr "Ө_шіру"
 
-#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168 src/bz-updates-card.c:187
+#: src/bz-install-controls.blp:114 src/bz-updates-card.vala:178 src/bz-updates-card.vala:201
 msgid "Update"
 msgstr "Жаңарту"
 
@@ -1826,12 +1865,12 @@ msgstr "Жаңарту"
 msgid "Remove"
 msgstr "Өшіру"
 
-#: src/bz-install-controls.c:669
+#: src/bz-install-controls.c:672
 #, c-format
 msgid "Install %s from %s"
 msgstr "%s қолданбасын %s ішінен орнату"
 
-#: src/bz-install-controls.c:671
+#: src/bz-install-controls.c:674
 #, c-format
 msgid "Install %s"
 msgstr "%s орнату"
@@ -1899,7 +1938,7 @@ msgstr "Өлшемі"
 msgid "No matches found for \"%s\" in the list of installed apps"
 msgstr "Орнатылған қолданбалар тізімінен \"%s\" үшін сәйкестік табылмады"
 
-#: src/bz-library-page.c:194 src/bz-updates-card.c:437
+#: src/bz-library-page.c:194 src/bz-updates-card.vala:51
 #, c-format
 msgid "%u Available Update"
 msgid_plural "%u Available Updates"
@@ -1911,11 +1950,11 @@ msgid "%u Installed App"
 msgid_plural "%u Installed Apps"
 msgstr[0] "%u орнатылған қолданба"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:821
+#: src/bz-library-page.c:629 src/bz-search-page.c:820
 msgid "No applications found"
 msgstr "Қолданбалар табылмады"
 
-#: src/bz-library-page.c:629 src/bz-search-page.c:823
+#: src/bz-library-page.c:629 src/bz-search-page.c:822
 #, c-format
 msgid "One application found"
 msgid_plural "%u applications found"
@@ -1937,11 +1976,11 @@ msgstr "Белгісіз лицензия"
 msgid "Community Built"
 msgstr "Қауымдастық құрастырған"
 
-#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:289
+#: src/bz-license-dialog.c:133 src/context-tile-callbacks.c:296
 msgid "Proprietary"
 msgstr "Проприетарлы"
 
-#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:291
+#: src/bz-license-dialog.c:135 src/context-tile-callbacks.c:298
 msgid "Special License"
 msgstr "Арнайы лицензия"
 
@@ -2044,6 +2083,25 @@ msgstr "Таңбашаны таңдау"
 msgid "Image Files"
 msgstr "Сурет файлдары"
 
+#: src/bz-new-permissions-dialog.vala:30
+msgid "New Permissions"
+msgstr "Жаңа рұқсаттар"
+
+#: src/bz-new-permissions-dialog.vala:51
+msgid "_Accept"
+msgstr "Қ_абылдау"
+
+#: src/bz-new-permissions-dialog.vala:103
+#, c-format
+msgid "New Permission for %s"
+msgid_plural "New Permissions for %s"
+msgstr[0] "%s үшін жаңа рұқсат(тар)"
+
+#: src/bz-new-permissions-dialog.vala:108
+msgid "This update requires the following additional permission"
+msgid_plural "This update requires the following additional permissions"
+msgstr[0] "Бұл жаңарту келесі қосымша рұқсатт(ард)ы талап етеді"
+
 #: src/bz-other-sources-list.vala:52
 msgid "User"
 msgstr "Пайдаланушы"
@@ -2072,7 +2130,7 @@ msgstr ""
 "Желі қосылымы трафикті есептейтін ретінде көрсетілген — дүкен деректерін автоматты жаңарту "
 "уақытша тоқтатылды"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:240 src/bz-window.blp:251
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
 msgid "Refresh Manually"
 msgstr "Қолмен жаңарту"
 
@@ -2240,11 +2298,12 @@ msgstr "Фембой прайд түстері"
 msgid "Neutrois Pride Colors"
 msgstr "Нейтроис прайд түстері"
 
-#: src/bz-preferences-dialog.c:285
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-preferences-dialog.c:286
 msgid "Bazaar needs to run in the background to check for app updates"
 msgstr "Қолданба жаңартуларын тексеру үшін Bazaar фонда орындалуы керек"
 
-#: src/bz-releases-dialog.blp:5 src/bz-updates-card.c:159
+#: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "Нұсқалар тарихы"
 
@@ -2318,7 +2377,7 @@ msgstr "Өшіру"
 msgid "Get"
 msgstr "Алу"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:307 src/safety-calculator.c:161
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322 src/safety-calculator.c:158
 msgid "Arbitrary Permissions"
 msgstr "Кез келген рұқсаттар"
 
@@ -2345,7 +2404,7 @@ msgid "View Other Permissions"
 msgstr "Басқа рұқсаттарды қарау"
 
 #. TRANSLATORS: short app safety rating label
-#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:402
+#: src/bz-safety-dialog.blp:81 src/context-tile-callbacks.c:409
 msgid "Safe"
 msgstr "Қауіпсіз"
 
@@ -2365,31 +2424,31 @@ msgstr ""
 "Бұл қолданба бағдарламалық жасақтама платформасының (SDK) ескірген нұсқасын пайдаланады және "
 "түзетілмейтін ақаулар немесе қауіпсіздік осалдықтары болуы мүмкін."
 
-#: src/bz-safety-dialog.c:293 src/bz-safety-dialog.c:326
+#: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
 msgid "Safety"
 msgstr "Қауіпсіздік"
 
-#: src/bz-safety-dialog.c:386
+#: src/bz-safety-dialog.c:401
 #, c-format
 msgid "%s is Safe"
 msgstr "%s қауіпсіз"
 
-#: src/bz-safety-dialog.c:391
+#: src/bz-safety-dialog.c:406
 #, c-format
 msgid "%s has no Unsafe Permissions"
 msgstr "%s қауіпті емес рұқсаттарға ие"
 
-#: src/bz-safety-dialog.c:396
+#: src/bz-safety-dialog.c:411
 #, c-format
 msgid "%s is Probably Safe"
 msgstr "%s мүмкін қауіпсіз"
 
-#: src/bz-safety-dialog.c:401
+#: src/bz-safety-dialog.c:416
 #, c-format
 msgid "%s is Possibly Unsafe"
 msgstr "%s мүмкін қауіпті"
 
-#: src/bz-safety-dialog.c:406
+#: src/bz-safety-dialog.c:421
 #, c-format
 msgid "%s is Unsafe"
 msgstr "%s қауіпті"
@@ -2444,7 +2503,7 @@ msgstr "Скриншот %u %s"
 msgid "Screenshot %u"
 msgstr "Скриншот %u"
 
-#: src/bz-search-bar.blp:55
+#: src/bz-search-bar.blp:47 src/bz-search-bar.blp:57
 msgid "Clear Search"
 msgstr "Іздеуді тазарту"
 
@@ -2500,7 +2559,7 @@ msgstr "Жоғарыдағы іздеу панелін пайдаланып қо
 msgid "No Applications Found"
 msgstr "Қолданбалар табылмады"
 
-#: src/bz-search-page.c:254
+#: src/bz-search-page.c:253
 #, c-format
 msgid "No results found for \"%s\" in Flathub"
 msgstr "Flathub ішінен \"%s\" үшін нәтижелер табылмады"
@@ -2688,48 +2747,48 @@ msgstr "Нәтижелер табылмады"
 msgid "Search failed"
 msgstr "Іздеу сәтсіз аяқталды"
 
-#: src/bz-transaction-dialog.c:116 src/context-tile-callbacks.c:244
-#: src/context-tile-callbacks.c:249 src/context-tile-callbacks.c:277
-#: src/context-tile-callbacks.c:286
+#: src/bz-transaction-dialog.c:118 src/context-tile-callbacks.c:251
+#: src/context-tile-callbacks.c:256 src/context-tile-callbacks.c:284
+#: src/context-tile-callbacks.c:293
 msgid "Unknown"
 msgstr "Белгісіз"
 
-#: src/bz-transaction-dialog.c:145
+#: src/bz-transaction-dialog.c:148
 msgid "Keep User Data"
 msgstr "Пайдаланушы деректерін сақтау"
 
-#: src/bz-transaction-dialog.c:146
+#: src/bz-transaction-dialog.c:149
 msgid "Allow restoring personal settings &amp; content"
 msgstr "Жеке баптаулар мен мазмұнды қалпына келтіруге рұқсат ету"
 
-#: src/bz-transaction-dialog.c:155
+#: src/bz-transaction-dialog.c:158
 msgid "Delete All Data"
 msgstr "Барлық деректерді өшіру"
 
-#: src/bz-transaction-dialog.c:156
+#: src/bz-transaction-dialog.c:159
 msgid "Permanently erase user data to save space"
 msgstr "Орын үнемдеу үшін пайдаланушы деректерін біржола өшіру"
 
-#: src/bz-transaction-dialog.c:182
+#: src/bz-transaction-dialog.c:189
 #, c-format
 msgid "Remove %s?"
 msgstr "%s өшіру керек пе?"
 
-#: src/bz-transaction-dialog.c:185
+#: src/bz-transaction-dialog.c:192
 msgid "Select which version to remove."
 msgstr "Өшірілетін нұсқаны таңдаңыз."
 
-#: src/bz-transaction-dialog.c:187
+#: src/bz-transaction-dialog.c:194
 #, c-format
 msgid "It will not be possible to use %s after it is uninstalled."
 msgstr "%s өшірілгеннен кейін оны пайдалану мүмкін болмайды."
 
-#: src/bz-transaction-dialog.c:210
+#: src/bz-transaction-dialog.c:217
 #, c-format
 msgid "“%s” is High Risk"
 msgstr "“%s” қауіптілік деңгейі жоғары"
 
-#: src/bz-transaction-dialog.c:214
+#: src/bz-transaction-dialog.c:221
 msgid ""
 "This app has full access to your system, including all <b>your files, browser history, saved "
 "passwords</b>, and more. It also has access to the internet, meaning it could send your data "
@@ -2744,7 +2803,7 @@ msgstr ""
 "\n"
 "Қолданба проприетарлы болғандықтан, оның бұл рұқсаттармен не істейтінін тексеру мүмкін емес."
 
-#: src/bz-transaction-dialog.c:223
+#: src/bz-transaction-dialog.c:230
 msgid ""
 "This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, "
 "capture screenshots, and monitor other applications</b>. It also has access to the internet, "
@@ -2759,11 +2818,11 @@ msgstr ""
 "\n"
 "Қолданба проприетарлы болғандықтан, оның бұл рұқсаттармен не істейтінін тексеру мүмкін емес."
 
-#: src/bz-transaction-dialog.c:239
+#: src/bz-transaction-dialog.c:246
 msgid "_Install Anyway"
 msgstr "Сонда да _орнату"
 
-#: src/bz-transaction-dialog.c:292 src/bz-transaction-dialog.c:321
+#: src/bz-transaction-dialog.c:298 src/bz-transaction-dialog.c:326
 msgid "Failed to load transaction dialog"
 msgstr "Транзакция сұхбат терезесін жүктеу сәтсіз аяқталды"
 
@@ -2825,7 +2884,11 @@ msgstr "Күтуде"
 msgid "_Update All"
 msgstr "Барлығын ж_аңарту"
 
-#: src/bz-updates-card.c:215
+#: src/bz-updates-card.vala:159
+msgid "This update requests new permissions"
+msgstr "Бұл жаңарту жаңа рұқсаттарды сұрайды"
+
+#: src/bz-updates-card.vala:199
 #, c-format
 msgid "%u Runtime Update"
 msgid_plural "%u Runtime Updates"
@@ -2874,102 +2937,107 @@ msgstr "Пайдаланушы деректері бумасын ашу"
 msgid "Trash User Data"
 msgstr "Пайдаланушы деректерін қоқыс шелегіне тастау"
 
-#: src/bz-window.blp:79
+#: src/bz-window.blp:80
 msgid "Refreshing"
 msgstr "Жаңартылуда"
 
-#: src/bz-window.blp:97
+#: src/bz-window.blp:98
 msgid "Curated"
 msgstr "Іріктелген"
 
-#: src/bz-window.blp:109
+#: src/bz-window.blp:110
 msgid "Explore"
 msgstr "Шолу"
 
 #. Translators: .
-#: src/bz-window.blp:121
+#: src/bz-window.blp:122
 msgid "Library"
 msgstr "Кітапхана"
 
-#: src/bz-window.blp:136
+#: src/bz-window.blp:137
 msgid "Search"
 msgstr "Іздеу"
 
-#: src/bz-window.blp:220
+#: src/bz-window.blp:223
 msgid "Main Menu"
 msgstr "Бас мәзір"
 
-#: src/bz-window.blp:231
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:235
 msgid "You are running a new version of Bazaar!"
 msgstr "Сіз Bazaar-дың жаңа нұсқасын іске қостыңыз!"
 
-#: src/bz-window.blp:232
+#: src/bz-window.blp:236
 msgid "See What's New"
 msgstr "Жаңалықтарды қарау"
 
-#: src/bz-window.blp:239
+#: src/bz-window.blp:243
 msgid "You have a network connection but are viewing a cached version of Flathub"
 msgstr "Желі қосылымы бар, бірақ сіз Flathub-тың кэштелген нұсқасын көріп отырсыз"
 
-#: src/bz-window.blp:250
+#: src/bz-window.blp:254
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "Желі қосылымы трафикті есептейтін ретінде көрсетілген — автожаңартулар сөндірілген"
 
-#: src/bz-window.blp:286
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:291
 msgid "_Donate to Bazaar"
 msgstr "Bazaar-ға _демеушілік ету"
 
-#: src/bz-window.blp:292
+#: src/bz-window.blp:297
 msgid "_Refresh"
 msgstr "Жаң_арту"
 
-#: src/bz-window.blp:296
+#: src/bz-window.blp:301
 msgid "_Login With Flathub"
 msgstr "Flathub арқылы _кіру"
 
-#: src/bz-window.blp:302
+#: src/bz-window.blp:307
 msgid "_Manage Leftover User Data"
 msgstr "Қалған пайдаланушы деректерін _басқару"
 
-#: src/bz-window.blp:308
+#: src/bz-window.blp:313
 msgid "_Preferences"
 msgstr "_Баптаулар"
 
-#: src/bz-window.blp:313
+#: src/bz-window.blp:318
 msgid "_Keyboard Shortcuts"
 msgstr "_Пернетақта жарлықтары"
 
-#: src/bz-window.blp:318
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:324
 msgid "_About Bazaar"
 msgstr "Bazaar т_уралы"
 
-#: src/bz-window.blp:324
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.blp:331
 msgid "_Quit Bazaar"
 msgstr "Bazaar-дан ш_ығу"
 
-#: src/bz-window.blp:349
+#: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "Шығу"
 
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:380
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
+#: src/bz-window.c:441
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazaar — %s"
 
-#: src/bz-window.c:660 src/bz-window.c:698
+#: src/bz-window.c:721 src/bz-window.c:770
 msgid "Failed to launch application"
 msgstr "Қолданбаны іске қосу сәтсіз аяқталды"
 
-#: src/bz-window.c:777
+#: src/bz-window.c:849
 msgid "Could not open link"
 msgstr "Сілтемені ашу мүмкін болмады"
 
-#: src/bz-window.c:985
+#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
+#: src/bz-window.c:1058
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Сіз Bazaar-ды Bazaar ішінен өшіре алмайсыз!"
 
-#: src/bz-window.c:1369 src/bz-window.c:1403
+#: src/bz-window.c:1442 src/bz-window.c:1476
 msgid "Can't do that right now!"
 msgstr "Бұл әрекетті дәл қазір орындау мүмкін емес!"
 
@@ -2995,306 +3063,307 @@ msgid "%d downloads in the last month"
 msgstr "Соңғы айда %d жүктеп алу"
 
 #. TRANSLATORS: %s is a formatted file size, for example: "128 MB"
-#: src/context-tile-callbacks.c:133
+#: src/context-tile-callbacks.c:139
 #, c-format
 msgid "+%s Runtime"
 msgstr "+%s орындау ортасы"
 
-#: src/context-tile-callbacks.c:136
-msgid "Download"
-msgstr "Жүктеп алу"
-
-#: src/context-tile-callbacks.c:156
+#: src/context-tile-callbacks.c:151 src/context-tile-callbacks.c:163
 msgid "Size information unavailable"
 msgstr "Өлшем ақпараты қолжетімсіз"
 
-#: src/context-tile-callbacks.c:159
+#: src/context-tile-callbacks.c:154
 #, c-format
 msgid "Download size of %s"
 msgstr "%s жүктеп алу өлшемі"
 
-#: src/context-tile-callbacks.c:192
+#: src/context-tile-callbacks.c:166
+#, c-format
+msgid "Installed size of %s"
+msgstr "%s орнатылған өлшемі"
+
+#: src/context-tile-callbacks.c:199
 msgid "All Ages"
 msgstr "Барлық жастағылар үшін"
 
-#: src/context-tile-callbacks.c:204
+#: src/context-tile-callbacks.c:211
 msgid "Age rating information unavailable"
 msgstr "Жас рейтингі туралы ақпарат қолжетімсіз"
 
-#: src/context-tile-callbacks.c:209
+#: src/context-tile-callbacks.c:216
 msgid "Suitable for all ages"
 msgstr "Барлық жасқа сай келеді"
 
-#: src/context-tile-callbacks.c:211
+#: src/context-tile-callbacks.c:218
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "%d жастан асқандарға сай келеді"
 
-#: src/context-tile-callbacks.c:254
+#: src/context-tile-callbacks.c:261
 #, c-format
 msgid "Free software licensed under %s"
 msgstr "%s лицензиясымен таратылатын еркін бағдарламалық қамтама"
 
-#: src/context-tile-callbacks.c:259
+#: src/context-tile-callbacks.c:266
 msgid "Free software"
 msgstr "Еркін бағдарламалық қамтама"
 
-#: src/context-tile-callbacks.c:262
+#: src/context-tile-callbacks.c:269
 msgid "Proprietary Software"
 msgstr "Проприетарлы бағдарламалық қамтама"
 
-#: src/context-tile-callbacks.c:265
+#: src/context-tile-callbacks.c:272
 #, c-format
 msgid "Special License: %s"
 msgstr "Арнайы лицензия: %s"
 
 #. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
-#: src/context-tile-callbacks.c:283
+#: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "Еркін бағдарламалық қамтама"
 
-#: src/context-tile-callbacks.c:311
+#: src/context-tile-callbacks.c:318
 msgid "Adaptive"
 msgstr "Бейімделгіш"
 
-#: src/context-tile-callbacks.c:311
+#: src/context-tile-callbacks.c:318
 msgid "Desktop Only"
 msgstr "Тек жұмыс үстелі"
 
-#: src/context-tile-callbacks.c:317
+#: src/context-tile-callbacks.c:324
 msgid "Works on desktop, tablets, and phones"
 msgstr "Жұмыс үстелінде, планшеттерде және телефондарда жұмыс істейді"
 
-#: src/context-tile-callbacks.c:318
+#: src/context-tile-callbacks.c:325
 msgid "May not work on mobile devices"
 msgstr "Мобильді құрылғыларда жұмыс істемеуі мүмкін"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:405 src/context-tile-callbacks.c:408
+#: src/context-tile-callbacks.c:412 src/context-tile-callbacks.c:415
 msgid "Low Risk"
 msgstr "Төмен қауіп"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:411
+#: src/context-tile-callbacks.c:418
 msgid "Medium Risk"
 msgstr "Орташа қауіп"
 
 #. TRANSLATORS: short app safety rating label
-#: src/context-tile-callbacks.c:414
+#: src/context-tile-callbacks.c:421
 msgid "High Risk"
 msgstr "Жоғары қауіп"
 
-#: src/safety-calculator.c:87
+#: src/safety-calculator.c:80
 msgid "Unknown Permissions"
 msgstr "Белгісіз рұқсаттар"
 
-#: src/safety-calculator.c:88
+#: src/safety-calculator.c:81
 msgid "Permissions are missing for this app."
 msgstr "Бұл қолданба үшін рұқсаттар жоқ."
 
-#: src/safety-calculator.c:101
+#: src/safety-calculator.c:95
 msgid "No Permissions"
 msgstr "Рұқсаттар жоқ"
 
-#: src/safety-calculator.c:102
+#: src/safety-calculator.c:96
 msgid "App is fully sandboxed"
 msgstr "Қолданба толығымен оқшауланған"
 
-#: src/safety-calculator.c:108
+#: src/safety-calculator.c:103
 msgid "Network Access"
 msgstr "Желіге қол жеткізу"
 
-#: src/safety-calculator.c:109
+#: src/safety-calculator.c:104
 msgid "Can access the internet"
 msgstr "Интернетке қол жеткізе алады"
 
-#: src/safety-calculator.c:111
+#: src/safety-calculator.c:106
 msgid "No Network Access"
 msgstr "Желіге қолжетімділік жоқ"
 
-#: src/safety-calculator.c:112
+#: src/safety-calculator.c:107
 msgid "Cannot access the internet"
 msgstr "Интернетке қол жеткізе алмайды"
 
-#: src/safety-calculator.c:117
+#: src/safety-calculator.c:114
 msgid "User Device Access"
 msgstr "Пайдаланушы құрылғысына қол жеткізу"
 
-#: src/safety-calculator.c:118
+#: src/safety-calculator.c:115
 msgid "Can access devices such as webcams or gaming controllers"
 msgstr "Вебкамералар немесе ойын контроллері сияқты құрылғыларға қол жеткізе алады"
 
-#: src/safety-calculator.c:120
+#: src/safety-calculator.c:117
 msgid "No User Device Access"
 msgstr "Пайдаланушы құрылғыларына қолжетімділік жоқ"
 
-#: src/safety-calculator.c:121
+#: src/safety-calculator.c:118
 msgid "Cannot access devices such as webcams or gaming controllers"
 msgstr "Вебкамералар немесе ойын контроллері сияқты құрылғыларға қол жеткізе алмайды"
 
-#: src/safety-calculator.c:126
+#: src/safety-calculator.c:123
 msgid "Input Device Access"
 msgstr "Енгізу құрылғысына қол жеткізу"
 
-#: src/safety-calculator.c:127
+#: src/safety-calculator.c:124
 msgid "Can access input devices"
 msgstr "Енгізу құрылғыларына қол жеткізе алады"
 
-#: src/safety-calculator.c:133
+#: src/safety-calculator.c:130
 msgid "Microphone Access and Audio Playback"
 msgstr "Микрофонға қол жеткізу және аудионы ойнату"
 
-#: src/safety-calculator.c:134
+#: src/safety-calculator.c:131
 msgid "Can listen using microphones and play audio without asking permission"
 msgstr "Микрофондар арқылы тыңдай алады және рұқсат сұрамай аудио ойната алады"
 
-#: src/safety-calculator.c:140
+#: src/safety-calculator.c:137
 msgid "System Device Access"
 msgstr "Жүйелік құрылғыға қол жеткізу"
 
-#: src/safety-calculator.c:141
+#: src/safety-calculator.c:138
 msgid "Can access system devices which require elevated permissions"
 msgstr "Жоғары құқықтарды талап ететін жүйелік құрылғыларға қол жеткізе алады"
 
-#: src/safety-calculator.c:147
+#: src/safety-calculator.c:144
 msgid "Screen Contents Access"
 msgstr "Экран мазмұнына қол жеткізу"
 
-#: src/safety-calculator.c:148
+#: src/safety-calculator.c:145
 msgid "Can access the contents of the screen or other windows"
 msgstr "Экран немесе басқа терезелердің мазмұнына қол жеткізе алады"
 
-#: src/safety-calculator.c:154
+#: src/safety-calculator.c:151
 msgid "Legacy Windowing System"
 msgstr "Ескірген терезелік жүйе"
 
-#: src/safety-calculator.c:155
+#: src/safety-calculator.c:152
 msgid "Always uses a legacy windowing system (X11)"
 msgstr "Әрқашан ескірген терезе жүйесін (X11) пайдаланады"
 
-#: src/safety-calculator.c:162
+#: src/safety-calculator.c:159
 msgid "Can acquire arbitrary permissions"
 msgstr "Кез келген рұқсаттарды ала алады"
 
-#: src/safety-calculator.c:168
+#: src/safety-calculator.c:165
 msgid "User Settings"
 msgstr "Пайдаланушы баптаулары"
 
-#: src/safety-calculator.c:169
+#: src/safety-calculator.c:166
 msgid "Can access and change user settings"
 msgstr "Пайдаланушы баптауларына қол жеткізіп, өзгерте алады"
 
-#: src/safety-calculator.c:175
+#: src/safety-calculator.c:172
 msgid "Full File System Read/Write Access"
 msgstr "Толық файлдық жүйеге оқу/жазу рұқсаты"
 
-#: src/safety-calculator.c:176
+#: src/safety-calculator.c:173
 msgid "Can read and write all data on the file system"
 msgstr "Файлдық жүйедегі барлық деректерді оқи және жаза алады"
 
-#: src/safety-calculator.c:183
+#: src/safety-calculator.c:180
 msgid "Home Folder Read/Write Access"
 msgstr "Үй бумасына оқу/жазу рұқсаты"
 
-#: src/safety-calculator.c:184
+#: src/safety-calculator.c:181
 msgid "Can read and write all data in your home directory"
 msgstr "Үй бумаңыздағы барлық деректерді оқи және жаза алады"
 
-#: src/safety-calculator.c:191
+#: src/safety-calculator.c:188
 msgid "Full File System Read Access"
 msgstr "Толық файлдық жүйеге оқу рұқсаты"
 
-#: src/safety-calculator.c:192
+#: src/safety-calculator.c:189
 msgid "Can read all data on the file system"
 msgstr "Файлдық жүйедегі барлық деректерді оқи алады"
 
-#: src/safety-calculator.c:200
+#: src/safety-calculator.c:197
 msgid "Home Folder Read Access"
 msgstr "Үй бумасына оқу рұқсаты"
 
-#: src/safety-calculator.c:201
+#: src/safety-calculator.c:198
 msgid "Can read all data in your home directory"
 msgstr "Үй бумаңыздағы барлық деректерді оқи алады"
 
-#: src/safety-calculator.c:209
+#: src/safety-calculator.c:206
 msgid "Download Folder Read/Write Access"
 msgstr "Жүктеп алулар бумасына оқу/жазу рұқсаты"
 
-#: src/safety-calculator.c:210
+#: src/safety-calculator.c:207
 msgid "Can read and write all data in your downloads directory"
 msgstr "Жүктеп алынған файлдар бумаңыздағы барлық деректерді оқи және жаза алады"
 
-#: src/safety-calculator.c:220
+#: src/safety-calculator.c:217
 msgid "Download Folder Read Access"
 msgstr "Жүктеп алулар бумасына оқу рұқсаты"
 
-#: src/safety-calculator.c:221
+#: src/safety-calculator.c:218
 msgid "Can read all data in your downloads directory"
 msgstr "Жүктеп алынған файлдар бумаңыздағы барлық деректерді оқи алады"
 
-#: src/safety-calculator.c:242
+#: src/safety-calculator.c:235
 msgid "Can read and write all data in the directory"
 msgstr "Бумадағы барлық деректерді оқи және жаза алады"
 
-#: src/safety-calculator.c:266
+#: src/safety-calculator.c:255
 msgid "Can read all data in the directory"
 msgstr "Бумадағы барлық деректерді оқи алады"
 
-#: src/safety-calculator.c:281
+#: src/safety-calculator.c:271
 msgid "No File System Access"
 msgstr "Файлдық жүйеге қолжетімділік жоқ"
 
-#: src/safety-calculator.c:282
+#: src/safety-calculator.c:272
 msgid "Cannot access the file system at all"
 msgstr "Файлдық жүйеге мүлдем қол жеткізе алмайды"
 
-#: src/safety-calculator.c:289
+#: src/safety-calculator.c:279
 msgid "Uses System Services"
 msgstr "Жүйелік қызметтерді пайдаланады"
 
-#: src/safety-calculator.c:290
+#: src/safety-calculator.c:280
 msgid "Can request data from non-portal system services"
 msgstr "Порталдық емес жүйелік қызметтерден деректерді сұрай алады"
 
-#: src/safety-calculator.c:296
+#: src/safety-calculator.c:286
 msgid "Uses Session Services"
 msgstr "Сеанс қызметтерін пайдаланады"
 
-#: src/safety-calculator.c:297
+#: src/safety-calculator.c:287
 msgid "Can request data from non-portal session services"
 msgstr "Порталдық емес сеанс қызметтерінен деректерді сұрай алады"
 
-#: src/safety-calculator.c:345
+#: src/safety-calculator.c:332
 msgid "No Service Access"
 msgstr "Қызметтерге қолжетімділік жоқ"
 
-#: src/safety-calculator.c:346
+#: src/safety-calculator.c:333
 msgid "Cannot access non-portal session or system services at all"
 msgstr "Порталдық емес сеанс немесе жүйелік қызметтерге мүлдем қол жеткізе алмайды"
 
-#: src/safety-calculator.c:354
+#: src/safety-calculator.c:372
 msgid "Verified App Developer"
 msgstr "Расталған қолданба әзірлеушісі"
 
-#: src/safety-calculator.c:355
+#: src/safety-calculator.c:373
 msgid "The developer of this app has been verified to be who they say they are"
 msgstr "Бұл қолданбаның әзірлеушісі шын мәнінде өзі айтқан адам екені расталды"
 
-#: src/safety-calculator.c:364
+#: src/safety-calculator.c:382
 msgid "Proprietary Code"
 msgstr "Проприетарлы код"
 
-#: src/safety-calculator.c:365
+#: src/safety-calculator.c:383
 msgid "The source code is not public, so it cannot be independently audited and might be unsafe"
 msgstr ""
 "Бастапқы код жария емес, сондықтан оны тәуелсіз тексеру мүмкін емес және ол қауіпті болуы "
 "мүмкін"
 
-#: src/safety-calculator.c:375
+#: src/safety-calculator.c:393
 msgid "Auditable Code"
 msgstr "Тексеруге болатын код"
 
-#: src/safety-calculator.c:376
+#: src/safety-calculator.c:394
 msgid ""
 "The source code is public and can be independently audited, which makes the app more likely "
 "to be safe"
@@ -3302,86 +3371,86 @@ msgstr ""
 "Бастапқы код ашық және тәуелсіз тексерілуі мүмкін, бұл қолданбаның қауіпсіз болу ықтималдығын "
 "арттырады"
 
-#: src/safety-calculator.c:516
+#: src/safety-calculator.c:532
 #, c-format
 msgid "Use the %s System Service"
 msgstr "%s жүйелік қызметін пайдалану"
 
-#: src/safety-calculator.c:520
+#: src/safety-calculator.c:536
 #, c-format
 msgid "Use the %s Session Service"
 msgstr "%s сеанс қызметін пайдалану"
 
-#: src/safety-calculator.c:524
+#: src/safety-calculator.c:540
 #, c-format
 msgid "Use the %s Service"
 msgstr "%s қызметін пайдалану"
 
-#: src/safety-calculator.c:534
+#: src/safety-calculator.c:550
 msgid "Can see the non-portal service"
 msgstr "Порталдық емес қызметті көре алады"
 
-#: src/safety-calculator.c:536
+#: src/safety-calculator.c:552
 msgid "Can talk to the non-portal service"
 msgstr "Порталдық емес қызметпен байланыса алады"
 
-#: src/safety-calculator.c:538
+#: src/safety-calculator.c:554
 msgid "Can own the non-portal service"
 msgstr "Порталдық емес қызметке иелік ете алады"
 
-#: src/safety-calculator.c:553
+#: src/safety-calculator.c:569
 msgid "Global Menu Integration"
 msgstr "Глобалды мәзір интеграциясы"
 
-#: src/safety-calculator.c:554
+#: src/safety-calculator.c:570
 msgid "Can display its menus in a global menu bar"
 msgstr "Өз мәзірлерін глобалды мәзір панелінде көрсете алады"
 
-#: src/safety-calculator.c:559
+#: src/safety-calculator.c:575
 msgid "KDE Settings Integration"
 msgstr "KDE баптаулары интеграциясы"
 
-#: src/safety-calculator.c:560
+#: src/safety-calculator.c:576
 msgid "Can detect when KDE desktop settings change"
 msgstr "KDE жұмыс үстелі баптаулары қашан өзгеретінін анықтай алады"
 
-#: src/safety-calculator.c:565
+#: src/safety-calculator.c:581
 msgid "KDE Global Settings"
 msgstr "KDE глобалды баптаулары"
 
-#: src/safety-calculator.c:566
+#: src/safety-calculator.c:582
 msgid "Can read KDE desktop preferences like fonts and colors"
 msgstr "Қаріптер мен түстер сияқты KDE жұмыс үстелі баптауларын оқи алады"
 
-#: src/safety-calculator.c:571
+#: src/safety-calculator.c:587
 msgid "Secret Storage Service"
 msgstr "Құпияларды сақтау қызметі"
 
-#: src/safety-calculator.c:572
+#: src/safety-calculator.c:588
 msgid "Can store and retrieve its own passwords using the system keyring"
 msgstr "Жүйелік кілттер бауын пайдаланып өз парольдерін сақтай және ала алады"
 
-#: src/safety-calculator.c:577
+#: src/safety-calculator.c:593
 msgid "Desktop Notifications Service"
 msgstr "Жұмыс үстелі хабарландырулары қызметі"
 
-#: src/safety-calculator.c:578
+#: src/safety-calculator.c:594
 msgid "Can send desktop notifications"
 msgstr "Жұмыс үстелі хабарландыруларын жібере алады"
 
-#: src/safety-calculator.c:584
+#: src/safety-calculator.c:600
 msgid "System Tray Integration"
 msgstr "Жүйелік треймен байланыс"
 
-#: src/safety-calculator.c:585
+#: src/safety-calculator.c:601
 msgid "Can display an icon in the system tray"
 msgstr "Жүйелік трейде таңбашаны көрсете алады"
 
-#: src/safety-calculator.c:590
+#: src/safety-calculator.c:606
 msgid "KDE Connect Integration"
 msgstr "KDE Connect интеграциясы"
 
-#: src/safety-calculator.c:591
+#: src/safety-calculator.c:607
 msgid "Can interact with devices paired via KDE Connect"
 msgstr "KDE Connect арқылы жұптастырылған құрылғылармен әрекеттесе алады"
 
@@ -3522,6 +3591,3 @@ msgstr "%s, %s және %s қамтиды."
 
 #~ msgid "Try a different search query"
 #~ msgstr "Басқа іздеу сұранымын байқап көріңіз"
-
-#~ msgid "More Apps"
-#~ msgstr "Көбірек қолданбалар"
