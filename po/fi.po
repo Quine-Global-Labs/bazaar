@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bazaar main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
-"POT-Creation-Date: 2026-09-18 23:10+0000\n"
-"PO-Revision-Date: 2026-09-20 22:53+0300\n"
+"POT-Creation-Date: 2026-09-27 08:41+0000\n"
+"PO-Revision-Date: 2026-09-27 14:02+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <Finnish>\n"
 "Language: fi\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
 #: data/io.github.kolunmi.Bazaar.desktop.in:3 data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:382 src/bz-window.c:383
+#: src/bz-window.blp:211 src/bz-window.c:438 src/bz-window.c:439
 msgid "Bazaar"
 msgstr "Bazaar"
 
@@ -68,7 +68,7 @@ msgid "Search apps directly from GNOME Shell"
 msgstr "Etsi sovelluksia suoraan Gnomen yleisnäkymästä"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:754
+#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:755
 msgid "The Bazaar Contributors"
 msgstr "Bazaar-avustajat"
 
@@ -132,7 +132,7 @@ msgid "Download"
 msgstr "Lataus"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-addons-dialog.blp:187 src/bz-app-tile.blp:87 src/bz-full-view.blp:282 src/bz-releases-list.c:204
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:282 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "Asennettu"
 
@@ -157,7 +157,7 @@ msgstr "Muut lähteet"
 #: src/bz-addons-dialog.c:351
 #, c-format
 msgid "Add-on for %s"
-msgstr ""
+msgstr "Lisäosa sovellukselle %s"
 
 #: src/bz-addons-dialog.c:365 src/bz-full-view.c:613
 msgid "Show Less"
@@ -541,129 +541,129 @@ msgstr "%s soveltuu %s"
 msgid "%s • %s"
 msgstr "%s • %s"
 
-#: src/bz-app-permissions.c:160
+#: src/bz-app-permissions.c:175
 #, c-format
 msgid "System folder %s"
 msgstr "Järjestelmäkansio %s"
 
-#: src/bz-app-permissions.c:162
+#: src/bz-app-permissions.c:177
 #, c-format
 msgid "Home subfolder %s"
 msgstr "Koti-alikansio %s"
 
-#: src/bz-app-permissions.c:164
+#: src/bz-app-permissions.c:179
 msgid "Host system folders"
 msgstr "Tietokoneen järjestelmäkansiot"
 
-#: src/bz-app-permissions.c:166
+#: src/bz-app-permissions.c:181
 msgid "Host system configuration from /etc"
 msgstr "Tietokoneen järjestelmäasetukset kansiosta /etc"
 
-#: src/bz-app-permissions.c:169
+#: src/bz-app-permissions.c:184
 #, c-format
 msgid "Desktop subfolder %s"
 msgstr "Työpöytä-alikansio %s"
 
-#: src/bz-app-permissions.c:170
+#: src/bz-app-permissions.c:185
 msgid "Desktop folder"
 msgstr "Työpöytäkansio"
 
-#: src/bz-app-permissions.c:173
+#: src/bz-app-permissions.c:188
 #, c-format
 msgid "Documents subfolder %s"
 msgstr "Asiakirjat-alikansio %s"
 
-#: src/bz-app-permissions.c:174
+#: src/bz-app-permissions.c:189
 msgid "Documents folder"
 msgstr "Asiakirjat-kansio"
 
-#: src/bz-app-permissions.c:177
+#: src/bz-app-permissions.c:192
 #, c-format
 msgid "Music subfolder %s"
 msgstr "Musiikki-alikansio %s"
 
-#: src/bz-app-permissions.c:178
+#: src/bz-app-permissions.c:193
 msgid "Music folder"
 msgstr "Musiikkikansio"
 
-#: src/bz-app-permissions.c:181
+#: src/bz-app-permissions.c:196
 #, c-format
 msgid "Pictures subfolder %s"
 msgstr "Kuvat-alikansio %s"
 
-#: src/bz-app-permissions.c:182
+#: src/bz-app-permissions.c:197
 msgid "Pictures folder"
 msgstr "Kuvat-kansio"
 
-#: src/bz-app-permissions.c:185
+#: src/bz-app-permissions.c:200
 #, c-format
 msgid "Public Share subfolder %s"
 msgstr "Julkinen Jaettu-alikansio %s"
 
-#: src/bz-app-permissions.c:186
+#: src/bz-app-permissions.c:201
 msgid "Public Share folder"
 msgstr "Julkinen Jaettu-kansio"
 
-#: src/bz-app-permissions.c:189
+#: src/bz-app-permissions.c:204
 #, c-format
 msgid "Videos subfolder %s"
 msgstr "Videot-alikansio %s"
 
-#: src/bz-app-permissions.c:190
+#: src/bz-app-permissions.c:205
 msgid "Videos folder"
 msgstr "Videot-kansio"
 
-#: src/bz-app-permissions.c:193
+#: src/bz-app-permissions.c:208
 #, c-format
 msgid "Templates subfolder %s"
 msgstr "Mallit-alikansio %s"
 
-#: src/bz-app-permissions.c:194
+#: src/bz-app-permissions.c:209
 msgid "Templates folder"
 msgstr "Mallit-kansio"
 
-#: src/bz-app-permissions.c:197
+#: src/bz-app-permissions.c:212
 #, c-format
 msgid "User cache subfolder %s"
 msgstr "Käyttäjän välimuistikansion alikansio %s"
 
-#: src/bz-app-permissions.c:198
+#: src/bz-app-permissions.c:213
 msgid "User cache folder"
 msgstr "Käyttäjän välimuistikansio"
 
-#: src/bz-app-permissions.c:201
+#: src/bz-app-permissions.c:216
 #, c-format
 msgid "User configuration subfolder %s"
 msgstr "Käyttäjän asetuskansion alikansio %s"
 
-#: src/bz-app-permissions.c:202
+#: src/bz-app-permissions.c:217
 msgid "User configuration folder"
 msgstr "Käyttäjän asetuskansio"
 
-#: src/bz-app-permissions.c:205
+#: src/bz-app-permissions.c:220
 #, c-format
 msgid "User data subfolder %s"
 msgstr "Käyttäjädatan alikansio %s"
 
-#: src/bz-app-permissions.c:206
+#: src/bz-app-permissions.c:221
 msgid "User data folder"
 msgstr "Käyttäjändatan kansio"
 
-#: src/bz-app-permissions.c:209
+#: src/bz-app-permissions.c:224
 #, c-format
 msgid "User runtime subfolder %s"
 msgstr "Käyttäjän suoritusaikaisen kansion alikansio %s"
 
-#: src/bz-app-permissions.c:210
+#: src/bz-app-permissions.c:225
 msgid "User runtime folder"
 msgstr "Käyttäjän suoritusaikainen kansio"
 
-#: src/bz-app-permissions.c:212
+#: src/bz-app-permissions.c:227
 #, c-format
 msgid "Filesystem access to %s"
 msgstr "Pääsy tiedostojärjestelmään %s"
 
-#: src/bz-app-permissions.c:214
+#: src/bz-app-permissions.c:229
 msgid "Unknown filesystem path"
 msgstr "Tuntematon tiedostojärjestelmän polku"
 
@@ -724,28 +724,28 @@ msgstr "-"
 msgid "Storage"
 msgstr "Tallennustila"
 
-#: src/bz-app-tile.blp:56 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
+#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "Vahvistettu"
 
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:757
+#: src/bz-application.c:758
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: src/bz-application.c:767
+#: src/bz-application.c:768
 msgid "Special Thanks"
 msgstr "Erikoiskiitokset"
 
-#: src/bz-application.c:825
+#: src/bz-application.c:826
 msgid "Logged Out Successfully!"
 msgstr "Kirjauduttu ulos!"
 
-#: src/bz-application.c:1057
+#: src/bz-application.c:1058
 msgid "Notice for Ubuntu Users"
 msgstr "Huomio Ubuntu-käyttäjille"
 
-#: src/bz-application.c:1060
+#: src/bz-application.c:1061
 msgid ""
 "Ubuntu 25.10 and newer have changed default security rules in a way that makes it <b>impossible to install apps</b> "
 "from the Flatpak version of Bazaar. For the time being, please use the apt package instead. Install it with\n"
@@ -757,19 +757,19 @@ msgid ""
 "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
 msgstr ""
 
-#: src/bz-application.c:1068
+#: src/bz-application.c:1069
 msgid "Continue Anyway"
 msgstr "Jatka silti"
 
-#: src/bz-application.c:1084
+#: src/bz-application.c:1085
 msgid "Performing setup…"
 msgstr "Suoritetaan määritystä…"
 
-#: src/bz-application.c:1183
+#: src/bz-application.c:1184
 msgid "Set Up System Flathub?"
 msgstr "Määritetäänkö järjestelmän Flathub?"
 
-#: src/bz-application.c:1186
+#: src/bz-application.c:1187
 msgid ""
 "The system Flathub remote is not set up. Bazaar requires Flathub to be configured on the system Flatpak installation "
 "to browse and install applications.\n"
@@ -777,71 +777,75 @@ msgid ""
 "You can still use Bazaar to browse and remove already installed apps."
 msgstr ""
 
-#: src/bz-application.c:1193
+#: src/bz-application.c:1194
 msgid "Set Up Flathub?"
 msgstr "Määritetäänkö Flathub?"
 
-#: src/bz-application.c:1196
+#: src/bz-application.c:1197
 msgid ""
 "Flathub is not set up on this system. You will not be able to browse and install applications in Bazaar if its "
 "unavailable.\n"
 "\n"
 "You can still use Bazaar to browse and remove already installed apps."
 msgstr ""
+"Flathubia ei ole määritetty järjestelmään. Et voi selata ja asentaa sovelluksia Bazaaria käyttäen, jos Flatpak ei ole "
+"käytettävissä.\n"
+"\n"
+"Voit silti käyttää Bazaaria selataksesi ja poistaaksesi aiemmin asennettuja sovelluksia."
 
-#: src/bz-application.c:1202
+#: src/bz-application.c:1203
 msgid "Later"
 msgstr "Myöhemmin"
 
-#: src/bz-application.c:1203
+#: src/bz-application.c:1204
 msgid "Set Up Flathub"
 msgstr "Määritä Flathub"
 
-#: src/bz-application.c:1723
+#: src/bz-application.c:1724
 msgid "A backend error occurred"
 msgstr "Tapahtui taustaosan virhe"
 
-#: src/bz-application.c:1930 src/bz-application.c:4251
+#: src/bz-application.c:1931 src/bz-application.c:4271
 msgid "Refreshing…"
 msgstr "Virkistetään…"
 
-#: src/bz-application.c:2089
+#: src/bz-application.c:2090
 #, c-format
 msgid "Loading %d apps…"
 msgstr "Ladataan %d sovellusta…"
 
-#: src/bz-application.c:2148 src/bz-application.c:2225
+#: src/bz-application.c:2149 src/bz-application.c:2226
 msgid "Failed to open file"
 msgstr "Tiedoston avaaminen epäonnistui"
 
-#: src/bz-application.c:2239
+#: src/bz-application.c:2240
 msgid "Failed to load metainfo"
 msgstr "Metatietojen lataaminen epäonnistui"
 
-#: src/bz-application.c:2362
+#: src/bz-application.c:2363
 msgid "An initialization error occurred"
 msgstr "Alustuksessa tapahtui virhe"
 
-#: src/bz-application.c:2770
+#: src/bz-application.c:2771
 msgid "Checking for updates…"
 msgstr "Tarkistetaan päivityksiä…"
 
-#: src/bz-application.c:2826
+#: src/bz-application.c:2846
 msgid "Failed to check for updates"
 msgstr "Päivitysten tarkamistanen epäonnistui"
 
-#: src/bz-application.c:4028
+#: src/bz-application.c:4048
 msgid "Could not find app"
 msgstr "Sovellusta ei löytynyt"
 
-#: src/bz-application.c:4248
+#: src/bz-application.c:4268
 #, c-format
 msgid "Loading %d app…"
 msgid_plural "Loading %d apps…"
 msgstr[0] "Ladataan %d sovellus…"
 msgstr[1] "Ladataan %d sovellusta…"
 
-#: src/bz-application.c:4253
+#: src/bz-application.c:4273
 msgid "Writing to cache…"
 msgstr "Kirjoitetaan välimuistiin…"
 
@@ -880,7 +884,7 @@ msgstr[1] "Asennetaanko %u sovellusta?"
 
 #: src/bz-bulk-install-dialog.c:113
 msgid "The following will be installed. Additional shared components may also be installed"
-msgstr ""
+msgstr "Seuraavat asennetaan. Jaettuja lisäkomponentteja saatetaan asentaa lisäksi"
 
 #: src/bz-bulk-install-dialog.c:114
 #, c-format
@@ -889,7 +893,7 @@ msgstr "%d lisäosaa asennetaan."
 
 #: src/bz-bulk-install-dialog.c:115
 msgid "Additionally, addons will be installed."
-msgstr ""
+msgstr "Lisäksi lisäosia asennetaan."
 
 #: src/bz-bulk-install-dialog.c:116 src/bz-transaction-dialog.c:200 src/bz-transaction-dialog.c:245
 msgid "_Cancel"
@@ -1271,7 +1275,7 @@ msgstr "Koulutus"
 
 #: src/bz-flathub-category.c:136
 msgid "Learn"
-msgstr "Opi"
+msgstr "Opiskelu"
 
 #: src/bz-flathub-category.c:136
 msgid "More Education"
@@ -1283,7 +1287,7 @@ msgstr "Pelit"
 
 #: src/bz-flathub-category.c:137
 msgid "Play"
-msgstr "Pelaa"
+msgstr "Pelit"
 
 #: src/bz-flathub-category.c:137
 msgid "More Gaming"
@@ -1295,7 +1299,7 @@ msgstr "Grafiikka ja valokuvaus"
 
 #: src/bz-flathub-category.c:138
 msgid "Create"
-msgstr "Luo"
+msgstr "Luovuus"
 
 #: src/bz-flathub-category.c:138
 msgid "More Graphics & Photography"
@@ -1633,7 +1637,7 @@ msgstr ""
 
 #: src/bz-full-view.blp:533
 msgid "Trash Data"
-msgstr ""
+msgstr "Siirrä data roskakoriin"
 
 #: src/bz-full-view.blp:630
 msgid "Add-ons"
@@ -1653,7 +1657,7 @@ msgstr "Samankaltaiset sovellukset"
 
 #: src/bz-full-view.c:184
 msgid "No URL"
-msgstr ""
+msgstr "Ei URL-osoitetta"
 
 #: src/bz-full-view.c:202
 msgid "This app has a FLOSS license, meaning the source code can be audited for safety."
@@ -1797,7 +1801,7 @@ msgstr "%s toimii useimmilla laitteilla"
 
 #: src/bz-inspector.blp:22
 msgid "Inspector Menu"
-msgstr ""
+msgstr "Tarkistinvalikko"
 
 #: src/bz-install-controls.blp:58
 msgid "_Open"
@@ -1811,7 +1815,7 @@ msgstr "Poista sovelluksen asennus"
 msgid "_Remove"
 msgstr "_Poista"
 
-#: src/bz-install-controls.blp:114 src/bz-updates-card.c:168 src/bz-updates-card.c:187
+#: src/bz-install-controls.blp:114 src/bz-updates-card.vala:178 src/bz-updates-card.vala:201
 msgid "Update"
 msgstr "Päivitä"
 
@@ -1819,12 +1823,12 @@ msgstr "Päivitä"
 msgid "Remove"
 msgstr "Poista"
 
-#: src/bz-install-controls.c:669
+#: src/bz-install-controls.c:672
 #, c-format
 msgid "Install %s from %s"
-msgstr ""
+msgstr "Asenna %s lähteestä %s"
 
-#: src/bz-install-controls.c:671
+#: src/bz-install-controls.c:674
 #, c-format
 msgid "Install %s"
 msgstr "Asenna %s"
@@ -1892,7 +1896,7 @@ msgstr "Koko"
 msgid "No matches found for \"%s\" in the list of installed apps"
 msgstr "Asennettujen sovellusten luettelosta ei löytynyt mitään haulla \"%s\""
 
-#: src/bz-library-page.c:194 src/bz-updates-card.c:437
+#: src/bz-library-page.c:194 src/bz-updates-card.vala:51
 #, c-format
 msgid "%u Available Update"
 msgid_plural "%u Available Updates"
@@ -2033,6 +2037,28 @@ msgstr "Valitse kuvake"
 #: src/bz-metainfo-preview.c:166
 msgid "Image Files"
 msgstr "Kuvatiedostot"
+
+#: src/bz-new-permissions-dialog.vala:30
+msgid "New Permissions"
+msgstr "Uudet oikeudet"
+
+#: src/bz-new-permissions-dialog.vala:51
+msgid "_Accept"
+msgstr "_Hyväksy"
+
+#: src/bz-new-permissions-dialog.vala:103
+#, c-format
+#| msgid "No Permissions"
+msgid "New Permission for %s"
+msgid_plural "New Permissions for %s"
+msgstr[0] "Uusi oikeus sovellukselle %s"
+msgstr[1] "Uusia oikeuksia sovellukselle %s"
+
+#: src/bz-new-permissions-dialog.vala:108
+msgid "This update requires the following additional permission"
+msgid_plural "This update requires the following additional permissions"
+msgstr[0] "Tämä päivitys vaatii uuden oikeuden"
+msgstr[1] "Tämä päivitys vaatii uusia oikeuksia"
 
 #: src/bz-other-sources-list.vala:52
 msgid "User"
@@ -2231,7 +2257,7 @@ msgstr ""
 msgid "Bazaar needs to run in the background to check for app updates"
 msgstr "Bazaar tulee olla käynnissä taustalla, jotta se voi tarkistaa sovellusten päivitykset"
 
-#: src/bz-releases-dialog.blp:5 src/bz-updates-card.c:159
+#: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "Versiohistoria"
 
@@ -2309,7 +2335,7 @@ msgstr "Poista asennus"
 msgid "Get"
 msgstr "Hanki"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322 src/safety-calculator.c:161
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322 src/safety-calculator.c:158
 msgid "Arbitrary Permissions"
 msgstr "Mielivaltaiset oikeudet"
 
@@ -2323,6 +2349,13 @@ msgid ""
 "\n"
 "Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
+"Tällä sovelluksella on käyttöoikeus, joka mahdollistaa sen epäsuorasti myöntää itselleen <b>minkä tahansa "
+"käyttöoikeuden</b>, ja siten ohittaa Flatpak-eristyksen.\n"
+"\n"
+"Näin ollen se voi tehdä mitä tahansa etuoikeutettua, mitä eristämättömät sovellukset voivat tehdä, kuten päästä "
+"tiedostoihisi ja yhdistää Internetiin.\n"
+"\n"
+"Muiden käyttöoikeuksien tarkastelu saattaa antaa vihjeitä, mitä sovellus todennäköisesti on aikeissa tehdä."
 
 #: src/bz-safety-dialog.blp:53
 msgid "View Other Permissions"
@@ -2719,6 +2752,12 @@ msgid ""
 "\n"
 "Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
+"Tällä sovelluksella on täysi pääsy järjestelmään, mukaan lukien <b>tiedostoihisi, selaushistoriaasi, tallennettuihin "
+"salasanoihin</b> ja niin edelleen. Sillä on pääsy myös Internetiin, mikä mahdollistaa datan lähettämisen kolmansille "
+"osapuolille.\n"
+"\n"
+"Koska tämä sovellus on omisteinen eli suljettu luonteeltaan, sitä ei voi auditoida sen osalta, mitä sovellus tekee "
+"näillä oikeuksilla."
 
 #: src/bz-transaction-dialog.c:230
 msgid ""
@@ -2768,7 +2807,7 @@ msgstr "Virhe"
 
 #: src/bz-transaction-tile.blp:313
 msgid "Cancel Transaction"
-msgstr ""
+msgstr "Peru transaktio"
 
 #: src/bz-transaction-tile.blp:323
 msgid "Show Details"
@@ -2785,7 +2824,7 @@ msgstr "%s vapautettu"
 
 #: src/bz-transaction-tile.c:360 src/bz-transaction-tile.c:363
 msgid "Transaction Error"
-msgstr ""
+msgstr "Transaktiovirhe"
 
 #: src/bz-transaction.c:344
 msgid "Pending"
@@ -2795,7 +2834,11 @@ msgstr "Odottaa"
 msgid "_Update All"
 msgstr "_Päivitä kaikki"
 
-#: src/bz-updates-card.c:215
+#: src/bz-updates-card.vala:159
+msgid "This update requests new permissions"
+msgstr "Tämä päivitys pyytää uusia oikeuksia"
+
+#: src/bz-updates-card.vala:199
 #, c-format
 msgid "%u Runtime Update"
 msgid_plural "%u Runtime Updates"
@@ -2824,7 +2867,7 @@ msgstr "Ylijäämäistä käyttäjädataa ei löytynyt"
 
 #: src/bz-user-data-page.blp:33
 msgid "Personal data left behind by apps that were removed will show up here"
-msgstr ""
+msgstr "Henkilökohtainen data, joka on jäänyt jäljelle poistetuista sovelluksista, näkyy täällä"
 
 #: src/bz-user-data-page.c:229
 #, c-format
@@ -2928,25 +2971,25 @@ msgid "Log Out"
 msgstr "Kirjaudu ulos"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:385
+#: src/bz-window.c:441
 #, c-format
 msgid "Bazaar — %s"
 msgstr "Bazaar — %s"
 
-#: src/bz-window.c:665 src/bz-window.c:714
+#: src/bz-window.c:721 src/bz-window.c:770
 msgid "Failed to launch application"
 msgstr "Sovelluksen käynnistäminen epäonnistui"
 
-#: src/bz-window.c:793
+#: src/bz-window.c:849
 msgid "Could not open link"
 msgstr "Linkkiä ei voitu avata"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1002
+#: src/bz-window.c:1058
 msgid "You can't remove Bazaar from Bazaar!"
 msgstr "Et voi poistaa Bazaaria Bazaarista!"
 
-#: src/bz-window.c:1386 src/bz-window.c:1420
+#: src/bz-window.c:1442 src/bz-window.c:1476
 msgid "Can't do that right now!"
 msgstr "Ei onnistu juuri nyt!"
 
@@ -3062,298 +3105,298 @@ msgstr "Keskitason riski"
 msgid "High Risk"
 msgstr "Korkea riski"
 
-#: src/safety-calculator.c:87
+#: src/safety-calculator.c:80
 msgid "Unknown Permissions"
 msgstr "Tuntemattomat oikeudet"
 
-#: src/safety-calculator.c:88
+#: src/safety-calculator.c:81
 msgid "Permissions are missing for this app."
 msgstr "Tämän sovelluksen käyttöoikeudet puuttuvat."
 
-#: src/safety-calculator.c:101
+#: src/safety-calculator.c:95
 msgid "No Permissions"
 msgstr "Ei oikeuksia"
 
-#: src/safety-calculator.c:102
+#: src/safety-calculator.c:96
 msgid "App is fully sandboxed"
 msgstr "Sovellus on täysin eristetty"
 
-#: src/safety-calculator.c:108
+#: src/safety-calculator.c:103
 msgid "Network Access"
 msgstr "Verkon käyttö"
 
-#: src/safety-calculator.c:109
+#: src/safety-calculator.c:104
 msgid "Can access the internet"
 msgstr "Voi yhdistää internetiin"
 
-#: src/safety-calculator.c:111
+#: src/safety-calculator.c:106
 msgid "No Network Access"
 msgstr "Ei pääsyä verkkoon"
 
-#: src/safety-calculator.c:112
+#: src/safety-calculator.c:107
 msgid "Cannot access the internet"
 msgstr "Ei pääsyä internetiin"
 
-#: src/safety-calculator.c:117
+#: src/safety-calculator.c:114
 msgid "User Device Access"
 msgstr "Pääsy käyttäjälaitteisiin"
 
-#: src/safety-calculator.c:118
+#: src/safety-calculator.c:115
 msgid "Can access devices such as webcams or gaming controllers"
 msgstr "Voi käyttää laitteita kuten web-kameroita ja peliohjaimia"
 
-#: src/safety-calculator.c:120
+#: src/safety-calculator.c:117
 msgid "No User Device Access"
 msgstr "Ei pääsyä käyttäjälaitteisiin"
 
-#: src/safety-calculator.c:121
+#: src/safety-calculator.c:118
 msgid "Cannot access devices such as webcams or gaming controllers"
 msgstr "Ei voi käyttää laitteita kuten web-kameroita ja peliohjaimia"
 
-#: src/safety-calculator.c:126
+#: src/safety-calculator.c:123
 msgid "Input Device Access"
 msgstr "Pääsy syötelaitteisiin"
 
-#: src/safety-calculator.c:127
+#: src/safety-calculator.c:124
 msgid "Can access input devices"
 msgstr "Voi käyttää syötelaitteita"
 
-#: src/safety-calculator.c:133
+#: src/safety-calculator.c:130
 msgid "Microphone Access and Audio Playback"
 msgstr "Mikrofonin käyttö ja äänen toisto"
 
-#: src/safety-calculator.c:134
+#: src/safety-calculator.c:131
 msgid "Can listen using microphones and play audio without asking permission"
 msgstr "Voi kuunnella mikrofonia käyttäen ja toistaa ääntä ilman luvan kysymistä"
 
-#: src/safety-calculator.c:140
+#: src/safety-calculator.c:137
 msgid "System Device Access"
 msgstr "Pääsy järjestelmälaitteisiin"
 
-#: src/safety-calculator.c:141
+#: src/safety-calculator.c:138
 msgid "Can access system devices which require elevated permissions"
 msgstr "Voi käyttää järjestelmälaitteita, jotka vaativat korotettuja käyttöoikeuksia"
 
-#: src/safety-calculator.c:147
+#: src/safety-calculator.c:144
 msgid "Screen Contents Access"
 msgstr "Pääsy näytön sisältöön"
 
-#: src/safety-calculator.c:148
+#: src/safety-calculator.c:145
 msgid "Can access the contents of the screen or other windows"
 msgstr "Pääsy näytön tai ikkunoiden sisältöön"
 
-#: src/safety-calculator.c:154
+#: src/safety-calculator.c:151
 msgid "Legacy Windowing System"
 msgstr "Vanha ikkunointijärjestelmä"
 
-#: src/safety-calculator.c:155
+#: src/safety-calculator.c:152
 msgid "Always uses a legacy windowing system (X11)"
 msgstr "Käyttää aina vanhaa ikkunointijärjestelmää (X11)"
 
-#: src/safety-calculator.c:162
+#: src/safety-calculator.c:159
 msgid "Can acquire arbitrary permissions"
 msgstr "Voi hankkia mielivaltaisia oikeuksia"
 
-#: src/safety-calculator.c:168
+#: src/safety-calculator.c:165
 msgid "User Settings"
 msgstr "Käyttäjäasetukset"
 
-#: src/safety-calculator.c:169
+#: src/safety-calculator.c:166
 msgid "Can access and change user settings"
 msgstr "Voi lukea ja muuttaa käyttäjäasetuksia"
 
-#: src/safety-calculator.c:175
+#: src/safety-calculator.c:172
 msgid "Full File System Read/Write Access"
 msgstr "Täysi luku-/kirjoitusoikeus tiedostojärjestelmään"
 
-#: src/safety-calculator.c:176
+#: src/safety-calculator.c:173
 msgid "Can read and write all data on the file system"
 msgstr "Voi lukea kaikkea tiedostojärjestelmän dataa ja kirjoittaa tiedostojärjestelmään"
 
-#: src/safety-calculator.c:183
+#: src/safety-calculator.c:180
 msgid "Home Folder Read/Write Access"
 msgstr "Luku-/kirjoitusoikeus kotikansioon"
 
-#: src/safety-calculator.c:184
+#: src/safety-calculator.c:181
 msgid "Can read and write all data in your home directory"
 msgstr "Voi lukea kaikkea kotikansiossasi olevaa sisältöä ja kirjoittaa kotikansioon"
 
-#: src/safety-calculator.c:191
+#: src/safety-calculator.c:188
 msgid "Full File System Read Access"
 msgstr "Täysi lukuoikeus tiedostojärjestelmään"
 
-#: src/safety-calculator.c:192
+#: src/safety-calculator.c:189
 msgid "Can read all data on the file system"
 msgstr "Voi lukea kaiken tiedostojärjestelmän sisällön"
 
-#: src/safety-calculator.c:200
+#: src/safety-calculator.c:197
 msgid "Home Folder Read Access"
 msgstr "Kotikansion lukuoikeus"
 
-#: src/safety-calculator.c:201
+#: src/safety-calculator.c:198
 msgid "Can read all data in your home directory"
 msgstr "Voi lukea kaiken kotikansion sisällön"
 
-#: src/safety-calculator.c:209
+#: src/safety-calculator.c:206
 msgid "Download Folder Read/Write Access"
 msgstr "Luku-/kirjoitusoikeus Lataukset-kansioon"
 
-#: src/safety-calculator.c:210
+#: src/safety-calculator.c:207
 msgid "Can read and write all data in your downloads directory"
 msgstr "Voi lukea Lataukset-kansion sisällön ja kirjoittaa kyseiseen kansioon"
 
-#: src/safety-calculator.c:220
+#: src/safety-calculator.c:217
 msgid "Download Folder Read Access"
 msgstr "Lukuoikeus Lataukset-kansioon"
 
-#: src/safety-calculator.c:221
+#: src/safety-calculator.c:218
 msgid "Can read all data in your downloads directory"
 msgstr "Voi lukea Lataukset-kansion kaiken sisällön"
 
-#: src/safety-calculator.c:242
+#: src/safety-calculator.c:235
 msgid "Can read and write all data in the directory"
 msgstr "Voi lukea kaikkea kansiossa olevaa sisältöä ja kirjoittaa kansioon"
 
-#: src/safety-calculator.c:266
+#: src/safety-calculator.c:255
 msgid "Can read all data in the directory"
 msgstr "Voi lukea kaiken kansion sisällön"
 
-#: src/safety-calculator.c:281
+#: src/safety-calculator.c:271
 msgid "No File System Access"
 msgstr "Ei pääsyä tiedostojärjestelmään"
 
-#: src/safety-calculator.c:282
+#: src/safety-calculator.c:272
 msgid "Cannot access the file system at all"
 msgstr "Ei lainkaan pääsyä tiedostojärjestelmään"
 
-#: src/safety-calculator.c:289
+#: src/safety-calculator.c:279
 msgid "Uses System Services"
 msgstr "Käyttää järjestelmäpalveluja"
 
-#: src/safety-calculator.c:290
+#: src/safety-calculator.c:280
 msgid "Can request data from non-portal system services"
 msgstr "Voi pyytää dataa portaalittomilta järjestelmäpalveluilta"
 
-#: src/safety-calculator.c:296
+#: src/safety-calculator.c:286
 msgid "Uses Session Services"
 msgstr "Käyttää istuntopalveluja"
 
-#: src/safety-calculator.c:297
+#: src/safety-calculator.c:287
 msgid "Can request data from non-portal session services"
 msgstr "Voi pyytää dataa portaalittomilta istuntopalveluilta"
 
-#: src/safety-calculator.c:345
+#: src/safety-calculator.c:332
 msgid "No Service Access"
 msgstr "Ei palvelupääsyä"
 
-#: src/safety-calculator.c:346
+#: src/safety-calculator.c:333
 msgid "Cannot access non-portal session or system services at all"
 msgstr "Ei lainkaan pääsyä portaalittomiin istunto- tai järjestelmäpalveluihin"
 
-#: src/safety-calculator.c:354
+#: src/safety-calculator.c:372
 msgid "Verified App Developer"
 msgstr "Vahvistettu sovelluskehittäjä"
 
-#: src/safety-calculator.c:355
+#: src/safety-calculator.c:373
 msgid "The developer of this app has been verified to be who they say they are"
 msgstr "Sovelluksen kehittäjän on vahvistettu olevan se, joka väittää olevansa"
 
-#: src/safety-calculator.c:364
+#: src/safety-calculator.c:382
 msgid "Proprietary Code"
 msgstr "Omisteinen koodi"
 
-#: src/safety-calculator.c:365
+#: src/safety-calculator.c:383
 msgid "The source code is not public, so it cannot be independently audited and might be unsafe"
 msgstr "Lähdekoodi ei ole julkista, joten sitä ei voi itsenäisesti auditoida, ja koodi voi olla turvatonta"
 
-#: src/safety-calculator.c:375
+#: src/safety-calculator.c:393
 msgid "Auditable Code"
 msgstr "Koodi auditoitavissa"
 
-#: src/safety-calculator.c:376
+#: src/safety-calculator.c:394
 msgid "The source code is public and can be independently audited, which makes the app more likely to be safe"
 msgstr "Lähdekoodi on julkista ja itsenäisesti auditoitavissa, sovellus on todennäköisesti turvallinen"
 
-#: src/safety-calculator.c:516
+#: src/safety-calculator.c:532
 #, c-format
 msgid "Use the %s System Service"
 msgstr "Käytä %s-järjestelmäpalvelua"
 
-#: src/safety-calculator.c:520
+#: src/safety-calculator.c:536
 #, c-format
 msgid "Use the %s Session Service"
 msgstr "Käytä %s-istuntopalvelua"
 
-#: src/safety-calculator.c:524
+#: src/safety-calculator.c:540
 #, c-format
 msgid "Use the %s Service"
 msgstr "Käytä %s-palvelua"
 
-#: src/safety-calculator.c:534
+#: src/safety-calculator.c:550
 msgid "Can see the non-portal service"
 msgstr "Näkee portaalittoman palvelun"
 
-#: src/safety-calculator.c:536
+#: src/safety-calculator.c:552
 msgid "Can talk to the non-portal service"
 msgstr "Voi puhua portaalittomalle palvelulle"
 
-#: src/safety-calculator.c:538
+#: src/safety-calculator.c:554
 msgid "Can own the non-portal service"
 msgstr "Voi omistaa portaalittoman palvelun"
 
-#: src/safety-calculator.c:553
+#: src/safety-calculator.c:569
 msgid "Global Menu Integration"
 msgstr "Yleisvalikon integraatio"
 
-#: src/safety-calculator.c:554
+#: src/safety-calculator.c:570
 msgid "Can display its menus in a global menu bar"
 msgstr "Voi näyttää valikkonsa yleisessä valikkopalkissa"
 
-#: src/safety-calculator.c:559
+#: src/safety-calculator.c:575
 msgid "KDE Settings Integration"
 msgstr "KDE-asetusten integraatio"
 
-#: src/safety-calculator.c:560
+#: src/safety-calculator.c:576
 msgid "Can detect when KDE desktop settings change"
 msgstr "Voi havaita KDE-työpöydän asetusten vaihtumisen"
 
-#: src/safety-calculator.c:565
+#: src/safety-calculator.c:581
 msgid "KDE Global Settings"
 msgstr "KDE:n yleisasetukset"
 
-#: src/safety-calculator.c:566
+#: src/safety-calculator.c:582
 msgid "Can read KDE desktop preferences like fonts and colors"
 msgstr "Voi lukea KDE-työpöydän asetuksia kuten fontti tai värit"
 
-#: src/safety-calculator.c:571
+#: src/safety-calculator.c:587
 msgid "Secret Storage Service"
 msgstr "Salaisuuksien säilöntäpalvelu"
 
-#: src/safety-calculator.c:572
+#: src/safety-calculator.c:588
 msgid "Can store and retrieve its own passwords using the system keyring"
 msgstr "Voit tallettaa ja noutaa sen omia salasanoja käyttäen järjestelmän avainnippua"
 
-#: src/safety-calculator.c:577
+#: src/safety-calculator.c:593
 msgid "Desktop Notifications Service"
 msgstr "Työpöytäilmoitusten palvelu"
 
-#: src/safety-calculator.c:578
+#: src/safety-calculator.c:594
 msgid "Can send desktop notifications"
 msgstr "Voi lähettää työpöytäilmoituksia"
 
-#: src/safety-calculator.c:584
+#: src/safety-calculator.c:600
 msgid "System Tray Integration"
 msgstr "Ilmoitusalueen integraatio"
 
-#: src/safety-calculator.c:585
+#: src/safety-calculator.c:601
 msgid "Can display an icon in the system tray"
 msgstr "Voit näyttää kuvakkeen ilmoitusalueella"
 
-#: src/safety-calculator.c:590
+#: src/safety-calculator.c:606
 msgid "KDE Connect Integration"
 msgstr "KDE Connect -integraatio"
 
-#: src/safety-calculator.c:591
+#: src/safety-calculator.c:607
 msgid "Can interact with devices paired via KDE Connect"
 msgstr "Voi olla vuorovaikutuksessa KDE Connectin kautta yhdistettyihin laitteisiin"
 
