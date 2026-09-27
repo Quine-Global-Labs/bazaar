@@ -1095,7 +1095,7 @@ load_local_ref_fiber (LoadLocalRefData *data)
   if (g_str_has_suffix (uri, ".flatpakref"))
     {
       const char *resolved_uri      = NULL;
-      g_autoptr (GKeyFile) key_file = g_key_file_new ();
+      g_autoptr (GKeyFile) key_file = NULL;
       g_autofree char *name         = NULL;
 
       if (g_str_has_prefix (uri, "flatpak+https"))
